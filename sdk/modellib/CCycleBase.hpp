@@ -1,0 +1,21 @@
+#pragma once
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: modellib
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk::modellib
+{
+	// Alignment: 4
+	// Size: 0x4
+	// Has Trivial Destructor
+	// 
+	// MGetKV3ClassDefaults
+	class CCycleBase
+	{
+	public:
+		float m_flCycle; // 0x0		
+	};
+};
