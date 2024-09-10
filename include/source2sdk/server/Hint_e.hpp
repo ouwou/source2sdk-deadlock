@@ -1,0 +1,74 @@
+#pragma once
+#include <cstdint>
+
+// /////////////////////////////////////////////////////////////
+// Module: server
+// Created using source2gen - github.com/neverlosecc/source2gen
+// /////////////////////////////////////////////////////////////
+
+namespace source2sdk::server
+{
+    // Enumerator count: 57
+    // Alignment: 4
+    // Size: 0x4
+    enum class Hint_e : std::uint32_t
+    {
+        HINT_ANY = 0xffffffff,
+        HINT_NONE = 0x0,
+        HINT_NOT_USED_WORLD_DOOR = 0x1,
+        HINT_WORLD_WINDOW = 0x2,
+        HINT_NOT_USED_WORLD_BUTTON = 0x3,
+        HINT_NOT_USED_WORLD_MACHINERY = 0x4,
+        HINT_NOT_USED_WORLD_LEDGE = 0x5,
+        HINT_NOT_USED_WORLD_LIGHT_SOURCE = 0x6,
+        HINT_NOT_USED_WORLD_HEAT_SOURCE = 0x7,
+        HINT_NOT_USED_WORLD_BLINKING_LIGHT = 0x8,
+        HINT_NOT_USED_WORLD_BRIGHT_COLORS = 0x9,
+        HINT_NOT_USED_WORLD_HUMAN_BLOOD = 0xa,
+        HINT_NOT_USED_WORLD_ALIEN_BLOOD = 0xb,
+        HINT_WORLD_WORK_POSITION = 0xc,
+        HINT_WORLD_VISUALLY_INTERESTING = 0xd,
+        HINT_WORLD_VISUALLY_INTERESTING_DONT_AIM = 0xe,
+        HINT_WORLD_INHIBIT_COMBINE_MINES = 0xf,
+        HINT_WORLD_VISUALLY_INTERESTING_STEALTH = 0x10,
+        HINT_GENERIC = 0x11,
+        HINT_TACTICAL_COVER_MED_DEPRECATED = 0x64,
+        HINT_TACTICAL_COVER_CENTER = 0x65,
+        HINT_TACTICAL_HIDE = 0x66,
+        HINT_TACTICAL_PINCH = 0x67,
+        HINT_TACTICAL_SENTRY = 0x68,
+        HINT_TACTICAL_ENEMY_DISADVANTAGED = 0x69,
+        HINT_NOT_USED_HEALTH_KIT = 0x6a,
+        HINT_TACTICAL_HIGH_GROUND = 0x6b,
+        HINT_TACTICAL_COVER_LEFT = 0x6c,
+        HINT_TACTICAL_COVER_RIGHT = 0x6d,
+        HINT_TACTICAL_COVER_NARROW = 0x6e,
+        HINT_TACTICAL_CREATE_COVER = 0x6f,
+        HINT_NOT_USED_URBAN_STREETCORNER = 0xc8,
+        HINT_NOT_USED_URBAN_STREETLAMP = 0xc9,
+        HINT_NOT_USED_URBAN_DARK_SPOT = 0xca,
+        HINT_NOT_USED_URBAN_POSTER = 0xcb,
+        HINT_NOT_USED_URBAN_SHELTER = 0xcc,
+        HINT_NOT_USED_ASSASSIN_SECLUDED = 0x12c,
+        HINT_NOT_USED_ASSASSIN_RAFTERS = 0x12d,
+        HINT_NOT_USED_ASSASSIN_GROUND = 0x12e,
+        HINT_NOT_USED_ASSASSIN_MONKEYBARS = 0x12f,
+        HINT_ANTLION_BURROW_POINT = 0x190,
+        HINT_ANTLION_THUMPER_FLEE_POINT = 0x191,
+        HINT_HEADCRAB_BURROW_POINT = 0x1c2,
+        HINT_HEADCRAB_EXIT_POD_POINT = 0x1c3,
+        HINT_NOT_USED_ROLLER_PATROL_POINT = 0x1f4,
+        HINT_NOT_USED_ROLLER_CLEANUP_POINT = 0x1f5,
+        HINT_NOT_USED_PSTORM_ROCK_SPAWN = 0x258,
+        HINT_CROW_FLYTO_POINT = 0x2bc,
+        HINT_BUG_PATROL_POINT = 0x320,
+        HINT_FOLLOW_WAIT_POINT = 0x384,
+        HINT_JUMP_OVERRIDE = 0x385,
+        HINT_PLAYER_SQUAD_TRANSITON_POINT = 0x386,
+        HINT_NPC_EXIT_POINT = 0x387,
+        HINT_STRIDER_NODE = 0x388,
+        HINT_PLAYER_ALLY_MOVE_AWAY_DEST = 0x3b6,
+        HINT_PLAYER_ALLY_FEAR_DEST = 0x3b7,
+        HINT_CSTRIKE_HOSTAGE_ESCAPE = 0x44c,
+    };
+};
