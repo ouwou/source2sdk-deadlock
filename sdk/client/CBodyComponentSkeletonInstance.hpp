@@ -12,7 +12,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x490
+	// Size: 0x4c0
 	// Has VTable
 	// 
 	// MNetworkVarNames "CSkeletonInstance m_skeletonInstance"

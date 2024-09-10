@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xc20
+	// Size: 0xcd0
 	// Has VTable
 	// 
 	// MNetworkExcludeByName "m_flAnimTime"
@@ -25,6 +25,6 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		bool m_bAwake; // 0xc18		
+		bool m_bAwake; // 0xcc8		
 	};
 };

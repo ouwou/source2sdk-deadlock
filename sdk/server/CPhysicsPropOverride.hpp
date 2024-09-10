@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xcd0
+	// Size: 0xcf8
 	// Has VTable
 	class CPhysicsPropOverride : public server::CPhysicsProp
 	{

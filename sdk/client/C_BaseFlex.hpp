@@ -13,7 +13,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xc28
+	// Size: 0xcd8
 	// Has VTable
 	// 
 	// MNetworkVarNames "float32 m_flexWeight"
@@ -21,50 +21,50 @@ namespace source2sdk::client
 	class C_BaseFlex : public client::CBaseAnimGraph
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0a90[0x10]; // 0xa90
+		[[maybe_unused]] uint8_t __pad0b40[0x10]; // 0xb40
 	public:
 		// MNetworkEnable
 		// MNetworkBitCount "12"
 		// MNetworkMinValue "0.000000"
 		// MNetworkMaxValue "1.000000"
 		// MNetworkEncodeFlags "1"
-		C_NetworkUtlVectorBase<float> m_flexWeight; // 0xaa0		
+		C_NetworkUtlVectorBase<float> m_flexWeight; // 0xb50		
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
 		// MNetworkChangeCallback "OnViewTargetChanged"
-		Vector m_vLookTargetPosition; // 0xab8		
+		Vector m_vLookTargetPosition; // 0xb68		
 	private:
-		[[maybe_unused]] uint8_t __pad0ac4[0xc]; // 0xac4
+		[[maybe_unused]] uint8_t __pad0b74[0xc]; // 0xb74
 	public:
 		// MNetworkEnable
-		bool m_blinktoggle; // 0xad0		
+		bool m_blinktoggle; // 0xb80		
 	private:
-		[[maybe_unused]] uint8_t __pad0ad1[0x5f]; // 0xad1
+		[[maybe_unused]] uint8_t __pad0b81[0x5f]; // 0xb81
 	public:
-		int32_t m_nLastFlexUpdateFrameCount; // 0xb30		
-		Vector m_CachedViewTarget; // 0xb34		
-		client::SceneEventId_t m_nNextSceneEventId; // 0xb40		
-		int32_t m_iBlink; // 0xb44		
-		float m_blinktime; // 0xb48		
-		bool m_prevblinktoggle; // 0xb4c		
+		int32_t m_nLastFlexUpdateFrameCount; // 0xbe0		
+		Vector m_CachedViewTarget; // 0xbe4		
+		client::SceneEventId_t m_nNextSceneEventId; // 0xbf0		
+		int32_t m_iBlink; // 0xbf4		
+		float m_blinktime; // 0xbf8		
+		bool m_prevblinktoggle; // 0xbfc		
 	private:
-		[[maybe_unused]] uint8_t __pad0b4d[0x3]; // 0xb4d
+		[[maybe_unused]] uint8_t __pad0bfd[0x3]; // 0xbfd
 	public:
-		int32_t m_iJawOpen; // 0xb50		
-		float m_flJawOpenAmount; // 0xb54		
-		float m_flBlinkAmount; // 0xb58		
-		modellib::AttachmentHandle_t m_iMouthAttachment; // 0xb5c		
-		modellib::AttachmentHandle_t m_iEyeAttachment; // 0xb5d		
-		bool m_bResetFlexWeightsOnModelChange; // 0xb5e		
+		int32_t m_iJawOpen; // 0xc00		
+		float m_flJawOpenAmount; // 0xc04		
+		float m_flBlinkAmount; // 0xc08		
+		modellib::AttachmentHandle_t m_iMouthAttachment; // 0xc0c		
+		modellib::AttachmentHandle_t m_iEyeAttachment; // 0xc0d		
+		bool m_bResetFlexWeightsOnModelChange; // 0xc0e		
 	private:
-		[[maybe_unused]] uint8_t __pad0b5f[0x19]; // 0xb5f
+		[[maybe_unused]] uint8_t __pad0c0f[0x19]; // 0xc0f
 	public:
-		int32_t m_nEyeOcclusionRendererBone; // 0xb78		
-		matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xb7c		
-		Vector m_vEyeOcclusionRendererHalfExtent; // 0xbac		
+		int32_t m_nEyeOcclusionRendererBone; // 0xc28		
+		matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xc2c		
+		Vector m_vEyeOcclusionRendererHalfExtent; // 0xc5c		
 	private:
-		[[maybe_unused]] uint8_t __pad0bb8[0x10]; // 0xbb8
+		[[maybe_unused]] uint8_t __pad0c68[0x10]; // 0xc68
 	public:
-		client::C_BaseFlex__Emphasized_Phoneme m_PhonemeClasses[3]; // 0xbc8		
+		client::C_BaseFlex__Emphasized_Phoneme m_PhonemeClasses[3]; // 0xc78		
 	};
 };

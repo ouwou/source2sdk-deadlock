@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x15e8
+	// Size: 0x1610
 	// Has VTable
 	class CNPC_HeroDecoy : public server::CNPC_HeroCloneTrooper
 	{

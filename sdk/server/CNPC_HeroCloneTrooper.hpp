@@ -15,17 +15,17 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x15d0
+	// Size: 0x15f8
 	// Has VTable
 	// 
 	// MNetworkVarNames "EHANDLE m_hOwner"
 	class CNPC_HeroCloneTrooper : public server::CAI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad15a8[0x4]; // 0x15a8
+		[[maybe_unused]] uint8_t __pad15d0[0x4]; // 0x15d0
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hOwner; // 0x15ac		
+		CHandle<server::CBaseEntity> m_hOwner; // 0x15d4		
 		
 		// Static fields:
 		static CUtlSymbolLarge &Get_SCHED_CLONE_TROOPER_RELOAD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_HeroCloneTrooper")->GetStaticFields()[0]->m_pInstance);};

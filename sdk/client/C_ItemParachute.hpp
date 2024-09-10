@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xc20
+	// Size: 0xcd0
 	// Has VTable
 	class C_ItemParachute : public client::C_PhysicsProp
 	{

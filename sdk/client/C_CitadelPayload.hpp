@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa0
+	// Size: 0xb50
 	// Has VTable
 	// 
 	// MNetworkVarNames "float m_flProgress"
@@ -19,8 +19,8 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		float m_flProgress; // 0xa98		
+		float m_flProgress; // 0xb48		
 		// MNetworkEnable
-		int32_t m_nNumPushers; // 0xa9c		
+		int32_t m_nNumPushers; // 0xb4c		
 	};
 };

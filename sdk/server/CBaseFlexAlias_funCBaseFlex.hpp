@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xa08
+	// Size: 0xa30
 	// Has VTable
 	class CBaseFlexAlias_funCBaseFlex : public server::CBaseFlex
 	{

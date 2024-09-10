@@ -15,18 +15,18 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb60
+	// Size: 0xb88
 	// Has VTable
 	// 
 	// MNetworkVarNames "CAttributeContainer m_AttributeManager"
 	class CEconEntity : public server::CBaseFlex
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0a08[0x10]; // 0xa08
+		[[maybe_unused]] uint8_t __pad0a30[0x10]; // 0xa30
 	public:
 		// MNetworkEnable
-		server::CAttributeContainer m_AttributeManager; // 0xa18		
-		CHandle<server::CBaseEntity> m_hOldProvidee; // 0xb58		
-		int32_t m_iOldOwnerClass; // 0xb5c		
+		server::CAttributeContainer m_AttributeManager; // 0xa40		
+		CHandle<server::CBaseEntity> m_hOldProvidee; // 0xb80		
+		int32_t m_iOldOwnerClass; // 0xb84		
 	};
 };

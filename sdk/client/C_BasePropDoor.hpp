@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xd70
+	// Size: 0xe20
 	// Has VTable
 	// 
 	// MNetworkExcludeByName "m_flAnimTime"
@@ -29,22 +29,22 @@ namespace source2sdk::client
 	class C_BasePropDoor : public client::C_DynamicProp
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0d30[0x10]; // 0xd30
+		[[maybe_unused]] uint8_t __pad0de0[0x10]; // 0xde0
 	public:
 		// MNetworkEnable
-		client::DoorState_t m_eDoorState; // 0xd40		
-		bool m_modelChanged; // 0xd44		
+		client::DoorState_t m_eDoorState; // 0xdf0		
+		bool m_modelChanged; // 0xdf4		
 		// MNetworkEnable
-		bool m_bLocked; // 0xd45		
+		bool m_bLocked; // 0xdf5		
 	private:
-		[[maybe_unused]] uint8_t __pad0d46[0x2]; // 0xd46
+		[[maybe_unused]] uint8_t __pad0df6[0x2]; // 0xdf6
 	public:
 		// MNetworkEnable
-		Vector m_closedPosition; // 0xd48		
+		Vector m_closedPosition; // 0xdf8		
 		// MNetworkEnable
-		QAngle m_closedAngles; // 0xd54		
+		QAngle m_closedAngles; // 0xe04		
 		// MNetworkEnable
-		CHandle<client::C_BasePropDoor> m_hMaster; // 0xd60		
-		Vector m_vWhereToSetLightingOrigin; // 0xd64		
+		CHandle<client::C_BasePropDoor> m_hMaster; // 0xe10		
+		Vector m_vWhereToSetLightingOrigin; // 0xe14		
 	};
 };

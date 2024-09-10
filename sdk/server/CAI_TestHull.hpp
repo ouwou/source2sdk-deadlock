@@ -11,12 +11,12 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1058
+	// Size: 0x1080
 	// Has VTable
 	class CAI_TestHull : public server::CAI_BaseNPC
 	{
 	public:
-		server::TestHullMode_t m_nHullMode; // 0x1050		
+		server::TestHullMode_t m_nHullMode; // 0x1078		
 		
 		// Static fields:
 		static server::CAI_TestHull* &Get_s_pTestHulls(){return *reinterpret_cast<server::CAI_TestHull**>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_TestHull")->GetStaticFields()[0]->m_pInstance);};

@@ -12,7 +12,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xa10
+	// Size: 0xa40
 	// Has VTable
 	// 
 	// MNetworkVarNames "CBaseAnimGraphController m_animationController"
@@ -20,7 +20,7 @@ namespace source2sdk::server
 	{
 	public:
 		// MNetworkEnable
-		server::CBaseAnimGraphController m_animationController; // 0x490		
+		server::CBaseAnimGraphController m_animationController; // 0x4c0		
 		
 		// Static fields:
 		static entity2::EntComponentInfo_t &Get_s_EntComponentInfo(){return *reinterpret_cast<entity2::EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBodyComponentBaseAnimGraph")->GetStaticFields()[0]->m_pInstance);};

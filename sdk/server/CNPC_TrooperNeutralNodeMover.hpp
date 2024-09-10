@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1668
+	// Size: 0x1690
 	// Has VTable
 	class CNPC_TrooperNeutralNodeMover : public server::CNPC_TrooperNeutral
 	{

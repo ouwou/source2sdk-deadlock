@@ -14,12 +14,12 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xac0
+	// Size: 0xb70
 	// Has VTable
 	class C_PhysMagnet : public client::CBaseAnimGraph
 	{
 	public:
-		CUtlVector<int32_t> m_aAttachedObjectsFromServer; // 0xa90		
-		CUtlVector<CHandle<client::C_BaseEntity>> m_aAttachedObjects; // 0xaa8		
+		CUtlVector<int32_t> m_aAttachedObjectsFromServer; // 0xb40		
+		CUtlVector<CHandle<client::C_BaseEntity>> m_aAttachedObjects; // 0xb58		
 	};
 };

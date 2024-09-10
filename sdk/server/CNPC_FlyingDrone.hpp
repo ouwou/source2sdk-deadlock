@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1600
+	// Size: 0x1628
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iHealth"

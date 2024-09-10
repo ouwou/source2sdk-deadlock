@@ -12,7 +12,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xc90
+	// Size: 0xd40
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_bTakesDamage"
@@ -29,15 +29,15 @@ namespace source2sdk::client
 		// MNetworkUserGroup "CCitadelAbilityComponent"
 		// MNetworkAlias "CCitadelAbilityComponent"
 		// MNetworkTypeAlias "CCitadelAbilityComponent"
-		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xa98		
+		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb48		
 		// MNetworkEnable
-		C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints; // 0xc38		
+		C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints; // 0xce8		
 		// MNetworkEnable
 		// MNetworkChangeCallback "DestroyedChanged"
-		bool m_bDestroyed; // 0xc88		
+		bool m_bDestroyed; // 0xd38		
 		// MNetworkEnable
-		bool m_bActive; // 0xc89		
+		bool m_bActive; // 0xd39		
 		// MNetworkEnable
-		bool m_bFinal; // 0xc8a		
+		bool m_bFinal; // 0xd3a		
 	};
 };

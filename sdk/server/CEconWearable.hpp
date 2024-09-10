@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb68
+	// Size: 0xb90
 	// Has VTable
 	// 
 	// MEntityAllowsPortraitWorldSpawn

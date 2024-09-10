@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb18
+	// Size: 0xb40
 	// Has VTable
 	class CRagdollPropAlias_physics_prop_ragdoll : public server::CRagdollProp
 	{

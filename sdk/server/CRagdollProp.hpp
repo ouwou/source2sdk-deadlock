@@ -20,7 +20,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb18
+	// Size: 0xb40
 	// Has VTable
 	// 
 	// MNetworkVarNames "Vector m_ragPos"
@@ -30,65 +30,65 @@ namespace source2sdk::server
 	class CRagdollProp : public server::CBaseAnimGraph
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0978[0x8]; // 0x978
+		[[maybe_unused]] uint8_t __pad09a0[0x8]; // 0x9a0
 	public:
-		client::ragdoll_t m_ragdoll; // 0x980		
-		bool m_bStartDisabled; // 0x9b8		
+		client::ragdoll_t m_ragdoll; // 0x9a8		
+		bool m_bStartDisabled; // 0x9e0		
 	private:
-		[[maybe_unused]] uint8_t __pad09b9[0x7]; // 0x9b9
+		[[maybe_unused]] uint8_t __pad09e1[0x7]; // 0x9e1
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
-		CNetworkUtlVectorBase<Vector> m_ragPos; // 0x9c0		
+		CNetworkUtlVectorBase<Vector> m_ragPos; // 0x9e8		
 		// MNetworkEnable
 		// MNetworkEncoder "qangle"
 		// MNetworkBitCount "13"
-		CNetworkUtlVectorBase<QAngle> m_ragAngles; // 0x9d8		
+		CNetworkUtlVectorBase<QAngle> m_ragAngles; // 0xa00		
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hRagdollSource; // 0x9f0		
-		uint32_t m_lastUpdateTickCount; // 0x9f4		
-		bool m_allAsleep; // 0x9f8		
-		bool m_bFirstCollisionAfterLaunch; // 0x9f9		
+		CHandle<server::CBaseEntity> m_hRagdollSource; // 0xa18		
+		uint32_t m_lastUpdateTickCount; // 0xa1c		
+		bool m_allAsleep; // 0xa20		
+		bool m_bFirstCollisionAfterLaunch; // 0xa21		
 	private:
-		[[maybe_unused]] uint8_t __pad09fa[0x2]; // 0x9fa
+		[[maybe_unused]] uint8_t __pad0a22[0x2]; // 0xa22
 	public:
-		CHandle<server::CBaseEntity> m_hDamageEntity; // 0x9fc		
-		CHandle<server::CBaseEntity> m_hKiller; // 0xa00		
-		CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xa04		
-		entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xa08		
-		entity2::GameTime_t m_flFadeOutStartTime; // 0xa0c		
-		float m_flFadeTime; // 0xa10		
+		CHandle<server::CBaseEntity> m_hDamageEntity; // 0xa24		
+		CHandle<server::CBaseEntity> m_hKiller; // 0xa28		
+		CHandle<server::CBasePlayerPawn> m_hPhysicsAttacker; // 0xa2c		
+		entity2::GameTime_t m_flLastPhysicsInfluenceTime; // 0xa30		
+		entity2::GameTime_t m_flFadeOutStartTime; // 0xa34		
+		float m_flFadeTime; // 0xa38		
 		// MNetworkDisable
-		Vector m_vecLastOrigin; // 0xa14		
-		entity2::GameTime_t m_flAwakeTime; // 0xa20		
-		entity2::GameTime_t m_flLastOriginChangeTime; // 0xa24		
-		CUtlSymbolLarge m_strOriginClassName; // 0xa28		
-		CUtlSymbolLarge m_strSourceClassName; // 0xa30		
-		bool m_bHasBeenPhysgunned; // 0xa38		
-		bool m_bShouldTeleportPhysics; // 0xa39		
+		Vector m_vecLastOrigin; // 0xa3c		
+		entity2::GameTime_t m_flAwakeTime; // 0xa48		
+		entity2::GameTime_t m_flLastOriginChangeTime; // 0xa4c		
+		CUtlSymbolLarge m_strOriginClassName; // 0xa50		
+		CUtlSymbolLarge m_strSourceClassName; // 0xa58		
+		bool m_bHasBeenPhysgunned; // 0xa60		
+		bool m_bShouldTeleportPhysics; // 0xa61		
 	private:
-		[[maybe_unused]] uint8_t __pad0a3a[0x2]; // 0xa3a
+		[[maybe_unused]] uint8_t __pad0a62[0x2]; // 0xa62
 	public:
 		// MNetworkEnable
 		// MNetworkBitCount "8"
 		// MNetworkMinValue "0.000000"
 		// MNetworkMaxValue "1.000000"
 		// MNetworkEncodeFlags "1"
-		float m_flBlendWeight; // 0xa3c		
-		float m_flDefaultFadeScale; // 0xa40		
+		float m_flBlendWeight; // 0xa64		
+		float m_flDefaultFadeScale; // 0xa68		
 	private:
-		[[maybe_unused]] uint8_t __pad0a44[0x4]; // 0xa44
+		[[maybe_unused]] uint8_t __pad0a6c[0x4]; // 0xa6c
 	public:
-		CUtlVector<Vector> m_ragdollMins; // 0xa48		
-		CUtlVector<Vector> m_ragdollMaxs; // 0xa60		
-		bool m_bShouldDeleteActivationRecord; // 0xa78		
+		CUtlVector<Vector> m_ragdollMins; // 0xa70		
+		CUtlVector<Vector> m_ragdollMaxs; // 0xa88		
+		bool m_bShouldDeleteActivationRecord; // 0xaa0		
 	private:
-		[[maybe_unused]] uint8_t __pad0a79[0x5f]; // 0xa79
+		[[maybe_unused]] uint8_t __pad0aa1[0x5f]; // 0xaa1
 	public:
-		bool m_bValidatePoweredRagdollPose; // 0xad8		
+		bool m_bValidatePoweredRagdollPose; // 0xb00		
 		
 		// Datamap fields:
-		// void m_ragdoll.boneIndex; // 0x998
+		// void m_ragdoll.boneIndex; // 0x9c0
 		// void InputEnableMotion; // 0x0
 		// void InputDisableMotion; // 0x0
 		// void InputTurnOn; // 0x0
@@ -100,7 +100,7 @@ namespace source2sdk::server
 		// void CRagdollPropSettleThink; // 0x0
 		// void CRagdollPropAttachedItemsThink; // 0x0
 		// void CRagdollPropRagdollTouch; // 0x0
-		// void m_ragdoll.list; // 0x980
-		// bool m_ragdoll.allowStretch; // 0x9b0
+		// void m_ragdoll.list; // 0x9a8
+		// bool m_ragdoll.allowStretch; // 0x9d8
 	};
 };

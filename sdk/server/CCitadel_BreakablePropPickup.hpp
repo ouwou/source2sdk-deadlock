@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x9a8
+	// Size: 0x9d0
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -25,16 +25,16 @@ namespace source2sdk::server
 		// MNetworkUserGroup "CCitadelMinimapComponent"
 		// MNetworkAlias "CCitadelMinimapComponent"
 		// MNetworkTypeAlias "CCitadelMinimapComponent"
-		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x978		
+		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x9a0		
 		// MNetworkEnable
-		bool m_bActive; // 0x990		
+		bool m_bActive; // 0x9b8		
 	private:
-		[[maybe_unused]] uint8_t __pad0991[0x7]; // 0x991
+		[[maybe_unused]] uint8_t __pad09b9[0x7]; // 0x9b9
 	public:
 		// MNetworkEnable
-		CUtlString m_sPickupName; // 0x998		
+		CUtlString m_sPickupName; // 0x9c0		
 		// MNetworkEnable
-		int32_t m_nNameOffset; // 0x9a0		
+		int32_t m_nNameOffset; // 0x9c8		
 		
 		// Datamap fields:
 		// Vector spawn_position; // 0x7fffffff

@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x980
+	// Size: 0x9a8
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_lifeState"
@@ -21,6 +21,6 @@ namespace source2sdk::server
 	{
 	public:
 		// MNetworkEnable
-		int32_t m_nHitIndex; // 0x978		
+		int32_t m_nHitIndex; // 0x9a0		
 	};
 };

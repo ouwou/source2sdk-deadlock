@@ -14,7 +14,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x13e8
+	// Size: 0x1498
 	// Has VTable
 	// 
 	// MNetworkVarNames "EHANDLE m_hOwner"
@@ -22,6 +22,6 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		CHandle<client::C_BaseEntity> m_hOwner; // 0x13e0		
+		CHandle<client::C_BaseEntity> m_hOwner; // 0x1490		
 	};
 };

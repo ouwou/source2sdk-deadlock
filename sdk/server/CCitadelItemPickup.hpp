@@ -15,7 +15,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x5bf0
+	// Size: 0x5c18
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -28,35 +28,35 @@ namespace source2sdk::server
 	class CCitadelItemPickup : public server::CCitadelAnimatingModelEntity
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0af8[0x8]; // 0xaf8
+		[[maybe_unused]] uint8_t __pad0b20[0x8]; // 0xb20
 	public:
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelMinimapComponent"
 		// MNetworkAlias "CCitadelMinimapComponent"
 		// MNetworkTypeAlias "CCitadelMinimapComponent"
-		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xb00		
+		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xb28		
 		// MNetworkEnable
-		int32_t m_eLootType; // 0xb18		
+		int32_t m_eLootType; // 0xb40		
 		// MNetworkEnable
-		int32_t m_nCurrencyValue; // 0xb1c		
+		int32_t m_nCurrencyValue; // 0xb44		
 		// MNetworkEnable
-		CUtlSymbolLarge m_iszModelName; // 0xb20		
+		CUtlSymbolLarge m_iszModelName; // 0xb48		
 		// MNetworkEnable
-		float m_flModelScale; // 0xb28		
+		float m_flModelScale; // 0xb50		
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hTargetPlayer; // 0xb2c		
+		CHandle<server::CBaseEntity> m_hTargetPlayer; // 0xb54		
 		// MNetworkEnable
-		float m_flFallRate; // 0xb30		
+		float m_flFallRate; // 0xb58		
 	private:
-		[[maybe_unused]] uint8_t __pad0b34[0xc]; // 0xb34
+		[[maybe_unused]] uint8_t __pad0b5c[0xc]; // 0xb5c
 	public:
-		Vector m_vHomePosition; // 0xb40		
-		Vector m_vDropPosition; // 0xb4c		
+		Vector m_vHomePosition; // 0xb68		
+		Vector m_vDropPosition; // 0xb74		
 		
 		// Datamap fields:
-		// bool m_bRequireGroundForPickup; // 0xb38
+		// bool m_bRequireGroundForPickup; // 0xb60
 		// bool from_crate; // 0x7fffffff
-		// int32_t m_eObjectivePosition; // 0xb34
-		// int32_t m_nKillingTeamNumber; // 0xb3c
+		// int32_t m_eObjectivePosition; // 0xb5c
+		// int32_t m_nKillingTeamNumber; // 0xb64
 	};
 };

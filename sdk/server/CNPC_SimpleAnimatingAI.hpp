@@ -15,7 +15,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb10
+	// Size: 0xb38
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iMaxHealth"
@@ -32,17 +32,17 @@ namespace source2sdk::server
 	class CNPC_SimpleAnimatingAI : public server::CBaseAnimGraph
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0978[0x14]; // 0x978
+		[[maybe_unused]] uint8_t __pad09a0[0x14]; // 0x9a0
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hEnemy; // 0x98c		
+		CHandle<server::CBaseEntity> m_hEnemy; // 0x9b4		
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelRegenComponent"
 		// MNetworkAlias "CCitadelRegenComponent"
 		// MNetworkTypeAlias "CCitadelRegenComponent"
-		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x990		
+		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x9b8		
 		
 		// Datamap fields:
-		// CHandle< CBaseEntity > m_hAbilityOwner; // 0x980
+		// CHandle< CBaseEntity > m_hAbilityOwner; // 0x9a8
 	};
 };

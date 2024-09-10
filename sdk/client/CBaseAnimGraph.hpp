@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xa90
+	// Size: 0xb40
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_bClientSideRagdoll"
@@ -21,6 +21,7 @@ namespace source2sdk::client
 	// MNetworkVarNames "int32 m_nForceBone"
 	// MNetworkVarNames "PhysicsRagdollPose_t m_RagdollPose"
 	// MNetworkVarNames "bool m_bRagdollClientSide"
+	// MNetworkVarNames "uint8 m_animGraph2SerializeData"
 	class CBaseAnimGraph : public client::C_BaseModelEntity
 	{
 	private:
@@ -64,6 +65,11 @@ namespace source2sdk::client
 		[[maybe_unused]] uint8_t __pad0949[0xf]; // 0x949
 	public:
 		bool m_bHasAnimatedMaterialAttributes; // 0x958		
+	private:
+		[[maybe_unused]] uint8_t __pad0959[0x147]; // 0x959
+	public:
+		// MNetworkEnable
+		C_NetworkUtlVectorBase<uint8_t> m_animGraph2SerializeData; // 0xaa0		
 		
 		// Datamap fields:
 		// void m_pMainGraphController; // 0x8a0

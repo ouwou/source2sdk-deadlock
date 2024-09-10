@@ -14,7 +14,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xa98
+	// Size: 0xb48
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iMaxHealth"
@@ -31,6 +31,6 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		CHandle<client::C_BaseEntity> m_hEnemy; // 0xa90		
+		CHandle<client::C_BaseEntity> m_hEnemy; // 0xb40		
 	};
 };

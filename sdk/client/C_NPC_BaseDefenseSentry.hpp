@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa8
+	// Size: 0xb58
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_bTakesDamage"
@@ -20,6 +20,6 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		Vector m_vecUnitStatusOffset; // 0xa98		
+		Vector m_vecUnitStatusOffset; // 0xb48		
 	};
 };

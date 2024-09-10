@@ -16,31 +16,31 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xf50
+	// Size: 0xf78
 	// Has VTable
 	class CPropDoorRotating : public server::CBasePropDoor
 	{
 	public:
-		Vector m_vecAxis; // 0xeb8		
-		float m_flDistance; // 0xec4		
-		server::PropDoorRotatingSpawnPos_t m_eSpawnPosition; // 0xec8		
-		server::PropDoorRotatingOpenDirection_e m_eOpenDirection; // 0xecc		
-		server::PropDoorRotatingOpenDirection_e m_eCurrentOpenDirection; // 0xed0		
-		float m_flAjarAngle; // 0xed4		
-		QAngle m_angRotationAjarDeprecated; // 0xed8		
-		QAngle m_angRotationClosed; // 0xee4		
-		QAngle m_angRotationOpenForward; // 0xef0		
-		QAngle m_angRotationOpenBack; // 0xefc		
-		QAngle m_angGoal; // 0xf08		
-		Vector m_vecForwardBoundsMin; // 0xf14		
-		Vector m_vecForwardBoundsMax; // 0xf20		
-		Vector m_vecBackBoundsMin; // 0xf2c		
-		Vector m_vecBackBoundsMax; // 0xf38		
-		bool m_bAjarDoorShouldntAlwaysOpen; // 0xf44		
+		Vector m_vecAxis; // 0xee0		
+		float m_flDistance; // 0xeec		
+		server::PropDoorRotatingSpawnPos_t m_eSpawnPosition; // 0xef0		
+		server::PropDoorRotatingOpenDirection_e m_eOpenDirection; // 0xef4		
+		server::PropDoorRotatingOpenDirection_e m_eCurrentOpenDirection; // 0xef8		
+		float m_flAjarAngle; // 0xefc		
+		QAngle m_angRotationAjarDeprecated; // 0xf00		
+		QAngle m_angRotationClosed; // 0xf0c		
+		QAngle m_angRotationOpenForward; // 0xf18		
+		QAngle m_angRotationOpenBack; // 0xf24		
+		QAngle m_angGoal; // 0xf30		
+		Vector m_vecForwardBoundsMin; // 0xf3c		
+		Vector m_vecForwardBoundsMax; // 0xf48		
+		Vector m_vecBackBoundsMin; // 0xf54		
+		Vector m_vecBackBoundsMax; // 0xf60		
+		bool m_bAjarDoorShouldntAlwaysOpen; // 0xf6c		
 	private:
-		[[maybe_unused]] uint8_t __pad0f45[0x3]; // 0xf45
+		[[maybe_unused]] uint8_t __pad0f6d[0x3]; // 0xf6d
 	public:
-		CHandle<server::CEntityBlocker> m_hEntityBlocker; // 0xf48		
+		CHandle<server::CEntityBlocker> m_hEntityBlocker; // 0xf70		
 		
 		// Datamap fields:
 		// float InputSetRotationDistance; // 0x0

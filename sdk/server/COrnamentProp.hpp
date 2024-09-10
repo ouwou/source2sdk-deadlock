@@ -10,12 +10,12 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xc30
+	// Size: 0xc58
 	// Has VTable
 	class COrnamentProp : public server::CDynamicProp
 	{
 	public:
-		CUtlSymbolLarge m_initialOwner; // 0xc28		
+		CUtlSymbolLarge m_initialOwner; // 0xc50		
 		
 		// Datamap fields:
 		// CUtlSymbolLarge InputSetAttached; // 0x0

@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xa98
+	// Size: 0xb48
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iHealth"

@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xbc0
+	// Size: 0xbe8
 	// Has VTable
 	class CItemFlare : public server::CItemGeneric
 	{

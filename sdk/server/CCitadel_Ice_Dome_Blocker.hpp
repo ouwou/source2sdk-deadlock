@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x980
+	// Size: 0x9a8
 	// Has VTable
 	// 
 	// MNetworkVarNames "GameTime_t m_flTurnSolidTime"
@@ -19,6 +19,6 @@ namespace source2sdk::server
 	{
 	public:
 		// MNetworkEnable
-		entity2::GameTime_t m_flTurnSolidTime; // 0x978		
+		entity2::GameTime_t m_flTurnSolidTime; // 0x9a0		
 	};
 };

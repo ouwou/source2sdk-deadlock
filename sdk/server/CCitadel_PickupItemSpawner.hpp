@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x980
+	// Size: 0x9a8
 	// Has VTable
 	class CCitadel_PickupItemSpawner : public server::CBaseAnimGraph
 	{

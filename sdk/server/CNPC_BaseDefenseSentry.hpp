@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb70
+	// Size: 0xb98
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_bTakesDamage"
@@ -20,24 +20,24 @@ namespace source2sdk::server
 	class CNPC_BaseDefenseSentry : public server::CNPC_SimpleAnimatingAI
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0b10[0x8]; // 0xb10
+		[[maybe_unused]] uint8_t __pad0b38[0x8]; // 0xb38
 	public:
 		// MNetworkEnable
-		Vector m_vecUnitStatusOffset; // 0xb18		
+		Vector m_vecUnitStatusOffset; // 0xb40		
 	private:
-		[[maybe_unused]] uint8_t __pad0b24[0x28]; // 0xb24
+		[[maybe_unused]] uint8_t __pad0b4c[0x28]; // 0xb4c
 	public:
-		float m_flAttackCone; // 0xb4c		
-		float m_flAttackDelay; // 0xb50		
-		entity2::GameTime_t m_flLastAlertSound; // 0xb54		
+		float m_flAttackCone; // 0xb74		
+		float m_flAttackDelay; // 0xb78		
+		entity2::GameTime_t m_flLastAlertSound; // 0xb7c		
 	private:
-		[[maybe_unused]] uint8_t __pad0b58[0x4]; // 0xb58
+		[[maybe_unused]] uint8_t __pad0b80[0x4]; // 0xb80
 	public:
-		int16_t m_nSentryLevel; // 0xb5c		
+		int16_t m_nSentryLevel; // 0xb84		
 	private:
-		[[maybe_unused]] uint8_t __pad0b5e[0x2]; // 0xb5e
+		[[maybe_unused]] uint8_t __pad0b86[0x2]; // 0xb86
 	public:
-		Vector m_vecForward; // 0xb60		
+		Vector m_vecForward; // 0xb88		
 		
 		// Datamap fields:
 		// void EnableAttacking; // 0x0

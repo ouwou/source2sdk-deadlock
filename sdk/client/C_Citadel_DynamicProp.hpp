@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xd68
+	// Size: 0xe18
 	// Has VTable
 	// 
 	// MNetworkVarNames "CUtlString m_strDefaultSkin"
@@ -20,20 +20,20 @@ namespace source2sdk::client
 	class C_Citadel_DynamicProp : public client::C_DynamicProp
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0d30[0x10]; // 0xd30
+		[[maybe_unused]] uint8_t __pad0de0[0x10]; // 0xde0
 	public:
-		int32_t m_nPlayerTeamEvent; // 0xd40		
+		int32_t m_nPlayerTeamEvent; // 0xdf0		
 	private:
-		[[maybe_unused]] uint8_t __pad0d44[0x4]; // 0xd44
+		[[maybe_unused]] uint8_t __pad0df4[0x4]; // 0xdf4
 	public:
 		// MNetworkEnable
-		CUtlString m_strDefaultSkin; // 0xd48		
+		CUtlString m_strDefaultSkin; // 0xdf8		
 		// MNetworkEnable
-		CUtlString m_strFriendlySkin; // 0xd50		
+		CUtlString m_strFriendlySkin; // 0xe00		
 		// MNetworkEnable
-		CUtlString m_strEnemySkin; // 0xd58		
+		CUtlString m_strEnemySkin; // 0xe08		
 		// MNetworkEnable
-		bool m_bIsWorld; // 0xd60		
+		bool m_bIsWorld; // 0xe10		
 		
 		// Datamap fields:
 		// CUtlSymbolLarge SetFriendlySkin; // 0x0

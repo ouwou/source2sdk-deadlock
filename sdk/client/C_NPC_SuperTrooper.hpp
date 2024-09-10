@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1428
+	// Size: 0x14d8
 	// Has VTable
 	class C_NPC_SuperTrooper : public client::C_NPC_Trooper
 	{

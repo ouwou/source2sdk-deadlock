@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1610
+	// Size: 0x1638
 	// Has VTable
 	// 
 	// MNetworkVarNames "bool m_bShieldActive"
@@ -19,12 +19,12 @@ namespace source2sdk::server
 	class CNPC_TrooperNeutral : public server::CAI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad15a8[0x63]; // 0x15a8
+		[[maybe_unused]] uint8_t __pad15d0[0x63]; // 0x15d0
 	public:
 		// MNetworkEnable
-		bool m_bShieldActive; // 0x160b		
+		bool m_bShieldActive; // 0x1633		
 		// MNetworkEnable
-		bool m_bPlayingIdle; // 0x160c		
+		bool m_bPlayingIdle; // 0x1634		
 		
 		// Static fields:
 		static CUtlSymbolLarge &Get_SCHED_TROOPERNEUTRAL_MOVE_TO_COVER(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutral")->GetStaticFields()[0]->m_pInstance);};

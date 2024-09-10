@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xc28
+	// Size: 0xc50
 	// Has VTable
 	class CDynamicPropAlias_dynamic_prop : public server::CDynamicProp
 	{

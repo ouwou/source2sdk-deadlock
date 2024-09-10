@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xa98
+	// Size: 0xac0
 	// Has VTable
 	class CCitadel_PointTalker_Base : public server::CBaseCombatCharacter
 	{

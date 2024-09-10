@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x978
+	// Size: 0x9a0
 	// Has VTable
 	class CItemSoda : public server::CBaseAnimGraph
 	{

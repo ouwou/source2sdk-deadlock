@@ -14,17 +14,17 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa8
+	// Size: 0xb58
 	// Has VTable
 	// 
 	// MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
 	class C_Citadel_Nano_Predatory_Statue : public client::CCitadelAnimatingModelEntity
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0a98[0x8]; // 0xa98
+		[[maybe_unused]] uint8_t __pad0b48[0x8]; // 0xb48
 	public:
 		// MNetworkEnable
-		CHandle<client::C_CitadelBaseAbility> m_hAbility; // 0xaa0		
-		float m_flLifetime; // 0xaa4		
+		CHandle<client::C_CitadelBaseAbility> m_hAbility; // 0xb50		
+		float m_flLifetime; // 0xb54		
 	};
 };

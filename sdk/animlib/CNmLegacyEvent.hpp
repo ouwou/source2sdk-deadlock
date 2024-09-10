@@ -10,7 +10,7 @@
 namespace source2sdk::animlib
 {
 	// Alignment: 8
-	// Size: 0x30
+	// Size: 0x38
 	// Has VTable
 	// 
 	// MGetKV3ClassDefaults

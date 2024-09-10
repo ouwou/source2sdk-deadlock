@@ -20,7 +20,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1668
+	// Size: 0x16c8
 	// Has VTable
 	// 
 	// MNetworkVarNames "int m_iLane"
@@ -29,30 +29,30 @@ namespace source2sdk::server
 	class CNPC_Trooper : public server::CAI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad15a8[0x8]; // 0x15a8
+		[[maybe_unused]] uint8_t __pad15d0[0x8]; // 0x15d0
 	public:
 		// MNetworkEnable
-		int32_t m_iLane; // 0x15b0		
-		int32_t m_iLaneSlot; // 0x15b4		
+		int32_t m_iLane; // 0x15d8		
+		int32_t m_iLaneSlot; // 0x15dc		
 	private:
-		[[maybe_unused]] uint8_t __pad15b8[0x1c]; // 0x15b8
+		[[maybe_unused]] uint8_t __pad15e0[0x1c]; // 0x15e0
 	public:
-		CHandle<server::CInfoTrooperBossSpawn> m_hSpawnWaveController; // 0x15d4		
-		CHandle<server::CBaseEntity> m_hTrooperSpawnPoint; // 0x15d8		
+		CHandle<server::CInfoTrooperBossSpawn> m_hSpawnWaveController; // 0x15fc		
+		CHandle<server::CBaseEntity> m_hTrooperSpawnPoint; // 0x1600		
 	private:
-		[[maybe_unused]] uint8_t __pad15dc[0x1c]; // 0x15dc
+		[[maybe_unused]] uint8_t __pad1604[0x1c]; // 0x1604
 	public:
-		CModifierHandleTyped<server::CCitadelModifier> m_hNearDeathModifier; // 0x15f8		
+		CModifierHandleTyped<server::CCitadelModifier> m_hNearDeathModifier; // 0x1620		
 	private:
-		[[maybe_unused]] uint8_t __pad1610[0x8]; // 0x1610
+		[[maybe_unused]] uint8_t __pad1638[0x8]; // 0x1638
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hTargetedEnemy; // 0x1618		
+		CHandle<server::CBaseEntity> m_hTargetedEnemy; // 0x1640		
 		// MNetworkEnable
 		// MNetworkBitCount "8"
 		// MNetworkMinValue "0.000000"
 		// MNetworkMaxValue "1.000000"
-		float m_flHealingChargeParticlePct; // 0x161c		
+		float m_flHealingChargeParticlePct; // 0x1644		
 		
 		// Static fields:
 		static client::ConditionId_t &Get_COND_TROOPER_MOVE_OUT(){return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->GetStaticFields()[0]->m_pInstance);};
@@ -111,6 +111,6 @@ namespace source2sdk::server
 		static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_MELEE_MOVEMENT(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->GetStaticFields()[53]->m_pInstance);};
 		
 		// Datamap fields:
-		// int32_t m_iCoverGroupID; // 0x1508
+		// int32_t m_iCoverGroupID; // 0x1530
 	};
 };

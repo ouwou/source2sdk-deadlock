@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xc38
+	// Size: 0xce8
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -22,6 +22,6 @@ namespace source2sdk::client
 		// MNetworkUserGroup "CCitadelAbilityComponent"
 		// MNetworkAlias "CCitadelAbilityComponent"
 		// MNetworkTypeAlias "CCitadelAbilityComponent"
-		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xa98		
+		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb48		
 	};
 };

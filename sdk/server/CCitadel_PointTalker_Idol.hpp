@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xaa8
+	// Size: 0xad0
 	// Has VTable
 	class CCitadel_PointTalker_Idol : public server::CCitadel_PointTalker
 	{

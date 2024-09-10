@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1410
+	// Size: 0x14c0
 	// Has VTable
 	// 
 	// MNetworkVarNames "bool m_bPlayingIdle"
@@ -20,9 +20,9 @@ namespace source2sdk::client
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnPlayingIdleChanged"
-		bool m_bPlayingIdle; // 0x13e0		
+		bool m_bPlayingIdle; // 0x1490		
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnShieldActiveChanged"
-		bool m_bShieldActive; // 0x13e1		
+		bool m_bShieldActive; // 0x1491		
 	};
 };

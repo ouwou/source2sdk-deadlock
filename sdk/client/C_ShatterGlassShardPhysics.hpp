@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xca8
+	// Size: 0xd58
 	// Has VTable
 	// 
 	// MNetworkExcludeByName "m_hModel"
@@ -19,9 +19,9 @@ namespace source2sdk::client
 	class C_ShatterGlassShardPhysics : public client::C_PhysicsProp
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0c20[0x8]; // 0xc20
+		[[maybe_unused]] uint8_t __pad0cd0[0x8]; // 0xcd0
 	public:
 		// MNetworkEnable
-		client::shard_model_desc_t m_ShardDesc; // 0xc28		
+		client::shard_model_desc_t m_ShardDesc; // 0xcd8		
 	};
 };

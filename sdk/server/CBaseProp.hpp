@@ -10,21 +10,21 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x9b8
+	// Size: 0x9e0
 	// Has VTable
 	class CBaseProp : public server::CBaseAnimGraph
 	{
 	public:
-		bool m_bModelOverrodeBlockLOS; // 0x978		
+		bool m_bModelOverrodeBlockLOS; // 0x9a0		
 	private:
-		[[maybe_unused]] uint8_t __pad0979[0x3]; // 0x979
+		[[maybe_unused]] uint8_t __pad09a1[0x3]; // 0x9a1
 	public:
-		int32_t m_iShapeType; // 0x97c		
-		bool m_bConformToCollisionBounds; // 0x980		
+		int32_t m_iShapeType; // 0x9a4		
+		bool m_bConformToCollisionBounds; // 0x9a8		
 	private:
-		[[maybe_unused]] uint8_t __pad0981[0x3]; // 0x981
+		[[maybe_unused]] uint8_t __pad09a9[0x3]; // 0x9a9
 	public:
-		matrix3x4_t m_mPreferredCatchTransform; // 0x984		
+		matrix3x4_t m_mPreferredCatchTransform; // 0x9ac		
 		
 		// Datamap fields:
 		// void health; // 0x7fffffff

@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb58
+	// Size: 0xb80
 	// Has VTable
 	// 
 	// MNetworkVarNames "uint32 m_boneIndexAttached"
@@ -21,19 +21,19 @@ namespace source2sdk::server
 	{
 	public:
 		// MNetworkEnable
-		uint32_t m_boneIndexAttached; // 0xb18		
+		uint32_t m_boneIndexAttached; // 0xb40		
 		// MNetworkEnable
-		uint32_t m_ragdollAttachedObjectIndex; // 0xb1c		
-		// MNetworkEnable
-		// MNetworkEncoder "coord"
-		Vector m_attachmentPointBoneSpace; // 0xb20		
+		uint32_t m_ragdollAttachedObjectIndex; // 0xb44		
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
-		Vector m_attachmentPointRagdollSpace; // 0xb2c		
-		bool m_bShouldDetach; // 0xb38		
+		Vector m_attachmentPointBoneSpace; // 0xb48		
+		// MNetworkEnable
+		// MNetworkEncoder "coord"
+		Vector m_attachmentPointRagdollSpace; // 0xb54		
+		bool m_bShouldDetach; // 0xb60		
 	private:
-		[[maybe_unused]] uint8_t __pad0b39[0xf]; // 0xb39
+		[[maybe_unused]] uint8_t __pad0b61[0xf]; // 0xb61
 	public:
-		bool m_bShouldDeleteAttachedActivationRecord; // 0xb48		
+		bool m_bShouldDeleteAttachedActivationRecord; // 0xb70		
 	};
 };

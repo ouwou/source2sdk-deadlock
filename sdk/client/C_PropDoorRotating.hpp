@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xd70
+	// Size: 0xe20
 	// Has VTable
 	class C_PropDoorRotating : public client::C_BasePropDoor
 	{

@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1608
+	// Size: 0x1630
 	// Has VTable
 	class CNPC_PestilenceDrone : public server::CAI_CitadelNPC
 	{

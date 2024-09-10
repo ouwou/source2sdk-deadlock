@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa0
+	// Size: 0xb50
 	// Has VTable
 	class C_Citadel_RestorativeGooCube : public client::CCitadelAnimatingModelEntity
 	{

@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xaf8
+	// Size: 0xb20
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iHealth"
@@ -24,6 +24,6 @@ namespace source2sdk::server
 		// MNetworkUserGroup "CCitadelRegenComponent"
 		// MNetworkAlias "CCitadelRegenComponent"
 		// MNetworkTypeAlias "CCitadelRegenComponent"
-		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x978		
+		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x9a0		
 	};
 };

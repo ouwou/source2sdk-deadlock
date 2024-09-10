@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x9a8
+	// Size: 0x9d0
 	// Has VTable
 	class CCitadel_BreakablePropModifierPickup : public server::CCitadel_BreakablePropPickup
 	{

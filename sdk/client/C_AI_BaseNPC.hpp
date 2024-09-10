@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xcb8
+	// Size: 0xd68
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_lifeState"
@@ -23,10 +23,10 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		client::NPC_STATE m_NPCState; // 0xcb0		
+		client::NPC_STATE m_NPCState; // 0xd60		
 		// MNetworkEnable
-		bool m_bFadeCorpse; // 0xcb4		
+		bool m_bFadeCorpse; // 0xd64		
 		// MNetworkEnable
-		bool m_bImportantRagdoll; // 0xcb5		
+		bool m_bImportantRagdoll; // 0xd65		
 	};
 };

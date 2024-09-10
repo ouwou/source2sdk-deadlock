@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x16f0
+	// Size: 0x1718
 	// Has VTable
 	class CCitadelPlayerBotNPCBrain : public server::CAI_CitadelNPC
 	{

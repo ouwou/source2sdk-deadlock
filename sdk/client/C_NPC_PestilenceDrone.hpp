@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x13e0
+	// Size: 0x1490
 	// Has VTable
 	class C_NPC_PestilenceDrone : public client::C_AI_CitadelNPC
 	{

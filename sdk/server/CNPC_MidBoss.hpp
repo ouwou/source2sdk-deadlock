@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x16a8
+	// Size: 0x16d0
 	// Has VTable
 	class CNPC_MidBoss : public server::CAI_CitadelNPC
 	{

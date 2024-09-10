@@ -23,7 +23,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x15a8
+	// Size: 0x15d0
 	// Has VTable
 	// Is Abstract
 	// 
@@ -47,67 +47,67 @@ namespace source2sdk::server
 	class CAI_CitadelNPC : public server::CAI_BaseNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad1050[0x18]; // 0x1050
+		[[maybe_unused]] uint8_t __pad1078[0x18]; // 0x1078
 	public:
-		Vector m_vLastGroundEntityCheckPos; // 0x1068		
+		Vector m_vLastGroundEntityCheckPos; // 0x1090		
 	private:
-		[[maybe_unused]] uint8_t __pad1074[0x4]; // 0x1074
+		[[maybe_unused]] uint8_t __pad109c[0x4]; // 0x109c
 	public:
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelAbilityComponent"
 		// MNetworkAlias "CCitadelAbilityComponent"
 		// MNetworkTypeAlias "CCitadelAbilityComponent"
-		server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1078		
+		server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x10a0		
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelRegenComponent"
 		// MNetworkAlias "CCitadelRegenComponent"
 		// MNetworkTypeAlias "CCitadelRegenComponent"
-		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x1280		
+		server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x12a8		
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelMinimapComponent"
 		// MNetworkAlias "CCitadelMinimapComponent"
 		// MNetworkTypeAlias "CCitadelMinimapComponent"
-		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1400		
+		server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1428		
 	private:
-		[[maybe_unused]] uint8_t __pad1418[0x4]; // 0x1418
+		[[maybe_unused]] uint8_t __pad1440[0x4]; // 0x1440
 	public:
-		int32_t m_iBaseGoldReward; // 0x141c		
-		int32_t m_iSkillShotReward; // 0x1420		
+		int32_t m_iBaseGoldReward; // 0x1444		
+		int32_t m_iSkillShotReward; // 0x1448		
 	private:
-		[[maybe_unused]] uint8_t __pad1424[0x30]; // 0x1424
+		[[maybe_unused]] uint8_t __pad144c[0x30]; // 0x144c
 	public:
-		CHandle<server::CCitadelBaseAbility> m_hAbilityOwner; // 0x1454		
+		CHandle<server::CCitadelBaseAbility> m_hAbilityOwner; // 0x147c		
 	private:
-		[[maybe_unused]] uint8_t __pad1458[0x48]; // 0x1458
-	public:
-		// MNetworkEnable
-		CUtlVectorEmbeddedNetworkVar<server::WeakPoint_t> m_vecWeakPoints; // 0x14a0		
-		// MNetworkEnable
-		bool m_bMinion; // 0x14f0		
-	private:
-		[[maybe_unused]] uint8_t __pad14f1[0x3]; // 0x14f1
+		[[maybe_unused]] uint8_t __pad1480[0x48]; // 0x1480
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hLookTarget; // 0x14f4		
+		CUtlVectorEmbeddedNetworkVar<server::WeakPoint_t> m_vecWeakPoints; // 0x14c8		
+		// MNetworkEnable
+		bool m_bMinion; // 0x1518		
 	private:
-		[[maybe_unused]] uint8_t __pad14f8[0x10]; // 0x14f8
-	public:
-		int32_t m_iCoverGroupID; // 0x1508		
-	private:
-		[[maybe_unused]] uint8_t __pad150c[0x5c]; // 0x150c
-	public:
-		Vector m_vecSpawnOrigin; // 0x1568		
-	private:
-		[[maybe_unused]] uint8_t __pad1574[0x18]; // 0x1574
+		[[maybe_unused]] uint8_t __pad1519[0x3]; // 0x1519
 	public:
 		// MNetworkEnable
-		bool m_bBeamActive; // 0x158c		
+		CHandle<server::CBaseEntity> m_hLookTarget; // 0x151c		
 	private:
-		[[maybe_unused]] uint8_t __pad158d[0x3]; // 0x158d
+		[[maybe_unused]] uint8_t __pad1520[0x10]; // 0x1520
+	public:
+		int32_t m_iCoverGroupID; // 0x1530		
+	private:
+		[[maybe_unused]] uint8_t __pad1534[0x5c]; // 0x1534
+	public:
+		Vector m_vecSpawnOrigin; // 0x1590		
+	private:
+		[[maybe_unused]] uint8_t __pad159c[0x18]; // 0x159c
+	public:
+		// MNetworkEnable
+		bool m_bBeamActive; // 0x15b4		
+	private:
+		[[maybe_unused]] uint8_t __pad15b5[0x3]; // 0x15b5
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
-		Vector m_vEyeBeamTarget; // 0x1590		
+		Vector m_vEyeBeamTarget; // 0x15b8		
 		
 		// Static fields:
 		static client::ConditionId_t &Get_COND_RECEIVED_AGGRO(){return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_CitadelNPC")->GetStaticFields()[0]->m_pInstance);};

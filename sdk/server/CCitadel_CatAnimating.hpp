@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb00
+	// Size: 0xb28
 	// Has VTable
 	class CCitadel_CatAnimating : public server::CCitadelAnimatingModelEntity
 	{

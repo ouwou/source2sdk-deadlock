@@ -11,15 +11,15 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xab8
+	// Size: 0xb68
 	// Has VTable
 	class CCitadel_GrandFinaleStage : public client::CBaseAnimGraph
 	{
 	public:
-		Vector m_vStartPos; // 0xa90		
-		Vector m_vEndPos; // 0xa9c		
-		entity2::GameTime_t m_flStartEmitTime; // 0xaa8		
-		entity2::GameTime_t m_flEndEmitTime; // 0xaac		
-		int32_t m_nTouchCount; // 0xab0		
+		Vector m_vStartPos; // 0xb40		
+		Vector m_vEndPos; // 0xb4c		
+		entity2::GameTime_t m_flStartEmitTime; // 0xb58		
+		entity2::GameTime_t m_flEndEmitTime; // 0xb5c		
+		int32_t m_nTouchCount; // 0xb60		
 	};
 };

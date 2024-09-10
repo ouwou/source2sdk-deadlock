@@ -17,7 +17,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1698
+	// Size: 0x16c0
 	// Has VTable
 	// 
 	// MNetworkVarNames "int m_iLane"
@@ -29,32 +29,32 @@ namespace source2sdk::server
 	class CNPC_Boss_Tier2 : public server::CAI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad15a8[0x8]; // 0x15a8
+		[[maybe_unused]] uint8_t __pad15d0[0x8]; // 0x15d0
 	public:
-		Vector m_vecStartingPosition; // 0x15b0		
+		Vector m_vecStartingPosition; // 0x15d8		
 		// MNetworkEnable
-		int32_t m_iLane; // 0x15bc		
+		int32_t m_iLane; // 0x15e4		
 	private:
-		[[maybe_unused]] uint8_t __pad15c0[0x8]; // 0x15c0
+		[[maybe_unused]] uint8_t __pad15e8[0x8]; // 0x15e8
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hTargetedEnemy; // 0x15c8		
+		CHandle<server::CBaseEntity> m_hTargetedEnemy; // 0x15f0		
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutStart; // 0x15cc		
+		entity2::GameTime_t m_flFadeOutStart; // 0x15f4		
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutEnd; // 0x15d0		
+		entity2::GameTime_t m_flFadeOutEnd; // 0x15f8		
 	private:
-		[[maybe_unused]] uint8_t __pad15d4[0x24]; // 0x15d4
+		[[maybe_unused]] uint8_t __pad15fc[0x24]; // 0x15fc
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
-		Vector m_vecElectricBeamLookTarget; // 0x15f8		
+		Vector m_vecElectricBeamLookTarget; // 0x1620		
 		// MNetworkEnable
-		int32_t m_nElectricBeamCasts; // 0x1604		
+		int32_t m_nElectricBeamCasts; // 0x162c		
 	private:
-		[[maybe_unused]] uint8_t __pad1608[0x28]; // 0x1608
+		[[maybe_unused]] uint8_t __pad1630[0x28]; // 0x1630
 	public:
-		entity2::CEntityIOOutput m_eventOnBossKilled; // 0x1630		
+		entity2::CEntityIOOutput m_eventOnBossKilled; // 0x1658		
 		
 		// Static fields:
 		static client::ConditionId_t &Get_COND_STAGGERED(){return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->GetStaticFields()[0]->m_pInstance);};
@@ -91,6 +91,6 @@ namespace source2sdk::server
 		static CUtlSymbolLarge &Get_TASK_T2BOSS_STOMP_ACTIVATE(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->GetStaticFields()[31]->m_pInstance);};
 		
 		// Datamap fields:
-		// CUtlSymbolLarge m_strBossEntityName; // 0x1660
+		// CUtlSymbolLarge m_strBossEntityName; // 0x1688
 	};
 };

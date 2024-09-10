@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x9c0
+	// Size: 0x9e8
 	// Has VTable
 	class CInfoTrooperNeutralMovementNode : public server::CBaseProp
 	{

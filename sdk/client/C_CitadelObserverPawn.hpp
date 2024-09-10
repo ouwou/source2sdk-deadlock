@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xe80
+	// Size: 0xf30
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iMaxHealth"
@@ -30,8 +30,8 @@ namespace source2sdk::client
 	{
 	public:
 		// Datamap fields:
-		// CCitadelPlayer_ObserverServices m_pObserverServices; // 0xcc8
-		// CCitadelPlayer_CameraServices m_pCameraServices; // 0xce8
-		// CCitadelObserver_MovementServices m_pMovementServices; // 0xcf0
+		// CCitadelPlayer_ObserverServices m_pObserverServices; // 0xd78
+		// CCitadelPlayer_CameraServices m_pCameraServices; // 0xd98
+		// CCitadelObserver_MovementServices m_pMovementServices; // 0xda0
 	};
 };

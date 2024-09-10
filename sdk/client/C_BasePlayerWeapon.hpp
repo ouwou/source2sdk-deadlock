@@ -11,7 +11,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xac8
+	// Size: 0xb78
 	// Has VTable
 	// 
 	// MNetworkExcludeByName "m_flexWeight"
@@ -33,26 +33,26 @@ namespace source2sdk::client
 	public:
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xa90		
+		entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xb40		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		float m_flNextPrimaryAttackTickRatio; // 0xa94		
+		float m_flNextPrimaryAttackTickRatio; // 0xb44		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xa98		
+		entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xb48		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		float m_flNextSecondaryAttackTickRatio; // 0xa9c		
+		float m_flNextSecondaryAttackTickRatio; // 0xb4c		
 		// MNetworkEnable
 		// MNetworkSerializer "minusone"
 		// MNetworkPriority "32"
-		int32_t m_iClip1; // 0xaa0		
+		int32_t m_iClip1; // 0xb50		
 		// MNetworkEnable
 		// MNetworkSerializer "minusone"
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		int32_t m_iClip2; // 0xaa4		
+		int32_t m_iClip2; // 0xb54		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		int32_t m_pReserveAmmo[2]; // 0xaa8		
+		int32_t m_pReserveAmmo[2]; // 0xb58		
 	};
 };

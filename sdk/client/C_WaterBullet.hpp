@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xa90
+	// Size: 0xb40
 	// Has VTable
 	class C_WaterBullet : public client::CBaseAnimGraph
 	{

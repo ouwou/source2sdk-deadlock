@@ -13,29 +13,29 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xa08
+	// Size: 0xa30
 	// Has VTable
 	class CPhysMagnet : public server::CBaseAnimGraph
 	{
 	public:
-		entity2::CEntityIOOutput m_OnMagnetAttach; // 0x978		
-		entity2::CEntityIOOutput m_OnMagnetDetach; // 0x9a0		
-		float m_massScale; // 0x9c8		
-		float m_forceLimit; // 0x9cc		
-		float m_torqueLimit; // 0x9d0		
+		entity2::CEntityIOOutput m_OnMagnetAttach; // 0x9a0		
+		entity2::CEntityIOOutput m_OnMagnetDetach; // 0x9c8		
+		float m_massScale; // 0x9f0		
+		float m_forceLimit; // 0x9f4		
+		float m_torqueLimit; // 0x9f8		
 	private:
-		[[maybe_unused]] uint8_t __pad09d4[0x4]; // 0x9d4
+		[[maybe_unused]] uint8_t __pad09fc[0x4]; // 0x9fc
 	public:
-		CUtlVector<server::magnetted_objects_t> m_MagnettedEntities; // 0x9d8		
-		bool m_bActive; // 0x9f0		
-		bool m_bHasHitSomething; // 0x9f1		
+		CUtlVector<server::magnetted_objects_t> m_MagnettedEntities; // 0xa00		
+		bool m_bActive; // 0xa18		
+		bool m_bHasHitSomething; // 0xa19		
 	private:
-		[[maybe_unused]] uint8_t __pad09f2[0x2]; // 0x9f2
+		[[maybe_unused]] uint8_t __pad0a1a[0x2]; // 0xa1a
 	public:
-		float m_flTotalMass; // 0x9f4		
-		float m_flRadius; // 0x9f8		
-		entity2::GameTime_t m_flNextSuckTime; // 0x9fc		
-		int32_t m_iMaxObjectsAttached; // 0xa00		
+		float m_flTotalMass; // 0xa1c		
+		float m_flRadius; // 0xa20		
+		entity2::GameTime_t m_flNextSuckTime; // 0xa24		
+		int32_t m_iMaxObjectsAttached; // 0xa28		
 		
 		// Datamap fields:
 		// void InputToggle; // 0x0

@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xd30
+	// Size: 0xd58
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -22,14 +22,14 @@ namespace source2sdk::server
 		// MNetworkUserGroup "CCitadelAbilityComponent"
 		// MNetworkAlias "CCitadelAbilityComponent"
 		// MNetworkTypeAlias "CCitadelAbilityComponent"
-		server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb10		
+		server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb38		
 	private:
-		[[maybe_unused]] uint8_t __pad0d18[0x4]; // 0xd18
+		[[maybe_unused]] uint8_t __pad0d40[0x4]; // 0xd40
 	public:
-		float m_flDeployTime; // 0xd1c		
+		float m_flDeployTime; // 0xd44		
 		
 		// Datamap fields:
-		// float m_flLifeTime; // 0xd24
-		// void m_flSpawnTime; // 0xd20
+		// float m_flLifeTime; // 0xd4c
+		// void m_flSpawnTime; // 0xd48
 	};
 };

@@ -11,11 +11,11 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xa58
+	// Size: 0xa80
 	// Has VTable
 	class CScriptItem : public server::CItem
 	{
 	public:
-		client::MoveType_t m_MoveTypeOverride; // 0xa50		
+		client::MoveType_t m_MoveTypeOverride; // 0xa78		
 	};
 };

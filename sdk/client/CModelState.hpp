@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x230
+	// Size: 0x260
 	// Has VTable
 	// 
 	// MNetworkVarNames "HModelStrong m_hModel"
@@ -20,36 +20,36 @@ namespace source2sdk::client
 	class CModelState
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0000[0xa0]; // 0x0
+		[[maybe_unused]] uint8_t __pad0000[0xd0]; // 0x0
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "skeletonModelChanged"
-		CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0xa0		
+		CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel; // 0xd0		
 		// MNetworkDisable
-		CUtlSymbolLarge m_ModelName; // 0xa8		
+		CUtlSymbolLarge m_ModelName; // 0xd8		
 	private:
-		[[maybe_unused]] uint8_t __pad00b0[0x38]; // 0xb0
+		[[maybe_unused]] uint8_t __pad00e0[0x38]; // 0xe0
 	public:
 		// MNetworkEnable
-		bool m_bClientClothCreationSuppressed; // 0xe8		
+		bool m_bClientClothCreationSuppressed; // 0x118		
 	private:
-		[[maybe_unused]] uint8_t __pad00e9[0xaf]; // 0xe9
+		[[maybe_unused]] uint8_t __pad0119[0xb7]; // 0x119
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "skeletonMeshGroupMaskChanged"
-		uint64_t m_MeshGroupMask; // 0x198		
+		uint64_t m_MeshGroupMask; // 0x1d0		
 	private:
-		[[maybe_unused]] uint8_t __pad01a0[0x7a]; // 0x1a0
+		[[maybe_unused]] uint8_t __pad01d8[0x7a]; // 0x1d8
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "skeletonMotionTypeChanged"
-		int8_t m_nIdealMotionType; // 0x21a		
+		int8_t m_nIdealMotionType; // 0x252		
 		// MNetworkDisable
-		int8_t m_nForceLOD; // 0x21b		
+		int8_t m_nForceLOD; // 0x253		
 		// MNetworkDisable
-		int8_t m_nClothUpdateFlags; // 0x21c		
+		int8_t m_nClothUpdateFlags; // 0x254		
 		
 		// Datamap fields:
-		// void m_pVPhysicsAggregate; // 0xe0
+		// void m_pVPhysicsAggregate; // 0x110
 	};
 };

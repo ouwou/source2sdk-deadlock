@@ -10,14 +10,14 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xce8
+	// Size: 0xd10
 	// Has VTable
 	class CItemParachute : public server::CPhysicsProp
 	{
 	public:
 		// Datamap fields:
-		// CHandle< CBaseEntity > m_hAttachedEntity; // 0xcd0
-		// int32_t m_eObjectivePosition; // 0xce4
+		// CHandle< CBaseEntity > m_hAttachedEntity; // 0xcf8
+		// int32_t m_eObjectivePosition; // 0xd0c
 		// No schema binary for binding
 	};
 };

@@ -12,7 +12,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1428
+	// Size: 0x14d8
 	// Has VTable
 	// 
 	// MNetworkVarNames "int m_iLane"
@@ -23,30 +23,30 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		int32_t m_iLane; // 0x13e0		
+		int32_t m_iLane; // 0x1490		
 	private:
-		[[maybe_unused]] uint8_t __pad13e4[0x4]; // 0x13e4
+		[[maybe_unused]] uint8_t __pad1494[0x4]; // 0x1494
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "qangle"
 		// MNetworkChangeCallback "OnT3Targeting1Changed"
-		QAngle m_angTargeting1; // 0x13e8		
+		QAngle m_angTargeting1; // 0x1498		
 	private:
-		[[maybe_unused]] uint8_t __pad13f4[0xc]; // 0x13f4
+		[[maybe_unused]] uint8_t __pad14a4[0xc]; // 0x14a4
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "qangle"
 		// MNetworkChangeCallback "OnT3Targeting2Changed"
-		QAngle m_angTargeting2; // 0x1400		
+		QAngle m_angTargeting2; // 0x14b0		
 	private:
-		[[maybe_unused]] uint8_t __pad140c[0xc]; // 0x140c
+		[[maybe_unused]] uint8_t __pad14bc[0xc]; // 0x14bc
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnT3ElectricBeamCastsChanged"
-		int32_t m_nElectricBeamCasts; // 0x1418		
+		int32_t m_nElectricBeamCasts; // 0x14c8		
 		// MNetworkEnable
-		client::ETier3State_t m_eAliveState; // 0x141c		
+		client::ETier3State_t m_eAliveState; // 0x14cc		
 		// MNetworkEnable
-		client::ETier3Phase_t m_ePhase; // 0x1420		
+		client::ETier3Phase_t m_ePhase; // 0x14d0		
 	};
 };

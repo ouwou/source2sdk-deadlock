@@ -14,7 +14,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1400
+	// Size: 0x14b0
 	// Has VTable
 	// 
 	// MNetworkVarNames "float m_flForwardSpeed"
@@ -22,11 +22,11 @@ namespace source2sdk::client
 	class C_NPC_NanoRollermine : public client::C_AI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad13e0[0x18]; // 0x13e0
+		[[maybe_unused]] uint8_t __pad1490[0x18]; // 0x1490
 	public:
 		// MNetworkEnable
-		float m_flForwardSpeed; // 0x13f8		
+		float m_flForwardSpeed; // 0x14a8		
 		// MNetworkEnable
-		CHandle<client::C_BaseEntity> m_hOwnerPawn; // 0x13fc		
+		CHandle<client::C_BaseEntity> m_hOwnerPawn; // 0x14ac		
 	};
 };

@@ -13,7 +13,7 @@ namespace source2sdk::resourcesystem
 	// Has Trivial Constructor
 	// Has Trivial Destructor
 	// 
-	// MResourceTypeForInfoType "vgcxdataàbJ"
+	// MResourceTypeForInfoType "vgcxdataàb"
 	class InfoForResourceTypeCGcExportableExternalData
 	{
 	private:

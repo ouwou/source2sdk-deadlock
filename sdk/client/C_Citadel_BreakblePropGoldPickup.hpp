@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xab0
+	// Size: 0xb60
 	// Has VTable
 	// 
 	// MNetworkVarNames "int m_iGoldReward"
@@ -18,6 +18,6 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		int32_t m_iGoldReward; // 0xaa8		
+		int32_t m_iGoldReward; // 0xb58		
 	};
 };

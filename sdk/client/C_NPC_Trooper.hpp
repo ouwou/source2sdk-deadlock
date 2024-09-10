@@ -14,7 +14,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1428
+	// Size: 0x14d8
 	// Has VTable
 	// 
 	// MNetworkVarNames "int m_iLane"
@@ -24,15 +24,15 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		int32_t m_iLane; // 0x13e0		
+		int32_t m_iLane; // 0x1490		
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnTargetedEnemyChanged"
-		CHandle<client::C_BaseEntity> m_hTargetedEnemy; // 0x13e4		
+		CHandle<client::C_BaseEntity> m_hTargetedEnemy; // 0x1494		
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnHealingChargeChanged"
 		// MNetworkBitCount "8"
 		// MNetworkMinValue "0.000000"
 		// MNetworkMaxValue "1.000000"
-		float m_flHealingChargeParticlePct; // 0x13e8		
+		float m_flHealingChargeParticlePct; // 0x1498		
 	};
 };

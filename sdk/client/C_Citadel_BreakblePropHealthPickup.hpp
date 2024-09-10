@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa8
+	// Size: 0xb58
 	// Has VTable
 	class C_Citadel_BreakblePropHealthPickup : public client::C_Citadel_BreakblePropPickup
 	{

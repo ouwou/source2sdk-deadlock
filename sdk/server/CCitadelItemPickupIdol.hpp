@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x5bf8
+	// Size: 0x5c20
 	// Has VTable
 	class CCitadelItemPickupIdol : public server::CCitadelItemPickup
 	{

@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xab0
+	// Size: 0xb60
 	// Has VTable
 	class C_ItemFlare : public client::CBaseAnimGraph
 	{

@@ -15,7 +15,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xae0
+	// Size: 0xb90
 	// Has VTable
 	// 
 	// MNetworkVarNames "bool m_bActive"
@@ -31,39 +31,39 @@ namespace source2sdk::client
 	class C_PointCommentaryNode : public client::CBaseAnimGraph
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0a90[0x8]; // 0xa90
+		[[maybe_unused]] uint8_t __pad0b40[0x8]; // 0xb40
 	public:
 		// MNetworkEnable
-		bool m_bActive; // 0xa98		
-		bool m_bWasActive; // 0xa99		
+		bool m_bActive; // 0xb48		
+		bool m_bWasActive; // 0xb49		
 	private:
-		[[maybe_unused]] uint8_t __pad0a9a[0x2]; // 0xa9a
+		[[maybe_unused]] uint8_t __pad0b4a[0x2]; // 0xb4a
 	public:
-		entity2::GameTime_t m_flEndTime; // 0xa9c		
+		entity2::GameTime_t m_flEndTime; // 0xb4c		
 		// MNetworkEnable
-		entity2::GameTime_t m_flStartTime; // 0xaa0		
+		entity2::GameTime_t m_flStartTime; // 0xb50		
 		// MNetworkEnable
-		float m_flStartTimeInCommentary; // 0xaa4		
+		float m_flStartTimeInCommentary; // 0xb54		
 		// MNetworkEnable
-		CUtlSymbolLarge m_iszCommentaryFile; // 0xaa8		
+		CUtlSymbolLarge m_iszCommentaryFile; // 0xb58		
 		// MNetworkEnable
-		CUtlSymbolLarge m_iszTitle; // 0xab0		
+		CUtlSymbolLarge m_iszTitle; // 0xb60		
 		// MNetworkEnable
-		CUtlSymbolLarge m_iszSpeakers; // 0xab8		
+		CUtlSymbolLarge m_iszSpeakers; // 0xb68		
 		// MNetworkEnable
-		int32_t m_iNodeNumber; // 0xac0		
+		int32_t m_iNodeNumber; // 0xb70		
 		// MNetworkEnable
-		int32_t m_iNodeNumberMax; // 0xac4		
+		int32_t m_iNodeNumberMax; // 0xb74		
 		// MNetworkEnable
-		bool m_bListenedTo; // 0xac8		
+		bool m_bListenedTo; // 0xb78		
 	private:
-		[[maybe_unused]] uint8_t __pad0ac9[0xf]; // 0xac9
+		[[maybe_unused]] uint8_t __pad0b79[0xf]; // 0xb79
 	public:
 		// MNetworkEnable
-		CHandle<client::C_BaseEntity> m_hViewPosition; // 0xad8		
-		bool m_bRestartAfterRestore; // 0xadc		
+		CHandle<client::C_BaseEntity> m_hViewPosition; // 0xb88		
+		bool m_bRestartAfterRestore; // 0xb8c		
 		
 		// Datamap fields:
-		// void m_sndCommentary; // 0xad0
+		// void m_sndCommentary; // 0xb80
 	};
 };

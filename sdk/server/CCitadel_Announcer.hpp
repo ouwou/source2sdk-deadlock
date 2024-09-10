@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xab0
+	// Size: 0xad8
 	// Has VTable
 	class CCitadel_Announcer : public server::CCitadel_Announcer_Base
 	{

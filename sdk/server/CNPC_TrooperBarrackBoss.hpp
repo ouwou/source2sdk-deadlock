@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1890
+	// Size: 0x18f0
 	// Has VTable
 	class CNPC_TrooperBarrackBoss : public server::CNPC_TrooperBoss
 	{

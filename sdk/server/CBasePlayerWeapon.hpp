@@ -12,7 +12,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x9c0
+	// Size: 0x9e8
 	// Has VTable
 	// 
 	// MNetworkExcludeByName "m_flexWeight"
@@ -34,28 +34,28 @@ namespace source2sdk::server
 	public:
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		entity2::GameTick_t m_nNextPrimaryAttackTick; // 0x978		
+		entity2::GameTick_t m_nNextPrimaryAttackTick; // 0x9a0		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		float m_flNextPrimaryAttackTickRatio; // 0x97c		
+		float m_flNextPrimaryAttackTickRatio; // 0x9a4		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		entity2::GameTick_t m_nNextSecondaryAttackTick; // 0x980		
+		entity2::GameTick_t m_nNextSecondaryAttackTick; // 0x9a8		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		float m_flNextSecondaryAttackTickRatio; // 0x984		
+		float m_flNextSecondaryAttackTickRatio; // 0x9ac		
 		// MNetworkEnable
 		// MNetworkSerializer "minusone"
 		// MNetworkPriority "32"
-		int32_t m_iClip1; // 0x988		
+		int32_t m_iClip1; // 0x9b0		
 		// MNetworkEnable
 		// MNetworkSerializer "minusone"
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		int32_t m_iClip2; // 0x98c		
+		int32_t m_iClip2; // 0x9b4		
 		// MNetworkEnable
 		// MNetworkUserGroup "LocalWeaponExclusive"
-		int32_t m_pReserveAmmo[2]; // 0x990		
-		entity2::CEntityIOOutput m_OnPlayerUse; // 0x998		
+		int32_t m_pReserveAmmo[2]; // 0x9b8		
+		entity2::CEntityIOOutput m_OnPlayerUse; // 0x9c0		
 		
 		// Datamap fields:
 		// int32_t InputSetClipPrimary; // 0x0

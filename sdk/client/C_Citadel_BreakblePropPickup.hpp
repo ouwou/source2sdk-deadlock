@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa8
+	// Size: 0xb58
 	// Has VTable
 	// 
 	// MNetworkVarNames "bool m_bActive"
@@ -21,13 +21,13 @@ namespace source2sdk::client
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnActiveChanged"
-		bool m_bActive; // 0xa90		
+		bool m_bActive; // 0xb40		
 	private:
-		[[maybe_unused]] uint8_t __pad0a91[0x7]; // 0xa91
+		[[maybe_unused]] uint8_t __pad0b41[0x7]; // 0xb41
 	public:
 		// MNetworkEnable
-		CUtlString m_sPickupName; // 0xa98		
+		CUtlString m_sPickupName; // 0xb48		
 		// MNetworkEnable
-		int32_t m_nNameOffset; // 0xaa0		
+		int32_t m_nNameOffset; // 0xb50		
 	};
 };

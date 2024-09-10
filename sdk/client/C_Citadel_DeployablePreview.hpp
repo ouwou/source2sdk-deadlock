@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xa98
+	// Size: 0xb48
 	// Has VTable
 	class C_Citadel_DeployablePreview : public client::CBaseAnimGraph
 	{

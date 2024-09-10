@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xcb0
+	// Size: 0xd60
 	// Has VTable
 	class C_NetTestBaseCombatCharacter : public client::C_BaseCombatCharacter
 	{

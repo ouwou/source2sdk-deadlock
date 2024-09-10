@@ -14,7 +14,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xaa0
+	// Size: 0xb50
 	// Has VTable
 	// 
 	// MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
@@ -23,8 +23,8 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		CHandle<client::C_CitadelBaseAbility> m_hAbility; // 0xa98		
+		CHandle<client::C_CitadelBaseAbility> m_hAbility; // 0xb48		
 		// MNetworkEnable
-		bool m_bFloating; // 0xa9c		
+		bool m_bFloating; // 0xb4c		
 	};
 };

@@ -16,7 +16,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x13e0
+	// Size: 0x1490
 	// Has VTable
 	// 
 	// MNetworkIncludeByName "m_iMaxHealth"
@@ -37,38 +37,38 @@ namespace source2sdk::client
 	class C_AI_CitadelNPC : public client::C_AI_BaseNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0cb8[0x1c]; // 0xcb8
+		[[maybe_unused]] uint8_t __pad0d68[0x1c]; // 0xd68
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnEyeBeamActiveChanged"
-		bool m_bBeamActive; // 0xcd4		
+		bool m_bBeamActive; // 0xd84		
 	private:
-		[[maybe_unused]] uint8_t __pad0cd5[0x3]; // 0xcd5
+		[[maybe_unused]] uint8_t __pad0d85[0x3]; // 0xd85
 	public:
 		// MNetworkEnable
 		// MNetworkEncoder "coord"
 		// MNetworkChangeCallback "OnEyeBeamTargetChanged"
-		Vector m_vEyeBeamTarget; // 0xcd8		
+		Vector m_vEyeBeamTarget; // 0xd88		
 	private:
-		[[maybe_unused]] uint8_t __pad0ce4[0x4b4]; // 0xce4
+		[[maybe_unused]] uint8_t __pad0d94[0x4b4]; // 0xd94
 	public:
-		int32_t m_nPlayerTeamEvent; // 0x1198		
+		int32_t m_nPlayerTeamEvent; // 0x1248		
 	private:
-		[[maybe_unused]] uint8_t __pad119c[0x4c]; // 0x119c
-	public:
-		// MNetworkEnable
-		C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints; // 0x11e8		
-		// MNetworkEnable
-		bool m_bMinion; // 0x1238		
-	private:
-		[[maybe_unused]] uint8_t __pad1239[0x3]; // 0x1239
+		[[maybe_unused]] uint8_t __pad124c[0x4c]; // 0x124c
 	public:
 		// MNetworkEnable
-		CHandle<client::C_BaseEntity> m_hLookTarget; // 0x123c		
+		C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints; // 0x1298		
+		// MNetworkEnable
+		bool m_bMinion; // 0x12e8		
+	private:
+		[[maybe_unused]] uint8_t __pad12e9[0x3]; // 0x12e9
+	public:
+		// MNetworkEnable
+		CHandle<client::C_BaseEntity> m_hLookTarget; // 0x12ec		
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelAbilityComponent"
 		// MNetworkAlias "CCitadelAbilityComponent"
 		// MNetworkTypeAlias "CCitadelAbilityComponent"
-		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1240		
+		client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x12f0		
 	};
 };

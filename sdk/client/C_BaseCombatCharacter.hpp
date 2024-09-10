@@ -16,7 +16,7 @@ namespace source2sdk::client
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xcb0
+	// Size: 0xd60
 	// Has VTable
 	// 
 	// MNetworkExcludeByUserGroup "LocalPlayerExclusive"
@@ -26,14 +26,14 @@ namespace source2sdk::client
 	public:
 		// MNetworkEnable
 		// MNetworkChangeCallback "OnWearablesChanged"
-		C_NetworkUtlVectorBase<CHandle<client::C_EconWearable>> m_hMyWearables; // 0xc28		
-		modellib::AttachmentHandle_t m_leftFootAttachment; // 0xc40		
-		modellib::AttachmentHandle_t m_rightFootAttachment; // 0xc41		
+		C_NetworkUtlVectorBase<CHandle<client::C_EconWearable>> m_hMyWearables; // 0xcd8		
+		modellib::AttachmentHandle_t m_leftFootAttachment; // 0xcf0		
+		modellib::AttachmentHandle_t m_rightFootAttachment; // 0xcf1		
 	private:
-		[[maybe_unused]] uint8_t __pad0c42[0x2]; // 0xc42
+		[[maybe_unused]] uint8_t __pad0cf2[0x2]; // 0xcf2
 	public:
-		client::C_BaseCombatCharacter__WaterWakeMode_t m_nWaterWakeMode; // 0xc44		
-		float m_flWaterWorldZ; // 0xc48		
-		float m_flWaterNextTraceTime; // 0xc4c		
+		client::C_BaseCombatCharacter__WaterWakeMode_t m_nWaterWakeMode; // 0xcf4		
+		float m_flWaterWorldZ; // 0xcf8		
+		float m_flWaterNextTraceTime; // 0xcfc		
 	};
 };

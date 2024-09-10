@@ -27,7 +27,7 @@ namespace source2sdk::client
 		CAnimGraphParamRef<char*> m_sNavLinkTypeShared; // 0x170		
 		CAnimGraphParamOptionalRef<float> m_flPathDistanceToNavLink; // 0x198		
 		CAnimGraphParamOptionalRef<bool> m_bNavLinkIsOnPath; // 0x1b8		
-		CAnimGraphParamOptionalRef<Vector> m_vNavLinkTarget; // 0x1d8		
+		CAnimGraphParamOptionalRef<Vector> m_vecNavLinkTarget; // 0x1d8		
 		CAnimGraphParamOptionalRef<float> m_flEnemyDistance; // 0x1f8		
 		CAnimGraphParamOptionalRef<float> m_flEnemyDirection; // 0x218		
 		CAnimGraphParamOptionalRef<bool> m_bCanSeeEnemy; // 0x238		

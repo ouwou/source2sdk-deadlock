@@ -14,7 +14,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1890
+	// Size: 0x18f0
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -23,28 +23,28 @@ namespace source2sdk::server
 	class CNPC_TrooperBoss : public server::CNPC_Trooper
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad1668[0x8]; // 0x1668
+		[[maybe_unused]] uint8_t __pad16c8[0x8]; // 0x16c8
 	public:
 		// MNetworkEnable
 		// MNetworkUserGroup "CCitadelPlayerClipComponent"
 		// MNetworkAlias "CCitadelPlayerClipComponent"
 		// MNetworkTypeAlias "CCitadelPlayerClipComponent"
-		server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1670		
+		server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x16d0		
 	private:
-		[[maybe_unused]] uint8_t __pad1690[0x8]; // 0x1690
+		[[maybe_unused]] uint8_t __pad16f0[0x8]; // 0x16f0
 	public:
-		server::LaneSide_t m_LaneSide; // 0x1698		
+		server::LaneSide_t m_LaneSide; // 0x16f8		
 	private:
-		[[maybe_unused]] uint8_t __pad1699[0x1df]; // 0x1699
+		[[maybe_unused]] uint8_t __pad16f9[0x1df]; // 0x16f9
 	public:
-		CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1878		
+		CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x18d8		
 	private:
-		[[maybe_unused]] uint8_t __pad1880[0x4]; // 0x1880
+		[[maybe_unused]] uint8_t __pad18e0[0x4]; // 0x18e0
 	public:
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutStart; // 0x1884		
+		entity2::GameTime_t m_flFadeOutStart; // 0x18e4		
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutEnd; // 0x1888		
+		entity2::GameTime_t m_flFadeOutEnd; // 0x18e8		
 		
 		// Static fields:
 		static CUtlSymbolLarge &Get_SCHED_TROOPERBOSS_RANGE_ATTACK(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperBoss")->GetStaticFields()[0]->m_pInstance);};

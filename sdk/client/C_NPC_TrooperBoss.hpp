@@ -12,7 +12,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0x1460
+	// Size: 0x1510
 	// Has VTable
 	// 
 	// MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -25,13 +25,13 @@ namespace source2sdk::client
 		// MNetworkUserGroup "CCitadelPlayerClipComponent"
 		// MNetworkAlias "CCitadelPlayerClipComponent"
 		// MNetworkTypeAlias "CCitadelPlayerClipComponent"
-		client::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1428		
+		client::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x14d8		
 	private:
-		[[maybe_unused]] uint8_t __pad1448[0xc]; // 0x1448
+		[[maybe_unused]] uint8_t __pad14f8[0xc]; // 0x14f8
 	public:
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutStart; // 0x1454		
+		entity2::GameTime_t m_flFadeOutStart; // 0x1504		
 		// MNetworkEnable
-		entity2::GameTime_t m_flFadeOutEnd; // 0x1458		
+		entity2::GameTime_t m_flFadeOutEnd; // 0x1508		
 	};
 };

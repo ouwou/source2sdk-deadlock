@@ -10,7 +10,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xe68
+	// Size: 0xf18
 	// Has VTable
 	class CCitadelPlayerPawnBase : public client::C_BasePlayerPawn
 	{

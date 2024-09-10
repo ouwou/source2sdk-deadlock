@@ -12,7 +12,7 @@
 namespace source2sdk::client
 {
 	// Alignment: 8
-	// Size: 0xd30
+	// Size: 0xde0
 	// Has VTable
 	// 
 	// MEntityAllowsPortraitWorldSpawn
@@ -22,36 +22,36 @@ namespace source2sdk::client
 	{
 	public:
 		// MNetworkEnable
-		bool m_bUseHitboxesForRenderBox; // 0xc18		
+		bool m_bUseHitboxesForRenderBox; // 0xcc8		
 		// MNetworkEnable
-		bool m_bUseAnimGraph; // 0xc19		
+		bool m_bUseAnimGraph; // 0xcc9		
 	private:
-		[[maybe_unused]] uint8_t __pad0c1a[0x6]; // 0xc1a
+		[[maybe_unused]] uint8_t __pad0cca[0x6]; // 0xcca
 	public:
-		entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xc20		
-		entity2::CEntityIOOutput m_pOutputAnimOver; // 0xc48		
-		entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xc70		
-		entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xc98		
-		entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xcc0		
-		CUtlSymbolLarge m_iszIdleAnim; // 0xce8		
-		client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xcf0		
-		bool m_bRandomizeCycle; // 0xcf4		
-		bool m_bStartDisabled; // 0xcf5		
-		bool m_bFiredStartEndOutput; // 0xcf6		
-		bool m_bForceNpcExclude; // 0xcf7		
-		bool m_bCreateNonSolid; // 0xcf8		
-		bool m_bIsOverrideProp; // 0xcf9		
+		entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xcd0		
+		entity2::CEntityIOOutput m_pOutputAnimOver; // 0xcf8		
+		entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xd20		
+		entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xd48		
+		entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xd70		
+		CUtlSymbolLarge m_iszIdleAnim; // 0xd98		
+		client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xda0		
+		bool m_bRandomizeCycle; // 0xda4		
+		bool m_bStartDisabled; // 0xda5		
+		bool m_bFiredStartEndOutput; // 0xda6		
+		bool m_bForceNpcExclude; // 0xda7		
+		bool m_bCreateNonSolid; // 0xda8		
+		bool m_bIsOverrideProp; // 0xda9		
 	private:
-		[[maybe_unused]] uint8_t __pad0cfa[0x2]; // 0xcfa
+		[[maybe_unused]] uint8_t __pad0daa[0x2]; // 0xdaa
 	public:
-		int32_t m_iInitialGlowState; // 0xcfc		
-		int32_t m_nGlowRange; // 0xd00		
-		int32_t m_nGlowRangeMin; // 0xd04		
-		Color m_glowColor; // 0xd08		
-		int32_t m_nGlowTeam; // 0xd0c		
-		int32_t m_iCachedFrameCount; // 0xd10		
-		Vector m_vecCachedRenderMins; // 0xd14		
-		Vector m_vecCachedRenderMaxs; // 0xd20		
+		int32_t m_iInitialGlowState; // 0xdac		
+		int32_t m_nGlowRange; // 0xdb0		
+		int32_t m_nGlowRangeMin; // 0xdb4		
+		Color m_glowColor; // 0xdb8		
+		int32_t m_nGlowTeam; // 0xdbc		
+		int32_t m_iCachedFrameCount; // 0xdc0		
+		Vector m_vecCachedRenderMins; // 0xdc4		
+		Vector m_vecCachedRenderMaxs; // 0xdd0		
 		
 		// Datamap fields:
 		// CUtlSymbolLarge StartingAnim; // 0x7fffffff

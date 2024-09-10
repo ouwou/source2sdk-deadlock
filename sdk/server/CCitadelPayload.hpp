@@ -11,7 +11,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0xb60
+	// Size: 0xb88
 	// Has VTable
 	// 
 	// MNetworkVarNames "float m_flProgress"
@@ -19,16 +19,16 @@ namespace source2sdk::server
 	class CCitadelPayload : public server::CCitadelAnimatingModelEntity
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad0af8[0x18]; // 0xaf8
+		[[maybe_unused]] uint8_t __pad0b20[0x18]; // 0xb20
 	public:
-		CModifierHandleTyped<server::CCitadelModifierAura> m_hPusherAura; // 0xb10		
-		CModifierHandleTyped<server::CCitadelModifierAura> m_hBlockerAura; // 0xb28		
+		CModifierHandleTyped<server::CCitadelModifierAura> m_hPusherAura; // 0xb38		
+		CModifierHandleTyped<server::CCitadelModifierAura> m_hBlockerAura; // 0xb50		
 	private:
-		[[maybe_unused]] uint8_t __pad0b40[0x18]; // 0xb40
+		[[maybe_unused]] uint8_t __pad0b68[0x18]; // 0xb68
 	public:
 		// MNetworkEnable
-		float m_flProgress; // 0xb58		
+		float m_flProgress; // 0xb80		
 		// MNetworkEnable
-		int32_t m_nNumPushers; // 0xb5c		
+		int32_t m_nNumPushers; // 0xb84		
 	};
 };

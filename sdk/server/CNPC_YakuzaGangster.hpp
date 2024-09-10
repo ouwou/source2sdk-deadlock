@@ -10,7 +10,7 @@
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x15a8
+	// Size: 0x15d0
 	// Has VTable
 	class CNPC_YakuzaGangster : public server::CAI_CitadelNPC
 	{

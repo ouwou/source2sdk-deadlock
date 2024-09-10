@@ -15,7 +15,7 @@ namespace source2sdk::server
 namespace source2sdk::server
 {
 	// Alignment: 8
-	// Size: 0x1630
+	// Size: 0x1658
 	// Has VTable
 	// 
 	// MNetworkVarNames "float m_flForwardSpeed"
@@ -23,15 +23,15 @@ namespace source2sdk::server
 	class CNPC_NanoRollermine : public server::CAI_CitadelNPC
 	{
 	private:
-		[[maybe_unused]] uint8_t __pad15a8[0x38]; // 0x15a8
+		[[maybe_unused]] uint8_t __pad15d0[0x38]; // 0x15d0
 	public:
 		// MNetworkEnable
-		float m_flForwardSpeed; // 0x15e0		
+		float m_flForwardSpeed; // 0x1608		
 	private:
-		[[maybe_unused]] uint8_t __pad15e4[0x44]; // 0x15e4
+		[[maybe_unused]] uint8_t __pad160c[0x44]; // 0x160c
 	public:
 		// MNetworkEnable
-		CHandle<server::CBaseEntity> m_hOwnerPawn; // 0x1628		
+		CHandle<server::CBaseEntity> m_hOwnerPawn; // 0x1650		
 		
 		// Static fields:
 		static CUtlSymbolLarge &Get_SCHED_NANO_ROLLERMINE_ROLL_FORWARD(){return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_NanoRollermine")->GetStaticFields()[0]->m_pInstance);};
