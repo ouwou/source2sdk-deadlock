@@ -65,6 +65,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "GameTime_t m_flToggledTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flCooldownStart"
     // static metadata: MNetworkVarNames "GameTime_t m_flCooldownEnd"
+    // static metadata: MNetworkVarNames "GameTime_t m_flCastCompletedTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flChannelStartTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flCastDelayStartTime"
     // static metadata: MNetworkVarNames "EAbilitySlots_t m_eAbilitySlot"
@@ -128,42 +129,44 @@ namespace source2sdk::client
         // metadata: MNetworkPriority "32"
         entity2::GameTime_t m_flCooldownEnd; // 0x6cc        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flChannelStartTime; // 0x6d0        
+        entity2::GameTime_t m_flCastCompletedTime; // 0x6d0        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCastDelayStartTime; // 0x6d4        
+        entity2::GameTime_t m_flChannelStartTime; // 0x6d4        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flCastDelayStartTime; // 0x6d8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilitySlotChanged"
-        client::EAbilitySlots_t m_eAbilitySlot; // 0x6d8        
-        [[maybe_unused]] std::uint8_t pad_0x6da[0x2]; // 0x6da
+        client::EAbilitySlots_t m_eAbilitySlot; // 0x6dc        
+        [[maybe_unused]] std::uint8_t pad_0x6de[0x2]; // 0x6de
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x6dc        
+        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x6e0        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        int32_t m_iRemainingCharges; // 0x6e0        
+        int32_t m_iRemainingCharges; // 0x6e4        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeStart; // 0x6e4        
+        entity2::GameTime_t m_flChargeRechargeStart; // 0x6e8        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeEnd; // 0x6e8        
+        entity2::GameTime_t m_flChargeRechargeEnd; // 0x6ec        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flMovementControlActiveTime; // 0x6ec        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSelectedChangedTime; // 0x6f0        
+        entity2::GameTime_t m_flMovementControlActiveTime; // 0x6f0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x6f4        
+        entity2::GameTime_t m_flSelectedChangedTime; // 0x6f4        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x6f8        
-        // metadata: MNetworkEnable
-        CUtlStringToken m_nImbuedAbilityID; // 0x6fc        
+        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x6f8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bSelectionModeIsAltMode; // 0x700        
-        [[maybe_unused]] std::uint8_t pad_0x701[0x56f];
+        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x6fc        
+        // metadata: MNetworkEnable
+        CUtlStringToken m_nImbuedAbilityID; // 0x700        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelectionModeIsAltMode; // 0x704        
+        [[maybe_unused]] std::uint8_t pad_0x705[0x56b];
     };
     #pragma pack(pop)
     

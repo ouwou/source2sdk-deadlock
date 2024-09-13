@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1808
+    // Size: 0x1810
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -46,10 +46,13 @@ namespace source2sdk::client
         char m_ChannelParticle[0xe0]; // 0x1718        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_strProjectileLaunchSound; // 0x17f8        
+        // metadata: MPropertyStartGroup "Gameplay"
+        float m_flAttackInterval; // 0x1808        
+        [[maybe_unused]] std::uint8_t pad_0x180c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Barrage_VData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbility_Synth_Barrage_VData) == 0x1808);
+    static_assert(sizeof(CAbility_Synth_Barrage_VData) == 0x1810);
 };

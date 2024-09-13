@@ -28,11 +28,11 @@ namespace source2sdk::server
         client::ShotID_t m_tLastShotID; // 0xae8        
         [[maybe_unused]] std::uint8_t pad_0xaec[0x26c]; // 0xaec
         int32_t m_nProjectilesScheduled; // 0xd58        
-        float m_fProjectileInterval; // 0xd5c        
-        client::ParticleIndex_t m_ChannelParticle; // 0xd60        
+        client::ParticleIndex_t m_ChannelParticle; // 0xd5c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextShootTime; // 0xd64        
+        entity2::GameTime_t m_flNextShootTime; // 0xd60        
+        [[maybe_unused]] std::uint8_t pad_0xd64[0x4];
     };
     #pragma pack(pop)
     

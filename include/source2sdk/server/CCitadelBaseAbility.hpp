@@ -72,6 +72,7 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "GameTime_t m_flToggledTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flCooldownStart"
     // static metadata: MNetworkVarNames "GameTime_t m_flCooldownEnd"
+    // static metadata: MNetworkVarNames "GameTime_t m_flCastCompletedTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flChannelStartTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flCastDelayStartTime"
     // static metadata: MNetworkVarNames "EAbilitySlots_t m_eAbilitySlot"
@@ -135,42 +136,44 @@ namespace source2sdk::server
         // metadata: MNetworkPriority "32"
         entity2::GameTime_t m_flCooldownEnd; // 0x654        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flChannelStartTime; // 0x658        
+        entity2::GameTime_t m_flCastCompletedTime; // 0x658        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCastDelayStartTime; // 0x65c        
+        entity2::GameTime_t m_flChannelStartTime; // 0x65c        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flCastDelayStartTime; // 0x660        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilitySlotChanged"
-        client::EAbilitySlots_t m_eAbilitySlot; // 0x660        
-        [[maybe_unused]] std::uint8_t pad_0x662[0x2]; // 0x662
+        client::EAbilitySlots_t m_eAbilitySlot; // 0x664        
+        [[maybe_unused]] std::uint8_t pad_0x666[0x2]; // 0x666
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x664        
+        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x668        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        int32_t m_iRemainingCharges; // 0x668        
+        int32_t m_iRemainingCharges; // 0x66c        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeStart; // 0x66c        
+        entity2::GameTime_t m_flChargeRechargeStart; // 0x670        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeEnd; // 0x670        
+        entity2::GameTime_t m_flChargeRechargeEnd; // 0x674        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flMovementControlActiveTime; // 0x674        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSelectedChangedTime; // 0x678        
+        entity2::GameTime_t m_flMovementControlActiveTime; // 0x678        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x67c        
+        entity2::GameTime_t m_flSelectedChangedTime; // 0x67c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x680        
-        // metadata: MNetworkEnable
-        CUtlStringToken m_nImbuedAbilityID; // 0x684        
+        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x680        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bSelectionModeIsAltMode; // 0x688        
-        [[maybe_unused]] std::uint8_t pad_0x689[0x7]; // 0x689
+        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x684        
+        // metadata: MNetworkEnable
+        CUtlStringToken m_nImbuedAbilityID; // 0x688        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelectionModeIsAltMode; // 0x68c        
+        [[maybe_unused]] std::uint8_t pad_0x68d[0x3]; // 0x68d
         // m_vecEnemyHeroesDamaged has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecEnemyHeroesDamaged;
         char m_vecEnemyHeroesDamaged[0x18]; // 0x690        

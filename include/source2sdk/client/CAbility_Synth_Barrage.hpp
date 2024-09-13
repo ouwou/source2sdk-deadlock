@@ -26,11 +26,11 @@ namespace source2sdk::client
     public:
         [[maybe_unused]] std::uint8_t pad_0xc70[0x268]; // 0xc70
         int32_t m_nProjectilesScheduled; // 0xed8        
-        float m_fProjectileInterval; // 0xedc        
-        client::ParticleIndex_t m_ChannelParticle; // 0xee0        
+        client::ParticleIndex_t m_ChannelParticle; // 0xedc        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextShootTime; // 0xee4        
+        entity2::GameTime_t m_flNextShootTime; // 0xee0        
+        [[maybe_unused]] std::uint8_t pad_0xee4[0x4];
     };
     #pragma pack(pop)
     
