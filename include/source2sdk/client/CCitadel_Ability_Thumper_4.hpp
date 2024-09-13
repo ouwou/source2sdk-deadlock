@@ -14,17 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcd0
+    // Size: 0xce0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Thumper_4 : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc60[0x70];
+        [[maybe_unused]] std::uint8_t pad_0xc70[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_Thumper_4) == 0xcd0);
+    static_assert(sizeof(CCitadel_Ability_Thumper_4) == 0xce0);
 };

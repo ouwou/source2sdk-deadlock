@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1630
+    // Size: 0x1668
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,25 +28,25 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_AuraModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_AuraModifier;
-        char m_AuraModifier[0x10]; // 0x14f0        
+        char m_AuraModifier[0x10]; // 0x1528        
         // m_VictimPushModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_VictimPushModifier;
-        char m_VictimPushModifier[0x10]; // 0x1500        
+        char m_VictimPushModifier[0x10]; // 0x1538        
         // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CBaseModifier> m_SlowModifier;
-        char m_SlowModifier[0x10]; // 0x1510        
+        char m_SlowModifier[0x10]; // 0x1548        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strDomeCreated; // 0x1520        
-        CSoundEventName m_strChargeUpSound; // 0x1530        
-        CSoundEventName m_strPushAndDamage; // 0x1540        
+        CSoundEventName m_strDomeCreated; // 0x1558        
+        CSoundEventName m_strChargeUpSound; // 0x1568        
+        CSoundEventName m_strPushAndDamage; // 0x1578        
         // metadata: MPropertyStartGroup "Visuals"
         // m_ChronoSphereChargeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChronoSphereChargeParticle;
-        char m_ChronoSphereChargeParticle[0xe0]; // 0x1550        
+        char m_ChronoSphereChargeParticle[0xe0]; // 0x1588        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Rutger_ForceField_VData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbility_Rutger_ForceField_VData) == 0x1630);
+    static_assert(sizeof(CAbility_Rutger_ForceField_VData) == 0x1668);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xfb0
+    // Size: 0xfc0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flStartWindUpTime"
@@ -25,18 +25,18 @@ namespace source2sdk::server
     class CCitadel_Ability_PrimaryWeapon_Bebop : public server::CCitadel_Ability_PrimaryWeapon_BeamWeapon
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb88[0x2a8]; // 0xb88
+        [[maybe_unused]] std::uint8_t pad_0xb98[0x2a8]; // 0xb98
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartWindUpTime; // 0xe30        
+        entity2::GameTime_t m_flStartWindUpTime; // 0xe40        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartFiringTime; // 0xe34        
+        entity2::GameTime_t m_flStartFiringTime; // 0xe44        
         // metadata: MNetworkEnable
-        bool m_bFiring; // 0xe38        
-        [[maybe_unused]] std::uint8_t pad_0xe39[0x177];
+        bool m_bFiring; // 0xe48        
+        [[maybe_unused]] std::uint8_t pad_0xe49[0x177];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_PrimaryWeapon_Bebop because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Bebop) == 0xfb0);
+    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Bebop) == 0xfc0);
 };

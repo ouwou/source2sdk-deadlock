@@ -29,7 +29,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x170
+    // Size: 0x1f0
     // Has VTable
     #pragma pack(push, 1)
     class CAI_Navigator : public client::CAI_Component
@@ -94,5 +94,5 @@ namespace source2sdk::server
     
     // Cannot assert offsets of fields in CAI_Navigator because it is not a standard-layout class
     
-    static_assert(sizeof(CAI_Navigator) == 0x170);
+    static_assert(sizeof(CAI_Navigator) == 0x1f0);
 };

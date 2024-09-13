@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xce0
+    // Size: 0xcf0
     // Has VTable
     // Is Abstract
     // 
@@ -31,28 +31,28 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bUsingThisMelee; // 0xc60        
+        bool m_bUsingThisMelee; // 0xc70        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bUsingMeleeTagActive; // 0xc61        
+        bool m_bUsingMeleeTagActive; // 0xc71        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bHitWithThisAttack; // 0xc62        
-        [[maybe_unused]] std::uint8_t pad_0xc63[0x1]; // 0xc63
+        bool m_bHitWithThisAttack; // 0xc72        
+        [[maybe_unused]] std::uint8_t pad_0xc73[0x1]; // 0xc73
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flLastActivateTime; // 0xc64        
+        entity2::GameTime_t m_flLastActivateTime; // 0xc74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextAttackAllowedTime; // 0xc68        
+        entity2::GameTime_t m_flNextAttackAllowedTime; // 0xc78        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAttackTriggeredTime; // 0xc6c        
-        [[maybe_unused]] std::uint8_t pad_0xc70[0x70];
+        entity2::GameTime_t m_flAttackTriggeredTime; // 0xc7c        
+        [[maybe_unused]] std::uint8_t pad_0xc80[0x70];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Melee_Base because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_Melee_Base) == 0xce0);
+    static_assert(sizeof(CCitadel_Ability_Melee_Base) == 0xcf0);
 };

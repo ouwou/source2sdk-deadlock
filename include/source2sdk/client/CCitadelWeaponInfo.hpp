@@ -18,7 +18,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x658
+    // Size: 0x670
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -219,21 +219,25 @@ namespace source2sdk::client
         char m_mapImpactEffects[0x28]; // 0x538        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_strShootSound; // 0x560        
-        CSoundEventName m_strBulletLoopingSound; // 0x570        
-        CSoundEventName m_strBulletWhizSound; // 0x580        
-        CSoundEventName m_strBulletImpactSound; // 0x590        
-        float m_flBulletWhizDistance; // 0x5a0        
-        [[maybe_unused]] std::uint8_t pad_0x5a4[0x4]; // 0x5a4
-        CSoundEventName m_strReloadSound; // 0x5a8        
-        CSoundEventName m_strReloadEndSound; // 0x5b8        
-        CSoundEventName m_strLocalPlayerBulletImpactSound; // 0x5c8        
-        CSoundEventName m_strLocalPlayerBulletImpactHeavySound; // 0x5d8        
-        CSoundEventName m_strZoomInSound; // 0x5e8        
-        CSoundEventName m_strZoomOutSound; // 0x5f8        
-        CSoundEventName m_strSpinUpSound; // 0x608        
-        CSoundEventName m_strSpinDownSound; // 0x618        
-        CSoundEventName m_strSpinUpLoopSound; // 0x628        
-        [[maybe_unused]] std::uint8_t pad_0x638[0x20];
+        CSoundEventName m_strLowAmmoSound; // 0x570        
+        // metadata: MPropertyDescription "Number of bullets at or below the low ammo indicator will begin to play."
+        int32_t m_nLowAmmoIndicatorThreshold; // 0x580        
+        [[maybe_unused]] std::uint8_t pad_0x584[0x4]; // 0x584
+        CSoundEventName m_strBulletLoopingSound; // 0x588        
+        CSoundEventName m_strBulletWhizSound; // 0x598        
+        CSoundEventName m_strBulletImpactSound; // 0x5a8        
+        float m_flBulletWhizDistance; // 0x5b8        
+        [[maybe_unused]] std::uint8_t pad_0x5bc[0x4]; // 0x5bc
+        CSoundEventName m_strReloadSound; // 0x5c0        
+        CSoundEventName m_strReloadEndSound; // 0x5d0        
+        CSoundEventName m_strLocalPlayerBulletImpactSound; // 0x5e0        
+        CSoundEventName m_strLocalPlayerBulletImpactHeavySound; // 0x5f0        
+        CSoundEventName m_strZoomInSound; // 0x600        
+        CSoundEventName m_strZoomOutSound; // 0x610        
+        CSoundEventName m_strSpinUpSound; // 0x620        
+        CSoundEventName m_strSpinDownSound; // 0x630        
+        CSoundEventName m_strSpinUpLoopSound; // 0x640        
+        [[maybe_unused]] std::uint8_t pad_0x650[0x20];
     };
     #pragma pack(pop)
     
@@ -319,19 +323,21 @@ namespace source2sdk::client
     static_assert(offsetof(CCitadelWeaponInfo, m_strWeaponImpactEffect) == 0x458);
     static_assert(offsetof(CCitadelWeaponInfo, m_mapImpactEffects) == 0x538);
     static_assert(offsetof(CCitadelWeaponInfo, m_strShootSound) == 0x560);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletLoopingSound) == 0x570);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletWhizSound) == 0x580);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletImpactSound) == 0x590);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flBulletWhizDistance) == 0x5a0);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strReloadSound) == 0x5a8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strReloadEndSound) == 0x5b8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strLocalPlayerBulletImpactSound) == 0x5c8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strLocalPlayerBulletImpactHeavySound) == 0x5d8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strZoomInSound) == 0x5e8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strZoomOutSound) == 0x5f8);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinUpSound) == 0x608);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinDownSound) == 0x618);
-    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinUpLoopSound) == 0x628);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strLowAmmoSound) == 0x570);
+    static_assert(offsetof(CCitadelWeaponInfo, m_nLowAmmoIndicatorThreshold) == 0x580);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletLoopingSound) == 0x588);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletWhizSound) == 0x598);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strBulletImpactSound) == 0x5a8);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flBulletWhizDistance) == 0x5b8);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strReloadSound) == 0x5c0);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strReloadEndSound) == 0x5d0);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strLocalPlayerBulletImpactSound) == 0x5e0);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strLocalPlayerBulletImpactHeavySound) == 0x5f0);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strZoomInSound) == 0x600);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strZoomOutSound) == 0x610);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinUpSound) == 0x620);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinDownSound) == 0x630);
+    static_assert(offsetof(CCitadelWeaponInfo, m_strSpinUpLoopSound) == 0x640);
     
-    static_assert(sizeof(CCitadelWeaponInfo) == 0x658);
+    static_assert(sizeof(CCitadelWeaponInfo) == 0x670);
 };

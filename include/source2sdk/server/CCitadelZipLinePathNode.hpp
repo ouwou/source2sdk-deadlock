@@ -31,7 +31,9 @@ namespace source2sdk::server
         CUtlSymbolLarge m_strGuardBossName; // 0x4e8        
         CUtlSymbolLarge m_strGuardBossName2; // 0x4f0        
         CUtlSymbolLarge m_strGuardBossName3; // 0x4f8        
-        [[maybe_unused]] std::uint8_t pad_0x500[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x500[0x4]; // 0x500
+        bool m_bUseForMinimapDrawing; // 0x504        
+        [[maybe_unused]] std::uint8_t pad_0x505[0x3];
         
         // Datamap fields:
         // void m_pNode; // 0x500

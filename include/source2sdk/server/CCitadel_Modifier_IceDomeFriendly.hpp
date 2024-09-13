@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/server/CCitadelModifier.hpp"
+#include "source2sdk/server/CCitadel_Modifier_IceDome_AuraModifierBase.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Size: 0x138
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Modifier_IceDomeFriendly : public server::CCitadelModifier
+    class CCitadel_Modifier_IceDomeFriendly : public server::CCitadel_Modifier_IceDome_AuraModifierBase
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0xc8[0x70];

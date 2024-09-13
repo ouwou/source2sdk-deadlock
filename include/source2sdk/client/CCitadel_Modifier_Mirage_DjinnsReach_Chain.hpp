@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x110
+    // Size: 0x148
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Mirage_DjinnsReach_Chain : public client::CCitadelModifier
@@ -30,11 +30,11 @@ namespace source2sdk::client
         // CHandle<client::C_BaseEntity> m_hPartner;
         char m_hPartner[0x4]; // 0xcc        
         bool m_bMakeChainParticle; // 0xd0        
-        [[maybe_unused]] std::uint8_t pad_0xd1[0x3f];
+        [[maybe_unused]] std::uint8_t pad_0xd1[0x77];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Mirage_DjinnsReach_Chain because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Modifier_Mirage_DjinnsReach_Chain) == 0x110);
+    static_assert(sizeof(CCitadel_Modifier_Mirage_DjinnsReach_Chain) == 0x148);
 };

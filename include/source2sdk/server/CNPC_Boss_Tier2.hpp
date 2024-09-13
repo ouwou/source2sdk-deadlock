@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16c0
+    // Size: 0x16f0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iLane"
@@ -35,28 +35,28 @@ namespace source2sdk::server
     class CNPC_Boss_Tier2 : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x15d0[0x8]; // 0x15d0
-        Vector m_vecStartingPosition; // 0x15d8        
+        [[maybe_unused]] std::uint8_t pad_0x1600[0x8]; // 0x1600
+        Vector m_vecStartingPosition; // 0x1608        
         // metadata: MNetworkEnable
-        int32_t m_iLane; // 0x15e4        
-        [[maybe_unused]] std::uint8_t pad_0x15e8[0x8]; // 0x15e8
+        int32_t m_iLane; // 0x1614        
+        [[maybe_unused]] std::uint8_t pad_0x1618[0x8]; // 0x1618
         // metadata: MNetworkEnable
         // m_hTargetedEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTargetedEnemy;
-        char m_hTargetedEnemy[0x4]; // 0x15f0        
+        char m_hTargetedEnemy[0x4]; // 0x1620        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutStart; // 0x15f4        
+        entity2::GameTime_t m_flFadeOutStart; // 0x1624        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutEnd; // 0x15f8        
-        [[maybe_unused]] std::uint8_t pad_0x15fc[0x24]; // 0x15fc
+        entity2::GameTime_t m_flFadeOutEnd; // 0x1628        
+        [[maybe_unused]] std::uint8_t pad_0x162c[0x24]; // 0x162c
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecElectricBeamLookTarget; // 0x1620        
+        Vector m_vecElectricBeamLookTarget; // 0x1650        
         // metadata: MNetworkEnable
-        int32_t m_nElectricBeamCasts; // 0x162c        
-        [[maybe_unused]] std::uint8_t pad_0x1630[0x28]; // 0x1630
-        entity2::CEntityIOOutput m_eventOnBossKilled; // 0x1658        
-        [[maybe_unused]] std::uint8_t pad_0x1680[0x40];
+        int32_t m_nElectricBeamCasts; // 0x165c        
+        [[maybe_unused]] std::uint8_t pad_0x1660[0x28]; // 0x1660
+        entity2::CEntityIOOutput m_eventOnBossKilled; // 0x1688        
+        [[maybe_unused]] std::uint8_t pad_0x16b0[0x40];
         
         // Static fields:
         static client::ConditionId_t &Get_COND_STAGGERED() {return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->GetStaticFields()[0]->m_pInstance);};
@@ -93,11 +93,11 @@ namespace source2sdk::server
         static CUtlSymbolLarge &Get_TASK_T2BOSS_STOMP_ACTIVATE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Boss_Tier2")->GetStaticFields()[31]->m_pInstance);};
         
         // Datamap fields:
-        // CUtlSymbolLarge m_strBossEntityName; // 0x1688
+        // CUtlSymbolLarge m_strBossEntityName; // 0x16b8
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Boss_Tier2 because it is not a standard-layout class
     
-    static_assert(sizeof(CNPC_Boss_Tier2) == 0x16c0);
+    static_assert(sizeof(CNPC_Boss_Tier2) == 0x16f0);
 };

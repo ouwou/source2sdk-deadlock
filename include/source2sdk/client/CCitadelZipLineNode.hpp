@@ -31,6 +31,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "bool m_bAlwaysUsable"
     // static metadata: MNetworkVarNames "bool m_bOneWay"
     // static metadata: MNetworkVarNames "bool m_bDisableZippingToByPlayers"
+    // static metadata: MNetworkVarNames "bool m_bUseForMinimapDrawing"
     // static metadata: MNetworkVarNames "EHANDLE m_hGuardingBoss"
     // static metadata: MNetworkVarNames "float m_flRopeRadius"
     // static metadata: MNetworkVarNames "bool m_bEnabled"
@@ -60,7 +61,8 @@ namespace source2sdk::client
         bool m_bOneWay; // 0x891        
         // metadata: MNetworkEnable
         bool m_bDisableZippingToByPlayers; // 0x892        
-        [[maybe_unused]] std::uint8_t pad_0x893[0x1]; // 0x893
+        // metadata: MNetworkEnable
+        bool m_bUseForMinimapDrawing; // 0x893        
         // metadata: MNetworkEnable
         // m_hGuardingBoss has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hGuardingBoss;

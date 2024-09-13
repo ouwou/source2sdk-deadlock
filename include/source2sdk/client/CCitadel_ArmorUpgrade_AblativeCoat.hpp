@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd28
+    // Size: 0xd38
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iCurrentResistValue"
@@ -23,12 +23,12 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_iCurrentResistValue; // 0xc78        
-        [[maybe_unused]] std::uint8_t pad_0xc7c[0xac];
+        int32_t m_iCurrentResistValue; // 0xc88        
+        [[maybe_unused]] std::uint8_t pad_0xc8c[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_AblativeCoat because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_ArmorUpgrade_AblativeCoat) == 0xd28);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_AblativeCoat) == 0xd38);
 };

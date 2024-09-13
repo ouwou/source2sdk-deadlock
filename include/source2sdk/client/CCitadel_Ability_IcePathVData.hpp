@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1520
+    // Size: 0x1558
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,20 +26,20 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_IcePathModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_IcePathModifier;
-        char m_IcePathModifier[0x10]; // 0x14f0        
+        char m_IcePathModifier[0x10]; // 0x1528        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flMomentumDecayRate; // 0x1500        
-        float m_flMomentumWeight; // 0x1504        
-        float m_flMaxPitchChange; // 0x1508        
-        float m_flMaxPitchUp; // 0x150c        
-        float m_flMaxPitchDown; // 0x1510        
-        float m_flMaxHeight; // 0x1514        
-        float m_flForwardAngleBias; // 0x1518        
-        [[maybe_unused]] std::uint8_t pad_0x151c[0x4];
+        float m_flMomentumDecayRate; // 0x1538        
+        float m_flMomentumWeight; // 0x153c        
+        float m_flMaxPitchChange; // 0x1540        
+        float m_flMaxPitchUp; // 0x1544        
+        float m_flMaxPitchDown; // 0x1548        
+        float m_flMaxHeight; // 0x154c        
+        float m_flForwardAngleBias; // 0x1550        
+        [[maybe_unused]] std::uint8_t pad_0x1554[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_IcePathVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_IcePathVData) == 0x1520);
+    static_assert(sizeof(CCitadel_Ability_IcePathVData) == 0x1558);
 };

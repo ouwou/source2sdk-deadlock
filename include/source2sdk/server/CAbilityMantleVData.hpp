@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1508
+    // Size: 0x1540
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,11 +25,11 @@ namespace source2sdk::server
     public:
         // m_vecMantleTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::MantleType_t> m_vecMantleTypes;
-        char m_vecMantleTypes[0x18]; // 0x14f0        
+        char m_vecMantleTypes[0x18]; // 0x1528        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityMantleVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityMantleVData) == 0x1508);
+    static_assert(sizeof(CAbilityMantleVData) == 0x1540);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15f0
+    // Size: 0x1628
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,18 +27,18 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_InvisModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_InvisModifier;
-        char m_InvisModifier[0x10]; // 0x14f0        
+        char m_InvisModifier[0x10]; // 0x1528        
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1500        
+        char m_BuffModifier[0x10]; // 0x1538        
         // metadata: MPropertyStartGroup "Visuals"
         // m_PurgeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PurgeParticle;
-        char m_PurgeParticle[0xe0]; // 0x1510        
+        char m_PurgeParticle[0xe0]; // 0x1548        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_SmokeBombVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_SmokeBombVData) == 0x15f0);
+    static_assert(sizeof(CCitadel_Ability_SmokeBombVData) == 0x1628);
 };

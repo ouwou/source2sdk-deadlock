@@ -1,5 +1,6 @@
 #pragma once
 #include "source2sdk/client/AmmoIndex_t.hpp"
+#include "source2sdk/client/DamageTypes_t.hpp"
 #include "source2sdk/client/ECitadelDamageType.hpp"
 #include "source2sdk/client/HitGroup_t.hpp"
 #include "source2sdk/client/TakeDamageFlags_t.hpp"
@@ -44,7 +45,7 @@ namespace source2sdk::client
         char m_hAbility[0x4]; // 0x40        
         float m_flDamage; // 0x44        
         float m_flTotalledDamage; // 0x48        
-        int32_t m_bitsDamageType; // 0x4c        
+        client::DamageTypes_t m_bitsDamageType; // 0x4c        
         int32_t m_iDamageCustom; // 0x50        
         client::AmmoIndex_t m_iAmmoType; // 0x54        
         [[maybe_unused]] std::uint8_t pad_0x55[0xb]; // 0x55

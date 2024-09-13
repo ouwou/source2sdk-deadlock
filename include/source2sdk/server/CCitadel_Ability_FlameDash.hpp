@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xca0
+    // Size: 0xcb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flDashEndTime"
@@ -31,16 +31,16 @@ namespace source2sdk::server
     public:
         // m_vecHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecHitEntities;
-        char m_vecHitEntities[0x18]; // 0xad8        
+        char m_vecHitEntities[0x18]; // 0xae8        
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flDashEndTime; // 0xaf0        
+        server::CCitadelAutoScaledTime m_flDashEndTime; // 0xb00        
         // metadata: MNetworkEnable
-        bool m_bIsSpeedBursting; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb09[0x197];
+        bool m_bIsSpeedBursting; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb19[0x197];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FlameDash because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_FlameDash) == 0xca0);
+    static_assert(sizeof(CCitadel_Ability_FlameDash) == 0xcb0);
 };

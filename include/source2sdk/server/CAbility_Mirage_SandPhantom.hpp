@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb10
+    // Size: 0xb58
     // Has VTable
     #pragma pack(push, 1)
     class CAbility_Mirage_SandPhantom : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xad8[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xae8[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CAbility_Mirage_SandPhantom) == 0xb10);
+    static_assert(sizeof(CAbility_Mirage_SandPhantom) == 0xb58);
 };

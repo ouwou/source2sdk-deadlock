@@ -33,7 +33,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0xc68
+    // Size: 0xe60
     // 
     // static metadata: MVDataRoot
     // static metadata: MVDataSingleton
@@ -60,31 +60,37 @@ namespace source2sdk::client
         // m_ShoppingEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ShoppingEffect;
         char m_ShoppingEffect[0xe0]; // 0x1a8        
-        client::LaneDesc_t m_LaneInfo[6]; // 0x288        
-        client::LaneDesc_t m_NoLaneZip; // 0x318        
-        Color m_MinimapTeamRebelsColor; // 0x330        
-        Color m_MinimapTeamCombineColor; // 0x334        
-        client::NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x338        
-        int32_t m_nItemPricePerTier[5]; // 0x3f8        
-        [[maybe_unused]] std::uint8_t pad_0x40c[0x4]; // 0x40c
+        // m_MinimapZiplinesParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_MinimapZiplinesParticle;
+        char m_MinimapZiplinesParticle[0xe0]; // 0x288        
+        // m_KillStreakFireParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_KillStreakFireParticle;
+        char m_KillStreakFireParticle[0xe0]; // 0x368        
+        client::LaneDesc_t m_LaneInfo[6]; // 0x448        
+        client::LaneDesc_t m_NoLaneZip; // 0x508        
+        Color m_MinimapTeamRebelsColor; // 0x528        
+        Color m_MinimapTeamCombineColor; // 0x52c        
+        client::NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x530        
+        int32_t m_nItemPricePerTier[5]; // 0x5f0        
+        [[maybe_unused]] std::uint8_t pad_0x604[0x4]; // 0x604
         // m_HeroTestingTargetDummyUpgrades has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CSubclassName<4>> m_HeroTestingTargetDummyUpgrades;
-        char m_HeroTestingTargetDummyUpgrades[0x18]; // 0x410        
-        [[maybe_unused]] std::uint8_t pad_0x428[0x58]; // 0x428
-        client::DOFDesc_t m_DefaultDOF; // 0x480        
-        client::RejuvinatorParams_t m_RejuvParams; // 0x490        
-        client::IdolParams_t m_IdolParams; // 0x4b0        
-        client::TeleporterParams_t m_TeleporterParams; // 0xa08        
+        char m_HeroTestingTargetDummyUpgrades[0x18]; // 0x608        
+        [[maybe_unused]] std::uint8_t pad_0x620[0x58]; // 0x620
+        client::DOFDesc_t m_DefaultDOF; // 0x678        
+        client::RejuvinatorParams_t m_RejuvParams; // 0x688        
+        client::IdolParams_t m_IdolParams; // 0x6a8        
+        client::TeleporterParams_t m_TeleporterParams; // 0xc00        
         // m_mapStatTypeImages has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EStatsType,CUtlString> m_mapStatTypeImages;
-        char m_mapStatTypeImages[0x28]; // 0xbf8        
+        char m_mapStatTypeImages[0x28]; // 0xdf0        
         // metadata: MPropertyDescription "Remap camera angle delta to aim spring strength"
-        client::CRemapFloat m_AimSpringStrength; // 0xc20        
+        client::CRemapFloat m_AimSpringStrength; // 0xe18        
         // metadata: MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-        client::CRemapFloat m_TargetingSpringStrength; // 0xc30        
+        client::CRemapFloat m_TargetingSpringStrength; // 0xe28        
         // m_mapResourceTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EAbilityResourceType,client::HeroAbilityResourceDef_t> m_mapResourceTypes;
-        char m_mapResourceTypes[0x28]; // 0xc40        
+        char m_mapResourceTypes[0x28]; // 0xe38        
     };
     #pragma pack(pop)
     
@@ -97,21 +103,23 @@ namespace source2sdk::client
     static_assert(offsetof(CitadelGenericData_t, m_DamageIndicatorSounds) == 0x138);
     static_assert(offsetof(CitadelGenericData_t, m_strExitCombatSound) == 0x198);
     static_assert(offsetof(CitadelGenericData_t, m_ShoppingEffect) == 0x1a8);
-    static_assert(offsetof(CitadelGenericData_t, m_LaneInfo) == 0x288);
-    static_assert(offsetof(CitadelGenericData_t, m_NoLaneZip) == 0x318);
-    static_assert(offsetof(CitadelGenericData_t, m_MinimapTeamRebelsColor) == 0x330);
-    static_assert(offsetof(CitadelGenericData_t, m_MinimapTeamCombineColor) == 0x334);
-    static_assert(offsetof(CitadelGenericData_t, m_NewPlayerMetrics) == 0x338);
-    static_assert(offsetof(CitadelGenericData_t, m_nItemPricePerTier) == 0x3f8);
-    static_assert(offsetof(CitadelGenericData_t, m_HeroTestingTargetDummyUpgrades) == 0x410);
-    static_assert(offsetof(CitadelGenericData_t, m_DefaultDOF) == 0x480);
-    static_assert(offsetof(CitadelGenericData_t, m_RejuvParams) == 0x490);
-    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x4b0);
-    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xa08);
-    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xbf8);
-    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xc20);
-    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xc30);
-    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xc40);
+    static_assert(offsetof(CitadelGenericData_t, m_MinimapZiplinesParticle) == 0x288);
+    static_assert(offsetof(CitadelGenericData_t, m_KillStreakFireParticle) == 0x368);
+    static_assert(offsetof(CitadelGenericData_t, m_LaneInfo) == 0x448);
+    static_assert(offsetof(CitadelGenericData_t, m_NoLaneZip) == 0x508);
+    static_assert(offsetof(CitadelGenericData_t, m_MinimapTeamRebelsColor) == 0x528);
+    static_assert(offsetof(CitadelGenericData_t, m_MinimapTeamCombineColor) == 0x52c);
+    static_assert(offsetof(CitadelGenericData_t, m_NewPlayerMetrics) == 0x530);
+    static_assert(offsetof(CitadelGenericData_t, m_nItemPricePerTier) == 0x5f0);
+    static_assert(offsetof(CitadelGenericData_t, m_HeroTestingTargetDummyUpgrades) == 0x608);
+    static_assert(offsetof(CitadelGenericData_t, m_DefaultDOF) == 0x678);
+    static_assert(offsetof(CitadelGenericData_t, m_RejuvParams) == 0x688);
+    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x6a8);
+    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xc00);
+    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xdf0);
+    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xe18);
+    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xe28);
+    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xe38);
     
-    static_assert(sizeof(CitadelGenericData_t) == 0xc68);
+    static_assert(sizeof(CitadelGenericData_t) == 0xe60);
 };

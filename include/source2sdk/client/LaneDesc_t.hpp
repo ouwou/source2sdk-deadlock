@@ -13,7 +13,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x18
+    // Size: 0x20
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -24,6 +24,8 @@ namespace source2sdk::client
         CUtlString m_strCSSClass; // 0x8        
         Color m_Color; // 0x10        
         Color m_MinimapColorOverride; // 0x14        
+        Color m_MinimapZiplineColorOverride; // 0x18        
+        [[maybe_unused]] std::uint8_t pad_0x1c[0x4];
     };
     #pragma pack(pop)
     
@@ -31,6 +33,7 @@ namespace source2sdk::client
     static_assert(offsetof(LaneDesc_t, m_strCSSClass) == 0x8);
     static_assert(offsetof(LaneDesc_t, m_Color) == 0x10);
     static_assert(offsetof(LaneDesc_t, m_MinimapColorOverride) == 0x14);
+    static_assert(offsetof(LaneDesc_t, m_MinimapZiplineColorOverride) == 0x18);
     
-    static_assert(sizeof(LaneDesc_t) == 0x18);
+    static_assert(sizeof(LaneDesc_t) == 0x20);
 };

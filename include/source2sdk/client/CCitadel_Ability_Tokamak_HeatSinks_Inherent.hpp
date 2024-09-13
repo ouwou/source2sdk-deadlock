@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdc0
+    // Size: 0xdd0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flDissipationRate"
@@ -27,28 +27,28 @@ namespace source2sdk::client
     class CCitadel_Ability_Tokamak_HeatSinks_Inherent : public client::C_CitadelBaseAbility
     {
     public:
-        int32_t m_nIntervalsElapsed; // 0xc60        
-        entity2::GameTime_t m_NextShotTime; // 0xc64        
+        int32_t m_nIntervalsElapsed; // 0xc70        
+        entity2::GameTime_t m_NextShotTime; // 0xc74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flDissipationRate; // 0xc68        
+        float m_flDissipationRate; // 0xc78        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDissipationTime; // 0xc6c        
+        entity2::GameTime_t m_flDissipationTime; // 0xc7c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flHeatTime; // 0xc70        
+        entity2::GameTime_t m_flHeatTime; // 0xc80        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flOverheatSoundTime; // 0xc74        
+        entity2::GameTime_t m_flOverheatSoundTime; // 0xc84        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bOverheating; // 0xc78        
-        [[maybe_unused]] std::uint8_t pad_0xc79[0x147];
+        bool m_bOverheating; // 0xc88        
+        [[maybe_unused]] std::uint8_t pad_0xc89[0x147];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tokamak_HeatSinks_Inherent because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_Tokamak_HeatSinks_Inherent) == 0xdc0);
+    static_assert(sizeof(CCitadel_Ability_Tokamak_HeatSinks_Inherent) == 0xdd0);
 };

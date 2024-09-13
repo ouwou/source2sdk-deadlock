@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xce8
+    // Size: 0xcf8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Upgrade_StabilizingTripod : public server::CCitadel_Item
@@ -27,14 +27,14 @@ namespace source2sdk::server
     public:
         // m_vecDeployedSentries has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecDeployedSentries;
-        char m_vecDeployedSentries[0x18]; // 0xaf8        
-        Vector m_vDeployPosition; // 0xb10        
-        QAngle m_vDeployAngles; // 0xb1c        
-        [[maybe_unused]] std::uint8_t pad_0xb28[0x1c0];
+        char m_vecDeployedSentries[0x18]; // 0xb08        
+        Vector m_vDeployPosition; // 0xb20        
+        QAngle m_vDeployAngles; // 0xb2c        
+        [[maybe_unused]] std::uint8_t pad_0xb38[0x1c0];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Upgrade_StabilizingTripod because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Upgrade_StabilizingTripod) == 0xce8);
+    static_assert(sizeof(CCitadel_Upgrade_StabilizingTripod) == 0xcf8);
 };

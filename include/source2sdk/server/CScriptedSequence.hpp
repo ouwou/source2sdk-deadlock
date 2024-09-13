@@ -131,6 +131,7 @@ namespace source2sdk::server
         // void InputBeginSequence; // 0x0
         // void InputCancelSequence; // 0x0
         // CUtlSymbolLarge InputSetActionSequence; // 0x0
+        // CUtlSymbolLarge InputForceTarget; // 0x0
         // void InputScriptPlayerDeath; // 0x0
     };
     #pragma pack(pop)

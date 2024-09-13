@@ -1,5 +1,6 @@
 #pragma once
 #include "source2sdk/client/C_BreakableProp.hpp"
+#include "source2sdk/client/DamageTypes_t.hpp"
 #include "source2sdk/entity2/GameTime_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -26,7 +27,7 @@ namespace source2sdk::client
         float m_inertiaScale; // 0xcd0        
         Vector m_vecDamagePosition; // 0xcd4        
         Vector m_vecDamageDirection; // 0xce0        
-        int32_t m_nDamageType; // 0xcec        
+        client::DamageTypes_t m_nDamageType; // 0xcec        
         
         // Datamap fields:
         // float m_impactEnergyScale; // 0xc38

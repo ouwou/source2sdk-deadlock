@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16e0
+    // Size: 0x1718
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,22 +26,22 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x14f0        
+        char m_ExplodeParticle[0xe0]; // 0x1528        
         // m_SummonedCard has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SummonedCard;
-        char m_SummonedCard[0xe0]; // 0x15d0        
+        char m_SummonedCard[0xe0]; // 0x1608        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strCardTossSound; // 0x16b0        
-        CSoundEventName m_strCardSummonSound; // 0x16c0        
+        CSoundEventName m_strCardTossSound; // 0x16e8        
+        CSoundEventName m_strCardSummonSound; // 0x16f8        
         // metadata: MPropertyStartGroup "+Card Toss Properties"
-        float m_flSummonedCardStartSideOffset; // 0x16d0        
-        float m_flSummonedCardSideOffsetStep; // 0x16d4        
-        float m_flSummonedCardForwardOffset; // 0x16d8        
-        float m_flSummonedCardVerticalOffset; // 0x16dc        
+        float m_flSummonedCardStartSideOffset; // 0x1708        
+        float m_flSummonedCardSideOffsetStep; // 0x170c        
+        float m_flSummonedCardForwardOffset; // 0x1710        
+        float m_flSummonedCardVerticalOffset; // 0x1714        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityCardTossVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityCardTossVData) == 0x16e0);
+    static_assert(sizeof(CAbilityCardTossVData) == 0x1718);
 };

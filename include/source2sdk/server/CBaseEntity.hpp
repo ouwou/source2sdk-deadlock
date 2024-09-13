@@ -121,7 +121,7 @@ namespace source2sdk::server
         bool m_bDisabledContextThinks; // 0x260        
         [[maybe_unused]] std::uint8_t pad_0x261[0xf]; // 0x261
         // m_isSteadyState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CBitVec<64> m_isSteadyState;
+        // CTypedBitVec<64> m_isSteadyState;
         char m_isSteadyState[0x8]; // 0x270        
         float m_lastNetworkChange; // 0x278        
         [[maybe_unused]] std::uint8_t pad_0x27c[0xc]; // 0x27c

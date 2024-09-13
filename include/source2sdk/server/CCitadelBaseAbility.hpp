@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xad8
+    // Size: 0xae8
     // Has VTable
     // Is Abstract
     // 
@@ -82,7 +82,9 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "GameTime_t m_flMovementControlActiveTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flSelectedChangedTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flAltCastHoldStartTime"
+    // static metadata: MNetworkVarNames "GameTime_t m_flAltCastDoubleTapStartTime"
     // static metadata: MNetworkVarNames "AbilityID_t m_nImbuedAbilityID"
+    // static metadata: MNetworkVarNames "bool m_bSelectionModeIsAltMode"
     #pragma pack(push, 1)
     class CCitadelBaseAbility : public server::CBaseEntity
     {
@@ -100,72 +102,80 @@ namespace source2sdk::server
         CGlobalSymbol m_strUsedCastGraphParam; // 0x5f0        
         int32_t m_nCastParamNeedsResetTick; // 0x5f8        
         bool m_bIsCoolingDownInternal; // 0x5fc        
-        [[maybe_unused]] std::uint8_t pad_0x5fd[0x1b]; // 0x5fd
+        [[maybe_unused]] std::uint8_t pad_0x5fd[0x3]; // 0x5fd
+        entity2::GameTime_t m_flCancelLockoutTime; // 0x600        
+        [[maybe_unused]] std::uint8_t pad_0x604[0x1c]; // 0x604
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnChannelingChanged"
-        bool m_bChanneling; // 0x618        
+        bool m_bChanneling; // 0x620        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnInCastDelayChanged"
-        bool m_bInCastDelay; // 0x619        
-        [[maybe_unused]] std::uint8_t pad_0x61a[0x6]; // 0x61a
+        bool m_bInCastDelay; // 0x621        
+        [[maybe_unused]] std::uint8_t pad_0x622[0x6]; // 0x622
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilityImbuedChanged"
         // m_vecImbuedByAbilitiyIDs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<CUtlStringToken> m_vecImbuedByAbilitiyIDs;
-        char m_vecImbuedByAbilitiyIDs[0x18]; // 0x620        
+        char m_vecImbuedByAbilitiyIDs[0x18]; // 0x628        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnUpgradeBitsChanged"
         // metadata: MNetworkPriority "32"
-        int32_t m_nUpgradeBits; // 0x638        
+        int32_t m_nUpgradeBits; // 0x640        
         // metadata: MNetworkEnable
-        int32_t m_iBucketID; // 0x63c        
+        int32_t m_iBucketID; // 0x644        
         // metadata: MNetworkEnable
-        bool m_bToggleState; // 0x640        
-        [[maybe_unused]] std::uint8_t pad_0x641[0x3]; // 0x641
+        bool m_bToggleState; // 0x648        
+        [[maybe_unused]] std::uint8_t pad_0x649[0x3]; // 0x649
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flToggledTime; // 0x644        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flCooldownStart; // 0x648        
+        entity2::GameTime_t m_flToggledTime; // 0x64c        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flCooldownEnd; // 0x64c        
+        entity2::GameTime_t m_flCooldownStart; // 0x650        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flChannelStartTime; // 0x650        
+        // metadata: MNetworkPriority "32"
+        entity2::GameTime_t m_flCooldownEnd; // 0x654        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCastDelayStartTime; // 0x654        
+        entity2::GameTime_t m_flChannelStartTime; // 0x658        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flCastDelayStartTime; // 0x65c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilitySlotChanged"
-        client::EAbilitySlots_t m_eAbilitySlot; // 0x658        
-        [[maybe_unused]] std::uint8_t pad_0x65a[0x2]; // 0x65a
+        client::EAbilitySlots_t m_eAbilitySlot; // 0x660        
+        [[maybe_unused]] std::uint8_t pad_0x662[0x2]; // 0x662
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x65c        
+        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x664        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        int32_t m_iRemainingCharges; // 0x660        
+        int32_t m_iRemainingCharges; // 0x668        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeStart; // 0x664        
+        entity2::GameTime_t m_flChargeRechargeStart; // 0x66c        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeEnd; // 0x668        
+        entity2::GameTime_t m_flChargeRechargeEnd; // 0x670        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flMovementControlActiveTime; // 0x66c        
+        entity2::GameTime_t m_flMovementControlActiveTime; // 0x674        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSelectedChangedTime; // 0x670        
+        entity2::GameTime_t m_flSelectedChangedTime; // 0x678        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x674        
+        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x67c        
         // metadata: MNetworkEnable
-        CUtlStringToken m_nImbuedAbilityID; // 0x678        
-        [[maybe_unused]] std::uint8_t pad_0x67c[0x4]; // 0x67c
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x680        
+        // metadata: MNetworkEnable
+        CUtlStringToken m_nImbuedAbilityID; // 0x684        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelectionModeIsAltMode; // 0x688        
+        [[maybe_unused]] std::uint8_t pad_0x689[0x7]; // 0x689
         // m_vecEnemyHeroesDamaged has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecEnemyHeroesDamaged;
-        char m_vecEnemyHeroesDamaged[0x18]; // 0x680        
-        float m_flPreviousEffectiveCooldown; // 0x698        
-        [[maybe_unused]] std::uint8_t pad_0x69c[0x43c];
+        char m_vecEnemyHeroesDamaged[0x18]; // 0x690        
+        float m_flPreviousEffectiveCooldown; // 0x6a8        
+        [[maybe_unused]] std::uint8_t pad_0x6ac[0x43c];
         
         // Datamap fields:
         // int32_t slot; // 0x7fffffff
@@ -176,5 +186,5 @@ namespace source2sdk::server
     
     // Cannot assert offsets of fields in CCitadelBaseAbility because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadelBaseAbility) == 0xad8);
+    static_assert(sizeof(CCitadelBaseAbility) == 0xae8);
 };

@@ -27,15 +27,15 @@ namespace source2sdk::server
     {
     public:
         int32_t m_damageType; // 0x840        
-        float m_massScale; // 0x844        
-        int32_t m_damageToEnableMotion; // 0x848        
-        float m_flForceToEnableMotion; // 0x84c        
-        QAngle m_angPreferredCarryAngles; // 0x850        
-        bool m_bNotSolidToWorld; // 0x85c        
-        bool m_bEnableUseOutput; // 0x85d        
-        [[maybe_unused]] std::uint8_t pad_0x85e[0x2]; // 0x85e
-        int32_t m_iExploitableByPlayer; // 0x860        
-        float m_flTouchOutputPerEntityDelay; // 0x864        
+        int32_t m_damageToEnableMotion; // 0x844        
+        float m_flForceToEnableMotion; // 0x848        
+        QAngle m_angPreferredCarryAngles; // 0x84c        
+        bool m_bNotSolidToWorld; // 0x858        
+        bool m_bEnableUseOutput; // 0x859        
+        [[maybe_unused]] std::uint8_t pad_0x85a[0x2]; // 0x85a
+        int32_t m_iExploitableByPlayer; // 0x85c        
+        float m_flTouchOutputPerEntityDelay; // 0x860        
+        [[maybe_unused]] std::uint8_t pad_0x864[0x4]; // 0x864
         entity2::CEntityIOOutput m_OnDamaged; // 0x868        
         entity2::CEntityIOOutput m_OnAwakened; // 0x890        
         entity2::CEntityIOOutput m_OnMotionEnabled; // 0x8b8        

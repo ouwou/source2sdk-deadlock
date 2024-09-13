@@ -15,7 +15,7 @@ namespace source2sdk::client
     {
         k_ELaneColor_Invalid = 0x0,
         k_ELaneColor_Yellow = 0x1,
-        k_ELaneColor_Orange = 0x3,
+        k_ELaneColor_Green = 0x3,
         k_ELaneColor_Blue = 0x4,
         k_ELaneColor_Purple = 0x6,
     };

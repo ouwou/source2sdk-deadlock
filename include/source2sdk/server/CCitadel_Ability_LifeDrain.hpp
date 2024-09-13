@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xae8
+    // Size: 0xaf0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_tDrainLifeStopTime"
@@ -30,14 +30,14 @@ namespace source2sdk::server
     public:
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0xad8        
+        char m_hTarget[0x4]; // 0xae8        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_tDrainLifeStopTime; // 0xadc        
-        [[maybe_unused]] std::uint8_t pad_0xae0[0x8];
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        entity2::GameTime_t m_tDrainLifeStopTime; // 0xaec        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_LifeDrain because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_LifeDrain) == 0xae8);
+    static_assert(sizeof(CCitadel_Ability_LifeDrain) == 0xaf0);
 };

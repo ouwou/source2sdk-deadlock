@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1730
+    // Size: 0x1768
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,30 +28,30 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_BeamParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BeamParticle;
-        char m_BeamParticle[0xe0]; // 0x14f0        
+        char m_BeamParticle[0xe0]; // 0x1528        
         // m_HitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HitParticle;
-        char m_HitParticle[0xe0]; // 0x15d0        
+        char m_HitParticle[0xe0]; // 0x1608        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_SlowModifier;
-        char m_SlowModifier[0x10]; // 0x16b0        
+        char m_SlowModifier[0x10]; // 0x16e8        
         // m_BuildupModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadel_Modifier_Base_Buildup> m_BuildupModifier;
-        char m_BuildupModifier[0x10]; // 0x16c0        
+        char m_BuildupModifier[0x10]; // 0x16f8        
         // m_BuildupProcModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BuildupProcModifier;
-        char m_BuildupProcModifier[0x10]; // 0x16d0        
+        char m_BuildupProcModifier[0x10]; // 0x1708        
         // metadata: MPropertyStartGroup "Sound"
-        CSoundEventName m_BeamStartSound; // 0x16e0        
-        CSoundEventName m_BeamStopSound; // 0x16f0        
-        CSoundEventName m_BeamPointStartLoopSound; // 0x1700        
-        CSoundEventName m_BeamPointEndLoopSound; // 0x1710        
-        CSoundEventName m_BeamPointClosestLoopSound; // 0x1720        
+        CSoundEventName m_BeamStartSound; // 0x1718        
+        CSoundEventName m_BeamStopSound; // 0x1728        
+        CSoundEventName m_BeamPointStartLoopSound; // 0x1738        
+        CSoundEventName m_BeamPointEndLoopSound; // 0x1748        
+        CSoundEventName m_BeamPointClosestLoopSound; // 0x1758        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_IceBeamVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_IceBeamVData) == 0x1730);
+    static_assert(sizeof(CCitadel_Ability_IceBeamVData) == 0x1768);
 };

@@ -18,7 +18,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1298
+    // Size: 0x12c0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,74 +26,74 @@ namespace source2sdk::server
     class CNPC_TrooperNeutralVData : public server::CAI_CitadelNPCVData
     {
     public:
-        client::ENeutralTrooperType m_eTrooperType; // 0xf30        
-        float m_flGoldReward; // 0xf34        
-        float m_flGoldRewardBonusPercentPerMinute; // 0xf38        
-        bool m_bGiveGoldOnHit; // 0xf3c        
-        bool m_bOrbDropper; // 0xf3d        
-        bool m_bCapSimultanousAttackers; // 0xf3e        
-        [[maybe_unused]] std::uint8_t pad_0xf3f[0x1]; // 0xf3f
-        float m_flShieldReactivateDelay; // 0xf40        
-        float m_flDyingDuration; // 0xf44        
+        client::ENeutralTrooperType m_eTrooperType; // 0xf58        
+        float m_flGoldReward; // 0xf5c        
+        float m_flGoldRewardBonusPercentPerMinute; // 0xf60        
+        bool m_bGiveGoldOnHit; // 0xf64        
+        bool m_bOrbDropper; // 0xf65        
+        bool m_bCapSimultanousAttackers; // 0xf66        
+        [[maybe_unused]] std::uint8_t pad_0xf67[0x1]; // 0xf67
+        float m_flShieldReactivateDelay; // 0xf68        
+        float m_flDyingDuration; // 0xf6c        
         // metadata: MPropertyStartGroup "Behavior"
         // metadata: MPropertyFriendlyName "Damaged by Bullets?"
-        bool m_bDamagedByBullets; // 0xf48        
+        bool m_bDamagedByBullets; // 0xf70        
         // metadata: MPropertyFriendlyName "Damaged by Melee?"
-        bool m_bDamagedByMelee; // 0xf49        
+        bool m_bDamagedByMelee; // 0xf71        
         // metadata: MPropertyFriendlyName "Damaged by Abilities?"
-        bool m_bDamagedByAbilities; // 0xf4a        
+        bool m_bDamagedByAbilities; // 0xf72        
         // metadata: MPropertyFriendlyName "Fixed Melee Damage?"
-        bool m_bFixedMeleeDamage; // 0xf4b        
-        [[maybe_unused]] std::uint8_t pad_0xf4c[0x4]; // 0xf4c
+        bool m_bFixedMeleeDamage; // 0xf73        
+        [[maybe_unused]] std::uint8_t pad_0xf74[0x4]; // 0xf74
         // metadata: MPropertyStartGroup "Shield FX"
         // m_ShieldParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ShieldParticle;
-        char m_ShieldParticle[0xe0]; // 0xf50        
+        char m_ShieldParticle[0xe0]; // 0xf78        
         // metadata: MPropertyStartGroup "Retaliation Attack"
         // metadata: MPropertyDescription "How much damage to deal on retaliate the attacker when this is hit."
-        float m_flRetaliateDamage; // 0x1030        
-        float m_flRetaliateCooldown; // 0x1034        
+        float m_flRetaliateDamage; // 0x1058        
+        float m_flRetaliateCooldown; // 0x105c        
         // metadata: MPropertyDescription "Particle to play when dealing retaliate damage"
         // m_retaliateParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_retaliateParticle;
-        char m_retaliateParticle[0xe0]; // 0x1038        
+        char m_retaliateParticle[0xe0]; // 0x1060        
         // metadata: MPropertyStartGroup "AOE Attack"
-        bool m_bHasAOEAttack; // 0x1118        
-        [[maybe_unused]] std::uint8_t pad_0x1119[0x3]; // 0x1119
-        float m_flAOERadius; // 0x111c        
-        float m_flAOEDamage; // 0x1120        
-        float m_flAOEAttackCooldown; // 0x1124        
+        bool m_bHasAOEAttack; // 0x1140        
+        [[maybe_unused]] std::uint8_t pad_0x1141[0x3]; // 0x1141
+        float m_flAOERadius; // 0x1144        
+        float m_flAOEDamage; // 0x1148        
+        float m_flAOEAttackCooldown; // 0x114c        
         // m_AOEParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AOEParticle;
-        char m_AOEParticle[0xe0]; // 0x1128        
+        char m_AOEParticle[0xe0]; // 0x1150        
         // m_AOEDebuffToApply has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_AOEDebuffToApply;
-        char m_AOEDebuffToApply[0x10]; // 0x1208        
-        CSoundEventName m_AOEInitiateSound; // 0x1218        
-        CSoundEventName m_AOESound; // 0x1228        
-        float m_AOEDebuffDuration; // 0x1238        
-        [[maybe_unused]] std::uint8_t pad_0x123c[0x4]; // 0x123c
+        char m_AOEDebuffToApply[0x10]; // 0x1230        
+        CSoundEventName m_AOEInitiateSound; // 0x1240        
+        CSoundEventName m_AOESound; // 0x1250        
+        float m_AOEDebuffDuration; // 0x1260        
+        [[maybe_unused]] std::uint8_t pad_0x1264[0x4]; // 0x1264
         // metadata: MPropertyStartGroup "Body"
         // m_vecRandomBodyGroup has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CUtlString> m_vecRandomBodyGroup;
-        char m_vecRandomBodyGroup[0x18]; // 0x1240        
+        char m_vecRandomBodyGroup[0x18]; // 0x1268        
         // m_vecRandomSkin has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CUtlString> m_vecRandomSkin;
-        char m_vecRandomSkin[0x18]; // 0x1258        
+        char m_vecRandomSkin[0x18]; // 0x1280        
         // metadata: MPropertyStartGroup "Visuals"
-        float m_flHullCapsuleRadius; // 0x1270        
-        float m_flHullCapsuleHeight; // 0x1274        
+        float m_flHullCapsuleRadius; // 0x1298        
+        float m_flHullCapsuleHeight; // 0x129c        
         // metadata: MPropertyStartGroup "Idles"
-        bool m_bFaceEnemyWhileIdle; // 0x1278        
-        [[maybe_unused]] std::uint8_t pad_0x1279[0x7]; // 0x1279
-        CSoundEventName m_IdleLoopSound; // 0x1280        
+        bool m_bFaceEnemyWhileIdle; // 0x12a0        
+        [[maybe_unused]] std::uint8_t pad_0x12a1[0x7]; // 0x12a1
+        CSoundEventName m_IdleLoopSound; // 0x12a8        
         // metadata: MPropertyStartGroup "Movement"
-        client::MoveType_t m_MoveType; // 0x1290        
-        [[maybe_unused]] std::uint8_t pad_0x1291[0x7];
+        client::MoveType_t m_MoveType; // 0x12b8        
+        [[maybe_unused]] std::uint8_t pad_0x12b9[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperNeutralVData because it is not a standard-layout class
     
-    static_assert(sizeof(CNPC_TrooperNeutralVData) == 0x1298);
+    static_assert(sizeof(CNPC_TrooperNeutralVData) == 0x12c0);
 };

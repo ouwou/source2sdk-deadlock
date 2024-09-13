@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 9
+    // Enumerator count: 10
     // Alignment: 4
     // Size: 0x4
     enum class ENeutralTrooperType : std::uint32_t
@@ -22,5 +22,6 @@ namespace source2sdk::client
         NEUTRAL_TRASHBUG = 0xa,
         NEUTRAL_WHACK_A_GHOST = 0xb,
         NEUTRAL_VAULT = 0xc,
+        NEUTRAL_SUPER_HEROTEST = 0xd,
     };
 };

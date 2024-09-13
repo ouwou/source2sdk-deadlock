@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa0
+    // Size: 0xb8
     // Has VTable
     // Has Trivial Destructor
     // 
@@ -24,12 +24,12 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyHideField
-        int32_t m_nCameraParam; // 0x98        
-        [[maybe_unused]] std::uint8_t pad_0x9c[0x4];
+        int32_t m_nCameraParam; // 0xb0        
+        [[maybe_unused]] std::uint8_t pad_0xb4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CitadelCameraDistanceOperationDef_t because it is not a standard-layout class
     
-    static_assert(sizeof(CitadelCameraDistanceOperationDef_t) == 0xa0);
+    static_assert(sizeof(CitadelCameraDistanceOperationDef_t) == 0xb8);
 };

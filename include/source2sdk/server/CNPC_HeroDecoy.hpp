@@ -14,13 +14,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1610
+    // Size: 0x1640
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_HeroDecoy : public server::CNPC_HeroCloneTrooper
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x15f8[0x18];
+        [[maybe_unused]] std::uint8_t pad_0x1628[0x18];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_HERO_DECOY() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_HeroDecoy")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_HERO_DECOY_MOVETO() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_HeroDecoy")->GetStaticFields()[1]->m_pInstance);};
@@ -31,5 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CNPC_HeroDecoy) == 0x1610);
+    static_assert(sizeof(CNPC_HeroDecoy) == 0x1640);
 };

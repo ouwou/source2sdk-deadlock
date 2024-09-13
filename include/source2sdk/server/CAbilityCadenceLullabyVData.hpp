@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1500
+    // Size: 0x1538
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,11 +26,11 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_SleepAOEModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_SleepAOEModifier;
-        char m_SleepAOEModifier[0x10]; // 0x14f0        
+        char m_SleepAOEModifier[0x10]; // 0x1528        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityCadenceLullabyVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityCadenceLullabyVData) == 0x1500);
+    static_assert(sizeof(CAbilityCadenceLullabyVData) == 0x1538);
 };

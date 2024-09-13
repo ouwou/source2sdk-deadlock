@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7f8
+    // Size: 0x808
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,11 +26,11 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_ImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ImpactParticle;
-        char m_ImpactParticle[0xe0]; // 0x718        
+        char m_ImpactParticle[0xe0]; // 0x728        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_MedicBulletsVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Modifier_MedicBulletsVData) == 0x7f8);
+    static_assert(sizeof(CCitadel_Modifier_MedicBulletsVData) == 0x808);
 };

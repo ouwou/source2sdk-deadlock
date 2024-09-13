@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb80
+    // Size: 0xb90
     // Has VTable
     #pragma pack(push, 1)
     class CAbility_Synth_Pulse : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xad8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xae8[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CAbility_Synth_Pulse) == 0xb80);
+    static_assert(sizeof(CAbility_Synth_Pulse) == 0xb90);
 };

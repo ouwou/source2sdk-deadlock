@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1558
+    // Size: 0x1590
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,12 +23,12 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_HeadShotVictimSound; // 0x1538        
-        CSoundEventName m_HeadShotConfirmationSound; // 0x1548        
+        CSoundEventName m_HeadShotVictimSound; // 0x1570        
+        CSoundEventName m_HeadShotConfirmationSound; // 0x1580        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_HeadshotBooster_VData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_WeaponUpgrade_HeadshotBooster_VData) == 0x1558);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_HeadshotBooster_VData) == 0x1590);
 };

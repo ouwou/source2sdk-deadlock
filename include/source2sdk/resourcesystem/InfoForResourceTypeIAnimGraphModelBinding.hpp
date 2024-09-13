@@ -17,7 +17,7 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vanmgrpheconitemvents"
+    // static metadata: MResourceTypeForInfoType "vanmgrpheconitem"
     #pragma pack(push, 1)
     class InfoForResourceTypeIAnimGraphModelBinding
     {

@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16c0
+    // Size: 0x16f8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,16 +26,16 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_HealBeamParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HealBeamParticle;
-        char m_HealBeamParticle[0xe0]; // 0x14f0        
+        char m_HealBeamParticle[0xe0]; // 0x1528        
         // m_HealTargetParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HealTargetParticle;
-        char m_HealTargetParticle[0xe0]; // 0x15d0        
+        char m_HealTargetParticle[0xe0]; // 0x1608        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strHealCastSound; // 0x16b0        
+        CSoundEventName m_strHealCastSound; // 0x16e8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityMedicHealVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityMedicHealVData) == 0x16c0);
+    static_assert(sizeof(CAbilityMedicHealVData) == 0x16f8);
 };

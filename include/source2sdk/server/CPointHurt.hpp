@@ -1,4 +1,5 @@
 #pragma once
+#include "source2sdk/client/DamageTypes_t.hpp"
 #include "source2sdk/server/CPointEntity.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -26,7 +27,7 @@ namespace source2sdk::server
     {
     public:
         int32_t m_nDamage; // 0x4d8        
-        int32_t m_bitsDamageType; // 0x4dc        
+        client::DamageTypes_t m_bitsDamageType; // 0x4dc        
         float m_flRadius; // 0x4e0        
         float m_flDelay; // 0x4e4        
         CUtlSymbolLarge m_strTarget; // 0x4e8        

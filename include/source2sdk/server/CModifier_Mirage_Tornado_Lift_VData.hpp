@@ -25,9 +25,9 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Modifiers"
-        // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<server::CBaseModifier> m_SlowModifier;
-        char m_SlowModifier[0x10]; // 0x5f8        
+        // m_HoldInPlaceModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<server::CBaseModifier> m_HoldInPlaceModifier;
+        char m_HoldInPlaceModifier[0x10]; // 0x5f8        
         // metadata: MPropertyStartGroup "Visuals"
         // m_LiftParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LiftParticle;

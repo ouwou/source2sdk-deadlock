@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb00
+    // Size: 0xb10
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_WeaponUpgrade_InstantReload : public server::CCitadel_Item
     {
     public:
-        bool m_bIsManualReloading; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xaf9[0x7];
+        bool m_bIsManualReloading; // 0xb08        
+        [[maybe_unused]] std::uint8_t pad_0xb09[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_InstantReload because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_WeaponUpgrade_InstantReload) == 0xb00);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_InstantReload) == 0xb10);
 };

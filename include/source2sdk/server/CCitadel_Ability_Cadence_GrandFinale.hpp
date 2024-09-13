@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb48
+    // Size: 0xb58
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Cadence_GrandFinale : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xad8[0x70];
+        [[maybe_unused]] std::uint8_t pad_0xae8[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_Cadence_GrandFinale) == 0xb48);
+    static_assert(sizeof(CCitadel_Ability_Cadence_GrandFinale) == 0xb58);
 };

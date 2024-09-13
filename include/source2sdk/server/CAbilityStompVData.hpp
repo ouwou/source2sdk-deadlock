@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1610
+    // Size: 0x1648
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,21 +27,21 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_StompParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_StompParticle;
-        char m_StompParticle[0xe0]; // 0x14f0        
+        char m_StompParticle[0xe0]; // 0x1528        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strStompExplosionSound; // 0x15d0        
-        CSoundEventName m_strCastDelayLocalPlayerSound; // 0x15e0        
+        CSoundEventName m_strStompExplosionSound; // 0x1608        
+        CSoundEventName m_strCastDelayLocalPlayerSound; // 0x1618        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x15f0        
+        char m_DebuffModifier[0x10]; // 0x1628        
         // m_BulletResistModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_BulletResistModifier;
-        char m_BulletResistModifier[0x10]; // 0x1600        
+        char m_BulletResistModifier[0x10]; // 0x1638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityStompVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityStompVData) == 0x1610);
+    static_assert(sizeof(CAbilityStompVData) == 0x1648);
 };

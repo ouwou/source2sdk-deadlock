@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe60
+    // Size: 0xe70
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_ShieldedSentry : public server::CCitadelBaseAbility
@@ -27,12 +27,12 @@ namespace source2sdk::server
     public:
         // m_vecDeployedSentries has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CNPC_SimpleAnimatingAI>> m_vecDeployedSentries;
-        char m_vecDeployedSentries[0x18]; // 0xad8        
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x370];
+        char m_vecDeployedSentries[0x18]; // 0xae8        
+        [[maybe_unused]] std::uint8_t pad_0xb00[0x370];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ShieldedSentry because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_ShieldedSentry) == 0xe60);
+    static_assert(sizeof(CCitadel_Ability_ShieldedSentry) == 0xe70);
 };

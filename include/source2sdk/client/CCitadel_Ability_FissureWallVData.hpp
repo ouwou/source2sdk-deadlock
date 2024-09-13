@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16d0
+    // Size: 0x1708
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,20 +27,20 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_FriendlyWallParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FriendlyWallParticle;
-        char m_FriendlyWallParticle[0xe0]; // 0x14f0        
+        char m_FriendlyWallParticle[0xe0]; // 0x1528        
         // m_EnemyWallParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_EnemyWallParticle;
-        char m_EnemyWallParticle[0xe0]; // 0x15d0        
+        char m_EnemyWallParticle[0xe0]; // 0x1608        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_WallTravelSoundLoop; // 0x16b0        
+        CSoundEventName m_WallTravelSoundLoop; // 0x16e8        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_WallModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_WallModifier;
-        char m_WallModifier[0x10]; // 0x16c0        
+        char m_WallModifier[0x10]; // 0x16f8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FissureWallVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_FissureWallVData) == 0x16d0);
+    static_assert(sizeof(CCitadel_Ability_FissureWallVData) == 0x1708);
 };

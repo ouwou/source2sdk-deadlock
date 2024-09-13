@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1520
+    // Size: 0x1548
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,19 +24,16 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyStartGroup "Modifiers"
-        // m_PreCreationModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_PreCreationModifier;
-        char m_PreCreationModifier[0x10]; // 0x14f0        
         // m_WhirlwindEvasionModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_WhirlwindEvasionModifier;
-        char m_WhirlwindEvasionModifier[0x10]; // 0x1500        
+        char m_WhirlwindEvasionModifier[0x10]; // 0x1528        
         // m_SandPhantomModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_SandPhantomModifier;
-        char m_SandPhantomModifier[0x10]; // 0x1510        
+        char m_SandPhantomModifier[0x10]; // 0x1538        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Mirage_SandPhantom_VData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbility_Mirage_SandPhantom_VData) == 0x1520);
+    static_assert(sizeof(CAbility_Mirage_SandPhantom_VData) == 0x1548);
 };

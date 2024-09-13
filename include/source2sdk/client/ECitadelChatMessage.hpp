@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 12
+    // Enumerator count: 13
     // Alignment: 4
     // Size: 0x4
     enum class ECitadelChatMessage : std::uint32_t
@@ -25,5 +25,6 @@ namespace source2sdk::client
         CITADEL_CHAT_MESSAGE_CANTPAUSEYET = 0xa,
         CITADEL_CHAT_MESSAGE_PREGAME_COUNTDOWN = 0xb,
         CITADEL_CHAT_MESSAGE_NOTEAMPAUSESLEFT = 0xc,
+        CITADEL_CHAT_MESSAGE_COMMS_RESTRICTED = 0xd,
     };
 };

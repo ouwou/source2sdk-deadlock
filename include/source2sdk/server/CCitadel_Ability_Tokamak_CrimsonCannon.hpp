@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf8
+    // Size: 0xd08
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bAirCast"
@@ -23,17 +23,17 @@ namespace source2sdk::server
     class CCitadel_Ability_Tokamak_CrimsonCannon : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xad8[0x20]; // 0xad8
+        [[maybe_unused]] std::uint8_t pad_0xae8[0x20]; // 0xae8
         // m_TargetPreviews has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::ParticleIndex_t> m_TargetPreviews;
-        char m_TargetPreviews[0x18]; // 0xaf8        
+        char m_TargetPreviews[0x18]; // 0xb08        
         // metadata: MNetworkEnable
-        bool m_bAirCast; // 0xb10        
-        [[maybe_unused]] std::uint8_t pad_0xb11[0x1e7];
+        bool m_bAirCast; // 0xb20        
+        [[maybe_unused]] std::uint8_t pad_0xb21[0x1e7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tokamak_CrimsonCannon because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_Tokamak_CrimsonCannon) == 0xcf8);
+    static_assert(sizeof(CCitadel_Ability_Tokamak_CrimsonCannon) == 0xd08);
 };

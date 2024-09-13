@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb88
+    // Size: 0xb98
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_ShivWeapon : public server::CCitadel_Ability_PrimaryWeapon
@@ -25,5 +25,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_ShivWeapon) == 0xb88);
+    static_assert(sizeof(CCitadel_Ability_ShivWeapon) == 0xb98);
 };

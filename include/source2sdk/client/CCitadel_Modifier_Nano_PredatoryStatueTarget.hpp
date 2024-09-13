@@ -14,19 +14,17 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1b8
+    // Size: 0x168
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Nano_PredatoryStatueTarget : public client::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc0[0xc]; // 0xc0
-        int32_t m_iStatueID; // 0xcc        
-        [[maybe_unused]] std::uint8_t pad_0xd0[0xe8];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0xa8];
+        // No schema binary for binding
     };
     #pragma pack(pop)
     
-    // Cannot assert offsets of fields in CCitadel_Modifier_Nano_PredatoryStatueTarget because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Modifier_Nano_PredatoryStatueTarget) == 0x1b8);
+    static_assert(sizeof(CCitadel_Modifier_Nano_PredatoryStatueTarget) == 0x168);
 };

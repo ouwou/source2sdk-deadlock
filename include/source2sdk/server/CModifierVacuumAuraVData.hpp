@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x728
+    // Size: 0x8e8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,16 +23,22 @@ namespace source2sdk::server
     class CModifierVacuumAuraVData : public server::CCitadelModifierAuraVData
     {
     public:
-        // metadata: MPropertyGroupName "Visuals"
+        // metadata: MPropertyStartGroup "Visuals"
         // m_FinishParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FinishParticle;
         char m_FinishParticle[0xe0]; // 0x638        
+        // m_AlliedParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AlliedParticle;
+        char m_AlliedParticle[0xe0]; // 0x718        
+        // m_EnemyParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_EnemyParticle;
+        char m_EnemyParticle[0xe0]; // 0x7f8        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strAmbientLoopingLocalPlayerSound; // 0x718        
+        CSoundEventName m_strAmbientLoopingLocalPlayerSound; // 0x8d8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVacuumAuraVData because it is not a standard-layout class
     
-    static_assert(sizeof(CModifierVacuumAuraVData) == 0x728);
+    static_assert(sizeof(CModifierVacuumAuraVData) == 0x8e8);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe10
+    // Size: 0xe20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flDashEndTime"
@@ -25,14 +25,14 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        client::CCitadelAutoScaledTime m_flDashEndTime; // 0xc60        
+        client::CCitadelAutoScaledTime m_flDashEndTime; // 0xc70        
         // metadata: MNetworkEnable
-        bool m_bIsSpeedBursting; // 0xc78        
-        [[maybe_unused]] std::uint8_t pad_0xc79[0x197];
+        bool m_bIsSpeedBursting; // 0xc88        
+        [[maybe_unused]] std::uint8_t pad_0xc89[0x197];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FlameDash because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_FlameDash) == 0xe10);
+    static_assert(sizeof(CCitadel_Ability_FlameDash) == 0xe20);
 };

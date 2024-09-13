@@ -14,9 +14,9 @@
 namespace source2sdk::server
 {
     // Registered alignment: unknown
-    // Alignment: 0x4
+    // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x50
+    // Size: 0x58
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CEntityIndex m_nEntIndex"
@@ -27,6 +27,7 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "bool m_bVisibleOnMap"
     // static metadata: MNetworkVarNames "bool m_bBackdoorProtectionActive"
     // static metadata: MNetworkVarNames "GameTick_t m_nTickHidden"
+    // static metadata: MNetworkVarNames "CUtlString m_strEntityName"
     // static metadata: MNetworkVarNames "uint8 m_nHealthPercent"
     // static metadata: MNetworkVarNames "uint8 m_nPositionX"
     // static metadata: MNetworkVarNames "uint8 m_nPositionY"
@@ -53,14 +54,16 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         entity2::GameTick_t m_nTickHidden; // 0x44        
         // metadata: MNetworkEnable
-        uint8_t m_nHealthPercent; // 0x48        
+        CUtlString m_strEntityName; // 0x48        
+        // metadata: MNetworkEnable
+        uint8_t m_nHealthPercent; // 0x50        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        uint8_t m_nPositionX; // 0x49        
+        uint8_t m_nPositionX; // 0x51        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        uint8_t m_nPositionY; // 0x4a        
-        [[maybe_unused]] std::uint8_t pad_0x4b[0x5];
+        uint8_t m_nPositionY; // 0x52        
+        [[maybe_unused]] std::uint8_t pad_0x53[0x5];
     };
     #pragma pack(pop)
     
@@ -72,9 +75,10 @@ namespace source2sdk::server
     static_assert(offsetof(STeamFOWEntity, m_bVisibleOnMap) == 0x41);
     static_assert(offsetof(STeamFOWEntity, m_bBackdoorProtectionActive) == 0x42);
     static_assert(offsetof(STeamFOWEntity, m_nTickHidden) == 0x44);
-    static_assert(offsetof(STeamFOWEntity, m_nHealthPercent) == 0x48);
-    static_assert(offsetof(STeamFOWEntity, m_nPositionX) == 0x49);
-    static_assert(offsetof(STeamFOWEntity, m_nPositionY) == 0x4a);
+    static_assert(offsetof(STeamFOWEntity, m_strEntityName) == 0x48);
+    static_assert(offsetof(STeamFOWEntity, m_nHealthPercent) == 0x50);
+    static_assert(offsetof(STeamFOWEntity, m_nPositionX) == 0x51);
+    static_assert(offsetof(STeamFOWEntity, m_nPositionY) == 0x52);
     
-    static_assert(sizeof(STeamFOWEntity) == 0x50);
+    static_assert(sizeof(STeamFOWEntity) == 0x58);
 };

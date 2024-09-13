@@ -15,24 +15,24 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd38
+    // Size: 0xd48
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_SettingSun : public server::CCitadelBaseAbility
     {
     public:
-        bool m_bProjectileActive; // 0xad8        
-        [[maybe_unused]] std::uint8_t pad_0xad9[0x18f]; // 0xad9
+        bool m_bProjectileActive; // 0xae8        
+        [[maybe_unused]] std::uint8_t pad_0xae9[0x18f]; // 0xae9
         // m_TargetPreviews has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::ParticleIndex_t> m_TargetPreviews;
-        char m_TargetPreviews[0x18]; // 0xc68        
-        [[maybe_unused]] std::uint8_t pad_0xc80[0xb0]; // 0xc80
-        bool m_bWasSelected; // 0xd30        
-        [[maybe_unused]] std::uint8_t pad_0xd31[0x7];
+        char m_TargetPreviews[0x18]; // 0xc78        
+        [[maybe_unused]] std::uint8_t pad_0xc90[0xb0]; // 0xc90
+        bool m_bWasSelected; // 0xd40        
+        [[maybe_unused]] std::uint8_t pad_0xd41[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_SettingSun because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_SettingSun) == 0xd38);
+    static_assert(sizeof(CCitadel_Ability_SettingSun) == 0xd48);
 };

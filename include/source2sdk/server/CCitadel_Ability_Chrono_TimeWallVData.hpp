@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x18a0
+    // Size: 0x18d8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,27 +27,27 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_AuraModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_AuraModifier;
-        char m_AuraModifier[0x10]; // 0x14f0        
+        char m_AuraModifier[0x10]; // 0x1528        
         // metadata: MPropertyStartGroup "Visuals"
         // m_TimeWallParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TimeWallParticle;
-        char m_TimeWallParticle[0xe0]; // 0x1500        
+        char m_TimeWallParticle[0xe0]; // 0x1538        
         // m_TimeWallChargeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TimeWallChargeParticle;
-        char m_TimeWallChargeParticle[0xe0]; // 0x15e0        
+        char m_TimeWallChargeParticle[0xe0]; // 0x1618        
         // m_TimeWallHitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TimeWallHitParticle;
-        char m_TimeWallHitParticle[0xe0]; // 0x16c0        
+        char m_TimeWallHitParticle[0xe0]; // 0x16f8        
         // m_TimeWallHitTimerParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TimeWallHitTimerParticle;
-        char m_TimeWallHitTimerParticle[0xe0]; // 0x17a0        
+        char m_TimeWallHitTimerParticle[0xe0]; // 0x17d8        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strWallCreated; // 0x1880        
-        CSoundEventName m_strChargeUpSound; // 0x1890        
+        CSoundEventName m_strWallCreated; // 0x18b8        
+        CSoundEventName m_strChargeUpSound; // 0x18c8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Chrono_TimeWallVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_Chrono_TimeWallVData) == 0x18a0);
+    static_assert(sizeof(CCitadel_Ability_Chrono_TimeWallVData) == 0x18d8);
 };

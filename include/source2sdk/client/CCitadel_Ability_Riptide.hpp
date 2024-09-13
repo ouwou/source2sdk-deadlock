@@ -14,17 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd40
+    // Size: 0xd50
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Riptide : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc60[0xe0];
+        [[maybe_unused]] std::uint8_t pad_0xc70[0xe0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_Riptide) == 0xd40);
+    static_assert(sizeof(CCitadel_Ability_Riptide) == 0xd50);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x558
+    // Size: 0x578
     // Has VTable
     #pragma pack(push, 1)
     class CAI_BaseNPCGraphController : public client::CAnimGraphControllerBase
@@ -131,6 +131,9 @@ namespace source2sdk::client
         // m_bDoorLeft has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bDoorLeft;
         char m_bDoorLeft[0x20]; // 0x538        
+        // m_flBlinkAmount has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<float> m_flBlinkAmount;
+        char m_flBlinkAmount[0x20]; // 0x558        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_BaseNPCGraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -140,5 +143,5 @@ namespace source2sdk::client
     
     // Cannot assert offsets of fields in CAI_BaseNPCGraphController because it is not a standard-layout class
     
-    static_assert(sizeof(CAI_BaseNPCGraphController) == 0x558);
+    static_assert(sizeof(CAI_BaseNPCGraphController) == 0x578);
 };

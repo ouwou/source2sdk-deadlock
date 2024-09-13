@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb18
+    // Size: 0xb28
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
@@ -23,15 +23,15 @@ namespace source2sdk::server
     class CCitadel_Ability_RiotProtocol : public server::CCitadelBaseAbility
     {
     public:
-        client::ParticleIndex_t m_ChargeUpParticle; // 0xad8        
+        client::ParticleIndex_t m_ChargeUpParticle; // 0xae8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bActive; // 0xadc        
-        [[maybe_unused]] std::uint8_t pad_0xadd[0x3b];
+        bool m_bActive; // 0xaec        
+        [[maybe_unused]] std::uint8_t pad_0xaed[0x3b];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_RiotProtocol because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_RiotProtocol) == 0xb18);
+    static_assert(sizeof(CCitadel_Ability_RiotProtocol) == 0xb28);
 };

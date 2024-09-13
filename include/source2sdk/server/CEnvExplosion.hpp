@@ -1,5 +1,6 @@
 #pragma once
 #include "source2sdk/client/Class_T.hpp"
+#include "source2sdk/client/DamageTypes_t.hpp"
 #include "source2sdk/server/CModelPointEntity.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -35,7 +36,7 @@ namespace source2sdk::server
         // m_hInflictor has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hInflictor;
         char m_hInflictor[0x4]; // 0x780        
-        int32_t m_iCustomDamageType; // 0x784        
+        client::DamageTypes_t m_iCustomDamageType; // 0x784        
         bool m_bCreateDebris; // 0x788        
         [[maybe_unused]] std::uint8_t pad_0x789[0x7]; // 0x789
         CUtlSymbolLarge m_iszExplosionType; // 0x790        

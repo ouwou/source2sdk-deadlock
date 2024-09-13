@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15f0
+    // Size: 0x1628
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,18 +27,18 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Visuals"
         // m_JumpParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_JumpParticle;
-        char m_JumpParticle[0xe0]; // 0x14f0        
+        char m_JumpParticle[0xe0]; // 0x1528        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_InAirModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_InAirModifier;
-        char m_InAirModifier[0x10]; // 0x15d0        
+        char m_InAirModifier[0x10]; // 0x1608        
         // m_PowerJumpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_PowerJumpModifier;
-        char m_PowerJumpModifier[0x10]; // 0x15e0        
+        char m_PowerJumpModifier[0x10]; // 0x1618        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPowerJumpVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityPowerJumpVData) == 0x15f0);
+    static_assert(sizeof(CAbilityPowerJumpVData) == 0x1628);
 };

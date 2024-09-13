@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1500
+    // Size: 0x1538
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,11 +26,11 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Modifiers"
         // m_RadianceModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_RadianceModifier;
-        char m_RadianceModifier[0x10]; // 0x14f0        
+        char m_RadianceModifier[0x10]; // 0x1528        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityTokamakRadianceVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityTokamakRadianceVData) == 0x1500);
+    static_assert(sizeof(CAbilityTokamakRadianceVData) == 0x1538);
 };

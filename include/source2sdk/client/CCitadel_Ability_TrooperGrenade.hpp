@@ -14,17 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdb0
+    // Size: 0xdc0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_TrooperGrenade : public client::CCitadelBaseAbilityServerOnly
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc60[0x150];
+        [[maybe_unused]] std::uint8_t pad_0xc70[0x150];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_TrooperGrenade) == 0xdb0);
+    static_assert(sizeof(CCitadel_Ability_TrooperGrenade) == 0xdc0);
 };

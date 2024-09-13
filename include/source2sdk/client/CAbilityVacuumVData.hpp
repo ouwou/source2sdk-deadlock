@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1510
+    // Size: 0x1548
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,16 +26,16 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Modifiers"
         // m_VacuumAuraModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_VacuumAuraModifier;
-        char m_VacuumAuraModifier[0x10]; // 0x14f0        
+        char m_VacuumAuraModifier[0x10]; // 0x1528        
         // metadata: MPropertyStartGroup "+Vacuum Properties"
-        float m_flAirSpeedMax; // 0x1500        
-        float m_flFallSpeedMax; // 0x1504        
-        float m_flAirDrag; // 0x1508        
-        float m_flMaxMovespeed; // 0x150c        
+        float m_flAirSpeedMax; // 0x1538        
+        float m_flFallSpeedMax; // 0x153c        
+        float m_flAirDrag; // 0x1540        
+        float m_flMaxMovespeed; // 0x1544        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityVacuumVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityVacuumVData) == 0x1510);
+    static_assert(sizeof(CAbilityVacuumVData) == 0x1548);
 };

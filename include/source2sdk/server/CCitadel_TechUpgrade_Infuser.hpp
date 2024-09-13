@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaf8
+    // Size: 0xb08
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_TechUpgrade_Infuser : public server::CCitadel_Item
@@ -25,5 +25,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_TechUpgrade_Infuser) == 0xaf8);
+    static_assert(sizeof(CCitadel_TechUpgrade_Infuser) == 0xb08);
 };

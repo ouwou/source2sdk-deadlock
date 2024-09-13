@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xca0
+    // Size: 0xcb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
@@ -24,12 +24,12 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bActive; // 0xc60        
-        [[maybe_unused]] std::uint8_t pad_0xc61[0x3f];
+        bool m_bActive; // 0xc70        
+        [[maybe_unused]] std::uint8_t pad_0xc71[0x3f];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_RiotProtocol because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_RiotProtocol) == 0xca0);
+    static_assert(sizeof(CCitadel_Ability_RiotProtocol) == 0xcb0);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x718
+    // Size: 0x728
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -38,10 +38,13 @@ namespace source2sdk::client
         // m_TracerAdditionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TracerAdditionParticle;
         char m_TracerAdditionParticle[0xe0]; // 0x638        
+        // metadata: MPropertyStartGroup "Sounds"
+        // metadata: MPropertyDescription "Sound to play on the shooter when a bullet rolls a proc when fired."
+        CSoundEventName m_OnBulletRolledProcSound; // 0x718        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_BaseBulletPreRollProcVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Modifier_BaseBulletPreRollProcVData) == 0x718);
+    static_assert(sizeof(CCitadel_Modifier_BaseBulletPreRollProcVData) == 0x728);
 };

@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xba0
+    // Size: 0xbb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flParryWindowEndTime"
@@ -33,33 +33,33 @@ namespace source2sdk::server
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flParryWindowEndTime; // 0xb60        
+        entity2::GameTime_t m_flParryWindowEndTime; // 0xb70        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextParryTime; // 0xb64        
+        entity2::GameTime_t m_flNextParryTime; // 0xb74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flStateStartTime; // 0xb68        
+        entity2::GameTime_t m_flStateStartTime; // 0xb78        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDashStartTime; // 0xb6c        
+        entity2::GameTime_t m_flDashStartTime; // 0xb7c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        client::EMeleeHold_AttackState m_eCurrentAttackState; // 0xb70        
+        client::EMeleeHold_AttackState m_eCurrentAttackState; // 0xb80        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        client::EMeleeHold_AttackType m_eCurrentAttackType; // 0xb74        
+        client::EMeleeHold_AttackType m_eCurrentAttackType; // 0xb84        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vAirDashDir; // 0xb78        
-        bool m_bCreatedChargeEffects; // 0xb84        
-        [[maybe_unused]] std::uint8_t pad_0xb85[0x3]; // 0xb85
-        QAngle m_angForced; // 0xb88        
-        [[maybe_unused]] std::uint8_t pad_0xb94[0xc];
+        Vector m_vAirDashDir; // 0xb88        
+        bool m_bCreatedChargeEffects; // 0xb94        
+        [[maybe_unused]] std::uint8_t pad_0xb95[0x3]; // 0xb95
+        QAngle m_angForced; // 0xb98        
+        [[maybe_unused]] std::uint8_t pad_0xba4[0xc];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_HoldMelee because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_HoldMelee) == 0xba0);
+    static_assert(sizeof(CCitadel_Ability_HoldMelee) == 0xbb0);
 };

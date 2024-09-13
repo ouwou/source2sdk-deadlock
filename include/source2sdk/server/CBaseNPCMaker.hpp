@@ -42,24 +42,25 @@ namespace source2sdk::server
         int32_t m_nLiveChildren; // 0x588        
         int32_t m_nMaxLiveChildren; // 0x58c        
         int32_t m_nMinSpawnDistance; // 0x590        
-        int32_t m_nSpawnTheshold; // 0x594        
-        float m_flRadius; // 0x598        
-        bool m_bDisabled; // 0x59c        
-        bool m_bSpawning; // 0x59d        
-        bool m_bZeroPitchAndRoll; // 0x59e        
-        [[maybe_unused]] std::uint8_t pad_0x59f[0x1]; // 0x59f
+        int32_t m_nSpawnThreshold; // 0x594        
+        int32_t m_nBatchCount; // 0x598        
+        float m_flRadius; // 0x59c        
+        bool m_bDisabled; // 0x5a0        
+        bool m_bSpawning; // 0x5a1        
+        bool m_bZeroPitchAndRoll; // 0x5a2        
+        [[maybe_unused]] std::uint8_t pad_0x5a3[0x1]; // 0x5a3
         // m_hIgnoreEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hIgnoreEntity;
-        char m_hIgnoreEntity[0x4]; // 0x5a0        
-        [[maybe_unused]] std::uint8_t pad_0x5a4[0x4]; // 0x5a4
+        char m_hIgnoreEntity[0x4]; // 0x5a4        
         CUtlSymbolLarge m_iszIgnoreEnt; // 0x5a8        
         CUtlSymbolLarge m_iszDestinationGroup; // 0x5b0        
         // m_hSpawnEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hSpawnEntity;
         char m_hSpawnEntity[0x4]; // 0x5b8        
-        server::CBaseNPCMaker__VisibilityCriterion_t m_CriterionVisibility; // 0x5bc        
-        server::CBaseNPCMaker__ThreeStateDist_t m_CriterionDistance; // 0x5c0        
-        [[maybe_unused]] std::uint8_t pad_0x5c4[0xc];
+        int32_t m_nCurrentBatchCount; // 0x5bc        
+        server::CBaseNPCMaker__VisibilityCriterion_t m_CriterionVisibility; // 0x5c0        
+        server::CBaseNPCMaker__ThreeStateDist_t m_CriterionDistance; // 0x5c4        
+        [[maybe_unused]] std::uint8_t pad_0x5c8[0x8];
         
         // Datamap fields:
         // void InputSpawn; // 0x0

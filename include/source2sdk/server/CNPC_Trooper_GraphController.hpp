@@ -14,19 +14,19 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x618
+    // Size: 0x638
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_Trooper_GraphController : public server::CAI_CitadelNPC_GraphController
     {
     public:
-        CAnimGraphTagRef m_sUsingMelee; // 0x5c0        
+        CAnimGraphTagRef m_sUsingMelee; // 0x5e0        
         // m_b_Falling has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_b_Falling;
-        char m_b_Falling[0x20]; // 0x5d8        
+        char m_b_Falling[0x20]; // 0x5f8        
         // m_b_Ziplining has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_b_Ziplining;
-        char m_b_Ziplining[0x20]; // 0x5f8        
+        char m_b_Ziplining[0x20]; // 0x618        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_Trooper_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -36,5 +36,5 @@ namespace source2sdk::server
     
     // Cannot assert offsets of fields in CNPC_Trooper_GraphController because it is not a standard-layout class
     
-    static_assert(sizeof(CNPC_Trooper_GraphController) == 0x618);
+    static_assert(sizeof(CNPC_Trooper_GraphController) == 0x638);
 };

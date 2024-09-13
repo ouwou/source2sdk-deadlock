@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1588
+    // Size: 0x15c0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,25 +26,25 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_RestoreEffectModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_RestoreEffectModifier;
-        char m_RestoreEffectModifier[0x10]; // 0x1538        
+        char m_RestoreEffectModifier[0x10]; // 0x1570        
         // m_OnTakeDamageEffectModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_OnTakeDamageEffectModifier;
-        char m_OnTakeDamageEffectModifier[0x10]; // 0x1548        
+        char m_OnTakeDamageEffectModifier[0x10]; // 0x1580        
         // m_OnBreakEffectModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_OnBreakEffectModifier;
-        char m_OnBreakEffectModifier[0x10]; // 0x1558        
+        char m_OnBreakEffectModifier[0x10]; // 0x1590        
         // m_ResistBuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ResistBuffModifier;
-        char m_ResistBuffModifier[0x10]; // 0x1568        
+        char m_ResistBuffModifier[0x10]; // 0x15a0        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flOnTakeDamageEffectDuration; // 0x1578        
-        float m_flOnBreakEffectDuration; // 0x157c        
-        float m_flOnRestoreEffectDuration; // 0x1580        
-        [[maybe_unused]] std::uint8_t pad_0x1584[0x4];
+        float m_flOnTakeDamageEffectDuration; // 0x15b0        
+        float m_flOnBreakEffectDuration; // 0x15b4        
+        float m_flOnRestoreEffectDuration; // 0x15b8        
+        [[maybe_unused]] std::uint8_t pad_0x15bc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_AblativeCoatVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_ArmorUpgrade_AblativeCoatVData) == 0x1588);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_AblativeCoatVData) == 0x15c0);
 };

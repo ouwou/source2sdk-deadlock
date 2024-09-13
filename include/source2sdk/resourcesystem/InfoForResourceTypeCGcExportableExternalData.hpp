@@ -17,7 +17,7 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vgcxdata‡bW"
+    // static metadata: MResourceTypeForInfoType "vgcxdata–b"
     #pragma pack(push, 1)
     class InfoForResourceTypeCGcExportableExternalData
     {

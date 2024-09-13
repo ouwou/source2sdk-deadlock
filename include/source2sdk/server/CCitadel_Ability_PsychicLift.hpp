@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb28
+    // Size: 0xb38
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_PsychicLift : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xad8[0x50];
+        [[maybe_unused]] std::uint8_t pad_0xae8[0x50];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Ability_PsychicLift) == 0xb28);
+    static_assert(sizeof(CCitadel_Ability_PsychicLift) == 0xb38);
 };

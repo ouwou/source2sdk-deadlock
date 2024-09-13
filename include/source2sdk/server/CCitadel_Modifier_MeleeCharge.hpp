@@ -14,16 +14,17 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x170
+    // Size: 0x1a8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_MeleeCharge : public server::CCitadel_Modifier_BaseEventProc
     {
     public:
+        [[maybe_unused]] std::uint8_t pad_0x170[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Modifier_MeleeCharge) == 0x170);
+    static_assert(sizeof(CCitadel_Modifier_MeleeCharge) == 0x1a8);
 };

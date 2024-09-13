@@ -78,6 +78,8 @@ namespace source2sdk::server
         // int32_t material; // 0x7fffffff
         // int32_t spawnobject; // 0x7fffffff
         // int32_t propdata; // 0x7fffffff
+        // int64_t gamemass; // 0x7fffffff
+        // float massScale; // 0x7fffffff
     };
     #pragma pack(pop)
     

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16c0
+    // Size: 0x16f8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,18 +27,18 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Modifiers"
         // m_BubbleModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_BubbleModifier;
-        char m_BubbleModifier[0x10]; // 0x14f0        
+        char m_BubbleModifier[0x10]; // 0x1528        
         // metadata: MPropertyStartGroup "Visuals"
         // m_strCastEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strCastEffect;
-        char m_strCastEffect[0xe0]; // 0x1500        
+        char m_strCastEffect[0xe0]; // 0x1538        
         // m_strAllyPositionPreview has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strAllyPositionPreview;
-        char m_strAllyPositionPreview[0xe0]; // 0x15e0        
+        char m_strAllyPositionPreview[0xe0]; // 0x1618        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_VoidSphereVData because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_VoidSphereVData) == 0x16c0);
+    static_assert(sizeof(CCitadel_Ability_VoidSphereVData) == 0x16f8);
 };

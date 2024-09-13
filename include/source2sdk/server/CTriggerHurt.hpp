@@ -1,4 +1,5 @@
 #pragma once
+#include "source2sdk/client/DamageTypes_t.hpp"
 #include "source2sdk/entity2/CEntityIOOutput.hpp"
 #include "source2sdk/entity2/GameTime_t.hpp"
 #include "source2sdk/server/CBaseTrigger.hpp"
@@ -32,7 +33,7 @@ namespace source2sdk::server
         float m_flDamageCap; // 0x940        
         entity2::GameTime_t m_flLastDmgTime; // 0x944        
         float m_flForgivenessDelay; // 0x948        
-        int32_t m_bitsDamageInflict; // 0x94c        
+        client::DamageTypes_t m_bitsDamageInflict; // 0x94c        
         int32_t m_damageModel; // 0x950        
         bool m_bNoDmgForce; // 0x954        
         [[maybe_unused]] std::uint8_t pad_0x955[0x3]; // 0x955

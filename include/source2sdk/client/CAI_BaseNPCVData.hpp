@@ -1,10 +1,11 @@
 #pragma once
-#include "source2sdk/client/CAI_BaseNPC_DestructiblePartData.hpp"
+#include "source2sdk/client/CAI_BaseNPC_DestructiblePartHitGroupInfoAndData.hpp"
 #include "source2sdk/client/CCitadelModifier.hpp"
 #include "source2sdk/client/CEntitySubclassVDataBase.hpp"
 #include "source2sdk/client/CFootstepTableHandle.hpp"
 #include "source2sdk/client/CSkillFloat.hpp"
 #include "source2sdk/client/CSkillInt.hpp"
+#include "source2sdk/client/HitGroup_t.hpp"
 #include "source2sdk/client/NPCAttachmentDesc_t.hpp"
 #include "source2sdk/client/NPCStatusEffectMap_t.hpp"
 #include "source2sdk/resourcesystem/InfoForResourceTypeCModel.hpp"
@@ -22,7 +23,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x220
+    // Size: 0x230
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -64,33 +65,33 @@ namespace source2sdk::client
         bool m_bTakesDamage; // 0x1c8        
         [[maybe_unused]] std::uint8_t pad_0x1c9[0x7]; // 0x1c9
         // metadata: MPropertyDescription "Destructible Parts"
-        // m_DestructiblePartsData has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlVector<client::CAI_BaseNPC_DestructiblePartData> m_DestructiblePartsData;
-        char m_DestructiblePartsData[0x18]; // 0x1d0        
+        // m_DestructiblePartsDataByHitGroup has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlOrderedMap<client::HitGroup_t,client::CAI_BaseNPC_DestructiblePartHitGroupInfoAndData> m_DestructiblePartsDataByHitGroup;
+        char m_DestructiblePartsDataByHitGroup[0x28]; // 0x1d0        
         // metadata: MPropertyStartGroup "Navigation"
-        bool m_bAllowNonZUpMovement; // 0x1e8        
+        bool m_bAllowNonZUpMovement; // 0x1f8        
         // metadata: MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
-        bool m_bRequestCapsuleCollision; // 0x1e9        
-        [[maybe_unused]] std::uint8_t pad_0x1ea[0x2]; // 0x1ea
+        bool m_bRequestCapsuleCollision; // 0x1f9        
+        [[maybe_unused]] std::uint8_t pad_0x1fa[0x2]; // 0x1fa
         // metadata: MPropertyDescription "Override the radius of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop OBB"
-        float m_flCapsuleRadiusOverride; // 0x1ec        
+        float m_flCapsuleRadiusOverride; // 0x1fc        
         // metadata: MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
-        float m_flCapsuleHeightOverride; // 0x1f0        
-        [[maybe_unused]] std::uint8_t pad_0x1f4[0x4]; // 0x1f4
+        float m_flCapsuleHeightOverride; // 0x200        
+        [[maybe_unused]] std::uint8_t pad_0x204[0x4]; // 0x204
         // metadata: MPropertyStartGroup "Animation"
         // metadata: MPropertyFriendlyName "Enabled Shared Actions"
         // metadata: MPropertyDescription "List of the shared BaseNPC actions this NPC supports"
         // metadata: MPropertyAttributeEditor "VDataAnimGraphParamEnumValue( m_sModelName; literal; e_action_desired_shared )"
         // m_vecActionDesiredShared has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CGlobalSymbol> m_vecActionDesiredShared;
-        char m_vecActionDesiredShared[0x18]; // 0x1f8        
+        char m_vecActionDesiredShared[0x18]; // 0x208        
         // metadata: MPropertyStartGroup "Sounds"
         // metadata: MPropertyDescription "Player Killed NPC Sound"
-        CSoundEventName m_sPlayerKilledNpcSound; // 0x210        
+        CSoundEventName m_sPlayerKilledNpcSound; // 0x220        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_BaseNPCVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAI_BaseNPCVData) == 0x220);
+    static_assert(sizeof(CAI_BaseNPCVData) == 0x230);
 };

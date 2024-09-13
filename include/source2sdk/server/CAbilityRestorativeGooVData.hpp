@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15e0
+    // Size: 0x1618
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,15 +27,15 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_RestorativeGooParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RestorativeGooParticle;
-        char m_RestorativeGooParticle[0xe0]; // 0x14f0        
+        char m_RestorativeGooParticle[0xe0]; // 0x1528        
         // metadata: MPropertyGroupName "Modifiers"
         // m_RestorativeGooModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_RestorativeGooModifier;
-        char m_RestorativeGooModifier[0x10]; // 0x15d0        
+        char m_RestorativeGooModifier[0x10]; // 0x1608        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityRestorativeGooVData because it is not a standard-layout class
     
-    static_assert(sizeof(CAbilityRestorativeGooVData) == 0x15e0);
+    static_assert(sizeof(CAbilityRestorativeGooVData) == 0x1618);
 };

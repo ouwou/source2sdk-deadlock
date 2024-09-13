@@ -14,17 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcb0
+    // Size: 0xcc0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_ModDisruptor : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc78[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xc88[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
     
-    static_assert(sizeof(CCitadel_Item_ModDisruptor) == 0xcb0);
+    static_assert(sizeof(CCitadel_Item_ModDisruptor) == 0xcc0);
 };

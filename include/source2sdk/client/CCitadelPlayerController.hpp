@@ -23,7 +23,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x930
+    // Size: 0x938
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -111,21 +111,21 @@ namespace source2sdk::client
         // m_hHeroPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_CitadelPlayerPawn> m_hHeroPawn;
         char m_hHeroPawn[0x4]; // 0x730        
-        [[maybe_unused]] std::uint8_t pad_0x734[0x14]; // 0x734
+        [[maybe_unused]] std::uint8_t pad_0x734[0x1c]; // 0x734
         // metadata: MNetworkEnable
-        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x748        
+        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x750        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nDeathReplayAvailable; // 0x920        
+        int8_t m_nDeathReplayAvailable; // 0x928        
         // metadata: MNetworkEnable
-        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x921        
-        bool m_bHasCheckedFriendName; // 0x922        
-        [[maybe_unused]] std::uint8_t pad_0x923[0x5]; // 0x923
-        CUtlString m_sFriendName; // 0x928        
+        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x929        
+        bool m_bHasCheckedFriendName; // 0x92a        
+        [[maybe_unused]] std::uint8_t pad_0x92b[0x5]; // 0x92b
+        CUtlString m_sFriendName; // 0x930        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerController because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadelPlayerController) == 0x930);
+    static_assert(sizeof(CCitadelPlayerController) == 0x938);
 };

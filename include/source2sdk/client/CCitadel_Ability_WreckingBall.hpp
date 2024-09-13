@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xca0
+    // Size: 0xcb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bHoldingBall"
@@ -22,14 +22,14 @@ namespace source2sdk::client
     class CCitadel_Ability_WreckingBall : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc60[0x38]; // 0xc60
+        [[maybe_unused]] std::uint8_t pad_0xc70[0x38]; // 0xc70
         // metadata: MNetworkEnable
-        bool m_bHoldingBall; // 0xc98        
-        [[maybe_unused]] std::uint8_t pad_0xc99[0x7];
+        bool m_bHoldingBall; // 0xca8        
+        [[maybe_unused]] std::uint8_t pad_0xca9[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_WreckingBall because it is not a standard-layout class
     
-    static_assert(sizeof(CCitadel_Ability_WreckingBall) == 0xca0);
+    static_assert(sizeof(CCitadel_Ability_WreckingBall) == 0xcb0);
 };

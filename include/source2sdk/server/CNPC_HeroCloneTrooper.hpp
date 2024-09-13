@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15f8
+    // Size: 0x1628
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hOwner"
@@ -28,12 +28,12 @@ namespace source2sdk::server
     class CNPC_HeroCloneTrooper : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x15d0[0x4]; // 0x15d0
+        [[maybe_unused]] std::uint8_t pad_0x1600[0x4]; // 0x1600
         // metadata: MNetworkEnable
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hOwner;
-        char m_hOwner[0x4]; // 0x15d4        
-        [[maybe_unused]] std::uint8_t pad_0x15d8[0x20];
+        char m_hOwner[0x4]; // 0x1604        
+        [[maybe_unused]] std::uint8_t pad_0x1608[0x20];
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_CLONE_TROOPER_RELOAD() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_HeroCloneTrooper")->GetStaticFields()[0]->m_pInstance);};
@@ -57,5 +57,5 @@ namespace source2sdk::server
     
     // Cannot assert offsets of fields in CNPC_HeroCloneTrooper because it is not a standard-layout class
     
-    static_assert(sizeof(CNPC_HeroCloneTrooper) == 0x15f8);
+    static_assert(sizeof(CNPC_HeroCloneTrooper) == 0x1628);
 };

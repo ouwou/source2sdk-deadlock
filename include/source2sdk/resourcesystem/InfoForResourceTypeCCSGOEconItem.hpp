@@ -17,7 +17,7 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "econitemvents"
+    // static metadata: MResourceTypeForInfoType "econitem"
     #pragma pack(push, 1)
     class InfoForResourceTypeCCSGOEconItem
     {

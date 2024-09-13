@@ -18,6 +18,6 @@ namespace source2sdk::client
         EButtonHint_DashKey = 0x2,
         EButtonHint_CrouchKey = 0x3,
         EButtonHint_Parry = 0x4,
-        EButtonHint_Cancel = 0x5,
+        EButtonHint_JumpKey = 0x5,
     };
 };
