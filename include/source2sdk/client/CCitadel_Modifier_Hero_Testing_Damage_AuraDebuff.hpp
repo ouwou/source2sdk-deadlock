@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Hero_Testing_Damage_AuraDebuff) == 0xc0);
 };

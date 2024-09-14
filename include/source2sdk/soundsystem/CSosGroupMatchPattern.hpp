@@ -36,6 +36,5 @@ namespace source2sdk::soundsystem
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSosGroupMatchPattern because it is not a standard-layout class
-    
     static_assert(sizeof(CSosGroupMatchPattern) == 0x30);
 };

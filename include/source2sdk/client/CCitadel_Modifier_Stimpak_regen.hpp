@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Stimpak_regen) == 0x130);
 };

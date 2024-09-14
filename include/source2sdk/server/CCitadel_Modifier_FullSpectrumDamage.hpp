@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x108
+    // Size: 0x100
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_FullSpectrumDamage : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x40];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x40];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_FullSpectrumDamage) == 0x108);
+    static_assert(sizeof(CCitadel_Modifier_FullSpectrumDamage) == 0x100);
 };

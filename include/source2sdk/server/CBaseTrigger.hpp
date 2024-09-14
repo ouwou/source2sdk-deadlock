@@ -69,6 +69,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseTrigger because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseTrigger) == 0x938);
 };

@@ -53,6 +53,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ice_Path_Shard_Physics because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ice_Path_Shard_Physics) == 0x7c0);
 };

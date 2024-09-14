@@ -78,6 +78,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelAbilityTangoTetherVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelAbilityTangoTetherVData) == 0x1b50);
 };

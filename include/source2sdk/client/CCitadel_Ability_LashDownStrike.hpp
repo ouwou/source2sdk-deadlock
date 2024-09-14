@@ -41,6 +41,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_LashDownStrike because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_LashDownStrike) == 0xf00);
 };

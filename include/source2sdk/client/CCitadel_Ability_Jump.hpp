@@ -81,6 +81,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Jump because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Jump) == 0xe00);
 };

@@ -41,6 +41,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysicsSpring because it is not a standard-layout class
-    
     static_assert(sizeof(CPhysicsSpring) == 0x520);
 };

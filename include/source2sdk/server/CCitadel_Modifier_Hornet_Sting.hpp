@@ -15,18 +15,17 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x178
+    // Size: 0x170
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Hornet_Sting : public server::CCitadelModifier
     {
     public:
-        entity2::GameTime_t m_flLastTickTime; // 0xc8        
-        [[maybe_unused]] std::uint8_t pad_0xcc[0xac];
+        entity2::GameTime_t m_flLastTickTime; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xc4[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Hornet_Sting because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Hornet_Sting) == 0x178);
+    static_assert(sizeof(CCitadel_Modifier_Hornet_Sting) == 0x170);
 };

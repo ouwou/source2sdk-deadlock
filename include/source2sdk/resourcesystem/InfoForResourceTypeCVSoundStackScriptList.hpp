@@ -17,14 +17,13 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vsndstckvseq"
+    // static metadata: MResourceTypeForInfoType "vsndstck"
     #pragma pack(push, 1)
     class InfoForResourceTypeCVSoundStackScriptList
     {
     public:
     };
     #pragma pack(pop)
-    
     
     static_assert(sizeof(InfoForResourceTypeCVSoundStackScriptList) == 0x1);
 };

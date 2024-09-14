@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_Healbane_Debuff) == 0xf8);
 };

@@ -59,6 +59,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityLashUltimateVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityLashUltimateVData) == 0x1928);
 };

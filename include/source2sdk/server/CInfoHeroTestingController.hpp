@@ -28,6 +28,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CInfoHeroTestingController) == 0x590);
 };

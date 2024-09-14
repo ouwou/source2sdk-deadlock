@@ -27,6 +27,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CWaterBullet) == 0x9a0);
 };

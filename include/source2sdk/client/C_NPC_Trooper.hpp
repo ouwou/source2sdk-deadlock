@@ -47,6 +47,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_Trooper because it is not a standard-layout class
-    
     static_assert(sizeof(C_NPC_Trooper) == 0x14d8);
 };

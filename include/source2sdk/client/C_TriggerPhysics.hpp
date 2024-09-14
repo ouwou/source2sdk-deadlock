@@ -66,6 +66,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_TriggerPhysics because it is not a standard-layout class
-    
     static_assert(sizeof(C_TriggerPhysics) == 0x888);
 };

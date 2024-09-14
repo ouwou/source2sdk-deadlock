@@ -40,6 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicPlayerProxy because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicPlayerProxy) == 0x580);
 };

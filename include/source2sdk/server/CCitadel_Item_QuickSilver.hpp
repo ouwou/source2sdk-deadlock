@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Item_QuickSilver) == 0xb40);
 };

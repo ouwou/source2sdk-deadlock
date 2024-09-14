@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Aerial_Assault_Watcher) == 0x130);
 };

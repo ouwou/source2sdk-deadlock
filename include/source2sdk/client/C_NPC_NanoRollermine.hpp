@@ -39,6 +39,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_NanoRollermine because it is not a standard-layout class
-    
     static_assert(sizeof(C_NPC_NanoRollermine) == 0x14b0);
 };

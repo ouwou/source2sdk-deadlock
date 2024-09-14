@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CAbility_Rutger_RocketLauncher) == 0xed8);
 };

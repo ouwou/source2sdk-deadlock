@@ -46,6 +46,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Bounce_PadVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Bounce_PadVData) == 0x3e8);
 };

@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Ability_Tier3Boss_LaserBeam) == 0xc70);
 };

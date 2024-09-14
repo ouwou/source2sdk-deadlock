@@ -31,6 +31,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmParameterizedClipSelectorNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmParameterizedClipSelectorNode__CDefinition) == 0x30);
 };

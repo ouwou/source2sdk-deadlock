@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPlayer_FlashlightServices) == 0x40);
 };

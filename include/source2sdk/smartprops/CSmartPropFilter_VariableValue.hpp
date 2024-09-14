@@ -30,6 +30,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropFilter_VariableValue because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropFilter_VariableValue) == 0x70);
 };

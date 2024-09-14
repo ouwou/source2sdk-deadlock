@@ -42,6 +42,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPowerSurgeVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityPowerSurgeVData) == 0x1708);
 };

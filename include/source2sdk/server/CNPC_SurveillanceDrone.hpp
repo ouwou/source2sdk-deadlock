@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_SurveillanceDrone because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_SurveillanceDrone) == 0x16b8);
 };

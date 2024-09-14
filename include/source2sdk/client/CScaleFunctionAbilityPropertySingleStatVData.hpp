@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CScaleFunctionAbilityPropertySingleStatVData) == 0x40);
 };

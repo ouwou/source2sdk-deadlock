@@ -69,6 +69,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropElement_Layout2DGrid because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropElement_Layout2DGrid) == 0x3a0);
 };

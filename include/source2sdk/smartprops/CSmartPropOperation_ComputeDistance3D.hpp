@@ -47,6 +47,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_ComputeDistance3D because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_ComputeDistance3D) == 0x198);
 };

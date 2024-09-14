@@ -15,19 +15,18 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x108
+    // Size: 0x100
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_StickyBombAttached : public server::CCitadelModifier
     {
     public:
-        float m_flDamage; // 0xc8        
-        client::ParticleIndex_t m_nParticleIndex; // 0xcc        
-        [[maybe_unused]] std::uint8_t pad_0xd0[0x38];
+        float m_flDamage; // 0xc0        
+        client::ParticleIndex_t m_nParticleIndex; // 0xc4        
+        [[maybe_unused]] std::uint8_t pad_0xc8[0x38];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_StickyBombAttached because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_StickyBombAttached) == 0x108);
+    static_assert(sizeof(CCitadel_Modifier_StickyBombAttached) == 0x100);
 };

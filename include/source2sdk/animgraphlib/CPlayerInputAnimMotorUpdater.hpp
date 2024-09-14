@@ -37,6 +37,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPlayerInputAnimMotorUpdater because it is not a standard-layout class
-    
     static_assert(sizeof(CPlayerInputAnimMotorUpdater) == 0x50);
 };

@@ -56,6 +56,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicMeasureMovement because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicMeasureMovement) == 0x508);
 };

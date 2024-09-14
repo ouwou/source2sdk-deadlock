@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_TrackedProjectile_Synth_PlasmaFlux) == 0x8b8);
 };

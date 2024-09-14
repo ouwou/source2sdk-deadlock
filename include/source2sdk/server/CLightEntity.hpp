@@ -37,6 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLightEntity because it is not a standard-layout class
-    
     static_assert(sizeof(CLightEntity) == 0x770);
 };

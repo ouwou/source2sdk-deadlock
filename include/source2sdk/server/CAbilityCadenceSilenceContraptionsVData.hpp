@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityCadenceSilenceContraptionsVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityCadenceSilenceContraptionsVData) == 0x15c0);
 };

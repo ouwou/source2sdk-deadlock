@@ -43,6 +43,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tokamak_DyingStarVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Tokamak_DyingStarVData) == 0x1710);
 };

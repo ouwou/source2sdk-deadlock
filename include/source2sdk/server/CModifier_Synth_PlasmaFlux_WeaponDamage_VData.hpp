@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Synth_PlasmaFlux_WeaponDamage_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_Synth_PlasmaFlux_WeaponDamage_VData) == 0x6d8);
 };

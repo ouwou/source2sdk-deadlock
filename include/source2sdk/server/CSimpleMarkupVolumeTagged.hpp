@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSimpleMarkupVolumeTagged) == 0x7a8);
 };

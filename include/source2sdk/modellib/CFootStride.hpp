@@ -29,6 +29,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFootStride because it is not a standard-layout class
-    
     static_assert(sizeof(CFootStride) == 0x58);
 };

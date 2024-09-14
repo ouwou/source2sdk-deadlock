@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CDynamicPropAlias_dynamic_prop) == 0xc50);
 };

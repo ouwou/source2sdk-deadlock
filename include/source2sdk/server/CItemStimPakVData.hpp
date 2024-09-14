@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemStimPakVData because it is not a standard-layout class
-    
     static_assert(sizeof(CItemStimPakVData) == 0x1660);
 };

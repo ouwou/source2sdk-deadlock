@@ -35,6 +35,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicNavigation because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicNavigation) == 0x4e8);
 };

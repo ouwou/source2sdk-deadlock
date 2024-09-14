@@ -78,6 +78,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Fish because it is not a standard-layout class
-    
     static_assert(sizeof(C_Fish) == 0xc30);
 };

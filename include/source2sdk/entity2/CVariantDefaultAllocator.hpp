@@ -24,6 +24,5 @@ namespace source2sdk::entity2
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CVariantDefaultAllocator) == 0x1);
 };

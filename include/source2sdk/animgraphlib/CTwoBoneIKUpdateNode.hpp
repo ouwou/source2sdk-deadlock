@@ -30,6 +30,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTwoBoneIKUpdateNode because it is not a standard-layout class
-    
     static_assert(sizeof(CTwoBoneIKUpdateNode) == 0x1e0);
 };

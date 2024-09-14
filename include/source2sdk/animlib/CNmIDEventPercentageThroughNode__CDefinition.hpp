@@ -31,6 +31,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmIDEventPercentageThroughNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmIDEventPercentageThroughNode__CDefinition) == 0x20);
 };

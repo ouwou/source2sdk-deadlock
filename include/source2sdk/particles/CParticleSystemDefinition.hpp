@@ -262,6 +262,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CParticleSystemDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CParticleSystemDefinition) == 0x3f0);
 };

@@ -25,6 +25,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFilterClass because it is not a standard-layout class
-    
     static_assert(sizeof(CFilterClass) == 0x538);
 };

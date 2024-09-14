@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Mirage_Tornado_Aura_Apply_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_Mirage_Tornado_Aura_Apply_VData) == 0x618);
 };

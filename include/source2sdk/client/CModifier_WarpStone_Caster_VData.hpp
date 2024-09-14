@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_WarpStone_Caster_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_WarpStone_Caster_VData) == 0x6d8);
 };

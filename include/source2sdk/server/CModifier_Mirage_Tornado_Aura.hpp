@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x190
+    // Size: 0x188
     // Has VTable
     #pragma pack(push, 1)
     class CModifier_Mirage_Tornado_Aura : public server::CCitadelModifierAura
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xe8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xe0[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CModifier_Mirage_Tornado_Aura) == 0x190);
+    static_assert(sizeof(CModifier_Mirage_Tornado_Aura) == 0x188);
 };

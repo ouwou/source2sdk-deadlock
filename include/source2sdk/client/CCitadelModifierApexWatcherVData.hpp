@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModifierApexWatcherVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelModifierApexWatcherVData) == 0x608);
 };

@@ -33,6 +33,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Wrecker_Salvage because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Wrecker_Salvage) == 0xc18);
 };

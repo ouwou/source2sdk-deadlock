@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_SiphonBullets_HealthLoss) == 0xf8);
 };

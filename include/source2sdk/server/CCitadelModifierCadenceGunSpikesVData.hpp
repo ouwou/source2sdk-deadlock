@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModifierCadenceGunSpikesVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelModifierCadenceGunSpikesVData) == 0x600);
 };

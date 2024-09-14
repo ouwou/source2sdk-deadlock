@@ -27,6 +27,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelAnimatingModelEntity) == 0xb48);
 };

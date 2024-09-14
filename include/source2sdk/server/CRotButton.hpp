@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CRotButton) == 0x938);
 };

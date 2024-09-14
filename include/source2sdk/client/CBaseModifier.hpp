@@ -66,8 +66,7 @@ namespace source2sdk::client
         // CUtlVector<client::IModifierTrackedObject*>* m_pVecTrackedObjects;
         char m_pVecTrackedObjects[0x8]; // 0x80        
         client::ModifierRuntimeHandle_t m_hModifierListHandle; // 0x88        
-        uint8_t m_nDebugHelperFlags; // 0x8c        
-        [[maybe_unused]] std::uint8_t pad_0x8d[0x3];
+        [[maybe_unused]] std::uint8_t pad_0x8c[0x4];
         
         // Datamap fields:
         // void m_pModifierProp; // 0x20
@@ -96,7 +95,6 @@ namespace source2sdk::client
     static_assert(offsetof(CBaseModifier, m_flTimeScale) == 0x7c);
     static_assert(offsetof(CBaseModifier, m_pVecTrackedObjects) == 0x80);
     static_assert(offsetof(CBaseModifier, m_hModifierListHandle) == 0x88);
-    static_assert(offsetof(CBaseModifier, m_nDebugHelperFlags) == 0x8c);
     
     static_assert(sizeof(CBaseModifier) == 0x90);
 };

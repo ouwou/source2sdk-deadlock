@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_ArmorUpgrade_RegeneratingBulletShield) == 0xd68);
 };

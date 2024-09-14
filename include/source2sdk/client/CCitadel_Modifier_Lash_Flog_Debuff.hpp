@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Lash_Flog_Debuff) == 0x100);
 };

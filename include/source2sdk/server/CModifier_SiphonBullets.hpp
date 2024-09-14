@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x220
+    // Size: 0x218
     // Has VTable
     #pragma pack(push, 1)
     class CModifier_SiphonBullets : public server::CCitadel_Modifier_BaseEventProc
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x170[0xb0];
+        [[maybe_unused]] std::uint8_t pad_0x168[0xb0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CModifier_SiphonBullets) == 0x220);
+    static_assert(sizeof(CModifier_SiphonBullets) == 0x218);
 };

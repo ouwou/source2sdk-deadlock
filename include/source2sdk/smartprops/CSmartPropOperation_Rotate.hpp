@@ -31,6 +31,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_Rotate because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_Rotate) == 0x90);
 };

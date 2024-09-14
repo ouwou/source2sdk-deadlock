@@ -67,6 +67,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNavLinkAreaEntity because it is not a standard-layout class
-    
     static_assert(sizeof(CNavLinkAreaEntity) == 0x640);
 };

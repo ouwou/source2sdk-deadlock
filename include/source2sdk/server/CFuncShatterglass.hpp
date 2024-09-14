@@ -71,6 +71,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncShatterglass because it is not a standard-layout class
-    
     static_assert(sizeof(CFuncShatterglass) == 0x8a8);
 };

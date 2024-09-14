@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_NPC_TrooperBarrackBoss) == 0x1510);
 };

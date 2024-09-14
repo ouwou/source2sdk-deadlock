@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_NPC_MidBossHeroTest) == 0x14c0);
 };

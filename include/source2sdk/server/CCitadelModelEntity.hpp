@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModelEntity because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelModelEntity) == 0x8e8);
 };

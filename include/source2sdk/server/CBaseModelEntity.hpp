@@ -164,6 +164,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseModelEntity because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseModelEntity) == 0x768);
 };

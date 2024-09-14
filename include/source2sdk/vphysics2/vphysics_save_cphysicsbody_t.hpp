@@ -26,6 +26,5 @@ namespace source2sdk::vphysics2
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in vphysics_save_cphysicsbody_t because it is not a standard-layout class
-    
     static_assert(sizeof(vphysics_save_cphysicsbody_t) == 0xd8);
 };

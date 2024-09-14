@@ -55,6 +55,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bull_Leap because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Bull_Leap) == 0xca8);
 };

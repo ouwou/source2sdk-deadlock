@@ -28,6 +28,5 @@ namespace source2sdk::physicslib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in RnCapsuleDesc_t because it is not a standard-layout class
-    
     static_assert(sizeof(RnCapsuleDesc_t) == 0x38);
 };

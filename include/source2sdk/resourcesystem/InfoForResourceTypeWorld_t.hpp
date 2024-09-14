@@ -25,6 +25,5 @@ namespace source2sdk::resourcesystem
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(InfoForResourceTypeWorld_t) == 0x1);
 };

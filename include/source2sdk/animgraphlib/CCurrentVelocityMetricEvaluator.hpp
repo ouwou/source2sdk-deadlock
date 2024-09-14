@@ -25,6 +25,5 @@ namespace source2sdk::animgraphlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCurrentVelocityMetricEvaluator) == 0x50);
 };

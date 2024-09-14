@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CConstraintAnchor because it is not a standard-layout class
-    
     static_assert(sizeof(CConstraintAnchor) == 0x9a8);
 };

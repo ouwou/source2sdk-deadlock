@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelSpeedBoostTrigger) == 0x948);
 };

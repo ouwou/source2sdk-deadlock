@@ -50,6 +50,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityTokamakHotShotVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityTokamakHotShotVData) == 0x18f8);
 };

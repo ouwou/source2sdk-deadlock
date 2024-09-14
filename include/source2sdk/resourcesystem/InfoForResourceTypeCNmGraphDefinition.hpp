@@ -17,14 +17,13 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vnmgraphvnmclip"
+    // static metadata: MResourceTypeForInfoType "vnmgraph"
     #pragma pack(push, 1)
     class InfoForResourceTypeCNmGraphDefinition
     {
     public:
     };
     #pragma pack(pop)
-    
     
     static_assert(sizeof(InfoForResourceTypeCNmGraphDefinition) == 0x1);
 };

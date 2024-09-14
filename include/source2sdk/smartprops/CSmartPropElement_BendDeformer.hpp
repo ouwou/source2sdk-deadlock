@@ -49,6 +49,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropElement_BendDeformer because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropElement_BendDeformer) == 0x260);
 };

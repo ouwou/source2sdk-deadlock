@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPlayer_AutoaimServices) == 0x40);
 };

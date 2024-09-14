@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x170
+    // Size: 0x168
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Thumper_EnemyPulled : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Thumper_EnemyPulled) == 0x170);
+    static_assert(sizeof(CCitadel_Modifier_Thumper_EnemyPulled) == 0x168);
 };

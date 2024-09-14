@@ -37,6 +37,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBoneConstraintPoseSpaceMorph because it is not a standard-layout class
-    
     static_assert(sizeof(CBoneConstraintPoseSpaceMorph) == 0xa8);
 };

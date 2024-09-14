@@ -37,6 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAISound because it is not a standard-layout class
-    
     static_assert(sizeof(CAISound) == 0x4f0);
 };

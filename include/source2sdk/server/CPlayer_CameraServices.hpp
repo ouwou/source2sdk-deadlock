@@ -105,6 +105,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPlayer_CameraServices because it is not a standard-layout class
-    
     static_assert(sizeof(CPlayer_CameraServices) == 0x178);
 };

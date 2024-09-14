@@ -41,6 +41,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelObserverPawn) == 0xc70);
 };

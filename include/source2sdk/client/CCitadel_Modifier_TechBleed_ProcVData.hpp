@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_TechBleed_ProcVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_TechBleed_ProcVData) == 0x648);
 };

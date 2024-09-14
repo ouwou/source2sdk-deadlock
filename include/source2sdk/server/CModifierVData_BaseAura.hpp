@@ -40,6 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVData_BaseAura because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierVData_BaseAura) == 0x630);
 };

@@ -38,6 +38,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropChoice because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropChoice) == 0x38);
 };

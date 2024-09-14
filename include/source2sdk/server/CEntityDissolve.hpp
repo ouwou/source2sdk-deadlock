@@ -62,6 +62,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEntityDissolve because it is not a standard-layout class
-    
     static_assert(sizeof(CEntityDissolve) == 0x798);
 };

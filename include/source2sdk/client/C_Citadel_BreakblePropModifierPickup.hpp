@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_Citadel_BreakblePropModifierPickup) == 0xb58);
 };

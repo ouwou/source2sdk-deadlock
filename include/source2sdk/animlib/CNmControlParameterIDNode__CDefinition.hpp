@@ -25,6 +25,5 @@ namespace source2sdk::animlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNmControlParameterIDNode__CDefinition) == 0x10);
 };

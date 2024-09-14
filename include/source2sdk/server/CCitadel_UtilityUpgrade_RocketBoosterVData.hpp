@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_UtilityUpgrade_RocketBoosterVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_UtilityUpgrade_RocketBoosterVData) == 0x1938);
 };

@@ -47,6 +47,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPerchedPredatorVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityPerchedPredatorVData) == 0x17f0);
 };

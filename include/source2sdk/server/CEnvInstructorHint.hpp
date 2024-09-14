@@ -55,6 +55,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvInstructorHint because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvInstructorHint) == 0x548);
 };

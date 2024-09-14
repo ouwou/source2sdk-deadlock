@@ -36,6 +36,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bebop_LaserBeamVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Bebop_LaserBeamVData) == 0x1618);
 };

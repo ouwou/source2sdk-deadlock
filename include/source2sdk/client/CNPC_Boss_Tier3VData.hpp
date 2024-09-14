@@ -107,6 +107,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Boss_Tier3VData because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_Boss_Tier3VData) == 0x1858);
 };

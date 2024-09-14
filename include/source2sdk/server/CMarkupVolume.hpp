@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMarkupVolume because it is not a standard-layout class
-    
     static_assert(sizeof(CMarkupVolume) == 0x770);
 };

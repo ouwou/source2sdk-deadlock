@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Intrinsic_BaseVData) == 0x5f8);
 };

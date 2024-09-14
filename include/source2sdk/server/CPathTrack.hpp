@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathTrack because it is not a standard-layout class
-    
     static_assert(sizeof(CPathTrack) == 0x530);
 };

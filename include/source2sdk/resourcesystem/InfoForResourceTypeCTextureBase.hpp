@@ -25,6 +25,5 @@ namespace source2sdk::resourcesystem
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(InfoForResourceTypeCTextureBase) == 0x1);
 };

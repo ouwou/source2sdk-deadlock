@@ -25,6 +25,5 @@ namespace source2sdk::animgraphlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCurrentRotationVelocityMetricEvaluator) == 0x50);
 };

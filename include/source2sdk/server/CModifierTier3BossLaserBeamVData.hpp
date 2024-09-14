@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifierTier3BossLaserBeamVData) == 0x5f8);
 };

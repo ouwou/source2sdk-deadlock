@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_TestHull because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_TestHull) == 0x10b0);
 };

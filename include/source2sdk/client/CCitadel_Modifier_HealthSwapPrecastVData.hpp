@@ -37,6 +37,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_HealthSwapPrecastVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_HealthSwapPrecastVData) == 0x898);
 };

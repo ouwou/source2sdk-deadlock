@@ -51,6 +51,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPlayer_WeaponServices because it is not a standard-layout class
-    
     static_assert(sizeof(CPlayer_WeaponServices) == 0xa8);
 };

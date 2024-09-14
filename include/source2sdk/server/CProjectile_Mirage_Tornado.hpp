@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CProjectile_Mirage_Tornado because it is not a standard-layout class
-    
     static_assert(sizeof(CProjectile_Mirage_Tornado) == 0x978);
 };

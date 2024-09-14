@@ -41,6 +41,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityThumper2VData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityThumper2VData) == 0x1638);
 };

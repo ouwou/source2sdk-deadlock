@@ -139,6 +139,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_RopeKeyframe because it is not a standard-layout class
-    
     static_assert(sizeof(C_RopeKeyframe) == 0xc18);
 };

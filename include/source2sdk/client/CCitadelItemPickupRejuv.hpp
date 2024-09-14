@@ -36,6 +36,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelItemPickupRejuv because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelItemPickupRejuv) == 0xd20);
 };

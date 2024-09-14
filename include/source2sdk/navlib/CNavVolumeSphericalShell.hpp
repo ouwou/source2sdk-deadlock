@@ -26,6 +26,5 @@ namespace source2sdk::navlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNavVolumeSphericalShell because it is not a standard-layout class
-    
     static_assert(sizeof(CNavVolumeSphericalShell) == 0x88);
 };

@@ -46,6 +46,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_SetTintColor because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_SetTintColor) == 0x128);
 };

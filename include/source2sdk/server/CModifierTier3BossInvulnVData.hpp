@@ -33,6 +33,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierTier3BossInvulnVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierTier3BossInvulnVData) == 0x6e0);
 };

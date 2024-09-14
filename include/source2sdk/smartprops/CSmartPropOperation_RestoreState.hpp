@@ -35,6 +35,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_RestoreState because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_RestoreState) == 0xd0);
 };

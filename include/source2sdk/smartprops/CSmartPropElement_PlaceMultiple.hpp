@@ -34,6 +34,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropElement_PlaceMultiple because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropElement_PlaceMultiple) == 0xe8);
 };

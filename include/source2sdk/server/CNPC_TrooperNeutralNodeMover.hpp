@@ -36,6 +36,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNPC_TrooperNeutralNodeMover) == 0x16c0);
 };

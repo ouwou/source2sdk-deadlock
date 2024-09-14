@@ -33,6 +33,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CProjectile_Perched_Predator because it is not a standard-layout class
-    
     static_assert(sizeof(CProjectile_Perched_Predator) == 0x988);
 };

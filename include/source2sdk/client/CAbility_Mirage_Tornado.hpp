@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CAbility_Mirage_Tornado) == 0xdc0);
 };

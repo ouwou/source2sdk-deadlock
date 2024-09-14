@@ -56,6 +56,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerHurt because it is not a standard-layout class
-    
     static_assert(sizeof(CTriggerHurt) == 0x9d8);
 };

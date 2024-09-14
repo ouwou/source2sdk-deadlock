@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_Mirage_SandPhantom_VData) == 0x5f8);
 };

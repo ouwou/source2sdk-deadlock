@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CScaleFunctionAbilityProperty_WeaponDamage) == 0x40);
 };

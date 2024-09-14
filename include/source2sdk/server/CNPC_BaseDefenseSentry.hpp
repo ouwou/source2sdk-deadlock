@@ -45,6 +45,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_BaseDefenseSentry because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_BaseDefenseSentry) == 0xb98);
 };

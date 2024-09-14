@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(EventServerEndAsyncPostTickWork_t) == 0x1);
 };

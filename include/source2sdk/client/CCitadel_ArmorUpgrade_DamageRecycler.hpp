@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_ArmorUpgrade_DamageRecycler) == 0xc88);
 };

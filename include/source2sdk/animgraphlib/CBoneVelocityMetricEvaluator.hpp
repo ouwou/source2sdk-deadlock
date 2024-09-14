@@ -28,6 +28,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBoneVelocityMetricEvaluator because it is not a standard-layout class
-    
     static_assert(sizeof(CBoneVelocityMetricEvaluator) == 0x58);
 };

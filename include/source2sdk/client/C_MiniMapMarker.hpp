@@ -30,6 +30,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_MiniMapMarker because it is not a standard-layout class
-    
     static_assert(sizeof(C_MiniMapMarker) == 0x560);
 };

@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Slork_LastBreathVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Slork_LastBreathVData) == 0x1538);
 };

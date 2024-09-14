@@ -17,21 +17,20 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x228
+    // Size: 0x220
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Mirage_SandPhantom_Proc : public server::CCitadelModifier
     {
     public:
-        client::ShotID_t m_nSuppressProcShotID; // 0xc8        
-        client::ParticleIndex_t m_nProcReadyParticleIndex; // 0xcc        
+        client::ShotID_t m_nSuppressProcShotID; // 0xc0        
+        client::ParticleIndex_t m_nProcReadyParticleIndex; // 0xc4        
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flLastProcTime; // 0xd0        
-        [[maybe_unused]] std::uint8_t pad_0xd4[0x154];
+        entity2::GameTime_t m_flLastProcTime; // 0xc8        
+        [[maybe_unused]] std::uint8_t pad_0xcc[0x154];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Mirage_SandPhantom_Proc because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Mirage_SandPhantom_Proc) == 0x228);
+    static_assert(sizeof(CCitadel_Modifier_Mirage_SandPhantom_Proc) == 0x220);
 };

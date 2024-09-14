@@ -41,6 +41,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBaseLockonAbility because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelBaseLockonAbility) == 0xde8);
 };

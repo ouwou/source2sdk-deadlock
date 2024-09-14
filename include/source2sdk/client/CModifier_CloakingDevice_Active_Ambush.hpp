@@ -27,6 +27,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_CloakingDevice_Active_Ambush because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_CloakingDevice_Active_Ambush) == 0xc8);
 };

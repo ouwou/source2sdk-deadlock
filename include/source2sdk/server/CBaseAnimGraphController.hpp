@@ -88,6 +88,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseAnimGraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseAnimGraphController) == 0x580);
 };

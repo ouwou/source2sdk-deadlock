@@ -29,6 +29,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in FloatInputMaterialVariable_t because it is not a standard-layout class
-    
     static_assert(sizeof(FloatInputMaterialVariable_t) == 0x168);
 };

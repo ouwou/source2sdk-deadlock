@@ -55,6 +55,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Nano_Pounce because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Nano_Pounce) == 0xf38);
 };

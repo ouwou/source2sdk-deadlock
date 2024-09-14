@@ -100,6 +100,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncTrackTrain because it is not a standard-layout class
-    
     static_assert(sizeof(CFuncTrackTrain) == 0x8b8);
 };

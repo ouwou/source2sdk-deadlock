@@ -46,6 +46,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_PlasmaFlux_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbility_Synth_PlasmaFlux_VData) == 0x17a8);
 };

@@ -47,6 +47,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperBossVData because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_TrooperBossVData) == 0x1690);
 };

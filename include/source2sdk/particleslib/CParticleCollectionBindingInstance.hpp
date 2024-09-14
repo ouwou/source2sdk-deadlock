@@ -31,6 +31,5 @@ namespace source2sdk::particleslib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CParticleCollectionBindingInstance) == 0x120);
 };

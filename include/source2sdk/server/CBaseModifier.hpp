@@ -28,7 +28,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x90
+    // Size: 0x88
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
@@ -67,8 +67,6 @@ namespace source2sdk::server
         char m_pVecTrackedObjects[0x8]; // 0x78        
         client::ModifierRuntimeHandle_t m_hModifierListHandle; // 0x80        
         int32_t m_iStringIndex; // 0x84        
-        uint8_t m_nDebugHelperFlags; // 0x88        
-        [[maybe_unused]] std::uint8_t pad_0x89[0x7];
         
         // Datamap fields:
         // void m_pModifierProp; // 0x20
@@ -98,7 +96,6 @@ namespace source2sdk::server
     static_assert(offsetof(CBaseModifier, m_pVecTrackedObjects) == 0x78);
     static_assert(offsetof(CBaseModifier, m_hModifierListHandle) == 0x80);
     static_assert(offsetof(CBaseModifier, m_iStringIndex) == 0x84);
-    static_assert(offsetof(CBaseModifier, m_nDebugHelperFlags) == 0x88);
     
-    static_assert(sizeof(CBaseModifier) == 0x90);
+    static_assert(sizeof(CBaseModifier) == 0x88);
 };

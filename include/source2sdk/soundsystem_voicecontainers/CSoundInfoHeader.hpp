@@ -25,6 +25,5 @@ namespace source2sdk::soundsystem_voicecontainers
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSoundInfoHeader) == 0x1);
 };

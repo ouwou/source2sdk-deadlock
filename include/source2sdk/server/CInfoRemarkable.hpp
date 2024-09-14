@@ -27,6 +27,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoRemarkable because it is not a standard-layout class
-    
     static_assert(sizeof(CInfoRemarkable) == 0x4e8);
 };

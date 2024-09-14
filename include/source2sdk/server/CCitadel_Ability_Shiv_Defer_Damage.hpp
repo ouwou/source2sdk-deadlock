@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Shiv_Defer_Damage because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Shiv_Defer_Damage) == 0xbf0);
 };

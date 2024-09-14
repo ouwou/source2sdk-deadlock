@@ -35,6 +35,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CParticleMassCalculationParameters because it is not a standard-layout class
-    
     static_assert(sizeof(CParticleMassCalculationParameters) == 0x428);
 };

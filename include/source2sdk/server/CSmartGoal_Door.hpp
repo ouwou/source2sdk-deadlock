@@ -50,6 +50,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartGoal_Door because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartGoal_Door) == 0x50);
 };

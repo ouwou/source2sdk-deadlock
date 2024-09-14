@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Tokamak_HeatSinks_DOT_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Tokamak_HeatSinks_DOT_VData) == 0x7b8);
 };

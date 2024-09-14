@@ -25,6 +25,5 @@ namespace source2sdk::particles
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(IParticleCollection) == 0x10);
 };

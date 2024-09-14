@@ -35,6 +35,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Gravity_Lasso_Self because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Gravity_Lasso_Self) == 0x2a0);
 };

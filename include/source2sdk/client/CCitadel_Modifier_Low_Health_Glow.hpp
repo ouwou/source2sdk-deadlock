@@ -27,6 +27,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Low_Health_Glow because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Low_Health_Glow) == 0x100);
 };

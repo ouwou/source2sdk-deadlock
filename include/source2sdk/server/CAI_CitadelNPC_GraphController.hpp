@@ -37,6 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_CitadelNPC_GraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_CitadelNPC_GraphController) == 0x5e0);
 };

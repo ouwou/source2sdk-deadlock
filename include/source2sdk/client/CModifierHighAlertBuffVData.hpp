@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierHighAlertBuffVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierHighAlertBuffVData) == 0x6d8);
 };

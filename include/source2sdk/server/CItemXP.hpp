@@ -32,6 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemXP because it is not a standard-layout class
-    
     static_assert(sizeof(CItemXP) == 0x7c8);
 };

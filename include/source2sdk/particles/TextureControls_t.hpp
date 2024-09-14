@@ -59,6 +59,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in TextureControls_t because it is not a standard-layout class
-    
     static_assert(sizeof(TextureControls_t) == 0x9c0);
 };

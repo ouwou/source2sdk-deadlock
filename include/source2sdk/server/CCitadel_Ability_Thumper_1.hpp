@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Thumper_1 because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Thumper_1) == 0xca8);
 };

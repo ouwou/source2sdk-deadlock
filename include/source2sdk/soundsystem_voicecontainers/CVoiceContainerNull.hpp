@@ -27,6 +27,5 @@ namespace source2sdk::soundsystem_voicecontainers
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CVoiceContainerNull) == 0xc0);
 };

@@ -38,6 +38,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityTokamakHeatSinksInherentVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityTokamakHeatSinksInherentVData) == 0x1718);
 };

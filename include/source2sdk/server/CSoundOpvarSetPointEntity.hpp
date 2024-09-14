@@ -57,6 +57,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSoundOpvarSetPointEntity because it is not a standard-layout class
-    
     static_assert(sizeof(CSoundOpvarSetPointEntity) == 0x660);
 };

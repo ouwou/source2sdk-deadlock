@@ -45,6 +45,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModelConfigElement_AttachedModel because it is not a standard-layout class
-    
     static_assert(sizeof(CModelConfigElement_AttachedModel) == 0xe8);
 };

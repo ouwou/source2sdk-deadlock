@@ -29,6 +29,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_GlassCannon because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_WeaponUpgrade_GlassCannon) == 0xb80);
 };

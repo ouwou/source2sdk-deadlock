@@ -27,6 +27,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModelConfigElement_RandomColor because it is not a standard-layout class
-    
     static_assert(sizeof(CModelConfigElement_RandomColor) == 0x60);
 };

@@ -40,6 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityBouncePadVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityBouncePadVData) == 0x1568);
 };

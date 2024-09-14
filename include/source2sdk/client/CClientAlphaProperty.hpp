@@ -43,6 +43,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CClientAlphaProperty because it is not a standard-layout class
-    
     static_assert(sizeof(CClientAlphaProperty) == 0x30);
 };

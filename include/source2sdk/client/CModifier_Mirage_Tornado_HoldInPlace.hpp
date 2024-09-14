@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_Mirage_Tornado_HoldInPlace) == 0xc0);
 };

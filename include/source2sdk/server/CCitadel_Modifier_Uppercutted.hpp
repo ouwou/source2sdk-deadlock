@@ -14,20 +14,19 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x150
+    // Size: 0x148
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Uppercutted : public server::CCitadelModifier
     {
     public:
-        Vector m_vecFromBebop; // 0xc8        
-        float m_flDamage; // 0xd4        
-        bool m_bExplodeOnLand; // 0xd8        
-        [[maybe_unused]] std::uint8_t pad_0xd9[0x77];
+        Vector m_vecFromBebop; // 0xc0        
+        float m_flDamage; // 0xcc        
+        bool m_bExplodeOnLand; // 0xd0        
+        [[maybe_unused]] std::uint8_t pad_0xd1[0x77];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Uppercutted because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Uppercutted) == 0x150);
+    static_assert(sizeof(CCitadel_Modifier_Uppercutted) == 0x148);
 };

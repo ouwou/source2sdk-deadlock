@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_CloakingDeviceActive_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_ArmorUpgrade_CloakingDeviceActive_VData) == 0x1590);
 };

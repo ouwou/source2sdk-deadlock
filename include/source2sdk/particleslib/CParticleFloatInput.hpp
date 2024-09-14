@@ -91,6 +91,5 @@ namespace source2sdk::particleslib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CParticleFloatInput because it is not a standard-layout class
-    
     static_assert(sizeof(CParticleFloatInput) == 0x160);
 };

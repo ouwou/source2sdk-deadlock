@@ -30,6 +30,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTwistConstraint because it is not a standard-layout class
-    
     static_assert(sizeof(CTwistConstraint) == 0x90);
 };

@@ -42,6 +42,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityStompVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityStompVData) == 0x1648);
 };

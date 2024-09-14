@@ -35,6 +35,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Mirage_DjinnsReach_Chain because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Mirage_DjinnsReach_Chain) == 0x148);
 };

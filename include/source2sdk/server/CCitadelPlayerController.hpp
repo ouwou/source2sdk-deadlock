@@ -24,7 +24,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa70
+    // Size: 0xa78
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -112,21 +112,21 @@ namespace source2sdk::server
         // m_hHeroPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelPlayerPawn> m_hHeroPawn;
         char m_hHeroPawn[0x4]; // 0x860        
-        [[maybe_unused]] std::uint8_t pad_0x864[0x1c]; // 0x864
+        [[maybe_unused]] std::uint8_t pad_0x864[0x24]; // 0x864
         // metadata: MNetworkEnable
-        server::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x880        
+        server::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x888        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nDeathReplayAvailable; // 0xa58        
+        int8_t m_nDeathReplayAvailable; // 0xa60        
         // metadata: MNetworkEnable
-        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa59        
-        [[maybe_unused]] std::uint8_t pad_0xa5a[0x2]; // 0xa5a
-        entity2::GameTime_t m_flLastCommsTime; // 0xa5c        
-        entity2::GameTime_t m_flLastFailedCommsTime; // 0xa60        
-        bool m_bLastCommsWasDoublePing; // 0xa64        
-        [[maybe_unused]] std::uint8_t pad_0xa65[0x3]; // 0xa65
-        int32_t m_nGuideBotNumTasksComplete; // 0xa68        
-        [[maybe_unused]] std::uint8_t pad_0xa6c[0x4];
+        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa61        
+        [[maybe_unused]] std::uint8_t pad_0xa62[0x2]; // 0xa62
+        entity2::GameTime_t m_flLastCommsTime; // 0xa64        
+        entity2::GameTime_t m_flLastFailedCommsTime; // 0xa68        
+        bool m_bLastCommsWasDoublePing; // 0xa6c        
+        [[maybe_unused]] std::uint8_t pad_0xa6d[0x3]; // 0xa6d
+        int32_t m_nGuideBotNumTasksComplete; // 0xa70        
+        [[maybe_unused]] std::uint8_t pad_0xa74[0x4];
         
         // Datamap fields:
         // void CCitadelPlayerControllerResourceDataThink; // 0x0
@@ -134,6 +134,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerController because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadelPlayerController) == 0xa70);
+    static_assert(sizeof(CCitadelPlayerController) == 0xa78);
 };

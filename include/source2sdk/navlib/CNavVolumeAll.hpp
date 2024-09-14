@@ -24,6 +24,5 @@ namespace source2sdk::navlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNavVolumeAll) == 0x98);
 };

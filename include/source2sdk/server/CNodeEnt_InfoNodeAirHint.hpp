@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNodeEnt_InfoNodeAirHint) == 0x530);
 };

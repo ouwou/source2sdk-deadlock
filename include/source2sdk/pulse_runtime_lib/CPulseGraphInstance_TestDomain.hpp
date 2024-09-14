@@ -42,6 +42,5 @@ namespace source2sdk::pulse_runtime_lib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseGraphInstance_TestDomain because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseGraphInstance_TestDomain) == 0x120);
 };

@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropModifierPickupVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_BreakablePropModifierPickupVData) == 0x328);
 };

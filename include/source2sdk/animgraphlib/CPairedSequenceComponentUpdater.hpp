@@ -26,6 +26,5 @@ namespace source2sdk::animgraphlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPairedSequenceComponentUpdater) == 0x38);
 };

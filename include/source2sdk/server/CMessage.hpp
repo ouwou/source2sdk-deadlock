@@ -35,6 +35,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMessage because it is not a standard-layout class
-    
     static_assert(sizeof(CMessage) == 0x520);
 };

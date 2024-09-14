@@ -29,6 +29,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperNeutralNodeMover_GraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_TrooperNeutralNodeMover_GraphController) == 0x6a8);
 };

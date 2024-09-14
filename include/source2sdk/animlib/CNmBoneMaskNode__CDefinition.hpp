@@ -27,6 +27,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmBoneMaskNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmBoneMaskNode__CDefinition) == 0x18);
 };

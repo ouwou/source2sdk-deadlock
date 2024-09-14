@@ -29,6 +29,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicAutoCitadel because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicAutoCitadel) == 0x558);
 };

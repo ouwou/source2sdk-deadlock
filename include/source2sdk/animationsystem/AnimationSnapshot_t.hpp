@@ -28,6 +28,5 @@ namespace source2sdk::animationsystem
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in AnimationSnapshot_t because it is not a standard-layout class
-    
     static_assert(sizeof(AnimationSnapshot_t) == 0x120);
 };

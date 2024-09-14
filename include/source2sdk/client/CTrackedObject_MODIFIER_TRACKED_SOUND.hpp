@@ -28,6 +28,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTrackedObject_MODIFIER_TRACKED_SOUND because it is not a standard-layout class
-    
     static_assert(sizeof(CTrackedObject_MODIFIER_TRACKED_SOUND) == 0x10);
 };

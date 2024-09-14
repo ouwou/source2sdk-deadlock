@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc8
+    // Size: 0xc0
     // Has VTable
     #pragma pack(push, 1)
     class CModifier_CheatDeathImmunity : public server::CCitadelModifier
@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CModifier_CheatDeathImmunity) == 0xc8);
+    static_assert(sizeof(CModifier_CheatDeathImmunity) == 0xc0);
 };

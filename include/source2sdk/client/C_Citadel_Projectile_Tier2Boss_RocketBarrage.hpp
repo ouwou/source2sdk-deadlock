@@ -27,6 +27,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_Projectile_Tier2Boss_RocketBarrage because it is not a standard-layout class
-    
     static_assert(sizeof(C_Citadel_Projectile_Tier2Boss_RocketBarrage) == 0x8c8);
 };

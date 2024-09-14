@@ -117,6 +117,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_CitadelNPCVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_CitadelNPCVData) == 0xf58);
 };

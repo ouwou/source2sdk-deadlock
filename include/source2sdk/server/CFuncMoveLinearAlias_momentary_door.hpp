@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CFuncMoveLinearAlias_momentary_door) == 0x890);
 };

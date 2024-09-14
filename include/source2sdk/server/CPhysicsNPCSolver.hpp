@@ -51,6 +51,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysicsNPCSolver because it is not a standard-layout class
-    
     static_assert(sizeof(CPhysicsNPCSolver) == 0x508);
 };

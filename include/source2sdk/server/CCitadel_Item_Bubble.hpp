@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_Bubble because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Item_Bubble) == 0xb10);
 };

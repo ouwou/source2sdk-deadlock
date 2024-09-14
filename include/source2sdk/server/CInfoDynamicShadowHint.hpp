@@ -45,6 +45,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoDynamicShadowHint because it is not a standard-layout class
-    
     static_assert(sizeof(CInfoDynamicShadowHint) == 0x4f0);
 };

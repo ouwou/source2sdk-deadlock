@@ -39,13 +39,13 @@ namespace source2sdk::server
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hOwner;
         char m_hOwner[0x4]; // 0x30        
-        [[maybe_unused]] std::uint8_t pad_0x34[0x161]; // 0x34
-        uint8_t m_nProviderVisitedFlags; // 0x195        
-        bool m_bModifierStatesDirty; // 0x196        
-        bool m_bPredictedOwner; // 0x197        
-        int8_t m_iLockRefCount; // 0x198        
-        [[maybe_unused]] std::uint8_t pad_0x199[0x1]; // 0x199
-        client::ModifierPropRuntimeHandle_t m_hHandle; // 0x19a        
+        [[maybe_unused]] std::uint8_t pad_0x34[0x160]; // 0x34
+        uint8_t m_nProviderVisitedFlags; // 0x194        
+        bool m_bModifierStatesDirty; // 0x195        
+        bool m_bPredictedOwner; // 0x196        
+        int8_t m_iLockRefCount; // 0x197        
+        client::ModifierPropRuntimeHandle_t m_hHandle; // 0x198        
+        [[maybe_unused]] std::uint8_t pad_0x19a[0x2]; // 0x19a
         uint32_t m_nBroadcastEventListenerMask; // 0x19c        
         [[maybe_unused]] std::uint8_t pad_0x1a0[0x8]; // 0x1a0
         // metadata: MNetworkEnable
@@ -75,11 +75,11 @@ namespace source2sdk::server
     
     static_assert(offsetof(CModifierProperty, __m_pChainEntity) == 0x8);
     static_assert(offsetof(CModifierProperty, m_hOwner) == 0x30);
-    static_assert(offsetof(CModifierProperty, m_nProviderVisitedFlags) == 0x195);
-    static_assert(offsetof(CModifierProperty, m_bModifierStatesDirty) == 0x196);
-    static_assert(offsetof(CModifierProperty, m_bPredictedOwner) == 0x197);
-    static_assert(offsetof(CModifierProperty, m_iLockRefCount) == 0x198);
-    static_assert(offsetof(CModifierProperty, m_hHandle) == 0x19a);
+    static_assert(offsetof(CModifierProperty, m_nProviderVisitedFlags) == 0x194);
+    static_assert(offsetof(CModifierProperty, m_bModifierStatesDirty) == 0x195);
+    static_assert(offsetof(CModifierProperty, m_bPredictedOwner) == 0x196);
+    static_assert(offsetof(CModifierProperty, m_iLockRefCount) == 0x197);
+    static_assert(offsetof(CModifierProperty, m_hHandle) == 0x198);
     static_assert(offsetof(CModifierProperty, m_nBroadcastEventListenerMask) == 0x19c);
     static_assert(offsetof(CModifierProperty, m_vecProviders) == 0x1a8);
     static_assert(offsetof(CModifierProperty, m_nDisabledGroups) == 0x1c0);

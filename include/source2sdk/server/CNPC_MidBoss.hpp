@@ -40,6 +40,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNPC_MidBoss) == 0x1700);
 };

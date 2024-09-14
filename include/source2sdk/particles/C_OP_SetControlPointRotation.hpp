@@ -37,6 +37,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_SetControlPointRotation because it is not a standard-layout class
-    
     static_assert(sizeof(C_OP_SetControlPointRotation) == 0x9a8);
 };

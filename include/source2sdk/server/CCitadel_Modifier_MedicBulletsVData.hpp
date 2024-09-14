@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_MedicBulletsVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_MedicBulletsVData) == 0x808);
 };

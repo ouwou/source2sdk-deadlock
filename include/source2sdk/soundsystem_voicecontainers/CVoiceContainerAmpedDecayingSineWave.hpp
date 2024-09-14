@@ -32,6 +32,5 @@ namespace source2sdk::soundsystem_voicecontainers
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CVoiceContainerAmpedDecayingSineWave because it is not a standard-layout class
-    
     static_assert(sizeof(CVoiceContainerAmpedDecayingSineWave) == 0xd0);
 };

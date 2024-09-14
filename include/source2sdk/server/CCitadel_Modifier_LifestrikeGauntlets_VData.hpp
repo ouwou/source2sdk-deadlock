@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_LifestrikeGauntlets_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_LifestrikeGauntlets_VData) == 0x7e8);
 };

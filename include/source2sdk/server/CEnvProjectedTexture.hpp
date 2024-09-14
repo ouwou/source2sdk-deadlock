@@ -151,6 +151,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvProjectedTexture because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvProjectedTexture) == 0x9d0);
 };

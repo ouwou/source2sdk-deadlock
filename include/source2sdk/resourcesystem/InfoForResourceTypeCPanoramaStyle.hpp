@@ -25,6 +25,5 @@ namespace source2sdk::resourcesystem
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(InfoForResourceTypeCPanoramaStyle) == 0x1);
 };

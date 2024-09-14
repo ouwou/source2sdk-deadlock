@@ -44,6 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBotTestNode because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelBotTestNode) == 0x510);
 };

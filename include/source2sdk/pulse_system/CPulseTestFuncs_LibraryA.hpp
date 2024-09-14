@@ -26,6 +26,5 @@ namespace source2sdk::pulse_system
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPulseTestFuncs_LibraryA) == 0x1);
 };

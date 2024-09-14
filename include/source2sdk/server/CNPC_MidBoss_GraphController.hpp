@@ -32,6 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_MidBoss_GraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_MidBoss_GraphController) == 0x620);
 };

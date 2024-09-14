@@ -44,6 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicBranch because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicBranch) == 0x548);
 };

@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Nano_ShadowVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Nano_ShadowVData) == 0x1548);
 };

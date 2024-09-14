@@ -32,6 +32,5 @@ namespace source2sdk::worldrenderer
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in MaterialOverride_t because it is not a standard-layout class
-    
     static_assert(sizeof(MaterialOverride_t) == 0x18);
 };

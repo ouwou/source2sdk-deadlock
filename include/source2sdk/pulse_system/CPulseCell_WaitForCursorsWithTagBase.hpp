@@ -32,6 +32,5 @@ namespace source2sdk::pulse_system
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_WaitForCursorsWithTagBase because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseCell_WaitForCursorsWithTagBase) == 0x80);
 };

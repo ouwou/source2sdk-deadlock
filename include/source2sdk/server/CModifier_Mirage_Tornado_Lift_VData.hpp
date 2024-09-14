@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Mirage_Tornado_Lift_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_Mirage_Tornado_Lift_VData) == 0x6e8);
 };

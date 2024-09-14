@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ShieldTracker_BaseVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_ShieldTracker_BaseVData) == 0x700);
 };

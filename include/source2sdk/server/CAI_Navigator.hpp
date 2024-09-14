@@ -93,6 +93,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_Navigator because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_Navigator) == 0x1f0);
 };

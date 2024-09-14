@@ -25,6 +25,5 @@ namespace source2sdk::particleslib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(IParticleEffect) == 0x8);
 };

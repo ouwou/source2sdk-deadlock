@@ -39,6 +39,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityWreckerScrapBlastVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityWreckerScrapBlastVData) == 0x16f8);
 };

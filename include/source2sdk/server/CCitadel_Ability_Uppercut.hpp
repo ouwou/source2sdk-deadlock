@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Uppercut because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Uppercut) == 0xdb0);
 };

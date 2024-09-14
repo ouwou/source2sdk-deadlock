@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd8
+    // Size: 0xd0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Tech_Shield : public server::CCitadel_Modifier_Bullet_Shield
@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Tech_Shield) == 0xd8);
+    static_assert(sizeof(CCitadel_Modifier_Tech_Shield) == 0xd0);
 };

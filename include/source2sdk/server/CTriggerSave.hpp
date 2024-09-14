@@ -29,6 +29,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerSave because it is not a standard-layout class
-    
     static_assert(sizeof(CTriggerSave) == 0x948);
 };

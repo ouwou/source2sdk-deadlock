@@ -28,6 +28,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFutureFacingMetricEvaluator because it is not a standard-layout class
-    
     static_assert(sizeof(CFutureFacingMetricEvaluator) == 0x58);
 };

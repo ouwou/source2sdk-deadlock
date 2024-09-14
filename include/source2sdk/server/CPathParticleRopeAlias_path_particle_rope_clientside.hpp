@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPathParticleRopeAlias_path_particle_rope_clientside) == 0x5c0);
 };

@@ -35,6 +35,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropVariable_Float because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropVariable_Float) == 0x38);
 };

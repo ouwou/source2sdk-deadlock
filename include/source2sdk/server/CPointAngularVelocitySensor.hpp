@@ -56,6 +56,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointAngularVelocitySensor because it is not a standard-layout class
-    
     static_assert(sizeof(CPointAngularVelocitySensor) == 0x600);
 };

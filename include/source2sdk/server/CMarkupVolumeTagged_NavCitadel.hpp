@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CMarkupVolumeTagged_NavCitadel) == 0x7c0);
 };

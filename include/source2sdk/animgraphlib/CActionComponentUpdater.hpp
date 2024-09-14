@@ -30,6 +30,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CActionComponentUpdater because it is not a standard-layout class
-    
     static_assert(sizeof(CActionComponentUpdater) == 0x48);
 };

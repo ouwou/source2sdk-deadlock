@@ -109,6 +109,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBreakableProp because it is not a standard-layout class
-    
     static_assert(sizeof(CBreakableProp) == 0xb50);
 };

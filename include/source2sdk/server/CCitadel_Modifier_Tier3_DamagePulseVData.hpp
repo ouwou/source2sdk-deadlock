@@ -38,6 +38,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Tier3_DamagePulseVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Tier3_DamagePulseVData) == 0x6f8);
 };

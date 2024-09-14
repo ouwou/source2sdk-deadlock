@@ -36,6 +36,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTurnHelperUpdateNode because it is not a standard-layout class
-    
     static_assert(sizeof(CTurnHelperUpdateNode) == 0x88);
 };

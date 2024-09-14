@@ -27,6 +27,5 @@ namespace source2sdk::smartprops
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSmartPropFilter) == 0x50);
 };

@@ -76,6 +76,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelZipLineNode because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelZipLineNode) == 0x8a0);
 };

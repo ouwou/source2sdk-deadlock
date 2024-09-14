@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMarkupVolumeTagged_NavGame because it is not a standard-layout class
-    
     static_assert(sizeof(CMarkupVolumeTagged_NavGame) == 0x7c8);
 };

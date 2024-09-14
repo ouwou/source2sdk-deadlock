@@ -38,6 +38,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PointClientUIDialog because it is not a standard-layout class
-    
     static_assert(sizeof(C_PointClientUIDialog) == 0x868);
 };

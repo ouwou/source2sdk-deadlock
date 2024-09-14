@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityFealtyVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityFealtyVData) == 0x1538);
 };

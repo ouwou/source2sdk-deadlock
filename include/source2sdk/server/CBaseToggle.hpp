@@ -50,6 +50,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseToggle because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseToggle) == 0x7e8);
 };

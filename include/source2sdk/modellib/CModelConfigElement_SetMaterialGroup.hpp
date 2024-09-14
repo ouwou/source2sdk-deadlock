@@ -27,6 +27,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModelConfigElement_SetMaterialGroup because it is not a standard-layout class
-    
     static_assert(sizeof(CModelConfigElement_SetMaterialGroup) == 0x50);
 };

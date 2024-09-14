@@ -25,6 +25,5 @@ namespace source2sdk::resourcefile
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(InfoForResourceTypeCResourceManifestInternal) == 0x1);
 };

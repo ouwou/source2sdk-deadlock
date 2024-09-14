@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in FilterDamageType because it is not a standard-layout class
-    
     static_assert(sizeof(FilterDamageType) == 0x538);
 };

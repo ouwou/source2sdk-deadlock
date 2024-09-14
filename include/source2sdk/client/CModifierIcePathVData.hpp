@@ -52,6 +52,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierIcePathVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierIcePathVData) == 0xa78);
 };

@@ -39,6 +39,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_SilencerProcActiveVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_SilencerProcActiveVData) == 0x7f8);
 };

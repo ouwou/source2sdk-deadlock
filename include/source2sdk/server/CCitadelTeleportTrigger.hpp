@@ -43,6 +43,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelTeleportTrigger because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelTeleportTrigger) == 0x9d0);
 };

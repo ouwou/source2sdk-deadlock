@@ -38,6 +38,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayer_MovementServices because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelPlayer_MovementServices) == 0x268);
 };

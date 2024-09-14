@@ -26,6 +26,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(FakeEntityDerivedA_tAPI) == 0x1);
 };

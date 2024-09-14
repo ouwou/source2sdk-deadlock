@@ -28,6 +28,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropVariable_Vector2D because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropVariable_Vector2D) == 0x30);
 };

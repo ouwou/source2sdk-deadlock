@@ -39,6 +39,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityTrappersBoloVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityTrappersBoloVData) == 0x1628);
 };

@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_CitadelPlayerBotNavigator because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_CitadelPlayerBotNavigator) == 0x1f8);
 };

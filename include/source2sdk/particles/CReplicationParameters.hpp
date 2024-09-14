@@ -42,6 +42,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CReplicationParameters because it is not a standard-layout class
-    
     static_assert(sizeof(CReplicationParameters) == 0x1118);
 };

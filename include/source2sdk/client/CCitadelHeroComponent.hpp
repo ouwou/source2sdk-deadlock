@@ -42,6 +42,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelHeroComponent because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelHeroComponent) == 0x20);
 };

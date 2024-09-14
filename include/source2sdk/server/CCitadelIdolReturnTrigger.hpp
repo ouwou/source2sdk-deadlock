@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelIdolReturnTrigger because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelIdolReturnTrigger) == 0x970);
 };

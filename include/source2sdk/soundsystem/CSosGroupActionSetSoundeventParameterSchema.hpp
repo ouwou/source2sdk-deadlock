@@ -39,6 +39,5 @@ namespace source2sdk::soundsystem
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSosGroupActionSetSoundeventParameterSchema because it is not a standard-layout class
-    
     static_assert(sizeof(CSosGroupActionSetSoundeventParameterSchema) == 0x38);
 };

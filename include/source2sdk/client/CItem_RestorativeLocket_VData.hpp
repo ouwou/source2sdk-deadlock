@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItem_RestorativeLocket_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CItem_RestorativeLocket_VData) == 0x1730);
 };

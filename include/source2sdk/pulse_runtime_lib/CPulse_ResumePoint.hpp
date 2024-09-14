@@ -25,6 +25,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPulse_ResumePoint) == 0x30);
 };

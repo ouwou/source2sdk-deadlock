@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointTemplate because it is not a standard-layout class
-    
     static_assert(sizeof(CPointTemplate) == 0x568);
 };

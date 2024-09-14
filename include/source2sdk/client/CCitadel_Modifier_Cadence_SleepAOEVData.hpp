@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Cadence_SleepAOEVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Cadence_SleepAOEVData) == 0x718);
 };

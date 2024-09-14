@@ -29,6 +29,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropVariable_Vector3D because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropVariable_Vector3D) == 0x38);
 };

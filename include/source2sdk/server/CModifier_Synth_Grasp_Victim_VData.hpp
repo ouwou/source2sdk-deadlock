@@ -33,6 +33,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Synth_Grasp_Victim_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_Synth_Grasp_Victim_VData) == 0x6e8);
 };

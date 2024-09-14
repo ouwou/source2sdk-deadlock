@@ -34,6 +34,5 @@ namespace source2sdk::pulse_runtime_lib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_Outflow_CycleShuffled because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseCell_Outflow_CycleShuffled) == 0x60);
 };

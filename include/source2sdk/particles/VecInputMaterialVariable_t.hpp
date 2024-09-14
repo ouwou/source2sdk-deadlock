@@ -29,6 +29,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in VecInputMaterialVariable_t because it is not a standard-layout class
-    
     static_assert(sizeof(VecInputMaterialVariable_t) == 0x680);
 };

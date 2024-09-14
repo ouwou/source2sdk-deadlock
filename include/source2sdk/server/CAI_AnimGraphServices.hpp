@@ -37,6 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_AnimGraphServices because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_AnimGraphServices) == 0x98);
 };

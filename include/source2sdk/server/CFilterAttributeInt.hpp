@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFilterAttributeInt because it is not a standard-layout class
-    
     static_assert(sizeof(CFilterAttributeInt) == 0x538);
 };

@@ -33,6 +33,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Thumper_BulletWatcherVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifier_Thumper_BulletWatcherVData) == 0x6e8);
 };

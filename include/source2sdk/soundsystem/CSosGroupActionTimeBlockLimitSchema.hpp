@@ -30,6 +30,5 @@ namespace source2sdk::soundsystem
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSosGroupActionTimeBlockLimitSchema because it is not a standard-layout class
-    
     static_assert(sizeof(CSosGroupActionTimeBlockLimitSchema) == 0x20);
 };

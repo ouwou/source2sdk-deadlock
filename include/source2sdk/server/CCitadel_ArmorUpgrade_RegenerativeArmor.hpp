@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_ArmorUpgrade_RegenerativeArmor) == 0xb08);
 };

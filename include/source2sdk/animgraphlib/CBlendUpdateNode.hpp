@@ -51,6 +51,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBlendUpdateNode because it is not a standard-layout class
-    
     static_assert(sizeof(CBlendUpdateNode) == 0xd0);
 };

@@ -25,6 +25,5 @@ namespace source2sdk::modellib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(COrientConstraint) == 0x68);
 };

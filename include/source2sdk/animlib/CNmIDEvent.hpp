@@ -27,6 +27,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmIDEvent because it is not a standard-layout class
-    
     static_assert(sizeof(CNmIDEvent) == 0x20);
 };

@@ -67,6 +67,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_INIT_CreateOnModel because it is not a standard-layout class
-    
     static_assert(sizeof(C_INIT_CreateOnModel) == 0x12e0);
 };

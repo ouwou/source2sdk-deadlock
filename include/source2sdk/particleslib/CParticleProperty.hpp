@@ -23,6 +23,5 @@ namespace source2sdk::particleslib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CParticleProperty) == 0x28);
 };

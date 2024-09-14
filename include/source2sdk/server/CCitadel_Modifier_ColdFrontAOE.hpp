@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1c0
+    // Size: 0x1b8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_ColdFrontAOE : public server::CCitadelModifier
@@ -27,12 +27,11 @@ namespace source2sdk::server
     public:
         // m_vecDamagedTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::CBaseEntity*> m_vecDamagedTargets;
-        char m_vecDamagedTargets[0x18]; // 0xc8        
-        [[maybe_unused]] std::uint8_t pad_0xe0[0xe0];
+        char m_vecDamagedTargets[0x18]; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xd8[0xe0];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ColdFrontAOE because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_ColdFrontAOE) == 0x1c0);
+    static_assert(sizeof(CCitadel_Modifier_ColdFrontAOE) == 0x1b8);
 };

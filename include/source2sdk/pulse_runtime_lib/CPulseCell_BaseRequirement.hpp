@@ -25,6 +25,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPulseCell_BaseRequirement) == 0x48);
 };

@@ -32,6 +32,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAnimationGraphVisualizerPie because it is not a standard-layout class
-    
     static_assert(sizeof(CAnimationGraphVisualizerPie) == 0x80);
 };

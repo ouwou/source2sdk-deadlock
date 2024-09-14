@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAssignedLaneParticle because it is not a standard-layout class
-    
     static_assert(sizeof(CAssignedLaneParticle) == 0x770);
 };

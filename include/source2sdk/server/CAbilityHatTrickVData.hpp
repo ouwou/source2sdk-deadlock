@@ -44,6 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityHatTrickVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityHatTrickVData) == 0x17e8);
 };

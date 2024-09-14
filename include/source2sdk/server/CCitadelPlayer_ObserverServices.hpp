@@ -66,6 +66,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayer_ObserverServices because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelPlayer_ObserverServices) == 0x88);
 };

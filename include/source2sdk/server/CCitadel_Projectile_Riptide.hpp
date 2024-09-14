@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Riptide because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Projectile_Riptide) == 0x978);
 };

@@ -38,6 +38,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tengu_UrnVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Tengu_UrnVData) == 0x1628);
 };

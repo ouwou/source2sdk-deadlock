@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Rutger_Pulse_Aura_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Rutger_Pulse_Aura_VData) == 0x718);
 };

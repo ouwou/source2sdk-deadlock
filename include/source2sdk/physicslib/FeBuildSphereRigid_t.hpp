@@ -29,6 +29,5 @@ namespace source2sdk::physicslib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in FeBuildSphereRigid_t because it is not a standard-layout class
-    
     static_assert(sizeof(FeBuildSphereRigid_t) == 0x30);
 };

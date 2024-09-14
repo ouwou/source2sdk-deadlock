@@ -33,6 +33,5 @@ namespace source2sdk::pulse_runtime_lib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_Step_PublicOutput because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseCell_Step_PublicOutput) == 0x50);
 };

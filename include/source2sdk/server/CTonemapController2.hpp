@@ -62,6 +62,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTonemapController2 because it is not a standard-layout class
-    
     static_assert(sizeof(CTonemapController2) == 0x500);
 };

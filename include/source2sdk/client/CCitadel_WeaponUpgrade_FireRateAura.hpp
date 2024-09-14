@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_WeaponUpgrade_FireRateAura) == 0xcc0);
 };

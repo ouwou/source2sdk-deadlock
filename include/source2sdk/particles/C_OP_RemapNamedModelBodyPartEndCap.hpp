@@ -25,6 +25,5 @@ namespace source2sdk::particles
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_OP_RemapNamedModelBodyPartEndCap) == 0x220);
 };

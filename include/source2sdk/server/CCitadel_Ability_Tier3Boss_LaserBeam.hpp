@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tier3Boss_LaserBeam because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Tier3Boss_LaserBeam) == 0xb00);
 };

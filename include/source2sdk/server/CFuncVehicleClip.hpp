@@ -27,6 +27,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CFuncVehicleClip) == 0x768);
 };

@@ -45,6 +45,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAudioAnimTag because it is not a standard-layout class
-    
     static_assert(sizeof(CAudioAnimTag) == 0x70);
 };

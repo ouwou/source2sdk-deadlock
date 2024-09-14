@@ -30,6 +30,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_Ice_Dome_Blocker because it is not a standard-layout class
-    
     static_assert(sizeof(C_Citadel_Ice_Dome_Blocker) == 0xb48);
 };

@@ -33,6 +33,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropElement_ModifyState because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropElement_ModifyState) == 0x88);
 };

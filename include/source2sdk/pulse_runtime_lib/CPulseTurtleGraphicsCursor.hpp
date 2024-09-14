@@ -32,6 +32,5 @@ namespace source2sdk::pulse_runtime_lib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseTurtleGraphicsCursor because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseTurtleGraphicsCursor) == 0xc0);
 };

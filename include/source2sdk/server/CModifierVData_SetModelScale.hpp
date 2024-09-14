@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVData_SetModelScale because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierVData_SetModelScale) == 0x600);
 };

@@ -80,6 +80,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseDoor because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseDoor) == 0x9f0);
 };

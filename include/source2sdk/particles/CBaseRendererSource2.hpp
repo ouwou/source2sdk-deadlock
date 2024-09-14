@@ -281,6 +281,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseRendererSource2 because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseRendererSource2) == 0x2aa8);
 };

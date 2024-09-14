@@ -60,6 +60,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in TextureGroup_t because it is not a standard-layout class
-    
     static_assert(sizeof(TextureGroup_t) == 0xb58);
 };

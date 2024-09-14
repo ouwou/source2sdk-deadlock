@@ -41,6 +41,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnumAnimParameter because it is not a standard-layout class
-    
     static_assert(sizeof(CEnumAnimParameter) == 0xd8);
 };

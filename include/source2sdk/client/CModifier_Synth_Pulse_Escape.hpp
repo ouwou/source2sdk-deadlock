@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_Synth_Pulse_Escape) == 0x130);
 };

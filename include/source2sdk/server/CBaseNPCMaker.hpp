@@ -82,6 +82,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseNPCMaker because it is not a standard-layout class
-    
     static_assert(sizeof(CBaseNPCMaker) == 0x5d0);
 };

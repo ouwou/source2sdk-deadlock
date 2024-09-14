@@ -81,6 +81,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvVolumetricFogVolume because it is not a standard-layout class
-    
     static_assert(sizeof(C_EnvVolumetricFogVolume) == 0x5a0);
 };

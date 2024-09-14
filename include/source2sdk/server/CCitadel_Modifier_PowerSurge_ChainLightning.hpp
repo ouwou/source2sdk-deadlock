@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x228
+    // Size: 0x220
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_PowerSurge_ChainLightning : public server::CCitadel_Modifier_ChainLightningEffect
@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_PowerSurge_ChainLightning) == 0x228);
+    static_assert(sizeof(CCitadel_Modifier_PowerSurge_ChainLightning) == 0x220);
 };

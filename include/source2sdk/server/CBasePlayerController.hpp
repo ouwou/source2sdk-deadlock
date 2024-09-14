@@ -112,6 +112,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBasePlayerController because it is not a standard-layout class
-    
     static_assert(sizeof(CBasePlayerController) == 0x760);
 };

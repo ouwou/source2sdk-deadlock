@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CModifier_Citadel_Bull_Leap_LandingBonuses) == 0x130);
 };

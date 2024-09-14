@@ -41,6 +41,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ViscousWeapon_Alt_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_ViscousWeapon_Alt_VData) == 0x17f8);
 };

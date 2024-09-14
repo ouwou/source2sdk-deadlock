@@ -32,6 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakableProp because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_BreakableProp) == 0x9a8);
 };

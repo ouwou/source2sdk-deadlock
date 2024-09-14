@@ -70,6 +70,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEconItemView because it is not a standard-layout class
-    
     static_assert(sizeof(CEconItemView) == 0xd8);
 };

@@ -48,6 +48,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityGooGrenadeVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityGooGrenadeVData) == 0x1730);
 };

@@ -28,6 +28,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CBodyComponentBaseModelEntity) == 0x4c0);
 };

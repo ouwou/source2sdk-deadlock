@@ -33,6 +33,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierPsychicLiftVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierPsychicLiftVData) == 0x7c8);
 };

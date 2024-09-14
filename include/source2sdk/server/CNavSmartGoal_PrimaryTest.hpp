@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNavSmartGoal_PrimaryTest because it is not a standard-layout class
-    
     static_assert(sizeof(CNavSmartGoal_PrimaryTest) == 0x28);
 };

@@ -32,6 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CitadelTrackedAbilityProjectileCreateInfo_t because it is not a standard-layout class
-    
     static_assert(sizeof(CitadelTrackedAbilityProjectileCreateInfo_t) == 0x58);
 };

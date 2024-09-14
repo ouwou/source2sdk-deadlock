@@ -53,6 +53,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_INIT_RemapCPtoScalar because it is not a standard-layout class
-    
     static_assert(sizeof(C_INIT_RemapCPtoScalar) == 0x1f8);
 };

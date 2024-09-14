@@ -28,6 +28,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CItemParachute) == 0xd10);
 };

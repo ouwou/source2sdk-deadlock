@@ -24,6 +24,5 @@ namespace source2sdk::animlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CNmReferencePoseTask) == 0x30);
 };

@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierItemPickupAuraTargetVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierItemPickupAuraTargetVData) == 0x610);
 };

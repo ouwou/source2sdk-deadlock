@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x190
+    // Size: 0x188
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Arcane_Eater_Watcher : public server::CCitadel_Modifier_StatStealBase
@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Arcane_Eater_Watcher) == 0x190);
+    static_assert(sizeof(CCitadel_Modifier_Arcane_Eater_Watcher) == 0x188);
 };

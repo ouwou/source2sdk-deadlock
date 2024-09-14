@@ -27,6 +27,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_WreckingBall because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Projectile_WreckingBall) == 0x870);
 };

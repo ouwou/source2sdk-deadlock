@@ -26,6 +26,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRotDoor because it is not a standard-layout class
-    
     static_assert(sizeof(CRotDoor) == 0x9f8);
 };

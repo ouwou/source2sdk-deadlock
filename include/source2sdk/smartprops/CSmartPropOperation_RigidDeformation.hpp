@@ -29,6 +29,5 @@ namespace source2sdk::smartprops
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSmartPropOperation_RigidDeformation) == 0x50);
 };

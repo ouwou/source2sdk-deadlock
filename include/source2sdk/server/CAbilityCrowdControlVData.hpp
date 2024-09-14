@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityCrowdControlVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityCrowdControlVData) == 0x1618);
 };

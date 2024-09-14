@@ -33,6 +33,5 @@ namespace source2sdk::soundsystem_voicecontainers
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CVoiceContainerSwitch because it is not a standard-layout class
-    
     static_assert(sizeof(CVoiceContainerSwitch) == 0xd8);
 };

@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierSlorkAmbushVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierSlorkAmbushVData) == 0x6d8);
 };

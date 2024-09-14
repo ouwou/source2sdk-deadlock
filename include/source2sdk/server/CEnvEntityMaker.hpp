@@ -52,6 +52,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvEntityMaker because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvEntityMaker) == 0x578);
 };

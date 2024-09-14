@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVData_SetMoveType because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierVData_SetMoveType) == 0x600);
 };

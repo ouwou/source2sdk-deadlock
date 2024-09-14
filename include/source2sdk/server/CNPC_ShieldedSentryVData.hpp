@@ -61,6 +61,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_ShieldedSentryVData because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_ShieldedSentryVData) == 0x360);
 };

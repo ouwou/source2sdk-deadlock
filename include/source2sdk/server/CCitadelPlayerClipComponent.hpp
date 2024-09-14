@@ -29,6 +29,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelPlayerClipComponent) == 0x20);
 };

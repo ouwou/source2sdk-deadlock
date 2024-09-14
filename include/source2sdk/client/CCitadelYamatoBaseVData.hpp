@@ -28,6 +28,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelYamatoBaseVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelYamatoBaseVData) == 0x1530);
 };

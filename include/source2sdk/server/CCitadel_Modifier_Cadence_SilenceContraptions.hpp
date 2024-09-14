@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x118
+    // Size: 0x110
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Cadence_SilenceContraptions : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x50];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x50];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Cadence_SilenceContraptions) == 0x118);
+    static_assert(sizeof(CCitadel_Modifier_Cadence_SilenceContraptions) == 0x110);
 };

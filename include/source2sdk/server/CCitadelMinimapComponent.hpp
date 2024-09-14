@@ -30,6 +30,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelMinimapComponent) == 0x18);
 };

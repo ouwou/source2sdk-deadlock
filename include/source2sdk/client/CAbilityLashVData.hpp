@@ -38,6 +38,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityLashVData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbilityLashVData) == 0x1628);
 };

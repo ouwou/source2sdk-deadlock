@@ -54,6 +54,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointEntityFinder because it is not a standard-layout class
-    
     static_assert(sizeof(CPointEntityFinder) == 0x528);
 };

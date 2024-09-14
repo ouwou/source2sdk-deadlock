@@ -14,25 +14,24 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x110
+    // Size: 0x108
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_ShieldTracker_Base : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x28]; // 0xc8
-        Vector m_vecShield; // 0xf0        
-        float m_flShieldDamageTime; // 0xfc        
-        float m_flShieldBreakTime; // 0x100        
-        float m_flShieldBreakHealAmount; // 0x104        
-        float m_flShieldBreakHealDone; // 0x108        
-        bool m_bShieldHealingAfterBreak; // 0x10c        
-        bool m_bForceRegen; // 0x10d        
-        [[maybe_unused]] std::uint8_t pad_0x10e[0x2];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x28]; // 0xc0
+        Vector m_vecShield; // 0xe8        
+        float m_flShieldDamageTime; // 0xf4        
+        float m_flShieldBreakTime; // 0xf8        
+        float m_flShieldBreakHealAmount; // 0xfc        
+        float m_flShieldBreakHealDone; // 0x100        
+        bool m_bShieldHealingAfterBreak; // 0x104        
+        bool m_bForceRegen; // 0x105        
+        [[maybe_unused]] std::uint8_t pad_0x106[0x2];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ShieldTracker_Base because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_ShieldTracker_Base) == 0x110);
+    static_assert(sizeof(CCitadel_Modifier_ShieldTracker_Base) == 0x108);
 };

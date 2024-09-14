@@ -25,6 +25,5 @@ namespace source2sdk::vphysics2
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(IPhysicsPlayerController) == 0x8);
 };

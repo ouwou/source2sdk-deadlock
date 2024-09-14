@@ -34,6 +34,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_PointVectorAtNextParticle because it is not a standard-layout class
-    
     static_assert(sizeof(C_OP_PointVectorAtNextParticle) == 0x328);
 };

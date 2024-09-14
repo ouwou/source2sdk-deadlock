@@ -68,6 +68,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvBeam because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvBeam) == 0x8b0);
 };

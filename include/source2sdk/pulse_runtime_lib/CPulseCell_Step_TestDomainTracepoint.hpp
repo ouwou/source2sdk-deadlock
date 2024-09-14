@@ -29,6 +29,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPulseCell_Step_TestDomainTracepoint) == 0x48);
 };

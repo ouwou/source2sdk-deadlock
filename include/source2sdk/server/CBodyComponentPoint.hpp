@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBodyComponentPoint because it is not a standard-layout class
-    
     static_assert(sizeof(CBodyComponentPoint) == 0x1b0);
 };

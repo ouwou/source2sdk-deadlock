@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSoundEventEntityAlias_snd_event_point) == 0x590);
 };

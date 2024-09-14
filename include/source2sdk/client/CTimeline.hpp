@@ -49,6 +49,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTimeline because it is not a standard-layout class
-    
     static_assert(sizeof(CTimeline) == 0x228);
 };

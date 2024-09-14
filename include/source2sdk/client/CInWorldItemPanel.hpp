@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInWorldItemPanel because it is not a standard-layout class
-    
     static_assert(sizeof(CInWorldItemPanel) == 0xaa0);
 };

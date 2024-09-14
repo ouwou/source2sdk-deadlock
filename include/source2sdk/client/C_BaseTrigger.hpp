@@ -33,6 +33,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseTrigger because it is not a standard-layout class
-    
     static_assert(sizeof(C_BaseTrigger) == 0x838);
 };

@@ -32,6 +32,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmStateMachineNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmStateMachineNode__CDefinition) == 0x138);
 };

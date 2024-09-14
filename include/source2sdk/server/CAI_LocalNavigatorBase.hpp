@@ -26,6 +26,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CAI_LocalNavigatorBase) == 0x50);
 };

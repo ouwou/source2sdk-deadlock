@@ -28,6 +28,5 @@ namespace source2sdk::physicslib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in RnSphereDesc_t because it is not a standard-layout class
-    
     static_assert(sizeof(RnSphereDesc_t) == 0x28);
 };

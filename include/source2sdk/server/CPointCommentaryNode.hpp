@@ -105,6 +105,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointCommentaryNode because it is not a standard-layout class
-    
     static_assert(sizeof(CPointCommentaryNode) == 0xa98);
 };

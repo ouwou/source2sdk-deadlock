@@ -49,6 +49,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMultiLightProxy because it is not a standard-layout class
-    
     static_assert(sizeof(CMultiLightProxy) == 0x518);
 };

@@ -43,6 +43,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_INIT_AddVectorToVector because it is not a standard-layout class
-    
     static_assert(sizeof(C_INIT_AddVectorToVector) == 0x200);
 };

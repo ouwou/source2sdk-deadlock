@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemSmokeBombPreCastModifierVData because it is not a standard-layout class
-    
     static_assert(sizeof(CItemSmokeBombPreCastModifierVData) == 0x7b8);
 };

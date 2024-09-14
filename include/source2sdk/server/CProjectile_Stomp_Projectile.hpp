@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CProjectile_Stomp_Projectile because it is not a standard-layout class
-    
     static_assert(sizeof(CProjectile_Stomp_Projectile) == 0x950);
 };

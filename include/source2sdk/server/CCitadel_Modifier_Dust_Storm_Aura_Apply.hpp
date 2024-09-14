@@ -14,19 +14,18 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x178
+    // Size: 0x170
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Dust_Storm_Aura_Apply : public server::CCitadelModifier
     {
     public:
-        float m_flDamagePerTick; // 0xc8        
-        bool m_bFirstTick; // 0xcc        
-        [[maybe_unused]] std::uint8_t pad_0xcd[0xab];
+        float m_flDamagePerTick; // 0xc0        
+        bool m_bFirstTick; // 0xc4        
+        [[maybe_unused]] std::uint8_t pad_0xc5[0xab];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Dust_Storm_Aura_Apply because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Dust_Storm_Aura_Apply) == 0x178);
+    static_assert(sizeof(CCitadel_Modifier_Dust_Storm_Aura_Apply) == 0x170);
 };

@@ -45,6 +45,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItem_ActiveReload_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CItem_ActiveReload_VData) == 0x1768);
 };

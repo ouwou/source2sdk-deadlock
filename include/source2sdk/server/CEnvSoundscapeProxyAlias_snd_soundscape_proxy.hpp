@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CEnvSoundscapeProxyAlias_snd_soundscape_proxy) == 0x578);
 };

@@ -26,6 +26,5 @@ namespace source2sdk::modellib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CBoneConstraintBase) == 0x28);
 };

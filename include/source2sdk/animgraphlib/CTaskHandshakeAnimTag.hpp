@@ -26,6 +26,5 @@ namespace source2sdk::animgraphlib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CTaskHandshakeAnimTag) == 0x58);
 };

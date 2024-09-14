@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Projectile_RocketLauncher_Rocket) == 0x8b8);
 };

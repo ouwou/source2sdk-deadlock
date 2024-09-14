@@ -23,6 +23,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(SignatureOutflow_Continue) == 0x30);
 };

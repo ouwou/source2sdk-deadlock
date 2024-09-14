@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CFuncLadderAlias_func_useableladder) == 0x818);
 };

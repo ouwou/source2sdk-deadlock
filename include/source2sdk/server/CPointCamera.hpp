@@ -116,6 +116,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointCamera because it is not a standard-layout class
-    
     static_assert(sizeof(CPointCamera) == 0x538);
 };

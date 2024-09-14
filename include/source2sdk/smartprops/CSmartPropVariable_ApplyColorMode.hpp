@@ -32,6 +32,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropVariable_ApplyColorMode because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropVariable_ApplyColorMode) == 0x30);
 };

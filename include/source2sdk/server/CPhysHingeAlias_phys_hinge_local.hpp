@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPhysHingeAlias_phys_hinge_local) == 0x6f0);
 };

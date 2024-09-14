@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemMetalSkinVData because it is not a standard-layout class
-    
     static_assert(sizeof(CItemMetalSkinVData) == 0x1580);
 };

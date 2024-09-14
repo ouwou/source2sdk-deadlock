@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2a8
+    // Size: 0x2a0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Wrecker_Ultimate : public server::CCitadelModifier
@@ -28,13 +28,12 @@ namespace source2sdk::server
     public:
         // m_vecGrabbed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecGrabbed;
-        char m_vecGrabbed[0x18]; // 0xc8        
-        client::ParticleIndex_t m_nFXIndex; // 0xe0        
-        [[maybe_unused]] std::uint8_t pad_0xe4[0x1c4];
+        char m_vecGrabbed[0x18]; // 0xc0        
+        client::ParticleIndex_t m_nFXIndex; // 0xd8        
+        [[maybe_unused]] std::uint8_t pad_0xdc[0x1c4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Wrecker_Ultimate because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Wrecker_Ultimate) == 0x2a8);
+    static_assert(sizeof(CCitadel_Modifier_Wrecker_Ultimate) == 0x2a0);
 };

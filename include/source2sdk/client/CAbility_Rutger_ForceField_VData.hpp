@@ -47,6 +47,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Rutger_ForceField_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbility_Rutger_ForceField_VData) == 0x1668);
 };

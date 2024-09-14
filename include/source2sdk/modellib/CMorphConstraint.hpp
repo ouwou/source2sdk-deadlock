@@ -31,6 +31,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMorphConstraint because it is not a standard-layout class
-    
     static_assert(sizeof(CMorphConstraint) == 0x88);
 };

@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_MagicCarpet_SummonVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_MagicCarpet_SummonVData) == 0x6d8);
 };

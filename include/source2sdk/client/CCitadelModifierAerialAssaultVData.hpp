@@ -46,6 +46,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModifierAerialAssaultVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelModifierAerialAssaultVData) == 0x7e8);
 };

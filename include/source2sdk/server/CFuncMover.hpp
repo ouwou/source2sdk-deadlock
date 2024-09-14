@@ -102,6 +102,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncMover because it is not a standard-layout class
-    
     static_assert(sizeof(CFuncMover) == 0x870);
 };

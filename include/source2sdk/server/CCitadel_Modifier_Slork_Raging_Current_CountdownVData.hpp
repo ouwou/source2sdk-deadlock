@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Slork_Raging_Current_CountdownVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Slork_Raging_Current_CountdownVData) == 0x6e8);
 };

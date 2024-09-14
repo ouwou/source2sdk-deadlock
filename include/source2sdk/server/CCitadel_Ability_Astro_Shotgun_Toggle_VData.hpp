@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Astro_Shotgun_Toggle_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Astro_Shotgun_Toggle_VData) == 0x1538);
 };

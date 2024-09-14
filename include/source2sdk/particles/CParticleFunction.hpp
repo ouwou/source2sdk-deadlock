@@ -98,6 +98,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CParticleFunction because it is not a standard-layout class
-    
     static_assert(sizeof(CParticleFunction) == 0x1c0);
 };

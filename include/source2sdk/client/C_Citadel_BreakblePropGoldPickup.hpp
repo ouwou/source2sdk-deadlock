@@ -29,6 +29,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_BreakblePropGoldPickup because it is not a standard-layout class
-    
     static_assert(sizeof(C_Citadel_BreakblePropGoldPickup) == 0xb60);
 };

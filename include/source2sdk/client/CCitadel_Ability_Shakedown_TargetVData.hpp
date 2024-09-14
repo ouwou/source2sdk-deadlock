@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Shakedown_TargetVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Shakedown_TargetVData) == 0x1548);
 };

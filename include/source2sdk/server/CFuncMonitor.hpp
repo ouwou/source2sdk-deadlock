@@ -65,6 +65,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncMonitor because it is not a standard-layout class
-    
     static_assert(sizeof(CFuncMonitor) == 0x7a8);
 };

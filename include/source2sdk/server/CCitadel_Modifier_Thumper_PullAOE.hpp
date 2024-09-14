@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x190
+    // Size: 0x188
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Thumper_PullAOE : public server::CCitadelModifierAura
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xe8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xe0[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Thumper_PullAOE) == 0x190);
+    static_assert(sizeof(CCitadel_Modifier_Thumper_PullAOE) == 0x188);
 };

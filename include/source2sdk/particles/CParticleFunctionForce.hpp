@@ -27,6 +27,5 @@ namespace source2sdk::particles
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CParticleFunctionForce) == 0x1d0);
 };

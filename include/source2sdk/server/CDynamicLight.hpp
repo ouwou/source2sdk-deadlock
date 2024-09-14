@@ -63,6 +63,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CDynamicLight because it is not a standard-layout class
-    
     static_assert(sizeof(CDynamicLight) == 0x780);
 };

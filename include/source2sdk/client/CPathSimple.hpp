@@ -30,6 +30,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathSimple because it is not a standard-layout class
-    
     static_assert(sizeof(CPathSimple) == 0x5b8);
 };

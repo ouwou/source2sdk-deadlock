@@ -28,6 +28,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in PointDefinitionWithTimeValues_t because it is not a standard-layout class
-    
     static_assert(sizeof(PointDefinitionWithTimeValues_t) == 0x18);
 };

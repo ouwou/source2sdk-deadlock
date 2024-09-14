@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_MotorNavLink because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_MotorNavLink) == 0x78);
 };

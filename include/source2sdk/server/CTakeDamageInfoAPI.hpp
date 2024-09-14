@@ -26,6 +26,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CTakeDamageInfoAPI) == 0x1);
 };

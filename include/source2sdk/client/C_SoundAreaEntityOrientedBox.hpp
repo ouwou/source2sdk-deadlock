@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_SoundAreaEntityOrientedBox because it is not a standard-layout class
-    
     static_assert(sizeof(C_SoundAreaEntityOrientedBox) == 0x598);
 };

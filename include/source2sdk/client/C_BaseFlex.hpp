@@ -66,6 +66,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseFlex because it is not a standard-layout class
-    
     static_assert(sizeof(C_BaseFlex) == 0xcd8);
 };

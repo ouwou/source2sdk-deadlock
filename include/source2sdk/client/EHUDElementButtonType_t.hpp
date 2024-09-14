@@ -14,6 +14,6 @@ namespace source2sdk::client
     enum class EHUDElementButtonType_t : std::uint32_t
     {
         EButtonHintType_SingleButton = 0x0,
-        EButtonHintType_TwoButtonCombination = 0x1,
+        EButtonHintType_TwoDifferentButtons = 0x1,
     };
 };

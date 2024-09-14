@@ -39,6 +39,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Affliction_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CAbility_Synth_Affliction_VData) == 0x16f8);
 };

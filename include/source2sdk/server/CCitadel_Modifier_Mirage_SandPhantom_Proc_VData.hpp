@@ -57,6 +57,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Mirage_SandPhantom_Proc_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_Mirage_SandPhantom_Proc_VData) == 0x8d8);
 };

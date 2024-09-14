@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(EventSplitScreenStateChanged_t) == 0x1);
 };

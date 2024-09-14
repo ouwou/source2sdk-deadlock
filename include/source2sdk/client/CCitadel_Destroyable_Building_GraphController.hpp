@@ -52,6 +52,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Destroyable_Building_GraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Destroyable_Building_GraphController) == 0x120);
 };

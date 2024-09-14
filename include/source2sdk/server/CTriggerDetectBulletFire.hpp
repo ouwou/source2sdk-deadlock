@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerDetectBulletFire because it is not a standard-layout class
-    
     static_assert(sizeof(CTriggerDetectBulletFire) == 0x968);
 };

@@ -47,6 +47,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CGameChoreoServices because it is not a standard-layout class
-    
     static_assert(sizeof(CGameChoreoServices) == 0x20);
 };

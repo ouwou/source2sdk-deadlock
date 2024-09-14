@@ -45,6 +45,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoSpawnGroupLoadUnload because it is not a standard-layout class
-    
     static_assert(sizeof(CInfoSpawnGroupLoadUnload) == 0x5d8);
 };

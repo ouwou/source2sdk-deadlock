@@ -26,6 +26,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_WreckerScrapBlastDebuff because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_WreckerScrapBlastDebuff) == 0xc8);
 };

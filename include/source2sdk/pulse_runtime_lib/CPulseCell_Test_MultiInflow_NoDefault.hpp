@@ -28,6 +28,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPulseCell_Test_MultiInflow_NoDefault) == 0x48);
 };

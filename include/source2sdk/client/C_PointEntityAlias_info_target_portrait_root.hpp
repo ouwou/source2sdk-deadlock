@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_PointEntityAlias_info_target_portrait_root) == 0x558);
 };

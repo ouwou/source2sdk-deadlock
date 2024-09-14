@@ -14,19 +14,18 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x178
+    // Size: 0x170
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_LastBreath : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0xa8]; // 0xc8
-        float m_flDamageToAbsorb; // 0x170        
-        [[maybe_unused]] std::uint8_t pad_0x174[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0xa8]; // 0xc0
+        float m_flDamageToAbsorb; // 0x168        
+        [[maybe_unused]] std::uint8_t pad_0x16c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_LastBreath because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_LastBreath) == 0x178);
+    static_assert(sizeof(CCitadel_Modifier_LastBreath) == 0x170);
 };

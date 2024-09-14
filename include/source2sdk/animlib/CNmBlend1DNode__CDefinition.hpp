@@ -28,6 +28,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmBlend1DNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmBlend1DNode__CDefinition) == 0x90);
 };

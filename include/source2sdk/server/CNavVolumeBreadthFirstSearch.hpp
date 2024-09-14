@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNavVolumeBreadthFirstSearch because it is not a standard-layout class
-    
     static_assert(sizeof(CNavVolumeBreadthFirstSearch) == 0xb8);
 };

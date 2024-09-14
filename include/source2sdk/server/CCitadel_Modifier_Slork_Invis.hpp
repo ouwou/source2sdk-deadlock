@@ -14,19 +14,18 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2e0
+    // Size: 0x2d8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Slork_Invis : public server::CCitadel_Modifier_Invis
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x268[0x70]; // 0x268
-        bool m_bHasGoneFullyInvis; // 0x2d8        
-        [[maybe_unused]] std::uint8_t pad_0x2d9[0x7];
+        [[maybe_unused]] std::uint8_t pad_0x260[0x70]; // 0x260
+        bool m_bHasGoneFullyInvis; // 0x2d0        
+        [[maybe_unused]] std::uint8_t pad_0x2d1[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Slork_Invis because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_Slork_Invis) == 0x2e0);
+    static_assert(sizeof(CCitadel_Modifier_Slork_Invis) == 0x2d8);
 };

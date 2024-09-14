@@ -101,6 +101,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathParticleRope because it is not a standard-layout class
-    
     static_assert(sizeof(CPathParticleRope) == 0x5c0);
 };

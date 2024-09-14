@@ -27,6 +27,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBoomerangProjectile because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelBoomerangProjectile) == 0x978);
 };

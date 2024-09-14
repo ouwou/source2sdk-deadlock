@@ -25,6 +25,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CitadelCurvedAbilityProjectileCreateInfo_t because it is not a standard-layout class
-    
     static_assert(sizeof(CitadelCurvedAbilityProjectileCreateInfo_t) == 0x58);
 };

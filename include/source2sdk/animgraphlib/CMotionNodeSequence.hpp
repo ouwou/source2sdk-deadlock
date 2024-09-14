@@ -33,6 +33,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMotionNodeSequence because it is not a standard-layout class
-    
     static_assert(sizeof(CMotionNodeSequence) == 0x48);
 };

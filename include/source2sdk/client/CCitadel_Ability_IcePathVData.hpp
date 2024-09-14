@@ -40,6 +40,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_IcePathVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_IcePathVData) == 0x1558);
 };

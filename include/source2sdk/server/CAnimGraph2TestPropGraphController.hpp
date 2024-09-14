@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAnimGraph2TestPropGraphController because it is not a standard-layout class
-    
     static_assert(sizeof(CAnimGraph2TestPropGraphController) == 0x30);
 };

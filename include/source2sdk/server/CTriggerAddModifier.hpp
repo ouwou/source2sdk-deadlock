@@ -28,6 +28,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerAddModifier because it is not a standard-layout class
-    
     static_assert(sizeof(CTriggerAddModifier) == 0x948);
 };

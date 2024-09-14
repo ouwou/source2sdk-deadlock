@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CScaleFunctionVData because it is not a standard-layout class
-    
     static_assert(sizeof(CScaleFunctionVData) == 0x40);
 };

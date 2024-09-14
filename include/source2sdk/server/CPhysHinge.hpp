@@ -61,6 +61,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysHinge because it is not a standard-layout class
-    
     static_assert(sizeof(CPhysHinge) == 0x6f0);
 };

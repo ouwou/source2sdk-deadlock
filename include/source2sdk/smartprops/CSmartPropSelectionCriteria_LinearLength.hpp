@@ -41,6 +41,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropSelectionCriteria_LinearLength because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropSelectionCriteria_LinearLength) == 0x148);
 };

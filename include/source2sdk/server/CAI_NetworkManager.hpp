@@ -32,6 +32,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CAI_NetworkManager) == 0x4d8);
 };

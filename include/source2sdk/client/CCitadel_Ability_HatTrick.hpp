@@ -36,6 +36,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_HatTrick because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_HatTrick) == 0xd20);
 };

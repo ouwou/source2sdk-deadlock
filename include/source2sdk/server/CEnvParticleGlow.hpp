@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvParticleGlow because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvParticleGlow) == 0xcf8);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc8
+    // Size: 0xc0
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Tier3Boss_Base) == 0xc8);
+    static_assert(sizeof(CCitadel_Modifier_Tier3Boss_Base) == 0xc0);
 };

@@ -80,6 +80,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_ScriptConditions because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_ScriptConditions) == 0x5f0);
 };

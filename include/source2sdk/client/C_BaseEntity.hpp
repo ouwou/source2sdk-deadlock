@@ -182,28 +182,29 @@ namespace source2sdk::client
         bool m_bRenderEvenWhenNotSuccessfullyInterpolated; // 0x3bf        
         int32_t m_nInterpolationLatchDirtyFlags[2]; // 0x3c0        
         uint16_t m_ListEntry[11]; // 0x3c8        
-        [[maybe_unused]] std::uint8_t pad_0x3de[0x6]; // 0x3de
+        [[maybe_unused]] std::uint8_t pad_0x3de[0x2]; // 0x3de
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCreateTime; // 0x3e4        
+        entity2::GameTime_t m_flCreateTime; // 0x3e0        
         // metadata: MNetworkEnable
-        float m_flSpeed; // 0x3e8        
-        uint16_t m_EntClientFlags; // 0x3ec        
+        float m_flSpeed; // 0x3e4        
+        uint16_t m_EntClientFlags; // 0x3e8        
         // metadata: MNetworkEnable
-        bool m_bClientSideRagdoll; // 0x3ee        
+        bool m_bClientSideRagdoll; // 0x3ea        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnNetVarTeamNumChanged"
-        uint8_t m_iTeamNum; // 0x3ef        
+        uint8_t m_iTeamNum; // 0x3eb        
         // metadata: MNetworkEnable
-        uint32_t m_spawnflags; // 0x3f0        
+        uint32_t m_spawnflags; // 0x3ec        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        entity2::GameTick_t m_nNextThinkTick; // 0x3f4        
+        entity2::GameTick_t m_nNextThinkTick; // 0x3f0        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
         // metadata: MNetworkUserGroup "Player"
         // metadata: MNetworkChangeCallback "OnFlagsChanged"
-        uint32_t m_fFlags; // 0x3f8        
-        Vector m_vecAbsVelocity; // 0x3fc        
+        uint32_t m_fFlags; // 0x3f4        
+        Vector m_vecAbsVelocity; // 0x3f8        
+        [[maybe_unused]] std::uint8_t pad_0x404[0x4]; // 0x404
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
         // metadata: MNetworkChangeCallback "OnLocalVelocityChanged"
@@ -332,6 +333,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseEntity because it is not a standard-layout class
-    
     static_assert(sizeof(C_BaseEntity) == 0x558);
 };

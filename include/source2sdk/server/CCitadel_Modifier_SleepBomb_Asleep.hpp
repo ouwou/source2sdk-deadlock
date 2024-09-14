@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x128
+    // Size: 0x120
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_SleepBomb_Asleep : public server::CCitadel_Modifier_Sleep
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xf0[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xe8[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_SleepBomb_Asleep) == 0x128);
+    static_assert(sizeof(CCitadel_Modifier_SleepBomb_Asleep) == 0x120);
 };

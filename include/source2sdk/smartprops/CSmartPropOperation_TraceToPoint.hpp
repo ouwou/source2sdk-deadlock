@@ -43,6 +43,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_TraceToPoint because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_TraceToPoint) == 0x410);
 };

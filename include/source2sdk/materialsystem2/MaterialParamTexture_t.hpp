@@ -29,6 +29,5 @@ namespace source2sdk::materialsystem2
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in MaterialParamTexture_t because it is not a standard-layout class
-    
     static_assert(sizeof(MaterialParamTexture_t) == 0x10);
 };

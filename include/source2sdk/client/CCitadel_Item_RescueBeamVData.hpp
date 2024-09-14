@@ -34,6 +34,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_RescueBeamVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Item_RescueBeamVData) == 0x1590);
 };

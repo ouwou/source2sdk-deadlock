@@ -27,6 +27,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CGameModifier_SetMoveType because it is not a standard-layout class
-    
     static_assert(sizeof(CGameModifier_SetMoveType) == 0xc8);
 };

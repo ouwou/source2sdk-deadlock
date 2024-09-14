@@ -37,6 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNodeEnt because it is not a standard-layout class
-    
     static_assert(sizeof(CNodeEnt) == 0x530);
 };

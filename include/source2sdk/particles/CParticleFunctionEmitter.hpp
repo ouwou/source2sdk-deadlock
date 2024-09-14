@@ -30,6 +30,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CParticleFunctionEmitter because it is not a standard-layout class
-    
     static_assert(sizeof(CParticleFunctionEmitter) == 0x1c8);
 };

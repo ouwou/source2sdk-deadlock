@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSoundEnt because it is not a standard-layout class
-    
     static_assert(sizeof(CSoundEnt) == 0x1ee8);
 };

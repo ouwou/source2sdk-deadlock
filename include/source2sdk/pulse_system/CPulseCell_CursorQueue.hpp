@@ -35,6 +35,5 @@ namespace source2sdk::pulse_system
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_CursorQueue because it is not a standard-layout class
-    
     static_assert(sizeof(CPulseCell_CursorQueue) == 0x88);
 };

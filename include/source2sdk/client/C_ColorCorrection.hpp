@@ -69,6 +69,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_ColorCorrection because it is not a standard-layout class
-    
     static_assert(sizeof(C_ColorCorrection) == 0x7a0);
 };

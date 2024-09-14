@@ -17,14 +17,13 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vanmgrpheconitem"
+    // static metadata: MResourceTypeForInfoType "vanmgrph"
     #pragma pack(push, 1)
     class InfoForResourceTypeIAnimGraphModelBinding
     {
     public:
     };
     #pragma pack(pop)
-    
     
     static_assert(sizeof(InfoForResourceTypeIAnimGraphModelBinding) == 0x1);
 };

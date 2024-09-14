@@ -70,6 +70,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPlayer_MovementServices_Humanoid because it is not a standard-layout class
-    
     static_assert(sizeof(CPlayer_MovementServices_Humanoid) == 0x218);
 };

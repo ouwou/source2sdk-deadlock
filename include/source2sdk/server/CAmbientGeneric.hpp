@@ -60,6 +60,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAmbientGeneric because it is not a standard-layout class
-    
     static_assert(sizeof(CAmbientGeneric) == 0x570);
 };

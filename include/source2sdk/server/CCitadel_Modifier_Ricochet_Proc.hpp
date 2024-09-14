@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1f8
+    // Size: 0x1f0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Ricochet_Proc : public server::CCitadel_Modifier_BaseEventProc
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x170[0x88];
+        [[maybe_unused]] std::uint8_t pad_0x168[0x88];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Ricochet_Proc) == 0x1f8);
+    static_assert(sizeof(CCitadel_Modifier_Ricochet_Proc) == 0x1f0);
 };

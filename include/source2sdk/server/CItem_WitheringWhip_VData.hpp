@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItem_WitheringWhip_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CItem_WitheringWhip_VData) == 0x1680);
 };

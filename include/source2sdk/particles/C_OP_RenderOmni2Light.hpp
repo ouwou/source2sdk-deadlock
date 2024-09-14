@@ -73,6 +73,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_RenderOmni2Light because it is not a standard-layout class
-    
     static_assert(sizeof(C_OP_RenderOmni2Light) == 0x13b8);
 };

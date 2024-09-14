@@ -24,6 +24,5 @@ namespace source2sdk::scenesystem
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSSDSMsg_PreLayer) == 0x38);
 };

@@ -31,6 +31,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Upgrade_StabilizingTripodVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Upgrade_StabilizingTripodVData) == 0x1580);
 };

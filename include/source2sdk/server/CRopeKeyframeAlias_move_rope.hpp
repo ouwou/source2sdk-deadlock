@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CRopeKeyframeAlias_move_rope) == 0x7c0);
 };

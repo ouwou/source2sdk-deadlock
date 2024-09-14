@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CSceneEntityAlias_logic_choreographed_scene) == 0xa38);
 };

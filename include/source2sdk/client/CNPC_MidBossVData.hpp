@@ -48,6 +48,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_MidBossVData because it is not a standard-layout class
-    
     static_assert(sizeof(CNPC_MidBossVData) == 0x1150);
 };

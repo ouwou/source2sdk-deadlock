@@ -33,6 +33,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelViscousBallVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelViscousBallVData) == 0x110);
 };

@@ -38,6 +38,5 @@ namespace source2sdk::soundsystem_voicecontainers
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CVoiceContainerRealtimeFMSineWave because it is not a standard-layout class
-    
     static_assert(sizeof(CVoiceContainerRealtimeFMSineWave) == 0xd0);
 };

@@ -61,6 +61,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvDecal because it is not a standard-layout class
-    
     static_assert(sizeof(C_EnvDecal) == 0x868);
 };

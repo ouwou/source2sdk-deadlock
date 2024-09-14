@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_Modifier_Tokamak_EnemySmokeAOE_VData) == 0x638);
 };

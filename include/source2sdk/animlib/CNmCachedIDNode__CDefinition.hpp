@@ -30,6 +30,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmCachedIDNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmCachedIDNode__CDefinition) == 0x18);
 };

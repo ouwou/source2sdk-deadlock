@@ -33,6 +33,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModelConfigElement_RandomPick because it is not a standard-layout class
-    
     static_assert(sizeof(CModelConfigElement_RandomPick) == 0x80);
 };

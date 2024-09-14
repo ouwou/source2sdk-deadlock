@@ -32,6 +32,5 @@ namespace source2sdk::worldrenderer
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in ExtraVertexStreamOverride_t because it is not a standard-layout class
-    
     static_assert(sizeof(ExtraVertexStreamOverride_t) == 0x30);
 };

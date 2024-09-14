@@ -26,6 +26,5 @@ namespace source2sdk::entity2
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CEntityComponent) == 0x8);
 };

@@ -73,6 +73,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvMicrophone because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvMicrophone) == 0x698);
 };

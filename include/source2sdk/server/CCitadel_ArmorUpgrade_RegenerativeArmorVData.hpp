@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_RegenerativeArmorVData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_ArmorUpgrade_RegenerativeArmorVData) == 0x1580);
 };

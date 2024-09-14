@@ -28,6 +28,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_GhostBloodShard because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Modifier_GhostBloodShard) == 0x110);
 };

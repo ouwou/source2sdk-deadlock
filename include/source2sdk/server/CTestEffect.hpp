@@ -36,6 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTestEffect because it is not a standard-layout class
-    
     static_assert(sizeof(CTestEffect) == 0x608);
 };

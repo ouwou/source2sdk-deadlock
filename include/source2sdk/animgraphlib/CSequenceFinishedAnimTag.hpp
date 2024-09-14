@@ -31,6 +31,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSequenceFinishedAnimTag because it is not a standard-layout class
-    
     static_assert(sizeof(CSequenceFinishedAnimTag) == 0x60);
 };

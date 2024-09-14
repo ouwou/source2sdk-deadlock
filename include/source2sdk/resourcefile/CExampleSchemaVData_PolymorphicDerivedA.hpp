@@ -28,6 +28,5 @@ namespace source2sdk::resourcefile
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CExampleSchemaVData_PolymorphicDerivedA because it is not a standard-layout class
-    
     static_assert(sizeof(CExampleSchemaVData_PolymorphicDerivedA) == 0x18);
 };

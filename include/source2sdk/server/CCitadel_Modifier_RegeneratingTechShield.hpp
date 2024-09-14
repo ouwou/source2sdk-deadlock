@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x108
+    // Size: 0x100
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_RegeneratingTechShield : public server::CCitadel_Modifier_BaseShield
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xd0[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xc8[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_RegeneratingTechShield) == 0x108);
+    static_assert(sizeof(CCitadel_Modifier_RegeneratingTechShield) == 0x100);
 };

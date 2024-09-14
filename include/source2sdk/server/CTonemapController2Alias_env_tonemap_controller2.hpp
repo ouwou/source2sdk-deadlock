@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CTonemapController2Alias_env_tonemap_controller2) == 0x500);
 };

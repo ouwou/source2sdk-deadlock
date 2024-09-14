@@ -29,6 +29,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathAnimMotorUpdaterBase because it is not a standard-layout class
-    
     static_assert(sizeof(CPathAnimMotorUpdaterBase) == 0x28);
 };

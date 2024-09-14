@@ -113,6 +113,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSprite because it is not a standard-layout class
-    
     static_assert(sizeof(CSprite) == 0x7d8);
 };

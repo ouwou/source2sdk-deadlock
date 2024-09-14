@@ -35,6 +35,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Chrono_PulseGrenade_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Chrono_PulseGrenade_VData) == 0x1550);
 };

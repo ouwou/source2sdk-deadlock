@@ -26,6 +26,5 @@ namespace source2sdk::particleslib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CPerParticleFloatInput) == 0x160);
 };

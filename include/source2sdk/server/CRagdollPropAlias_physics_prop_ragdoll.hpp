@@ -24,6 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CRagdollPropAlias_physics_prop_ragdoll) == 0xb40);
 };

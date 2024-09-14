@@ -105,6 +105,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicNPCCounter because it is not a standard-layout class
-    
     static_assert(sizeof(CLogicNPCCounter) == 0x818);
 };

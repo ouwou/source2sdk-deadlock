@@ -91,6 +91,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSun because it is not a standard-layout class
-    
     static_assert(sizeof(CSun) == 0x7b0);
 };

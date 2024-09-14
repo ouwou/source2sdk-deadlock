@@ -36,6 +36,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFootCycleDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CFootCycleDefinition) == 0x3c);
 };

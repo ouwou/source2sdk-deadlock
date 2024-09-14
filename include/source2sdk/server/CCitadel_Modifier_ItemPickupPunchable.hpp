@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd8
+    // Size: 0xd0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_ItemPickupPunchable : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x10];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x10];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_ItemPickupPunchable) == 0xd8);
+    static_assert(sizeof(CCitadel_Modifier_ItemPickupPunchable) == 0xd0);
 };

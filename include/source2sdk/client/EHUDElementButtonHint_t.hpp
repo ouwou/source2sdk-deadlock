@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 6
+    // Enumerator count: 7
     // Alignment: 4
     // Size: 0x4
     enum class EHUDElementButtonHint_t : std::uint32_t
@@ -19,5 +19,6 @@ namespace source2sdk::client
         EButtonHint_CrouchKey = 0x3,
         EButtonHint_Parry = 0x4,
         EButtonHint_JumpKey = 0x5,
+        EButtonHint_CancelKey = 0x6,
     };
 };

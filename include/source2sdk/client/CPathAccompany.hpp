@@ -33,6 +33,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathAccompany because it is not a standard-layout class
-    
     static_assert(sizeof(CPathAccompany) == 0x578);
 };

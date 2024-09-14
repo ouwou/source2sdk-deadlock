@@ -26,6 +26,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(IClientAlphaProperty) == 0x8);
 };

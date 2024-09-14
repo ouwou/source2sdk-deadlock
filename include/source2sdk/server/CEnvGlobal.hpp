@@ -41,6 +41,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvGlobal because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvGlobal) == 0x518);
 };

@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierFealtyTargetVData because it is not a standard-layout class
-    
     static_assert(sizeof(CModifierFealtyTargetVData) == 0x6d8);
 };

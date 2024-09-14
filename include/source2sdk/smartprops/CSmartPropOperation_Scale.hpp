@@ -31,6 +31,5 @@ namespace source2sdk::smartprops
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropOperation_Scale because it is not a standard-layout class
-    
     static_assert(sizeof(CSmartPropOperation_Scale) == 0x90);
 };

@@ -17,14 +17,13 @@ namespace source2sdk::resourcesystem
     // Has Trivial Constructor
     // Has Trivial Destructor
     // 
-    // static metadata: MResourceTypeForInfoType "vgcxdata–b"
+    // static metadata: MResourceTypeForInfoType "vgcxdata"
     #pragma pack(push, 1)
     class InfoForResourceTypeCGcExportableExternalData
     {
     public:
     };
     #pragma pack(pop)
-    
     
     static_assert(sizeof(InfoForResourceTypeCGcExportableExternalData) == 0x1);
 };

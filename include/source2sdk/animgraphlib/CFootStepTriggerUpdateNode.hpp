@@ -32,6 +32,5 @@ namespace source2sdk::animgraphlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFootStepTriggerUpdateNode because it is not a standard-layout class
-    
     static_assert(sizeof(CFootStepTriggerUpdateNode) == 0x88);
 };

@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRagdollConstraint because it is not a standard-layout class
-    
     static_assert(sizeof(CRagdollConstraint) == 0x578);
 };

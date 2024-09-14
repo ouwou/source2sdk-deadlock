@@ -24,6 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(C_DynamicPropAlias_cable_dynamic) == 0xde0);
 };

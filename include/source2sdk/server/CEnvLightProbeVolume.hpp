@@ -93,6 +93,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvLightProbeVolume because it is not a standard-layout class
-    
     static_assert(sizeof(CEnvLightProbeVolume) == 0x1528);
 };

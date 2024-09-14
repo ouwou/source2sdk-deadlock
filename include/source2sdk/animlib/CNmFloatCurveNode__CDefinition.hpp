@@ -29,6 +29,5 @@ namespace source2sdk::animlib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmFloatCurveNode::CDefinition because it is not a standard-layout class
-    
     static_assert(sizeof(CNmFloatCurveNode__CDefinition) == 0x58);
 };

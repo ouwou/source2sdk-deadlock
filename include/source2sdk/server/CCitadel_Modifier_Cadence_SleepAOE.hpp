@@ -14,17 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x138
+    // Size: 0x130
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Cadence_SleepAOE : public server::CCitadelModifierAura
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xe8[0x50];
+        [[maybe_unused]] std::uint8_t pad_0xe0[0x50];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    
-    static_assert(sizeof(CCitadel_Modifier_Cadence_SleepAOE) == 0x138);
+    static_assert(sizeof(CCitadel_Modifier_Cadence_SleepAOE) == 0x130);
 };

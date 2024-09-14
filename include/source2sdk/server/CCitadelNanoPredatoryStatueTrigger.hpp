@@ -30,6 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelNanoPredatoryStatueTrigger because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelNanoPredatoryStatueTrigger) == 0xb00);
 };

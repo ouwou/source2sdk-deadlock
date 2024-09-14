@@ -53,6 +53,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFogController because it is not a standard-layout class
-    
     static_assert(sizeof(CFogController) == 0x548);
 };

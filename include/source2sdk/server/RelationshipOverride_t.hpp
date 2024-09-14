@@ -34,6 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in RelationshipOverride_t because it is not a standard-layout class
-    
     static_assert(sizeof(RelationshipOverride_t) == 0x10);
 };

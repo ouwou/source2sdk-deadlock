@@ -29,6 +29,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTrackedObject_MODIFIER_TRACKED_PARTICLE because it is not a standard-layout class
-    
     static_assert(sizeof(CTrackedObject_MODIFIER_TRACKED_PARTICLE) == 0x18);
 };

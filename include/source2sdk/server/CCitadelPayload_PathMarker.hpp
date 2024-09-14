@@ -31,6 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPayload_PathMarker because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelPayload_PathMarker) == 0x4f0);
 };

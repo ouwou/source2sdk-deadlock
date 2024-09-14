@@ -177,6 +177,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelGameRules because it is not a standard-layout class
-    
     static_assert(sizeof(C_CitadelGameRules) == 0x9ee0);
 };

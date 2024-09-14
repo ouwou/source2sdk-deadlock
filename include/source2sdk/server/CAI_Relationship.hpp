@@ -48,6 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_Relationship because it is not a standard-layout class
-    
     static_assert(sizeof(CAI_Relationship) == 0x520);
 };

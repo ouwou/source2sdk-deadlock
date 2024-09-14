@@ -37,6 +37,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ShieldedSentry_VData because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_ShieldedSentry_VData) == 0x1550);
 };

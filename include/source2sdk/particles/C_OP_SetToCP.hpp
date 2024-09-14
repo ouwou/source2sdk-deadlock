@@ -33,6 +33,5 @@ namespace source2sdk::particles
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_SetToCP because it is not a standard-layout class
-    
     static_assert(sizeof(C_OP_SetToCP) == 0x1d8);
 };

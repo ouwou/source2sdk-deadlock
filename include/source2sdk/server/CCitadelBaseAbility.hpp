@@ -188,6 +188,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBaseAbility because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadelBaseAbility) == 0xae8);
 };

@@ -25,6 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadel_WeaponUpgrade_HeadshotBooster) == 0xb40);
 };

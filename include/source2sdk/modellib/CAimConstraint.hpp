@@ -30,6 +30,5 @@ namespace source2sdk::modellib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAimConstraint because it is not a standard-layout class
-    
     static_assert(sizeof(CAimConstraint) == 0x90);
 };

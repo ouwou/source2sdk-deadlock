@@ -25,6 +25,5 @@ namespace source2sdk::worldrenderer
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(InfoForResourceTypeVMapResourceData_t) == 0x1);
 };

@@ -25,6 +25,5 @@ namespace source2sdk::modellib
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CFootCycle) == 0x4);
 };

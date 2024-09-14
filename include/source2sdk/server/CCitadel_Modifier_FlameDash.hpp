@@ -14,18 +14,17 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x180
+    // Size: 0x178
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_FlameDash : public server::CCitadelModifier
     {
     public:
-        Vector m_vLastDropZonePos; // 0xc8        
-        [[maybe_unused]] std::uint8_t pad_0xd4[0xac];
+        Vector m_vLastDropZonePos; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xcc[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_FlameDash because it is not a standard-layout class
-    
-    static_assert(sizeof(CCitadel_Modifier_FlameDash) == 0x180);
+    static_assert(sizeof(CCitadel_Modifier_FlameDash) == 0x178);
 };

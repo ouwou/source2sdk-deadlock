@@ -44,6 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tengu_AirLift because it is not a standard-layout class
-    
     static_assert(sizeof(CCitadel_Ability_Tengu_AirLift) == 0xd08);
 };

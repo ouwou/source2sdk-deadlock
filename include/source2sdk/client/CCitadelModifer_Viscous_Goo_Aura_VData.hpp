@@ -25,6 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    
     static_assert(sizeof(CCitadelModifer_Viscous_Goo_Aura_VData) == 0x638);
 };
