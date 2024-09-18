@@ -30,7 +30,6 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "bool m_bInSlideJump"
     // static metadata: MNetworkVarNames "int8 m_nConsecutiveAirJumps"
     // static metadata: MNetworkVarNames "int8 m_nConsecutiveWallJumps"
-    // static metadata: MNetworkVarNames "Vector m_vLastWallCollidedWithNormal"
     #pragma pack(push, 1)
     class CCitadel_Ability_Jump : public server::CCitadelBaseAbility
     {
@@ -73,8 +72,6 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         int8_t m_nConsecutiveWallJumps; // 0xc66        
         [[maybe_unused]] std::uint8_t pad_0xc67[0x1]; // 0xc67
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         Vector m_vLastWallCollidedWithNormal; // 0xc68        
         [[maybe_unused]] std::uint8_t pad_0xc74[0x4];
     };

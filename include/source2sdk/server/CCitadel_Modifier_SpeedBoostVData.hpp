@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x600
+    // Size: 0x610
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,11 +22,11 @@ namespace source2sdk::server
     class CCitadel_Modifier_SpeedBoostVData : public server::CCitadelModifierVData
     {
     public:
-        float m_flMoveSpeedBoost; // 0x5f8        
-        [[maybe_unused]] std::uint8_t pad_0x5fc[0x4];
+        float m_flMoveSpeedBoost; // 0x608        
+        [[maybe_unused]] std::uint8_t pad_0x60c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_SpeedBoostVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_SpeedBoostVData) == 0x600);
+    static_assert(sizeof(CCitadel_Modifier_SpeedBoostVData) == 0x610);
 };

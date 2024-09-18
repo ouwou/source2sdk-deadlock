@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1628
+    // Size: 0x1640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,18 +27,18 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_StageModel has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeCModel>> m_StageModel;
-        char m_StageModel[0xe0]; // 0x1528        
-        float m_flStageModelHeight; // 0x1608        
-        float m_flStageModelWidth; // 0x160c        
-        float m_flStageModelLength; // 0x1610        
-        float m_flStageModelScale; // 0x1614        
+        char m_StageModel[0xe0]; // 0x1540        
+        float m_flStageModelHeight; // 0x1620        
+        float m_flStageModelWidth; // 0x1624        
+        float m_flStageModelLength; // 0x1628        
+        float m_flStageModelScale; // 0x162c        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_GrandFinaleAOEModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_GrandFinaleAOEModifier;
-        char m_GrandFinaleAOEModifier[0x10]; // 0x1618        
+        char m_GrandFinaleAOEModifier[0x10]; // 0x1630        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityCadenceGrandFinaleVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityCadenceGrandFinaleVData) == 0x1628);
+    static_assert(sizeof(CAbilityCadenceGrandFinaleVData) == 0x1640);
 };

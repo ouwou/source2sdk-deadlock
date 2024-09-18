@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x768
+    // Size: 0x780
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,15 +23,15 @@ namespace source2sdk::server
     class CModifierKnockdownVData : public server::CCitadel_Modifier_StunnedVData
     {
     public:
-        float m_flSatVolumeRadius; // 0x6d8        
-        float m_flSatVolumeFadeOut; // 0x6dc        
+        float m_flSatVolumeRadius; // 0x6e8        
+        float m_flSatVolumeFadeOut; // 0x6ec        
         // metadata: MPropertyStartGroup "Camera"
-        float m_flGetUpSeqDuration; // 0x6e0        
-        [[maybe_unused]] std::uint8_t pad_0x6e4[0x4]; // 0x6e4
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceGetUp; // 0x6e8        
+        float m_flGetUpSeqDuration; // 0x6f0        
+        [[maybe_unused]] std::uint8_t pad_0x6f4[0x4]; // 0x6f4
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceGetUp; // 0x6f8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierKnockdownVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierKnockdownVData) == 0x768);
+    static_assert(sizeof(CModifierKnockdownVData) == 0x780);
 };

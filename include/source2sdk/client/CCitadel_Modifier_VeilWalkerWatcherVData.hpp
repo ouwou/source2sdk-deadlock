@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x630
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,19 +26,19 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_InvisModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_InvisModifier;
-        char m_InvisModifier[0x10]; // 0x5f8        
+        char m_InvisModifier[0x10]; // 0x608        
         // m_VeilWalkerTriggeredModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_VeilWalkerTriggeredModifier;
-        char m_VeilWalkerTriggeredModifier[0x10]; // 0x608        
+        char m_VeilWalkerTriggeredModifier[0x10]; // 0x618        
         // m_VeilWalkerMovespeed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_VeilWalkerMovespeed;
-        char m_VeilWalkerMovespeed[0x10]; // 0x618        
+        char m_VeilWalkerMovespeed[0x10]; // 0x628        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flTraceLengthMin; // 0x628        
-        [[maybe_unused]] std::uint8_t pad_0x62c[0x4];
+        float m_flTraceLengthMin; // 0x638        
+        [[maybe_unused]] std::uint8_t pad_0x63c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_VeilWalkerWatcherVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_VeilWalkerWatcherVData) == 0x630);
+    static_assert(sizeof(CCitadel_Modifier_VeilWalkerWatcherVData) == 0x640);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1590
+    // Size: 0x15a8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,13 +26,13 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1570        
+        char m_BuffModifier[0x10]; // 0x1588        
         // m_PrecastSpiritBuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_PrecastSpiritBuffModifier;
-        char m_PrecastSpiritBuffModifier[0x10]; // 0x1580        
+        char m_PrecastSpiritBuffModifier[0x10]; // 0x1598        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_DivinersKevlar_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_DivinersKevlar_VData) == 0x1590);
+    static_assert(sizeof(CCitadel_Item_DivinersKevlar_VData) == 0x15a8);
 };

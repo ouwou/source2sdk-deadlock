@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x520
+    // Size: 0x528
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -111,5 +111,5 @@ namespace source2sdk::client
     static_assert(offsetof(AttackData_t, m_MeleeImpactParticle) == 0x3c0);
     static_assert(offsetof(AttackData_t, m_cameraSequenceAttackStart) == 0x4a0);
     
-    static_assert(sizeof(AttackData_t) == 0x520);
+    static_assert(sizeof(AttackData_t) == 0x528);
 };

@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5f8
+    // Size: 0x608
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -86,14 +86,14 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Camera"
         client::CitadelCameraOperationsSequence_t m_cameraSequenceCreated; // 0x4e0        
         // metadata: MPropertyDescription "By default, we stop the sequence from 'Sequence Created' once the modifier is removed.  Un-check this to allow it to continue past the modifier's lifetime."
-        bool m_bEndCreatedSequenceOnRemove; // 0x560        
-        [[maybe_unused]] std::uint8_t pad_0x561[0x7]; // 0x561
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x568        
+        bool m_bEndCreatedSequenceOnRemove; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x569[0x7]; // 0x569
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x570        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_sExpiredSound; // 0x5e8        
+        CSoundEventName m_sExpiredSound; // 0x5f8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModifierVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadelModifierVData) == 0x5f8);
+    static_assert(sizeof(CCitadelModifierVData) == 0x608);
 };

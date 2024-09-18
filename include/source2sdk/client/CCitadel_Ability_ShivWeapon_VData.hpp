@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1578
+    // Size: 0x1590
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,11 +23,11 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyStartGroup "+Gun Properties"
-        float m_flPushForce; // 0x1570        
-        [[maybe_unused]] std::uint8_t pad_0x1574[0x4];
+        float m_flPushForce; // 0x1588        
+        [[maybe_unused]] std::uint8_t pad_0x158c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ShivWeapon_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ShivWeapon_VData) == 0x1578);
+    static_assert(sizeof(CCitadel_Ability_ShivWeapon_VData) == 0x1590);
 };

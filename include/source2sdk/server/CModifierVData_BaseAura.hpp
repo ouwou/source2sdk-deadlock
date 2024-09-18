@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x630
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,20 +25,20 @@ namespace source2sdk::server
     class CModifierVData_BaseAura : public server::CCitadelModifierVData
     {
     public:
-        client::eAuraShapeType m_eAuraShapeType; // 0x5f8        
+        client::eAuraShapeType m_eAuraShapeType; // 0x608        
         // metadata: MPropertySuppressExpr "m_eAuraShapeType != k_eAuraShapeTypeSphere"
-        client::CModifierLevelFloat m_flAuraRadius; // 0x5fc        
+        client::CModifierLevelFloat m_flAuraRadius; // 0x60c        
         // metadata: MPropertySuppressExpr "m_eAuraShapeType != k_eAuraShapeTypeEntityBased"
-        client::CModifierLevelFloat m_flAuraEntityBoundsScale; // 0x60c        
-        int32_t m_nAmbientParticleRadiusControlPoint; // 0x61c        
+        client::CModifierLevelFloat m_flAuraEntityBoundsScale; // 0x61c        
+        int32_t m_nAmbientParticleRadiusControlPoint; // 0x62c        
         // metadata: MPropertyDescription "Aura - Modifier to Apply"
         // metadata: MPropertyFriendlyName "Modifier Provided By Aura"
         // m_modifierProvidedByAura has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_modifierProvidedByAura;
-        char m_modifierProvidedByAura[0x10]; // 0x620        
+        char m_modifierProvidedByAura[0x10]; // 0x630        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVData_BaseAura because it is not a standard-layout class
-    static_assert(sizeof(CModifierVData_BaseAura) == 0x630);
+    static_assert(sizeof(CModifierVData_BaseAura) == 0x640);
 };
