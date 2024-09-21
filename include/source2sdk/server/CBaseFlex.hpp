@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa30
+    // Size: 0xa38
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float32 m_flexWeight"
@@ -33,18 +33,18 @@ namespace source2sdk::server
         // metadata: MNetworkEncodeFlags "1"
         // m_flexWeight has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<float> m_flexWeight;
-        char m_flexWeight[0x18]; // 0x9a0        
+        char m_flexWeight[0x18]; // 0x9a8        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vLookTargetPosition; // 0x9b8        
+        Vector m_vLookTargetPosition; // 0x9c0        
         // metadata: MNetworkEnable
-        bool m_blinktoggle; // 0x9c4        
-        [[maybe_unused]] std::uint8_t pad_0x9c5[0x53]; // 0x9c5
-        entity2::GameTime_t m_flAllowResponsesEndTime; // 0xa18        
-        entity2::GameTime_t m_flLastFlexAnimationTime; // 0xa1c        
-        client::SceneEventId_t m_nNextSceneEventId; // 0xa20        
-        bool m_bUpdateLayerPriorities; // 0xa24        
-        [[maybe_unused]] std::uint8_t pad_0xa25[0xb];
+        bool m_blinktoggle; // 0x9cc        
+        [[maybe_unused]] std::uint8_t pad_0x9cd[0x53]; // 0x9cd
+        entity2::GameTime_t m_flAllowResponsesEndTime; // 0xa20        
+        entity2::GameTime_t m_flLastFlexAnimationTime; // 0xa24        
+        client::SceneEventId_t m_nNextSceneEventId; // 0xa28        
+        bool m_bUpdateLayerPriorities; // 0xa2c        
+        [[maybe_unused]] std::uint8_t pad_0xa2d[0xb];
         
         // Datamap fields:
         // void CBaseFlexProcessSceneEventsThink; // 0x0
@@ -52,5 +52,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseFlex because it is not a standard-layout class
-    static_assert(sizeof(CBaseFlex) == 0xa30);
+    static_assert(sizeof(CBaseFlex) == 0xa38);
 };

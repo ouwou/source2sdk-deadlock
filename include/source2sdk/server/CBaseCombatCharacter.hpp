@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xac0
+    // Size: 0xac8
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByUserGroup "LocalPlayerExclusive"
@@ -31,24 +31,24 @@ namespace source2sdk::server
     class CBaseCombatCharacter : public server::CBaseFlex
     {
     public:
-        bool m_bForceServerRagdoll; // 0xa30        
-        [[maybe_unused]] std::uint8_t pad_0xa31[0x7]; // 0xa31
+        bool m_bForceServerRagdoll; // 0xa38        
+        [[maybe_unused]] std::uint8_t pad_0xa39[0x7]; // 0xa39
         // metadata: MNetworkEnable
         // m_hMyWearables has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<CHandle<server::CEconWearable>> m_hMyWearables;
-        char m_hMyWearables[0x18]; // 0xa38        
-        float m_impactEnergyScale; // 0xa50        
-        client::HitGroup_t m_LastHitGroup; // 0xa54        
-        bool m_bApplyStressDamage; // 0xa58        
-        [[maybe_unused]] std::uint8_t pad_0xa59[0x47]; // 0xa59
-        int32_t m_iDamageCount; // 0xaa0        
-        [[maybe_unused]] std::uint8_t pad_0xaa4[0x4]; // 0xaa4
+        char m_hMyWearables[0x18]; // 0xa40        
+        float m_impactEnergyScale; // 0xa58        
+        client::HitGroup_t m_LastHitGroup; // 0xa5c        
+        bool m_bApplyStressDamage; // 0xa60        
+        [[maybe_unused]] std::uint8_t pad_0xa61[0x47]; // 0xa61
+        int32_t m_iDamageCount; // 0xaa8        
+        [[maybe_unused]] std::uint8_t pad_0xaac[0x4]; // 0xaac
         // m_pVecRelationships has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::RelationshipOverride_t>* m_pVecRelationships;
-        char m_pVecRelationships[0x8]; // 0xaa8        
-        CUtlSymbolLarge m_strRelationships; // 0xab0        
-        client::Hull_t m_eHull; // 0xab8        
-        uint32_t m_nNavHullIdx; // 0xabc        
+        char m_pVecRelationships[0x8]; // 0xab0        
+        CUtlSymbolLarge m_strRelationships; // 0xab8        
+        client::Hull_t m_eHull; // 0xac0        
+        uint32_t m_nNavHullIdx; // 0xac4        
         
         // Static fields:
         static int32_t &Get_sm_lastInteraction() {return *reinterpret_cast<int32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBaseCombatCharacter")->GetStaticFields()[0]->m_pInstance);};
@@ -60,5 +60,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseCombatCharacter because it is not a standard-layout class
-    static_assert(sizeof(CBaseCombatCharacter) == 0xac0);
+    static_assert(sizeof(CBaseCombatCharacter) == 0xac8);
 };

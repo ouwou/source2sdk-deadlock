@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd28
+    // Size: 0xd30
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -30,19 +30,19 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xcf8        
-        [[maybe_unused]] std::uint8_t pad_0xd10[0x14]; // 0xd10
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xd00        
+        [[maybe_unused]] std::uint8_t pad_0xd18[0x14]; // 0xd18
         // metadata: MNetworkEnable
-        int32_t m_eLootType; // 0xd24        
+        int32_t m_eLootType; // 0xd2c        
         
         // Datamap fields:
-        // CHandle< CBaseEntity > m_hSpawner; // 0xd10
-        // int32_t m_eObjectivePosition; // 0xd1c
+        // CHandle< CBaseEntity > m_hSpawner; // 0xd18
+        // int32_t m_eObjectivePosition; // 0xd24
         // void InputAttachedToParachute; // 0x0
         // void InputDetachedFromParachute; // 0x0
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemCrate because it is not a standard-layout class
-    static_assert(sizeof(CItemCrate) == 0xd28);
+    static_assert(sizeof(CItemCrate) == 0xd30);
 };

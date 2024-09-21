@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc58
+    // Size: 0xc60
     // Has VTable
     #pragma pack(push, 1)
     class CAnimGraph2TestProp : public server::CDynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc50[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xc58[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAnimGraph2TestProp) == 0xc58);
+    static_assert(sizeof(CAnimGraph2TestProp) == 0xc60);
 };

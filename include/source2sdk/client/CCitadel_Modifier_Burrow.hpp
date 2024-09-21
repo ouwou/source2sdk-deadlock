@@ -1,6 +1,5 @@
 #pragma once
 #include "source2sdk/client/CCitadelModifier.hpp"
-#include "source2sdk/client/SatVolumeIndex_t.hpp"
 #include "source2sdk/entity2/GameTime_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -22,9 +21,8 @@ namespace source2sdk::client
     class CCitadel_Modifier_Burrow : public client::CCitadelModifier
     {
     public:
-        client::SatVolumeIndex_t m_nSatVolumeIndex; // 0xc0        
-        entity2::GameTime_t m_flLastDamageTime; // 0xc4        
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x150];
+        entity2::GameTime_t m_flLastDamageTime; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xc4[0x154];
     };
     #pragma pack(pop)
     

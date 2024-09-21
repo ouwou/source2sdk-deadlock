@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd60
+    // Size: 0xd68
     // Has VTable
     #pragma pack(push, 1)
     class C_NetTestBaseCombatCharacter : public client::C_BaseCombatCharacter
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_NetTestBaseCombatCharacter) == 0xd60);
+    static_assert(sizeof(C_NetTestBaseCombatCharacter) == 0xd68);
 };

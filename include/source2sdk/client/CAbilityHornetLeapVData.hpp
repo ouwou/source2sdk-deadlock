@@ -26,7 +26,7 @@ namespace source2sdk::client
     public:
         float m_flChannelingAirDrag; // 0x1540        
         float m_flChannelingMaxFallSpeed; // 0x1544        
-        float m_flVerticalMoveSpeedTarget; // 0x1548        
+        float m_flVerticalMoveSpeedPercent; // 0x1548        
         float m_flAirDrag; // 0x154c        
         // metadata: MPropertyGroupName "Modifiers"
         // m_LeapModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.

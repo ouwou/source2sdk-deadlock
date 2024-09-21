@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1490
+    // Size: 0x1498
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_YakuzaGangster : public client::C_AI_CitadelNPC
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_YakuzaGangster) == 0x1490);
+    static_assert(sizeof(CNPC_YakuzaGangster) == 0x1498);
 };

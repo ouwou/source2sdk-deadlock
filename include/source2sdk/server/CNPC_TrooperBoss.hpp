@@ -18,7 +18,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1928
+    // Size: 0x1930
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -28,22 +28,22 @@ namespace source2sdk::server
     class CNPC_TrooperBoss : public server::CNPC_Trooper
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1700[0x8]; // 0x1700
+        [[maybe_unused]] std::uint8_t pad_0x1708[0x8]; // 0x1708
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelPlayerClipComponent"
         // metadata: MNetworkAlias "CCitadelPlayerClipComponent"
         // metadata: MNetworkTypeAlias "CCitadelPlayerClipComponent"
-        server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1708        
-        [[maybe_unused]] std::uint8_t pad_0x1728[0x8]; // 0x1728
-        server::LaneSide_t m_LaneSide; // 0x1730        
-        [[maybe_unused]] std::uint8_t pad_0x1731[0x1df]; // 0x1731
-        CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1910        
-        [[maybe_unused]] std::uint8_t pad_0x1918[0x4]; // 0x1918
+        server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1710        
+        [[maybe_unused]] std::uint8_t pad_0x1730[0x8]; // 0x1730
+        server::LaneSide_t m_LaneSide; // 0x1738        
+        [[maybe_unused]] std::uint8_t pad_0x1739[0x1df]; // 0x1739
+        CUtlSymbolLarge m_backdoorProtectionTrigger; // 0x1918        
+        [[maybe_unused]] std::uint8_t pad_0x1920[0x4]; // 0x1920
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutStart; // 0x191c        
+        entity2::GameTime_t m_flFadeOutStart; // 0x1924        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutEnd; // 0x1920        
-        [[maybe_unused]] std::uint8_t pad_0x1924[0x4];
+        entity2::GameTime_t m_flFadeOutEnd; // 0x1928        
+        [[maybe_unused]] std::uint8_t pad_0x192c[0x4];
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_TROOPERBOSS_RANGE_ATTACK() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperBoss")->GetStaticFields()[0]->m_pInstance);};
@@ -60,5 +60,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperBoss because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperBoss) == 0x1928);
+    static_assert(sizeof(CNPC_TrooperBoss) == 0x1930);
 };

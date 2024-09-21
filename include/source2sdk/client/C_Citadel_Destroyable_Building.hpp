@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd40
+    // Size: 0xd48
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_bTakesDamage"
@@ -34,22 +34,22 @@ namespace source2sdk::client
         // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
         // metadata: MNetworkAlias "CCitadelAbilityComponent"
         // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb48        
+        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb50        
         // metadata: MNetworkEnable
         // m_vecWeakPoints has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints;
-        char m_vecWeakPoints[0x50]; // 0xce8        
+        char m_vecWeakPoints[0x50]; // 0xcf0        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "DestroyedChanged"
-        bool m_bDestroyed; // 0xd38        
+        bool m_bDestroyed; // 0xd40        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0xd39        
+        bool m_bActive; // 0xd41        
         // metadata: MNetworkEnable
-        bool m_bFinal; // 0xd3a        
-        [[maybe_unused]] std::uint8_t pad_0xd3b[0x5];
+        bool m_bFinal; // 0xd42        
+        [[maybe_unused]] std::uint8_t pad_0xd43[0x5];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_Destroyable_Building because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_Destroyable_Building) == 0xd40);
+    static_assert(sizeof(C_Citadel_Destroyable_Building) == 0xd48);
 };

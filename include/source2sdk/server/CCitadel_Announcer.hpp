@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xad8
+    // Size: 0xae0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Announcer : public server::CCitadel_Announcer_Base
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xac0[0x18];
+        [[maybe_unused]] std::uint8_t pad_0xac8[0x18];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Announcer) == 0xad8);
+    static_assert(sizeof(CCitadel_Announcer) == 0xae0);
 };

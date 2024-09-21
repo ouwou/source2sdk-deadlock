@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb58
+    // Size: 0xb60
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
@@ -26,16 +26,16 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnActiveChanged"
-        bool m_bActive; // 0xb40        
-        [[maybe_unused]] std::uint8_t pad_0xb41[0x7]; // 0xb41
+        bool m_bActive; // 0xb48        
+        [[maybe_unused]] std::uint8_t pad_0xb49[0x7]; // 0xb49
         // metadata: MNetworkEnable
-        CUtlString m_sPickupName; // 0xb48        
+        CUtlString m_sPickupName; // 0xb50        
         // metadata: MNetworkEnable
-        int32_t m_nNameOffset; // 0xb50        
-        [[maybe_unused]] std::uint8_t pad_0xb54[0x4];
+        int32_t m_nNameOffset; // 0xb58        
+        [[maybe_unused]] std::uint8_t pad_0xb5c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_BreakblePropPickup because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_BreakblePropPickup) == 0xb58);
+    static_assert(sizeof(C_Citadel_BreakblePropPickup) == 0xb60);
 };

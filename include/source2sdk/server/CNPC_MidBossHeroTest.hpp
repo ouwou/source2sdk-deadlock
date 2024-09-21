@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1668
+    // Size: 0x1670
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_MidBossHeroTest : public server::CNPC_TrooperNeutral
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_MidBossHeroTest) == 0x1668);
+    static_assert(sizeof(CNPC_MidBossHeroTest) == 0x1670);
 };
