@@ -29,7 +29,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1608
+    // Size: 0x1730
     // Has VTable
     // Is Abstract
     // 
@@ -54,55 +54,55 @@ namespace source2sdk::server
     class CAI_CitadelNPC : public server::CAI_BaseNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x10b0[0x18]; // 0x10b0
-        Vector m_vLastGroundEntityCheckPos; // 0x10c8        
-        [[maybe_unused]] std::uint8_t pad_0x10d4[0x4]; // 0x10d4
+        [[maybe_unused]] std::uint8_t pad_0x11d8[0x18]; // 0x11d8
+        Vector m_vLastGroundEntityCheckPos; // 0x11f0        
+        [[maybe_unused]] std::uint8_t pad_0x11fc[0x4]; // 0x11fc
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
         // metadata: MNetworkAlias "CCitadelAbilityComponent"
         // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-        server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x10d8        
+        server::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1200        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelRegenComponent"
         // metadata: MNetworkAlias "CCitadelRegenComponent"
         // metadata: MNetworkTypeAlias "CCitadelRegenComponent"
-        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x12e0        
+        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0x1408        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1460        
-        [[maybe_unused]] std::uint8_t pad_0x1478[0x4]; // 0x1478
-        int32_t m_iBaseGoldReward; // 0x147c        
-        int32_t m_iSkillShotReward; // 0x1480        
-        [[maybe_unused]] std::uint8_t pad_0x1484[0x30]; // 0x1484
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x1588        
+        [[maybe_unused]] std::uint8_t pad_0x15a0[0x4]; // 0x15a0
+        int32_t m_iBaseGoldReward; // 0x15a4        
+        int32_t m_iSkillShotReward; // 0x15a8        
+        [[maybe_unused]] std::uint8_t pad_0x15ac[0x30]; // 0x15ac
         // m_hAbilityOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBaseAbility> m_hAbilityOwner;
-        char m_hAbilityOwner[0x4]; // 0x14b4        
-        [[maybe_unused]] std::uint8_t pad_0x14b8[0x48]; // 0x14b8
+        char m_hAbilityOwner[0x4]; // 0x15dc        
+        [[maybe_unused]] std::uint8_t pad_0x15e0[0x48]; // 0x15e0
         // metadata: MNetworkEnable
         // m_vecWeakPoints has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVectorEmbeddedNetworkVar<server::WeakPoint_t> m_vecWeakPoints;
-        char m_vecWeakPoints[0x50]; // 0x1500        
+        char m_vecWeakPoints[0x50]; // 0x1628        
         // metadata: MNetworkEnable
-        bool m_bMinion; // 0x1550        
-        [[maybe_unused]] std::uint8_t pad_0x1551[0x3]; // 0x1551
+        bool m_bMinion; // 0x1678        
+        [[maybe_unused]] std::uint8_t pad_0x1679[0x3]; // 0x1679
         // metadata: MNetworkEnable
         // m_hLookTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hLookTarget;
-        char m_hLookTarget[0x4]; // 0x1554        
-        [[maybe_unused]] std::uint8_t pad_0x1558[0x10]; // 0x1558
-        int32_t m_iCoverGroupID; // 0x1568        
-        [[maybe_unused]] std::uint8_t pad_0x156c[0x5c]; // 0x156c
-        Vector m_vecSpawnOrigin; // 0x15c8        
-        [[maybe_unused]] std::uint8_t pad_0x15d4[0x18]; // 0x15d4
+        char m_hLookTarget[0x4]; // 0x167c        
+        [[maybe_unused]] std::uint8_t pad_0x1680[0x10]; // 0x1680
+        int32_t m_iCoverGroupID; // 0x1690        
+        [[maybe_unused]] std::uint8_t pad_0x1694[0x5c]; // 0x1694
+        Vector m_vecSpawnOrigin; // 0x16f0        
+        [[maybe_unused]] std::uint8_t pad_0x16fc[0x18]; // 0x16fc
         // metadata: MNetworkEnable
-        bool m_bBeamActive; // 0x15ec        
-        [[maybe_unused]] std::uint8_t pad_0x15ed[0x3]; // 0x15ed
+        bool m_bBeamActive; // 0x1714        
+        [[maybe_unused]] std::uint8_t pad_0x1715[0x3]; // 0x1715
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vEyeBeamTarget; // 0x15f0        
-        [[maybe_unused]] std::uint8_t pad_0x15fc[0xc];
+        Vector m_vEyeBeamTarget; // 0x1718        
+        [[maybe_unused]] std::uint8_t pad_0x1724[0xc];
         
         // Static fields:
         static client::ConditionId_t &Get_COND_RECEIVED_AGGRO() {return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_CitadelNPC")->GetStaticFields()[0]->m_pInstance);};
@@ -152,5 +152,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_CitadelNPC because it is not a standard-layout class
-    static_assert(sizeof(CAI_CitadelNPC) == 0x1608);
+    static_assert(sizeof(CAI_CitadelNPC) == 0x1730);
 };

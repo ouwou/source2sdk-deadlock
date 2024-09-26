@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1810
+    // Size: 0x1818
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,20 +26,20 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_strChargingParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strChargingParticle;
-        char m_strChargingParticle[0xe0]; // 0x1540        
+        char m_strChargingParticle[0xe0]; // 0x1548        
         // m_ImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ImpactParticle;
-        char m_ImpactParticle[0xe0]; // 0x1620        
+        char m_ImpactParticle[0xe0]; // 0x1628        
         // m_FiringParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FiringParticle;
-        char m_FiringParticle[0xe0]; // 0x1700        
+        char m_FiringParticle[0xe0]; // 0x1708        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_ExplosionSound; // 0x17e0        
-        CSoundEventName m_ChargeSound; // 0x17f0        
-        CSoundEventName m_ShootSound; // 0x1800        
+        CSoundEventName m_ExplosionSound; // 0x17e8        
+        CSoundEventName m_ChargeSound; // 0x17f8        
+        CSoundEventName m_ShootSound; // 0x1808        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ViscousWeapon_Alt_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ViscousWeapon_Alt_VData) == 0x1810);
+    static_assert(sizeof(CCitadel_Ability_ViscousWeapon_Alt_VData) == 0x1818);
 };

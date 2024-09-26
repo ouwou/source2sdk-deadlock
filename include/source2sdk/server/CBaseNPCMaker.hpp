@@ -14,6 +14,11 @@
 
 namespace source2sdk::server
 {
+    class CAI_BaseNPC;
+};
+
+namespace source2sdk::server
+{
     class CBaseEntity;
 };
 
@@ -22,7 +27,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5d0
+    // Size: 0x5d8
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
@@ -57,10 +62,13 @@ namespace source2sdk::server
         // m_hSpawnEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hSpawnEntity;
         char m_hSpawnEntity[0x4]; // 0x5b8        
-        int32_t m_nCurrentBatchCount; // 0x5bc        
-        server::CBaseNPCMaker__VisibilityCriterion_t m_CriterionVisibility; // 0x5c0        
-        server::CBaseNPCMaker__ThreeStateDist_t m_CriterionDistance; // 0x5c4        
-        [[maybe_unused]] std::uint8_t pad_0x5c8[0x8];
+        // m_hSpawnedNPC has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CHandle<server::CAI_BaseNPC> m_hSpawnedNPC;
+        char m_hSpawnedNPC[0x4]; // 0x5bc        
+        int32_t m_nCurrentBatchCount; // 0x5c0        
+        server::CBaseNPCMaker__VisibilityCriterion_t m_CriterionVisibility; // 0x5c4        
+        server::CBaseNPCMaker__ThreeStateDist_t m_CriterionDistance; // 0x5c8        
+        [[maybe_unused]] std::uint8_t pad_0x5cc[0xc];
         
         // Datamap fields:
         // void InputSpawn; // 0x0
@@ -82,5 +90,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseNPCMaker because it is not a standard-layout class
-    static_assert(sizeof(CBaseNPCMaker) == 0x5d0);
+    static_assert(sizeof(CBaseNPCMaker) == 0x5d8);
 };

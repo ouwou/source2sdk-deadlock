@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb68
+    // Size: 0xb70
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iGoldReward"
@@ -23,11 +23,11 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_iGoldReward; // 0xb60        
-        [[maybe_unused]] std::uint8_t pad_0xb64[0x4];
+        int32_t m_iGoldReward; // 0xb68        
+        [[maybe_unused]] std::uint8_t pad_0xb6c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_BreakblePropGoldPickup because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_BreakblePropGoldPickup) == 0xb68);
+    static_assert(sizeof(C_Citadel_BreakblePropGoldPickup) == 0xb70);
 };

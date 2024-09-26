@@ -77,7 +77,9 @@ namespace source2sdk::client
         float m_flCapsuleRadiusOverride; // 0x1fc        
         // metadata: MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
         float m_flCapsuleHeightOverride; // 0x200        
-        [[maybe_unused]] std::uint8_t pad_0x204[0x4]; // 0x204
+        // metadata: MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
+        bool m_bAllowAnimgraphMotorMovementStates; // 0x204        
+        [[maybe_unused]] std::uint8_t pad_0x205[0x3]; // 0x205
         // metadata: MPropertyStartGroup "Animation"
         // metadata: MPropertyFriendlyName "Enabled Shared Actions"
         // metadata: MPropertyDescription "List of the shared BaseNPC actions this NPC supports"

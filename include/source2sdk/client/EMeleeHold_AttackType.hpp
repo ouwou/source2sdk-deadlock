@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 4
+    // Enumerator count: 5
     // Alignment: 4
     // Size: 0x4
     enum class EMeleeHold_AttackType : std::uint32_t
@@ -18,5 +18,6 @@ namespace source2sdk::client
         EAttackType_Light = 0x1,
         EAttackType_Heavy = 0x2,
         EAttackType_HeavyAir = 0x3,
+        EAttackType_Slide = 0x4,
     };
 };

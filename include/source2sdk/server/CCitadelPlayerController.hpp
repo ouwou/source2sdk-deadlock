@@ -24,7 +24,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa78
+    // Size: 0xac0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -42,10 +42,6 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "EGuidedBotMatchObjective m_eGuidedBotMatchObjective"
     // static metadata: MNetworkVarNames "int8 m_nAssignedLane"
     // static metadata: MNetworkVarNames "int8 m_nOriginalLaneAssignment"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility1"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility2"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility3"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility4"
     // static metadata: MNetworkVarNames "bool m_bIsKingPanda"
     // static metadata: MNetworkVarNames "bool m_bBotDisconnectTakeover"
     // static metadata: MNetworkVarNames "bool m_bInTeamChat"
@@ -90,43 +86,37 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         int8_t m_nOriginalLaneAssignment; // 0x795        
         // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility1; // 0x796        
+        bool m_bIsKingPanda; // 0x796        
         // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility2; // 0x797        
-        // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility3; // 0x798        
-        // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility4; // 0x799        
-        // metadata: MNetworkEnable
-        bool m_bIsKingPanda; // 0x79a        
-        // metadata: MNetworkEnable
-        bool m_bBotDisconnectTakeover; // 0x79b        
+        bool m_bBotDisconnectTakeover; // 0x797        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInTeamChat; // 0x79c        
+        bool m_bInTeamChat; // 0x798        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInPartyChat; // 0x79d        
-        [[maybe_unused]] std::uint8_t pad_0x79e[0xc2]; // 0x79e
+        bool m_bInPartyChat; // 0x799        
+        [[maybe_unused]] std::uint8_t pad_0x79a[0xc6]; // 0x79a
         // metadata: MNetworkEnable
         // m_hHeroPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelPlayerPawn> m_hHeroPawn;
         char m_hHeroPawn[0x4]; // 0x860        
-        [[maybe_unused]] std::uint8_t pad_0x864[0x24]; // 0x864
+        [[maybe_unused]] std::uint8_t pad_0x864[0x34]; // 0x864
         // metadata: MNetworkEnable
-        server::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x888        
+        server::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x898        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nDeathReplayAvailable; // 0xa60        
+        int8_t m_nDeathReplayAvailable; // 0xa70        
         // metadata: MNetworkEnable
-        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa61        
-        [[maybe_unused]] std::uint8_t pad_0xa62[0x2]; // 0xa62
-        entity2::GameTime_t m_flLastCommsTime; // 0xa64        
-        entity2::GameTime_t m_flLastFailedCommsTime; // 0xa68        
-        bool m_bLastCommsWasDoublePing; // 0xa6c        
-        [[maybe_unused]] std::uint8_t pad_0xa6d[0x3]; // 0xa6d
-        int32_t m_nGuideBotNumTasksComplete; // 0xa70        
-        [[maybe_unused]] std::uint8_t pad_0xa74[0x4];
+        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa71        
+        [[maybe_unused]] std::uint8_t pad_0xa72[0x2]; // 0xa72
+        entity2::GameTime_t m_flLastCommsTime; // 0xa74        
+        entity2::GameTime_t m_flLastFailedCommsTime; // 0xa78        
+        bool m_bLastCommsWasDoublePing; // 0xa7c        
+        [[maybe_unused]] std::uint8_t pad_0xa7d[0x3]; // 0xa7d
+        int32_t m_nGuideBotNumTasksComplete; // 0xa80        
+        bool m_bHasBeenReportedAsCheater; // 0xa84        
+        bool m_bHasGCACKedCheaterReport; // 0xa85        
+        [[maybe_unused]] std::uint8_t pad_0xa86[0x3a];
         
         // Datamap fields:
         // void CCitadelPlayerControllerResourceDataThink; // 0x0
@@ -134,5 +124,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerController because it is not a standard-layout class
-    static_assert(sizeof(CCitadelPlayerController) == 0xa78);
+    static_assert(sizeof(CCitadelPlayerController) == 0xac0);
 };

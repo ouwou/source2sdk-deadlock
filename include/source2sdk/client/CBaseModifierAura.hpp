@@ -31,7 +31,7 @@ namespace source2sdk::client
         // CUtlVector<CHandle<client::C_BaseEntity>> m_hAuraUnits;
         char m_hAuraUnits[0x18]; // 0xc0        
         client::ParticleIndex_t m_hAmbientEffect; // 0xd8        
-        [[maybe_unused]] std::uint8_t pad_0xdc[0x4];
+        float m_flOverrideRadius; // 0xdc        
     };
     #pragma pack(pop)
     

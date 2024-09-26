@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x248
+    // Size: 0x250
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_BoxingGlove : public server::CCitadel_Modifier_BaseEventProc
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x168[0xe0];
+        [[maybe_unused]] std::uint8_t pad_0x168[0xe8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_BoxingGlove) == 0x248);
+    static_assert(sizeof(CCitadel_Modifier_BoxingGlove) == 0x250);
 };

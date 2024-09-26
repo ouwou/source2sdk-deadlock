@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x14d0
+    // Size: 0x14d8
     // Has VTable
     #pragma pack(push, 1)
     class C_NPC_Boss_Tier2_Sidelanes : public client::C_NPC_Boss_Tier2
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_NPC_Boss_Tier2_Sidelanes) == 0x14d0);
+    static_assert(sizeof(C_NPC_Boss_Tier2_Sidelanes) == 0x14d8);
 };

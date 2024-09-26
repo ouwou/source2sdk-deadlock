@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: unknown
     // Standard-layout class: false
-    // Size: 0x4c0
+    // Size: 0x4e0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CSkeletonInstance m_skeletonInstance"
@@ -34,5 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBodyComponentSkeletonInstance because it is not a standard-layout class
-    static_assert(sizeof(CBodyComponentSkeletonInstance) == 0x4c0);
+    static_assert(sizeof(CBodyComponentSkeletonInstance) == 0x4e0);
 };

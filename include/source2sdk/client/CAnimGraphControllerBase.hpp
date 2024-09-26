@@ -13,17 +13,17 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x1
     // Standard-layout class: true
-    // Size: 0x18
+    // Size: 0x20
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
     class CAnimGraphControllerBase
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x00[0x18];
+        [[maybe_unused]] std::uint8_t pad_0x00[0x20];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAnimGraphControllerBase) == 0x18);
+    static_assert(sizeof(CAnimGraphControllerBase) == 0x20);
 };

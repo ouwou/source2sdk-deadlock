@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1518
+    // Size: 0x1520
     // Has VTable
     #pragma pack(push, 1)
     class C_NPC_TrooperBarrackBoss : public client::C_NPC_TrooperBoss
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_NPC_TrooperBarrackBoss) == 0x1518);
+    static_assert(sizeof(C_NPC_TrooperBarrackBoss) == 0x1520);
 };

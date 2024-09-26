@@ -124,7 +124,10 @@ namespace source2sdk::client
         // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
         // metadata: MPropertyDescription "Once the lag period is over, how strong the spring is that pulls the current value to the default value"
         float m_flLagSpringStrength; // 0xa8        
-        [[maybe_unused]] std::uint8_t pad_0xac[0x4];
+        // metadata: MPropertySuppressExpr "m_eCameraOperation != k_ECameraOp_Lag"
+        // metadata: MPropertyDescription "When true, the spring strength will scale up to try to keep the target on screen"
+        bool m_bIncreaseSpringStrengthToKeepTargetOnScreen; // 0xac        
+        [[maybe_unused]] std::uint8_t pad_0xad[0x3];
     };
     #pragma pack(pop)
     
@@ -160,6 +163,7 @@ namespace source2sdk::client
     static_assert(offsetof(CitadelCameraOperationDef_t, m_flLagTime) == 0xa0);
     static_assert(offsetof(CitadelCameraOperationDef_t, m_flLagMaxSpeed) == 0xa4);
     static_assert(offsetof(CitadelCameraOperationDef_t, m_flLagSpringStrength) == 0xa8);
+    static_assert(offsetof(CitadelCameraOperationDef_t, m_bIncreaseSpringStrengthToKeepTargetOnScreen) == 0xac);
     
     static_assert(sizeof(CitadelCameraOperationDef_t) == 0xb0);
 };

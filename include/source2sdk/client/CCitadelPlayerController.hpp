@@ -23,7 +23,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x940
+    // Size: 0x950
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -41,10 +41,6 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "EGuidedBotMatchObjective m_eGuidedBotMatchObjective"
     // static metadata: MNetworkVarNames "int8 m_nAssignedLane"
     // static metadata: MNetworkVarNames "int8 m_nOriginalLaneAssignment"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility1"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility2"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility3"
-    // static metadata: MNetworkVarNames "bool m_bSwapCastModeAbility4"
     // static metadata: MNetworkVarNames "bool m_bIsKingPanda"
     // static metadata: MNetworkVarNames "bool m_bBotDisconnectTakeover"
     // static metadata: MNetworkVarNames "bool m_bInTeamChat"
@@ -89,42 +85,34 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         int8_t m_nOriginalLaneAssignment; // 0x725        
         // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility1; // 0x726        
+        bool m_bIsKingPanda; // 0x726        
         // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility2; // 0x727        
-        // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility3; // 0x728        
-        // metadata: MNetworkEnable
-        bool m_bSwapCastModeAbility4; // 0x729        
-        // metadata: MNetworkEnable
-        bool m_bIsKingPanda; // 0x72a        
-        // metadata: MNetworkEnable
-        bool m_bBotDisconnectTakeover; // 0x72b        
+        bool m_bBotDisconnectTakeover; // 0x727        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInTeamChat; // 0x72c        
+        bool m_bInTeamChat; // 0x728        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInPartyChat; // 0x72d        
-        [[maybe_unused]] std::uint8_t pad_0x72e[0x2]; // 0x72e
+        bool m_bInPartyChat; // 0x729        
+        [[maybe_unused]] std::uint8_t pad_0x72a[0x2]; // 0x72a
         // metadata: MNetworkEnable
         // m_hHeroPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_CitadelPlayerPawn> m_hHeroPawn;
-        char m_hHeroPawn[0x4]; // 0x730        
-        [[maybe_unused]] std::uint8_t pad_0x734[0x24]; // 0x734
+        char m_hHeroPawn[0x4]; // 0x72c        
+        [[maybe_unused]] std::uint8_t pad_0x730[0x38]; // 0x730
         // metadata: MNetworkEnable
-        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x758        
+        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x768        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nDeathReplayAvailable; // 0x930        
+        int8_t m_nDeathReplayAvailable; // 0x940        
         // metadata: MNetworkEnable
-        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x931        
-        bool m_bHasCheckedFriendName; // 0x932        
-        [[maybe_unused]] std::uint8_t pad_0x933[0x5]; // 0x933
-        CUtlString m_sFriendName; // 0x938        
+        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x941        
+        bool m_bHasCheckedFriendName; // 0x942        
+        [[maybe_unused]] std::uint8_t pad_0x943[0x5]; // 0x943
+        CUtlString m_sFriendName; // 0x948        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerController because it is not a standard-layout class
-    static_assert(sizeof(CCitadelPlayerController) == 0x940);
+    static_assert(sizeof(CCitadelPlayerController) == 0x950);
 };

@@ -26,7 +26,7 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "QAngle m_anglesCharging"
     // static metadata: MNetworkVarNames "GameTime_t m_flChargeStartTime"
     // static metadata: MNetworkVarNames "GameTime_t m_flFastChargeEndTime"
-    // static metadata: MNetworkVarNames "bool bHitAnEnemy"
+    // static metadata: MNetworkVarNames "bool m_bHitAPlayer"
     #pragma pack(push, 1)
     class CCitadel_Ability_Bull_Charge : public server::CCitadelBaseAbility
     {
@@ -45,7 +45,7 @@ namespace source2sdk::server
         entity2::GameTime_t m_flFastChargeEndTime; // 0xd80        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool bHitAnEnemy; // 0xd84        
+        bool m_bHitAPlayer; // 0xd84        
         [[maybe_unused]] std::uint8_t pad_0xd85[0x3];
     };
     #pragma pack(pop)

@@ -23,7 +23,8 @@ namespace source2sdk::server
         CUtlSymbolLarge m_iLandmark; // 0x938        
         bool m_bUseLandmarkAngles; // 0x940        
         bool m_bMirrorPlayer; // 0x941        
-        [[maybe_unused]] std::uint8_t pad_0x942[0x6];
+        bool m_bCheckDestIfClearForPlayer; // 0x942        
+        [[maybe_unused]] std::uint8_t pad_0x943[0x5];
     };
     #pragma pack(pop)
     

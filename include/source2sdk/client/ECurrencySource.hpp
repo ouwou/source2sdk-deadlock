@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 34
+    // Enumerator count: 35
     // Alignment: 4
     // Size: 0x4
     enum class ECurrencySource : std::uint32_t
@@ -44,8 +44,9 @@ namespace source2sdk::client
         EOrbDeployable = 0x1b,
         EOrbTrophyKill = 0x1c,
         EOrbTreasureChest = 0x1d,
-        ENeutralWorldPickup = 0x1e,
-        EPlayerKillComeback = 0x1f,
-        ECurrencySourceCount = 0x20,
+        EOrbSpawner = 0x1e,
+        ENeutralWorldPickup = 0x1f,
+        EPlayerKillComeback = 0x20,
+        ECurrencySourceCount = 0x21,
     };
 };

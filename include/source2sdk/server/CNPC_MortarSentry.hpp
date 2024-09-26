@@ -14,19 +14,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1660
+    // Size: 0x1788
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_MortarSentry : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1608[0xc]; // 0x1608
-        float m_flAttackCone; // 0x1614        
-        float m_flLastAlertSound; // 0x1618        
-        float m_flTrackingSpeed; // 0x161c        
-        Vector m_vTargetPosition; // 0x1620        
-        float m_flSearchRadius; // 0x162c        
-        [[maybe_unused]] std::uint8_t pad_0x1630[0x30];
+        [[maybe_unused]] std::uint8_t pad_0x1730[0xc]; // 0x1730
+        float m_flAttackCone; // 0x173c        
+        float m_flLastAlertSound; // 0x1740        
+        float m_flTrackingSpeed; // 0x1744        
+        Vector m_vTargetPosition; // 0x1748        
+        float m_flSearchRadius; // 0x1754        
+        [[maybe_unused]] std::uint8_t pad_0x1758[0x30];
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_MORTAR_ATTACK() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_MortarSentry")->GetStaticFields()[0]->m_pInstance);};
@@ -35,16 +35,16 @@ namespace source2sdk::server
         static CUtlSymbolLarge &Get_TASK_MORTAR_NO_TARGET_VOLLEY() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_MortarSentry")->GetStaticFields()[3]->m_pInstance);};
         
         // Datamap fields:
-        // float m_flLifeTime; // 0x1630
-        // void m_nCurrentVolley; // 0x1640
-        // void m_nGrenadesPerVolley; // 0x1644
-        // void m_flNextAttackTime; // 0x1648
-        // void m_flAttackRateInnerVolley; // 0x164c
-        // void m_flAttackRate; // 0x1650
-        // void m_vLastTargetPos; // 0x1654
+        // float m_flLifeTime; // 0x1758
+        // void m_nCurrentVolley; // 0x1768
+        // void m_nGrenadesPerVolley; // 0x176c
+        // void m_flNextAttackTime; // 0x1770
+        // void m_flAttackRateInnerVolley; // 0x1774
+        // void m_flAttackRate; // 0x1778
+        // void m_vLastTargetPos; // 0x177c
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_MortarSentry because it is not a standard-layout class
-    static_assert(sizeof(CNPC_MortarSentry) == 0x1660);
+    static_assert(sizeof(CNPC_MortarSentry) == 0x1788);
 };

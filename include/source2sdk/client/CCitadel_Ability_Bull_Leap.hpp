@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe30
+    // Size: 0xe38
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flBoostYaw"
@@ -32,28 +32,28 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flBoostYaw; // 0xc70        
+        float m_flBoostYaw; // 0xc78        
         // metadata: MNetworkEnable
-        Vector m_vecCrashPosition; // 0xc74        
+        Vector m_vecCrashPosition; // 0xc7c        
         // metadata: MNetworkEnable
-        Vector m_vecCrashDirection; // 0xc80        
+        Vector m_vecCrashDirection; // 0xc88        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnLeapStateChanged"
-        client::ELeapState_t m_eLeapState; // 0xc8c        
-        [[maybe_unused]] std::uint8_t pad_0xc8d[0x3]; // 0xc8d
+        client::ELeapState_t m_eLeapState; // 0xc94        
+        [[maybe_unused]] std::uint8_t pad_0xc95[0x3]; // 0xc95
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStateEnterTime; // 0xc90        
-        [[maybe_unused]] std::uint8_t pad_0xc94[0x4]; // 0xc94
+        entity2::GameTime_t m_flStateEnterTime; // 0xc98        
+        [[maybe_unused]] std::uint8_t pad_0xc9c[0x4]; // 0xc9c
         // metadata: MNetworkEnable
-        client::CCitadelAutoScaledTime m_flNextStateTime; // 0xc98        
+        client::CCitadelAutoScaledTime m_flNextStateTime; // 0xca0        
         // metadata: MNetworkEnable
-        client::CCitadelAutoScaledTime m_flBoostEndTime; // 0xcb0        
-        [[maybe_unused]] std::uint8_t pad_0xcc8[0x158]; // 0xcc8
-        Vector m_vecLastVel; // 0xe20        
-        [[maybe_unused]] std::uint8_t pad_0xe2c[0x4];
+        client::CCitadelAutoScaledTime m_flBoostEndTime; // 0xcb8        
+        [[maybe_unused]] std::uint8_t pad_0xcd0[0x158]; // 0xcd0
+        Vector m_vecLastVel; // 0xe28        
+        [[maybe_unused]] std::uint8_t pad_0xe34[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bull_Leap because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Bull_Leap) == 0xe30);
+    static_assert(sizeof(CCitadel_Ability_Bull_Leap) == 0xe38);
 };

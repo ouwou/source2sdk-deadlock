@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdc0
+    // Size: 0xdc8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Lash : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc70[0x150];
+        [[maybe_unused]] std::uint8_t pad_0xc78[0x150];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Lash) == 0xdc0);
+    static_assert(sizeof(CCitadel_Ability_Lash) == 0xdc8);
 };

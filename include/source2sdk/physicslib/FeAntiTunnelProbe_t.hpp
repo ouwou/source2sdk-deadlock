@@ -13,7 +13,7 @@ namespace source2sdk::physicslib
     // Registered alignment: 0x4
     // Alignment: 0x4
     // Standard-layout class: true
-    // Size: 0x18
+    // Size: 0x1c
     // Has Trivial Destructor
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,6 +28,7 @@ namespace source2sdk::physicslib
         uint32_t nBegin; // 0xc        
         float flActivationDistance; // 0x10        
         float flCurvatureRadius; // 0x14        
+        float flBias; // 0x18        
     };
     #pragma pack(pop)
     
@@ -38,6 +39,7 @@ namespace source2sdk::physicslib
     static_assert(offsetof(FeAntiTunnelProbe_t, nBegin) == 0xc);
     static_assert(offsetof(FeAntiTunnelProbe_t, flActivationDistance) == 0x10);
     static_assert(offsetof(FeAntiTunnelProbe_t, flCurvatureRadius) == 0x14);
+    static_assert(offsetof(FeAntiTunnelProbe_t, flBias) == 0x18);
     
-    static_assert(sizeof(FeAntiTunnelProbe_t) == 0x18);
+    static_assert(sizeof(FeAntiTunnelProbe_t) == 0x1c);
 };

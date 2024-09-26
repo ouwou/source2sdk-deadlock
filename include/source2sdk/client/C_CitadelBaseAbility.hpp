@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc70
+    // Size: 0xc78
     // Has VTable
     // Is Abstract
     // 
@@ -58,6 +58,7 @@ namespace source2sdk::client
     // static metadata: MNetworkOverride "m_flTimeScale"
     // static metadata: MNetworkVarNames "bool m_bChanneling"
     // static metadata: MNetworkVarNames "bool m_bInCastDelay"
+    // static metadata: MNetworkVarNames "bool m_bSelected"
     // static metadata: MNetworkVarNames "EntitySubclassID_t m_vecImbuedByAbilitiyIDs"
     // static metadata: MNetworkVarNames "int m_nUpgradeBits"
     // static metadata: MNetworkVarNames "int m_iBucketID"
@@ -105,7 +106,10 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnInCastDelayChanged"
         bool m_bInCastDelay; // 0x699        
-        [[maybe_unused]] std::uint8_t pad_0x69a[0x6]; // 0x69a
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelected; // 0x69a        
+        [[maybe_unused]] std::uint8_t pad_0x69b[0x5]; // 0x69b
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilityImbuedChanged"
         // m_vecImbuedByAbilitiyIDs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
@@ -166,10 +170,10 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         bool m_bSelectionModeIsAltMode; // 0x704        
-        [[maybe_unused]] std::uint8_t pad_0x705[0x56b];
+        [[maybe_unused]] std::uint8_t pad_0x705[0x573];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelBaseAbility because it is not a standard-layout class
-    static_assert(sizeof(C_CitadelBaseAbility) == 0xc70);
+    static_assert(sizeof(C_CitadelBaseAbility) == 0xc78);
 };

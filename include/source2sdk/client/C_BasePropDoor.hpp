@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe28
+    // Size: 0xe30
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByName "m_flAnimTime"
@@ -34,25 +34,25 @@ namespace source2sdk::client
     class C_BasePropDoor : public client::C_DynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xde8[0x10]; // 0xde8
+        [[maybe_unused]] std::uint8_t pad_0xdf0[0x10]; // 0xdf0
         // metadata: MNetworkEnable
-        client::DoorState_t m_eDoorState; // 0xdf8        
-        bool m_modelChanged; // 0xdfc        
+        client::DoorState_t m_eDoorState; // 0xe00        
+        bool m_modelChanged; // 0xe04        
         // metadata: MNetworkEnable
-        bool m_bLocked; // 0xdfd        
-        [[maybe_unused]] std::uint8_t pad_0xdfe[0x2]; // 0xdfe
+        bool m_bLocked; // 0xe05        
+        [[maybe_unused]] std::uint8_t pad_0xe06[0x2]; // 0xe06
         // metadata: MNetworkEnable
-        Vector m_closedPosition; // 0xe00        
+        Vector m_closedPosition; // 0xe08        
         // metadata: MNetworkEnable
-        QAngle m_closedAngles; // 0xe0c        
+        QAngle m_closedAngles; // 0xe14        
         // metadata: MNetworkEnable
         // m_hMaster has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BasePropDoor> m_hMaster;
-        char m_hMaster[0x4]; // 0xe18        
-        Vector m_vWhereToSetLightingOrigin; // 0xe1c        
+        char m_hMaster[0x4]; // 0xe20        
+        Vector m_vWhereToSetLightingOrigin; // 0xe24        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BasePropDoor because it is not a standard-layout class
-    static_assert(sizeof(C_BasePropDoor) == 0xe28);
+    static_assert(sizeof(C_BasePropDoor) == 0xe30);
 };

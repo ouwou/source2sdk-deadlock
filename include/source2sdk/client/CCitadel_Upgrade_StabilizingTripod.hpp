@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe48
+    // Size: 0xe50
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Upgrade_StabilizingTripod : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc88[0x1c0];
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x1c0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Upgrade_StabilizingTripod) == 0xe48);
+    static_assert(sizeof(CCitadel_Upgrade_StabilizingTripod) == 0xe50);
 };

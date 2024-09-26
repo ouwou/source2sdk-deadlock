@@ -65,6 +65,7 @@ namespace source2sdk::server
     // static metadata: MNetworkOverride "m_flTimeScale"
     // static metadata: MNetworkVarNames "bool m_bChanneling"
     // static metadata: MNetworkVarNames "bool m_bInCastDelay"
+    // static metadata: MNetworkVarNames "bool m_bSelected"
     // static metadata: MNetworkVarNames "EntitySubclassID_t m_vecImbuedByAbilitiyIDs"
     // static metadata: MNetworkVarNames "int m_nUpgradeBits"
     // static metadata: MNetworkVarNames "int m_iBucketID"
@@ -112,7 +113,10 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnInCastDelayChanged"
         bool m_bInCastDelay; // 0x621        
-        [[maybe_unused]] std::uint8_t pad_0x622[0x6]; // 0x622
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelected; // 0x622        
+        [[maybe_unused]] std::uint8_t pad_0x623[0x5]; // 0x623
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilityImbuedChanged"
         // m_vecImbuedByAbilitiyIDs has a template type with potentially unknown template parameters. You can try uncommenting the field below.

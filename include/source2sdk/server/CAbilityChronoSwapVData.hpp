@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1560
+    // Size: 0x1568
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,12 +26,12 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BubbleMoveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_BubbleMoveModifier;
-        char m_BubbleMoveModifier[0x10]; // 0x1540        
+        char m_BubbleMoveModifier[0x10]; // 0x1548        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strSwapStarted; // 0x1550        
+        CSoundEventName m_strSwapStarted; // 0x1558        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityChronoSwapVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityChronoSwapVData) == 0x1560);
+    static_assert(sizeof(CAbilityChronoSwapVData) == 0x1568);
 };

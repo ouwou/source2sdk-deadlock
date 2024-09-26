@@ -35,9 +35,9 @@ namespace source2sdk::server
         // CEmbeddedSubclass<server::CCitadelModifier> m_PunchPickupModifier;
         char m_PunchPickupModifier[0x10]; // 0x48        
         // metadata: MPropertyStartGroup "Visuals"
-        // m_IsDroppingParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_IsDroppingParticle;
-        char m_IsDroppingParticle[0xe0]; // 0x58        
+        // m_IsFrozenParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_IsFrozenParticle;
+        char m_IsFrozenParticle[0xe0]; // 0x58        
     };
     #pragma pack(pop)
     

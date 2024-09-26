@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x7e0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -75,22 +75,24 @@ namespace source2sdk::server
         float m_flBurstSpeedDuration; // 0x79c        
         float m_flOscillateFrequency; // 0x7a0        
         float m_flLifeTime; // 0x7a4        
-        float m_flCollisionRadius; // 0x7a8        
-        float m_flInvulDuration; // 0x7ac        
-        bool m_bUseKillerPlaneOffsets; // 0x7b0        
-        [[maybe_unused]] std::uint8_t pad_0x7b1[0x3]; // 0x7b1
-        float m_flKillerPlaneOffset; // 0x7b4        
-        float m_flKillerPlaneHorizontalDecayRate; // 0x7b8        
-        float m_flKillerPlaneHorizontalSpeedX; // 0x7bc        
-        float m_flKillerPlaneHorizontalSpeedY; // 0x7c0        
-        float m_flKillerPlaneVerticalSpeed; // 0x7c4        
-        float m_flKillerPlaneSpeedNoise; // 0x7c8        
-        float m_flKillerPlaneLaunchOffset; // 0x7cc        
-        float m_flKillerPlaneLaunchDelay; // 0x7d0        
-        float m_flOrbClaimWindow; // 0x7d4        
+        float m_flRadius; // 0x7a8        
+        float m_flCollisionRadius; // 0x7ac        
+        float m_flInvulDuration; // 0x7b0        
+        bool m_bUseKillerPlaneOffsets; // 0x7b4        
+        [[maybe_unused]] std::uint8_t pad_0x7b5[0x3]; // 0x7b5
+        float m_flKillerPlaneOffset; // 0x7b8        
+        float m_flKillerPlaneHorizontalDecayRate; // 0x7bc        
+        float m_flKillerPlaneHorizontalSpeedX; // 0x7c0        
+        float m_flKillerPlaneHorizontalSpeedY; // 0x7c4        
+        float m_flKillerPlaneVerticalSpeed; // 0x7c8        
+        float m_flKillerPlaneSpeedNoise; // 0x7cc        
+        float m_flKillerPlaneLaunchOffset; // 0x7d0        
+        float m_flKillerPlaneLaunchDelay; // 0x7d4        
+        float m_flOrbClaimWindow; // 0x7d8        
+        [[maybe_unused]] std::uint8_t pad_0x7dc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_XPOrbVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_XPOrbVData) == 0x7d8);
+    static_assert(sizeof(CCitadel_XPOrbVData) == 0x7e0);
 };

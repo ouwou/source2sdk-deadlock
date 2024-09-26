@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1670
+    // Size: 0x1678
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,25 +24,25 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_sIdolDropOffSound; // 0x1620        
+        CSoundEventName m_sIdolDropOffSound; // 0x1628        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DropoffTimerModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DropoffTimerModifier;
-        char m_DropoffTimerModifier[0x10]; // 0x1630        
+        char m_DropoffTimerModifier[0x10]; // 0x1638        
         // m_Bonus01 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_Bonus01;
-        char m_Bonus01[0x10]; // 0x1640        
+        char m_Bonus01[0x10]; // 0x1648        
         // m_Bonus02 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_Bonus02;
-        char m_Bonus02[0x10]; // 0x1650        
+        char m_Bonus02[0x10]; // 0x1658        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flInstantGoldPercentage; // 0x1660        
-        int32_t m_iComebackBounty; // 0x1664        
-        int32_t m_iComebackGoldThreshold; // 0x1668        
-        float m_flCasterBonusPercent; // 0x166c        
+        float m_flInstantGoldPercentage; // 0x1668        
+        int32_t m_iComebackBounty; // 0x166c        
+        int32_t m_iComebackGoldThreshold; // 0x1670        
+        float m_flCasterBonusPercent; // 0x1674        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_GoldenIdolVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_GoldenIdolVData) == 0x1670);
+    static_assert(sizeof(CCitadel_Ability_GoldenIdolVData) == 0x1678);
 };

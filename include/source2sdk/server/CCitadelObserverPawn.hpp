@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc78
+    // Size: 0xc80
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -35,11 +35,11 @@ namespace source2sdk::server
     {
     public:
         // Datamap fields:
-        // CCitadelPlayer_ObserverServices m_pObserverServices; // 0xae0
-        // CCitadelPlayer_CameraServices m_pCameraServices; // 0xb00
-        // CCitadelObserver_MovementServices m_pMovementServices; // 0xb08
+        // CCitadelPlayer_ObserverServices m_pObserverServices; // 0xae8
+        // CCitadelPlayer_CameraServices m_pCameraServices; // 0xb08
+        // CCitadelObserver_MovementServices m_pMovementServices; // 0xb10
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelObserverPawn) == 0xc78);
+    static_assert(sizeof(CCitadelObserverPawn) == 0xc80);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd88
+    // Size: 0xd90
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_MedicHeal : public client::CCitadelBaseAbilityServerOnly
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc70[0x118];
+        [[maybe_unused]] std::uint8_t pad_0xc78[0x118];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_MedicHeal) == 0xd88);
+    static_assert(sizeof(CCitadel_Ability_MedicHeal) == 0xd90);
 };

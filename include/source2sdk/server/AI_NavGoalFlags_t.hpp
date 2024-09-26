@@ -8,7 +8,7 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 13
+    // Enumerator count: 14
     // Alignment: 4
     // Size: 0x4
     enum class AI_NavGoalFlags_t : std::uint32_t
@@ -25,6 +25,7 @@ namespace source2sdk::server
         eClearGoalOffsetOnRepathForMovement = 0x200,
         eUseTargetPredictedPosition = 0x400,
         eDisableTargetPredictedPositionForDynamicPathing = 0x800,
+        eDisableStopAtGoal = 0x1000,
         // MEnumeratorIsNotAFlag
         eDefault = 0x0,
     };

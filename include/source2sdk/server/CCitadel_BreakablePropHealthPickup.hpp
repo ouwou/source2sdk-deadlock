@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d8
+    // Size: 0x9e0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_BreakablePropHealthPickup : public server::CCitadel_BreakablePropPickup
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_BreakablePropHealthPickup) == 0x9d8);
+    static_assert(sizeof(CCitadel_BreakablePropHealthPickup) == 0x9e0);
 };

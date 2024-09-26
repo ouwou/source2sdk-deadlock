@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb48
+    // Size: 0xb50
     // Has VTable
     #pragma pack(push, 1)
     class C_Citadel_PickupItemSpawner : public client::CBaseAnimGraph
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_Citadel_PickupItemSpawner) == 0xb48);
+    static_assert(sizeof(C_Citadel_PickupItemSpawner) == 0xb50);
 };

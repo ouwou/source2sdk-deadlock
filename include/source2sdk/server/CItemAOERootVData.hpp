@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1688
+    // Size: 0x1690
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,16 +27,16 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_AOEParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AOEParticle;
-        char m_AOEParticle[0xe0]; // 0x1588        
+        char m_AOEParticle[0xe0]; // 0x1590        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strRootTargetSound; // 0x1668        
+        CSoundEventName m_strRootTargetSound; // 0x1670        
         // metadata: MPropertyGroupName "Modifiers"
         // m_TetherModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_TetherModifier;
-        char m_TetherModifier[0x10]; // 0x1678        
+        char m_TetherModifier[0x10]; // 0x1680        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemAOERootVData because it is not a standard-layout class
-    static_assert(sizeof(CItemAOERootVData) == 0x1688);
+    static_assert(sizeof(CItemAOERootVData) == 0x1690);
 };

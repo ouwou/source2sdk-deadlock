@@ -25,9 +25,9 @@ namespace source2sdk::client
     public:
         float m_flSatVolumeRadius; // 0x6e8        
         float m_flSatVolumeFadeOut; // 0x6ec        
+        float m_flGravityScale; // 0x6f0        
         // metadata: MPropertyStartGroup "Camera"
-        float m_flGetUpSeqDuration; // 0x6f0        
-        [[maybe_unused]] std::uint8_t pad_0x6f4[0x4]; // 0x6f4
+        float m_flGetUpSeqDuration; // 0x6f4        
         client::CitadelCameraOperationsSequence_t m_cameraSequenceGetUp; // 0x6f8        
     };
     #pragma pack(pop)

@@ -35,7 +35,6 @@ namespace source2sdk::modellib
         CUtlString m_description; // 0x20        
         // metadata: MKV3TransferName "physics"
         modellib::CPhysSurfacePropertiesPhysics m_physics; // 0x28        
-        [[maybe_unused]] std::uint8_t pad_0x4c[0x4]; // 0x4c
         // metadata: MKV3TransferName "audiosounds"
         modellib::CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x50        
         // metadata: MKV3TransferName "audioparams"

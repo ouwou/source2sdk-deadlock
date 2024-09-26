@@ -8,7 +8,7 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 15
+    // Enumerator count: 16
     // Alignment: 4
     // Size: 0x4
     enum class WaypointFlags_t : std::uint32_t
@@ -29,5 +29,6 @@ namespace source2sdk::server
         WP_GOAL_FROM_BLOCKED = 0x800,
         WP_PLACED_ON_GROUND = 0x1000,
         WP_PATH_INCOMPLETE_FROM_PROCESSING = 0x2000,
+        WP_STOPPING_PATH = 0x4000,
     };
 };

@@ -21,7 +21,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd68
+    // Size: 0xd70
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByUserGroup "LocalPlayerExclusive"
@@ -34,17 +34,17 @@ namespace source2sdk::client
         // metadata: MNetworkChangeCallback "OnWearablesChanged"
         // m_hMyWearables has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_NetworkUtlVectorBase<CHandle<client::C_EconWearable>> m_hMyWearables;
-        char m_hMyWearables[0x18]; // 0xce0        
-        modellib::AttachmentHandle_t m_leftFootAttachment; // 0xcf8        
-        modellib::AttachmentHandle_t m_rightFootAttachment; // 0xcf9        
-        [[maybe_unused]] std::uint8_t pad_0xcfa[0x2]; // 0xcfa
-        client::C_BaseCombatCharacter__WaterWakeMode_t m_nWaterWakeMode; // 0xcfc        
-        float m_flWaterWorldZ; // 0xd00        
-        float m_flWaterNextTraceTime; // 0xd04        
-        [[maybe_unused]] std::uint8_t pad_0xd08[0x60];
+        char m_hMyWearables[0x18]; // 0xce8        
+        modellib::AttachmentHandle_t m_leftFootAttachment; // 0xd00        
+        modellib::AttachmentHandle_t m_rightFootAttachment; // 0xd01        
+        [[maybe_unused]] std::uint8_t pad_0xd02[0x2]; // 0xd02
+        client::C_BaseCombatCharacter__WaterWakeMode_t m_nWaterWakeMode; // 0xd04        
+        float m_flWaterWorldZ; // 0xd08        
+        float m_flWaterNextTraceTime; // 0xd0c        
+        [[maybe_unused]] std::uint8_t pad_0xd10[0x60];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseCombatCharacter because it is not a standard-layout class
-    static_assert(sizeof(C_BaseCombatCharacter) == 0xd68);
+    static_assert(sizeof(C_BaseCombatCharacter) == 0xd70);
 };

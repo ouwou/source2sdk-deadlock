@@ -20,7 +20,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb98
+    // Size: 0xba0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
@@ -37,41 +37,41 @@ namespace source2sdk::client
     class C_PointCommentaryNode : public client::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb48[0x8]; // 0xb48
+        [[maybe_unused]] std::uint8_t pad_0xb50[0x8]; // 0xb50
         // metadata: MNetworkEnable
-        bool m_bActive; // 0xb50        
-        bool m_bWasActive; // 0xb51        
-        [[maybe_unused]] std::uint8_t pad_0xb52[0x2]; // 0xb52
-        entity2::GameTime_t m_flEndTime; // 0xb54        
+        bool m_bActive; // 0xb58        
+        bool m_bWasActive; // 0xb59        
+        [[maybe_unused]] std::uint8_t pad_0xb5a[0x2]; // 0xb5a
+        entity2::GameTime_t m_flEndTime; // 0xb5c        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartTime; // 0xb58        
+        entity2::GameTime_t m_flStartTime; // 0xb60        
         // metadata: MNetworkEnable
-        float m_flStartTimeInCommentary; // 0xb5c        
+        float m_flStartTimeInCommentary; // 0xb64        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszCommentaryFile; // 0xb60        
+        CUtlSymbolLarge m_iszCommentaryFile; // 0xb68        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszTitle; // 0xb68        
+        CUtlSymbolLarge m_iszTitle; // 0xb70        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSpeakers; // 0xb70        
+        CUtlSymbolLarge m_iszSpeakers; // 0xb78        
         // metadata: MNetworkEnable
-        int32_t m_iNodeNumber; // 0xb78        
+        int32_t m_iNodeNumber; // 0xb80        
         // metadata: MNetworkEnable
-        int32_t m_iNodeNumberMax; // 0xb7c        
+        int32_t m_iNodeNumberMax; // 0xb84        
         // metadata: MNetworkEnable
-        bool m_bListenedTo; // 0xb80        
-        [[maybe_unused]] std::uint8_t pad_0xb81[0xf]; // 0xb81
+        bool m_bListenedTo; // 0xb88        
+        [[maybe_unused]] std::uint8_t pad_0xb89[0xf]; // 0xb89
         // metadata: MNetworkEnable
         // m_hViewPosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hViewPosition;
-        char m_hViewPosition[0x4]; // 0xb90        
-        bool m_bRestartAfterRestore; // 0xb94        
-        [[maybe_unused]] std::uint8_t pad_0xb95[0x3];
+        char m_hViewPosition[0x4]; // 0xb98        
+        bool m_bRestartAfterRestore; // 0xb9c        
+        [[maybe_unused]] std::uint8_t pad_0xb9d[0x3];
         
         // Datamap fields:
-        // void m_sndCommentary; // 0xb88
+        // void m_sndCommentary; // 0xb90
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PointCommentaryNode because it is not a standard-layout class
-    static_assert(sizeof(C_PointCommentaryNode) == 0xb98);
+    static_assert(sizeof(C_PointCommentaryNode) == 0xba0);
 };

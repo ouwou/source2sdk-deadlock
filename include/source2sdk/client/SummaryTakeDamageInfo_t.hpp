@@ -20,7 +20,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x108
+    // Size: 0x118
     #pragma pack(push, 1)
     struct SummaryTakeDamageInfo_t
     {
@@ -28,18 +28,18 @@ namespace source2sdk::client
         int32_t nSummarisedCount; // 0x0        
         [[maybe_unused]] std::uint8_t pad_0x04[0x4]; // 0x4
         client::CTakeDamageInfo info; // 0x8        
-        client::CTakeDamageResult result; // 0xe8        
+        client::CTakeDamageResult result; // 0xf0        
         // hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> hTarget;
-        char hTarget[0x4]; // 0x100        
-        [[maybe_unused]] std::uint8_t pad_0x104[0x4];
+        char hTarget[0x4]; // 0x110        
+        [[maybe_unused]] std::uint8_t pad_0x114[0x4];
     };
     #pragma pack(pop)
     
     static_assert(offsetof(SummaryTakeDamageInfo_t, nSummarisedCount) == 0x0);
     static_assert(offsetof(SummaryTakeDamageInfo_t, info) == 0x8);
-    static_assert(offsetof(SummaryTakeDamageInfo_t, result) == 0xe8);
-    static_assert(offsetof(SummaryTakeDamageInfo_t, hTarget) == 0x100);
+    static_assert(offsetof(SummaryTakeDamageInfo_t, result) == 0xf0);
+    static_assert(offsetof(SummaryTakeDamageInfo_t, hTarget) == 0x110);
     
-    static_assert(sizeof(SummaryTakeDamageInfo_t) == 0x108);
+    static_assert(sizeof(SummaryTakeDamageInfo_t) == 0x118);
 };

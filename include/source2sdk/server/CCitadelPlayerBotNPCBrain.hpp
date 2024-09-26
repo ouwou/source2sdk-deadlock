@@ -15,13 +15,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1750
+    // Size: 0x1878
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelPlayerBotNPCBrain : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1608[0x148];
+        [[maybe_unused]] std::uint8_t pad_0x1730[0x148];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_BOT_IDLE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelPlayerBotNPCBrain")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_MOVE_WITHOUT_GOAL() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelPlayerBotNPCBrain")->GetStaticFields()[1]->m_pInstance);};
@@ -69,5 +69,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelPlayerBotNPCBrain) == 0x1750);
+    static_assert(sizeof(CCitadelPlayerBotNPCBrain) == 0x1878);
 };

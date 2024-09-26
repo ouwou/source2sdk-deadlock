@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb88
+    // Size: 0xb90
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "uint32 m_boneIndexAttached"
@@ -26,22 +26,22 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        uint32_t m_boneIndexAttached; // 0xb48        
+        uint32_t m_boneIndexAttached; // 0xb50        
         // metadata: MNetworkEnable
-        uint32_t m_ragdollAttachedObjectIndex; // 0xb4c        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkEncoder "coord"
-        Vector m_attachmentPointBoneSpace; // 0xb50        
+        uint32_t m_ragdollAttachedObjectIndex; // 0xb54        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_attachmentPointRagdollSpace; // 0xb5c        
-        bool m_bShouldDetach; // 0xb68        
-        [[maybe_unused]] std::uint8_t pad_0xb69[0xf]; // 0xb69
-        bool m_bShouldDeleteAttachedActivationRecord; // 0xb78        
-        [[maybe_unused]] std::uint8_t pad_0xb79[0xf];
+        Vector m_attachmentPointBoneSpace; // 0xb58        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkEncoder "coord"
+        Vector m_attachmentPointRagdollSpace; // 0xb64        
+        bool m_bShouldDetach; // 0xb70        
+        [[maybe_unused]] std::uint8_t pad_0xb71[0xf]; // 0xb71
+        bool m_bShouldDeleteAttachedActivationRecord; // 0xb80        
+        [[maybe_unused]] std::uint8_t pad_0xb81[0xf];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRagdollPropAttached because it is not a standard-layout class
-    static_assert(sizeof(CRagdollPropAttached) == 0xb88);
+    static_assert(sizeof(CRagdollPropAttached) == 0xb90);
 };

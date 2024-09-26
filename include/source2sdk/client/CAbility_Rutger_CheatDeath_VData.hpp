@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1550
+    // Size: 0x1558
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_ModifierCheatDeathActivated has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CBaseModifier> m_ModifierCheatDeathActivated;
-        char m_ModifierCheatDeathActivated[0x10]; // 0x1540        
+        char m_ModifierCheatDeathActivated[0x10]; // 0x1548        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Rutger_CheatDeath_VData because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Rutger_CheatDeath_VData) == 0x1550);
+    static_assert(sizeof(CAbility_Rutger_CheatDeath_VData) == 0x1558);
 };

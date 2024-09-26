@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc88
+    // Size: 0xc90
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flActiveRadius"
@@ -24,11 +24,11 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flActiveRadius; // 0xc80        
-        [[maybe_unused]] std::uint8_t pad_0xc84[0x4];
+        float m_flActiveRadius; // 0xc88        
+        [[maybe_unused]] std::uint8_t pad_0xc8c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelNanoPredatoryStatueTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelNanoPredatoryStatueTrigger) == 0xc88);
+    static_assert(sizeof(CCitadelNanoPredatoryStatueTrigger) == 0xc90);
 };

@@ -27,6 +27,7 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "EMeleeHold_AttackState m_eCurrentAttackState"
     // static metadata: MNetworkVarNames "EMeleeHold_AttackType m_eCurrentAttackType"
     // static metadata: MNetworkVarNames "Vector m_vAirDashDir"
+    // static metadata: MNetworkVarNames "bool m_bAttackStartedWhileSliding"
     #pragma pack(push, 1)
     class CCitadel_Ability_HoldMelee : public server::CCitadel_Ability_Melee_Base
     {
@@ -52,8 +53,11 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         Vector m_vAirDashDir; // 0xb88        
-        bool m_bCreatedChargeEffects; // 0xb94        
-        [[maybe_unused]] std::uint8_t pad_0xb95[0x3]; // 0xb95
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bAttackStartedWhileSliding; // 0xb94        
+        bool m_bCreatedChargeEffects; // 0xb95        
+        [[maybe_unused]] std::uint8_t pad_0xb96[0x2]; // 0xb96
         QAngle m_angForced; // 0xb98        
         [[maybe_unused]] std::uint8_t pad_0xba4[0xc];
     };

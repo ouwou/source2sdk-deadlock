@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe18
+    // Size: 0xe20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bAirCast"
@@ -23,15 +23,15 @@ namespace source2sdk::client
     class CCitadel_Ability_Chrono_TimeWall : public client::C_CitadelBaseAbility
     {
     public:
-        client::ParticleIndex_t m_hChargingParticle; // 0xc70        
-        Vector m_vSpawnPos; // 0xc74        
-        QAngle m_qAngles; // 0xc80        
+        client::ParticleIndex_t m_hChargingParticle; // 0xc78        
+        Vector m_vSpawnPos; // 0xc7c        
+        QAngle m_qAngles; // 0xc88        
         // metadata: MNetworkEnable
-        bool m_bAirCast; // 0xc8c        
-        [[maybe_unused]] std::uint8_t pad_0xc8d[0x18b];
+        bool m_bAirCast; // 0xc94        
+        [[maybe_unused]] std::uint8_t pad_0xc95[0x18b];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Chrono_TimeWall because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Chrono_TimeWall) == 0xe18);
+    static_assert(sizeof(CCitadel_Ability_Chrono_TimeWall) == 0xe20);
 };

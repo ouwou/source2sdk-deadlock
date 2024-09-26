@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15a8
+    // Size: 0x15b0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,12 +26,12 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Modifiers"
         // m_TechCleaveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_TechCleaveModifier;
-        char m_TechCleaveModifier[0x10]; // 0x1588        
+        char m_TechCleaveModifier[0x10]; // 0x1590        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_sCleaveProcSound; // 0x1598        
+        CSoundEventName m_sCleaveProcSound; // 0x15a0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_TechCleaveVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_TechCleaveVData) == 0x15a8);
+    static_assert(sizeof(CCitadel_Item_TechCleaveVData) == 0x15b0);
 };

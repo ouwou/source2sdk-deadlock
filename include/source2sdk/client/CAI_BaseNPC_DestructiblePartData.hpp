@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x38
+    // Size: 0x48
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -46,6 +46,13 @@ namespace source2sdk::client
         int32_t m_nHealth; // 0x30        
         // metadata: MPropertyDescription "How damage to this part is handled."
         client::BaseNPC_DestructiblePartData_DamagePassthroughType m_nDamagePassthroughType; // 0x34        
+        // metadata: MPropertyStartGroup "+Runtime Data/Death"
+        // metadata: MPropertyDescription "Should the NPC die when this part is destroyed?"
+        bool m_bKillNPCOnDestruction; // 0x38        
+        [[maybe_unused]] std::uint8_t pad_0x39[0x7]; // 0x39
+        // metadata: MPropertyDescription "Custom death handshake to set when this part is destroyed."
+        // metadata: MPropertySuppressExpr "m_bKillNPCOnDestruction == false"
+        CGlobalSymbol m_sCustomDeathHandshake; // 0x40        
     };
     #pragma pack(pop)
     
@@ -57,6 +64,8 @@ namespace source2sdk::client
     static_assert(offsetof(CAI_BaseNPC_DestructiblePartData, m_sAnimGraphParamName_PartNormalizedHealth) == 0x28);
     static_assert(offsetof(CAI_BaseNPC_DestructiblePartData, m_nHealth) == 0x30);
     static_assert(offsetof(CAI_BaseNPC_DestructiblePartData, m_nDamagePassthroughType) == 0x34);
+    static_assert(offsetof(CAI_BaseNPC_DestructiblePartData, m_bKillNPCOnDestruction) == 0x38);
+    static_assert(offsetof(CAI_BaseNPC_DestructiblePartData, m_sCustomDeathHandshake) == 0x40);
     
-    static_assert(sizeof(CAI_BaseNPC_DestructiblePartData) == 0x38);
+    static_assert(sizeof(CAI_BaseNPC_DestructiblePartData) == 0x48);
 };

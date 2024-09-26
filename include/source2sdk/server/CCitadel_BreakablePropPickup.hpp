@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d8
+    // Size: 0x9e0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -30,15 +30,15 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x9a8        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x9b0        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0x9c0        
-        [[maybe_unused]] std::uint8_t pad_0x9c1[0x7]; // 0x9c1
+        bool m_bActive; // 0x9c8        
+        [[maybe_unused]] std::uint8_t pad_0x9c9[0x7]; // 0x9c9
         // metadata: MNetworkEnable
-        CUtlString m_sPickupName; // 0x9c8        
+        CUtlString m_sPickupName; // 0x9d0        
         // metadata: MNetworkEnable
-        int32_t m_nNameOffset; // 0x9d0        
-        [[maybe_unused]] std::uint8_t pad_0x9d4[0x4];
+        int32_t m_nNameOffset; // 0x9d8        
+        [[maybe_unused]] std::uint8_t pad_0x9dc[0x4];
         
         // Datamap fields:
         // Vector spawn_position; // 0x7fffffff
@@ -46,5 +46,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropPickup because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropPickup) == 0x9d8);
+    static_assert(sizeof(CCitadel_BreakablePropPickup) == 0x9e0);
 };

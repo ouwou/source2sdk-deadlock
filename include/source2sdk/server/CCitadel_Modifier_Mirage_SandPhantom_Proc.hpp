@@ -1,7 +1,4 @@
 #pragma once
-#include "source2sdk/client/ParticleIndex_t.hpp"
-#include "source2sdk/client/ShotID_t.hpp"
-#include "source2sdk/entity2/GameTime_t.hpp"
 #include "source2sdk/server/CCitadelModifier.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -17,20 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x220
+    // Size: 0x130
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Mirage_SandPhantom_Proc : public server::CCitadelModifier
     {
     public:
-        client::ShotID_t m_nSuppressProcShotID; // 0xc0        
-        client::ParticleIndex_t m_nProcReadyParticleIndex; // 0xc4        
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flLastProcTime; // 0xc8        
-        [[maybe_unused]] std::uint8_t pad_0xcc[0x154];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x70];
+        // No schema binary for binding
     };
     #pragma pack(pop)
     
-    // Cannot assert offsets of fields in CCitadel_Modifier_Mirage_SandPhantom_Proc because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Mirage_SandPhantom_Proc) == 0x220);
+    static_assert(sizeof(CCitadel_Modifier_Mirage_SandPhantom_Proc) == 0x130);
 };

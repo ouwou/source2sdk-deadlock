@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xab0
+    // Size: 0xab8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_nModelIndex"
@@ -37,51 +37,51 @@ namespace source2sdk::server
     public:
         // m_pool has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CFishPool> m_pool;
-        char m_pool[0x4]; // 0x9a8        
-        uint32_t m_id; // 0x9ac        
+        char m_pool[0x4]; // 0x9b0        
+        uint32_t m_id; // 0x9b4        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_x"
-        float m_x; // 0x9b0        
+        float m_x; // 0x9b8        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_y"
-        float m_y; // 0x9b4        
+        float m_y; // 0x9bc        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_z"
-        float m_z; // 0x9b8        
+        float m_z; // 0x9c0        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "angle_normalize_positive"
         // metadata: MNetworkBitCount "7"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "360.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_angle; // 0x9bc        
-        float m_angleChange; // 0x9c0        
-        Vector m_forward; // 0x9c4        
-        Vector m_perp; // 0x9d0        
+        float m_angle; // 0x9c4        
+        float m_angleChange; // 0x9c8        
+        Vector m_forward; // 0x9cc        
+        Vector m_perp; // 0x9d8        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_poolOrigin; // 0x9dc        
+        Vector m_poolOrigin; // 0x9e4        
         // metadata: MNetworkEnable
-        float m_waterLevel; // 0x9e8        
-        float m_speed; // 0x9ec        
-        float m_desiredSpeed; // 0x9f0        
-        float m_calmSpeed; // 0x9f4        
-        float m_panicSpeed; // 0x9f8        
-        float m_avoidRange; // 0x9fc        
-        server::CountdownTimer m_turnTimer; // 0xa00        
-        bool m_turnClockwise; // 0xa18        
-        [[maybe_unused]] std::uint8_t pad_0xa19[0x7]; // 0xa19
-        server::CountdownTimer m_goTimer; // 0xa20        
-        server::CountdownTimer m_moveTimer; // 0xa38        
-        server::CountdownTimer m_panicTimer; // 0xa50        
-        server::CountdownTimer m_disperseTimer; // 0xa68        
-        server::CountdownTimer m_proximityTimer; // 0xa80        
+        float m_waterLevel; // 0x9f0        
+        float m_speed; // 0x9f4        
+        float m_desiredSpeed; // 0x9f8        
+        float m_calmSpeed; // 0x9fc        
+        float m_panicSpeed; // 0xa00        
+        float m_avoidRange; // 0xa04        
+        server::CountdownTimer m_turnTimer; // 0xa08        
+        bool m_turnClockwise; // 0xa20        
+        [[maybe_unused]] std::uint8_t pad_0xa21[0x7]; // 0xa21
+        server::CountdownTimer m_goTimer; // 0xa28        
+        server::CountdownTimer m_moveTimer; // 0xa40        
+        server::CountdownTimer m_panicTimer; // 0xa58        
+        server::CountdownTimer m_disperseTimer; // 0xa70        
+        server::CountdownTimer m_proximityTimer; // 0xa88        
         // m_visible has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::CFish*> m_visible;
-        char m_visible[0x18]; // 0xa98        
+        char m_visible[0x18]; // 0xaa0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFish because it is not a standard-layout class
-    static_assert(sizeof(CFish) == 0xab0);
+    static_assert(sizeof(CFish) == 0xab8);
 };

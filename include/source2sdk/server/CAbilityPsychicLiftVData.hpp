@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1640
+    // Size: 0x1648
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,16 +27,16 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_LiftModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_LiftModifier;
-        char m_LiftModifier[0x10]; // 0x1540        
+        char m_LiftModifier[0x10]; // 0x1548        
         // metadata: MPropertyStartGroup "Visuals"
         // m_TargetParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TargetParticle;
-        char m_TargetParticle[0xe0]; // 0x1550        
+        char m_TargetParticle[0xe0]; // 0x1558        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_TargetCastSound; // 0x1630        
+        CSoundEventName m_TargetCastSound; // 0x1638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPsychicLiftVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityPsychicLiftVData) == 0x1640);
+    static_assert(sizeof(CAbilityPsychicLiftVData) == 0x1648);
 };

@@ -18,13 +18,18 @@ namespace source2sdk::client
 
 namespace source2sdk::client
 {
+    class C_CitadelBaseAbility;
+};
+
+namespace source2sdk::client
+{
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
     // Size: 0x1a0
     // Has VTable
     // 
-    // static metadata: MNetworkVarNames "EHANDLE m_vecAbilities"
+    // static metadata: MNetworkVarNames "CHandle<C_CitadelBaseAbility> m_vecAbilities"
     // static metadata: MNetworkVarNames "EntitySubclassID_t m_vecUniversalItems"
     // static metadata: MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationSlots"
     // static metadata: MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationAbilityIDs"
@@ -46,7 +51,7 @@ namespace source2sdk::client
         // metadata: MNetworkChangeCallback "abilitiesChanged"
         // metadata: MNetworkPriority "32"
         // m_vecAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // C_NetworkUtlVectorBase<CHandle<client::C_BaseEntity>> m_vecAbilities;
+        // C_NetworkUtlVectorBase<CHandle<client::C_CitadelBaseAbility>> m_vecAbilities;
         char m_vecAbilities[0x18]; // 0x70        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "Abilities"

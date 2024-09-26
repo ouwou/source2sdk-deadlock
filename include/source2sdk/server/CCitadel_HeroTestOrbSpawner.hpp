@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9b0
+    // Size: 0x9b8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_HeroTestOrbSpawner : public server::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x9a8[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x9b0[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_HeroTestOrbSpawner) == 0x9b0);
+    static_assert(sizeof(CCitadel_HeroTestOrbSpawner) == 0x9b8);
 };

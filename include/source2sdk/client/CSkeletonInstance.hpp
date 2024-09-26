@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: unknown
     // Standard-layout class: false
-    // Size: 0x470
+    // Size: 0x490
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CModelState m_modelState"
@@ -31,12 +31,12 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         client::CModelState m_modelState; // 0x170        
         // metadata: MNetworkEnable
-        bool m_bIsAnimationEnabled; // 0x3d0        
+        bool m_bIsAnimationEnabled; // 0x3f0        
         // metadata: MNetworkEnable
-        bool m_bUseParentRenderBounds; // 0x3d1        
+        bool m_bUseParentRenderBounds; // 0x3f1        
         // metadata: MNetworkDisable
-        bool m_bDisableSolidCollisionsForHierarchy; // 0x3d2        
-        // start of bitfield block at 0x3d3
+        bool m_bDisableSolidCollisionsForHierarchy; // 0x3f2        
+        // start of bitfield block at 0x3f3
         // metadata: MNetworkDisable
         uint8_t m_bDirtyMotionType: 1;
         // metadata: MNetworkDisable
@@ -44,10 +44,10 @@ namespace source2sdk::client
         // end of bitfield block // 2 bits
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "skeletonMaterialGroupChanged"
-        CUtlStringToken m_materialGroup; // 0x3d4        
+        CUtlStringToken m_materialGroup; // 0x3f4        
         // metadata: MNetworkEnable
-        uint8_t m_nHitboxSet; // 0x3d8        
-        [[maybe_unused]] std::uint8_t pad_0x3d9[0x97];
+        uint8_t m_nHitboxSet; // 0x3f8        
+        [[maybe_unused]] std::uint8_t pad_0x3f9[0x97];
         
         // Datamap fields:
         // Vector velocity; // 0x7fffffff
@@ -57,5 +57,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSkeletonInstance because it is not a standard-layout class
-    static_assert(sizeof(CSkeletonInstance) == 0x470);
+    static_assert(sizeof(CSkeletonInstance) == 0x490);
 };

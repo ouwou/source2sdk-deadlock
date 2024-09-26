@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9b0
+    // Size: 0x9b8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flTurnSolidTime"
@@ -24,11 +24,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flTurnSolidTime; // 0x9a8        
-        [[maybe_unused]] std::uint8_t pad_0x9ac[0x4];
+        entity2::GameTime_t m_flTurnSolidTime; // 0x9b0        
+        [[maybe_unused]] std::uint8_t pad_0x9b4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ice_Dome_Blocker because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ice_Dome_Blocker) == 0x9b0);
+    static_assert(sizeof(CCitadel_Ice_Dome_Blocker) == 0x9b8);
 };

@@ -15,22 +15,22 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb70
+    // Size: 0xb78
     // Has VTable
     #pragma pack(push, 1)
     class C_Citadel_FissureWall : public client::CBaseAnimGraph
     {
     public:
-        Vector m_vStartPos; // 0xb48        
-        Vector m_vEndPos; // 0xb54        
-        entity2::GameTime_t m_flStartEmitTime; // 0xb60        
-        entity2::GameTime_t m_flEndEmitTime; // 0xb64        
-        bool m_bSolid; // 0xb68        
-        [[maybe_unused]] std::uint8_t pad_0xb69[0x3]; // 0xb69
-        int32_t m_nTouchCount; // 0xb6c        
+        Vector m_vStartPos; // 0xb50        
+        Vector m_vEndPos; // 0xb5c        
+        entity2::GameTime_t m_flStartEmitTime; // 0xb68        
+        entity2::GameTime_t m_flEndEmitTime; // 0xb6c        
+        bool m_bSolid; // 0xb70        
+        [[maybe_unused]] std::uint8_t pad_0xb71[0x3]; // 0xb71
+        int32_t m_nTouchCount; // 0xb74        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_FissureWall because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_FissureWall) == 0xb70);
+    static_assert(sizeof(C_Citadel_FissureWall) == 0xb78);
 };

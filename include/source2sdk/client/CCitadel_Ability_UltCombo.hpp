@@ -20,7 +20,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd28
+    // Size: 0xd30
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iBonusHealth"
@@ -29,18 +29,18 @@ namespace source2sdk::client
     class CCitadel_Ability_UltCombo : public client::C_CitadelBaseAbility
     {
     public:
-        entity2::GameTime_t m_flLastAttackTime; // 0xc70        
-        int32_t m_nAttackNum; // 0xc74        
-        [[maybe_unused]] std::uint8_t pad_0xc78[0xa8]; // 0xc78
+        entity2::GameTime_t m_flLastAttackTime; // 0xc78        
+        int32_t m_nAttackNum; // 0xc7c        
+        [[maybe_unused]] std::uint8_t pad_0xc80[0xa8]; // 0xc80
         // metadata: MNetworkEnable
-        int32_t m_iBonusHealth; // 0xd20        
+        int32_t m_iBonusHealth; // 0xd28        
         // metadata: MNetworkEnable
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0xd24        
+        char m_hTarget[0x4]; // 0xd2c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_UltCombo because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_UltCombo) == 0xd28);
+    static_assert(sizeof(CCitadel_Ability_UltCombo) == 0xd30);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe30
+    // Size: 0xe38
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Tokamak_HeatSinks : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc70[0x1c0];
+        [[maybe_unused]] std::uint8_t pad_0xc78[0x1c0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Tokamak_HeatSinks) == 0xe30);
+    static_assert(sizeof(CCitadel_Ability_Tokamak_HeatSinks) == 0xe38);
 };

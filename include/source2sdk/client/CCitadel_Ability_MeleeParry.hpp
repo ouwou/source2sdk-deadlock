@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf0
+    // Size: 0xcf8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flParryStartTime"
@@ -26,16 +26,16 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flParryStartTime; // 0xc70        
+        entity2::GameTime_t m_flParryStartTime; // 0xc78        
         // metadata: MNetworkEnable
-        bool m_bAttackParried; // 0xc74        
-        [[maybe_unused]] std::uint8_t pad_0xc75[0x3]; // 0xc75
+        bool m_bAttackParried; // 0xc7c        
+        [[maybe_unused]] std::uint8_t pad_0xc7d[0x3]; // 0xc7d
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flParrySuccessTime; // 0xc78        
-        [[maybe_unused]] std::uint8_t pad_0xc7c[0x74];
+        entity2::GameTime_t m_flParrySuccessTime; // 0xc80        
+        [[maybe_unused]] std::uint8_t pad_0xc84[0x74];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_MeleeParry because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_MeleeParry) == 0xcf0);
+    static_assert(sizeof(CCitadel_Ability_MeleeParry) == 0xcf8);
 };

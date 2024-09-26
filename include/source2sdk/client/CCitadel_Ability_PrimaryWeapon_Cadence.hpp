@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd48
+    // Size: 0xd50
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_PrimaryWeapon_Cadence : public client::CCitadel_Ability_PrimaryWeapon
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Cadence) == 0xd48);
+    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Cadence) == 0xd50);
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include "source2sdk/entity2/GameTick_t.hpp"
-#include "source2sdk/server/HandshakeScope_t.hpp"
 #include "source2sdk/server/HandshakeState_t.hpp"
+#include "source2sdk/server/TaskHandshakeScope_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -23,7 +23,7 @@ namespace source2sdk::server
     {
     public:
         server::HandshakeState_t m_nHandshakeState; // 0x0        
-        server::HandshakeScope_t m_nHandshakeScope; // 0x4        
+        server::TaskHandshakeScope_t m_nHandshakeScope; // 0x4        
         entity2::GameTick_t m_nLastHandshakeUpdateTick; // 0x8        
         bool m_bForceHandshakeRestartOnScriptedSequenceCompletion; // 0xc        
         [[maybe_unused]] std::uint8_t pad_0x0d[0x3]; // 0xd

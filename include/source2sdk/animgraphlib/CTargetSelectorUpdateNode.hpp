@@ -16,7 +16,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x78
+    // Size: 0x80
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -29,10 +29,12 @@ namespace source2sdk::animgraphlib
         char m_children[0x18]; // 0x58        
         [[maybe_unused]] std::uint8_t pad_0x70[0x4]; // 0x70
         animgraphlib::CAnimParamHandle m_hPositionParameter; // 0x74        
-        animgraphlib::CAnimParamHandle m_hOrientationParameter; // 0x76        
+        animgraphlib::CAnimParamHandle m_hFacePositionParameter; // 0x76        
+        bool m_bFacingPositionIsWorldSpace; // 0x78        
+        [[maybe_unused]] std::uint8_t pad_0x79[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTargetSelectorUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CTargetSelectorUpdateNode) == 0x78);
+    static_assert(sizeof(CTargetSelectorUpdateNode) == 0x80);
 };

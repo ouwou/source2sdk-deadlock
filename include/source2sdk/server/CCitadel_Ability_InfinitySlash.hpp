@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xba8
+    // Size: 0xb70
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flExplodeEndTime"
@@ -25,18 +25,18 @@ namespace source2sdk::server
     class CCitadel_Ability_InfinitySlash : public server::CCitadelBaseYamatoAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0xa8]; // 0xaf0
+        [[maybe_unused]] std::uint8_t pad_0xaf0[0x70]; // 0xaf0
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flExplodeEndTime; // 0xb98        
+        entity2::GameTime_t m_flExplodeEndTime; // 0xb60        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flBuffEndTime; // 0xb9c        
-        client::ParticleIndex_t m_nCastEffect; // 0xba0        
-        [[maybe_unused]] std::uint8_t pad_0xba4[0x4];
+        entity2::GameTime_t m_flBuffEndTime; // 0xb64        
+        client::ParticleIndex_t m_nCastEffect; // 0xb68        
+        [[maybe_unused]] std::uint8_t pad_0xb6c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_InfinitySlash because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_InfinitySlash) == 0xba8);
+    static_assert(sizeof(CCitadel_Ability_InfinitySlash) == 0xb70);
 };

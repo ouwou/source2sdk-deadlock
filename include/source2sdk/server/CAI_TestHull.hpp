@@ -15,14 +15,14 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x10b8
+    // Size: 0x11e0
     // Has VTable
     #pragma pack(push, 1)
     class CAI_TestHull : public server::CAI_BaseNPC
     {
     public:
-        server::TestHullMode_t m_nHullMode; // 0x10b0        
-        [[maybe_unused]] std::uint8_t pad_0x10b4[0x4];
+        server::TestHullMode_t m_nHullMode; // 0x11d8        
+        [[maybe_unused]] std::uint8_t pad_0x11dc[0x4];
         
         // Static fields:
         static server::CAI_TestHull* &Get_s_pTestHulls() {return *reinterpret_cast<server::CAI_TestHull**>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CAI_TestHull")->GetStaticFields()[0]->m_pInstance);};
@@ -31,5 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_TestHull because it is not a standard-layout class
-    static_assert(sizeof(CAI_TestHull) == 0x10b8);
+    static_assert(sizeof(CAI_TestHull) == 0x11e0);
 };

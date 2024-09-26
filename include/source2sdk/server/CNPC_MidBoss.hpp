@@ -14,13 +14,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1708
+    // Size: 0x1830
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_MidBoss : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1608[0x100];
+        [[maybe_unused]] std::uint8_t pad_0x1730[0x100];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_MIDBOSS_MOVE_TO_COVER() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_MidBoss")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_MIDBOSS_SLEEP() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_MidBoss")->GetStaticFields()[1]->m_pInstance);};
@@ -40,5 +40,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_MidBoss) == 0x1708);
+    static_assert(sizeof(CNPC_MidBoss) == 0x1830);
 };

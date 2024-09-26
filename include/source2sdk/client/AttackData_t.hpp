@@ -42,9 +42,11 @@ namespace source2sdk::client
         float m_flCooldownOnHit; // 0x20        
         // metadata: MPropertyDescription "Half width of the cone at the player"
         float m_flTraceConeHalfWidth; // 0x24        
+        // metadata: MPropertyDescription "How much force to apply upward on hit"
+        float m_flKnockUpStrength; // 0x28        
         // metadata: MPropertyDescription "Trigger a big screen shake when this attack hits"
-        bool m_bApplyScreenShake; // 0x28        
-        [[maybe_unused]] std::uint8_t pad_0x29[0x7]; // 0x29
+        bool m_bApplyScreenShake; // 0x2c        
+        [[maybe_unused]] std::uint8_t pad_0x2d[0x3]; // 0x2d
         // metadata: MPropertyDescription "The curve defining move speed bonus/penalty.  This is how we apply the post-movement controller movement slow."
         CPiecewiseCurve m_SpeedBonusCurve; // 0x30        
         // metadata: MPropertyDescription "The curve defining movement controller target speed.  This is what defines the speed boost"
@@ -93,7 +95,8 @@ namespace source2sdk::client
     static_assert(offsetof(AttackData_t, m_flCooldownOnMiss) == 0x1c);
     static_assert(offsetof(AttackData_t, m_flCooldownOnHit) == 0x20);
     static_assert(offsetof(AttackData_t, m_flTraceConeHalfWidth) == 0x24);
-    static_assert(offsetof(AttackData_t, m_bApplyScreenShake) == 0x28);
+    static_assert(offsetof(AttackData_t, m_flKnockUpStrength) == 0x28);
+    static_assert(offsetof(AttackData_t, m_bApplyScreenShake) == 0x2c);
     static_assert(offsetof(AttackData_t, m_SpeedBonusCurve) == 0x30);
     static_assert(offsetof(AttackData_t, m_MovementSpeedCurve) == 0x70);
     static_assert(offsetof(AttackData_t, m_flMovementAcc) == 0xb0);

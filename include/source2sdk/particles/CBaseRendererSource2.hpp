@@ -29,7 +29,7 @@ namespace source2sdk::particles
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2aa8
+    // Size: 0x2ab8
     // Has VTable
     // Is Abstract
     // 
@@ -276,10 +276,10 @@ namespace source2sdk::particles
         // metadata: MPropertySortPriority "500"
         // metadata: MPropertySuppressExpr "!m_bBlendFramesSeq0"
         bool m_bMaxLuminanceBlendingSequence0; // 0x285d        
-        [[maybe_unused]] std::uint8_t pad_0x285e[0x24a];
+        [[maybe_unused]] std::uint8_t pad_0x285e[0x25a];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseRendererSource2 because it is not a standard-layout class
-    static_assert(sizeof(CBaseRendererSource2) == 0x2aa8);
+    static_assert(sizeof(CBaseRendererSource2) == 0x2ab8);
 };

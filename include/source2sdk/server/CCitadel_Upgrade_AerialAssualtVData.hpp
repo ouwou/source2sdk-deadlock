@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1678
+    // Size: 0x1680
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,14 +27,14 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_WatcherModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_WatcherModifier;
-        char m_WatcherModifier[0x10]; // 0x1588        
+        char m_WatcherModifier[0x10]; // 0x1590        
         // metadata: MPropertyStartGroup "Visuals"
         // m_LaunchParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LaunchParticle;
-        char m_LaunchParticle[0xe0]; // 0x1598        
+        char m_LaunchParticle[0xe0]; // 0x15a0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Upgrade_AerialAssualtVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Upgrade_AerialAssualtVData) == 0x1678);
+    static_assert(sizeof(CCitadel_Upgrade_AerialAssualtVData) == 0x1680);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1678
+    // Size: 0x1680
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,14 +27,14 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Modifiers"
         // m_StunDelayModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_StunDelayModifier;
-        char m_StunDelayModifier[0x10]; // 0x1588        
+        char m_StunDelayModifier[0x10]; // 0x1590        
         // metadata: MPropertyGroupName "Visuals"
         // m_CastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastParticle;
-        char m_CastParticle[0xe0]; // 0x1598        
+        char m_CastParticle[0xe0]; // 0x15a0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemSingleTargetStunVData because it is not a standard-layout class
-    static_assert(sizeof(CItemSingleTargetStunVData) == 0x1678);
+    static_assert(sizeof(CItemSingleTargetStunVData) == 0x1680);
 };

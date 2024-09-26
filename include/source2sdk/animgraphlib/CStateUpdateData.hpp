@@ -37,7 +37,8 @@ namespace source2sdk::animgraphlib
         uint8_t m_bIsStartState: 1;
         uint8_t m_bIsEndState: 1;
         uint8_t m_bIsPassthrough: 1;
-        // end of bitfield block // 3 bits
+        uint8_t m_bIsPassthroughRootMotion: 1;
+        // end of bitfield block // 4 bits
         [[maybe_unused]] std::uint8_t pad_0x45[0x3];
     };
     #pragma pack(pop)
@@ -50,6 +51,7 @@ namespace source2sdk::animgraphlib
     // Cannot assert offset of bitfield CStateUpdateData::m_bIsStartState
     // Cannot assert offset of bitfield CStateUpdateData::m_bIsEndState
     // Cannot assert offset of bitfield CStateUpdateData::m_bIsPassthrough
+    // Cannot assert offset of bitfield CStateUpdateData::m_bIsPassthroughRootMotion
     
     static_assert(sizeof(CStateUpdateData) == 0x48);
 };

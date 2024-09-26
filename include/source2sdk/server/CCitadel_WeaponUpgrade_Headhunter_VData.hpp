@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15b8
+    // Size: 0x15c0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,13 +26,13 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Modifiers"
         // m_HeadshotBuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_HeadshotBuffModifier;
-        char m_HeadshotBuffModifier[0x10]; // 0x1588        
+        char m_HeadshotBuffModifier[0x10]; // 0x1590        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_HeadShotVictimSound; // 0x1598        
-        CSoundEventName m_HeadShotConfirmationSound; // 0x15a8        
+        CSoundEventName m_HeadShotVictimSound; // 0x15a0        
+        CSoundEventName m_HeadShotConfirmationSound; // 0x15b0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_Headhunter_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_WeaponUpgrade_Headhunter_VData) == 0x15b8);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_Headhunter_VData) == 0x15c0);
 };

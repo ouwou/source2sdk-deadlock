@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1550
+    // Size: 0x1558
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_MakeDaggersModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_MakeDaggersModifier;
-        char m_MakeDaggersModifier[0x10]; // 0x1540        
+        char m_MakeDaggersModifier[0x10]; // 0x1548        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_PsychicDaggerVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_PsychicDaggerVData) == 0x1550);
+    static_assert(sizeof(CCitadel_Ability_PsychicDaggerVData) == 0x1558);
 };

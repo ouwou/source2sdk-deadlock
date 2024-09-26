@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1690
+    // Size: 0x1698
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,29 +23,29 @@ namespace source2sdk::client
     class CNPC_TrooperBossVData : public client::CAI_NPC_TrooperVData
     {
     public:
-        bool m_bMitigateDamageFromPlayers; // 0x1620        
-        bool m_bBarracksGuardian; // 0x1621        
-        [[maybe_unused]] std::uint8_t pad_0x1622[0x2]; // 0x1622
-        float m_flPlayerAutoAttackRange; // 0x1624        
-        float m_flMinMeleeAttackTime; // 0x1628        
-        [[maybe_unused]] std::uint8_t pad_0x162c[0x4]; // 0x162c
+        bool m_bMitigateDamageFromPlayers; // 0x1628        
+        bool m_bBarracksGuardian; // 0x1629        
+        [[maybe_unused]] std::uint8_t pad_0x162a[0x2]; // 0x162a
+        float m_flPlayerAutoAttackRange; // 0x162c        
+        float m_flMinMeleeAttackTime; // 0x1630        
+        [[maybe_unused]] std::uint8_t pad_0x1634[0x4]; // 0x1634
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BackdoorProtectionModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BackdoorProtectionModifier;
-        char m_BackdoorProtectionModifier[0x10]; // 0x1630        
+        char m_BackdoorProtectionModifier[0x10]; // 0x1638        
         // m_BackdoorBulletResistModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BackdoorBulletResistModifier;
-        char m_BackdoorBulletResistModifier[0x10]; // 0x1640        
+        char m_BackdoorBulletResistModifier[0x10]; // 0x1648        
         // m_ObjectiveRegen has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ObjectiveRegen;
-        char m_ObjectiveRegen[0x10]; // 0x1650        
+        char m_ObjectiveRegen[0x10]; // 0x1658        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_sAngryStart; // 0x1660        
-        CSoundEventName m_sAngryLoop; // 0x1670        
-        CSoundEventName m_sAngryStop; // 0x1680        
+        CSoundEventName m_sAngryStart; // 0x1668        
+        CSoundEventName m_sAngryLoop; // 0x1678        
+        CSoundEventName m_sAngryStop; // 0x1688        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperBossVData because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperBossVData) == 0x1690);
+    static_assert(sizeof(CNPC_TrooperBossVData) == 0x1698);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd20
+    // Size: 0xd28
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CHandle< CCitadelProjectile> m_hProjectile"
@@ -30,11 +30,11 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // m_hProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_CitadelProjectile> m_hProjectile;
-        char m_hProjectile[0x4]; // 0xc70        
-        [[maybe_unused]] std::uint8_t pad_0xc74[0xac];
+        char m_hProjectile[0x4]; // 0xc78        
+        [[maybe_unused]] std::uint8_t pad_0xc7c[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_HatTrick because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_HatTrick) == 0xd20);
+    static_assert(sizeof(CCitadel_Ability_HatTrick) == 0xd28);
 };

@@ -24,6 +24,7 @@ namespace source2sdk::server
     // Size: 0xfc8
     // Has VTable
     // 
+    // static metadata: MNetworkVarNames "bool m_bIsRolling"
     // static metadata: MNetworkVarNames "CHandle< CCitadelViscousBall > m_hBall"
     // static metadata: MNetworkVarNames "EViscousBowlingBallState_t m_eRollingState"
     // static metadata: MNetworkVarNames "GameTime_t m_flNextStateTime"
@@ -37,7 +38,10 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xae8[0x348]; // 0xae8
         bool m_bHasAirJumped; // 0xe30        
-        bool m_bIsShowingBall; // 0xe31        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        // metadata: MNetworkChangeCallback "OnIsRollingChanged"
+        bool m_bIsRolling; // 0xe31        
         [[maybe_unused]] std::uint8_t pad_0xe32[0x2]; // 0xe32
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"

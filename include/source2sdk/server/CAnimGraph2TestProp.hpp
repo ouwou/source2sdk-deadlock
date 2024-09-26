@@ -16,12 +16,12 @@ namespace source2sdk::server
     // Standard-layout class: false
     // Size: 0xc60
     // Has VTable
+    // 
+    // static metadata: MNetworkIncludeByName "m_flAnimTime"
     #pragma pack(push, 1)
     class CAnimGraph2TestProp : public server::CDynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc58[0x8];
-        // No schema binary for binding
     };
     #pragma pack(pop)
     

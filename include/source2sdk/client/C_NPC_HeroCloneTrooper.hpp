@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x14a0
+    // Size: 0x14a8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hOwner"
@@ -30,11 +30,11 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hOwner;
-        char m_hOwner[0x4]; // 0x1498        
-        [[maybe_unused]] std::uint8_t pad_0x149c[0x4];
+        char m_hOwner[0x4]; // 0x14a0        
+        [[maybe_unused]] std::uint8_t pad_0x14a4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_HeroCloneTrooper because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_HeroCloneTrooper) == 0x14a0);
+    static_assert(sizeof(C_NPC_HeroCloneTrooper) == 0x14a8);
 };

@@ -14,16 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdf0
+    // Size: 0xdf8
     // Has VTable
+    // 
+    // static metadata: MNetworkIncludeByName "m_flAnimTime"
     #pragma pack(push, 1)
     class C_AnimGraph2TestProp : public client::C_DynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xde8[0x8];
-        // No schema binary for binding
+        [[maybe_unused]] std::uint8_t pad_0xdf0[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_AnimGraph2TestProp) == 0xdf0);
+    static_assert(sizeof(C_AnimGraph2TestProp) == 0xdf8);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1668
+    // Size: 0x1670
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_ReloadParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ReloadParticle;
-        char m_ReloadParticle[0xe0]; // 0x1588        
+        char m_ReloadParticle[0xe0]; // 0x1590        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_InstantReloadVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_WeaponUpgrade_InstantReloadVData) == 0x1668);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_InstantReloadVData) == 0x1670);
 };

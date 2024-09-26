@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 208
+    // Enumerator count: 209
     // Alignment: 4
     // Size: 0x4
     enum class EModifierValue : std::uint32_t
@@ -255,6 +255,7 @@ namespace source2sdk::client
         // MPropertyFriendlyName "Stamina"
         MODIFIER_VALUE_STAMINA = 0x9b,
         MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_ADDITIVE = 0x9c,
+        // MPropertyFriendlyName "StaminaRegenPercent"
         MODIFIER_VALUE_STAMINA_REGEN_PER_SECOND_PERCENTAGE = 0x9d,
         // MPropertyFriendlyName "WeaponPower"
         MODIFIER_VALUE_WEAPON_POWER = 0x9e,
@@ -328,8 +329,9 @@ namespace source2sdk::client
         MODIFIER_VALUE_PENDING_INCOMING_DAMAGE = 0xcb,
         MODIFIER_VALUE_CAMERA_WOBBLE_INTENSITY = 0xcc,
         MODIFIER_VALUE_CAMERA_WOBBLE_SPEED = 0xcd,
+        MODIFIER_VALUE_RESPAWN_TIME_ADDITIVE = 0xce,
         // MPropertySuppressEnumerator
-        MODIFIER_VALUE_COUNT = 0xce,
+        MODIFIER_VALUE_COUNT = 0xcf,
         // MPropertySuppressEnumerator
         MODIFIER_VALUE_INVALID = 0xff,
     };

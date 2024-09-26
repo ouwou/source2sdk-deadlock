@@ -21,7 +21,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe68
+    // Size: 0xe70
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flDashAngle"
@@ -39,41 +39,41 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flDashAngle; // 0xc70        
-        entity2::GameTime_t m_GroundDashExecuteTime; // 0xc74        
+        float m_flDashAngle; // 0xc78        
+        entity2::GameTime_t m_GroundDashExecuteTime; // 0xc7c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int32_t m_nLastGroundDashTick; // 0xc78        
+        int32_t m_nLastGroundDashTick; // 0xc80        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flGroundDashCastTime; // 0xc7c        
-        bool m_bTagCanActivateGroundDash; // 0xc80        
-        [[maybe_unused]] std::uint8_t pad_0xc81[0x7]; // 0xc81
+        entity2::GameTime_t m_flGroundDashCastTime; // 0xc84        
+        bool m_bTagCanActivateGroundDash; // 0xc88        
+        [[maybe_unused]] std::uint8_t pad_0xc89[0x7]; // 0xc89
         // metadata: MNetworkEnable
-        client::CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xc88        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAirDashCastTime; // 0xca0        
+        client::CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xc90        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAirDashDragStartTime; // 0xca4        
+        entity2::GameTime_t m_flAirDashCastTime; // 0xca8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nConsecutiveAirDashes; // 0xca8        
+        entity2::GameTime_t m_flAirDashDragStartTime; // 0xcac        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nConsecutiveDownDashes; // 0xca9        
+        int8_t m_nConsecutiveAirDashes; // 0xcb0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bDownAirDash; // 0xcaa        
-        [[maybe_unused]] std::uint8_t pad_0xcab[0x1b5]; // 0xcab
+        int8_t m_nConsecutiveDownDashes; // 0xcb1        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bDownAirDash; // 0xcb2        
+        [[maybe_unused]] std::uint8_t pad_0xcb3[0x1b5]; // 0xcb3
         // m_hJumpAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::CCitadel_Ability_Jump> m_hJumpAbility;
-        char m_hJumpAbility[0x4]; // 0xe60        
-        [[maybe_unused]] std::uint8_t pad_0xe64[0x4];
+        char m_hJumpAbility[0x4]; // 0xe68        
+        [[maybe_unused]] std::uint8_t pad_0xe6c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Dash because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Dash) == 0xe68);
+    static_assert(sizeof(CCitadel_Ability_Dash) == 0xe70);
 };
