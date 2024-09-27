@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x708
+    // Size: 0x6f8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -29,10 +29,9 @@ namespace source2sdk::server
         char m_ImpactParticle[0xe0]; // 0x608        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_strAttackerHitSound; // 0x6e8        
-        CSoundEventName m_strVictimHitSound; // 0x6f8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_BulletFlurryVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_BulletFlurryVData) == 0x708);
+    static_assert(sizeof(CCitadel_Modifier_BulletFlurryVData) == 0x6f8);
 };
