@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 11
+    // Enumerator count: 12
     // Alignment: 4
     // Size: 0x4
     enum class ECitadelClientMessages : std::uint32_t
@@ -24,5 +24,6 @@ namespace source2sdk::client
         CITADEL_CM_AbilityPing = 0x3f2,
         CITADEL_CM_ExecuteMapUnitAbility = 0x3f3,
         CITADEL_CM_GetDamageStats = 0x3f4,
+        CITADEL_CM_CheaterVote = 0x3f5,
     };
 };
