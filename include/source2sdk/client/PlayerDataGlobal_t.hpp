@@ -50,6 +50,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "GameTime_t m_flUltimateCooldownEnd"
     // static metadata: MNetworkVarNames "bool m_bHasRejuvenator"
     // static metadata: MNetworkVarNames "bool m_bHasRebirth"
+    // static metadata: MNetworkVarNames "bool m_bFlaggedAsCheater"
     // static metadata: MNetworkVarNames "int32 m_iHeroDamage"
     // static metadata: MNetworkVarNames "int32 m_iHeroHealing"
     // static metadata: MNetworkVarNames "int32 m_iSelfHealing"
@@ -128,7 +129,9 @@ namespace source2sdk::client
         bool m_bHasRejuvenator; // 0x74        
         // metadata: MNetworkEnable
         bool m_bHasRebirth; // 0x75        
-        [[maybe_unused]] std::uint8_t pad_0x76[0x2]; // 0x76
+        // metadata: MNetworkEnable
+        bool m_bFlaggedAsCheater; // 0x76        
+        [[maybe_unused]] std::uint8_t pad_0x77[0x1]; // 0x77
         // metadata: MNetworkEnable
         int32_t m_iHeroDamage; // 0x78        
         // metadata: MNetworkEnable
@@ -206,6 +209,7 @@ namespace source2sdk::client
     static_assert(offsetof(PlayerDataGlobal_t, m_flUltimateCooldownEnd) == 0x70);
     static_assert(offsetof(PlayerDataGlobal_t, m_bHasRejuvenator) == 0x74);
     static_assert(offsetof(PlayerDataGlobal_t, m_bHasRebirth) == 0x75);
+    static_assert(offsetof(PlayerDataGlobal_t, m_bFlaggedAsCheater) == 0x76);
     static_assert(offsetof(PlayerDataGlobal_t, m_iHeroDamage) == 0x78);
     static_assert(offsetof(PlayerDataGlobal_t, m_iHeroHealing) == 0x7c);
     static_assert(offsetof(PlayerDataGlobal_t, m_iSelfHealing) == 0x80);

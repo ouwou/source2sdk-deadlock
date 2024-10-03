@@ -25,12 +25,14 @@ namespace source2sdk::server
     class CCitadel_Modifier_TechBleed_Proc : public server::CCitadel_Modifier_BaseEventProc
     {
     public:
-        float m_flDamage; // 0x168        
-        int32_t m_nDamageTick; // 0x16c        
+        bool m_bNoDeath; // 0x168        
+        [[maybe_unused]] std::uint8_t pad_0x169[0x3]; // 0x169
+        float m_flDamage; // 0x16c        
+        int32_t m_nDamageTick; // 0x170        
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0x170        
-        [[maybe_unused]] std::uint8_t pad_0x174[0xe4];
+        char m_hTarget[0x4]; // 0x174        
+        [[maybe_unused]] std::uint8_t pad_0x178[0xe0];
     };
     #pragma pack(pop)
     

@@ -20,8 +20,10 @@ namespace source2sdk::server
     class CCitadel_Modifier_Tech_Bleed : public server::CCitadelModifier
     {
     public:
-        float m_flDamage; // 0xc0        
-        [[maybe_unused]] std::uint8_t pad_0xc4[0x3c];
+        bool m_bNoDeath; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xc1[0x3]; // 0xc1
+        float m_flDamage; // 0xc4        
+        [[maybe_unused]] std::uint8_t pad_0xc8[0x38];
     };
     #pragma pack(pop)
     
