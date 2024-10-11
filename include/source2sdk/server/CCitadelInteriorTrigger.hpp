@@ -1,28 +1,30 @@
 #pragma once
-#include "source2sdk/client/C_PointEntity.hpp"
+#include "source2sdk/server/CTriggerModifier.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: client
+// Module: server
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::client
+namespace source2sdk::server
 {
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x558
+    // Size: 0x9b0
     // Has VTable
     #pragma pack(push, 1)
-    class C_InfoPortalLink : public client::C_PointEntity
+    class CCitadelInteriorTrigger : public server::CTriggerModifier
     {
     public:
-        // No schema binary for binding
+        int32_t m_nInteriorType; // 0x9a8        
+        CUtlStringToken m_tInteriorModifier; // 0x9ac        
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_InfoPortalLink) == 0x558);
+    // Cannot assert offsets of fields in CCitadelInteriorTrigger because it is not a standard-layout class
+    static_assert(sizeof(CCitadelInteriorTrigger) == 0x9b0);
 };

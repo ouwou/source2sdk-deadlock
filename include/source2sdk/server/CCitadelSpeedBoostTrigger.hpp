@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x948
+    // Size: 0x9a8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelSpeedBoostTrigger : public server::CTriggerModifier
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelSpeedBoostTrigger) == 0x948);
+    static_assert(sizeof(CCitadelSpeedBoostTrigger) == 0x9a8);
 };

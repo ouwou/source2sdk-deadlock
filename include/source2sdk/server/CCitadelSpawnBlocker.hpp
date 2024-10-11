@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x788
+    // Size: 0x7e8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelSpawnBlocker : public server::CFuncBrush
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelSpawnBlocker) == 0x788);
+    static_assert(sizeof(CCitadelSpawnBlocker) == 0x7e8);
 };

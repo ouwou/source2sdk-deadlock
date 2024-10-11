@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa08
+    // Size: 0xa68
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flInitialRadius"
@@ -37,37 +37,37 @@ namespace source2sdk::server
     class CCitadelControlPointTrigger : public server::CTriggerMultiple
     {
     public:
-        entity2::CEntityIOOutput m_OnFullyCaptured; // 0x960        
-        entity2::CEntityIOOutput m_OnBecomeCapturable; // 0x988        
+        entity2::CEntityIOOutput m_OnFullyCaptured; // 0x9c0        
+        entity2::CEntityIOOutput m_OnBecomeCapturable; // 0x9e8        
         // metadata: MNetworkEnable
-        float m_flInitialRadius; // 0x9b0        
+        float m_flInitialRadius; // 0xa10        
         // metadata: MNetworkEnable
-        float m_flEndRadius; // 0x9b4        
+        float m_flEndRadius; // 0xa14        
         // metadata: MNetworkEnable
-        float m_flProgress; // 0x9b8        
+        float m_flProgress; // 0xa18        
         // metadata: MNetworkEnable
-        float m_flCaptureTime; // 0x9bc        
+        float m_flCaptureTime; // 0xa1c        
         // metadata: MNetworkEnable
         // m_hUnlockPrereq has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hUnlockPrereq;
-        char m_hUnlockPrereq[0x4]; // 0x9c0        
+        char m_hUnlockPrereq[0x4]; // 0xa20        
         // metadata: MNetworkEnable
-        bool m_bAvailable; // 0x9c4        
+        bool m_bAvailable; // 0xa24        
         // metadata: MNetworkEnable
-        bool m_bIsBeingCaptured; // 0x9c5        
+        bool m_bIsBeingCaptured; // 0xa25        
         // metadata: MNetworkEnable
-        bool m_bIsBeingBlocked; // 0x9c6        
-        [[maybe_unused]] std::uint8_t pad_0x9c7[0x9]; // 0x9c7
-        entity2::GameTime_t m_flLastTouchedTime; // 0x9d0        
-        Vector m_vecBeamTarget; // 0x9d4        
-        Vector m_vecBeamStart; // 0x9e0        
-        client::ParticleIndex_t m_nFXProgressBeam; // 0x9ec        
-        CUtlSymbolLarge m_strUnlockPrereq; // 0x9f0        
-        CUtlSymbolLarge m_strBeamStart; // 0x9f8        
-        CUtlSymbolLarge m_strBeamTarget; // 0xa00        
+        bool m_bIsBeingBlocked; // 0xa26        
+        [[maybe_unused]] std::uint8_t pad_0xa27[0x9]; // 0xa27
+        entity2::GameTime_t m_flLastTouchedTime; // 0xa30        
+        Vector m_vecBeamTarget; // 0xa34        
+        Vector m_vecBeamStart; // 0xa40        
+        client::ParticleIndex_t m_nFXProgressBeam; // 0xa4c        
+        CUtlSymbolLarge m_strUnlockPrereq; // 0xa50        
+        CUtlSymbolLarge m_strBeamStart; // 0xa58        
+        CUtlSymbolLarge m_strBeamTarget; // 0xa60        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelControlPointTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelControlPointTrigger) == 0xa08);
+    static_assert(sizeof(CCitadelControlPointTrigger) == 0xa68);
 };

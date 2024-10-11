@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4d8
+    // Size: 0x4e0
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CInfoParticleTarget) == 0x4d8);
+    static_assert(sizeof(CInfoParticleTarget) == 0x4e0);
 };

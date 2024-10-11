@@ -33,7 +33,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "EntitySubclassID_t m_vecUniversalItems"
     // static metadata: MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationSlots"
     // static metadata: MNetworkVarNames "int32 m_arPendingAsyncAbilityReservationAbilityIDs"
-    // static metadata: MNetworkVarNames "EHANDLE m_hSelectedAbility"
+    // static metadata: MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hSelectedAbility"
     // static metadata: MNetworkVarNames "EHANDLE m_hPreviouslySelectedAbility"
     // static metadata: MNetworkVarNames "bool m_bPreviousAbilityQueued"
     // static metadata: MNetworkVarNames "float m_flTimeScale"
@@ -74,7 +74,7 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "AbiCompSelectedAbilityChanged"
         // m_hSelectedAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CHandle<client::C_BaseEntity> m_hSelectedAbility;
+        // CHandle<client::C_CitadelBaseAbility> m_hSelectedAbility;
         char m_hSelectedAbility[0x4]; // 0xd0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
@@ -103,7 +103,9 @@ namespace source2sdk::client
         client::AbilityResource_t m_ResourceAbility; // 0x108        
         [[maybe_unused]] std::uint8_t pad_0x128[0x48]; // 0x128
         uint32_t m_nExecuteAbilityMask; // 0x170        
-        [[maybe_unused]] std::uint8_t pad_0x174[0x2c];
+        [[maybe_unused]] std::uint8_t pad_0x174[0x4]; // 0x174
+        bool m_bSelectedEffectsStarted; // 0x178        
+        [[maybe_unused]] std::uint8_t pad_0x179[0x27];
         
         // Static fields:
         static entity2::EntComponentInfo_t &Get_s_EntComponentInfo() {return *reinterpret_cast<entity2::EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CCitadelAbilityComponent")->GetStaticFields()[0]->m_pInstance);};

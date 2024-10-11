@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8b8
+    // Size: 0x8c8
     // Has VTable
     #pragma pack(push, 1)
     class C_Projectile_Synth_Barrage : public client::C_CitadelProjectile
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_Projectile_Synth_Barrage) == 0x8b8);
+    static_assert(sizeof(C_Projectile_Synth_Barrage) == 0x8c8);
 };

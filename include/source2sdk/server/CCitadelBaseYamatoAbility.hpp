@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaf0
+    // Size: 0xaf8
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
     class CCitadelBaseYamatoAbility : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xae8[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xaf0[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelBaseYamatoAbility) == 0xaf0);
+    static_assert(sizeof(CCitadelBaseYamatoAbility) == 0xaf8);
 };

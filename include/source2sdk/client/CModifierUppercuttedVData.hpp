@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x710
+    // Size: 0x720
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -34,12 +34,15 @@ namespace source2sdk::client
         // m_NoExplodeModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_NoExplodeModifier;
         char m_NoExplodeModifier[0x10]; // 0x6f8        
+        // m_ExplodeDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<client::CCitadelModifier> m_ExplodeDebuffModifier;
+        char m_ExplodeDebuffModifier[0x10]; // 0x708        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flEnemyNoAirDashDuration; // 0x708        
-        [[maybe_unused]] std::uint8_t pad_0x70c[0x4];
+        float m_flEnemyNoAirDashDuration; // 0x718        
+        [[maybe_unused]] std::uint8_t pad_0x71c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierUppercuttedVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierUppercuttedVData) == 0x710);
+    static_assert(sizeof(CModifierUppercuttedVData) == 0x720);
 };

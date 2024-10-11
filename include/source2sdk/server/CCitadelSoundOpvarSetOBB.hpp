@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x528
+    // Size: 0x530
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "string_t m_iszStackName"
@@ -30,25 +30,25 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszStackName; // 0x4d8        
+        CUtlSymbolLarge m_iszStackName; // 0x4e0        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszOperatorName; // 0x4e0        
+        CUtlSymbolLarge m_iszOperatorName; // 0x4e8        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszOpvarName; // 0x4e8        
+        CUtlSymbolLarge m_iszOpvarName; // 0x4f0        
         // metadata: MNetworkEnable
-        Vector m_vDistanceInnerMins; // 0x4f0        
+        Vector m_vDistanceInnerMins; // 0x4f8        
         // metadata: MNetworkEnable
-        Vector m_vDistanceInnerMaxs; // 0x4fc        
+        Vector m_vDistanceInnerMaxs; // 0x504        
         // metadata: MNetworkEnable
-        Vector m_vDistanceOuterMins; // 0x508        
+        Vector m_vDistanceOuterMins; // 0x510        
         // metadata: MNetworkEnable
-        Vector m_vDistanceOuterMaxs; // 0x514        
+        Vector m_vDistanceOuterMaxs; // 0x51c        
         // metadata: MNetworkEnable
-        int32_t m_nAABBDirection; // 0x520        
-        [[maybe_unused]] std::uint8_t pad_0x524[0x4];
+        int32_t m_nAABBDirection; // 0x528        
+        [[maybe_unused]] std::uint8_t pad_0x52c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelSoundOpvarSetOBB because it is not a standard-layout class
-    static_assert(sizeof(CCitadelSoundOpvarSetOBB) == 0x528);
+    static_assert(sizeof(CCitadelSoundOpvarSetOBB) == 0x530);
 };

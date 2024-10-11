@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1ba8
+    // Size: 0x1bb8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -59,9 +59,13 @@ namespace source2sdk::server
         float m_flLightMeleeDmg; // 0x1b9c        
         float m_flAbilityDamageScale; // 0x1ba0        
         float m_flNPCDamageScale; // 0x1ba4        
+        float m_flCastDelayMin; // 0x1ba8        
+        float m_flCastDelayMax; // 0x1bac        
+        float m_flCastDelayMaxDist; // 0x1bb0        
+        [[maybe_unused]] std::uint8_t pad_0x1bb4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ProximityRitual_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ProximityRitual_VData) == 0x1ba8);
+    static_assert(sizeof(CCitadel_Ability_ProximityRitual_VData) == 0x1bb8);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb48
+    // Size: 0xbe0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flUpFactor"
@@ -30,18 +30,18 @@ namespace source2sdk::server
     public:
         // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBaseAbility> m_hAbility;
-        char m_hAbility[0x4]; // 0xb30        
+        char m_hAbility[0x4]; // 0xbc8        
         // metadata: MNetworkEnable
-        float m_flUpFactor; // 0xb34        
+        float m_flUpFactor; // 0xbcc        
         // metadata: MNetworkEnable
-        float m_flBounceVelocity; // 0xb38        
-        float m_flBarrelBounceVelocity; // 0xb3c        
-        float m_flBarrelUpFactor; // 0xb40        
-        bool m_bSpeedOnLand; // 0xb44        
-        [[maybe_unused]] std::uint8_t pad_0xb45[0x3];
+        float m_flBounceVelocity; // 0xbd0        
+        float m_flBarrelBounceVelocity; // 0xbd4        
+        float m_flBarrelUpFactor; // 0xbd8        
+        bool m_bSpeedOnLand; // 0xbdc        
+        [[maybe_unused]] std::uint8_t pad_0xbdd[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Bounce_Pad because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Bounce_Pad) == 0xb48);
+    static_assert(sizeof(CCitadel_Bounce_Pad) == 0xbe0);
 };

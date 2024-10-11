@@ -24,7 +24,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x808
+    // Size: 0x868
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -63,85 +63,85 @@ namespace source2sdk::server
         // metadata: MNetworkMinValue "-25.000000"
         // metadata: MNetworkMaxValue "25.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flFrameRate; // 0x768        
+        float m_flFrameRate; // 0x7c8        
         // metadata: MNetworkEnable
-        float m_flHDRColorScale; // 0x76c        
-        entity2::GameTime_t m_flFireTime; // 0x770        
-        float m_flDamage; // 0x774        
+        float m_flHDRColorScale; // 0x7cc        
+        entity2::GameTime_t m_flFireTime; // 0x7d0        
+        float m_flDamage; // 0x7d4        
         // metadata: MNetworkEnable
-        uint8_t m_nNumBeamEnts; // 0x778        
-        [[maybe_unused]] std::uint8_t pad_0x779[0x7]; // 0x779
+        uint8_t m_nNumBeamEnts; // 0x7d8        
+        [[maybe_unused]] std::uint8_t pad_0x7d9[0x7]; // 0x7d9
         // metadata: MNetworkEnable
         // m_hBaseMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hBaseMaterial;
-        char m_hBaseMaterial[0x8]; // 0x780        
+        char m_hBaseMaterial[0x8]; // 0x7e0        
         // metadata: MNetworkEnable
         // m_nHaloIndex has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_nHaloIndex;
-        char m_nHaloIndex[0x8]; // 0x788        
+        char m_nHaloIndex[0x8]; // 0x7e8        
         // metadata: MNetworkEnable
-        client::BeamType_t m_nBeamType; // 0x790        
+        client::BeamType_t m_nBeamType; // 0x7f0        
         // metadata: MNetworkEnable
-        uint32_t m_nBeamFlags; // 0x794        
+        uint32_t m_nBeamFlags; // 0x7f4        
         // metadata: MNetworkEnable
         // m_hAttachEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hAttachEntity[10];
-        char m_hAttachEntity[0x28]; // 0x798        
+        char m_hAttachEntity[0x28]; // 0x7f8        
         // metadata: MNetworkEnable
-        modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0x7c0        
-        [[maybe_unused]] std::uint8_t pad_0x7ca[0x2]; // 0x7ca
-        // metadata: MNetworkEnable
-        // metadata: MNetworkBitCount "10"
-        // metadata: MNetworkMinValue "0.000000"
-        // metadata: MNetworkMaxValue "102.300003"
-        // metadata: MNetworkEncodeFlags "2"
-        float m_fWidth; // 0x7cc        
+        modellib::AttachmentHandle_t m_nAttachIndex[10]; // 0x820        
+        [[maybe_unused]] std::uint8_t pad_0x82a[0x2]; // 0x82a
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "10"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "102.300003"
         // metadata: MNetworkEncodeFlags "2"
-        float m_fEndWidth; // 0x7d0        
+        float m_fWidth; // 0x82c        
         // metadata: MNetworkEnable
-        float m_fFadeLength; // 0x7d4        
+        // metadata: MNetworkBitCount "10"
+        // metadata: MNetworkMinValue "0.000000"
+        // metadata: MNetworkMaxValue "102.300003"
+        // metadata: MNetworkEncodeFlags "2"
+        float m_fEndWidth; // 0x830        
         // metadata: MNetworkEnable
-        float m_fHaloScale; // 0x7d8        
+        float m_fFadeLength; // 0x834        
+        // metadata: MNetworkEnable
+        float m_fHaloScale; // 0x838        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "64.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_fAmplitude; // 0x7dc        
+        float m_fAmplitude; // 0x83c        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "256.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_fStartFrame; // 0x7e0        
+        float m_fStartFrame; // 0x840        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_fSpeed; // 0x7e4        
+        float m_fSpeed; // 0x844        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "20"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "256.000000"
         // metadata: MNetworkEncodeFlags "1"
         // metadata: MNetworkPriority "32"
-        float m_flFrame; // 0x7e8        
+        float m_flFrame; // 0x848        
         // metadata: MNetworkEnable
-        client::BeamClipStyle_t m_nClipStyle; // 0x7ec        
+        client::BeamClipStyle_t m_nClipStyle; // 0x84c        
         // metadata: MNetworkEnable
-        bool m_bTurnedOff; // 0x7f0        
-        [[maybe_unused]] std::uint8_t pad_0x7f1[0x3]; // 0x7f1
+        bool m_bTurnedOff; // 0x850        
+        [[maybe_unused]] std::uint8_t pad_0x851[0x3]; // 0x851
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecEndPos; // 0x7f4        
+        Vector m_vecEndPos; // 0x854        
         // m_hEndEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEndEntity;
-        char m_hEndEntity[0x4]; // 0x800        
-        int32_t m_nDissolveType; // 0x804        
+        char m_hEndEntity[0x4]; // 0x860        
+        int32_t m_nDissolveType; // 0x864        
         
         // Datamap fields:
         // float InputWidth; // 0x0
@@ -153,5 +153,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBeam because it is not a standard-layout class
-    static_assert(sizeof(CBeam) == 0x808);
+    static_assert(sizeof(CBeam) == 0x868);
 };

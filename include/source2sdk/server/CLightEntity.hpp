@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x770
+    // Size: 0x7d0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CLightComponent::Storage_t m_CLightComponent"
@@ -32,10 +32,10 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CLightComponent"
         // metadata: MNetworkAlias "CLightComponent"
         // metadata: MNetworkTypeAlias "CLightComponent"
-        server::CLightComponent* m_CLightComponent; // 0x768        
+        server::CLightComponent* m_CLightComponent; // 0x7c8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLightEntity because it is not a standard-layout class
-    static_assert(sizeof(CLightEntity) == 0x770);
+    static_assert(sizeof(CLightEntity) == 0x7d0);
 };

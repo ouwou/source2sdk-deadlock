@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x840
+    // Size: 0x850
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bAllowRotatingUp"
@@ -25,15 +25,15 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bAllowRotatingUp; // 0x838        
+        bool m_bAllowRotatingUp; // 0x848        
         // metadata: MNetworkEnable
-        bool m_bFixedPosition; // 0x839        
-        [[maybe_unused]] std::uint8_t pad_0x83a[0x2]; // 0x83a
+        bool m_bFixedPosition; // 0x849        
+        [[maybe_unused]] std::uint8_t pad_0x84a[0x2]; // 0x84a
         // metadata: MNetworkEnable
-        float m_flShieldOffset; // 0x83c        
+        float m_flShieldOffset; // 0x84c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_Shield because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_Shield) == 0x840);
+    static_assert(sizeof(C_Citadel_Shield) == 0x850);
 };

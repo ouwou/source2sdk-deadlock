@@ -21,7 +21,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x14a0
+    // Size: 0x14b0
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -43,37 +43,37 @@ namespace source2sdk::client
     class C_AI_CitadelNPC : public client::C_AI_BaseNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xd78[0x1c]; // 0xd78
+        [[maybe_unused]] std::uint8_t pad_0xd88[0x1c]; // 0xd88
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnEyeBeamActiveChanged"
-        bool m_bBeamActive; // 0xd94        
-        [[maybe_unused]] std::uint8_t pad_0xd95[0x3]; // 0xd95
+        bool m_bBeamActive; // 0xda4        
+        [[maybe_unused]] std::uint8_t pad_0xda5[0x3]; // 0xda5
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
         // metadata: MNetworkChangeCallback "OnEyeBeamTargetChanged"
-        Vector m_vEyeBeamTarget; // 0xd98        
-        [[maybe_unused]] std::uint8_t pad_0xda4[0x4b4]; // 0xda4
-        int32_t m_nPlayerTeamEvent; // 0x1258        
-        [[maybe_unused]] std::uint8_t pad_0x125c[0x4c]; // 0x125c
+        Vector m_vEyeBeamTarget; // 0xda8        
+        [[maybe_unused]] std::uint8_t pad_0xdb4[0x4b4]; // 0xdb4
+        int32_t m_nPlayerTeamEvent; // 0x1268        
+        [[maybe_unused]] std::uint8_t pad_0x126c[0x4c]; // 0x126c
         // metadata: MNetworkEnable
         // m_vecWeakPoints has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::WeakPoint_t> m_vecWeakPoints;
-        char m_vecWeakPoints[0x50]; // 0x12a8        
+        char m_vecWeakPoints[0x50]; // 0x12b8        
         // metadata: MNetworkEnable
-        bool m_bMinion; // 0x12f8        
-        [[maybe_unused]] std::uint8_t pad_0x12f9[0x3]; // 0x12f9
+        bool m_bMinion; // 0x1308        
+        [[maybe_unused]] std::uint8_t pad_0x1309[0x3]; // 0x1309
         // metadata: MNetworkEnable
         // m_hLookTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hLookTarget;
-        char m_hLookTarget[0x4]; // 0x12fc        
+        char m_hLookTarget[0x4]; // 0x130c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
         // metadata: MNetworkAlias "CCitadelAbilityComponent"
         // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1300        
+        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0x1310        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_AI_CitadelNPC because it is not a standard-layout class
-    static_assert(sizeof(C_AI_CitadelNPC) == 0x14a0);
+    static_assert(sizeof(C_AI_CitadelNPC) == 0x14b0);
 };

@@ -20,7 +20,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1330
+    // Size: 0x1338
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vBeamAimPos"
@@ -28,27 +28,27 @@ namespace source2sdk::client
     class CCitadel_Ability_IceBeam : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc78[0x618]; // 0xc78
-        entity2::GameTime_t m_flNextDamageTick; // 0x1290        
-        Vector m_vStart; // 0x1294        
-        Vector m_vEnd; // 0x12a0        
-        [[maybe_unused]] std::uint8_t pad_0x12ac[0x3c]; // 0x12ac
+        [[maybe_unused]] std::uint8_t pad_0xc80[0x618]; // 0xc80
+        entity2::GameTime_t m_flNextDamageTick; // 0x1298        
+        Vector m_vStart; // 0x129c        
+        Vector m_vEnd; // 0x12a8        
+        [[maybe_unused]] std::uint8_t pad_0x12b4[0x3c]; // 0x12b4
         // m_vecEntitiesHit has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<client::C_BaseEntity>> m_vecEntitiesHit;
-        char m_vecEntitiesHit[0x18]; // 0x12e8        
+        char m_vecEntitiesHit[0x18]; // 0x12f0        
         // metadata: MNetworkEnable
-        Vector m_vBeamAimPos; // 0x1300        
-        [[maybe_unused]] std::uint8_t pad_0x130c[0x4]; // 0x130c
+        Vector m_vBeamAimPos; // 0x1308        
+        [[maybe_unused]] std::uint8_t pad_0x1314[0x4]; // 0x1314
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "qangle"
         // metadata: MNetworkChangeCallback "OnBeamAnglesChanged"
-        QAngle m_angBeamAngles; // 0x1310        
-        [[maybe_unused]] std::uint8_t pad_0x131c[0xc]; // 0x131c
-        bool m_bNeedsBeamReset; // 0x1328        
-        [[maybe_unused]] std::uint8_t pad_0x1329[0x7];
+        QAngle m_angBeamAngles; // 0x1318        
+        [[maybe_unused]] std::uint8_t pad_0x1324[0xc]; // 0x1324
+        bool m_bNeedsBeamReset; // 0x1330        
+        [[maybe_unused]] std::uint8_t pad_0x1331[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_IceBeam because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_IceBeam) == 0x1330);
+    static_assert(sizeof(CCitadel_Ability_IceBeam) == 0x1338);
 };

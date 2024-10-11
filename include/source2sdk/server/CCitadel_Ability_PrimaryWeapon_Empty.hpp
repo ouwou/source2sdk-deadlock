@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb98
+    // Size: 0xba0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_PrimaryWeapon_Empty : public server::CCitadel_Ability_PrimaryWeapon
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Empty) == 0xb98);
+    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Empty) == 0xba0);
 };

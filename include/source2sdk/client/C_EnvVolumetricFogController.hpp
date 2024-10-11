@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5f8
+    // Size: 0x600
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -58,77 +58,77 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flScattering; // 0x558        
+        float m_flScattering; // 0x560        
         // metadata: MNetworkEnable
-        float m_flAnisotropy; // 0x55c        
+        float m_flAnisotropy; // 0x564        
         // metadata: MNetworkEnable
-        float m_flFadeSpeed; // 0x560        
+        float m_flFadeSpeed; // 0x568        
         // metadata: MNetworkEnable
-        float m_flDrawDistance; // 0x564        
+        float m_flDrawDistance; // 0x56c        
         // metadata: MNetworkEnable
-        float m_flFadeInStart; // 0x568        
+        float m_flFadeInStart; // 0x570        
         // metadata: MNetworkEnable
-        float m_flFadeInEnd; // 0x56c        
+        float m_flFadeInEnd; // 0x574        
         // metadata: MNetworkEnable
-        float m_flIndirectStrength; // 0x570        
+        float m_flIndirectStrength; // 0x578        
         // metadata: MNetworkEnable
-        int32_t m_nVolumeDepth; // 0x574        
+        int32_t m_nVolumeDepth; // 0x57c        
         // metadata: MNetworkEnable
-        float m_fFirstVolumeSliceThickness; // 0x578        
+        float m_fFirstVolumeSliceThickness; // 0x580        
         // metadata: MNetworkEnable
-        int32_t m_nIndirectTextureDimX; // 0x57c        
+        int32_t m_nIndirectTextureDimX; // 0x584        
         // metadata: MNetworkEnable
-        int32_t m_nIndirectTextureDimY; // 0x580        
+        int32_t m_nIndirectTextureDimY; // 0x588        
         // metadata: MNetworkEnable
-        int32_t m_nIndirectTextureDimZ; // 0x584        
+        int32_t m_nIndirectTextureDimZ; // 0x58c        
         // metadata: MNetworkEnable
-        Vector m_vBoxMins; // 0x588        
+        Vector m_vBoxMins; // 0x590        
         // metadata: MNetworkEnable
-        Vector m_vBoxMaxs; // 0x594        
+        Vector m_vBoxMaxs; // 0x59c        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0x5a0        
-        [[maybe_unused]] std::uint8_t pad_0x5a1[0x3]; // 0x5a1
+        bool m_bActive; // 0x5a8        
+        [[maybe_unused]] std::uint8_t pad_0x5a9[0x3]; // 0x5a9
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartAnisoTime; // 0x5a4        
+        entity2::GameTime_t m_flStartAnisoTime; // 0x5ac        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartScatterTime; // 0x5a8        
+        entity2::GameTime_t m_flStartScatterTime; // 0x5b0        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartDrawDistanceTime; // 0x5ac        
+        entity2::GameTime_t m_flStartDrawDistanceTime; // 0x5b4        
         // metadata: MNetworkEnable
-        float m_flStartAnisotropy; // 0x5b0        
+        float m_flStartAnisotropy; // 0x5b8        
         // metadata: MNetworkEnable
-        float m_flStartScattering; // 0x5b4        
+        float m_flStartScattering; // 0x5bc        
         // metadata: MNetworkEnable
-        float m_flStartDrawDistance; // 0x5b8        
+        float m_flStartDrawDistance; // 0x5c0        
         // metadata: MNetworkEnable
-        float m_flDefaultAnisotropy; // 0x5bc        
+        float m_flDefaultAnisotropy; // 0x5c4        
         // metadata: MNetworkEnable
-        float m_flDefaultScattering; // 0x5c0        
+        float m_flDefaultScattering; // 0x5c8        
         // metadata: MNetworkEnable
-        float m_flDefaultDrawDistance; // 0x5c4        
+        float m_flDefaultDrawDistance; // 0x5cc        
         // metadata: MNetworkEnable
-        bool m_bStartDisabled; // 0x5c8        
+        bool m_bStartDisabled; // 0x5d0        
         // metadata: MNetworkEnable
-        bool m_bEnableIndirect; // 0x5c9        
+        bool m_bEnableIndirect; // 0x5d1        
         // metadata: MNetworkEnable
-        bool m_bIndirectUseLPVs; // 0x5ca        
+        bool m_bIndirectUseLPVs; // 0x5d2        
         // metadata: MNetworkEnable
-        bool m_bIsMaster; // 0x5cb        
-        [[maybe_unused]] std::uint8_t pad_0x5cc[0x4]; // 0x5cc
+        bool m_bIsMaster; // 0x5d3        
+        [[maybe_unused]] std::uint8_t pad_0x5d4[0x4]; // 0x5d4
         // metadata: MNetworkEnable
         // m_hFogIndirectTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogIndirectTexture;
-        char m_hFogIndirectTexture[0x8]; // 0x5d0        
+        char m_hFogIndirectTexture[0x8]; // 0x5d8        
         // metadata: MNetworkEnable
-        int32_t m_nForceRefreshCount; // 0x5d8        
+        int32_t m_nForceRefreshCount; // 0x5e0        
         // metadata: MNetworkEnable
-        float m_fNoiseSpeed; // 0x5dc        
+        float m_fNoiseSpeed; // 0x5e4        
         // metadata: MNetworkEnable
-        float m_fNoiseStrength; // 0x5e0        
+        float m_fNoiseStrength; // 0x5e8        
         // metadata: MNetworkEnable
-        Vector m_vNoiseScale; // 0x5e4        
-        bool m_bFirstTime; // 0x5f0        
-        [[maybe_unused]] std::uint8_t pad_0x5f1[0x7];
+        Vector m_vNoiseScale; // 0x5ec        
+        bool m_bFirstTime; // 0x5f8        
+        [[maybe_unused]] std::uint8_t pad_0x5f9[0x7];
         
         // Datamap fields:
         // void InputSetToDefaults; // 0x0
@@ -144,5 +144,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvVolumetricFogController because it is not a standard-layout class
-    static_assert(sizeof(C_EnvVolumetricFogController) == 0x5f8);
+    static_assert(sizeof(C_EnvVolumetricFogController) == 0x600);
 };

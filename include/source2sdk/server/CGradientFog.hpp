@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x518
+    // Size: 0x520
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "HRenderTextureStrong m_hGradientFogTexture"
@@ -40,50 +40,50 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // m_hGradientFogTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hGradientFogTexture;
-        char m_hGradientFogTexture[0x8]; // 0x4d8        
+        char m_hGradientFogTexture[0x8]; // 0x4e0        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogStartDistance; // 0x4e0        
+        float m_flFogStartDistance; // 0x4e8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogEndDistance; // 0x4e4        
+        float m_flFogEndDistance; // 0x4ec        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        bool m_bHeightFogEnabled; // 0x4e8        
-        [[maybe_unused]] std::uint8_t pad_0x4e9[0x3]; // 0x4e9
+        bool m_bHeightFogEnabled; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4f1[0x3]; // 0x4f1
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogStartHeight; // 0x4ec        
+        float m_flFogStartHeight; // 0x4f4        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogEndHeight; // 0x4f0        
+        float m_flFogEndHeight; // 0x4f8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFarZ; // 0x4f4        
+        float m_flFarZ; // 0x4fc        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogMaxOpacity; // 0x4f8        
+        float m_flFogMaxOpacity; // 0x500        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogFalloffExponent; // 0x4fc        
+        float m_flFogFalloffExponent; // 0x504        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogVerticalExponent; // 0x500        
+        float m_flFogVerticalExponent; // 0x508        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        Color m_fogColor; // 0x504        
+        Color m_fogColor; // 0x50c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFogStrength; // 0x508        
+        float m_flFogStrength; // 0x510        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "FogStateChanged"
-        float m_flFadeTime; // 0x50c        
+        float m_flFadeTime; // 0x514        
         // metadata: MNetworkEnable
-        bool m_bStartDisabled; // 0x510        
+        bool m_bStartDisabled; // 0x518        
         // metadata: MNetworkEnable
-        bool m_bIsEnabled; // 0x511        
-        bool m_bGradientFogNeedsTextures; // 0x512        
-        [[maybe_unused]] std::uint8_t pad_0x513[0x5];
+        bool m_bIsEnabled; // 0x519        
+        bool m_bGradientFogNeedsTextures; // 0x51a        
+        [[maybe_unused]] std::uint8_t pad_0x51b[0x5];
         
         // Datamap fields:
         // bool InputEnable; // 0x0
@@ -102,5 +102,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CGradientFog because it is not a standard-layout class
-    static_assert(sizeof(CGradientFog) == 0x518);
+    static_assert(sizeof(CGradientFog) == 0x520);
 };

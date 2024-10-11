@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x940
+    // Size: 0x950
     // Has VTable
     #pragma pack(push, 1)
     class C_FireFromAboveSprite : public client::C_Sprite
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_FireFromAboveSprite) == 0x940);
+    static_assert(sizeof(C_FireFromAboveSprite) == 0x950);
 };

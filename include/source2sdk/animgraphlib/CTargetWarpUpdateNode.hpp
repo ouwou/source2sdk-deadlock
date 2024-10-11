@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x78
+    // Size: 0x70
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,14 +23,14 @@ namespace source2sdk::animgraphlib
     class CTargetWarpUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x4]; // 0x68
-        animgraphlib::CAnimParamHandle m_hPositionParameter; // 0x6c        
-        animgraphlib::CAnimParamHandle m_hFacePositionParameter; // 0x6e        
-        bool m_bFacingPositionIsWorldSpace; // 0x70        
-        [[maybe_unused]] std::uint8_t pad_0x71[0x7];
+        animgraphlib::CAnimParamHandle m_hTargetPositionParameter; // 0x68        
+        animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; // 0x6a        
+        bool m_bTargetFacePositionIsWorldSpace; // 0x6c        
+        bool m_bTargetPositionIsWorldSpace; // 0x6d        
+        [[maybe_unused]] std::uint8_t pad_0x6e[0x2];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTargetWarpUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CTargetWarpUpdateNode) == 0x78);
+    static_assert(sizeof(CTargetWarpUpdateNode) == 0x70);
 };

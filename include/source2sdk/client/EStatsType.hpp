@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 83
+    // Enumerator count: 84
     // Alignment: 4
     // Size: 0x4
     enum class EStatsType : std::uint32_t
@@ -68,7 +68,7 @@ namespace source2sdk::client
         EBuildUpRate = 0x34,
         EBaseWeaponDamagePerShot = 0x35,
         ETechLifesteal = 0x36,
-        ETechLifestealNonHero = 0x37,
+        ETechLifestealNonHero_DEPRECATED = 0x37,
         EBulletLifesteal = 0x38,
         EDamageScale = 0x39,
         EChannelDuration = 0x3a,
@@ -94,7 +94,8 @@ namespace source2sdk::client
         EStaminaRegenIncrease = 0x4e,
         EStaminaCooldown = 0x4f,
         EDebuffResist = 0x50,
-        EStatsCount = 0x51,
-        EStatsInvalid = 0x51,
+        ECritDamageBonusScale = 0x51,
+        EStatsCount = 0x52,
+        EStatsInvalid = 0x52,
     };
 };

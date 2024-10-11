@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x818
+    // Size: 0x878
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vecLadderDir"
@@ -34,28 +34,28 @@ namespace source2sdk::server
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecLadderDir; // 0x768        
-        [[maybe_unused]] std::uint8_t pad_0x774[0x4]; // 0x774
+        Vector m_vecLadderDir; // 0x7c8        
+        [[maybe_unused]] std::uint8_t pad_0x7d4[0x4]; // 0x7d4
         // m_Dismounts has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CInfoLadderDismount>> m_Dismounts;
-        char m_Dismounts[0x18]; // 0x778        
-        Vector m_vecLocalTop; // 0x790        
+        char m_Dismounts[0x18]; // 0x7d8        
+        Vector m_vecLocalTop; // 0x7f0        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecPlayerMountPositionTop; // 0x79c        
+        Vector m_vecPlayerMountPositionTop; // 0x7fc        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecPlayerMountPositionBottom; // 0x7a8        
+        Vector m_vecPlayerMountPositionBottom; // 0x808        
         // metadata: MNetworkEnable
-        float m_flAutoRideSpeed; // 0x7b4        
-        bool m_bDisabled; // 0x7b8        
+        float m_flAutoRideSpeed; // 0x814        
+        bool m_bDisabled; // 0x818        
         // metadata: MNetworkEnable
-        bool m_bFakeLadder; // 0x7b9        
-        bool m_bHasSlack; // 0x7ba        
-        [[maybe_unused]] std::uint8_t pad_0x7bb[0x5]; // 0x7bb
-        CUtlSymbolLarge m_surfacePropName; // 0x7c0        
-        entity2::CEntityIOOutput m_OnPlayerGotOnLadder; // 0x7c8        
-        entity2::CEntityIOOutput m_OnPlayerGotOffLadder; // 0x7f0        
+        bool m_bFakeLadder; // 0x819        
+        bool m_bHasSlack; // 0x81a        
+        [[maybe_unused]] std::uint8_t pad_0x81b[0x5]; // 0x81b
+        CUtlSymbolLarge m_surfacePropName; // 0x820        
+        entity2::CEntityIOOutput m_OnPlayerGotOnLadder; // 0x828        
+        entity2::CEntityIOOutput m_OnPlayerGotOffLadder; // 0x850        
         
         // Static fields:
         static CUtlVector<server::CFuncLadder*> &Get_s_Ladders() {return *reinterpret_cast<CUtlVector<server::CFuncLadder*>*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CFuncLadder")->GetStaticFields()[0]->m_pInstance);};
@@ -67,5 +67,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncLadder because it is not a standard-layout class
-    static_assert(sizeof(CFuncLadder) == 0x818);
+    static_assert(sizeof(CFuncLadder) == 0x878);
 };

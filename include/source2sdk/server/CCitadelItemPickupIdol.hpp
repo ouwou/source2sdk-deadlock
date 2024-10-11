@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5c30
+    // Size: 0x5cc8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelItemPickupIdol : public server::CCitadelItemPickup
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x5c28[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x5cc0[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelItemPickupIdol) == 0x5c30);
+    static_assert(sizeof(CCitadelItemPickupIdol) == 0x5cc8);
 };

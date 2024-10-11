@@ -14,25 +14,26 @@ namespace source2sdk::server
     // Registered alignment: 0x10
     // Alignment: 0x10
     // Standard-layout class: false
-    // Size: 0x530
+    // Size: 0x540
     // Has VTable
     #pragma pack(push, 1)
     class CPathKeyFrame : public server::CLogicalEntity
     {
     public:
-        Vector m_Origin; // 0x4d8        
-        QAngle m_Angles; // 0x4e4        
-        Quaternion m_qAngle; // 0x4f0        
-        CUtlSymbolLarge m_iNextKey; // 0x500        
-        float m_flNextTime; // 0x508        
-        [[maybe_unused]] std::uint8_t pad_0x50c[0x4]; // 0x50c
-        server::CPathKeyFrame* m_pNextKey; // 0x510        
-        server::CPathKeyFrame* m_pPrevKey; // 0x518        
-        float m_flMoveSpeed; // 0x520        
-        [[maybe_unused]] std::uint8_t pad_0x524[0xc];
+        Vector m_Origin; // 0x4e0        
+        QAngle m_Angles; // 0x4ec        
+        [[maybe_unused]] std::uint8_t pad_0x4f8[0x8]; // 0x4f8
+        Quaternion m_qAngle; // 0x500        
+        CUtlSymbolLarge m_iNextKey; // 0x510        
+        float m_flNextTime; // 0x518        
+        [[maybe_unused]] std::uint8_t pad_0x51c[0x4]; // 0x51c
+        server::CPathKeyFrame* m_pNextKey; // 0x520        
+        server::CPathKeyFrame* m_pPrevKey; // 0x528        
+        float m_flMoveSpeed; // 0x530        
+        [[maybe_unused]] std::uint8_t pad_0x534[0xc];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathKeyFrame because it is not a standard-layout class
-    static_assert(sizeof(CPathKeyFrame) == 0x530);
+    static_assert(sizeof(CPathKeyFrame) == 0x540);
 };

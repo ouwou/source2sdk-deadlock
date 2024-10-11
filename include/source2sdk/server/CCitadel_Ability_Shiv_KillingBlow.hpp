@@ -23,7 +23,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xef8
+    // Size: 0xf00
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
@@ -37,35 +37,35 @@ namespace source2sdk::server
     class CCitadel_Ability_Shiv_KillingBlow : public server::CCitadelBaseShivAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xae8[0x1c0]; // 0xae8
+        [[maybe_unused]] std::uint8_t pad_0xaf0[0x1c0]; // 0xaf0
         // metadata: MNetworkEnable
-        bool m_bActive; // 0xca8        
-        [[maybe_unused]] std::uint8_t pad_0xca9[0x3]; // 0xca9
+        bool m_bActive; // 0xcb0        
+        [[maybe_unused]] std::uint8_t pad_0xcb1[0x3]; // 0xcb1
         // metadata: MNetworkEnable
         // m_hCurrentTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hCurrentTarget;
-        char m_hCurrentTarget[0x4]; // 0xcac        
+        char m_hCurrentTarget[0x4]; // 0xcb4        
         // metadata: MNetworkEnable
-        Vector m_vStartPosition; // 0xcb0        
+        Vector m_vStartPosition; // 0xcb8        
         // metadata: MNetworkEnable
-        Vector m_vDeparturePosition; // 0xcbc        
+        Vector m_vDeparturePosition; // 0xcc4        
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flDepartureTime; // 0xcc8        
+        server::CCitadelAutoScaledTime m_flDepartureTime; // 0xcd0        
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flArrivalTime; // 0xce0        
-        Vector m_vLastKnownSafePos; // 0xcf8        
-        [[maybe_unused]] std::uint8_t pad_0xd04[0x4]; // 0xd04
-        client::ParticleIndex_t m_ChannelParticle; // 0xd08        
-        [[maybe_unused]] std::uint8_t pad_0xd0c[0xc]; // 0xd0c
+        server::CCitadelAutoScaledTime m_flArrivalTime; // 0xce8        
+        Vector m_vLastKnownSafePos; // 0xd00        
+        [[maybe_unused]] std::uint8_t pad_0xd0c[0x4]; // 0xd0c
+        client::ParticleIndex_t m_ChannelParticle; // 0xd10        
+        [[maybe_unused]] std::uint8_t pad_0xd14[0xc]; // 0xd14
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flDrainSuppressEndTime; // 0xd18        
-        [[maybe_unused]] std::uint8_t pad_0xd1c[0x1c4]; // 0xd1c
+        entity2::GameTime_t m_flDrainSuppressEndTime; // 0xd20        
+        [[maybe_unused]] std::uint8_t pad_0xd24[0x1c4]; // 0xd24
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CModifierHandleTyped<server::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x18]; // 0xee0        
+        char m_BuffModifier[0x18]; // 0xee8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Shiv_KillingBlow because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Shiv_KillingBlow) == 0xef8);
+    static_assert(sizeof(CCitadel_Ability_Shiv_KillingBlow) == 0xf00);
 };

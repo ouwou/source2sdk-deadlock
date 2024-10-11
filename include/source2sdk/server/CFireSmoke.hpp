@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f0
+    // Size: 0x4f8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int32 m_nFlameModelIndex"
@@ -24,12 +24,12 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_nFlameModelIndex; // 0x4e8        
+        int32_t m_nFlameModelIndex; // 0x4f0        
         // metadata: MNetworkEnable
-        int32_t m_nFlameFromAboveModelIndex; // 0x4ec        
+        int32_t m_nFlameFromAboveModelIndex; // 0x4f4        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFireSmoke because it is not a standard-layout class
-    static_assert(sizeof(CFireSmoke) == 0x4f0);
+    static_assert(sizeof(CFireSmoke) == 0x4f8);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x200
+    // Size: 0x238
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_NapalmProjectile : public server::CCitadel_Modifier_Intrinsic_Base
@@ -28,12 +28,12 @@ namespace source2sdk::server
         // m_vecHitEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecHitEntities;
         char m_vecHitEntities[0x18]; // 0xc0        
-        [[maybe_unused]] std::uint8_t pad_0xd8[0x118]; // 0xd8
-        Vector m_vInitialCastPosition; // 0x1f0        
-        float m_flProjectileSpeed; // 0x1fc        
+        [[maybe_unused]] std::uint8_t pad_0xd8[0x150]; // 0xd8
+        Vector m_vInitialCastPosition; // 0x228        
+        float m_flProjectileSpeed; // 0x234        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_NapalmProjectile because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_NapalmProjectile) == 0x200);
+    static_assert(sizeof(CCitadel_Modifier_NapalmProjectile) == 0x238);
 };

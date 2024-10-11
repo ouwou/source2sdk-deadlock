@@ -14,16 +14,18 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcc8
+    // Size: 0xce8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_BaseProjectileAOEModifier : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc90[0x38];
-        // No schema binary for binding
+        Vector m_vLaunchPosition; // 0xc98        
+        QAngle m_qLaunchAngle; // 0xca4        
+        [[maybe_unused]] std::uint8_t pad_0xcb0[0x38];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Item_BaseProjectileAOEModifier) == 0xcc8);
+    // Cannot assert offsets of fields in CCitadel_Item_BaseProjectileAOEModifier because it is not a standard-layout class
+    static_assert(sizeof(CCitadel_Item_BaseProjectileAOEModifier) == 0xce8);
 };

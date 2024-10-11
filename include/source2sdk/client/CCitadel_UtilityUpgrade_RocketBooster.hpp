@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xee8
+    // Size: 0xef0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flCastTime"
@@ -28,29 +28,29 @@ namespace source2sdk::client
     class CCitadel_UtilityUpgrade_RocketBooster : public client::CCitadel_UtilityUpgrade_RocketBoots
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xd00[0x4]; // 0xd00
-        client::ParticleIndex_t m_nTargetingParticleIndex; // 0xd04        
+        [[maybe_unused]] std::uint8_t pad_0xd08[0x4]; // 0xd08
+        client::ParticleIndex_t m_nTargetingParticleIndex; // 0xd0c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnCanSlamDownChanged"
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flCastTime; // 0xd08        
+        entity2::GameTime_t m_flCastTime; // 0xd10        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bCrashingDown; // 0xd0c        
+        bool m_bCrashingDown; // 0xd14        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bImpulseApplied; // 0xd0d        
-        [[maybe_unused]] std::uint8_t pad_0xd0e[0x2]; // 0xd0e
+        bool m_bImpulseApplied; // 0xd15        
+        [[maybe_unused]] std::uint8_t pad_0xd16[0x2]; // 0xd16
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecCrashPosition; // 0xd10        
+        Vector m_vecCrashPosition; // 0xd18        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecCrashDirection; // 0xd1c        
-        [[maybe_unused]] std::uint8_t pad_0xd28[0x1c0];
+        Vector m_vecCrashDirection; // 0xd24        
+        [[maybe_unused]] std::uint8_t pad_0xd30[0x1c0];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_UtilityUpgrade_RocketBooster because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_UtilityUpgrade_RocketBooster) == 0xee8);
+    static_assert(sizeof(CCitadel_UtilityUpgrade_RocketBooster) == 0xef0);
 };

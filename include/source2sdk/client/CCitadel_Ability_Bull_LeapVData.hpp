@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1990
+    // Size: 0x19a0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -65,9 +65,13 @@ namespace source2sdk::client
         float m_flBoostTime; // 0x1984        
         float m_flLandingTime; // 0x1988        
         float m_flCrashSpeed; // 0x198c        
+        float m_flHoverInputSpeedMax; // 0x1990        
+        float m_flHoverInputAcceleration; // 0x1994        
+        float m_flHoverSpeedDecay; // 0x1998        
+        [[maybe_unused]] std::uint8_t pad_0x199c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bull_LeapVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Bull_LeapVData) == 0x1990);
+    static_assert(sizeof(CCitadel_Ability_Bull_LeapVData) == 0x19a0);
 };

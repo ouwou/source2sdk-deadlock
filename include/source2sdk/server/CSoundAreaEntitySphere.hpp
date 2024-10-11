@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x500
+    // Size: 0x508
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flRadius"
@@ -23,11 +23,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        float m_flRadius; // 0x4f8        
-        [[maybe_unused]] std::uint8_t pad_0x4fc[0x4];
+        float m_flRadius; // 0x500        
+        [[maybe_unused]] std::uint8_t pad_0x504[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSoundAreaEntitySphere because it is not a standard-layout class
-    static_assert(sizeof(CSoundAreaEntitySphere) == 0x500);
+    static_assert(sizeof(CSoundAreaEntitySphere) == 0x508);
 };

@@ -1,29 +1,28 @@
 #pragma once
-#include "source2sdk/client/CCitadel_Modifier_Invis.hpp"
+#include "source2sdk/server/CCitadelBaseAbility.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: client
+// Module: server
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::client
+namespace source2sdk::server
 {
-    // Registered alignment: unknown
+    // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x348
+    // Size: 0xaf0
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Modifier_Ult_Shadow : public client::CCitadel_Modifier_Invis
+    class CCitadel_Ability_ShieldGuy_Ability04 : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x268[0xe0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_Ult_Shadow) == 0x348);
+    static_assert(sizeof(CCitadel_Ability_ShieldGuy_Ability04) == 0xaf0);
 };

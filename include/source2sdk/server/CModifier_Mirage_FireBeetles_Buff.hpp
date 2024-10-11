@@ -14,15 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc0
+    // Size: 0xf8
     // Has VTable
     #pragma pack(push, 1)
     class CModifier_Mirage_FireBeetles_Buff : public server::CCitadelModifier
     {
     public:
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CModifier_Mirage_FireBeetles_Buff) == 0xc0);
+    static_assert(sizeof(CModifier_Mirage_FireBeetles_Buff) == 0xf8);
 };

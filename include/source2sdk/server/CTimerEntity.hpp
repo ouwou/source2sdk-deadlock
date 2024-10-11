@@ -15,28 +15,28 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x578
+    // Size: 0x580
     // Has VTable
     #pragma pack(push, 1)
     class CTimerEntity : public server::CLogicalEntity
     {
     public:
-        entity2::CEntityIOOutput m_OnTimer; // 0x4d8        
-        entity2::CEntityIOOutput m_OnTimerHigh; // 0x500        
-        entity2::CEntityIOOutput m_OnTimerLow; // 0x528        
-        int32_t m_iDisabled; // 0x550        
-        float m_flInitialDelay; // 0x554        
-        float m_flRefireTime; // 0x558        
-        bool m_bUpDownState; // 0x55c        
-        [[maybe_unused]] std::uint8_t pad_0x55d[0x3]; // 0x55d
-        int32_t m_iUseRandomTime; // 0x560        
-        bool m_bPauseAfterFiring; // 0x564        
+        entity2::CEntityIOOutput m_OnTimer; // 0x4e0        
+        entity2::CEntityIOOutput m_OnTimerHigh; // 0x508        
+        entity2::CEntityIOOutput m_OnTimerLow; // 0x530        
+        int32_t m_iDisabled; // 0x558        
+        float m_flInitialDelay; // 0x55c        
+        float m_flRefireTime; // 0x560        
+        bool m_bUpDownState; // 0x564        
         [[maybe_unused]] std::uint8_t pad_0x565[0x3]; // 0x565
-        float m_flLowerRandomBound; // 0x568        
-        float m_flUpperRandomBound; // 0x56c        
-        float m_flRemainingTime; // 0x570        
-        bool m_bPaused; // 0x574        
-        [[maybe_unused]] std::uint8_t pad_0x575[0x3];
+        int32_t m_iUseRandomTime; // 0x568        
+        bool m_bPauseAfterFiring; // 0x56c        
+        [[maybe_unused]] std::uint8_t pad_0x56d[0x3]; // 0x56d
+        float m_flLowerRandomBound; // 0x570        
+        float m_flUpperRandomBound; // 0x574        
+        float m_flRemainingTime; // 0x578        
+        bool m_bPaused; // 0x57c        
+        [[maybe_unused]] std::uint8_t pad_0x57d[0x3];
         
         // Datamap fields:
         // float InputRefireTime; // 0x0
@@ -53,5 +53,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTimerEntity because it is not a standard-layout class
-    static_assert(sizeof(CTimerEntity) == 0x578);
+    static_assert(sizeof(CTimerEntity) == 0x580);
 };

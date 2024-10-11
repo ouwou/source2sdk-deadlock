@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x830
+    // Size: 0x840
     // Has VTable
     // 
     // static metadata: MNetworkOverride "m_angRotation CGameSceneNode"
@@ -26,5 +26,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_FuncRotating) == 0x830);
+    static_assert(sizeof(C_FuncRotating) == 0x840);
 };

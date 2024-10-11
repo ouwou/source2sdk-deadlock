@@ -15,19 +15,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbb8
+    // Size: 0xbc0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_ArmorUpgrade_PersonalRejuvenator : public server::CCitadel_Item
     {
     public:
-        bool m_bActivated; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb09[0x3]; // 0xb09
-        client::ParticleIndex_t m_nFxIndex; // 0xb0c        
-        [[maybe_unused]] std::uint8_t pad_0xb10[0xa8];
+        bool m_bActivated; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb11[0x3]; // 0xb11
+        client::ParticleIndex_t m_nFxIndex; // 0xb14        
+        [[maybe_unused]] std::uint8_t pad_0xb18[0xa8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_PersonalRejuvenator because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_ArmorUpgrade_PersonalRejuvenator) == 0xbb8);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_PersonalRejuvenator) == 0xbc0);
 };

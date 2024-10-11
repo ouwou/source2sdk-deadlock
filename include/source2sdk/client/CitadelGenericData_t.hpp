@@ -16,6 +16,7 @@
 #include "source2sdk/client/IdolParams_t.hpp"
 #include "source2sdk/client/LaneDesc_t.hpp"
 #include "source2sdk/client/NewPlayerMetrics_t.hpp"
+#include "source2sdk/client/ObjectivesParams_t.hpp"
 #include "source2sdk/client/RejuvinatorParams_t.hpp"
 #include "source2sdk/client/TeleporterParams_t.hpp"
 #include "source2sdk/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp"
@@ -33,7 +34,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0xe60
+    // Size: 0xec0
     // 
     // static metadata: MVDataRoot
     // static metadata: MVDataSingleton
@@ -79,18 +80,20 @@ namespace source2sdk::client
         [[maybe_unused]] std::uint8_t pad_0x620[0x58]; // 0x620
         client::DOFDesc_t m_DefaultDOF; // 0x678        
         client::RejuvinatorParams_t m_RejuvParams; // 0x688        
-        client::IdolParams_t m_IdolParams; // 0x6a8        
-        client::TeleporterParams_t m_TeleporterParams; // 0xc00        
+        client::IdolParams_t m_IdolParams; // 0x6d8        
+        client::TeleporterParams_t m_TeleporterParams; // 0xc30        
+        client::ObjectivesParams_t m_ObjectiveParams; // 0xe20        
+        [[maybe_unused]] std::uint8_t pad_0xe4c[0x4]; // 0xe4c
         // m_mapStatTypeImages has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EStatsType,CUtlString> m_mapStatTypeImages;
-        char m_mapStatTypeImages[0x28]; // 0xdf0        
+        char m_mapStatTypeImages[0x28]; // 0xe50        
         // metadata: MPropertyDescription "Remap camera angle delta to aim spring strength"
-        client::CRemapFloat m_AimSpringStrength; // 0xe18        
+        client::CRemapFloat m_AimSpringStrength; // 0xe78        
         // metadata: MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-        client::CRemapFloat m_TargetingSpringStrength; // 0xe28        
+        client::CRemapFloat m_TargetingSpringStrength; // 0xe88        
         // m_mapResourceTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EAbilityResourceType,client::HeroAbilityResourceDef_t> m_mapResourceTypes;
-        char m_mapResourceTypes[0x28]; // 0xe38        
+        char m_mapResourceTypes[0x28]; // 0xe98        
     };
     #pragma pack(pop)
     
@@ -114,12 +117,13 @@ namespace source2sdk::client
     static_assert(offsetof(CitadelGenericData_t, m_HeroTestingTargetDummyUpgrades) == 0x608);
     static_assert(offsetof(CitadelGenericData_t, m_DefaultDOF) == 0x678);
     static_assert(offsetof(CitadelGenericData_t, m_RejuvParams) == 0x688);
-    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x6a8);
-    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xc00);
-    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xdf0);
-    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xe18);
-    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xe28);
-    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xe38);
+    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x6d8);
+    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xc30);
+    static_assert(offsetof(CitadelGenericData_t, m_ObjectiveParams) == 0xe20);
+    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xe50);
+    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xe78);
+    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xe88);
+    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xe98);
     
-    static_assert(sizeof(CitadelGenericData_t) == 0xe60);
+    static_assert(sizeof(CitadelGenericData_t) == 0xec0);
 };

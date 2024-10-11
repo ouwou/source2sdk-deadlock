@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaa8
+    // Size: 0xab8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "char m_messageText"
@@ -35,32 +35,32 @@ namespace source2sdk::client
     class C_PointWorldText : public client::C_ModelPointEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x830[0x8]; // 0x830
-        bool m_bForceRecreateNextUpdate; // 0x838        
-        [[maybe_unused]] std::uint8_t pad_0x839[0xf]; // 0x839
+        [[maybe_unused]] std::uint8_t pad_0x840[0x8]; // 0x840
+        bool m_bForceRecreateNextUpdate; // 0x848        
+        [[maybe_unused]] std::uint8_t pad_0x849[0xf]; // 0x849
         // metadata: MNetworkEnable
-        char m_messageText[512]; // 0x848        
+        char m_messageText[512]; // 0x858        
         // metadata: MNetworkEnable
-        char m_FontName[64]; // 0xa48        
+        char m_FontName[64]; // 0xa58        
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0xa88        
+        bool m_bEnabled; // 0xa98        
         // metadata: MNetworkEnable
-        bool m_bFullbright; // 0xa89        
-        [[maybe_unused]] std::uint8_t pad_0xa8a[0x2]; // 0xa8a
+        bool m_bFullbright; // 0xa99        
+        [[maybe_unused]] std::uint8_t pad_0xa9a[0x2]; // 0xa9a
         // metadata: MNetworkEnable
-        float m_flWorldUnitsPerPx; // 0xa8c        
+        float m_flWorldUnitsPerPx; // 0xa9c        
         // metadata: MNetworkEnable
-        float m_flFontSize; // 0xa90        
+        float m_flFontSize; // 0xaa0        
         // metadata: MNetworkEnable
-        float m_flDepthOffset; // 0xa94        
+        float m_flDepthOffset; // 0xaa4        
         // metadata: MNetworkEnable
-        Color m_Color; // 0xa98        
+        Color m_Color; // 0xaa8        
         // metadata: MNetworkEnable
-        client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xa9c        
+        client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xaac        
         // metadata: MNetworkEnable
-        client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xaa0        
+        client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xab0        
         // metadata: MNetworkEnable
-        client::PointWorldTextReorientMode_t m_nReorientMode; // 0xaa4        
+        client::PointWorldTextReorientMode_t m_nReorientMode; // 0xab4        
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -72,5 +72,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PointWorldText because it is not a standard-layout class
-    static_assert(sizeof(C_PointWorldText) == 0xaa8);
+    static_assert(sizeof(C_PointWorldText) == 0xab8);
 };

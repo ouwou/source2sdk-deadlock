@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x788
+    // Size: 0x7e8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -34,26 +34,26 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        uint32_t m_nHorizontalSize; // 0x768        
+        uint32_t m_nHorizontalSize; // 0x7c8        
         // metadata: MNetworkEnable
-        uint32_t m_nVerticalSize; // 0x76c        
+        uint32_t m_nVerticalSize; // 0x7cc        
         // metadata: MNetworkEnable
-        uint32_t m_nMinDist; // 0x770        
+        uint32_t m_nMinDist; // 0x7d0        
         // metadata: MNetworkEnable
-        uint32_t m_nMaxDist; // 0x774        
+        uint32_t m_nMaxDist; // 0x7d4        
         // metadata: MNetworkEnable
-        uint32_t m_nOuterMaxDist; // 0x778        
+        uint32_t m_nOuterMaxDist; // 0x7d8        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "6"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "64.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flGlowProxySize; // 0x77c        
+        float m_flGlowProxySize; // 0x7dc        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_flHDRColorScale; // 0x780        
-        [[maybe_unused]] std::uint8_t pad_0x784[0x4];
+        float m_flHDRColorScale; // 0x7e0        
+        [[maybe_unused]] std::uint8_t pad_0x7e4[0x4];
         
         // Datamap fields:
         // Color InputColor; // 0x0
@@ -61,5 +61,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLightGlow because it is not a standard-layout class
-    static_assert(sizeof(CLightGlow) == 0x788);
+    static_assert(sizeof(CLightGlow) == 0x7e8);
 };

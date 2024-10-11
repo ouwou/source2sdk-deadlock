@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x948
+    // Size: 0x958
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -35,31 +35,31 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        uint32_t m_nHorizontalSize; // 0x830        
+        uint32_t m_nHorizontalSize; // 0x840        
         // metadata: MNetworkEnable
-        uint32_t m_nVerticalSize; // 0x834        
+        uint32_t m_nVerticalSize; // 0x844        
         // metadata: MNetworkEnable
-        uint32_t m_nMinDist; // 0x838        
+        uint32_t m_nMinDist; // 0x848        
         // metadata: MNetworkEnable
-        uint32_t m_nMaxDist; // 0x83c        
+        uint32_t m_nMaxDist; // 0x84c        
         // metadata: MNetworkEnable
-        uint32_t m_nOuterMaxDist; // 0x840        
+        uint32_t m_nOuterMaxDist; // 0x850        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "6"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "64.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flGlowProxySize; // 0x844        
+        float m_flGlowProxySize; // 0x854        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
         // metadata: MNetworkChangeCallback "OnHDRColorScaleChanged"
-        float m_flHDRColorScale; // 0x848        
-        [[maybe_unused]] std::uint8_t pad_0x84c[0x4]; // 0x84c
-        client::C_LightGlowOverlay m_GlowOverlay; // 0x850        
+        float m_flHDRColorScale; // 0x858        
+        [[maybe_unused]] std::uint8_t pad_0x85c[0x4]; // 0x85c
+        client::C_LightGlowOverlay m_GlowOverlay; // 0x860        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_LightGlow because it is not a standard-layout class
-    static_assert(sizeof(C_LightGlow) == 0x948);
+    static_assert(sizeof(C_LightGlow) == 0x958);
 };

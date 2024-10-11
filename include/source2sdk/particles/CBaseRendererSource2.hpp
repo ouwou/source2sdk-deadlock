@@ -29,7 +29,7 @@ namespace source2sdk::particles
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2ab8
+    // Size: 0x2c18
     // Has VTable
     // Is Abstract
     // 
@@ -259,27 +259,31 @@ namespace source2sdk::particles
         // metadata: MPropertyFriendlyName "particle feathering farthest distance to surface"
         // metadata: MPropertySortPriority "900"
         particleslib::CParticleCollectionRendererFloatInput m_flFeatheringMaxDist; // 0x2438        
-        // metadata: MPropertyFriendlyName "particle feathering filter"
+        // metadata: MPropertyFriendlyName "particle feathering alpha filter"
         // metadata: MPropertySortPriority "900"
         particleslib::CParticleCollectionRendererFloatInput m_flFeatheringFilter; // 0x2598        
+        // metadata: MPropertyFriendlyName "particle feathering depthmap layer filter"
+        // metadata: MPropertySortPriority "900"
+        // metadata: MPropertySuppressExpr "mod != hlx"
+        particleslib::CParticleCollectionRendererFloatInput m_flFeatheringDepthMapFilter; // 0x26f8        
         // metadata: MPropertyFriendlyName "depth comparison bias"
         // metadata: MPropertySortPriority "900"
-        particleslib::CParticleCollectionRendererFloatInput m_flDepthBias; // 0x26f8        
+        particleslib::CParticleCollectionRendererFloatInput m_flDepthBias; // 0x2858        
         // metadata: MPropertyFriendlyName "Sort Method"
         // metadata: MPropertySortPriority "900"
-        particles::ParticleSortingChoiceList_t m_nSortMethod; // 0x2858        
+        particles::ParticleSortingChoiceList_t m_nSortMethod; // 0x29b8        
         // metadata: MPropertyStartGroup "Animation"
         // metadata: MPropertyFriendlyName "blend sequence animation frames"
         // metadata: MPropertySortPriority "500"
-        bool m_bBlendFramesSeq0; // 0x285c        
+        bool m_bBlendFramesSeq0; // 0x29bc        
         // metadata: MPropertyFriendlyName "use max-luminance blending for sequence"
         // metadata: MPropertySortPriority "500"
         // metadata: MPropertySuppressExpr "!m_bBlendFramesSeq0"
-        bool m_bMaxLuminanceBlendingSequence0; // 0x285d        
-        [[maybe_unused]] std::uint8_t pad_0x285e[0x25a];
+        bool m_bMaxLuminanceBlendingSequence0; // 0x29bd        
+        [[maybe_unused]] std::uint8_t pad_0x29be[0x25a];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseRendererSource2 because it is not a standard-layout class
-    static_assert(sizeof(CBaseRendererSource2) == 0x2ab8);
+    static_assert(sizeof(CBaseRendererSource2) == 0x2c18);
 };

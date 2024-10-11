@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9f0
+    // Size: 0xa50
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bIsUsable"
@@ -25,43 +25,43 @@ namespace source2sdk::server
     class CBaseDoor : public server::CBaseToggle
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x7e8[0x10]; // 0x7e8
-        QAngle m_angMoveEntitySpace; // 0x7f8        
-        Vector m_vecMoveDirParentSpace; // 0x804        
-        server::locksound_t m_ls; // 0x810        
-        bool m_bForceClosed; // 0x830        
-        bool m_bDoorGroup; // 0x831        
-        bool m_bLocked; // 0x832        
-        bool m_bIgnoreDebris; // 0x833        
-        server::FuncDoorSpawnPos_t m_eSpawnPosition; // 0x834        
-        float m_flBlockDamage; // 0x838        
-        [[maybe_unused]] std::uint8_t pad_0x83c[0x4]; // 0x83c
-        CUtlSymbolLarge m_NoiseMoving; // 0x840        
-        CUtlSymbolLarge m_NoiseArrived; // 0x848        
-        CUtlSymbolLarge m_NoiseMovingClosed; // 0x850        
-        CUtlSymbolLarge m_NoiseArrivedClosed; // 0x858        
-        CUtlSymbolLarge m_ChainTarget; // 0x860        
-        entity2::CEntityIOOutput m_OnBlockedClosing; // 0x868        
-        entity2::CEntityIOOutput m_OnBlockedOpening; // 0x890        
-        entity2::CEntityIOOutput m_OnUnblockedClosing; // 0x8b8        
-        entity2::CEntityIOOutput m_OnUnblockedOpening; // 0x8e0        
-        entity2::CEntityIOOutput m_OnFullyClosed; // 0x908        
-        entity2::CEntityIOOutput m_OnFullyOpen; // 0x930        
-        entity2::CEntityIOOutput m_OnClose; // 0x958        
-        entity2::CEntityIOOutput m_OnOpen; // 0x980        
-        entity2::CEntityIOOutput m_OnLockedUse; // 0x9a8        
-        bool m_bLoopMoveSound; // 0x9d0        
-        [[maybe_unused]] std::uint8_t pad_0x9d1[0x17]; // 0x9d1
-        bool m_bCreateNavObstacle; // 0x9e8        
-        bool m_isChaining; // 0x9e9        
+        [[maybe_unused]] std::uint8_t pad_0x848[0x10]; // 0x848
+        QAngle m_angMoveEntitySpace; // 0x858        
+        Vector m_vecMoveDirParentSpace; // 0x864        
+        server::locksound_t m_ls; // 0x870        
+        bool m_bForceClosed; // 0x890        
+        bool m_bDoorGroup; // 0x891        
+        bool m_bLocked; // 0x892        
+        bool m_bIgnoreDebris; // 0x893        
+        server::FuncDoorSpawnPos_t m_eSpawnPosition; // 0x894        
+        float m_flBlockDamage; // 0x898        
+        [[maybe_unused]] std::uint8_t pad_0x89c[0x4]; // 0x89c
+        CUtlSymbolLarge m_NoiseMoving; // 0x8a0        
+        CUtlSymbolLarge m_NoiseArrived; // 0x8a8        
+        CUtlSymbolLarge m_NoiseMovingClosed; // 0x8b0        
+        CUtlSymbolLarge m_NoiseArrivedClosed; // 0x8b8        
+        CUtlSymbolLarge m_ChainTarget; // 0x8c0        
+        entity2::CEntityIOOutput m_OnBlockedClosing; // 0x8c8        
+        entity2::CEntityIOOutput m_OnBlockedOpening; // 0x8f0        
+        entity2::CEntityIOOutput m_OnUnblockedClosing; // 0x918        
+        entity2::CEntityIOOutput m_OnUnblockedOpening; // 0x940        
+        entity2::CEntityIOOutput m_OnFullyClosed; // 0x968        
+        entity2::CEntityIOOutput m_OnFullyOpen; // 0x990        
+        entity2::CEntityIOOutput m_OnClose; // 0x9b8        
+        entity2::CEntityIOOutput m_OnOpen; // 0x9e0        
+        entity2::CEntityIOOutput m_OnLockedUse; // 0xa08        
+        bool m_bLoopMoveSound; // 0xa30        
+        [[maybe_unused]] std::uint8_t pad_0xa31[0x17]; // 0xa31
+        bool m_bCreateNavObstacle; // 0xa48        
+        bool m_isChaining; // 0xa49        
         // metadata: MNetworkEnable
-        bool m_bIsUsable; // 0x9ea        
-        [[maybe_unused]] std::uint8_t pad_0x9eb[0x5];
+        bool m_bIsUsable; // 0xa4a        
+        [[maybe_unused]] std::uint8_t pad_0xa4b[0x5];
         
         // Datamap fields:
-        // void m_nMovingSoundGUID; // 0x9d4
-        //  m_ls.sLockedSound; // 0x818
-        //  m_ls.sUnlockedSound; // 0x820
+        // void m_nMovingSoundGUID; // 0xa34
+        //  m_ls.sLockedSound; // 0x878
+        //  m_ls.sUnlockedSound; // 0x880
         // void InputOpen; // 0x0
         // void InputClose; // 0x0
         // void InputToggle; // 0x0
@@ -80,5 +80,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseDoor because it is not a standard-layout class
-    static_assert(sizeof(CBaseDoor) == 0x9f0);
+    static_assert(sizeof(CBaseDoor) == 0xa50);
 };

@@ -25,31 +25,31 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x508
+    // Size: 0x510
     // Has VTable
     #pragma pack(push, 1)
     class CPhysicsNPCSolver : public server::CLogicalEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4d8[0x8]; // 0x4d8
-        server::CPhysicsNPCSolver* m_pNext; // 0x4e0        
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x8]; // 0x4e0
+        server::CPhysicsNPCSolver* m_pNext; // 0x4e8        
         // m_hNPC has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CAI_BaseNPC> m_hNPC;
-        char m_hNPC[0x4]; // 0x4e8        
+        char m_hNPC[0x4]; // 0x4f0        
         // m_hEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEntity;
-        char m_hEntity[0x4]; // 0x4ec        
-        [[maybe_unused]] std::uint8_t pad_0x4f0[0x8]; // 0x4f0
-        float m_separationDuration; // 0x4f8        
-        entity2::GameTime_t m_cancelTime; // 0x4fc        
-        bool m_allowIntersection; // 0x500        
-        [[maybe_unused]] std::uint8_t pad_0x501[0x7];
+        char m_hEntity[0x4]; // 0x4f4        
+        [[maybe_unused]] std::uint8_t pad_0x4f8[0x8]; // 0x4f8
+        float m_separationDuration; // 0x500        
+        entity2::GameTime_t m_cancelTime; // 0x504        
+        bool m_allowIntersection; // 0x508        
+        [[maybe_unused]] std::uint8_t pad_0x509[0x7];
         
         // Datamap fields:
-        // void m_pController; // 0x4f0
+        // void m_pController; // 0x4f8
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysicsNPCSolver because it is not a standard-layout class
-    static_assert(sizeof(CPhysicsNPCSolver) == 0x508);
+    static_assert(sizeof(CPhysicsNPCSolver) == 0x510);
 };

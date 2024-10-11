@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1980
+    // Size: 0x1a60
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -45,13 +45,16 @@ namespace source2sdk::client
         // m_HitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HitParticle;
         char m_HitParticle[0xe0]; // 0x1808        
+        // m_RadiusParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RadiusParticle;
+        char m_RadiusParticle[0xe0]; // 0x18e8        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strExpireSound; // 0x18e8        
+        CSoundEventName m_strExpireSound; // 0x19c8        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceInSatchel; // 0x18f8        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceInSatchel; // 0x19d8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Pulse_VData because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Synth_Pulse_VData) == 0x1980);
+    static_assert(sizeof(CAbility_Synth_Pulse_VData) == 0x1a60);
 };

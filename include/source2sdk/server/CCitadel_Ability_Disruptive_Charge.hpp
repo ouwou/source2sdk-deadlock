@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb90
+    // Size: 0xb98
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Disruptive_Charge : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xae8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xaf0[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Disruptive_Charge) == 0xb90);
+    static_assert(sizeof(CCitadel_Ability_Disruptive_Charge) == 0xb98);
 };

@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xec8
+    // Size: 0xed0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EViscousChargedGunState m_ChargeState"
@@ -29,21 +29,21 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        client::EViscousChargedGunState m_ChargeState; // 0xc78        
+        client::EViscousChargedGunState m_ChargeState; // 0xc80        
         // metadata: MNetworkEnable
-        float m_nClipConsumed; // 0xc7c        
+        float m_nClipConsumed; // 0xc84        
         // metadata: MNetworkEnable
-        bool m_bIsCharging; // 0xc80        
+        bool m_bIsCharging; // 0xc88        
         // metadata: MNetworkEnable
-        bool m_bIsToggled; // 0xc81        
-        [[maybe_unused]] std::uint8_t pad_0xc82[0x2]; // 0xc82
-        client::ParticleIndex_t m_fxChargingParticle; // 0xc84        
-        [[maybe_unused]] std::uint8_t pad_0xc88[0x8]; // 0xc88
-        entity2::GameTime_t m_flLastBulletConsumedTime; // 0xc90        
-        [[maybe_unused]] std::uint8_t pad_0xc94[0x234];
+        bool m_bIsToggled; // 0xc89        
+        [[maybe_unused]] std::uint8_t pad_0xc8a[0x2]; // 0xc8a
+        client::ParticleIndex_t m_fxChargingParticle; // 0xc8c        
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x8]; // 0xc90
+        entity2::GameTime_t m_flLastBulletConsumedTime; // 0xc98        
+        [[maybe_unused]] std::uint8_t pad_0xc9c[0x234];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ViscousWeapon_Alt because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ViscousWeapon_Alt) == 0xec8);
+    static_assert(sizeof(CCitadel_Ability_ViscousWeapon_Alt) == 0xed0);
 };

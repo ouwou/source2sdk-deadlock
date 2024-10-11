@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x580
+    // Size: 0x588
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -31,22 +31,22 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flAutoExposureMin; // 0x558        
+        float m_flAutoExposureMin; // 0x560        
         // metadata: MNetworkEnable
-        float m_flAutoExposureMax; // 0x55c        
+        float m_flAutoExposureMax; // 0x564        
         // metadata: MNetworkEnable
-        float m_flTonemapPercentTarget; // 0x560        
+        float m_flTonemapPercentTarget; // 0x568        
         // metadata: MNetworkEnable
-        float m_flTonemapPercentBrightPixels; // 0x564        
+        float m_flTonemapPercentBrightPixels; // 0x56c        
         // metadata: MNetworkEnable
-        float m_flTonemapMinAvgLum; // 0x568        
+        float m_flTonemapMinAvgLum; // 0x570        
         // metadata: MNetworkEnable
-        float m_flExposureAdaptationSpeedUp; // 0x56c        
+        float m_flExposureAdaptationSpeedUp; // 0x574        
         // metadata: MNetworkEnable
-        float m_flExposureAdaptationSpeedDown; // 0x570        
+        float m_flExposureAdaptationSpeedDown; // 0x578        
         // metadata: MNetworkEnable
-        float m_flTonemapEVSmoothingRange; // 0x574        
-        [[maybe_unused]] std::uint8_t pad_0x578[0x8];
+        float m_flTonemapEVSmoothingRange; // 0x57c        
+        [[maybe_unused]] std::uint8_t pad_0x580[0x8];
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -62,5 +62,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_TonemapController2 because it is not a standard-layout class
-    static_assert(sizeof(C_TonemapController2) == 0x580);
+    static_assert(sizeof(C_TonemapController2) == 0x588);
 };

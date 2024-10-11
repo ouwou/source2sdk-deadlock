@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1c8
+    // Size: 0x1e8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -97,7 +97,7 @@ namespace source2sdk::server
         float m_flPrimaryDropChance; // 0x180        
         // metadata: MPropertyDescription "Category for the random roller"
         client::ECitadelRandomRollTypes m_eRollType; // 0x184        
-        // metadata: MPropertyStartGroup "Pickup rewards"
+        // metadata: MPropertyStartGroup "Level 1 Pickup rewards"
         // metadata: MPropertyDescription "Primary Pickups are rolled first."
         // m_vecPrimaryPickups has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::BreakablePowerupDropDefinition_t> m_vecPrimaryPickups;
@@ -108,12 +108,18 @@ namespace source2sdk::server
         // m_vecPickups_lv2 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::BreakablePowerupDropDefinition_t> m_vecPickups_lv2;
         char m_vecPickups_lv2[0x18]; // 0x1a8        
+        // metadata: MPropertyDescription "Level 3 Rewards"
+        int32_t m_iMatchTimeMinsForLevel3Pickups; // 0x1c0        
+        [[maybe_unused]] std::uint8_t pad_0x1c4[0x4]; // 0x1c4
+        // m_vecPickups_lv3 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlVector<client::BreakablePowerupDropDefinition_t> m_vecPickups_lv3;
+        char m_vecPickups_lv3[0x18]; // 0x1c8        
         // metadata: MPropertyDescription "How many times each entry should be in the 'card deck'"
-        int32_t m_iLootListDeckSize; // 0x1c0        
-        [[maybe_unused]] std::uint8_t pad_0x1c4[0x4];
+        int32_t m_iLootListDeckSize; // 0x1e0        
+        [[maybe_unused]] std::uint8_t pad_0x1e4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropVData) == 0x1c8);
+    static_assert(sizeof(CCitadel_BreakablePropVData) == 0x1e8);
 };

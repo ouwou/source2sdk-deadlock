@@ -25,40 +25,40 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x640
+    // Size: 0x648
     // Has VTable
     #pragma pack(push, 1)
     class CNavLinkAreaEntity : public server::CPointEntity
     {
     public:
-        float m_flWidth; // 0x4d8        
-        Vector m_vLocatorOffset; // 0x4dc        
-        QAngle m_qLocatorAnglesOffset; // 0x4e8        
-        [[maybe_unused]] std::uint8_t pad_0x4f4[0x4]; // 0x4f4
-        CUtlSymbolLarge m_strMovementForward; // 0x4f8        
-        CUtlSymbolLarge m_strMovementReverse; // 0x500        
-        int32_t m_nNavLinkIdForward; // 0x508        
-        int32_t m_nNavLinkIdReverse; // 0x50c        
-        bool m_bEnabled; // 0x510        
-        [[maybe_unused]] std::uint8_t pad_0x511[0x7]; // 0x511
-        CUtlSymbolLarge m_strFilterName; // 0x518        
+        float m_flWidth; // 0x4e0        
+        Vector m_vLocatorOffset; // 0x4e4        
+        QAngle m_qLocatorAnglesOffset; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4fc[0x4]; // 0x4fc
+        CUtlSymbolLarge m_strMovementForward; // 0x500        
+        CUtlSymbolLarge m_strMovementReverse; // 0x508        
+        int32_t m_nNavLinkIdForward; // 0x510        
+        int32_t m_nNavLinkIdReverse; // 0x514        
+        bool m_bEnabled; // 0x518        
+        [[maybe_unused]] std::uint8_t pad_0x519[0x7]; // 0x519
+        CUtlSymbolLarge m_strFilterName; // 0x520        
         // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseFilter> m_hFilter;
-        char m_hFilter[0x4]; // 0x520        
-        [[maybe_unused]] std::uint8_t pad_0x524[0x4]; // 0x524
+        char m_hFilter[0x4]; // 0x528        
+        [[maybe_unused]] std::uint8_t pad_0x52c[0x4]; // 0x52c
         // m_vecNpcUsers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVectorFixedGrowable<CHandle<server::CAI_BaseNPC>,6> m_vecNpcUsers;
-        char m_vecNpcUsers[0x30]; // 0x528        
-        CUtlSymbolLarge m_szListenForAnimTag; // 0x558        
-        bool m_bIsListeningForAnimTag; // 0x560        
-        [[maybe_unused]] std::uint8_t pad_0x561[0xf]; // 0x561
-        entity2::CEntityIOOutput m_OnAnimTagFired; // 0x570        
-        entity2::CEntityIOOutput m_OnAnimTagStart; // 0x598        
-        entity2::CEntityIOOutput m_OnAnimTagEnd; // 0x5c0        
-        entity2::CEntityIOOutput m_OnNavLinkStart; // 0x5e8        
-        entity2::CEntityIOOutput m_OnNavLinkFinish; // 0x610        
-        bool m_bIsTerminus; // 0x638        
-        [[maybe_unused]] std::uint8_t pad_0x639[0x7];
+        char m_vecNpcUsers[0x30]; // 0x530        
+        CUtlSymbolLarge m_szListenForAnimTag; // 0x560        
+        bool m_bIsListeningForAnimTag; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x569[0xf]; // 0x569
+        entity2::CEntityIOOutput m_OnAnimTagFired; // 0x578        
+        entity2::CEntityIOOutput m_OnAnimTagStart; // 0x5a0        
+        entity2::CEntityIOOutput m_OnAnimTagEnd; // 0x5c8        
+        entity2::CEntityIOOutput m_OnNavLinkStart; // 0x5f0        
+        entity2::CEntityIOOutput m_OnNavLinkFinish; // 0x618        
+        bool m_bIsTerminus; // 0x640        
+        [[maybe_unused]] std::uint8_t pad_0x641[0x7];
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -67,5 +67,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNavLinkAreaEntity because it is not a standard-layout class
-    static_assert(sizeof(CNavLinkAreaEntity) == 0x640);
+    static_assert(sizeof(CNavLinkAreaEntity) == 0x648);
 };

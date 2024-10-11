@@ -16,20 +16,20 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb28
+    // Size: 0xb30
     // Has VTable
     #pragma pack(push, 1)
     class CLogicCase : public server::CLogicalEntity
     {
     public:
-        CUtlSymbolLarge m_nCase[32]; // 0x4d8        
-        int32_t m_nShuffleCases; // 0x5d8        
-        int32_t m_nLastShuffleCase; // 0x5dc        
-        uint8_t m_uchShuffleCaseMap[32]; // 0x5e0        
-        entity2::CEntityIOOutput m_OnCase[32]; // 0x600        
+        CUtlSymbolLarge m_nCase[32]; // 0x4e0        
+        int32_t m_nShuffleCases; // 0x5e0        
+        int32_t m_nLastShuffleCase; // 0x5e4        
+        uint8_t m_uchShuffleCaseMap[32]; // 0x5e8        
+        entity2::CEntityIOOutput m_OnCase[32]; // 0x608        
         // m_OnDefault has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEntityOutputTemplate<CVariantBase<entity2::CVariantDefaultAllocator>> m_OnDefault;
-        char m_OnDefault[0x28]; // 0xb00        
+        char m_OnDefault[0x28]; // 0xb08        
         
         // Datamap fields:
         // CUtlSymbolLarge InputValue; // 0x0
@@ -40,5 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicCase because it is not a standard-layout class
-    static_assert(sizeof(CLogicCase) == 0xb28);
+    static_assert(sizeof(CLogicCase) == 0xb30);
 };

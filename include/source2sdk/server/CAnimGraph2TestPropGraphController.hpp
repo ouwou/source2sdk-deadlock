@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x40
+    // Size: 0xe0
     // Has VTable
     #pragma pack(push, 1)
     class CAnimGraph2TestPropGraphController : public client::CAnimGraphControllerBase
@@ -22,7 +22,7 @@ namespace source2sdk::server
     public:
         // m_TROOPER_MovementState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamOptionalRef<CGlobalSymbol> m_TROOPER_MovementState;
-        char m_TROOPER_MovementState[0x20]; // 0x20        
+        char m_TROOPER_MovementState[0x18]; // 0xc8        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAnimGraph2TestPropGraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -31,5 +31,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAnimGraph2TestPropGraphController because it is not a standard-layout class
-    static_assert(sizeof(CAnimGraph2TestPropGraphController) == 0x40);
+    static_assert(sizeof(CAnimGraph2TestPropGraphController) == 0xe0);
 };

@@ -1,4 +1,5 @@
 #pragma once
+#include "source2sdk/resourcesystem/InfoForResourceTypeIParticleSystemDefinition.hpp"
 #include "source2sdk/server/CCitadelModifierVData.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -14,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x628
+    // Size: 0x7e8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,18 +23,25 @@ namespace source2sdk::server
     class CCitadel_Modifier_ItemWalkBackVData : public server::CCitadelModifierVData
     {
     public:
+        // metadata: MPropertyStartGroup "Visuals"
+        // m_IdleParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_IdleParticle;
+        char m_IdleParticle[0xe0]; // 0x608        
+        // m_RunningParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RunningParticle;
+        char m_RunningParticle[0xe0]; // 0x6e8        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flStopDistance; // 0x608        
-        float m_flMaxSpeedDistance; // 0x60c        
-        float m_flSlowSpeed; // 0x610        
-        float m_flFastSpeed; // 0x614        
-        float m_flVerticalOffset; // 0x618        
-        float m_flTolerance; // 0x61c        
-        float m_flRepathTime; // 0x620        
-        [[maybe_unused]] std::uint8_t pad_0x624[0x4];
+        float m_flStopDistance; // 0x7c8        
+        float m_flMaxSpeedDistance; // 0x7cc        
+        float m_flSlowSpeed; // 0x7d0        
+        float m_flFastSpeed; // 0x7d4        
+        float m_flVerticalOffset; // 0x7d8        
+        float m_flTolerance; // 0x7dc        
+        float m_flRepathTime; // 0x7e0        
+        [[maybe_unused]] std::uint8_t pad_0x7e4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ItemWalkBackVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ItemWalkBackVData) == 0x628);
+    static_assert(sizeof(CCitadel_Modifier_ItemWalkBackVData) == 0x7e8);
 };

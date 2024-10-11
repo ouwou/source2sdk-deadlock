@@ -14,23 +14,23 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x568
+    // Size: 0x570
     // Has VTable
     #pragma pack(push, 1)
     class CPhysBallSocket : public server::CPhysConstraint
     {
     public:
-        float m_flJointFriction; // 0x550        
-        bool m_bEnableSwingLimit; // 0x554        
-        [[maybe_unused]] std::uint8_t pad_0x555[0x3]; // 0x555
-        float m_flSwingLimit; // 0x558        
-        bool m_bEnableTwistLimit; // 0x55c        
+        float m_flJointFriction; // 0x558        
+        bool m_bEnableSwingLimit; // 0x55c        
         [[maybe_unused]] std::uint8_t pad_0x55d[0x3]; // 0x55d
-        float m_flMinTwistAngle; // 0x560        
-        float m_flMaxTwistAngle; // 0x564        
+        float m_flSwingLimit; // 0x560        
+        bool m_bEnableTwistLimit; // 0x564        
+        [[maybe_unused]] std::uint8_t pad_0x565[0x3]; // 0x565
+        float m_flMinTwistAngle; // 0x568        
+        float m_flMaxTwistAngle; // 0x56c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysBallSocket because it is not a standard-layout class
-    static_assert(sizeof(CPhysBallSocket) == 0x568);
+    static_assert(sizeof(CPhysBallSocket) == 0x570);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4e0
+    // Size: 0x4e8
     // Has VTable
     #pragma pack(push, 1)
     class CInfoAbilityTestBot : public server::CPointEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4d8[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CInfoAbilityTestBot) == 0x4e0);
+    static_assert(sizeof(CInfoAbilityTestBot) == 0x4e8);
 };

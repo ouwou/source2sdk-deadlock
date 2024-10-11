@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb20
+    // Size: 0xb28
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_SuperNeutralIncendiary : public server::CCitadelBaseAbilityServerOnly
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xae8[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xaf0[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_SuperNeutralIncendiary) == 0xb20);
+    static_assert(sizeof(CCitadel_Ability_SuperNeutralIncendiary) == 0xb28);
 };

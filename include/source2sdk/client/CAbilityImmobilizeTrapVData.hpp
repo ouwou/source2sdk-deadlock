@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1958
+    // Size: 0x1948
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -50,15 +50,12 @@ namespace source2sdk::client
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffModifier;
         char m_DebuffModifier[0x10]; // 0x1928        
-        // m_DotModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_DotModifier;
-        char m_DotModifier[0x10]; // 0x1938        
         // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_SlowModifier;
-        char m_SlowModifier[0x10]; // 0x1948        
+        char m_SlowModifier[0x10]; // 0x1938        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityImmobilizeTrapVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityImmobilizeTrapVData) == 0x1958);
+    static_assert(sizeof(CAbilityImmobilizeTrapVData) == 0x1948);
 };

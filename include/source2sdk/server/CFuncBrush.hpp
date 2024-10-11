@@ -15,20 +15,20 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x788
+    // Size: 0x7e8
     // Has VTable
     #pragma pack(push, 1)
     class CFuncBrush : public server::CBaseModelEntity
     {
     public:
-        client::BrushSolidities_e m_iSolidity; // 0x768        
-        int32_t m_iDisabled; // 0x76c        
-        bool m_bSolidBsp; // 0x770        
-        [[maybe_unused]] std::uint8_t pad_0x771[0x7]; // 0x771
-        CUtlSymbolLarge m_iszExcludedClass; // 0x778        
-        bool m_bInvertExclusion; // 0x780        
-        bool m_bScriptedMovement; // 0x781        
-        [[maybe_unused]] std::uint8_t pad_0x782[0x6];
+        client::BrushSolidities_e m_iSolidity; // 0x7c8        
+        int32_t m_iDisabled; // 0x7cc        
+        bool m_bSolidBsp; // 0x7d0        
+        [[maybe_unused]] std::uint8_t pad_0x7d1[0x7]; // 0x7d1
+        CUtlSymbolLarge m_iszExcludedClass; // 0x7d8        
+        bool m_bInvertExclusion; // 0x7e0        
+        bool m_bScriptedMovement; // 0x7e1        
+        [[maybe_unused]] std::uint8_t pad_0x7e2[0x6];
         
         // Datamap fields:
         // void InputTurnOn; // 0x0
@@ -42,5 +42,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncBrush because it is not a standard-layout class
-    static_assert(sizeof(CFuncBrush) == 0x788);
+    static_assert(sizeof(CFuncBrush) == 0x7e8);
 };

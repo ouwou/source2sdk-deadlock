@@ -20,23 +20,23 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x530
+    // Size: 0x538
     // Has VTable
     #pragma pack(push, 1)
     class CFishPool : public server::CBaseEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4d8[0x10]; // 0x4d8
-        int32_t m_fishCount; // 0x4e8        
-        float m_maxRange; // 0x4ec        
-        float m_swimDepth; // 0x4f0        
-        float m_waterLevel; // 0x4f4        
-        bool m_isDormant; // 0x4f8        
-        [[maybe_unused]] std::uint8_t pad_0x4f9[0x7]; // 0x4f9
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x10]; // 0x4e0
+        int32_t m_fishCount; // 0x4f0        
+        float m_maxRange; // 0x4f4        
+        float m_swimDepth; // 0x4f8        
+        float m_waterLevel; // 0x4fc        
+        bool m_isDormant; // 0x500        
+        [[maybe_unused]] std::uint8_t pad_0x501[0x7]; // 0x501
         // m_fishes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CFish>> m_fishes;
-        char m_fishes[0x18]; // 0x500        
-        server::CountdownTimer m_visTimer; // 0x518        
+        char m_fishes[0x18]; // 0x508        
+        server::CountdownTimer m_visTimer; // 0x520        
         
         // Datamap fields:
         // void CFishPoolUpdate; // 0x0
@@ -45,5 +45,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFishPool because it is not a standard-layout class
-    static_assert(sizeof(CFishPool) == 0x530);
+    static_assert(sizeof(CFishPool) == 0x538);
 };

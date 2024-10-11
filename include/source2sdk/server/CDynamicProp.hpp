@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc60
+    // Size: 0xcf8
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -26,33 +26,33 @@ namespace source2sdk::server
     class CDynamicProp : public server::CBreakableProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb60[0x8]; // 0xb60
-        bool m_bCreateNavObstacle; // 0xb68        
-        bool m_bNavObstacleUpdatesOverridden; // 0xb69        
+        [[maybe_unused]] std::uint8_t pad_0xbf8[0x8]; // 0xbf8
+        bool m_bCreateNavObstacle; // 0xc00        
+        bool m_bNavObstacleUpdatesOverridden; // 0xc01        
         // metadata: MNetworkEnable
-        bool m_bUseHitboxesForRenderBox; // 0xb6a        
+        bool m_bUseHitboxesForRenderBox; // 0xc02        
         // metadata: MNetworkEnable
-        bool m_bUseAnimGraph; // 0xb6b        
-        [[maybe_unused]] std::uint8_t pad_0xb6c[0x4]; // 0xb6c
-        entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xb70        
-        entity2::CEntityIOOutput m_pOutputAnimOver; // 0xb98        
-        entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xbc0        
-        entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xbe8        
-        entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xc10        
-        CUtlSymbolLarge m_iszIdleAnim; // 0xc38        
-        client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xc40        
-        bool m_bRandomizeCycle; // 0xc44        
-        bool m_bStartDisabled; // 0xc45        
-        bool m_bFiredStartEndOutput; // 0xc46        
-        bool m_bForceNpcExclude; // 0xc47        
-        bool m_bCreateNonSolid; // 0xc48        
-        bool m_bIsOverrideProp; // 0xc49        
-        [[maybe_unused]] std::uint8_t pad_0xc4a[0x2]; // 0xc4a
-        int32_t m_iInitialGlowState; // 0xc4c        
-        int32_t m_nGlowRange; // 0xc50        
-        int32_t m_nGlowRangeMin; // 0xc54        
-        Color m_glowColor; // 0xc58        
-        int32_t m_nGlowTeam; // 0xc5c        
+        bool m_bUseAnimGraph; // 0xc03        
+        [[maybe_unused]] std::uint8_t pad_0xc04[0x4]; // 0xc04
+        entity2::CEntityIOOutput m_pOutputAnimBegun; // 0xc08        
+        entity2::CEntityIOOutput m_pOutputAnimOver; // 0xc30        
+        entity2::CEntityIOOutput m_pOutputAnimLoopCycleOver; // 0xc58        
+        entity2::CEntityIOOutput m_OnAnimReachedStart; // 0xc80        
+        entity2::CEntityIOOutput m_OnAnimReachedEnd; // 0xca8        
+        CUtlSymbolLarge m_iszIdleAnim; // 0xcd0        
+        client::AnimLoopMode_t m_nIdleAnimLoopMode; // 0xcd8        
+        bool m_bRandomizeCycle; // 0xcdc        
+        bool m_bStartDisabled; // 0xcdd        
+        bool m_bFiredStartEndOutput; // 0xcde        
+        bool m_bForceNpcExclude; // 0xcdf        
+        bool m_bCreateNonSolid; // 0xce0        
+        bool m_bIsOverrideProp; // 0xce1        
+        [[maybe_unused]] std::uint8_t pad_0xce2[0x2]; // 0xce2
+        int32_t m_iInitialGlowState; // 0xce4        
+        int32_t m_nGlowRange; // 0xce8        
+        int32_t m_nGlowRangeMin; // 0xcec        
+        Color m_glowColor; // 0xcf0        
+        int32_t m_nGlowTeam; // 0xcf4        
         
         // Datamap fields:
         // CUtlSymbolLarge StartingAnim; // 0x7fffffff
@@ -86,5 +86,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CDynamicProp because it is not a standard-layout class
-    static_assert(sizeof(CDynamicProp) == 0xc60);
+    static_assert(sizeof(CDynamicProp) == 0xcf8);
 };

@@ -40,7 +40,8 @@ namespace source2sdk::client
         bool m_bFadeInsteadOfRemoveOnAbilityUse; // 0x8b9        
         // metadata: MPropertyDescription "Fade from hidden to fully visible as invis is about to expire. Does not work with Aura applied invis, since that has no duration."
         bool m_bFadeToVisibleAtEndOfDuration; // 0x8ba        
-        [[maybe_unused]] std::uint8_t pad_0x8bb[0x5];
+        bool m_bEnableDesatWhileActive; // 0x8bb        
+        [[maybe_unused]] std::uint8_t pad_0x8bc[0x4];
     };
     #pragma pack(pop)
     

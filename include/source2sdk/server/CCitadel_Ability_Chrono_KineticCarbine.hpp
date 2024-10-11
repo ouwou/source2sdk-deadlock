@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcc8
+    // Size: 0xcd0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bWantsSlow"
@@ -29,26 +29,26 @@ namespace source2sdk::server
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bWantsSlow; // 0xae8        
-        [[maybe_unused]] std::uint8_t pad_0xae9[0x3]; // 0xae9
+        bool m_bWantsSlow; // 0xaf0        
+        [[maybe_unused]] std::uint8_t pad_0xaf1[0x3]; // 0xaf1
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xaec        
+        entity2::GameTime_t m_flLatchedTimeScaleFracChangeTime; // 0xaf4        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flLatchedTimeScaleFrac; // 0xaf0        
+        float m_flLatchedTimeScaleFrac; // 0xaf8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSpeedBoostEndTime; // 0xaf4        
+        entity2::GameTime_t m_flSpeedBoostEndTime; // 0xafc        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flShotTimeScaleEndTime; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xafc[0x4]; // 0xafc
-        float m_flStoredPowerPct; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb04[0x1c4];
+        entity2::GameTime_t m_flShotTimeScaleEndTime; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb04[0x4]; // 0xb04
+        float m_flStoredPowerPct; // 0xb08        
+        [[maybe_unused]] std::uint8_t pad_0xb0c[0x1c4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Chrono_KineticCarbine because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Chrono_KineticCarbine) == 0xcc8);
+    static_assert(sizeof(CCitadel_Ability_Chrono_KineticCarbine) == 0xcd0);
 };

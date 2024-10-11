@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb10
+    // Size: 0xb18
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_RescueBeam : public server::CCitadel_Item
     {
     public:
-        bool m_bCanPull; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb09[0x7];
+        bool m_bCanPull; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb11[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_RescueBeam because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_RescueBeam) == 0xb10);
+    static_assert(sizeof(CCitadel_Item_RescueBeam) == 0xb18);
 };

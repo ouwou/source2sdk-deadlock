@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb88
+    // Size: 0xb98
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByName "m_flexWeight"
@@ -38,31 +38,31 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xb50        
+        entity2::GameTick_t m_nNextPrimaryAttackTick; // 0xb60        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        float m_flNextPrimaryAttackTickRatio; // 0xb54        
+        float m_flNextPrimaryAttackTickRatio; // 0xb64        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xb58        
+        entity2::GameTick_t m_nNextSecondaryAttackTick; // 0xb68        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        float m_flNextSecondaryAttackTickRatio; // 0xb5c        
+        float m_flNextSecondaryAttackTickRatio; // 0xb6c        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "minusone"
         // metadata: MNetworkPriority "32"
-        int32_t m_iClip1; // 0xb60        
+        int32_t m_iClip1; // 0xb70        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "minusone"
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        int32_t m_iClip2; // 0xb64        
+        int32_t m_iClip2; // 0xb74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
-        int32_t m_pReserveAmmo[2]; // 0xb68        
-        [[maybe_unused]] std::uint8_t pad_0xb70[0x18];
+        int32_t m_pReserveAmmo[2]; // 0xb78        
+        [[maybe_unused]] std::uint8_t pad_0xb80[0x18];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BasePlayerWeapon because it is not a standard-layout class
-    static_assert(sizeof(C_BasePlayerWeapon) == 0xb88);
+    static_assert(sizeof(C_BasePlayerWeapon) == 0xb98);
 };

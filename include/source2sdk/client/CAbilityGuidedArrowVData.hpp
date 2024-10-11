@@ -68,7 +68,7 @@ namespace source2sdk::client
         float m_flMaxProjectileSpeed; // 0x1a40        
         float m_flArrowModelTurnSpringStrength; // 0x1a44        
         float m_flKillCheckWindow; // 0x1a48        
-        [[maybe_unused]] std::uint8_t pad_0x1a4c[0x4];
+        float m_flWorldCollideGraceWindow; // 0x1a4c        
     };
     #pragma pack(pop)
     

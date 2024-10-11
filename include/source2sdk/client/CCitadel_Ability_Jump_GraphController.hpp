@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x130
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Jump_GraphController : public client::CCitadelBaseAbilityGraphController
@@ -22,13 +22,13 @@ namespace source2sdk::client
     public:
         // m_bDashJump has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bDashJump;
-        char m_bDashJump[0x20]; // 0x20        
+        char m_bDashJump[0x20]; // 0xc8        
         // m_bJump has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bJump;
-        char m_bJump[0x20]; // 0x40        
+        char m_bJump[0x20]; // 0xe8        
         // m_pszLaunchType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszLaunchType;
-        char m_pszLaunchType[0x28]; // 0x60        
+        char m_pszLaunchType[0x28]; // 0x108        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CCitadel_Ability_Jump_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -37,5 +37,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Jump_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Jump_GraphController) == 0x88);
+    static_assert(sizeof(CCitadel_Ability_Jump_GraphController) == 0x130);
 };

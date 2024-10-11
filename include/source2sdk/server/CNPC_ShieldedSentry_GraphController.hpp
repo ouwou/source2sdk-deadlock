@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa0
+    // Size: 0x168
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_ShieldedSentry_GraphController : public server::CNPC_SimpleAnimatingAI_GraphController
@@ -22,13 +22,16 @@ namespace source2sdk::server
     public:
         // m_flPanel1 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flPanel1;
-        char m_flPanel1[0x20]; // 0x40        
+        char m_flPanel1[0x20]; // 0xe8        
         // m_flVelocity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flVelocity;
-        char m_flVelocity[0x20]; // 0x60        
+        char m_flVelocity[0x20]; // 0x108        
         // m_bShoot has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bShoot;
-        char m_bShoot[0x20]; // 0x80        
+        char m_bShoot[0x20]; // 0x128        
+        // m_flDeploySpeed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<float> m_flDeploySpeed;
+        char m_flDeploySpeed[0x20]; // 0x148        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_ShieldedSentry_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -37,5 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_ShieldedSentry_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CNPC_ShieldedSentry_GraphController) == 0xa0);
+    static_assert(sizeof(CNPC_ShieldedSentry_GraphController) == 0x168);
 };

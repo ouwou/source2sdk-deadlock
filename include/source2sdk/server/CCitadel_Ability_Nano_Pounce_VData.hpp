@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1a08
+    // Size: 0x1a18
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -34,33 +34,36 @@ namespace source2sdk::server
         // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_SlowModifier;
         char m_SlowModifier[0x10]; // 0x1568        
+        // m_DoublePounceModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<server::CCitadelModifier> m_DoublePounceModifier;
+        char m_DoublePounceModifier[0x10]; // 0x1578        
         // metadata: MPropertyStartGroup "Visuals"
         // m_AttackParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AttackParticle;
-        char m_AttackParticle[0xe0]; // 0x1578        
+        char m_AttackParticle[0xe0]; // 0x1588        
         // m_FlashParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FlashParticle;
-        char m_FlashParticle[0xe0]; // 0x1658        
+        char m_FlashParticle[0xe0]; // 0x1668        
         // m_CastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastParticle;
-        char m_CastParticle[0xe0]; // 0x1738        
+        char m_CastParticle[0xe0]; // 0x1748        
         // m_ExplodeSlowParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeSlowParticle;
-        char m_ExplodeSlowParticle[0xe0]; // 0x1818        
+        char m_ExplodeSlowParticle[0xe0]; // 0x1828        
         // m_PrimaryHitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PrimaryHitParticle;
-        char m_PrimaryHitParticle[0xe0]; // 0x18f8        
+        char m_PrimaryHitParticle[0xe0]; // 0x1908        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_AttackSound; // 0x19d8        
-        CSoundEventName m_strExplodeSound; // 0x19e8        
+        CSoundEventName m_AttackSound; // 0x19e8        
+        CSoundEventName m_strExplodeSound; // 0x19f8        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flPreArrivalAttackStartTime; // 0x19f8        
-        float m_flAllyMinTargetRange; // 0x19fc        
-        float m_flTargetVerticalOffset; // 0x1a00        
-        [[maybe_unused]] std::uint8_t pad_0x1a04[0x4];
+        float m_flAttackTimePhase01; // 0x1a08        
+        float m_flAttackTimePhase02; // 0x1a0c        
+        float m_flAllyMinTargetRange; // 0x1a10        
+        float m_flTargetVerticalOffset; // 0x1a14        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Nano_Pounce_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Nano_Pounce_VData) == 0x1a08);
+    static_assert(sizeof(CCitadel_Ability_Nano_Pounce_VData) == 0x1a18);
 };

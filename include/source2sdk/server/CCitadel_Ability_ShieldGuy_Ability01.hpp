@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/server/CPointEntity.hpp"
+#include "source2sdk/server/CCitadelBaseAbility.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -14,15 +14,15 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4d8
+    // Size: 0xaf0
     // Has VTable
     #pragma pack(push, 1)
-    class CInfoPortalLink : public server::CPointEntity
+    class CCitadel_Ability_ShieldGuy_Ability01 : public server::CCitadelBaseAbility
     {
     public:
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CInfoPortalLink) == 0x4d8);
+    static_assert(sizeof(CCitadel_Ability_ShieldGuy_Ability01) == 0xaf0);
 };

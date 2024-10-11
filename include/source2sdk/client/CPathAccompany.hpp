@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x578
+    // Size: 0x580
     // Has VTable
     #pragma pack(push, 1)
     class CPathAccompany : public client::C_BaseEntity
@@ -23,8 +23,8 @@ namespace source2sdk::client
     public:
         // m_vecNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::PathAccompanyNode_t> m_vecNodes;
-        char m_vecNodes[0x18]; // 0x558        
-        [[maybe_unused]] std::uint8_t pad_0x570[0x8];
+        char m_vecNodes[0x18]; // 0x560        
+        [[maybe_unused]] std::uint8_t pad_0x578[0x8];
         
         // Datamap fields:
         // CUtlSymbolLarge pathNodes; // 0x7fffffff
@@ -33,5 +33,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathAccompany because it is not a standard-layout class
-    static_assert(sizeof(CPathAccompany) == 0x578);
+    static_assert(sizeof(CPathAccompany) == 0x580);
 };

@@ -15,16 +15,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x960
+    // Size: 0x9c0
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerRemove : public server::CBaseTrigger
     {
     public:
-        entity2::CEntityIOOutput m_OnRemove; // 0x938        
+        entity2::CEntityIOOutput m_OnRemove; // 0x998        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerRemove because it is not a standard-layout class
-    static_assert(sizeof(CTriggerRemove) == 0x960);
+    static_assert(sizeof(CTriggerRemove) == 0x9c0);
 };

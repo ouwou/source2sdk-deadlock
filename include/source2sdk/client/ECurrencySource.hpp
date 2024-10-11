@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 35
+    // Enumerator count: 38
     // Alignment: 4
     // Size: 0x4
     enum class ECurrencySource : std::uint32_t
@@ -33,20 +33,23 @@ namespace source2sdk::client
         ENeutralBossKill = 0x10,
         EBaseSentryKill = 0x11,
         EDeniedFromEnemy = 0x12,
-        EOrbPlayer = 0x13,
-        EOrbDeny = 0x14,
-        EOrbLaneTrooper = 0x15,
-        EOrbNeutralTrooper = 0x16,
-        EOrbTier1TrooperBoss = 0x17,
-        EOrbTier2TrooperBoss = 0x18,
-        EOrbTier3TrooperBoss = 0x19,
-        EOrbBaseSentry = 0x1a,
-        EOrbDeployable = 0x1b,
-        EOrbTrophyKill = 0x1c,
-        EOrbTreasureChest = 0x1d,
-        EOrbSpawner = 0x1e,
-        ENeutralWorldPickup = 0x1f,
-        EPlayerKillComeback = 0x20,
-        ECurrencySourceCount = 0x21,
+        EAssassinatePlayerKill = 0x13,
+        EOrbPlayer = 0x14,
+        EOrbDeny = 0x15,
+        EOrbLaneTrooper = 0x16,
+        EOrbNeutralTrooper = 0x17,
+        EOrbTier1TrooperBoss = 0x18,
+        EOrbTier2TrooperBoss = 0x19,
+        EOrbBaseGuardians = 0x1a,
+        EOrbShrines = 0x1b,
+        EOrbTier3TrooperBoss = 0x1c,
+        EOrbBaseSentry = 0x1d,
+        EOrbDeployable = 0x1e,
+        EOrbTrophyKill = 0x1f,
+        EOrbTreasureChest = 0x20,
+        EOrbSpawner = 0x21,
+        ENeutralWorldPickup = 0x22,
+        EPlayerKillComeback = 0x23,
+        ECurrencySourceCount = 0x24,
     };
 };

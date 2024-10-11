@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f0
+    // Size: 0x4f8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flCameraDist"
@@ -30,22 +30,22 @@ namespace source2sdk::server
     class CCitadelSpectateDirectedCamera : public server::CBaseEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4d8[0x4]; // 0x4d8
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x4]; // 0x4e0
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        float m_flCameraDist; // 0x4dc        
+        float m_flCameraDist; // 0x4e4        
         // metadata: MNetworkEnable
-        float m_flCameraPitch; // 0x4e0        
+        float m_flCameraPitch; // 0x4e8        
         // metadata: MNetworkEnable
-        float m_flCameraHeight; // 0x4e4        
+        float m_flCameraHeight; // 0x4ec        
         // metadata: MNetworkEnable
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0x4e8        
-        [[maybe_unused]] std::uint8_t pad_0x4ec[0x4];
+        char m_hTarget[0x4]; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4f4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelSpectateDirectedCamera because it is not a standard-layout class
-    static_assert(sizeof(CCitadelSpectateDirectedCamera) == 0x4f0);
+    static_assert(sizeof(CCitadelSpectateDirectedCamera) == 0x4f8);
 };

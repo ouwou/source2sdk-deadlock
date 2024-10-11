@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb08
+    // Size: 0xb10
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_WeaponUpgrade_SurgingPower : public server::CCitadel_Item
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_WeaponUpgrade_SurgingPower) == 0xb08);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_SurgingPower) == 0xb10);
 };

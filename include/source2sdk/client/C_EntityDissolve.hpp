@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x878
+    // Size: 0x888
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flStartTime"
@@ -33,34 +33,34 @@ namespace source2sdk::client
     class C_EntityDissolve : public client::C_BaseModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x830[0x8]; // 0x830
+        [[maybe_unused]] std::uint8_t pad_0x840[0x8]; // 0x840
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartTime; // 0x838        
+        entity2::GameTime_t m_flStartTime; // 0x848        
         // metadata: MNetworkEnable
-        float m_flFadeInStart; // 0x83c        
+        float m_flFadeInStart; // 0x84c        
         // metadata: MNetworkEnable
-        float m_flFadeInLength; // 0x840        
+        float m_flFadeInLength; // 0x850        
         // metadata: MNetworkEnable
-        float m_flFadeOutModelStart; // 0x844        
+        float m_flFadeOutModelStart; // 0x854        
         // metadata: MNetworkEnable
-        float m_flFadeOutModelLength; // 0x848        
+        float m_flFadeOutModelLength; // 0x858        
         // metadata: MNetworkEnable
-        float m_flFadeOutStart; // 0x84c        
+        float m_flFadeOutStart; // 0x85c        
         // metadata: MNetworkEnable
-        float m_flFadeOutLength; // 0x850        
-        entity2::GameTime_t m_flNextSparkTime; // 0x854        
+        float m_flFadeOutLength; // 0x860        
+        entity2::GameTime_t m_flNextSparkTime; // 0x864        
         // metadata: MNetworkEnable
-        client::EntityDisolveType_t m_nDissolveType; // 0x858        
+        client::EntityDisolveType_t m_nDissolveType; // 0x868        
         // metadata: MNetworkEnable
-        Vector m_vDissolverOrigin; // 0x85c        
+        Vector m_vDissolverOrigin; // 0x86c        
         // metadata: MNetworkEnable
-        uint32_t m_nMagnitude; // 0x868        
-        bool m_bCoreExplode; // 0x86c        
-        bool m_bLinkedToServerEnt; // 0x86d        
-        [[maybe_unused]] std::uint8_t pad_0x86e[0xa];
+        uint32_t m_nMagnitude; // 0x878        
+        bool m_bCoreExplode; // 0x87c        
+        bool m_bLinkedToServerEnt; // 0x87d        
+        [[maybe_unused]] std::uint8_t pad_0x87e[0xa];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EntityDissolve because it is not a standard-layout class
-    static_assert(sizeof(C_EntityDissolve) == 0x878);
+    static_assert(sizeof(C_EntityDissolve) == 0x888);
 };

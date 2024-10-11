@@ -14,14 +14,14 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x770
+    // Size: 0x7d0
     // Has VTable
     #pragma pack(push, 1)
     class CFuncVPhysicsClip : public server::CBaseModelEntity
     {
     public:
-        bool m_bDisabled; // 0x768        
-        [[maybe_unused]] std::uint8_t pad_0x769[0x7];
+        bool m_bDisabled; // 0x7c8        
+        [[maybe_unused]] std::uint8_t pad_0x7c9[0x7];
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -30,5 +30,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncVPhysicsClip because it is not a standard-layout class
-    static_assert(sizeof(CFuncVPhysicsClip) == 0x770);
+    static_assert(sizeof(CFuncVPhysicsClip) == 0x7d0);
 };

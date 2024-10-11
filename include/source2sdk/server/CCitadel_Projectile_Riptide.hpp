@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x978
+    // Size: 0x9d0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_Riptide : public server::CCitadelProjectile
     {
     public:
-        int32_t m_cTicksNoMovement; // 0x820        
-        [[maybe_unused]] std::uint8_t pad_0x824[0x154];
+        int32_t m_cTicksNoMovement; // 0x878        
+        [[maybe_unused]] std::uint8_t pad_0x87c[0x154];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Riptide because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_Riptide) == 0x978);
+    static_assert(sizeof(CCitadel_Projectile_Riptide) == 0x9d0);
 };

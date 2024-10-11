@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xae8
+    // Size: 0xaf0
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CTier3BossAbility) == 0xae8);
+    static_assert(sizeof(CTier3BossAbility) == 0xaf0);
 };

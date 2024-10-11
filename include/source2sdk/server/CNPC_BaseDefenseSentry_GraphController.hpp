@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc0
+    // Size: 0x168
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_BaseDefenseSentry_GraphController : public server::CNPC_SimpleAnimatingAI_GraphController
@@ -22,16 +22,16 @@ namespace source2sdk::server
     public:
         // m_flPanel1 has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flPanel1;
-        char m_flPanel1[0x20]; // 0x40        
+        char m_flPanel1[0x20]; // 0xe8        
         // m_bUnpackInstant has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bUnpackInstant;
-        char m_bUnpackInstant[0x20]; // 0x60        
+        char m_bUnpackInstant[0x20]; // 0x108        
         // m_flVelocity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flVelocity;
-        char m_flVelocity[0x20]; // 0x80        
+        char m_flVelocity[0x20]; // 0x128        
         // m_bAlert has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bAlert;
-        char m_bAlert[0x20]; // 0xa0        
+        char m_bAlert[0x20]; // 0x148        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_BaseDefenseSentry_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -40,5 +40,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_BaseDefenseSentry_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CNPC_BaseDefenseSentry_GraphController) == 0xc0);
+    static_assert(sizeof(CNPC_BaseDefenseSentry_GraphController) == 0x168);
 };

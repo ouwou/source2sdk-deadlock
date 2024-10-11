@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xef8
+    // Size: 0xf40
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "QAngle m_anglesCharging"
@@ -26,21 +26,23 @@ namespace source2sdk::client
     class CCitadel_Ability_Bull_Charge : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc78[0x268]; // 0xc78
+        [[maybe_unused]] std::uint8_t pad_0xc80[0x2a0]; // 0xc80
         // metadata: MNetworkEnable
-        QAngle m_anglesCharging; // 0xee0        
+        QAngle m_anglesCharging; // 0xf20        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnChargingStateChanged"
-        entity2::GameTime_t m_flChargeStartTime; // 0xeec        
+        entity2::GameTime_t m_flChargeStartTime; // 0xf2c        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFastChargeEndTime; // 0xef0        
+        entity2::GameTime_t m_flFastChargeEndTime; // 0xf30        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bHitAPlayer; // 0xef4        
-        [[maybe_unused]] std::uint8_t pad_0xef5[0x3];
+        bool m_bHitAPlayer; // 0xf34        
+        [[maybe_unused]] std::uint8_t pad_0xf35[0x3]; // 0xf35
+        bool m_bFirstTick; // 0xf38        
+        [[maybe_unused]] std::uint8_t pad_0xf39[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bull_Charge because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Bull_Charge) == 0xef8);
+    static_assert(sizeof(CCitadel_Ability_Bull_Charge) == 0xf40);
 };

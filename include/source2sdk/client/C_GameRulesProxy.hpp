@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x558
+    // Size: 0x560
     // Has VTable
     #pragma pack(push, 1)
     class C_GameRulesProxy : public client::C_BaseEntity
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_GameRulesProxy) == 0x558);
+    static_assert(sizeof(C_GameRulesProxy) == 0x560);
 };

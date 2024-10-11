@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x988
+    // Size: 0x9e8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flBulletTimeScale"
@@ -27,17 +27,17 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        float m_flBulletTimeScale; // 0x768        
+        float m_flBulletTimeScale; // 0x7c8        
         // metadata: MNetworkEnable
-        float m_flProjectileTimeScale; // 0x76c        
+        float m_flProjectileTimeScale; // 0x7cc        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flExpireTime; // 0x770        
+        entity2::GameTime_t m_flExpireTime; // 0x7d0        
         // metadata: MNetworkEnable
-        float m_flStopDuration; // 0x774        
-        [[maybe_unused]] std::uint8_t pad_0x778[0x210];
+        float m_flStopDuration; // 0x7d4        
+        [[maybe_unused]] std::uint8_t pad_0x7d8[0x210];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBulletTimeWarp because it is not a standard-layout class
-    static_assert(sizeof(CCitadelBulletTimeWarp) == 0x988);
+    static_assert(sizeof(CCitadelBulletTimeWarp) == 0x9e8);
 };

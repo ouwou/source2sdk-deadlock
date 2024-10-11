@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x538
+    // Size: 0x540
     // Has VTable
     #pragma pack(push, 1)
     class FilterTeam : public server::CBaseFilter
     {
     public:
-        int32_t m_iFilterTeam; // 0x530        
-        [[maybe_unused]] std::uint8_t pad_0x534[0x4];
+        int32_t m_iFilterTeam; // 0x538        
+        [[maybe_unused]] std::uint8_t pad_0x53c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in FilterTeam because it is not a standard-layout class
-    static_assert(sizeof(FilterTeam) == 0x538);
+    static_assert(sizeof(FilterTeam) == 0x540);
 };

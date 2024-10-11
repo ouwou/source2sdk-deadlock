@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x530
+    // Size: 0x538
     // Has VTable
     #pragma pack(push, 1)
     class CFilterLOS : public server::CBaseFilter
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CFilterLOS) == 0x530);
+    static_assert(sizeof(CFilterLOS) == 0x538);
 };

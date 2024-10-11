@@ -63,16 +63,20 @@ namespace source2sdk::client
         client::CSkillFloat m_flLegDamageMultiplier; // 0x1a8        
         client::CSkillInt m_nMaxAdditionalAmmoBalancingShots; // 0x1b8        
         bool m_bTakesDamage; // 0x1c8        
-        [[maybe_unused]] std::uint8_t pad_0x1c9[0x7]; // 0x1c9
+        [[maybe_unused]] std::uint8_t pad_0x1c9[0x3]; // 0x1c9
+        // metadata: MPropertyDescription "Amount of health to grant to a ragdoll before the ragdoll is destroyed."
+        int32_t m_nRagdollHealth; // 0x1cc        
         // metadata: MPropertyDescription "Destructible Parts"
         // m_DestructiblePartsDataByHitGroup has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::HitGroup_t,client::CAI_BaseNPC_DestructiblePartHitGroupInfoAndData> m_DestructiblePartsDataByHitGroup;
         char m_DestructiblePartsDataByHitGroup[0x28]; // 0x1d0        
         // metadata: MPropertyStartGroup "Navigation"
         bool m_bAllowNonZUpMovement; // 0x1f8        
+        // metadata: MPropertyDescription "If true, this NPC will use a dynamic collision hull that allows it to be pushed by heavy things and affected by constraints."
+        bool m_bUseDynamicCollisionHull; // 0x1f9        
         // metadata: MPropertyDescription "If true, this NPC will use the capsule collision.  Capsule collision will also be used if m_bAllowNonZUpMovement is set."
-        bool m_bRequestCapsuleCollision; // 0x1f9        
-        [[maybe_unused]] std::uint8_t pad_0x1fa[0x2]; // 0x1fa
+        bool m_bRequestCapsuleCollision; // 0x1fa        
+        [[maybe_unused]] std::uint8_t pad_0x1fb[0x1]; // 0x1fb
         // metadata: MPropertyDescription "Override the radius of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop OBB"
         float m_flCapsuleRadiusOverride; // 0x1fc        
         // metadata: MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."

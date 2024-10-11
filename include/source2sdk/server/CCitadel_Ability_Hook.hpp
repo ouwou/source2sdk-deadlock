@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcc8
+    // Size: 0xcd0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hHookVictim"
@@ -33,21 +33,21 @@ namespace source2sdk::server
         // metadata: MNetworkChangeCallback "HookVictimChanged"
         // m_hHookVictim has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hHookVictim;
-        char m_hHookVictim[0x4]; // 0xae8        
+        char m_hHookVictim[0x4]; // 0xaf0        
         // metadata: MNetworkEnable
         // m_hProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hProjectile;
-        char m_hProjectile[0x4]; // 0xaec        
+        char m_hProjectile[0x4]; // 0xaf4        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecHookTargetStartPos; // 0xaf0        
-        bool m_bProjectileHit; // 0xafc        
-        [[maybe_unused]] std::uint8_t pad_0xafd[0x3]; // 0xafd
-        float m_flLastUppercutRestoreTime; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb04[0x1c4];
+        Vector m_vecHookTargetStartPos; // 0xaf8        
+        bool m_bProjectileHit; // 0xb04        
+        [[maybe_unused]] std::uint8_t pad_0xb05[0x3]; // 0xb05
+        float m_flLastUppercutRestoreTime; // 0xb08        
+        [[maybe_unused]] std::uint8_t pad_0xb0c[0x1c4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Hook because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Hook) == 0xcc8);
+    static_assert(sizeof(CCitadel_Ability_Hook) == 0xcd0);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d0
+    // Size: 0xa30
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CHandle< CBaseEntity> m_hTargetEntity"
@@ -59,77 +59,77 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // m_hTargetEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTargetEntity;
-        char m_hTargetEntity[0x4]; // 0x768        
+        char m_hTargetEntity[0x4]; // 0x7c8        
         // metadata: MNetworkEnable
-        bool m_bState; // 0x76c        
+        bool m_bState; // 0x7cc        
         // metadata: MNetworkEnable
-        bool m_bAlwaysUpdate; // 0x76d        
-        [[maybe_unused]] std::uint8_t pad_0x76e[0x2]; // 0x76e
+        bool m_bAlwaysUpdate; // 0x7cd        
+        [[maybe_unused]] std::uint8_t pad_0x7ce[0x2]; // 0x7ce
         // metadata: MNetworkEnable
-        float m_flLightFOV; // 0x770        
+        float m_flLightFOV; // 0x7d0        
         // metadata: MNetworkEnable
-        bool m_bEnableShadows; // 0x774        
+        bool m_bEnableShadows; // 0x7d4        
         // metadata: MNetworkEnable
-        bool m_bSimpleProjection; // 0x775        
+        bool m_bSimpleProjection; // 0x7d5        
         // metadata: MNetworkEnable
-        bool m_bLightOnlyTarget; // 0x776        
+        bool m_bLightOnlyTarget; // 0x7d6        
         // metadata: MNetworkEnable
-        bool m_bLightWorld; // 0x777        
+        bool m_bLightWorld; // 0x7d7        
         // metadata: MNetworkEnable
-        bool m_bCameraSpace; // 0x778        
-        [[maybe_unused]] std::uint8_t pad_0x779[0x3]; // 0x779
+        bool m_bCameraSpace; // 0x7d8        
+        [[maybe_unused]] std::uint8_t pad_0x7d9[0x3]; // 0x7d9
         // metadata: MNetworkEnable
-        float m_flBrightnessScale; // 0x77c        
+        float m_flBrightnessScale; // 0x7dc        
         // metadata: MNetworkEnable
-        Color m_LightColor; // 0x780        
+        Color m_LightColor; // 0x7e0        
         // metadata: MNetworkEnable
-        float m_flIntensity; // 0x784        
+        float m_flIntensity; // 0x7e4        
         // metadata: MNetworkEnable
-        float m_flLinearAttenuation; // 0x788        
+        float m_flLinearAttenuation; // 0x7e8        
         // metadata: MNetworkEnable
-        float m_flQuadraticAttenuation; // 0x78c        
+        float m_flQuadraticAttenuation; // 0x7ec        
         // metadata: MNetworkEnable
-        bool m_bVolumetric; // 0x790        
-        [[maybe_unused]] std::uint8_t pad_0x791[0x3]; // 0x791
+        bool m_bVolumetric; // 0x7f0        
+        [[maybe_unused]] std::uint8_t pad_0x7f1[0x3]; // 0x7f1
         // metadata: MNetworkEnable
-        float m_flNoiseStrength; // 0x794        
+        float m_flNoiseStrength; // 0x7f4        
         // metadata: MNetworkEnable
-        float m_flFlashlightTime; // 0x798        
+        float m_flFlashlightTime; // 0x7f8        
         // metadata: MNetworkEnable
-        uint32_t m_nNumPlanes; // 0x79c        
+        uint32_t m_nNumPlanes; // 0x7fc        
         // metadata: MNetworkEnable
-        float m_flPlaneOffset; // 0x7a0        
+        float m_flPlaneOffset; // 0x800        
         // metadata: MNetworkEnable
-        float m_flVolumetricIntensity; // 0x7a4        
+        float m_flVolumetricIntensity; // 0x804        
         // metadata: MNetworkEnable
-        float m_flColorTransitionTime; // 0x7a8        
+        float m_flColorTransitionTime; // 0x808        
         // metadata: MNetworkEnable
-        float m_flAmbient; // 0x7ac        
+        float m_flAmbient; // 0x80c        
         // metadata: MNetworkEnable
-        char m_SpotlightTextureName[512]; // 0x7b0        
+        char m_SpotlightTextureName[512]; // 0x810        
         // metadata: MNetworkEnable
-        int32_t m_nSpotlightTextureFrame; // 0x9b0        
+        int32_t m_nSpotlightTextureFrame; // 0xa10        
         // metadata: MNetworkEnable
-        uint32_t m_nShadowQuality; // 0x9b4        
+        uint32_t m_nShadowQuality; // 0xa14        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "16"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "500.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_flNearZ; // 0x9b8        
+        float m_flNearZ; // 0xa18        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "18"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "1500.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_flFarZ; // 0x9bc        
+        float m_flFarZ; // 0xa1c        
         // metadata: MNetworkEnable
-        float m_flProjectionSize; // 0x9c0        
+        float m_flProjectionSize; // 0xa20        
         // metadata: MNetworkEnable
-        float m_flRotation; // 0x9c4        
+        float m_flRotation; // 0xa24        
         // metadata: MNetworkEnable
-        bool m_bFlipHorizontal; // 0x9c8        
-        [[maybe_unused]] std::uint8_t pad_0x9c9[0x7];
+        bool m_bFlipHorizontal; // 0xa28        
+        [[maybe_unused]] std::uint8_t pad_0xa29[0x7];
         
         // Datamap fields:
         // void InputTurnOn; // 0x0
@@ -151,5 +151,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvProjectedTexture because it is not a standard-layout class
-    static_assert(sizeof(CEnvProjectedTexture) == 0x9d0);
+    static_assert(sizeof(CEnvProjectedTexture) == 0xa30);
 };

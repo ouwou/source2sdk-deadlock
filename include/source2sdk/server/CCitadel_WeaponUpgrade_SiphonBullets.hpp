@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb80
+    // Size: 0xb88
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iStacks"
@@ -23,11 +23,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_iStacks; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb0c[0x74];
+        int32_t m_iStacks; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb14[0x74];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_SiphonBullets because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_WeaponUpgrade_SiphonBullets) == 0xb80);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_SiphonBullets) == 0xb88);
 };

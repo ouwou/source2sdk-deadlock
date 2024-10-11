@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x770
+    // Size: 0x7d0
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iTeamNum"
@@ -24,11 +24,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_iLane; // 0x768        
-        [[maybe_unused]] std::uint8_t pad_0x76c[0x4];
+        int32_t m_iLane; // 0x7c8        
+        [[maybe_unused]] std::uint8_t pad_0x7cc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAssignedLaneParticle because it is not a standard-layout class
-    static_assert(sizeof(CAssignedLaneParticle) == 0x770);
+    static_assert(sizeof(CAssignedLaneParticle) == 0x7d0);
 };

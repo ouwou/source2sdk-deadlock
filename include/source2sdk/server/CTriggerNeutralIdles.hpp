@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x968
+    // Size: 0x9c8
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerNeutralIdles : public server::CTriggerNeutralShield
     {
     public:
         // Datamap fields:
-        // void m_vecPlayers; // 0x938
-        // void m_vecNeutrals; // 0x950
+        // void m_vecPlayers; // 0x998
+        // void m_vecNeutrals; // 0x9b0
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CTriggerNeutralIdles) == 0x968);
+    static_assert(sizeof(CTriggerNeutralIdles) == 0x9c8);
 };

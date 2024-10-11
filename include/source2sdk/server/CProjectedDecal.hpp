@@ -14,14 +14,14 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4e0
+    // Size: 0x4e8
     // Has VTable
     #pragma pack(push, 1)
     class CProjectedDecal : public server::CPointEntity
     {
     public:
-        int32_t m_nTexture; // 0x4d8        
-        float m_flDistance; // 0x4dc        
+        int32_t m_nTexture; // 0x4e0        
+        float m_flDistance; // 0x4e4        
         
         // Datamap fields:
         // void CProjectedDecalTriggerDecal; // 0x0
@@ -32,5 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CProjectedDecal because it is not a standard-layout class
-    static_assert(sizeof(CProjectedDecal) == 0x4e0);
+    static_assert(sizeof(CProjectedDecal) == 0x4e8);
 };

@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbd0
+    // Size: 0xbd8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_ChronoSwap : public server::CCitadelBaseAbility
     {
     public:
-        bool m_bHitTarget; // 0xae8        
-        [[maybe_unused]] std::uint8_t pad_0xae9[0xe7];
+        bool m_bHitTarget; // 0xaf0        
+        [[maybe_unused]] std::uint8_t pad_0xaf1[0xe7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ChronoSwap because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ChronoSwap) == 0xbd0);
+    static_assert(sizeof(CCitadel_Ability_ChronoSwap) == 0xbd8);
 };

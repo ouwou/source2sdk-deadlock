@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x958
+    // Size: 0x9b8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelZiplineCaptureTrigger : public server::CBaseTrigger
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x938[0x20];
+        [[maybe_unused]] std::uint8_t pad_0x998[0x20];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelZiplineCaptureTrigger) == 0x958);
+    static_assert(sizeof(CCitadelZiplineCaptureTrigger) == 0x9b8);
 };

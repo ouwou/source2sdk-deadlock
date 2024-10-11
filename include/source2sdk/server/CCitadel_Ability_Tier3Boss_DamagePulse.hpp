@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xae8
+    // Size: 0xaf0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Tier3Boss_DamagePulse : public server::CTier3BossAbility
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Tier3Boss_DamagePulse) == 0xae8);
+    static_assert(sizeof(CCitadel_Ability_Tier3Boss_DamagePulse) == 0xaf0);
 };

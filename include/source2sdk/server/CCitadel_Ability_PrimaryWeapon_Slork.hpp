@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd50
+    // Size: 0xd58
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "QAngle m_angAimAngles"
@@ -22,16 +22,16 @@ namespace source2sdk::server
     class CCitadel_Ability_PrimaryWeapon_Slork : public server::CCitadel_Ability_PrimaryWeapon
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb98[0x198]; // 0xb98
-        CUtlString m_strSprayerName; // 0xd30        
-        CUtlString m_strPoisonName; // 0xd38        
+        [[maybe_unused]] std::uint8_t pad_0xba0[0x198]; // 0xba0
+        CUtlString m_strSprayerName; // 0xd38        
+        CUtlString m_strPoisonName; // 0xd40        
         // metadata: MNetworkEnable
-        QAngle m_angAimAngles; // 0xd40        
-        bool m_bTracingConeAttack; // 0xd4c        
-        [[maybe_unused]] std::uint8_t pad_0xd4d[0x3];
+        QAngle m_angAimAngles; // 0xd48        
+        bool m_bTracingConeAttack; // 0xd54        
+        [[maybe_unused]] std::uint8_t pad_0xd55[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_PrimaryWeapon_Slork because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Slork) == 0xd50);
+    static_assert(sizeof(CCitadel_Ability_PrimaryWeapon_Slork) == 0xd58);
 };

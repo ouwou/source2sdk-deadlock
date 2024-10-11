@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8b8
+    // Size: 0x8c8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -35,9 +35,10 @@ namespace source2sdk::client
         char m_SpiritReflectTracerReplacement[0xe0]; // 0x7c8        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_strAttackerHitSound; // 0x8a8        
+        CSoundEventName m_strHitProcSound; // 0x8b8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ReturnFireVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ReturnFireVData) == 0x8b8);
+    static_assert(sizeof(CCitadel_Modifier_ReturnFireVData) == 0x8c8);
 };

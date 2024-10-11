@@ -18,7 +18,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1440
+    // Size: 0x1520
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -50,34 +50,37 @@ namespace source2sdk::server
         // m_StompImpactEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_StompImpactEffect;
         char m_StompImpactEffect[0xe0]; // 0x1300        
-        float m_flTossSpeed; // 0x13e0        
-        float m_flStompDamage; // 0x13e4        
-        float m_flStompTossUpMagnitude; // 0x13e8        
-        float m_flStunDuration; // 0x13ec        
-        float m_flStompImpactRadius; // 0x13f0        
-        float m_flStompImpactHeight; // 0x13f4        
-        float m_flSweepRadius; // 0x13f8        
-        float m_flSweepSpeed; // 0x13fc        
-        float m_flSweepZScale; // 0x1400        
-        float m_flSweepMaxAngle; // 0x1404        
-        float m_flSweepMaxRange; // 0x1408        
-        float m_flSweepAdjustSpeed; // 0x140c        
+        // m_StompWarningEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_StompWarningEffect;
+        char m_StompWarningEffect[0xe0]; // 0x13e0        
+        float m_flTossSpeed; // 0x14c0        
+        float m_flStompDamage; // 0x14c4        
+        float m_flStompTossUpMagnitude; // 0x14c8        
+        float m_flStunDuration; // 0x14cc        
+        float m_flStompImpactRadius; // 0x14d0        
+        float m_flStompImpactHeight; // 0x14d4        
+        float m_flSweepRadius; // 0x14d8        
+        float m_flSweepSpeed; // 0x14dc        
+        float m_flSweepZScale; // 0x14e0        
+        float m_flSweepMaxAngle; // 0x14e4        
+        float m_flSweepMaxRange; // 0x14e8        
+        float m_flSweepAdjustSpeed; // 0x14ec        
         // metadata: MPropertyStartGroup "Gun"
-        float m_flBurstDuration; // 0x1410        
-        float m_flBurstCooldown; // 0x1414        
+        float m_flBurstDuration; // 0x14f0        
+        float m_flBurstCooldown; // 0x14f4        
         // metadata: MPropertyStartGroup "Modifiers"
         // metadata: MPropertyDescription "Backdoor Protection Modifier"
         // m_BackdoorProtectionModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_BackdoorProtectionModifier;
-        char m_BackdoorProtectionModifier[0x10]; // 0x1418        
+        char m_BackdoorProtectionModifier[0x10]; // 0x14f8        
         // m_InvulModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_InvulModifier;
-        char m_InvulModifier[0x10]; // 0x1428        
-        float m_flInvulModifierRange; // 0x1438        
-        [[maybe_unused]] std::uint8_t pad_0x143c[0x4];
+        char m_InvulModifier[0x10]; // 0x1508        
+        float m_flInvulModifierRange; // 0x1518        
+        [[maybe_unused]] std::uint8_t pad_0x151c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Boss_Tier2VData because it is not a standard-layout class
-    static_assert(sizeof(CNPC_Boss_Tier2VData) == 0x1440);
+    static_assert(sizeof(CNPC_Boss_Tier2VData) == 0x1520);
 };

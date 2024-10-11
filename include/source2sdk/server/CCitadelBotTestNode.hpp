@@ -20,29 +20,29 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x510
+    // Size: 0x518
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelBotTestNode : public server::CServerOnlyPointEntity
     {
     public:
-        server::EBotTestNodeType m_eNodeType; // 0x4d8        
-        [[maybe_unused]] std::uint8_t pad_0x4dc[0x4]; // 0x4dc
-        CUtlSymbolLarge m_sNextNode; // 0x4e0        
-        CUtlSymbolLarge m_sShootTarget; // 0x4e8        
+        server::EBotTestNodeType m_eNodeType; // 0x4e0        
+        [[maybe_unused]] std::uint8_t pad_0x4e4[0x4]; // 0x4e4
+        CUtlSymbolLarge m_sNextNode; // 0x4e8        
+        CUtlSymbolLarge m_sShootTarget; // 0x4f0        
         // m_hNextNode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBotTestNode> m_hNextNode;
-        char m_hNextNode[0x4]; // 0x4f0        
+        char m_hNextNode[0x4]; // 0x4f8        
         // m_hShootTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBotTestNode> m_hShootTarget;
-        char m_hShootTarget[0x4]; // 0x4f4        
+        char m_hShootTarget[0x4]; // 0x4fc        
         // m_hLockingEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelPlayerPawn> m_hLockingEntity;
-        char m_hLockingEntity[0x4]; // 0x4f8        
-        [[maybe_unused]] std::uint8_t pad_0x4fc[0x14];
+        char m_hLockingEntity[0x4]; // 0x500        
+        [[maybe_unused]] std::uint8_t pad_0x504[0x14];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBotTestNode because it is not a standard-layout class
-    static_assert(sizeof(CCitadelBotTestNode) == 0x510);
+    static_assert(sizeof(CCitadelBotTestNode) == 0x518);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x578
+    // Size: 0x580
     // Has VTable
     #pragma pack(push, 1)
     class C_SoundOpvarSetOBBWindEntity : public client::C_SoundOpvarSetPointBase
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_SoundOpvarSetOBBWindEntity) == 0x578);
+    static_assert(sizeof(C_SoundOpvarSetOBBWindEntity) == 0x580);
 };

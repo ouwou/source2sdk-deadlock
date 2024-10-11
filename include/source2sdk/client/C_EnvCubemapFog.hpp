@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5a8
+    // Size: 0x5b0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flEndDistance"
@@ -41,47 +41,47 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flEndDistance; // 0x558        
+        float m_flEndDistance; // 0x560        
         // metadata: MNetworkEnable
-        float m_flStartDistance; // 0x55c        
+        float m_flStartDistance; // 0x564        
         // metadata: MNetworkEnable
-        float m_flFogFalloffExponent; // 0x560        
+        float m_flFogFalloffExponent; // 0x568        
         // metadata: MNetworkEnable
-        bool m_bHeightFogEnabled; // 0x564        
-        [[maybe_unused]] std::uint8_t pad_0x565[0x3]; // 0x565
+        bool m_bHeightFogEnabled; // 0x56c        
+        [[maybe_unused]] std::uint8_t pad_0x56d[0x3]; // 0x56d
         // metadata: MNetworkEnable
-        float m_flFogHeightWidth; // 0x568        
+        float m_flFogHeightWidth; // 0x570        
         // metadata: MNetworkEnable
-        float m_flFogHeightEnd; // 0x56c        
+        float m_flFogHeightEnd; // 0x574        
         // metadata: MNetworkEnable
-        float m_flFogHeightStart; // 0x570        
+        float m_flFogHeightStart; // 0x578        
         // metadata: MNetworkEnable
-        float m_flFogHeightExponent; // 0x574        
+        float m_flFogHeightExponent; // 0x57c        
         // metadata: MNetworkEnable
-        float m_flLODBias; // 0x578        
+        float m_flLODBias; // 0x580        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0x57c        
+        bool m_bActive; // 0x584        
         // metadata: MNetworkEnable
-        bool m_bStartDisabled; // 0x57d        
-        [[maybe_unused]] std::uint8_t pad_0x57e[0x2]; // 0x57e
+        bool m_bStartDisabled; // 0x585        
+        [[maybe_unused]] std::uint8_t pad_0x586[0x2]; // 0x586
         // metadata: MNetworkEnable
-        float m_flFogMaxOpacity; // 0x580        
+        float m_flFogMaxOpacity; // 0x588        
         // metadata: MNetworkEnable
-        int32_t m_nCubemapSourceType; // 0x584        
+        int32_t m_nCubemapSourceType; // 0x58c        
         // metadata: MNetworkEnable
         // m_hSkyMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSkyMaterial;
-        char m_hSkyMaterial[0x8]; // 0x588        
+        char m_hSkyMaterial[0x8]; // 0x590        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSkyEntity; // 0x590        
+        CUtlSymbolLarge m_iszSkyEntity; // 0x598        
         // metadata: MNetworkEnable
         // m_hFogCubemapTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hFogCubemapTexture;
-        char m_hFogCubemapTexture[0x8]; // 0x598        
+        char m_hFogCubemapTexture[0x8]; // 0x5a0        
         // metadata: MNetworkEnable
-        bool m_bHasHeightFogEnd; // 0x5a0        
-        bool m_bFirstTime; // 0x5a1        
-        [[maybe_unused]] std::uint8_t pad_0x5a2[0x6];
+        bool m_bHasHeightFogEnd; // 0x5a8        
+        bool m_bFirstTime; // 0x5a9        
+        [[maybe_unused]] std::uint8_t pad_0x5aa[0x6];
         
         // Datamap fields:
         // bool InputEnable; // 0x0
@@ -90,5 +90,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvCubemapFog because it is not a standard-layout class
-    static_assert(sizeof(C_EnvCubemapFog) == 0x5a8);
+    static_assert(sizeof(C_EnvCubemapFog) == 0x5b0);
 };

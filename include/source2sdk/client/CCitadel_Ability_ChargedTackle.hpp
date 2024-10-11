@@ -21,7 +21,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xeb8
+    // Size: 0xec0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bPreparing"
@@ -33,28 +33,28 @@ namespace source2sdk::client
     class CCitadel_Ability_ChargedTackle : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc78[0x1f8]; // 0xc78
+        [[maybe_unused]] std::uint8_t pad_0xc80[0x1f8]; // 0xc80
         // metadata: MNetworkEnable
-        bool m_bPreparing; // 0xe70        
+        bool m_bPreparing; // 0xe78        
         // metadata: MNetworkEnable
-        bool m_bTackling; // 0xe71        
-        [[maybe_unused]] std::uint8_t pad_0xe72[0x2]; // 0xe72
+        bool m_bTackling; // 0xe79        
+        [[maybe_unused]] std::uint8_t pad_0xe7a[0x2]; // 0xe7a
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flTackleStartTime; // 0xe74        
+        entity2::GameTime_t m_flTackleStartTime; // 0xe7c        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flPrepareStartTime; // 0xe78        
+        entity2::GameTime_t m_flPrepareStartTime; // 0xe80        
         // metadata: MNetworkEnable
-        Vector m_vecTackleDir; // 0xe7c        
-        Vector m_vecLastPosition; // 0xe88        
-        int32_t m_nStuckFramesCount; // 0xe94        
+        Vector m_vecTackleDir; // 0xe84        
+        Vector m_vecLastPosition; // 0xe90        
+        int32_t m_nStuckFramesCount; // 0xe9c        
         // m_vecHitEnemies has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<client::C_BaseEntity>> m_vecHitEnemies;
-        char m_vecHitEnemies[0x18]; // 0xe98        
-        client::ParticleIndex_t m_nDistancePreview; // 0xeb0        
-        [[maybe_unused]] std::uint8_t pad_0xeb4[0x4];
+        char m_vecHitEnemies[0x18]; // 0xea0        
+        client::ParticleIndex_t m_nDistancePreview; // 0xeb8        
+        [[maybe_unused]] std::uint8_t pad_0xebc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ChargedTackle because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ChargedTackle) == 0xeb8);
+    static_assert(sizeof(CCitadel_Ability_ChargedTackle) == 0xec0);
 };

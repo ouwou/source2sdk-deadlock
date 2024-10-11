@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7a0
+    // Size: 0x7a8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -33,41 +33,41 @@ namespace source2sdk::client
     class C_ColorCorrection : public client::C_BaseEntity
     {
     public:
-        Vector m_vecOrigin; // 0x558        
+        Vector m_vecOrigin; // 0x560        
         // metadata: MNetworkEnable
-        float m_MinFalloff; // 0x564        
+        float m_MinFalloff; // 0x56c        
         // metadata: MNetworkEnable
-        float m_MaxFalloff; // 0x568        
+        float m_MaxFalloff; // 0x570        
         // metadata: MNetworkEnable
-        float m_flFadeInDuration; // 0x56c        
+        float m_flFadeInDuration; // 0x574        
         // metadata: MNetworkEnable
-        float m_flFadeOutDuration; // 0x570        
+        float m_flFadeOutDuration; // 0x578        
         // metadata: MNetworkEnable
-        float m_flMaxWeight; // 0x574        
+        float m_flMaxWeight; // 0x57c        
         // metadata: MNetworkEnable
-        float m_flCurWeight; // 0x578        
+        float m_flCurWeight; // 0x580        
         // metadata: MNetworkEnable
-        char m_netlookupFilename[512]; // 0x57c        
+        char m_netlookupFilename[512]; // 0x584        
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0x77c        
+        bool m_bEnabled; // 0x784        
         // metadata: MNetworkEnable
-        bool m_bMaster; // 0x77d        
+        bool m_bMaster; // 0x785        
         // metadata: MNetworkEnable
-        bool m_bClientSide; // 0x77e        
+        bool m_bClientSide; // 0x786        
         // metadata: MNetworkEnable
-        bool m_bExclusive; // 0x77f        
-        bool m_bEnabledOnClient[1]; // 0x780        
-        [[maybe_unused]] std::uint8_t pad_0x781[0x3]; // 0x781
-        float m_flCurWeightOnClient[1]; // 0x784        
-        bool m_bFadingIn[1]; // 0x788        
+        bool m_bExclusive; // 0x787        
+        bool m_bEnabledOnClient[1]; // 0x788        
         [[maybe_unused]] std::uint8_t pad_0x789[0x3]; // 0x789
-        float m_flFadeStartWeight[1]; // 0x78c        
-        float m_flFadeStartTime[1]; // 0x790        
-        float m_flFadeDuration[1]; // 0x794        
-        [[maybe_unused]] std::uint8_t pad_0x798[0x8];
+        float m_flCurWeightOnClient[1]; // 0x78c        
+        bool m_bFadingIn[1]; // 0x790        
+        [[maybe_unused]] std::uint8_t pad_0x791[0x3]; // 0x791
+        float m_flFadeStartWeight[1]; // 0x794        
+        float m_flFadeStartTime[1]; // 0x798        
+        float m_flFadeDuration[1]; // 0x79c        
+        [[maybe_unused]] std::uint8_t pad_0x7a0[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_ColorCorrection because it is not a standard-layout class
-    static_assert(sizeof(C_ColorCorrection) == 0x7a0);
+    static_assert(sizeof(C_ColorCorrection) == 0x7a8);
 };
