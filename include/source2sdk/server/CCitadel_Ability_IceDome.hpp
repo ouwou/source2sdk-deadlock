@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb30
+    // Size: 0xb38
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flDomeStartTime"
@@ -24,16 +24,16 @@ namespace source2sdk::server
     class CCitadel_Ability_IceDome : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x38]; // 0xaf0
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x38]; // 0xaf8
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDomeStartTime; // 0xb28        
+        entity2::GameTime_t m_flDomeStartTime; // 0xb30        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDomeEndTime; // 0xb2c        
+        entity2::GameTime_t m_flDomeEndTime; // 0xb34        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_IceDome because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_IceDome) == 0xb30);
+    static_assert(sizeof(CCitadel_Ability_IceDome) == 0xb38);
 };

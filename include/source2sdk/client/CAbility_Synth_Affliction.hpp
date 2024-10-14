@@ -15,18 +15,18 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf8
+    // Size: 0xd08
     // Has VTable
     #pragma pack(push, 1)
     class CAbility_Synth_Affliction : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc80[0x70]; // 0xc80
-        client::ParticleIndex_t m_hAOEParticle; // 0xcf0        
-        [[maybe_unused]] std::uint8_t pad_0xcf4[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x70]; // 0xc90
+        client::ParticleIndex_t m_hAOEParticle; // 0xd00        
+        [[maybe_unused]] std::uint8_t pad_0xd04[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Affliction because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Synth_Affliction) == 0xcf8);
+    static_assert(sizeof(CAbility_Synth_Affliction) == 0xd08);
 };

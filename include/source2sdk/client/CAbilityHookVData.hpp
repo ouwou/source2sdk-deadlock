@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16b8
+    // Size: 0x16c0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -47,9 +47,12 @@ namespace source2sdk::client
         CSoundEventName m_strHookMissSound; // 0x1688        
         CSoundEventName m_strHookImpactGeoSound; // 0x1698        
         CSoundEventName m_SelfBuffCastSound; // 0x16a8        
+        // metadata: MPropertyStartGroup "Gameplay"
+        float m_flTrooperHitRadius; // 0x16b8        
+        [[maybe_unused]] std::uint8_t pad_0x16bc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityHookVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityHookVData) == 0x16b8);
+    static_assert(sizeof(CAbilityHookVData) == 0x16c0);
 };

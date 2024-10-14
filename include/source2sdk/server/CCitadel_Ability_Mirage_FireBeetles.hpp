@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc60
+    // Size: 0xc68
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flCastStartTime"
@@ -23,15 +23,15 @@ namespace source2sdk::server
     class CCitadel_Ability_Mirage_FireBeetles : public server::CCitadelBaseAbility
     {
     public:
-        Vector m_vLaunchPosition; // 0xaf0        
-        QAngle m_qLaunchAngle; // 0xafc        
+        Vector m_vLaunchPosition; // 0xaf8        
+        QAngle m_qLaunchAngle; // 0xb04        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flCastStartTime; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb0c[0x154];
+        entity2::GameTime_t m_flCastStartTime; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb14[0x154];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Mirage_FireBeetles because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Mirage_FireBeetles) == 0xc60);
+    static_assert(sizeof(CCitadel_Ability_Mirage_FireBeetles) == 0xc68);
 };

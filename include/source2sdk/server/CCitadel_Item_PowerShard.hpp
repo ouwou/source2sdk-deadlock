@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb50
+    // Size: 0xb58
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_PowerShard : public server::CCitadel_Item
@@ -27,11 +27,11 @@ namespace source2sdk::server
     public:
         // m_hLastSignatureToActivate has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBaseAbility> m_hLastSignatureToActivate;
-        char m_hLastSignatureToActivate[0x4]; // 0xb10        
-        [[maybe_unused]] std::uint8_t pad_0xb14[0x3c];
+        char m_hLastSignatureToActivate[0x4]; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb1c[0x3c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_PowerShard because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_PowerShard) == 0xb50);
+    static_assert(sizeof(CCitadel_Item_PowerShard) == 0xb58);
 };

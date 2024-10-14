@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd70
+    // Size: 0xd80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bAirRaiding"
@@ -23,14 +23,14 @@ namespace source2sdk::client
     class CCitadel_Ability_PowerJump : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc80[0x4]; // 0xc80
-        client::ParticleIndex_t m_nTargetingParticleIndex; // 0xc84        
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x4]; // 0xc90
+        client::ParticleIndex_t m_nTargetingParticleIndex; // 0xc94        
         // metadata: MNetworkEnable
-        bool m_bAirRaiding; // 0xc88        
-        [[maybe_unused]] std::uint8_t pad_0xc89[0xe7];
+        bool m_bAirRaiding; // 0xc98        
+        [[maybe_unused]] std::uint8_t pad_0xc99[0xe7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_PowerJump because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_PowerJump) == 0xd70);
+    static_assert(sizeof(CCitadel_Ability_PowerJump) == 0xd80);
 };

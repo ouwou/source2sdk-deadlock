@@ -15,17 +15,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb50
+    // Size: 0xb58
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_ArmorUpgrade_SpellShield : public server::CCitadel_Item
     {
     public:
-        entity2::GameTime_t fl_mSpellShieldBreakTime; // 0xb10        
-        [[maybe_unused]] std::uint8_t pad_0xb14[0x3c];
+        entity2::GameTime_t fl_mSpellShieldBreakTime; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb1c[0x3c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_ArmorUpgrade_SpellShield because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_ArmorUpgrade_SpellShield) == 0xb50);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_SpellShield) == 0xb58);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd58
+    // Size: 0xd60
     // Has VTable
     #pragma pack(push, 1)
     class CAbility_Rutger_RocketLauncher : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x268];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x268];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAbility_Rutger_RocketLauncher) == 0xd58);
+    static_assert(sizeof(CAbility_Rutger_RocketLauncher) == 0xd60);
 };

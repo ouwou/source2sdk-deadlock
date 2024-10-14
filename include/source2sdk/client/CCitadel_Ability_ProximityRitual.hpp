@@ -20,7 +20,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe00
+    // Size: 0xe10
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "ECatStatueState_t m_eState"
@@ -31,20 +31,20 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        client::ECatStatueState_t m_eState; // 0xc80        
-        [[maybe_unused]] std::uint8_t pad_0xc81[0x3]; // 0xc81
+        client::ECatStatueState_t m_eState; // 0xc90        
+        [[maybe_unused]] std::uint8_t pad_0xc91[0x3]; // 0xc91
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         // m_hStatue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hStatue;
-        char m_hStatue[0x4]; // 0xc84        
-        [[maybe_unused]] std::uint8_t pad_0xc88[0x8]; // 0xc88
-        Vector m_vLaunchPosition; // 0xc90        
-        QAngle m_qLaunchAngle; // 0xc9c        
-        [[maybe_unused]] std::uint8_t pad_0xca8[0x158];
+        char m_hStatue[0x4]; // 0xc94        
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x8]; // 0xc98
+        Vector m_vLaunchPosition; // 0xca0        
+        QAngle m_qLaunchAngle; // 0xcac        
+        [[maybe_unused]] std::uint8_t pad_0xcb8[0x158];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ProximityRitual because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ProximityRitual) == 0xe00);
+    static_assert(sizeof(CCitadel_Ability_ProximityRitual) == 0xe10);
 };

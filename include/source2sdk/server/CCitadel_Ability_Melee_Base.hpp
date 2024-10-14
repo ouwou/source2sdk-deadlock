@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb78
+    // Size: 0xb80
     // Has VTable
     // Is Abstract
     // 
@@ -29,30 +29,30 @@ namespace source2sdk::server
     class CCitadel_Ability_Melee_Base : public server::CCitadelBaseAbility
     {
     public:
-        int32_t m_nHitNumber; // 0xaf0        
+        int32_t m_nHitNumber; // 0xaf8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bUsingThisMelee; // 0xaf4        
+        bool m_bUsingThisMelee; // 0xafc        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bUsingMeleeTagActive; // 0xaf5        
+        bool m_bUsingMeleeTagActive; // 0xafd        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bHitWithThisAttack; // 0xaf6        
-        [[maybe_unused]] std::uint8_t pad_0xaf7[0x1]; // 0xaf7
+        bool m_bHitWithThisAttack; // 0xafe        
+        [[maybe_unused]] std::uint8_t pad_0xaff[0x1]; // 0xaff
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flLastActivateTime; // 0xaf8        
+        entity2::GameTime_t m_flLastActivateTime; // 0xb00        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextAttackAllowedTime; // 0xafc        
+        entity2::GameTime_t m_flNextAttackAllowedTime; // 0xb04        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAttackTriggeredTime; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb04[0x74];
+        entity2::GameTime_t m_flAttackTriggeredTime; // 0xb08        
+        [[maybe_unused]] std::uint8_t pad_0xb0c[0x74];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Melee_Base because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Melee_Base) == 0xb78);
+    static_assert(sizeof(CCitadel_Ability_Melee_Base) == 0xb80);
 };

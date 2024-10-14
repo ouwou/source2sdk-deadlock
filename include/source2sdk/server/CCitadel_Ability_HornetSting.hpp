@@ -15,18 +15,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcc8
+    // Size: 0xcd0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_HornetSting : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x70]; // 0xaf0
-        server::CitadelAbilityProjectileCreateInfo_t m_projInfo; // 0xb60        
-        [[maybe_unused]] std::uint8_t pad_0xbb0[0x118];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x70]; // 0xaf8
+        server::CitadelAbilityProjectileCreateInfo_t m_projInfo; // 0xb68        
+        [[maybe_unused]] std::uint8_t pad_0xbb8[0x118];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_HornetSting because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_HornetSting) == 0xcc8);
+    static_assert(sizeof(CCitadel_Ability_HornetSting) == 0xcd0);
 };

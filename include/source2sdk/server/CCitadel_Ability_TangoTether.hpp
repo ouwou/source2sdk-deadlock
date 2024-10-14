@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc98
+    // Size: 0xca0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vecCastStartPos"
@@ -39,51 +39,51 @@ namespace source2sdk::server
     class CCitadel_Ability_TangoTether : public server::CCitadelBaseAbility
     {
     public:
-        int32_t m_iTargetPosIndex; // 0xaf0        
+        int32_t m_iTargetPosIndex; // 0xaf8        
         // m_hLockOnTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hLockOnTarget;
-        char m_hLockOnTarget[0x4]; // 0xaf4        
+        char m_hLockOnTarget[0x4]; // 0xafc        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecCastStartPos; // 0xaf8        
+        Vector m_vecCastStartPos; // 0xb00        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecDashStartPos; // 0xb04        
+        Vector m_vecDashStartPos; // 0xb0c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vecDashEndPos; // 0xb10        
+        Vector m_vecDashEndPos; // 0xb18        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        QAngle m_angDashStartAng; // 0xb1c        
+        QAngle m_angDashStartAng; // 0xb24        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDashStartTime; // 0xb28        
+        entity2::GameTime_t m_flDashStartTime; // 0xb30        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flGrappleStartTime; // 0xb2c        
+        entity2::GameTime_t m_flGrappleStartTime; // 0xb34        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flGrappleArriveTime; // 0xb30        
+        entity2::GameTime_t m_flGrappleArriveTime; // 0xb38        
         // metadata: MNetworkEnable
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0xb34        
-        float m_flVelSpring; // 0xb38        
+        char m_hTarget[0x4]; // 0xb3c        
+        float m_flVelSpring; // 0xb40        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flGrappleShotAttackTime; // 0xb3c        
-        int32_t m_nTicksNotMoving; // 0xb40        
-        Vector m_vecPrevPos; // 0xb44        
+        entity2::GameTime_t m_flGrappleShotAttackTime; // 0xb44        
+        int32_t m_nTicksNotMoving; // 0xb48        
+        Vector m_vecPrevPos; // 0xb4c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
         // metadata: MNetworkEncoder "coord"
-        Vector m_rgTargetPos[20]; // 0xb50        
+        Vector m_rgTargetPos[20]; // 0xb58        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_rgTargetPosTime[20]; // 0xc40        
-        client::ParticleIndex_t m_nGrappleTravelEffect; // 0xc90        
-        [[maybe_unused]] std::uint8_t pad_0xc94[0x4];
+        entity2::GameTime_t m_rgTargetPosTime[20]; // 0xc48        
+        client::ParticleIndex_t m_nGrappleTravelEffect; // 0xc98        
+        [[maybe_unused]] std::uint8_t pad_0xc9c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_TangoTether because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_TangoTether) == 0xc98);
+    static_assert(sizeof(CCitadel_Ability_TangoTether) == 0xca0);
 };

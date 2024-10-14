@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcd0
+    // Size: 0xce0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_WeaponUpgrade_BansheeSlugs : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc98[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xca8[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_WeaponUpgrade_BansheeSlugs) == 0xcd0);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_BansheeSlugs) == 0xce0);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc78
+    // Size: 0xc80
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Charged_Bomb : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x188];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x188];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Charged_Bomb) == 0xc78);
+    static_assert(sizeof(CCitadel_Ability_Charged_Bomb) == 0xc80);
 };

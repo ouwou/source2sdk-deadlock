@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf8
+    // Size: 0xd08
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flVertOffset"
@@ -31,29 +31,29 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flVertOffset; // 0xc80        
+        float m_flVertOffset; // 0xc90        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flHorizGap; // 0xc84        
+        float m_flHorizGap; // 0xc94        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vStartPos; // 0xc88        
+        Vector m_vStartPos; // 0xc98        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vTargetPos; // 0xc94        
+        Vector m_vTargetPos; // 0xca4        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        QAngle m_angFacing; // 0xca0        
+        QAngle m_angFacing; // 0xcb0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int32_t m_nMantleTypeIndex; // 0xcac        
+        int32_t m_nMantleTypeIndex; // 0xcbc        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flStartTime; // 0xcb0        
-        [[maybe_unused]] std::uint8_t pad_0xcb4[0x44];
+        entity2::GameTime_t m_flStartTime; // 0xcc0        
+        [[maybe_unused]] std::uint8_t pad_0xcc4[0x44];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Mantle because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Mantle) == 0xcf8);
+    static_assert(sizeof(CCitadel_Ability_Mantle) == 0xd08);
 };

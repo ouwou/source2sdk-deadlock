@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbf8
+    // Size: 0xc00
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flTotalPendingDamage"
@@ -23,16 +23,16 @@ namespace source2sdk::server
     class CCitadel_Ability_Shiv_Defer_Damage : public server::CCitadelBaseShivAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0xe0]; // 0xaf0
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0xe0]; // 0xaf8
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        float m_flTotalPendingDamage; // 0xbd0        
-        [[maybe_unused]] std::uint8_t pad_0xbd4[0x1c]; // 0xbd4
-        entity2::GameTime_t m_flLastDeferredDamageApplicationTime; // 0xbf0        
-        [[maybe_unused]] std::uint8_t pad_0xbf4[0x4];
+        float m_flTotalPendingDamage; // 0xbd8        
+        [[maybe_unused]] std::uint8_t pad_0xbdc[0x1c]; // 0xbdc
+        entity2::GameTime_t m_flLastDeferredDamageApplicationTime; // 0xbf8        
+        [[maybe_unused]] std::uint8_t pad_0xbfc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Shiv_Defer_Damage because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Shiv_Defer_Damage) == 0xbf8);
+    static_assert(sizeof(CCitadel_Ability_Shiv_Defer_Damage) == 0xc00);
 };

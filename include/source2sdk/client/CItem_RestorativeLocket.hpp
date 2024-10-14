@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd48
+    // Size: 0xd58
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_nNumStacks"
@@ -22,13 +22,13 @@ namespace source2sdk::client
     class CItem_RestorativeLocket : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc98[0xa8]; // 0xc98
+        [[maybe_unused]] std::uint8_t pad_0xca8[0xa8]; // 0xca8
         // metadata: MNetworkEnable
-        int32_t m_nNumStacks; // 0xd40        
-        [[maybe_unused]] std::uint8_t pad_0xd44[0x4];
+        int32_t m_nNumStacks; // 0xd50        
+        [[maybe_unused]] std::uint8_t pad_0xd54[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItem_RestorativeLocket because it is not a standard-layout class
-    static_assert(sizeof(CItem_RestorativeLocket) == 0xd48);
+    static_assert(sizeof(CItem_RestorativeLocket) == 0xd58);
 };

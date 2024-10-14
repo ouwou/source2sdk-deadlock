@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd28
+    // Size: 0xd38
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Slork_Invis : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc80[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xc90[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Slork_Invis) == 0xd28);
+    static_assert(sizeof(CCitadel_Ability_Slork_Invis) == 0xd38);
 };

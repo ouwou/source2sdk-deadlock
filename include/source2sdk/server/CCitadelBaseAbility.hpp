@@ -22,7 +22,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaf0
+    // Size: 0xaf8
     // Has VTable
     // Is Abstract
     // 
@@ -89,93 +89,93 @@ namespace source2sdk::server
     class CCitadelBaseAbility : public server::CBaseEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4e0[0xd0]; // 0x4e0
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0xd8]; // 0x4e0
         // m_vecIntrinsicModifiers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CModifierHandleTyped<server::CCitadelModifier>> m_vecIntrinsicModifiers;
-        char m_vecIntrinsicModifiers[0x18]; // 0x5b0        
+        char m_vecIntrinsicModifiers[0x18]; // 0x5b8        
         // m_pCastDelayAutoModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CModifierHandleTyped<server::CCitadelModifier> m_pCastDelayAutoModifier;
-        char m_pCastDelayAutoModifier[0x18]; // 0x5c8        
+        char m_pCastDelayAutoModifier[0x18]; // 0x5d0        
         // m_pChannelAutoModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CModifierHandleTyped<server::CCitadelModifier> m_pChannelAutoModifier;
-        char m_pChannelAutoModifier[0x18]; // 0x5e0        
-        CGlobalSymbol m_strUsedCastGraphParam; // 0x5f8        
-        int32_t m_nCastParamNeedsResetTick; // 0x600        
-        bool m_bIsCoolingDownInternal; // 0x604        
-        [[maybe_unused]] std::uint8_t pad_0x605[0x3]; // 0x605
-        entity2::GameTime_t m_flCancelLockoutTime; // 0x608        
-        [[maybe_unused]] std::uint8_t pad_0x60c[0x1c]; // 0x60c
+        char m_pChannelAutoModifier[0x18]; // 0x5e8        
+        CGlobalSymbol m_strUsedCastGraphParam; // 0x600        
+        int32_t m_nCastParamNeedsResetTick; // 0x608        
+        bool m_bIsCoolingDownInternal; // 0x60c        
+        [[maybe_unused]] std::uint8_t pad_0x60d[0x3]; // 0x60d
+        entity2::GameTime_t m_flCancelLockoutTime; // 0x610        
+        [[maybe_unused]] std::uint8_t pad_0x614[0x1c]; // 0x614
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnChannelingChanged"
-        bool m_bChanneling; // 0x628        
+        bool m_bChanneling; // 0x630        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnInCastDelayChanged"
-        bool m_bInCastDelay; // 0x629        
-        [[maybe_unused]] std::uint8_t pad_0x62a[0x6]; // 0x62a
+        bool m_bInCastDelay; // 0x631        
+        [[maybe_unused]] std::uint8_t pad_0x632[0x6]; // 0x632
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilityImbuedChanged"
         // m_vecImbuedByAbilitiyIDs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<CUtlStringToken> m_vecImbuedByAbilitiyIDs;
-        char m_vecImbuedByAbilitiyIDs[0x18]; // 0x630        
+        char m_vecImbuedByAbilitiyIDs[0x18]; // 0x638        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnUpgradeBitsChanged"
         // metadata: MNetworkPriority "32"
-        int32_t m_nUpgradeBits; // 0x648        
+        int32_t m_nUpgradeBits; // 0x650        
         // metadata: MNetworkEnable
-        int32_t m_iBucketID; // 0x64c        
+        int32_t m_iBucketID; // 0x654        
         // metadata: MNetworkEnable
-        bool m_bToggleState; // 0x650        
-        [[maybe_unused]] std::uint8_t pad_0x651[0x3]; // 0x651
-        // metadata: MNetworkEnable
-        // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flCooldownStart; // 0x654        
+        bool m_bToggleState; // 0x658        
+        [[maybe_unused]] std::uint8_t pad_0x659[0x3]; // 0x659
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flCooldownEnd; // 0x658        
+        entity2::GameTime_t m_flCooldownStart; // 0x65c        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCastCompletedTime; // 0x65c        
+        // metadata: MNetworkPriority "32"
+        entity2::GameTime_t m_flCooldownEnd; // 0x660        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flChannelStartTime; // 0x660        
+        entity2::GameTime_t m_flCastCompletedTime; // 0x664        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCastDelayStartTime; // 0x664        
+        entity2::GameTime_t m_flChannelStartTime; // 0x668        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flCastDelayStartTime; // 0x66c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnAbilitySlotChanged"
-        client::EAbilitySlots_t m_eAbilitySlot; // 0x668        
-        [[maybe_unused]] std::uint8_t pad_0x66a[0x2]; // 0x66a
+        client::EAbilitySlots_t m_eAbilitySlot; // 0x670        
+        [[maybe_unused]] std::uint8_t pad_0x672[0x2]; // 0x672
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x66c        
+        entity2::GameTime_t m_flPostCastDelayEndTime; // 0x674        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        int32_t m_iRemainingCharges; // 0x670        
+        int32_t m_iRemainingCharges; // 0x678        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeStart; // 0x674        
+        entity2::GameTime_t m_flChargeRechargeStart; // 0x67c        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_flChargeRechargeEnd; // 0x678        
+        entity2::GameTime_t m_flChargeRechargeEnd; // 0x680        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flMovementControlActiveTime; // 0x67c        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSelectedChangedTime; // 0x680        
+        entity2::GameTime_t m_flMovementControlActiveTime; // 0x684        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x684        
+        entity2::GameTime_t m_flSelectedChangedTime; // 0x688        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x688        
-        // metadata: MNetworkEnable
-        CUtlStringToken m_nImbuedAbilityID; // 0x68c        
+        entity2::GameTime_t m_flAltCastHoldStartTime; // 0x68c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bSelectionModeIsAltMode; // 0x690        
-        [[maybe_unused]] std::uint8_t pad_0x691[0x7]; // 0x691
+        entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x690        
+        // metadata: MNetworkEnable
+        CUtlStringToken m_nImbuedAbilityID; // 0x694        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        bool m_bSelectionModeIsAltMode; // 0x698        
+        [[maybe_unused]] std::uint8_t pad_0x699[0x7]; // 0x699
         // m_vecEnemyHeroesDamaged has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecEnemyHeroesDamaged;
-        char m_vecEnemyHeroesDamaged[0x18]; // 0x698        
-        float m_flPreviousEffectiveCooldown; // 0x6b0        
-        [[maybe_unused]] std::uint8_t pad_0x6b4[0x43c];
+        char m_vecEnemyHeroesDamaged[0x18]; // 0x6a0        
+        float m_flPreviousEffectiveCooldown; // 0x6b8        
+        [[maybe_unused]] std::uint8_t pad_0x6bc[0x43c];
         
         // Datamap fields:
         // int32_t slot; // 0x7fffffff
@@ -185,5 +185,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBaseAbility because it is not a standard-layout class
-    static_assert(sizeof(CCitadelBaseAbility) == 0xaf0);
+    static_assert(sizeof(CCitadelBaseAbility) == 0xaf8);
 };

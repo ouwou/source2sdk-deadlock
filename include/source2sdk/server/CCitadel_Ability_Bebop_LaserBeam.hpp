@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc60
+    // Size: 0xc68
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bAirCast"
@@ -24,19 +24,19 @@ namespace source2sdk::server
     class CCitadel_Ability_Bebop_LaserBeam : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x150]; // 0xaf0
-        bool m_bZoomed; // 0xc40        
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x150]; // 0xaf8
+        bool m_bZoomed; // 0xc48        
         // metadata: MNetworkEnable
-        bool m_bAirCast; // 0xc41        
-        [[maybe_unused]] std::uint8_t pad_0xc42[0x2]; // 0xc42
+        bool m_bAirCast; // 0xc49        
+        [[maybe_unused]] std::uint8_t pad_0xc4a[0x2]; // 0xc4a
         // metadata: MNetworkEnable
-        Vector m_vBeamAimPos; // 0xc44        
-        [[maybe_unused]] std::uint8_t pad_0xc50[0x4]; // 0xc50
+        Vector m_vBeamAimPos; // 0xc4c        
+        [[maybe_unused]] std::uint8_t pad_0xc58[0x4]; // 0xc58
         // metadata: MNetworkEnable
-        QAngle m_angBeamAngles; // 0xc54        
+        QAngle m_angBeamAngles; // 0xc5c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Bebop_LaserBeam because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Bebop_LaserBeam) == 0xc60);
+    static_assert(sizeof(CCitadel_Ability_Bebop_LaserBeam) == 0xc68);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe78
+    // Size: 0xe88
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Spinning_Blade : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc80[0x1f8];
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x1f8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Spinning_Blade) == 0xe78);
+    static_assert(sizeof(CCitadel_Ability_Spinning_Blade) == 0xe88);
 };

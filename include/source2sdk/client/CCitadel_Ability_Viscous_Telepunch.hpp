@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xea8
+    // Size: 0xeb8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vecTeleportPosition"
@@ -27,20 +27,20 @@ namespace source2sdk::client
     class CCitadel_Ability_Viscous_Telepunch : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc80[0x1f8]; // 0xc80
+        [[maybe_unused]] std::uint8_t pad_0xc90[0x1f8]; // 0xc90
         // metadata: MNetworkEnable
-        Vector m_vecTeleportPosition; // 0xe78        
+        Vector m_vecTeleportPosition; // 0xe88        
         // metadata: MNetworkEnable
-        Vector m_vecTeleportPositionNormal; // 0xe84        
+        Vector m_vecTeleportPositionNormal; // 0xe94        
         // metadata: MNetworkEnable
-        client::ETelepunchState_t m_eTelepunchState; // 0xe90        
-        [[maybe_unused]] std::uint8_t pad_0xe91[0x3]; // 0xe91
+        client::ETelepunchState_t m_eTelepunchState; // 0xea0        
+        [[maybe_unused]] std::uint8_t pad_0xea1[0x3]; // 0xea1
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flNextStateTime; // 0xe94        
-        [[maybe_unused]] std::uint8_t pad_0xe98[0x10];
+        entity2::GameTime_t m_flNextStateTime; // 0xea4        
+        [[maybe_unused]] std::uint8_t pad_0xea8[0x10];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Viscous_Telepunch because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Viscous_Telepunch) == 0xea8);
+    static_assert(sizeof(CCitadel_Ability_Viscous_Telepunch) == 0xeb8);
 };

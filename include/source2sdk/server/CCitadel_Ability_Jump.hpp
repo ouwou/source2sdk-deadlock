@@ -18,7 +18,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc80
+    // Size: 0xc88
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flGroundDashJumpStartTime"
@@ -34,49 +34,49 @@ namespace source2sdk::server
     class CCitadel_Ability_Jump : public server::CCitadelBaseAbility
     {
     public:
-        entity2::GameTime_t m_flLastTimeOnZipLine; // 0xaf0        
-        entity2::GameTime_t m_flLastOnGroundTime; // 0xaf4        
-        entity2::GameTime_t m_flPhaseStartTime; // 0xaf8        
-        entity2::GameTime_t m_flJumpTime; // 0xafc        
-        client::EJumpType_t m_LastJumpType; // 0xb00        
-        bool m_bShouldCreateAirJumpEffects; // 0xb01        
-        [[maybe_unused]] std::uint8_t pad_0xb02[0x2]; // 0xb02
-        entity2::GameTime_t m_flDoubleJumpFailTime; // 0xb04        
-        client::ECitadelAbilityOrders m_eDoubleJumpFailReason; // 0xb08        
-        Vector m_vWallJumpNormalUsed; // 0xb0c        
-        [[maybe_unused]] std::uint8_t pad_0xb18[0x118]; // 0xb18
+        entity2::GameTime_t m_flLastTimeOnZipLine; // 0xaf8        
+        entity2::GameTime_t m_flLastOnGroundTime; // 0xafc        
+        entity2::GameTime_t m_flPhaseStartTime; // 0xb00        
+        entity2::GameTime_t m_flJumpTime; // 0xb04        
+        client::EJumpType_t m_LastJumpType; // 0xb08        
+        bool m_bShouldCreateAirJumpEffects; // 0xb09        
+        [[maybe_unused]] std::uint8_t pad_0xb0a[0x2]; // 0xb0a
+        entity2::GameTime_t m_flDoubleJumpFailTime; // 0xb0c        
+        client::ECitadelAbilityOrders m_eDoubleJumpFailReason; // 0xb10        
+        Vector m_vWallJumpNormalUsed; // 0xb14        
+        [[maybe_unused]] std::uint8_t pad_0xb20[0x118]; // 0xb20
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flGroundDashJumpStartTime; // 0xc30        
+        server::CCitadelAutoScaledTime m_flGroundDashJumpStartTime; // 0xc38        
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flGroundDashJumpEndTime; // 0xc48        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bJumped; // 0xc60        
+        server::CCitadelAutoScaledTime m_flGroundDashJumpEndTime; // 0xc50        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bCanDashJump; // 0xc61        
-        [[maybe_unused]] std::uint8_t pad_0xc62[0x2]; // 0xc62
+        bool m_bJumped; // 0xc68        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int32_t m_nDesiredAirJumpCount; // 0xc64        
+        bool m_bCanDashJump; // 0xc69        
+        [[maybe_unused]] std::uint8_t pad_0xc6a[0x2]; // 0xc6a
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int32_t m_nExecutedAirJumpCount; // 0xc68        
+        int32_t m_nDesiredAirJumpCount; // 0xc6c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bInSlideJump; // 0xc6c        
+        int32_t m_nExecutedAirJumpCount; // 0xc70        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nConsecutiveAirJumps; // 0xc6d        
+        bool m_bInSlideJump; // 0xc74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nConsecutiveWallJumps; // 0xc6e        
-        [[maybe_unused]] std::uint8_t pad_0xc6f[0x1]; // 0xc6f
-        Vector m_vLastWallCollidedWithNormal; // 0xc70        
-        [[maybe_unused]] std::uint8_t pad_0xc7c[0x4];
+        int8_t m_nConsecutiveAirJumps; // 0xc75        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        int8_t m_nConsecutiveWallJumps; // 0xc76        
+        [[maybe_unused]] std::uint8_t pad_0xc77[0x1]; // 0xc77
+        Vector m_vLastWallCollidedWithNormal; // 0xc78        
+        [[maybe_unused]] std::uint8_t pad_0xc84[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Jump because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Jump) == 0xc80);
+    static_assert(sizeof(CCitadel_Ability_Jump) == 0xc88);
 };

@@ -14,18 +14,18 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcd8
+    // Size: 0xce8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_Intensifying_Clip : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc98[0x38]; // 0xc98
-        float m_flSpinUpTime; // 0xcd0        
-        [[maybe_unused]] std::uint8_t pad_0xcd4[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xca8[0x38]; // 0xca8
+        float m_flSpinUpTime; // 0xce0        
+        [[maybe_unused]] std::uint8_t pad_0xce4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_Intensifying_Clip because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_Intensifying_Clip) == 0xcd8);
+    static_assert(sizeof(CCitadel_Item_Intensifying_Clip) == 0xce8);
 };
