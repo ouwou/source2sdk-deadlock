@@ -24,7 +24,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x958
+    // Size: 0x960
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EPlayerPlayState m_ePlayState"
@@ -40,6 +40,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "float m_flGuideBotMatchLastTaskNagVO"
     // static metadata: MNetworkVarNames "float m_flGuideBotLastTimeTaskCompleted"
     // static metadata: MNetworkVarNames "EGuidedBotMatchObjective m_eGuidedBotMatchObjective"
+    // static metadata: MNetworkVarNames "int m_nCurrentRank"
     // static metadata: MNetworkVarNames "int8 m_nAssignedLane"
     // static metadata: MNetworkVarNames "int8 m_nOriginalLaneAssignment"
     // static metadata: MNetworkVarNames "bool m_bIsKingPanda"
@@ -82,42 +83,44 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         client::EGuidedBotMatchObjective m_eGuidedBotMatchObjective; // 0x728        
         // metadata: MNetworkEnable
+        int32_t m_nCurrentRank; // 0x72c        
+        // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "AssignedLaneChanged"
-        int8_t m_nAssignedLane; // 0x72c        
+        int8_t m_nAssignedLane; // 0x730        
         // metadata: MNetworkEnable
-        int8_t m_nOriginalLaneAssignment; // 0x72d        
+        int8_t m_nOriginalLaneAssignment; // 0x731        
         // metadata: MNetworkEnable
-        bool m_bIsKingPanda; // 0x72e        
+        bool m_bIsKingPanda; // 0x732        
         // metadata: MNetworkEnable
-        bool m_bBotDisconnectTakeover; // 0x72f        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInTeamChat; // 0x730        
+        bool m_bBotDisconnectTakeover; // 0x733        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ChatGroupsChanged"
-        bool m_bInPartyChat; // 0x731        
-        [[maybe_unused]] std::uint8_t pad_0x732[0x2]; // 0x732
+        bool m_bInTeamChat; // 0x734        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkChangeCallback "ChatGroupsChanged"
+        bool m_bInPartyChat; // 0x735        
+        [[maybe_unused]] std::uint8_t pad_0x736[0x2]; // 0x736
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        client::HeroBuildID_t m_unHeroBuildID; // 0x734        
+        client::HeroBuildID_t m_unHeroBuildID; // 0x738        
         // metadata: MNetworkEnable
         // m_hHeroPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_CitadelPlayerPawn> m_hHeroPawn;
-        char m_hHeroPawn[0x4]; // 0x738        
-        [[maybe_unused]] std::uint8_t pad_0x73c[0x34]; // 0x73c
+        char m_hHeroPawn[0x4]; // 0x73c        
+        [[maybe_unused]] std::uint8_t pad_0x740[0x38]; // 0x740
         // metadata: MNetworkEnable
-        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x770        
+        client::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x778        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        int8_t m_nDeathReplayAvailable; // 0x948        
+        int8_t m_nDeathReplayAvailable; // 0x950        
         // metadata: MNetworkEnable
-        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x949        
-        bool m_bHasCheckedFriendName; // 0x94a        
-        [[maybe_unused]] std::uint8_t pad_0x94b[0x5]; // 0x94b
-        CUtlString m_sFriendName; // 0x950        
+        client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0x951        
+        bool m_bHasCheckedFriendName; // 0x952        
+        [[maybe_unused]] std::uint8_t pad_0x953[0x5]; // 0x953
+        CUtlString m_sFriendName; // 0x958        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerController because it is not a standard-layout class
-    static_assert(sizeof(CCitadelPlayerController) == 0x958);
+    static_assert(sizeof(CCitadelPlayerController) == 0x960);
 };

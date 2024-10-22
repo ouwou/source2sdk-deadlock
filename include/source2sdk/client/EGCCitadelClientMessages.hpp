@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 103
+    // Enumerator count: 106
     // Alignment: 4
     // Size: 0x4
     enum class EGCCitadelClientMessages : std::uint32_t
@@ -116,5 +116,8 @@ namespace source2sdk::client
         k_EMsgGCToClientRankedSchedule = 0x2404,
         k_EMsgClientToGCSetRankedSchedule = 0x2405,
         k_EMsgClientToGCSetRankedScheduleResponse = 0x2406,
+        k_EMsgClientToGCCommendPlayerFromMatch = 0x2407,
+        k_EMsgClientToGCCommendPlayerFromMatchResponse = 0x2408,
+        k_EMsgGCToClientCommendNotification = 0x2409,
     };
 };
