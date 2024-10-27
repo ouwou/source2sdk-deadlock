@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1530
+    // Size: 0x14b8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -30,16 +30,16 @@ namespace source2sdk::client
         // metadata: MNetworkUserGroup "CCitadelPlayerClipComponent"
         // metadata: MNetworkAlias "CCitadelPlayerClipComponent"
         // metadata: MNetworkTypeAlias "CCitadelPlayerClipComponent"
-        client::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x14f8        
-        [[maybe_unused]] std::uint8_t pad_0x1518[0xc]; // 0x1518
+        client::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1480        
+        [[maybe_unused]] std::uint8_t pad_0x14a0[0xc]; // 0x14a0
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutStart; // 0x1524        
+        entity2::GameTime_t m_flFadeOutStart; // 0x14ac        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutEnd; // 0x1528        
-        [[maybe_unused]] std::uint8_t pad_0x152c[0x4];
+        entity2::GameTime_t m_flFadeOutEnd; // 0x14b0        
+        [[maybe_unused]] std::uint8_t pad_0x14b4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_TrooperBoss because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_TrooperBoss) == 0x1530);
+    static_assert(sizeof(C_NPC_TrooperBoss) == 0x14b8);
 };

@@ -33,7 +33,9 @@ namespace source2sdk::client
         bool m_bCanProcMultipleTimesFromSameShot; // 0x640        
         // metadata: MPropertyDescription "When true, will only call OnProc if the target hit passes the unit filter."
         bool m_bRequiresTargetFilter; // 0x641        
-        [[maybe_unused]] std::uint8_t pad_0x642[0x6]; // 0x642
+        // metadata: MPropertyDescription "When false, Proc'd bullets cannot be evaded"
+        bool m_bCanBeEvaded; // 0x642        
+        [[maybe_unused]] std::uint8_t pad_0x643[0x5]; // 0x643
         // metadata: MPropertyGroupName "Visuals"
         // m_TracerAdditionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TracerAdditionParticle;

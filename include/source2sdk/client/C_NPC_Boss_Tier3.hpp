@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x14f8
+    // Size: 0x1480
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iLane"
@@ -28,29 +28,29 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        int32_t m_iLane; // 0x14b0        
-        [[maybe_unused]] std::uint8_t pad_0x14b4[0x4]; // 0x14b4
+        int32_t m_iLane; // 0x1438        
+        [[maybe_unused]] std::uint8_t pad_0x143c[0x4]; // 0x143c
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "qangle"
         // metadata: MNetworkChangeCallback "OnT3Targeting1Changed"
-        QAngle m_angTargeting1; // 0x14b8        
-        [[maybe_unused]] std::uint8_t pad_0x14c4[0xc]; // 0x14c4
+        QAngle m_angTargeting1; // 0x1440        
+        [[maybe_unused]] std::uint8_t pad_0x144c[0xc]; // 0x144c
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "qangle"
         // metadata: MNetworkChangeCallback "OnT3Targeting2Changed"
-        QAngle m_angTargeting2; // 0x14d0        
-        [[maybe_unused]] std::uint8_t pad_0x14dc[0xc]; // 0x14dc
+        QAngle m_angTargeting2; // 0x1458        
+        [[maybe_unused]] std::uint8_t pad_0x1464[0xc]; // 0x1464
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnT3ElectricBeamCastsChanged"
-        int32_t m_nElectricBeamCasts; // 0x14e8        
+        int32_t m_nElectricBeamCasts; // 0x1470        
         // metadata: MNetworkEnable
-        client::ETier3State_t m_eAliveState; // 0x14ec        
+        client::ETier3State_t m_eAliveState; // 0x1474        
         // metadata: MNetworkEnable
-        client::ETier3Phase_t m_ePhase; // 0x14f0        
-        [[maybe_unused]] std::uint8_t pad_0x14f4[0x4];
+        client::ETier3Phase_t m_ePhase; // 0x1478        
+        [[maybe_unused]] std::uint8_t pad_0x147c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_Boss_Tier3 because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_Boss_Tier3) == 0x14f8);
+    static_assert(sizeof(C_NPC_Boss_Tier3) == 0x1480);
 };

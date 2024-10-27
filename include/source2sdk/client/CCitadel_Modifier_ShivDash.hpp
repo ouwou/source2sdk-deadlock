@@ -22,7 +22,8 @@ namespace source2sdk::client
     public:
         [[maybe_unused]] std::uint8_t pad_0xc0[0x38]; // 0xc0
         bool m_bUseTrail; // 0xf8        
-        [[maybe_unused]] std::uint8_t pad_0xf9[0x7];
+        bool m_bUseEchoEffect; // 0xf9        
+        [[maybe_unused]] std::uint8_t pad_0xfa[0x6];
     };
     #pragma pack(pop)
     

@@ -8,7 +8,7 @@
 
 namespace source2sdk::pulse_runtime_lib
 {
-    // Enumerator count: 84
+    // Enumerator count: 86
     // Alignment: 2
     // Size: 0x2
     enum class PulseInstructionCode_t : std::uint16_t
@@ -76,26 +76,28 @@ namespace source2sdk::pulse_runtime_lib
         EQ_BOOL = 0x3c,
         EQ_INT = 0x3d,
         EQ_FLOAT = 0x3e,
-        EQ_STRING = 0x3f,
-        EQ_ENTITY_NAME = 0x40,
-        EQ_SCHEMA_ENUM = 0x41,
-        EQ_EHANDLE = 0x42,
-        EQ_PANEL_HANDLE = 0x43,
-        EQ_OPAQUE_HANDLE = 0x44,
-        EQ_TEST_HANDLE = 0x45,
-        NE_BOOL = 0x46,
-        NE_INT = 0x47,
-        NE_FLOAT = 0x48,
-        NE_STRING = 0x49,
-        NE_ENTITY_NAME = 0x4a,
-        NE_SCHEMA_ENUM = 0x4b,
-        NE_EHANDLE = 0x4c,
-        NE_PANEL_HANDLE = 0x4d,
-        NE_OPAQUE_HANDLE = 0x4e,
-        NE_TEST_HANDLE = 0x4f,
-        SCALE_VEC3 = 0x50,
-        SCALE_INV_VEC3 = 0x51,
-        ELEMENT_ACCESS_VEC3 = 0x52,
-        GET_CONST_INLINE_STORAGE = 0x53,
+        EQ_VEC3 = 0x3f,
+        EQ_STRING = 0x40,
+        EQ_ENTITY_NAME = 0x41,
+        EQ_SCHEMA_ENUM = 0x42,
+        EQ_EHANDLE = 0x43,
+        EQ_PANEL_HANDLE = 0x44,
+        EQ_OPAQUE_HANDLE = 0x45,
+        EQ_TEST_HANDLE = 0x46,
+        NE_BOOL = 0x47,
+        NE_INT = 0x48,
+        NE_FLOAT = 0x49,
+        NE_VEC3 = 0x4a,
+        NE_STRING = 0x4b,
+        NE_ENTITY_NAME = 0x4c,
+        NE_SCHEMA_ENUM = 0x4d,
+        NE_EHANDLE = 0x4e,
+        NE_PANEL_HANDLE = 0x4f,
+        NE_OPAQUE_HANDLE = 0x50,
+        NE_TEST_HANDLE = 0x51,
+        SCALE_VEC3 = 0x52,
+        SCALE_INV_VEC3 = 0x53,
+        ELEMENT_ACCESS_VEC3 = 0x54,
+        GET_CONST_INLINE_STORAGE = 0x55,
     };
 };

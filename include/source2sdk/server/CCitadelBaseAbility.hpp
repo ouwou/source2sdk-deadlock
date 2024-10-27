@@ -143,7 +143,7 @@ namespace source2sdk::server
         client::EAbilitySlots_t m_eAbilitySlot; // 0x670        
         [[maybe_unused]] std::uint8_t pad_0x672[0x2]; // 0x672
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flPostCastDelayEndTime; // 0x674        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
@@ -157,18 +157,18 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flMovementControlActiveTime; // 0x684        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flSelectedChangedTime; // 0x688        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAltCastHoldStartTime; // 0x68c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x690        
         // metadata: MNetworkEnable
         CUtlStringToken m_nImbuedAbilityID; // 0x694        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bSelectionModeIsAltMode; // 0x698        
         [[maybe_unused]] std::uint8_t pad_0x699[0x7]; // 0x699
         // m_vecEnemyHeroesDamaged has a template type with potentially unknown template parameters. You can try uncommenting the field below.

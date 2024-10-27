@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbe8
+    // Size: 0xbc8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
@@ -27,15 +27,15 @@ namespace source2sdk::server
     class CCitadel_Nano_Predatory_Statue : public server::CCitadelAnimatingModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xbc8[0x18]; // 0xbc8
+        [[maybe_unused]] std::uint8_t pad_0xba8[0x18]; // 0xba8
         // metadata: MNetworkEnable
         // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBaseAbility> m_hAbility;
-        char m_hAbility[0x4]; // 0xbe0        
-        float m_flLifetime; // 0xbe4        
+        char m_hAbility[0x4]; // 0xbc0        
+        float m_flLifetime; // 0xbc4        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Nano_Predatory_Statue because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Nano_Predatory_Statue) == 0xbe8);
+    static_assert(sizeof(CCitadel_Nano_Predatory_Statue) == 0xbc8);
 };

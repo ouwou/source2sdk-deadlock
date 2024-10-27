@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 16
+    // Enumerator count: 17
     // Alignment: 4
     // Size: 0x4
     enum class EChooseHeroRosterContext : std::uint32_t
@@ -29,5 +29,6 @@ namespace source2sdk::client
         BotMatchMedium = 0xd,
         PrivateLobby = 0xe,
         RankedMatchmake = 0xf,
+        HeroLabsMatchmake = 0x10,
     };
 };

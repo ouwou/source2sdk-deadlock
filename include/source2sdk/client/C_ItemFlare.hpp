@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb80
+    // Size: 0xb08
     // Has VTable
     #pragma pack(push, 1)
     class C_ItemFlare : public client::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb60[0x20];
+        [[maybe_unused]] std::uint8_t pad_0xae8[0x20];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_ItemFlare) == 0xb80);
+    static_assert(sizeof(C_ItemFlare) == 0xb08);
 };

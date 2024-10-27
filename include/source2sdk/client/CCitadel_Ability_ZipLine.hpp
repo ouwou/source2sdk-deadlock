@@ -23,7 +23,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1118
+    // Size: 0x1120
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flTimeStartZipping"
@@ -45,61 +45,61 @@ namespace source2sdk::client
     class CCitadel_Ability_ZipLine : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc90[0x3f8]; // 0xc90
-        entity2::GameTime_t m_flActivatePressTime; // 0x1088        
-        bool m_bThinking; // 0x108c        
-        bool m_bMoveCollidedPushUp; // 0x108d        
-        [[maybe_unused]] std::uint8_t pad_0x108e[0xe]; // 0x108e
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x3f8]; // 0xc98
+        entity2::GameTime_t m_flActivatePressTime; // 0x1090        
+        bool m_bThinking; // 0x1094        
+        bool m_bMoveCollidedPushUp; // 0x1095        
+        [[maybe_unused]] std::uint8_t pad_0x1096[0xe]; // 0x1096
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flTimeStartZipping; // 0x109c        
+        entity2::GameTime_t m_flTimeStartZipping; // 0x10a4        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flTimeForKnockdownProtection; // 0x10a0        
+        entity2::GameTime_t m_flTimeForKnockdownProtection; // 0x10a8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flTimeStopZipping; // 0x10a4        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flTimeStopZipping; // 0x10ac        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        float m_flCasterSpeed; // 0x10a8        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        float m_flCasterSpeed; // 0x10b0        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        client::CNetworkVelocityVector m_vecInitialVel; // 0x10ac        
-        [[maybe_unused]] std::uint8_t pad_0x10d4[0xc]; // 0x10d4
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        client::CNetworkVelocityVector m_vecInitialVel; // 0x10b4        
+        [[maybe_unused]] std::uint8_t pad_0x10dc[0xc]; // 0x10dc
         // metadata: MNetworkEnable
-        Vector m_vecAttachPoint; // 0x10e0        
+        Vector m_vecAttachPoint; // 0x10e8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_pPrevNode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_pPrevNode;
-        char m_pPrevNode[0x4]; // 0x10ec        
+        char m_pPrevNode[0x4]; // 0x10f4        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_pNextNode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_pNextNode;
-        char m_pNextNode[0x4]; // 0x10f0        
+        char m_pNextNode[0x4]; // 0x10f8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flTimeEnterState; // 0x10f4        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flTimeEnterState; // 0x10fc        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flLatchTime; // 0x10f8        
+        entity2::GameTime_t m_flLatchTime; // 0x1100        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flDamagedTime; // 0x10fc        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flDamagedTime; // 0x1104        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "ZiplingAttachStateChanged"
-        client::EAttachState_t m_eAttachState; // 0x1100        
+        client::EAttachState_t m_eAttachState; // 0x1108        
         // metadata: MNetworkEnable
-        int32_t m_iAttachedZipLineLane; // 0x1104        
+        int32_t m_iAttachedZipLineLane; // 0x110c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        bool m_bDroppedFromZipline; // 0x1108        
-        modellib::AttachmentHandle_t m_hAttachZipLine; // 0x1109        
-        [[maybe_unused]] std::uint8_t pad_0x110a[0x2]; // 0x110a
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        bool m_bDroppedFromZipline; // 0x1110        
+        modellib::AttachmentHandle_t m_hAttachZipLine; // 0x1111        
+        [[maybe_unused]] std::uint8_t pad_0x1112[0x2]; // 0x1112
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        Vector m_vAttachZipLineOffset; // 0x110c        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        Vector m_vAttachZipLineOffset; // 0x1114        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ZipLine because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ZipLine) == 0x1118);
+    static_assert(sizeof(CCitadel_Ability_ZipLine) == 0x1120);
 };

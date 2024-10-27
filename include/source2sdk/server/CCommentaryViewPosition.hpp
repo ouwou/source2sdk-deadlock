@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x838
+    // Size: 0x810
     // Has VTable
     #pragma pack(push, 1)
     class CCommentaryViewPosition : public server::CSprite
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCommentaryViewPosition) == 0x838);
+    static_assert(sizeof(CCommentaryViewPosition) == 0x810);
 };

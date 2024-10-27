@@ -63,8 +63,9 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0x204[0xc]; // 0x204
         int32_t m_nStepside; // 0x210        
         int32_t m_iTargetVolume; // 0x214        
-        Vector m_vecSmoothedVelocity; // 0x218        
-        [[maybe_unused]] std::uint8_t pad_0x224[0x4];
+        bool m_bDisableMovementSounds; // 0x218        
+        [[maybe_unused]] std::uint8_t pad_0x219[0x3]; // 0x219
+        Vector m_vecSmoothedVelocity; // 0x21c        
         
         // Datamap fields:
         // void m_pSurfaceData; // 0x208

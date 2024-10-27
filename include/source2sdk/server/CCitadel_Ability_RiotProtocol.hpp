@@ -25,7 +25,7 @@ namespace source2sdk::server
     public:
         client::ParticleIndex_t m_ChargeUpParticle; // 0xaf8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bActive; // 0xafc        
         [[maybe_unused]] std::uint8_t pad_0xafd[0x3b];
     };

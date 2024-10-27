@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x4
     // Standard-layout class: false
-    // Size: 0x38
+    // Size: 0x40
     // Has VTable
     // Has Trivial Destructor
     #pragma pack(push, 1)
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_InstantStop) == 0x38);
+    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_InstantStop) == 0x40);
 };

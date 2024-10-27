@@ -33,33 +33,33 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         float m_flDashAngle; // 0xaf8        
         entity2::GameTime_t m_GroundDashExecuteTime; // 0xafc        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int32_t m_nLastGroundDashTick; // 0xb00        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flGroundDashCastTime; // 0xb04        
         bool m_bTagCanActivateGroundDash; // 0xb08        
         [[maybe_unused]] std::uint8_t pad_0xb09[0x7]; // 0xb09
         // metadata: MNetworkEnable
         server::CCitadelAutoScaledTime m_flGroundDashEndTime; // 0xb10        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAirDashCastTime; // 0xb28        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAirDashDragStartTime; // 0xb2c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int8_t m_nConsecutiveAirDashes; // 0xb30        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int8_t m_nConsecutiveDownDashes; // 0xb31        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bDownAirDash; // 0xb32        
         [[maybe_unused]] std::uint8_t pad_0xb33[0x18d];
     };

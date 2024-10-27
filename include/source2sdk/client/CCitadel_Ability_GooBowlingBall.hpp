@@ -22,7 +22,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1178
+    // Size: 0x1180
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bIsRolling"
@@ -37,43 +37,43 @@ namespace source2sdk::client
     class CCitadel_Ability_GooBowlingBall : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc90[0x348]; // 0xc90
-        int32_t m_nAirJumpsLeft; // 0xfd8        
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x348]; // 0xc98
+        int32_t m_nAirJumpsLeft; // 0xfe0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // metadata: MNetworkChangeCallback "OnIsRollingChanged"
-        bool m_bIsRolling; // 0xfdc        
-        [[maybe_unused]] std::uint8_t pad_0xfdd[0x3]; // 0xfdd
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        // m_hBall has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CHandle<client::C_CitadelViscousBall> m_hBall;
-        char m_hBall[0x4]; // 0xfe0        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        client::EViscousBowlingBallState_t m_eRollingState; // 0xfe4        
+        bool m_bIsRolling; // 0xfe4        
         [[maybe_unused]] std::uint8_t pad_0xfe5[0x3]; // 0xfe5
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextStateTime; // 0xfe8        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flNextWallCheck; // 0xfec        
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        // m_hBall has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CHandle<client::C_CitadelViscousBall> m_hBall;
+        char m_hBall[0x4]; // 0xfe8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flRollStartTime; // 0xff0        
+        client::EViscousBowlingBallState_t m_eRollingState; // 0xfec        
+        [[maybe_unused]] std::uint8_t pad_0xfed[0x3]; // 0xfed
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flWallExitTime; // 0xff4        
+        entity2::GameTime_t m_flNextStateTime; // 0xff0        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vecWallExitVelocity; // 0xff8        
-        [[maybe_unused]] std::uint8_t pad_0x1004[0x8]; // 0x1004
-        client::ParticleIndex_t m_nDirectionParticleIndex; // 0x100c        
-        [[maybe_unused]] std::uint8_t pad_0x1010[0x168];
+        entity2::GameTime_t m_flNextWallCheck; // 0xff4        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flRollStartTime; // 0xff8        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flWallExitTime; // 0xffc        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        Vector m_vecWallExitVelocity; // 0x1000        
+        [[maybe_unused]] std::uint8_t pad_0x100c[0x8]; // 0x100c
+        client::ParticleIndex_t m_nDirectionParticleIndex; // 0x1014        
+        [[maybe_unused]] std::uint8_t pad_0x1018[0x168];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_GooBowlingBall because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_GooBowlingBall) == 0x1178);
+    static_assert(sizeof(CCitadel_Ability_GooBowlingBall) == 0x1180);
 };

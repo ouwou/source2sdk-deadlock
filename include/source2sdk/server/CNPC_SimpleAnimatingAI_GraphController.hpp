@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CAnimGraphControllerBase.hpp"
+#include "source2sdk/client/CBaseAnimGraphAnimGraphController.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Size: 0xe8
     // Has VTable
     #pragma pack(push, 1)
-    class CNPC_SimpleAnimatingAI_GraphController : public client::CAnimGraphControllerBase
+    class CNPC_SimpleAnimatingAI_GraphController : public client::CBaseAnimGraphAnimGraphController
     {
     public:
         // m_bHasTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7e8
+    // Size: 0x7f0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -38,10 +38,12 @@ namespace source2sdk::server
         float m_flVerticalOffset; // 0x7d8        
         float m_flTolerance; // 0x7dc        
         float m_flRepathTime; // 0x7e0        
-        [[maybe_unused]] std::uint8_t pad_0x7e4[0x4];
+        float m_flAutoRunTime; // 0x7e4        
+        float m_flTimeToStartAutoRun; // 0x7e8        
+        [[maybe_unused]] std::uint8_t pad_0x7ec[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ItemWalkBackVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ItemWalkBackVData) == 0x7e8);
+    static_assert(sizeof(CCitadel_Modifier_ItemWalkBackVData) == 0x7f0);
 };

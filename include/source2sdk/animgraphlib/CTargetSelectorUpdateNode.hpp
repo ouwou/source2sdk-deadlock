@@ -31,9 +31,10 @@ namespace source2sdk::animgraphlib
         [[maybe_unused]] std::uint8_t pad_0x78[0x4]; // 0x78
         animgraphlib::CAnimParamHandle m_hTargetPosition; // 0x7c        
         animgraphlib::CAnimParamHandle m_hTargetFacePositionParameter; // 0x7e        
-        bool m_bTargetPositionIsWorldSpace; // 0x80        
-        bool m_bTargetFacePositionIsWorldSpace; // 0x81        
-        [[maybe_unused]] std::uint8_t pad_0x82[0x6];
+        animgraphlib::CAnimParamHandle m_hForwardDirectionOverrideParameter; // 0x80        
+        bool m_bTargetPositionIsWorldSpace; // 0x82        
+        bool m_bTargetFacePositionIsWorldSpace; // 0x83        
+        [[maybe_unused]] std::uint8_t pad_0x84[0x4];
     };
     #pragma pack(pop)
     

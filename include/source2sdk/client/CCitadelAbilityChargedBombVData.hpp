@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1650
+    // Size: 0x1658
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,19 +27,19 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_ChargeBombModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ChargeBombModifier;
-        char m_ChargeBombModifier[0x10]; // 0x1548        
+        char m_ChargeBombModifier[0x10]; // 0x1550        
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x1558        
+        char m_ExplodeParticle[0xe0]; // 0x1560        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strExplodeSound; // 0x1638        
+        CSoundEventName m_strExplodeSound; // 0x1640        
         // metadata: MPropertyStartGroup "GamePlay"
-        float m_flChargeForMaxDamage; // 0x1648        
-        float m_flMinDamagePercent; // 0x164c        
+        float m_flChargeForMaxDamage; // 0x1650        
+        float m_flMinDamagePercent; // 0x1654        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelAbilityChargedBombVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadelAbilityChargedBombVData) == 0x1650);
+    static_assert(sizeof(CCitadelAbilityChargedBombVData) == 0x1658);
 };

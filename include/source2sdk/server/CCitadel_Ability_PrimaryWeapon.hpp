@@ -85,27 +85,27 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bIsZoomed; // 0xb18        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         uint8_t m_nBurstShotsRemaining; // 0xb19        
         [[maybe_unused]] std::uint8_t pad_0xb1a[0x2]; // 0xb1a
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         uint32_t m_nShotNumber; // 0xb1c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bInReload; // 0xb20        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bSingleShotReloadFirstBullet; // 0xb21        
         [[maybe_unused]] std::uint8_t pad_0xb22[0x2]; // 0xb22
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalWeaponExclusive"
         entity2::GameTime_t m_reloadQueuedStartTime; // 0xb24        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flReloadAvailableTime; // 0xb28        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bCanActiveReload; // 0xb2c        
         [[maybe_unused]] std::uint8_t pad_0xb2d[0x3]; // 0xb2d
         // metadata: MNetworkEnable

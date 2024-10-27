@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xf50
+    // Size: 0xed8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -34,13 +34,13 @@ namespace source2sdk::client
     class C_CitadelObserverPawn : public client::CCitadelPlayerPawnBase
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xf38[0x18];
+        [[maybe_unused]] std::uint8_t pad_0xec0[0x18];
         // Datamap fields:
-        // CCitadelPlayer_ObserverServices m_pObserverServices; // 0xd98
-        // CCitadelPlayer_CameraServices m_pCameraServices; // 0xdb8
-        // CCitadelObserver_MovementServices m_pMovementServices; // 0xdc0
+        // CCitadelPlayer_ObserverServices m_pObserverServices; // 0xd20
+        // CCitadelPlayer_CameraServices m_pCameraServices; // 0xd40
+        // CCitadelObserver_MovementServices m_pMovementServices; // 0xd48
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_CitadelObserverPawn) == 0xf50);
+    static_assert(sizeof(C_CitadelObserverPawn) == 0xed8);
 };

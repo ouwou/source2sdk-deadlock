@@ -1,11 +1,10 @@
 #pragma once
-#include "source2sdk/client/CAI_BaseNPC_DestructiblePartHitGroupInfoAndData.hpp"
 #include "source2sdk/client/CCitadelModifier.hpp"
+#include "source2sdk/client/CDestructiblePartsSystemData_PartRuntimeData.hpp"
 #include "source2sdk/client/CEntitySubclassVDataBase.hpp"
 #include "source2sdk/client/CFootstepTableHandle.hpp"
 #include "source2sdk/client/CSkillFloat.hpp"
 #include "source2sdk/client/CSkillInt.hpp"
-#include "source2sdk/client/HitGroup_t.hpp"
 #include "source2sdk/client/NPCAttachmentDesc_t.hpp"
 #include "source2sdk/client/NPCStatusEffectMap_t.hpp"
 #include "source2sdk/resourcesystem/InfoForResourceTypeCModel.hpp"
@@ -23,7 +22,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x230
+    // Size: 0x240
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -66,10 +65,10 @@ namespace source2sdk::client
         [[maybe_unused]] std::uint8_t pad_0x1c9[0x3]; // 0x1c9
         // metadata: MPropertyDescription "Amount of health to grant to a ragdoll before the ragdoll is destroyed."
         int32_t m_nRagdollHealth; // 0x1cc        
-        // metadata: MPropertyDescription "Destructible Parts"
-        // m_DestructiblePartsDataByHitGroup has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlOrderedMap<client::HitGroup_t,client::CAI_BaseNPC_DestructiblePartHitGroupInfoAndData> m_DestructiblePartsDataByHitGroup;
-        char m_DestructiblePartsDataByHitGroup[0x28]; // 0x1d0        
+        // metadata: MPropertyDescription "Destructible Part Overrides.  The key is a unique name for a part (searches all hitgroups and the sub parts).  Will override default data specified in the model."
+        // m_DestructiblePartsOverrideByPartName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlOrderedMap<CUtlString,client::CDestructiblePartsSystemData_PartRuntimeData> m_DestructiblePartsOverrideByPartName;
+        char m_DestructiblePartsOverrideByPartName[0x28]; // 0x1d0        
         // metadata: MPropertyStartGroup "Navigation"
         bool m_bAllowNonZUpMovement; // 0x1f8        
         // metadata: MPropertyDescription "If true, this NPC will use a dynamic collision hull that allows it to be pushed by heavy things and affected by constraints."
@@ -94,9 +93,13 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Sounds"
         // metadata: MPropertyDescription "Player Killed NPC Sound"
         CSoundEventName m_sPlayerKilledNpcSound; // 0x220        
+        CGlobalSymbol m_sCustomDeathHandshake; // 0x230        
+        // metadata: MPropertyStartGroup "Movement"
+        float m_flMovementMaxPathEndDirectionAngleDifferenceForStop; // 0x238        
+        [[maybe_unused]] std::uint8_t pad_0x23c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_BaseNPCVData because it is not a standard-layout class
-    static_assert(sizeof(CAI_BaseNPCVData) == 0x230);
+    static_assert(sizeof(CAI_BaseNPCVData) == 0x240);
 };

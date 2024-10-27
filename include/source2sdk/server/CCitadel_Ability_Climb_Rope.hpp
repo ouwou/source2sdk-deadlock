@@ -32,11 +32,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         client::CNetworkOriginQuantizedVector m_vTop; // 0xaf8        
         [[maybe_unused]] std::uint8_t pad_0xb20[0x8]; // 0xb20
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         client::CNetworkOriginQuantizedVector m_vBottom; // 0xb28        
         [[maybe_unused]] std::uint8_t pad_0xb50[0x8]; // 0xb50
         entity2::GameTime_t m_flActivatePressTime; // 0xb58        
@@ -45,17 +45,17 @@ namespace source2sdk::server
         Vector m_vLastPos; // 0xb64        
         [[maybe_unused]] std::uint8_t pad_0xb70[0x8]; // 0xb70
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bRequestStopClimbing; // 0xb78        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bRequestJumpToRoof; // 0xb79        
         [[maybe_unused]] std::uint8_t pad_0xb7a[0x2]; // 0xb7a
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flLastMoveTime; // 0xb7c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flMoveDownStartTime; // 0xb80        
         // metadata: MNetworkEnable
         client::EClimbRopeState_t m_eClimbState; // 0xb84        

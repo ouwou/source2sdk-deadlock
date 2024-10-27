@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1658
+    // Size: 0x1660
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,19 +27,19 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BlitzModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BlitzModifier;
-        char m_BlitzModifier[0x10]; // 0x1548        
+        char m_BlitzModifier[0x10]; // 0x1550        
         // m_TechAmpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_TechAmpModifier;
-        char m_TechAmpModifier[0x10]; // 0x1558        
+        char m_TechAmpModifier[0x10]; // 0x1560        
         // metadata: MPropertyStartGroup "Visuals"
         // m_SlowParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SlowParticle;
-        char m_SlowParticle[0xe0]; // 0x1568        
+        char m_SlowParticle[0xe0]; // 0x1570        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strProcSound; // 0x1648        
+        CSoundEventName m_strProcSound; // 0x1650        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Blitz_VData because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Synth_Blitz_VData) == 0x1658);
+    static_assert(sizeof(CAbility_Synth_Blitz_VData) == 0x1660);
 };

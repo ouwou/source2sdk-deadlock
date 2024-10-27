@@ -1,5 +1,6 @@
 #pragma once
 #include "source2sdk/client/CCitadelModifier.hpp"
+#include "source2sdk/client/TargetIdentifierOriginType_t.hpp"
 #include "source2sdk/modellib/AttachmentHandle_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -30,7 +31,7 @@ namespace source2sdk::client
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hTarget;
         char m_hTarget[0x4]; // 0xc8        
-        [[maybe_unused]] std::uint8_t pad_0xcc[0x4]; // 0xcc
+        client::TargetIdentifierOriginType_t m_nOriginType; // 0xcc        
         CGlobalSymbol m_sAttachmentName; // 0xd0        
         modellib::AttachmentHandle_t m_hAttachment; // 0xd8        
         [[maybe_unused]] std::uint8_t pad_0xd9[0x7];

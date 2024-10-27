@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc98
+    // Size: 0xca0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flSelfCastEndTime"
@@ -24,12 +24,12 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flSelfCastEndTime; // 0xc90        
-        [[maybe_unused]] std::uint8_t pad_0xc94[0x4];
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flSelfCastEndTime; // 0xc98        
+        [[maybe_unused]] std::uint8_t pad_0xc9c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_RestorativeGoo because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_RestorativeGoo) == 0xc98);
+    static_assert(sizeof(CCitadel_Ability_RestorativeGoo) == 0xca0);
 };

@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 33
+    // Enumerator count: 35
     // Alignment: 4
     // Size: 0x4
     enum class EUISound : std::uint32_t
@@ -77,7 +77,11 @@ namespace source2sdk::client
         EMainMenuPartyPickHeroesConfirm = 0x1d,
         // MPropertyFriendlyName "Sound that plays when a party enters the queue"
         EMainMenuPartyPickHeroesExit = 0x1e,
+        // MPropertyFriendlyName "Sound that plays when you commend a player"
+        ECommendConfirmation = 0x1f,
+        // MPropertyFriendlyName "Sound that plays when you recieve a notifcation that a player commended you"
+        ECommendToast = 0x20,
         // MPropertySuppressEnumerator
-        EUISoundCount = 0x1f,
+        EUISoundCount = 0x21,
     };
 };

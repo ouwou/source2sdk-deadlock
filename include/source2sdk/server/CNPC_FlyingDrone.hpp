@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1858
+    // Size: 0x1810
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -24,7 +24,7 @@ namespace source2sdk::server
     class CNPC_FlyingDrone : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1800[0x58];
+        [[maybe_unused]] std::uint8_t pad_0x17b8[0x58];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_DRONE_FOLLOW_TARGET() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_FlyingDrone")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_DRONE_TELEPORT_TO_FOLLOW_TARGET() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_FlyingDrone")->GetStaticFields()[1]->m_pInstance);};
@@ -34,5 +34,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_FlyingDrone) == 0x1858);
+    static_assert(sizeof(CNPC_FlyingDrone) == 0x1810);
 };

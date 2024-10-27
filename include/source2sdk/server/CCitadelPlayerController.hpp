@@ -113,7 +113,7 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         server::PlayerDataGlobal_t m_PlayerDataGlobal; // 0x8b8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int8_t m_nDeathReplayAvailable; // 0xa90        
         // metadata: MNetworkEnable
         client::CitadelLobbyPlayerSlot_t m_unLobbyPlayerSlot; // 0xa91        

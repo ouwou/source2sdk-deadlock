@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9c8
+    // Size: 0x9a0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -28,14 +28,14 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x998        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x970        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSoundName; // 0x9b0        
-        Vector m_vAudioOffset; // 0x9b8        
-        [[maybe_unused]] std::uint8_t pad_0x9c4[0x4];
+        CUtlSymbolLarge m_iszSoundName; // 0x988        
+        Vector m_vAudioOffset; // 0x990        
+        [[maybe_unused]] std::uint8_t pad_0x99c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerItemShop because it is not a standard-layout class
-    static_assert(sizeof(CTriggerItemShop) == 0x9c8);
+    static_assert(sizeof(CTriggerItemShop) == 0x9a0);
 };

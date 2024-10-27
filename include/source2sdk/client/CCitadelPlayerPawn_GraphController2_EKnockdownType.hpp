@@ -22,6 +22,6 @@ namespace source2sdk::client
         // MAlternateSemanticName
         EKnockdownType_SMALL = 0x3,
         // MAlternateSemanticName
-        ERopeClimb_PARRIED = 0x4,
+        EKnockdownType_PARRIED = 0x4,
     };
 };

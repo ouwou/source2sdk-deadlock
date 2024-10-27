@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd78
+    // Size: 0xd80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bInFlight"
@@ -23,13 +23,13 @@ namespace source2sdk::client
     class CCitadel_Ability_Tokamak_DyingStar : public client::C_CitadelBaseAbility
     {
     public:
-        client::ParticleIndex_t m_nRollFXIndex; // 0xc90        
+        client::ParticleIndex_t m_nRollFXIndex; // 0xc98        
         // metadata: MNetworkEnable
-        bool m_bInFlight; // 0xc94        
-        [[maybe_unused]] std::uint8_t pad_0xc95[0xe3];
+        bool m_bInFlight; // 0xc9c        
+        [[maybe_unused]] std::uint8_t pad_0xc9d[0xe3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tokamak_DyingStar because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Tokamak_DyingStar) == 0xd78);
+    static_assert(sizeof(CCitadel_Ability_Tokamak_DyingStar) == 0xd80);
 };

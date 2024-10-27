@@ -8,7 +8,7 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 3
+    // Enumerator count: 4
     // Alignment: 4
     // Size: 0x4
     enum class AI_MotorGroundAnimGraph_Flags_t : std::uint32_t
@@ -16,5 +16,6 @@ namespace source2sdk::server
         eNone = 0x0,
         eDelayStop = 0x1,
         eWaitingForFacing = 0x2,
+        eDelayIdleTurn = 0x4,
     };
 };

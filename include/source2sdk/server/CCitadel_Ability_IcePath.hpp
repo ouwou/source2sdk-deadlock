@@ -28,7 +28,7 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x70]; // 0xaf8
         Vector m_vInitialPosition; // 0xb68        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bIcePathing; // 0xb74        
         [[maybe_unused]] std::uint8_t pad_0xb75[0x3]; // 0xb75
         // metadata: MNetworkEnable

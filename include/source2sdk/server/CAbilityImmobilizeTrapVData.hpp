@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1948
+    // Size: 0x1950
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,35 +27,35 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x1548        
+        char m_ExplodeParticle[0xe0]; // 0x1550        
         // m_PreviewRingParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PreviewRingParticle;
-        char m_PreviewRingParticle[0xe0]; // 0x1628        
+        char m_PreviewRingParticle[0xe0]; // 0x1630        
         // m_TrapHighlightParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TrapHighlightParticle;
-        char m_TrapHighlightParticle[0xe0]; // 0x1708        
+        char m_TrapHighlightParticle[0xe0]; // 0x1710        
         // m_ArmedParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ArmedParticle;
-        char m_ArmedParticle[0xe0]; // 0x17e8        
+        char m_ArmedParticle[0xe0]; // 0x17f0        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strTripSound; // 0x18c8        
-        CSoundEventName m_strExplodeSound; // 0x18d8        
-        CSoundEventName m_strExpiredSound; // 0x18e8        
-        CSoundEventName m_strImmobilizeTargetSound; // 0x18f8        
-        CSoundEventName m_strArmingSound; // 0x1908        
+        CSoundEventName m_strTripSound; // 0x18d0        
+        CSoundEventName m_strExplodeSound; // 0x18e0        
+        CSoundEventName m_strExpiredSound; // 0x18f0        
+        CSoundEventName m_strImmobilizeTargetSound; // 0x1900        
+        CSoundEventName m_strArmingSound; // 0x1910        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_TrapModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_TrapModifier;
-        char m_TrapModifier[0x10]; // 0x1918        
+        char m_TrapModifier[0x10]; // 0x1920        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x1928        
+        char m_DebuffModifier[0x10]; // 0x1930        
         // m_SlowModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_SlowModifier;
-        char m_SlowModifier[0x10]; // 0x1938        
+        char m_SlowModifier[0x10]; // 0x1940        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityImmobilizeTrapVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityImmobilizeTrapVData) == 0x1948);
+    static_assert(sizeof(CAbilityImmobilizeTrapVData) == 0x1950);
 };

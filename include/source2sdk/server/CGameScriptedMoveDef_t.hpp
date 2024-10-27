@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x4
     // Alignment: 0x4
     // Standard-layout class: true
-    // Size: 0x28
+    // Size: 0x2c
     // Has Trivial Destructor
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -35,6 +35,8 @@ namespace source2sdk::server
         QAngle m_angDest; // 0x14        
         float m_flDuration; // 0x20        
         float m_flAngRate; // 0x24        
+        bool m_bAimDisabled; // 0x28        
+        [[maybe_unused]] std::uint8_t pad_0x29[0x3];
     };
     #pragma pack(pop)
     
@@ -44,6 +46,7 @@ namespace source2sdk::server
     static_assert(offsetof(CGameScriptedMoveDef_t, m_angDest) == 0x14);
     static_assert(offsetof(CGameScriptedMoveDef_t, m_flDuration) == 0x20);
     static_assert(offsetof(CGameScriptedMoveDef_t, m_flAngRate) == 0x24);
+    static_assert(offsetof(CGameScriptedMoveDef_t, m_bAimDisabled) == 0x28);
     
-    static_assert(sizeof(CGameScriptedMoveDef_t) == 0x28);
+    static_assert(sizeof(CGameScriptedMoveDef_t) == 0x2c);
 };

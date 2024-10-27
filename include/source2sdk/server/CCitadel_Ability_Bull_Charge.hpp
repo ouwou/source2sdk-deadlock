@@ -44,7 +44,7 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flFastChargeEndTime; // 0xdc8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bHitAPlayer; // 0xdcc        
         [[maybe_unused]] std::uint8_t pad_0xdcd[0x3]; // 0xdcd
         bool m_bFirstTick; // 0xdd0        

@@ -19,17 +19,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x890
+    // Size: 0x868
     // Has VTable
     #pragma pack(push, 1)
     class CEnvLaser : public server::CBeam
     {
     public:
-        CUtlSymbolLarge m_iszLaserTarget; // 0x868        
-        server::CSprite* m_pSprite; // 0x870        
-        CUtlSymbolLarge m_iszSpriteName; // 0x878        
-        Vector m_firePosition; // 0x880        
-        float m_flStartFrame; // 0x88c        
+        CUtlSymbolLarge m_iszLaserTarget; // 0x840        
+        server::CSprite* m_pSprite; // 0x848        
+        CUtlSymbolLarge m_iszSpriteName; // 0x850        
+        Vector m_firePosition; // 0x858        
+        float m_flStartFrame; // 0x864        
         
         // Datamap fields:
         // void CEnvLaserStrikeThink; // 0x0
@@ -44,5 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvLaser because it is not a standard-layout class
-    static_assert(sizeof(CEnvLaser) == 0x890);
+    static_assert(sizeof(CEnvLaser) == 0x868);
 };

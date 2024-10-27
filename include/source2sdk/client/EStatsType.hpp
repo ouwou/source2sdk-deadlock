@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 84
+    // Enumerator count: 85
     // Alignment: 4
     // Size: 0x4
     enum class EStatsType : std::uint32_t
@@ -95,7 +95,8 @@ namespace source2sdk::client
         EStaminaCooldown = 0x4f,
         EDebuffResist = 0x50,
         ECritDamageBonusScale = 0x51,
-        EStatsCount = 0x52,
-        EStatsInvalid = 0x52,
+        EMeleeResist = 0x52,
+        EStatsCount = 0x53,
+        EStatsInvalid = 0x53,
     };
 };

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1680
+    // Size: 0x1688
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,14 +27,14 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_AOECastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AOECastParticle;
-        char m_AOECastParticle[0xe0]; // 0x1590        
+        char m_AOECastParticle[0xe0]; // 0x1598        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_ActiveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_ActiveModifier;
-        char m_ActiveModifier[0x10]; // 0x1670        
+        char m_ActiveModifier[0x10]; // 0x1678        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_DPS_Aura_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_DPS_Aura_VData) == 0x1680);
+    static_assert(sizeof(CCitadel_Item_DPS_Aura_VData) == 0x1688);
 };

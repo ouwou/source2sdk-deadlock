@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb70
+    // Size: 0xb50
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_PointTalker : public server::CCitadel_PointTalker_Base
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb60[0x10];
+        [[maybe_unused]] std::uint8_t pad_0xb40[0x10];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_PointTalker) == 0xb70);
+    static_assert(sizeof(CCitadel_PointTalker) == 0xb50);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1548
+    // Size: 0x1550
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,5 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAbilityTargetdummy3VData) == 0x1548);
+    static_assert(sizeof(CAbilityTargetdummy3VData) == 0x1550);
 };

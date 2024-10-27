@@ -11,6 +11,11 @@
 
 namespace source2sdk::server
 {
+    class CBaseEntity;
+};
+
+namespace source2sdk::server
+{
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
@@ -33,7 +38,12 @@ namespace source2sdk::server
         float m_flMaxSteeringAngle; // 0x578        
         float m_flSteeringAxisFriction; // 0x57c        
         float m_flSpinAxisFriction; // 0x580        
-        [[maybe_unused]] std::uint8_t pad_0x584[0x4];
+        // m_hSteeringMimicsEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CHandle<server::CBaseEntity> m_hSteeringMimicsEntity;
+        char m_hSteeringMimicsEntity[0x4]; // 0x584        
+        
+        // Datamap fields:
+        // CUtlSymbolLarge InputSetSteeringMimicsEntity; // 0x0
     };
     #pragma pack(pop)
     

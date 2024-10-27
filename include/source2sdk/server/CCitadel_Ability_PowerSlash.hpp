@@ -25,7 +25,7 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xb00[0xc]; // 0xb00
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int32_t m_nPowerLevel; // 0xb0c        
         client::ParticleIndex_t m_nCastParticle; // 0xb10        
         [[maybe_unused]] std::uint8_t pad_0xb14[0x2a4];

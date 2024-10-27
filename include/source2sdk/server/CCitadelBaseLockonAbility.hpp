@@ -27,7 +27,7 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x118]; // 0xaf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_vecLockonTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVectorEmbeddedNetworkVar<server::LockonTarget_t> m_vecLockonTargets;
         char m_vecLockonTargets[0x50]; // 0xc10        

@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d8
+    // Size: 0x9b0
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerProximity : public server::CBaseTrigger
@@ -27,14 +27,14 @@ namespace source2sdk::server
     public:
         // m_hMeasureTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hMeasureTarget;
-        char m_hMeasureTarget[0x4]; // 0x998        
-        [[maybe_unused]] std::uint8_t pad_0x99c[0x4]; // 0x99c
-        CUtlSymbolLarge m_iszMeasureTarget; // 0x9a0        
-        float m_fRadius; // 0x9a8        
-        int32_t m_nTouchers; // 0x9ac        
+        char m_hMeasureTarget[0x4]; // 0x970        
+        [[maybe_unused]] std::uint8_t pad_0x974[0x4]; // 0x974
+        CUtlSymbolLarge m_iszMeasureTarget; // 0x978        
+        float m_fRadius; // 0x980        
+        int32_t m_nTouchers; // 0x984        
         // m_NearestEntityDistance has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEntityOutputTemplate<float> m_NearestEntityDistance;
-        char m_NearestEntityDistance[0x28]; // 0x9b0        
+        char m_NearestEntityDistance[0x28]; // 0x988        
         
         // Datamap fields:
         // void CTriggerProximityMeasureThink; // 0x0
@@ -42,5 +42,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerProximity because it is not a standard-layout class
-    static_assert(sizeof(CTriggerProximity) == 0x9d8);
+    static_assert(sizeof(CTriggerProximity) == 0x9b0);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x998
+    // Size: 0x970
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_Cyclone : public server::CCitadelProjectile
@@ -27,11 +27,11 @@ namespace source2sdk::server
     public:
         // m_CycloneAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadel_Ability_Thumper_4> m_CycloneAbility;
-        char m_CycloneAbility[0x4]; // 0x878        
-        [[maybe_unused]] std::uint8_t pad_0x87c[0x11c];
+        char m_CycloneAbility[0x4]; // 0x850        
+        [[maybe_unused]] std::uint8_t pad_0x854[0x11c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Cyclone because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_Cyclone) == 0x998);
+    static_assert(sizeof(CCitadel_Projectile_Cyclone) == 0x970);
 };

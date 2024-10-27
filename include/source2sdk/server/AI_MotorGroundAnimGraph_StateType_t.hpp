@@ -8,7 +8,7 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 9
+    // Enumerator count: 11
     // Alignment: 4
     // Size: 0x4
     enum class AI_MotorGroundAnimGraph_StateType_t : std::uint32_t
@@ -27,7 +27,11 @@ namespace source2sdk::server
         eInstantStop = 0x5,
         // MPropertyFriendlyName "Hop"
         eHop = 0x6,
-        eAny = 0x7,
-        eCount = 0x7,
+        // MPropertyFriendlyName "Loop Performance"
+        eLoopPerformance = 0x7,
+        // MPropertyFriendlyName "Planted Turn"
+        ePlantedTurn = 0x8,
+        eAny = 0x9,
+        eCount = 0x9,
     };
 };

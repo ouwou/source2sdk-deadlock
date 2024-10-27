@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x878
+    // Size: 0x850
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_flTimeScale"
@@ -38,46 +38,46 @@ namespace source2sdk::server
     class CCitadelProjectile : public server::CBaseModelEntity
     {
     public:
-        float m_flMaxDistance; // 0x7c8        
-        float m_flArmingTime; // 0x7cc        
-        float m_flChargeAmount; // 0x7d0        
-        bool m_bCollideWithThrower; // 0x7d4        
-        bool m_bNewCollideWithThrower; // 0x7d5        
-        [[maybe_unused]] std::uint8_t pad_0x7d6[0xa]; // 0x7d6
-        float m_flTickSoundInterval; // 0x7e0        
-        [[maybe_unused]] std::uint8_t pad_0x7e4[0x4]; // 0x7e4
-        Vector m_vLastAbsOrigin; // 0x7e8        
-        Vector m_vLastAbsVelocity; // 0x7f4        
-        [[maybe_unused]] std::uint8_t pad_0x800[0x18]; // 0x800
+        float m_flMaxDistance; // 0x7a0        
+        float m_flArmingTime; // 0x7a4        
+        float m_flChargeAmount; // 0x7a8        
+        bool m_bCollideWithThrower; // 0x7ac        
+        bool m_bNewCollideWithThrower; // 0x7ad        
+        [[maybe_unused]] std::uint8_t pad_0x7ae[0xa]; // 0x7ae
+        float m_flTickSoundInterval; // 0x7b8        
+        [[maybe_unused]] std::uint8_t pad_0x7bc[0x4]; // 0x7bc
+        Vector m_vLastAbsOrigin; // 0x7c0        
+        Vector m_vLastAbsVelocity; // 0x7cc        
+        [[maybe_unused]] std::uint8_t pad_0x7d8[0x18]; // 0x7d8
         // m_vecTargetToIgnore has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecTargetToIgnore;
-        char m_vecTargetToIgnore[0x18]; // 0x818        
-        bool m_bDetonateStarted; // 0x830        
-        [[maybe_unused]] std::uint8_t pad_0x831[0x3]; // 0x831
+        char m_vecTargetToIgnore[0x18]; // 0x7f0        
+        bool m_bDetonateStarted; // 0x808        
+        [[maybe_unused]] std::uint8_t pad_0x809[0x3]; // 0x809
         // metadata: MNetworkEnable
-        Vector m_vInitialVelocity; // 0x834        
+        Vector m_vInitialVelocity; // 0x80c        
         // metadata: MNetworkEnable
-        Vector m_vInitialPosition; // 0x840        
+        Vector m_vInitialPosition; // 0x818        
         // metadata: MNetworkEnable
-        CUtlStringToken m_abilityID; // 0x84c        
+        CUtlStringToken m_abilityID; // 0x824        
         // metadata: MNetworkEnable
         // m_hThrower has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hThrower;
-        char m_hThrower[0x4]; // 0x850        
-        [[maybe_unused]] std::uint8_t pad_0x854[0x4]; // 0x854
+        char m_hThrower[0x4]; // 0x828        
+        [[maybe_unused]] std::uint8_t pad_0x82c[0x4]; // 0x82c
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_sParticleName; // 0x858        
+        CUtlSymbolLarge m_sParticleName; // 0x830        
         // metadata: MNetworkEnable
-        Vector m_vecSpawnPosition; // 0x860        
+        Vector m_vecSpawnPosition; // 0x838        
         // metadata: MNetworkEnable
-        float m_flProjectileSpeed; // 0x86c        
+        float m_flProjectileSpeed; // 0x844        
         // metadata: MNetworkEnable
-        float m_flMaxLifetime; // 0x870        
+        float m_flMaxLifetime; // 0x848        
         // metadata: MNetworkEnable
-        float m_flParticleRadius; // 0x874        
+        float m_flParticleRadius; // 0x84c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelProjectile because it is not a standard-layout class
-    static_assert(sizeof(CCitadelProjectile) == 0x878);
+    static_assert(sizeof(CCitadelProjectile) == 0x850);
 };

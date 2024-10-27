@@ -44,7 +44,7 @@ namespace source2sdk::server
         bool m_bIsRolling; // 0xe44        
         [[maybe_unused]] std::uint8_t pad_0xe45[0x3]; // 0xe45
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_hBall has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelViscousBall> m_hBall;
         char m_hBall[0x4]; // 0xe48        
@@ -53,10 +53,10 @@ namespace source2sdk::server
         client::EViscousBowlingBallState_t m_eRollingState; // 0xe4c        
         [[maybe_unused]] std::uint8_t pad_0xe4d[0x3]; // 0xe4d
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flNextStateTime; // 0xe50        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flNextWallCheck; // 0xe54        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"

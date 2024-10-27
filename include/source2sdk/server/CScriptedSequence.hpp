@@ -72,7 +72,7 @@ namespace source2sdk::server
         bool m_bDisableNPCCollisions; // 0x540        
         bool m_bKeepAnimgraphLockedPost; // 0x541        
         bool m_bDontAddModifiers; // 0x542        
-        [[maybe_unused]] std::uint8_t pad_0x543[0x1]; // 0x543
+        bool m_bDisableAimingWhileMoving; // 0x543        
         float m_flRadius; // 0x544        
         float m_flRepeat; // 0x548        
         float m_flPlayAnimFadeInTime; // 0x54c        

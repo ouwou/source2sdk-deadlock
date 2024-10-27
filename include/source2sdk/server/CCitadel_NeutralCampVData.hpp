@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x58
+    // Size: 0x60
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,14 +26,16 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Gameplay"
         int32_t m_iInitialSpawnDelayInSeconds; // 0x28        
         int32_t m_iSpawnIntervalInSeconds; // 0x2c        
-        client::ENeutralTrooperType m_eNeutralType; // 0x30        
-        [[maybe_unused]] std::uint8_t pad_0x34[0x4]; // 0x34
+        int32_t m_iSpawnIntervalChange; // 0x30        
+        int32_t m_iSpawnIntervalMin; // 0x34        
+        client::ENeutralTrooperType m_eNeutralType; // 0x38        
+        [[maybe_unused]] std::uint8_t pad_0x3c[0x4]; // 0x3c
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_sIdleAmbient; // 0x38        
-        CSoundEventName m_sAlertAmbient; // 0x48        
+        CSoundEventName m_sIdleAmbient; // 0x40        
+        CSoundEventName m_sAlertAmbient; // 0x50        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_NeutralCampVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_NeutralCampVData) == 0x58);
+    static_assert(sizeof(CCitadel_NeutralCampVData) == 0x60);
 };

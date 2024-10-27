@@ -22,31 +22,31 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa38
+    // Size: 0xa10
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerHurt : public server::CBaseTrigger
     {
     public:
-        float m_flOriginalDamage; // 0x998        
-        float m_flDamage; // 0x99c        
-        float m_flDamageCap; // 0x9a0        
-        entity2::GameTime_t m_flLastDmgTime; // 0x9a4        
-        float m_flForgivenessDelay; // 0x9a8        
-        client::DamageTypes_t m_bitsDamageInflict; // 0x9ac        
-        int32_t m_damageModel; // 0x9b0        
-        bool m_bNoDmgForce; // 0x9b4        
-        [[maybe_unused]] std::uint8_t pad_0x9b5[0x3]; // 0x9b5
-        Vector m_vDamageForce; // 0x9b8        
-        bool m_thinkAlways; // 0x9c4        
-        [[maybe_unused]] std::uint8_t pad_0x9c5[0x3]; // 0x9c5
-        float m_hurtThinkPeriod; // 0x9c8        
-        [[maybe_unused]] std::uint8_t pad_0x9cc[0x4]; // 0x9cc
-        entity2::CEntityIOOutput m_OnHurt; // 0x9d0        
-        entity2::CEntityIOOutput m_OnHurtPlayer; // 0x9f8        
+        float m_flOriginalDamage; // 0x970        
+        float m_flDamage; // 0x974        
+        float m_flDamageCap; // 0x978        
+        entity2::GameTime_t m_flLastDmgTime; // 0x97c        
+        float m_flForgivenessDelay; // 0x980        
+        client::DamageTypes_t m_bitsDamageInflict; // 0x984        
+        int32_t m_damageModel; // 0x988        
+        bool m_bNoDmgForce; // 0x98c        
+        [[maybe_unused]] std::uint8_t pad_0x98d[0x3]; // 0x98d
+        Vector m_vDamageForce; // 0x990        
+        bool m_thinkAlways; // 0x99c        
+        [[maybe_unused]] std::uint8_t pad_0x99d[0x3]; // 0x99d
+        float m_hurtThinkPeriod; // 0x9a0        
+        [[maybe_unused]] std::uint8_t pad_0x9a4[0x4]; // 0x9a4
+        entity2::CEntityIOOutput m_OnHurt; // 0x9a8        
+        entity2::CEntityIOOutput m_OnHurtPlayer; // 0x9d0        
         // m_hurtEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_hurtEntities;
-        char m_hurtEntities[0x18]; // 0xa20        
+        char m_hurtEntities[0x18]; // 0x9f8        
         
         // Datamap fields:
         // void CTriggerHurtRadiationThink; // 0x0
@@ -56,5 +56,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerHurt because it is not a standard-layout class
-    static_assert(sizeof(CTriggerHurt) == 0xa38);
+    static_assert(sizeof(CTriggerHurt) == 0xa10);
 };

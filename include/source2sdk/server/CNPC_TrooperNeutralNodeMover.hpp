@@ -15,13 +15,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x18c0
+    // Size: 0x1878
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_TrooperNeutralNodeMover : public server::CNPC_TrooperNeutral
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1868[0x58];
+        [[maybe_unused]] std::uint8_t pad_0x1820[0x58];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_TROOPERNEUTRAL_MOVE_TO_NEW_NODE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutralNodeMover")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_TROOPERNEUTRAL_HIDE_IN_NODE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutralNodeMover")->GetStaticFields()[1]->m_pInstance);};
@@ -36,5 +36,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_TrooperNeutralNodeMover) == 0x18c0);
+    static_assert(sizeof(CNPC_TrooperNeutralNodeMover) == 0x1878);
 };

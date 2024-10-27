@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d0
+    // Size: 0x9a8
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -46,56 +46,56 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bIgnoreInput; // 0x978        
+        bool m_bIgnoreInput; // 0x950        
         // metadata: MNetworkEnable
-        bool m_bLit; // 0x979        
+        bool m_bLit; // 0x951        
         // metadata: MNetworkEnable
-        bool m_bFollowPlayerAcrossTeleport; // 0x97a        
-        [[maybe_unused]] std::uint8_t pad_0x97b[0x1]; // 0x97b
+        bool m_bFollowPlayerAcrossTeleport; // 0x952        
+        [[maybe_unused]] std::uint8_t pad_0x953[0x1]; // 0x953
         // metadata: MNetworkEnable
-        float m_flWidth; // 0x97c        
+        float m_flWidth; // 0x954        
         // metadata: MNetworkEnable
-        float m_flHeight; // 0x980        
+        float m_flHeight; // 0x958        
         // metadata: MNetworkEnable
-        float m_flDPI; // 0x984        
+        float m_flDPI; // 0x95c        
         // metadata: MNetworkEnable
-        float m_flInteractDistance; // 0x988        
+        float m_flInteractDistance; // 0x960        
         // metadata: MNetworkEnable
-        float m_flDepthOffset; // 0x98c        
+        float m_flDepthOffset; // 0x964        
         // metadata: MNetworkEnable
-        uint32_t m_unOwnerContext; // 0x990        
+        uint32_t m_unOwnerContext; // 0x968        
         // metadata: MNetworkEnable
-        uint32_t m_unHorizontalAlign; // 0x994        
+        uint32_t m_unHorizontalAlign; // 0x96c        
         // metadata: MNetworkEnable
-        uint32_t m_unVerticalAlign; // 0x998        
+        uint32_t m_unVerticalAlign; // 0x970        
         // metadata: MNetworkEnable
-        uint32_t m_unOrientation; // 0x99c        
+        uint32_t m_unOrientation; // 0x974        
         // metadata: MNetworkEnable
-        bool m_bAllowInteractionFromAllSceneWorlds; // 0x9a0        
-        [[maybe_unused]] std::uint8_t pad_0x9a1[0x7]; // 0x9a1
+        bool m_bAllowInteractionFromAllSceneWorlds; // 0x978        
+        [[maybe_unused]] std::uint8_t pad_0x979[0x7]; // 0x979
         // metadata: MNetworkEnable
         // m_vecCSSClasses has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<CUtlSymbolLarge> m_vecCSSClasses;
-        char m_vecCSSClasses[0x18]; // 0x9a8        
+        char m_vecCSSClasses[0x18]; // 0x980        
         // metadata: MNetworkEnable
-        bool m_bOpaque; // 0x9c0        
+        bool m_bOpaque; // 0x998        
         // metadata: MNetworkEnable
-        bool m_bNoDepth; // 0x9c1        
+        bool m_bNoDepth; // 0x999        
         // metadata: MNetworkEnable
-        bool m_bRenderBackface; // 0x9c2        
+        bool m_bRenderBackface; // 0x99a        
         // metadata: MNetworkEnable
-        bool m_bUseOffScreenIndicator; // 0x9c3        
+        bool m_bUseOffScreenIndicator; // 0x99b        
         // metadata: MNetworkEnable
-        bool m_bExcludeFromSaveGames; // 0x9c4        
+        bool m_bExcludeFromSaveGames; // 0x99c        
         // metadata: MNetworkEnable
-        bool m_bGrabbable; // 0x9c5        
+        bool m_bGrabbable; // 0x99d        
         // metadata: MNetworkEnable
-        bool m_bOnlyRenderToTexture; // 0x9c6        
+        bool m_bOnlyRenderToTexture; // 0x99e        
         // metadata: MNetworkEnable
-        bool m_bDisableMipGen; // 0x9c7        
+        bool m_bDisableMipGen; // 0x99f        
         // metadata: MNetworkEnable
-        int32_t m_nExplicitImageLayout; // 0x9c8        
-        [[maybe_unused]] std::uint8_t pad_0x9cc[0x4];
+        int32_t m_nExplicitImageLayout; // 0x9a0        
+        [[maybe_unused]] std::uint8_t pad_0x9a4[0x4];
         
         // Datamap fields:
         // void InputIgnoreUserInput; // 0x0
@@ -108,5 +108,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointClientUIWorldPanel because it is not a standard-layout class
-    static_assert(sizeof(CPointClientUIWorldPanel) == 0x9d0);
+    static_assert(sizeof(CPointClientUIWorldPanel) == 0x9a8);
 };

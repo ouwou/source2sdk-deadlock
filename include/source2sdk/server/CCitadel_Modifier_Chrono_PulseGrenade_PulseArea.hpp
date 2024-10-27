@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x250
+    // Size: 0x218
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Chrono_PulseGrenade_PulseArea : public server::CCitadelModifier
@@ -23,10 +23,10 @@ namespace source2sdk::server
     public:
         int32_t m_iPulseCount; // 0xc0        
         client::ParticleIndex_t m_hPreviewRingParticle; // 0xc4        
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x188];
+        [[maybe_unused]] std::uint8_t pad_0xc8[0x150];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Chrono_PulseGrenade_PulseArea because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Chrono_PulseGrenade_PulseArea) == 0x250);
+    static_assert(sizeof(CCitadel_Modifier_Chrono_PulseGrenade_PulseArea) == 0x218);
 };

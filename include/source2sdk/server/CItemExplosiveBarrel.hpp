@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8e0
+    // Size: 0x8b8
     // Has VTable
     #pragma pack(push, 1)
     class CItemExplosiveBarrel : public server::CCitadelProjectile
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x878[0x68];
+        [[maybe_unused]] std::uint8_t pad_0x850[0x68];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CItemExplosiveBarrel) == 0x8e0);
+    static_assert(sizeof(CItemExplosiveBarrel) == 0x8b8);
 };

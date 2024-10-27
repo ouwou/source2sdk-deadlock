@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1808
+    // Size: 0x1810
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,22 +27,22 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_SpectatingProjectileParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SpectatingProjectileParticle;
-        char m_SpectatingProjectileParticle[0xe0]; // 0x1548        
+        char m_SpectatingProjectileParticle[0xe0]; // 0x1550        
         // m_ExplosionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplosionParticle;
-        char m_ExplosionParticle[0xe0]; // 0x1628        
+        char m_ExplosionParticle[0xe0]; // 0x1630        
         // m_HatTrickChannelParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HatTrickChannelParticle;
-        char m_HatTrickChannelParticle[0xe0]; // 0x1708        
+        char m_HatTrickChannelParticle[0xe0]; // 0x1710        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x17e8        
+        char m_DebuffModifier[0x10]; // 0x17f0        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strExplodeSound; // 0x17f8        
+        CSoundEventName m_strExplodeSound; // 0x1800        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityHatTrickVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityHatTrickVData) == 0x1808);
+    static_assert(sizeof(CAbilityHatTrickVData) == 0x1810);
 };

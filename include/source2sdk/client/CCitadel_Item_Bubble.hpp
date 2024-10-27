@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcb0
+    // Size: 0xcb8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flEndTime"
@@ -24,12 +24,12 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
-        entity2::GameTime_t m_flEndTime; // 0xca8        
-        [[maybe_unused]] std::uint8_t pad_0xcac[0x4];
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        entity2::GameTime_t m_flEndTime; // 0xcb0        
+        [[maybe_unused]] std::uint8_t pad_0xcb4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_Bubble because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_Bubble) == 0xcb0);
+    static_assert(sizeof(CCitadel_Item_Bubble) == 0xcb8);
 };

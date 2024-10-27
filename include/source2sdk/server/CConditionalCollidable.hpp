@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7c8
+    // Size: 0x7a0
     // Has VTable
     #pragma pack(push, 1)
     class CConditionalCollidable : public server::CBaseModelEntity
@@ -28,5 +28,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CConditionalCollidable) == 0x7c8);
+    static_assert(sizeof(CConditionalCollidable) == 0x7a0);
 };

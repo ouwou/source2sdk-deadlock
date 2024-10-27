@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x4
     // Standard-layout class: false
-    // Size: 0x38
+    // Size: 0x40
     // Has VTable
     // Has Trivial Destructor
     #pragma pack(push, 1)
@@ -23,9 +23,11 @@ namespace source2sdk::server
     public:
         Vector m_vGoalPosition; // 0x20        
         Vector m_vArrivalDirection; // 0x2c        
+        bool m_bPathChanged; // 0x38        
+        [[maybe_unused]] std::uint8_t pad_0x39[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_MotorGroundAnimGraph_State_Stop because it is not a standard-layout class
-    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_Stop) == 0x38);
+    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_Stop) == 0x40);
 };

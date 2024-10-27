@@ -44,19 +44,19 @@ namespace source2sdk::server
         // CHandle<server::CBaseEntity> m_hLockOnTarget;
         char m_hLockOnTarget[0x4]; // 0xafc        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vecCastStartPos; // 0xb00        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vecDashStartPos; // 0xb0c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vecDashEndPos; // 0xb18        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         QAngle m_angDashStartAng; // 0xb24        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flDashStartTime; // 0xb30        
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flGrappleStartTime; // 0xb34        
@@ -68,16 +68,16 @@ namespace source2sdk::server
         char m_hTarget[0x4]; // 0xb3c        
         float m_flVelSpring; // 0xb40        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flGrappleShotAttackTime; // 0xb44        
         int32_t m_nTicksNotMoving; // 0xb48        
         Vector m_vecPrevPos; // 0xb4c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // metadata: MNetworkEncoder "coord"
         Vector m_rgTargetPos[20]; // 0xb58        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_rgTargetPosTime[20]; // 0xc48        
         client::ParticleIndex_t m_nGrappleTravelEffect; // 0xc98        
         [[maybe_unused]] std::uint8_t pad_0xc9c[0x4];

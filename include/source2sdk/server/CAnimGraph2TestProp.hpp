@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf8
+    // Size: 0xcd8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_flAnimTime"
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAnimGraph2TestProp) == 0xcf8);
+    static_assert(sizeof(CAnimGraph2TestProp) == 0xcd8);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x828
+    // Size: 0x800
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_timeLaunch"
@@ -23,14 +23,14 @@ namespace source2sdk::server
     class CItemXP : public server::CBaseModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x7c8[0x58]; // 0x7c8
+        [[maybe_unused]] std::uint8_t pad_0x7a0[0x58]; // 0x7a0
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnLaunchTimeChanged"
-        entity2::GameTime_t m_timeLaunch; // 0x820        
-        [[maybe_unused]] std::uint8_t pad_0x824[0x4];
+        entity2::GameTime_t m_timeLaunch; // 0x7f8        
+        [[maybe_unused]] std::uint8_t pad_0x7fc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemXP because it is not a standard-layout class
-    static_assert(sizeof(CItemXP) == 0x828);
+    static_assert(sizeof(CItemXP) == 0x800);
 };

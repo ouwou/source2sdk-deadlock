@@ -25,7 +25,7 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x244]; // 0xaf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flScopeStartTime; // 0xd3c        
         [[maybe_unused]] std::uint8_t pad_0xd40[0x40];
     };

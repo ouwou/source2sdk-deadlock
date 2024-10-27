@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc50
+    // Size: 0xbd8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_nModelIndex"
@@ -30,38 +30,38 @@ namespace source2sdk::client
     class C_Fish : public client::CBaseAnimGraph
     {
     public:
-        Vector m_pos; // 0xb60        
-        Vector m_vel; // 0xb6c        
-        QAngle m_angles; // 0xb78        
-        int32_t m_localLifeState; // 0xb84        
-        float m_deathDepth; // 0xb88        
-        float m_deathAngle; // 0xb8c        
-        float m_buoyancy; // 0xb90        
-        [[maybe_unused]] std::uint8_t pad_0xb94[0x4]; // 0xb94
-        client::CountdownTimer m_wiggleTimer; // 0xb98        
-        float m_wigglePhase; // 0xbb0        
-        float m_wiggleRate; // 0xbb4        
-        Vector m_actualPos; // 0xbb8        
-        QAngle m_actualAngles; // 0xbc4        
+        Vector m_pos; // 0xae8        
+        Vector m_vel; // 0xaf4        
+        QAngle m_angles; // 0xb00        
+        int32_t m_localLifeState; // 0xb0c        
+        float m_deathDepth; // 0xb10        
+        float m_deathAngle; // 0xb14        
+        float m_buoyancy; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb1c[0x4]; // 0xb1c
+        client::CountdownTimer m_wiggleTimer; // 0xb20        
+        float m_wigglePhase; // 0xb38        
+        float m_wiggleRate; // 0xb3c        
+        Vector m_actualPos; // 0xb40        
+        QAngle m_actualAngles; // 0xb4c        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_poolOrigin; // 0xbd0        
+        Vector m_poolOrigin; // 0xb58        
         // metadata: MNetworkEnable
-        float m_waterLevel; // 0xbdc        
-        bool m_gotUpdate; // 0xbe0        
-        [[maybe_unused]] std::uint8_t pad_0xbe1[0x3]; // 0xbe1
+        float m_waterLevel; // 0xb64        
+        bool m_gotUpdate; // 0xb68        
+        [[maybe_unused]] std::uint8_t pad_0xb69[0x3]; // 0xb69
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_x"
         // metadata: MNetworkChangeCallback "OnPosChanged"
-        float m_x; // 0xbe4        
+        float m_x; // 0xb6c        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_y"
         // metadata: MNetworkChangeCallback "OnPosChanged"
-        float m_y; // 0xbe8        
+        float m_y; // 0xb70        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "fish_pos_z"
         // metadata: MNetworkChangeCallback "OnPosChanged"
-        float m_z; // 0xbec        
+        float m_z; // 0xb74        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "angle_normalize_positive"
         // metadata: MNetworkBitCount "7"
@@ -69,14 +69,14 @@ namespace source2sdk::client
         // metadata: MNetworkMaxValue "360.000000"
         // metadata: MNetworkEncodeFlags "1"
         // metadata: MNetworkChangeCallback "OnAngChanged"
-        float m_angle; // 0xbf0        
-        float m_errorHistory[20]; // 0xbf4        
-        int32_t m_errorHistoryIndex; // 0xc44        
-        int32_t m_errorHistoryCount; // 0xc48        
-        float m_averageError; // 0xc4c        
+        float m_angle; // 0xb78        
+        float m_errorHistory[20]; // 0xb7c        
+        int32_t m_errorHistoryIndex; // 0xbcc        
+        int32_t m_errorHistoryCount; // 0xbd0        
+        float m_averageError; // 0xbd4        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Fish because it is not a standard-layout class
-    static_assert(sizeof(C_Fish) == 0xc50);
+    static_assert(sizeof(C_Fish) == 0xbd8);
 };

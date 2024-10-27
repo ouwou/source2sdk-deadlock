@@ -22,42 +22,42 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x910
+    // Size: 0x8e8
     // Has VTable
     #pragma pack(push, 1)
     class CEnvBeam : public server::CBeam
     {
     public:
-        int32_t m_active; // 0x868        
-        [[maybe_unused]] std::uint8_t pad_0x86c[0x4]; // 0x86c
+        int32_t m_active; // 0x840        
+        [[maybe_unused]] std::uint8_t pad_0x844[0x4]; // 0x844
         // m_spriteTexture has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_spriteTexture;
-        char m_spriteTexture[0x8]; // 0x870        
-        CUtlSymbolLarge m_iszStartEntity; // 0x878        
-        CUtlSymbolLarge m_iszEndEntity; // 0x880        
-        float m_life; // 0x888        
-        float m_boltWidth; // 0x88c        
-        float m_noiseAmplitude; // 0x890        
-        int32_t m_speed; // 0x894        
-        float m_restrike; // 0x898        
-        [[maybe_unused]] std::uint8_t pad_0x89c[0x4]; // 0x89c
-        CUtlSymbolLarge m_iszSpriteName; // 0x8a0        
-        int32_t m_frameStart; // 0x8a8        
-        Vector m_vEndPointWorld; // 0x8ac        
-        Vector m_vEndPointRelative; // 0x8b8        
-        float m_radius; // 0x8c4        
-        server::Touch_t m_TouchType; // 0x8c8        
-        [[maybe_unused]] std::uint8_t pad_0x8cc[0x4]; // 0x8cc
-        CUtlSymbolLarge m_iFilterName; // 0x8d0        
+        char m_spriteTexture[0x8]; // 0x848        
+        CUtlSymbolLarge m_iszStartEntity; // 0x850        
+        CUtlSymbolLarge m_iszEndEntity; // 0x858        
+        float m_life; // 0x860        
+        float m_boltWidth; // 0x864        
+        float m_noiseAmplitude; // 0x868        
+        int32_t m_speed; // 0x86c        
+        float m_restrike; // 0x870        
+        [[maybe_unused]] std::uint8_t pad_0x874[0x4]; // 0x874
+        CUtlSymbolLarge m_iszSpriteName; // 0x878        
+        int32_t m_frameStart; // 0x880        
+        Vector m_vEndPointWorld; // 0x884        
+        Vector m_vEndPointRelative; // 0x890        
+        float m_radius; // 0x89c        
+        server::Touch_t m_TouchType; // 0x8a0        
+        [[maybe_unused]] std::uint8_t pad_0x8a4[0x4]; // 0x8a4
+        CUtlSymbolLarge m_iFilterName; // 0x8a8        
         // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hFilter;
-        char m_hFilter[0x4]; // 0x8d8        
-        [[maybe_unused]] std::uint8_t pad_0x8dc[0x4]; // 0x8dc
-        CUtlSymbolLarge m_iszDecal; // 0x8e0        
-        entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x8e8        
+        char m_hFilter[0x4]; // 0x8b0        
+        [[maybe_unused]] std::uint8_t pad_0x8b4[0x4]; // 0x8b4
+        CUtlSymbolLarge m_iszDecal; // 0x8b8        
+        entity2::CEntityIOOutput m_OnTouchedByEntity; // 0x8c0        
         
         // Datamap fields:
-        // int32_t m_nClipStyle; // 0x84c
+        // int32_t m_nClipStyle; // 0x824
         // void CEnvBeamStrikeThink; // 0x0
         // void CEnvBeamUpdateThink; // 0x0
         // void InputTurnOn; // 0x0
@@ -68,5 +68,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvBeam because it is not a standard-layout class
-    static_assert(sizeof(CEnvBeam) == 0x910);
+    static_assert(sizeof(CEnvBeam) == 0x8e8);
 };

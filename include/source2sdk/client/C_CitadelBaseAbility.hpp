@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc90
+    // Size: 0xc98
     // Has VTable
     // Is Abstract
     // 
@@ -136,7 +136,7 @@ namespace source2sdk::client
         client::EAbilitySlots_t m_eAbilitySlot; // 0x6e8        
         [[maybe_unused]] std::uint8_t pad_0x6ea[0x2]; // 0x6ea
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flPostCastDelayEndTime; // 0x6ec        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
@@ -150,23 +150,23 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flMovementControlActiveTime; // 0x6fc        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flSelectedChangedTime; // 0x700        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAltCastHoldStartTime; // 0x704        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flAltCastDoubleTapStartTime; // 0x708        
         // metadata: MNetworkEnable
         CUtlStringToken m_nImbuedAbilityID; // 0x70c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bSelectionModeIsAltMode; // 0x710        
-        [[maybe_unused]] std::uint8_t pad_0x711[0x57f];
+        [[maybe_unused]] std::uint8_t pad_0x711[0x587];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelBaseAbility because it is not a standard-layout class
-    static_assert(sizeof(C_CitadelBaseAbility) == 0xc90);
+    static_assert(sizeof(C_CitadelBaseAbility) == 0xc98);
 };

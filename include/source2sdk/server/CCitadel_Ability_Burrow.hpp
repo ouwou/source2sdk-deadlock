@@ -27,11 +27,11 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xaf8[0xe0]; // 0xaf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bInGround; // 0xbd8        
         [[maybe_unused]] std::uint8_t pad_0xbd9[0x3]; // 0xbd9
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_SpinEndTime; // 0xbdc        
         client::ParticleIndex_t m_nBurrowEffect; // 0xbe0        
         [[maybe_unused]] std::uint8_t pad_0xbe4[0x4];

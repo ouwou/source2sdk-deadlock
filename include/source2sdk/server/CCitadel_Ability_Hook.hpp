@@ -39,7 +39,7 @@ namespace source2sdk::server
         // CHandle<server::CBaseEntity> m_hProjectile;
         char m_hProjectile[0x4]; // 0xafc        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vecHookTargetStartPos; // 0xb00        
         bool m_bProjectileHit; // 0xb0c        
         [[maybe_unused]] std::uint8_t pad_0xb0d[0x3]; // 0xb0d

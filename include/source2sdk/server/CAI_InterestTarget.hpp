@@ -40,6 +40,10 @@ namespace source2sdk::server
         server::CAI_InterestTarget__Type_t m_eType; // 0x28        
         WorldGroupId_t m_nWorldGroupId; // 0x2c        
         entity2::GameTime_t m_flEndTime; // 0x30        
+        
+        // Static fields:
+        static float &Get_s_flDurationInfinite() {return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_InterestTarget")->GetStaticFields()[0]->m_pInstance);};
+        static float &Get_s_flDurationSingleTick() {return *reinterpret_cast<float*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_InterestTarget")->GetStaticFields()[1]->m_pInstance);};
     };
     #pragma pack(pop)
     

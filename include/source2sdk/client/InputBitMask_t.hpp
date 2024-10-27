@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 41
+    // Enumerator count: 43
     // Alignment: 8
     // Size: 0x8
     enum class InputBitMask_t : std::uint64_t
@@ -57,5 +57,7 @@ namespace source2sdk::client
         IN_TELEPORT = 0x80000000000000,
         IN_CANCEL_ABILITY = 0x100000000000000,
         IN_ZIPLINE = 0x200000000000000,
+        IN_MOVE_UP = 0x400000000000000,
+        IN_MOVE_DOWN = 0x800000000000000,
     };
 };

@@ -23,14 +23,12 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x18]; // 0x0
         bool m_bIsActive; // 0x18        
-        bool m_bHandshakeAnimationStarted; // 0x19        
-        [[maybe_unused]] std::uint8_t pad_0x1a[0x2]; // 0x1a
+        [[maybe_unused]] std::uint8_t pad_0x19[0x3]; // 0x19
         int32_t m_nTickActivated; // 0x1c        
     };
     #pragma pack(pop)
     
     static_assert(offsetof(CAI_MotorGroundAnimGraph_State, m_bIsActive) == 0x18);
-    static_assert(offsetof(CAI_MotorGroundAnimGraph_State, m_bHandshakeAnimationStarted) == 0x19);
     static_assert(offsetof(CAI_MotorGroundAnimGraph_State, m_nTickActivated) == 0x1c);
     
     static_assert(sizeof(CAI_MotorGroundAnimGraph_State) == 0x20);

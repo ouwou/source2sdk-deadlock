@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc10
+    // Size: 0xb98
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "uint32 m_boneIndexAttached"
@@ -26,22 +26,22 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        uint32_t m_boneIndexAttached; // 0xbd8        
+        uint32_t m_boneIndexAttached; // 0xb60        
         // metadata: MNetworkEnable
-        uint32_t m_ragdollAttachedObjectIndex; // 0xbdc        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkEncoder "coord"
-        Vector m_attachmentPointBoneSpace; // 0xbe0        
+        uint32_t m_ragdollAttachedObjectIndex; // 0xb64        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_attachmentPointRagdollSpace; // 0xbec        
-        Vector m_vecOffset; // 0xbf8        
-        float m_parentTime; // 0xc04        
-        bool m_bHasParent; // 0xc08        
-        [[maybe_unused]] std::uint8_t pad_0xc09[0x7];
+        Vector m_attachmentPointBoneSpace; // 0xb68        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkEncoder "coord"
+        Vector m_attachmentPointRagdollSpace; // 0xb74        
+        Vector m_vecOffset; // 0xb80        
+        float m_parentTime; // 0xb8c        
+        bool m_bHasParent; // 0xb90        
+        [[maybe_unused]] std::uint8_t pad_0xb91[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_RagdollPropAttached because it is not a standard-layout class
-    static_assert(sizeof(C_RagdollPropAttached) == 0xc10);
+    static_assert(sizeof(C_RagdollPropAttached) == 0xb98);
 };

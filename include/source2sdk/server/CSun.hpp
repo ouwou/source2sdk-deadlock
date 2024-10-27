@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x810
+    // Size: 0x7e8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_clrRender"
@@ -37,51 +37,51 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        Vector m_vDirection; // 0x7c8        
+        Vector m_vDirection; // 0x7a0        
         // metadata: MNetworkEnable
-        Color m_clrOverlay; // 0x7d4        
+        Color m_clrOverlay; // 0x7ac        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszEffectName; // 0x7d8        
+        CUtlSymbolLarge m_iszEffectName; // 0x7b0        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSSEffectName; // 0x7e0        
+        CUtlSymbolLarge m_iszSSEffectName; // 0x7b8        
         // metadata: MNetworkEnable
-        bool m_bOn; // 0x7e8        
+        bool m_bOn; // 0x7c0        
         // metadata: MNetworkEnable
-        bool m_bmaxColor; // 0x7e9        
-        [[maybe_unused]] std::uint8_t pad_0x7ea[0x2]; // 0x7ea
+        bool m_bmaxColor; // 0x7c1        
+        [[maybe_unused]] std::uint8_t pad_0x7c2[0x2]; // 0x7c2
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_flSize; // 0x7ec        
+        float m_flSize; // 0x7c4        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "-360.000000"
         // metadata: MNetworkMaxValue "360.000000"
-        float m_flRotation; // 0x7f0        
+        float m_flRotation; // 0x7c8        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_flHazeScale; // 0x7f4        
+        float m_flHazeScale; // 0x7cc        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaHaze; // 0x7f8        
+        float m_flAlphaHaze; // 0x7d0        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaHdr; // 0x7fc        
+        float m_flAlphaHdr; // 0x7d4        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaScale; // 0x800        
+        float m_flAlphaScale; // 0x7d8        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_flHDRColorScale; // 0x804        
+        float m_flHDRColorScale; // 0x7dc        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "1.000000"
-        float m_flFarZScale; // 0x808        
-        [[maybe_unused]] std::uint8_t pad_0x80c[0x4];
+        float m_flFarZScale; // 0x7e0        
+        [[maybe_unused]] std::uint8_t pad_0x7e4[0x4];
         
         // Datamap fields:
         // void InputTurnOn; // 0x0
@@ -91,5 +91,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSun because it is not a standard-layout class
-    static_assert(sizeof(CSun) == 0x810);
+    static_assert(sizeof(CSun) == 0x7e8);
 };

@@ -39,7 +39,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1548
+    // Size: 0x1550
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -103,115 +103,116 @@ namespace source2sdk::server
         // metadata: MPropertyFriendlyName "Weapon Info"
         client::CCitadelWeaponInfo m_WeaponInfo; // 0xd8        
         // metadata: MPropertyFriendlyName "Projectile Info"
-        client::ProjectileInfo_t m_projectileInfo; // 0x750        
+        client::ProjectileInfo_t m_projectileInfo; // 0x758        
         // metadata: MPropertyFriendlyName "Deployment Info"
-        client::DeploymentInfo_t m_deploymentInfo; // 0xad0        
+        client::DeploymentInfo_t m_deploymentInfo; // 0xad8        
         // metadata: MPropertyStartGroup
         // m_mapAbilityProperties has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<CUtlString,client::CitadelAbilityProperty_t> m_mapAbilityProperties;
-        char m_mapAbilityProperties[0x28]; // 0xcb0        
+        char m_mapAbilityProperties[0x28]; // 0xcb8        
         // m_vecDependentAbilities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CSubclassName<4>> m_vecDependentAbilities;
-        char m_vecDependentAbilities[0x18]; // 0xcd8        
+        char m_vecDependentAbilities[0x18]; // 0xce0        
         // m_vecAbilityUpgrades has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::AbilityUpgrade_t> m_vecAbilityUpgrades;
-        char m_vecAbilityUpgrades[0x18]; // 0xcf0        
-        [[maybe_unused]] std::uint8_t pad_0xd08[0x20]; // 0xd08
+        char m_vecAbilityUpgrades[0x18]; // 0xcf8        
+        [[maybe_unused]] std::uint8_t pad_0xd10[0x20]; // 0xd10
         // metadata: MPropertyStartGroup "AnimGraph"
         // metadata: MPropertyLeafSuggestionProviderFn
-        CGlobalSymbol m_strCastAnimGraphParam; // 0xd28        
+        CGlobalSymbol m_strCastAnimGraphParam; // 0xd30        
         // metadata: MPropertyDescription "If set, this will be the value passed to the animgraph when this ability is selected instead of the ability name."
-        CUtlString m_strSelectionNameOverride; // 0xd30        
-        CUtlString m_strCastAnimSequenceName; // 0xd38        
+        CUtlString m_strSelectionNameOverride; // 0xd38        
+        CUtlString m_strCastAnimSequenceName; // 0xd40        
         // metadata: MPropertyStartGroup "UI"
         // metadata: MPropertySuppressExpr "m_bIsSignatureAbility == false"
-        client::AbilityTooltipDetails_t m_AbilityTooltipDetails; // 0xd40        
-        CUtlString m_strCSSClass; // 0xd70        
-        CPanoramaImageName m_strAbilityImage; // 0xd78        
-        CUtlString m_strMoviePreviewPath; // 0xd88        
-        client::CitadelAbilityHUDPanel_t m_HUDPanel; // 0xd90        
-        bool m_bShowInPassiveItemsArea; // 0xdc8        
-        bool m_bForceShowHUDPanel; // 0xdc9        
-        [[maybe_unused]] std::uint8_t pad_0xdca[0x6]; // 0xdca
+        client::AbilityTooltipDetails_t m_AbilityTooltipDetails; // 0xd48        
+        CUtlString m_strCSSClass; // 0xd78        
+        CPanoramaImageName m_strAbilityImage; // 0xd80        
+        CUtlString m_strMoviePreviewPath; // 0xd90        
+        client::CitadelAbilityHUDPanel_t m_HUDPanel; // 0xd98        
+        bool m_bShowInPassiveItemsArea; // 0xdd0        
+        bool m_bForceShowHUDPanel; // 0xdd1        
+        bool m_bUsesFlightControls; // 0xdd2        
+        [[maybe_unused]] std::uint8_t pad_0xdd3[0x5]; // 0xdd3
         // metadata: MPropertyFriendlyName "Additional Abilities"
-        client::AdditionalAbilities_t m_additionalAbilities; // 0xdd0        
-        CUtlString m_strCancelAbilityKey; // 0xdf0        
-        CUtlString m_strSecondaryStatName; // 0xdf8        
+        client::AdditionalAbilities_t m_additionalAbilities; // 0xdd8        
+        CUtlString m_strCancelAbilityKey; // 0xdf8        
+        CUtlString m_strSecondaryStatName; // 0xe00        
         // metadata: MPropertyDescription "Used by button hints as labels for 'casting' (ex. cast, throw, deploy)."
-        CUtlString m_strCastButtonLocToken; // 0xe00        
+        CUtlString m_strCastButtonLocToken; // 0xe08        
         // metadata: MPropertyDescription "Used by button hints as labels for 'alt-casting' (ex. cast on self, bring allies, heal teammate)."
-        CUtlString m_strAltCastButtonLocToken; // 0xe08        
+        CUtlString m_strAltCastButtonLocToken; // 0xe10        
         // metadata: MPropertyStartGroup "Camera"
         // metadata: MPropertyDescription "Camera sequence that plays when casting starts and stops when casting completes, unless the bool below is un-checked"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceCastStart; // 0xe10        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceCastStart; // 0xe18        
         // metadata: MPropertyDescription "By default, we stop the sequence from 'Sequence Cast Start' once the cast completes successfully.  Un-check this to allow it to continue past the cast."
-        bool m_bEndCastStartSequenceOnCastComplete; // 0xe98        
-        [[maybe_unused]] std::uint8_t pad_0xe99[0x7]; // 0xe99
+        bool m_bEndCastStartSequenceOnCastComplete; // 0xea0        
+        [[maybe_unused]] std::uint8_t pad_0xea1[0x7]; // 0xea1
         // metadata: MPropertyDescription "Camera sequence that plays when casting completes."
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceCastComplete; // 0xea0        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceCastComplete; // 0xea8        
         // metadata: MPropertyDescription "Camera sequence that plays when channeling starts and is stopped when channeling ends, unless the bool below is un-checked."
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceChannelStart; // 0xf28        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceChannelStart; // 0xf30        
         // metadata: MPropertyDescription "By default, we stop the sequence from 'Sequence Channel Start' once the channel completes successfully.  Un-check this to allow it to continue past the channel duration."
-        bool m_bEndChannelStartSequenceOnChannelComplete; // 0xfb0        
-        [[maybe_unused]] std::uint8_t pad_0xfb1[0x3]; // 0xfb1
-        float m_flCameraPreviewOffset; // 0xfb4        
-        float m_flCameraPreviewDistance; // 0xfb8        
-        float m_flCameraPreviewSpeed; // 0xfbc        
+        bool m_bEndChannelStartSequenceOnChannelComplete; // 0xfb8        
+        [[maybe_unused]] std::uint8_t pad_0xfb9[0x3]; // 0xfb9
+        float m_flCameraPreviewOffset; // 0xfbc        
+        float m_flCameraPreviewDistance; // 0xfc0        
+        float m_flCameraPreviewSpeed; // 0xfc4        
         // metadata: MPropertyStartGroup "Visuals"
         // metadata: MPropertyDescription "Preview particle attaching to the caster before cast"
         // m_previewParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_previewParticle;
-        char m_previewParticle[0xe0]; // 0xfc0        
+        char m_previewParticle[0xe0]; // 0xfc8        
         // metadata: MPropertyDescription "Preview path particle shows ability's custom path"
         // m_PreviewPathParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PreviewPathParticle;
-        char m_PreviewPathParticle[0xe0]; // 0x10a0        
+        char m_PreviewPathParticle[0xe0]; // 0x10a8        
         // metadata: MPropertyDescription "Particle attaching to the caster on cast event"
         // m_mapCastEventParticles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::AbilityCastEvent_t,CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>>> m_mapCastEventParticles;
-        char m_mapCastEventParticles[0x28]; // 0x1180        
+        char m_mapCastEventParticles[0x28]; // 0x1188        
         // metadata: MPropertyDescription "Trace particle when hit an enemy with targeted ability"
         // m_skillshotHitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_skillshotHitParticle;
-        char m_skillshotHitParticle[0xe0]; // 0x11a8        
+        char m_skillshotHitParticle[0xe0]; // 0x11b0        
         // metadata: MPropertyDescription "Trace particle when missed an enemy with targeted ability"
         // m_skillshotMissParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_skillshotMissParticle;
-        char m_skillshotMissParticle[0xe0]; // 0x1288        
+        char m_skillshotMissParticle[0xe0]; // 0x1290        
         // metadata: MPropertyDescription "Preview particle on attaching to targets of this ability"
         // m_TargetingPreviewParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TargetingPreviewParticle;
-        char m_TargetingPreviewParticle[0xe0]; // 0x1368        
+        char m_TargetingPreviewParticle[0xe0]; // 0x1370        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strSelectedSound; // 0x1448        
-        CSoundEventName m_strUnselectedSound; // 0x1458        
-        CSoundEventName m_strSelectedLoopSound; // 0x1468        
-        CSoundEventName m_strCastSound; // 0x1478        
-        CSoundEventName m_strChannelSound; // 0x1488        
-        CSoundEventName m_strChannelLoopSound; // 0x1498        
-        CSoundEventName m_strCastDelaySound; // 0x14a8        
-        CSoundEventName m_strCastDelayLoopSound; // 0x14b8        
+        CSoundEventName m_strSelectedSound; // 0x1450        
+        CSoundEventName m_strUnselectedSound; // 0x1460        
+        CSoundEventName m_strSelectedLoopSound; // 0x1470        
+        CSoundEventName m_strCastSound; // 0x1480        
+        CSoundEventName m_strChannelSound; // 0x1490        
+        CSoundEventName m_strChannelLoopSound; // 0x14a0        
+        CSoundEventName m_strCastDelaySound; // 0x14b0        
+        CSoundEventName m_strCastDelayLoopSound; // 0x14c0        
         // metadata: MPropertyDescription "plays for local player attacker dealing damage with this ability"
-        CSoundEventName m_strHitConfirmationSound; // 0x14c8        
+        CSoundEventName m_strHitConfirmationSound; // 0x14d0        
         // metadata: MPropertyDescription "plays for local player victim taking damage from this ability"
-        CSoundEventName m_strDamageTakenSound; // 0x14d8        
-        CSoundEventName m_strAbilityOffCooldownSound; // 0x14e8        
-        CSoundEventName m_strAbilityChargeReadySound; // 0x14f8        
-        bool m_bPlayMeepMop; // 0x1508        
-        [[maybe_unused]] std::uint8_t pad_0x1509[0x7]; // 0x1509
+        CSoundEventName m_strDamageTakenSound; // 0x14e0        
+        CSoundEventName m_strAbilityOffCooldownSound; // 0x14f0        
+        CSoundEventName m_strAbilityChargeReadySound; // 0x1500        
+        bool m_bPlayMeepMop; // 0x1510        
+        [[maybe_unused]] std::uint8_t pad_0x1511[0x7]; // 0x1511
         // metadata: MPropertyStartGroup "Modifiers"
         // m_AutoChannelModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_AutoChannelModifier;
-        char m_AutoChannelModifier[0x10]; // 0x1510        
+        char m_AutoChannelModifier[0x10]; // 0x1518        
         // m_AutoCastDelayModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_AutoCastDelayModifier;
-        char m_AutoCastDelayModifier[0x10]; // 0x1520        
+        char m_AutoCastDelayModifier[0x10]; // 0x1528        
         // m_AutoIntrinsicModifiers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CEmbeddedSubclass<server::CBaseModifier>> m_AutoIntrinsicModifiers;
-        char m_AutoIntrinsicModifiers[0x18]; // 0x1530        
+        char m_AutoIntrinsicModifiers[0x18]; // 0x1538        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CitadelAbilityVData because it is not a standard-layout class
-    static_assert(sizeof(CitadelAbilityVData) == 0x1548);
+    static_assert(sizeof(CitadelAbilityVData) == 0x1550);
 };

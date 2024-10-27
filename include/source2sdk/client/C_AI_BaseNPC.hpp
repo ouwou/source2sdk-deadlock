@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd88
+    // Size: 0xd10
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_lifeState"
@@ -28,15 +28,15 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        client::NPC_STATE m_NPCState; // 0xd80        
+        client::NPC_STATE m_NPCState; // 0xd08        
         // metadata: MNetworkEnable
-        bool m_bFadeCorpse; // 0xd84        
+        bool m_bFadeCorpse; // 0xd0c        
         // metadata: MNetworkEnable
-        bool m_bImportantRagdoll; // 0xd85        
-        [[maybe_unused]] std::uint8_t pad_0xd86[0x2];
+        bool m_bImportantRagdoll; // 0xd0d        
+        [[maybe_unused]] std::uint8_t pad_0xd0e[0x2];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_AI_BaseNPC because it is not a standard-layout class
-    static_assert(sizeof(C_AI_BaseNPC) == 0xd88);
+    static_assert(sizeof(C_AI_BaseNPC) == 0xd10);
 };

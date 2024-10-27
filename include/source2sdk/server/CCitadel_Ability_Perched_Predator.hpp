@@ -29,7 +29,7 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x118]; // 0xaf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_hActiveProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hActiveProjectile;
         char m_hActiveProjectile[0x4]; // 0xc10        

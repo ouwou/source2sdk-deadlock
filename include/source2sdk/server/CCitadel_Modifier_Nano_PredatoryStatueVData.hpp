@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x920
+    // Size: 0x948
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -45,12 +45,20 @@ namespace source2sdk::server
         // m_TargetModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_TargetModifier;
         char m_TargetModifier[0x10]; // 0x908        
+        // m_RevealModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<server::CCitadelModifier> m_RevealModifier;
+        char m_RevealModifier[0x10]; // 0x918        
+        // m_StatueInvis has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<server::CCitadelModifier> m_StatueInvis;
+        char m_StatueInvis[0x10]; // 0x928        
         // metadata: MPropertyStartGroup "GamePlay"
-        float m_flSelfHealScale; // 0x918        
-        [[maybe_unused]] std::uint8_t pad_0x91c[0x4];
+        float m_flNewTargetAttackTime; // 0x938        
+        float m_flMinRevealTime; // 0x93c        
+        float m_flMinDebuffTime; // 0x940        
+        [[maybe_unused]] std::uint8_t pad_0x944[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Nano_PredatoryStatueVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Nano_PredatoryStatueVData) == 0x920);
+    static_assert(sizeof(CCitadel_Modifier_Nano_PredatoryStatueVData) == 0x948);
 };

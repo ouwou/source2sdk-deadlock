@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc38
+    // Size: 0xc18
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -22,9 +22,9 @@ namespace source2sdk::server
     class CEconWearable : public server::CEconEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc30[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xc10[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CEconWearable) == 0xc38);
+    static_assert(sizeof(CEconWearable) == 0xc18);
 };

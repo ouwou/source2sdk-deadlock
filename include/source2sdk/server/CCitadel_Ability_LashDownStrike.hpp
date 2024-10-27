@@ -42,7 +42,7 @@ namespace source2sdk::server
         client::ParticleIndex_t m_PreviewEffect; // 0xbf4        
         [[maybe_unused]] std::uint8_t pad_0xbf8[0x1c0]; // 0xbf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vStrikeVel; // 0xdb8        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"

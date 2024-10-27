@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xf18
+    // Size: 0xf20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bCardIsFlying"
@@ -22,13 +22,13 @@ namespace source2sdk::client
     class CCitadel_Ability_CardToss : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc90[0x280]; // 0xc90
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x280]; // 0xc98
         // metadata: MNetworkEnable
-        bool m_bCardIsFlying; // 0xf10        
-        [[maybe_unused]] std::uint8_t pad_0xf11[0x7];
+        bool m_bCardIsFlying; // 0xf18        
+        [[maybe_unused]] std::uint8_t pad_0xf19[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_CardToss because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_CardToss) == 0xf18);
+    static_assert(sizeof(CCitadel_Ability_CardToss) == 0xf20);
 };

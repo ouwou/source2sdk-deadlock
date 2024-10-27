@@ -30,7 +30,7 @@ namespace source2sdk::server
         int32_t m_nProjectilesScheduled; // 0xd68        
         client::ParticleIndex_t m_ChannelParticle; // 0xd6c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flNextShootTime; // 0xd70        
         [[maybe_unused]] std::uint8_t pad_0xd74[0x4];
     };

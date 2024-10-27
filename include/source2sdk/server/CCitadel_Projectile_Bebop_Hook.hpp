@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x878
+    // Size: 0x850
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_Bebop_Hook : public server::CCitadelProjectile
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Projectile_Bebop_Hook) == 0x878);
+    static_assert(sizeof(CCitadel_Projectile_Bebop_Hook) == 0x850);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7f8
+    // Size: 0x7d0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float32 m_flFadeInStart"
@@ -34,25 +34,25 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        float m_flFadeInStart; // 0x7c8        
+        float m_flFadeInStart; // 0x7a0        
         // metadata: MNetworkEnable
-        float m_flFadeInLength; // 0x7cc        
+        float m_flFadeInLength; // 0x7a4        
         // metadata: MNetworkEnable
-        float m_flFadeOutModelStart; // 0x7d0        
+        float m_flFadeOutModelStart; // 0x7a8        
         // metadata: MNetworkEnable
-        float m_flFadeOutModelLength; // 0x7d4        
+        float m_flFadeOutModelLength; // 0x7ac        
         // metadata: MNetworkEnable
-        float m_flFadeOutStart; // 0x7d8        
+        float m_flFadeOutStart; // 0x7b0        
         // metadata: MNetworkEnable
-        float m_flFadeOutLength; // 0x7dc        
+        float m_flFadeOutLength; // 0x7b4        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartTime; // 0x7e0        
+        entity2::GameTime_t m_flStartTime; // 0x7b8        
         // metadata: MNetworkEnable
-        client::EntityDisolveType_t m_nDissolveType; // 0x7e4        
+        client::EntityDisolveType_t m_nDissolveType; // 0x7bc        
         // metadata: MNetworkEnable
-        Vector m_vDissolverOrigin; // 0x7e8        
+        Vector m_vDissolverOrigin; // 0x7c0        
         // metadata: MNetworkEnable
-        uint32_t m_nMagnitude; // 0x7f4        
+        uint32_t m_nMagnitude; // 0x7cc        
         
         // Datamap fields:
         // void CEntityDissolveDissolveThink; // 0x0
@@ -62,5 +62,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEntityDissolve because it is not a standard-layout class
-    static_assert(sizeof(CEntityDissolve) == 0x7f8);
+    static_assert(sizeof(CEntityDissolve) == 0x7d0);
 };

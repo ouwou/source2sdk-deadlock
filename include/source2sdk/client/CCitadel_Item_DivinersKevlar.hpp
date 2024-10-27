@@ -14,17 +14,17 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xce8
+    // Size: 0xcf0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_DivinersKevlar : public client::CCitadel_Item
     {
     public:
-        bool m_bExecuted; // 0xca8        
-        [[maybe_unused]] std::uint8_t pad_0xca9[0x3f];
+        bool m_bExecuted; // 0xcb0        
+        [[maybe_unused]] std::uint8_t pad_0xcb1[0x3f];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_DivinersKevlar because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_DivinersKevlar) == 0xce8);
+    static_assert(sizeof(CCitadel_Item_DivinersKevlar) == 0xcf0);
 };

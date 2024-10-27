@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1ac0
+    // Size: 0x1ad0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,23 +24,23 @@ namespace source2sdk::server
     class CAbilityUppercutVData : public server::CAbilityMeleeVData
     {
     public:
-        client::AttackData_t m_UppercutAttackData; // 0x1560        
+        client::AttackData_t m_UppercutAttackData; // 0x1570        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_UppercutModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_UppercutModifier;
-        char m_UppercutModifier[0x10]; // 0x1a88        
+        char m_UppercutModifier[0x10]; // 0x1a98        
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1a98        
+        char m_BuffModifier[0x10]; // 0x1aa8        
         // m_ClipModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_ClipModifier;
-        char m_ClipModifier[0x10]; // 0x1aa8        
+        char m_ClipModifier[0x10]; // 0x1ab8        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flMaxPitchUp; // 0x1ab8        
-        [[maybe_unused]] std::uint8_t pad_0x1abc[0x4];
+        float m_flMaxPitchUp; // 0x1ac8        
+        [[maybe_unused]] std::uint8_t pad_0x1acc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityUppercutVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityUppercutVData) == 0x1ac0);
+    static_assert(sizeof(CAbilityUppercutVData) == 0x1ad0);
 };

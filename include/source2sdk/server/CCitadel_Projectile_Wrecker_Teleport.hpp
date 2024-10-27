@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x890
+    // Size: 0x868
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -27,10 +27,10 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x878        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x850        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Wrecker_Teleport because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_Wrecker_Teleport) == 0x890);
+    static_assert(sizeof(CCitadel_Projectile_Wrecker_Teleport) == 0x868);
 };

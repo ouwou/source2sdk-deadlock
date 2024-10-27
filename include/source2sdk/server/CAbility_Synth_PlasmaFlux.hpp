@@ -38,7 +38,7 @@ namespace source2sdk::server
         entity2::GameTime_t m_flProjectileLaunchTime; // 0xb34        
         entity2::GameTime_t m_flProjectileExpireTime; // 0xb38        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_hActiveProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hActiveProjectile;
         char m_hActiveProjectile[0x4]; // 0xb3c        

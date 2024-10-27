@@ -27,10 +27,10 @@ namespace source2sdk::server
         entity2::GameTime_t m_flFlyingStartTime; // 0xb18        
         [[maybe_unused]] std::uint8_t pad_0xb1c[0xac]; // 0xb1c
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bFlying; // 0xbc8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bSummoning; // 0xbc9        
         [[maybe_unused]] std::uint8_t pad_0xbca[0x6];
     };

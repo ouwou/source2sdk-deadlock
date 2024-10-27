@@ -8,12 +8,13 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 2
+    // Enumerator count: 3
     // Alignment: 4
     // Size: 0x4
     enum class NPCPathingRequest_t : std::uint32_t
     {
         StopIfNoPath = 0x0,
         TryRandomMovementIfNoPath = 0x1,
+        AllowDirectDropDownIfNoPath = 0x2,
     };
 };

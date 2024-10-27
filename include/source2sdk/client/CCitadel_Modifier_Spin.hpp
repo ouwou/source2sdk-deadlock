@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1d8
+    // Size: 0x248
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Spin : public client::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc0[0x118];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x188];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_Spin) == 0x1d8);
+    static_assert(sizeof(CCitadel_Modifier_Spin) == 0x248);
 };

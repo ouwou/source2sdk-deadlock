@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CAnimGraphControllerBase.hpp"
+#include "source2sdk/client/CBaseAnimGraphAnimGraphController.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -14,10 +14,10 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x810
+    // Size: 0x900
     // Has VTable
     #pragma pack(push, 1)
-    class CAI_BaseNPCGraphController : public client::CAnimGraphControllerBase
+    class CAI_BaseNPCGraphController : public client::CBaseAnimGraphAnimGraphController
     {
     public:
         // m_sCurrScheduleName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
@@ -74,100 +74,116 @@ namespace source2sdk::client
         // m_vMovementIdleTurnFacePosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<Vector> m_vMovementIdleTurnFacePosition;
         char m_vMovementIdleTurnFacePosition[0x20]; // 0x2f0        
+        // m_vMovementPlantedTurnFacePosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<Vector> m_vMovementPlantedTurnFacePosition;
+        char m_vMovementPlantedTurnFacePosition[0x20]; // 0x310        
+        // m_vMovementForwardDirectionOverride has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<Vector> m_vMovementForwardDirectionOverride;
+        char m_vMovementForwardDirectionOverride[0x20]; // 0x330        
         // m_flMovementLean has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flMovementLean;
-        char m_flMovementLean[0x20]; // 0x310        
+        char m_flMovementLean[0x20]; // 0x350        
         // m_sMovementStopType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_sMovementStopType;
-        char m_sMovementStopType[0x28]; // 0x330        
-        CAnimGraphTagOptionalRef m_sMovementStopsEnabled; // 0x358        
-        CAnimGraphTagOptionalRef m_sMovementInstantStopsEnabled; // 0x370        
-        CAnimGraphTagOptionalRef m_sMovementStartsEnabled; // 0x388        
-        CAnimGraphTagOptionalRef m_sMovementIdleTurnsEnabled; // 0x3a0        
-        CAnimGraphTagOptionalRef m_sMovementHopsEnabled; // 0x3b8        
-        CAnimGraphTagOptionalRef m_sMovementStrafeSupported; // 0x3d0        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockAll; // 0x3e8        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdle; // 0x400        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockLoop; // 0x418        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdleTurn; // 0x430        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockStart; // 0x448        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockStop; // 0x460        
-        CAnimGraphTagOptionalRef m_sMovementTransitionBlockHop; // 0x478        
+        char m_sMovementStopType[0x28]; // 0x370        
+        // m_sMovementState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<char*> m_sMovementState;
+        char m_sMovementState[0x28]; // 0x398        
+        // m_sMovementHandshakeState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraphParamOptionalRef<char*> m_sMovementHandshakeState;
+        char m_sMovementHandshakeState[0x28]; // 0x3c0        
+        CAnimGraphTagOptionalRef m_sMovementStopsEnabled; // 0x3e8        
+        CAnimGraphTagOptionalRef m_sMovementInstantStopsEnabled; // 0x400        
+        CAnimGraphTagOptionalRef m_sMovementStartsEnabled; // 0x418        
+        CAnimGraphTagOptionalRef m_sMovementIdleTurnsEnabled; // 0x430        
+        CAnimGraphTagOptionalRef m_sMovementHopsEnabled; // 0x448        
+        CAnimGraphTagOptionalRef m_sMovementPlantedTurnsEnabled; // 0x460        
+        CAnimGraphTagOptionalRef m_sMovementStrafeSupported; // 0x478        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockAll; // 0x490        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdle; // 0x4a8        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockLoop; // 0x4c0        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockIdleTurn; // 0x4d8        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockStart; // 0x4f0        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockStop; // 0x508        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockHop; // 0x520        
+        CAnimGraphTagOptionalRef m_sMovementTransitionBlockPlantedTurn; // 0x538        
+        CAnimGraphTagOptionalRef m_sMovementRightFootDown; // 0x550        
+        CAnimGraphTagOptionalRef m_sMovementLeftFootDown; // 0x568        
         // m_flEnemyDistance has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flEnemyDistance;
-        char m_flEnemyDistance[0x20]; // 0x490        
+        char m_flEnemyDistance[0x20]; // 0x580        
         // m_flEnemyDirection has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flEnemyDirection;
-        char m_flEnemyDirection[0x20]; // 0x4b0        
+        char m_flEnemyDirection[0x20]; // 0x5a0        
         // m_bCanSeeEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bCanSeeEnemy;
-        char m_bCanSeeEnemy[0x20]; // 0x4d0        
+        char m_bCanSeeEnemy[0x20]; // 0x5c0        
         // m_bEnemyFacingMe has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bEnemyFacingMe;
-        char m_bEnemyFacingMe[0x20]; // 0x4f0        
+        char m_bEnemyFacingMe[0x20]; // 0x5e0        
         // m_bHitTrigger has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bHitTrigger;
-        char m_bHitTrigger[0x20]; // 0x510        
+        char m_bHitTrigger[0x20]; // 0x600        
         // m_vecHitDirection has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<Vector> m_vecHitDirection;
-        char m_vecHitDirection[0x20]; // 0x530        
+        char m_vecHitDirection[0x20]; // 0x620        
         // m_flHitHeading has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flHitHeading;
-        char m_flHitHeading[0x20]; // 0x550        
+        char m_flHitHeading[0x20]; // 0x640        
         // m_vecHitOffset has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<Vector> m_vecHitOffset;
-        char m_vecHitOffset[0x20]; // 0x570        
+        char m_vecHitOffset[0x20]; // 0x660        
         // m_flHitStrength has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flHitStrength;
-        char m_flHitStrength[0x20]; // 0x590        
+        char m_flHitStrength[0x20]; // 0x680        
         // m_pszHitDamageType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszHitDamageType;
-        char m_pszHitDamageType[0x28]; // 0x5b0        
+        char m_pszHitDamageType[0x28]; // 0x6a0        
         // m_pszDeathHitLocation has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszDeathHitLocation;
-        char m_pszDeathHitLocation[0x28]; // 0x5d8        
+        char m_pszDeathHitLocation[0x28]; // 0x6c8        
         // m_nHitBone has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<int32_t> m_nHitBone;
-        char m_nHitBone[0x20]; // 0x600        
+        char m_nHitBone[0x20]; // 0x6f0        
         // m_pszNPCState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszNPCState;
-        char m_pszNPCState[0x28]; // 0x620        
+        char m_pszNPCState[0x28]; // 0x710        
         // m_bStunned has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bStunned;
-        char m_bStunned[0x20]; // 0x648        
+        char m_bStunned[0x20]; // 0x738        
         // m_bLookTargetChargedAutoclear has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bLookTargetChargedAutoclear;
-        char m_bLookTargetChargedAutoclear[0x20]; // 0x668        
+        char m_bLookTargetChargedAutoclear[0x20]; // 0x758        
         // m_sBodyIdle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_sBodyIdle;
-        char m_sBodyIdle[0x28]; // 0x688        
+        char m_sBodyIdle[0x28]; // 0x778        
         // m_sFlashlightMode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_sFlashlightMode;
-        char m_sFlashlightMode[0x28]; // 0x6b0        
+        char m_sFlashlightMode[0x28]; // 0x7a0        
         // m_sFacingReason has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_sFacingReason;
-        char m_sFacingReason[0x28]; // 0x6d8        
-        CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x700        
-        CAnimGraphTagOptionalRef m_sAllowMovementOffPath; // 0x718        
-        CAnimGraphTagOptionalRef m_sKeepPathActiveStop; // 0x730        
+        char m_sFacingReason[0x28]; // 0x7c8        
+        CAnimGraphTagOptionalRef m_sFacingModeUsePath; // 0x7f0        
+        CAnimGraphTagOptionalRef m_sAllowMovementOffPath; // 0x808        
+        CAnimGraphTagOptionalRef m_sKeepPathActiveStop; // 0x820        
         // m_bMoveSolveNudgeActive has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bMoveSolveNudgeActive;
-        char m_bMoveSolveNudgeActive[0x20]; // 0x748        
+        char m_bMoveSolveNudgeActive[0x20]; // 0x838        
         // m_flMoveSolveNudgeYaw has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flMoveSolveNudgeYaw;
-        char m_flMoveSolveNudgeYaw[0x20]; // 0x768        
+        char m_flMoveSolveNudgeYaw[0x20]; // 0x858        
         // m_pszDoorOpenAction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszDoorOpenAction;
-        char m_pszDoorOpenAction[0x28]; // 0x788        
+        char m_pszDoorOpenAction[0x28]; // 0x878        
         // m_flDistanceToDoor has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flDistanceToDoor;
-        char m_flDistanceToDoor[0x20]; // 0x7b0        
+        char m_flDistanceToDoor[0x20]; // 0x8a0        
         // m_bDoorLeft has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bDoorLeft;
-        char m_bDoorLeft[0x20]; // 0x7d0        
+        char m_bDoorLeft[0x20]; // 0x8c0        
         // m_flBlinkAmount has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<float> m_flBlinkAmount;
-        char m_flBlinkAmount[0x20]; // 0x7f0        
+        char m_flBlinkAmount[0x20]; // 0x8e0        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CAI_BaseNPCGraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -176,5 +192,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_BaseNPCGraphController because it is not a standard-layout class
-    static_assert(sizeof(CAI_BaseNPCGraphController) == 0x810);
+    static_assert(sizeof(CAI_BaseNPCGraphController) == 0x900);
 };

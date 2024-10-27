@@ -29,11 +29,11 @@ namespace source2sdk::server
         // CUtlVector<client::ShotID_t> m_vecSpecialShots;
         char m_vecSpecialShots[0x18]; // 0xaf8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int32_t m_nFastFireBulletsLeft; // 0xb10        
         [[maybe_unused]] std::uint8_t pad_0xb14[0x4]; // 0xb14
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         server::CCitadelAutoScaledTime m_flBlitzEndTime; // 0xb18        
         bool m_bCanApplyTechAmp; // 0xb30        
         bool m_bCanLifesteal; // 0xb31        

@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x600
+    // Size: 0x610
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -53,6 +53,8 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "float m_fNoiseSpeed"
     // static metadata: MNetworkVarNames "float m_fNoiseStrength"
     // static metadata: MNetworkVarNames "Vector m_vNoiseScale"
+    // static metadata: MNetworkVarNames "float m_fWindSpeed"
+    // static metadata: MNetworkVarNames "Vector m_vWindDirection"
     #pragma pack(push, 1)
     class C_EnvVolumetricFogController : public client::C_BaseEntity
     {
@@ -127,8 +129,12 @@ namespace source2sdk::client
         float m_fNoiseStrength; // 0x5e8        
         // metadata: MNetworkEnable
         Vector m_vNoiseScale; // 0x5ec        
-        bool m_bFirstTime; // 0x5f8        
-        [[maybe_unused]] std::uint8_t pad_0x5f9[0x7];
+        // metadata: MNetworkEnable
+        float m_fWindSpeed; // 0x5f8        
+        // metadata: MNetworkEnable
+        Vector m_vWindDirection; // 0x5fc        
+        bool m_bFirstTime; // 0x608        
+        [[maybe_unused]] std::uint8_t pad_0x609[0x7];
         
         // Datamap fields:
         // void InputSetToDefaults; // 0x0
@@ -144,5 +150,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvVolumetricFogController because it is not a standard-layout class
-    static_assert(sizeof(C_EnvVolumetricFogController) == 0x600);
+    static_assert(sizeof(C_EnvVolumetricFogController) == 0x610);
 };

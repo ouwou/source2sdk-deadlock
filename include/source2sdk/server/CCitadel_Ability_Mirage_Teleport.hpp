@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbd8
+    // Size: 0xc10
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hDummyForCamera"
@@ -35,10 +35,10 @@ namespace source2sdk::server
         Vector m_vCastStartPosition; // 0xb04        
         Vector m_vTargetPosition; // 0xb10        
         QAngle m_vTargetAngles; // 0xb1c        
-        [[maybe_unused]] std::uint8_t pad_0xb28[0xb0];
+        [[maybe_unused]] std::uint8_t pad_0xb28[0xe8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Mirage_Teleport because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Mirage_Teleport) == 0xbd8);
+    static_assert(sizeof(CCitadel_Ability_Mirage_Teleport) == 0xc10);
 };

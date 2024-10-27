@@ -30,17 +30,17 @@ namespace source2sdk::server
         client::ParticleIndex_t m_nSprintParticle; // 0xaf8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnSprintingChanged"
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bSprinting; // 0xafc        
         [[maybe_unused]] std::uint8_t pad_0xafd[0x3]; // 0xafd
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flInCombatStartTime; // 0xb00        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flInCombatEndTime; // 0xb04        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flSprintStartTime; // 0xb08        
         bool m_bInCombat; // 0xb0c        
         [[maybe_unused]] std::uint8_t pad_0xb0d[0x3];

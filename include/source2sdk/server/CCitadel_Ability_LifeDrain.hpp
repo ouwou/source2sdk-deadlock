@@ -32,7 +32,7 @@ namespace source2sdk::server
         // CHandle<server::CBaseEntity> m_hTarget;
         char m_hTarget[0x4]; // 0xaf8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_tDrainLifeStopTime; // 0xafc        
     };
     #pragma pack(pop)

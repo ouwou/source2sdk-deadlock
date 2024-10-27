@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CAnimGraphControllerBase.hpp"
+#include "source2sdk/client/CBaseAnimGraphAnimGraphController.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Size: 0xc8
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadelBaseAbilityGraphController : public client::CAnimGraphControllerBase
+    class CCitadelBaseAbilityGraphController : public client::CBaseAnimGraphAnimGraphController
     {
     public:
         // Static fields:

@@ -25,7 +25,7 @@ namespace source2sdk::server
         bool m_bEquipped; // 0xaf8        
         [[maybe_unused]] std::uint8_t pad_0xaf9[0x7]; // 0xaf9
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_vecComponentsConsumed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CNetworkUtlVectorBase<CUtlStringToken> m_vecComponentsConsumed;
         char m_vecComponentsConsumed[0x18]; // 0xb00        

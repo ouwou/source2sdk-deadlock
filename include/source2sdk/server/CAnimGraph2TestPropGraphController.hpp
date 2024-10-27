@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CAnimGraphControllerBase.hpp"
+#include "source2sdk/client/CBaseAnimGraphAnimGraphController.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Size: 0xe0
     // Has VTable
     #pragma pack(push, 1)
-    class CAnimGraph2TestPropGraphController : public client::CAnimGraphControllerBase
+    class CAnimGraph2TestPropGraphController : public client::CBaseAnimGraphAnimGraphController
     {
     public:
         // m_TROOPER_MovementState has a template type with potentially unknown template parameters. You can try uncommenting the field below.

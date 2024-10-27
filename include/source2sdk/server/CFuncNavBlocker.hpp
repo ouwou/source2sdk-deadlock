@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x7b0
     // Has VTable
     #pragma pack(push, 1)
     class CFuncNavBlocker : public server::CBaseModelEntity
     {
     public:
-        bool m_bDisabled; // 0x7c8        
-        [[maybe_unused]] std::uint8_t pad_0x7c9[0x3]; // 0x7c9
-        int32_t m_nBlockedTeamNumber; // 0x7cc        
-        [[maybe_unused]] std::uint8_t pad_0x7d0[0x8];
+        bool m_bDisabled; // 0x7a0        
+        [[maybe_unused]] std::uint8_t pad_0x7a1[0x3]; // 0x7a1
+        int32_t m_nBlockedTeamNumber; // 0x7a4        
+        [[maybe_unused]] std::uint8_t pad_0x7a8[0x8];
         
         // Datamap fields:
         // void InputBlockNav; // 0x0
@@ -32,5 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncNavBlocker because it is not a standard-layout class
-    static_assert(sizeof(CFuncNavBlocker) == 0x7d8);
+    static_assert(sizeof(CFuncNavBlocker) == 0x7b0);
 };

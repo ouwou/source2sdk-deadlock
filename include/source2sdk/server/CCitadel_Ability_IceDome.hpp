@@ -26,10 +26,10 @@ namespace source2sdk::server
     public:
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x38]; // 0xaf8
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flDomeStartTime; // 0xb30        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flDomeEndTime; // 0xb34        
     };
     #pragma pack(pop)

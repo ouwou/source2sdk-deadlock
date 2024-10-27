@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xca8
+    // Size: 0xcb0
     // Has VTable
     #pragma pack(push, 1)
     class CItem_WitheringWhip : public client::CCitadel_Item_TrackingProjectileApplyModifier
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CItem_WitheringWhip) == 0xca8);
+    static_assert(sizeof(CItem_WitheringWhip) == 0xcb0);
 };

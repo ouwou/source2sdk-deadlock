@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb60
+    // Size: 0xae8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_bClientSideRagdoll"
@@ -58,14 +58,16 @@ namespace source2sdk::client
         bool m_bRagdollClientSide; // 0x960        
         [[maybe_unused]] std::uint8_t pad_0x961[0xf]; // 0x961
         bool m_bHasAnimatedMaterialAttributes; // 0x970        
-        [[maybe_unused]] std::uint8_t pad_0x971[0x147]; // 0x971
+        [[maybe_unused]] std::uint8_t pad_0x971[0x14f]; // 0x971
         // metadata: MNetworkEnable
+        // metadata: MNetworkSendProxyRecipientsFilter
         // m_animGraph2SerializeData has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_NetworkUtlVectorBase<uint8_t> m_animGraph2SerializeData;
-        char m_animGraph2SerializeData[0x18]; // 0xab8        
+        char m_animGraph2SerializeData[0x18]; // 0xac0        
         // metadata: MNetworkEnable
-        int32_t m_nAnimGraph2SerializeDataSizeBytes; // 0xad0        
-        [[maybe_unused]] std::uint8_t pad_0xad4[0x8c];
+        // metadata: MNetworkSendProxyRecipientsFilter
+        int32_t m_nAnimGraph2SerializeDataSizeBytes; // 0xad8        
+        [[maybe_unused]] std::uint8_t pad_0xadc[0xc];
         
         // Datamap fields:
         // void m_pMainGraphController; // 0x8b8
@@ -78,5 +80,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseAnimGraph because it is not a standard-layout class
-    static_assert(sizeof(CBaseAnimGraph) == 0xb60);
+    static_assert(sizeof(CBaseAnimGraph) == 0xae8);
 };

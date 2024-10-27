@@ -13,16 +13,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x1
     // Standard-layout class: true
-    // Size: 0x5338
+    // Size: 0x5b40
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelPlayerBot
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x00[0x5338];
+        [[maybe_unused]] std::uint8_t pad_0x00[0x5b40];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelPlayerBot) == 0x5338);
+    static_assert(sizeof(CCitadelPlayerBot) == 0x5b40);
 };

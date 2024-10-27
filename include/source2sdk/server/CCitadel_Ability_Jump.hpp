@@ -50,26 +50,26 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         server::CCitadelAutoScaledTime m_flGroundDashJumpEndTime; // 0xc50        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bJumped; // 0xc68        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bCanDashJump; // 0xc69        
         [[maybe_unused]] std::uint8_t pad_0xc6a[0x2]; // 0xc6a
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int32_t m_nDesiredAirJumpCount; // 0xc6c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int32_t m_nExecutedAirJumpCount; // 0xc70        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         bool m_bInSlideJump; // 0xc74        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int8_t m_nConsecutiveAirJumps; // 0xc75        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         int8_t m_nConsecutiveWallJumps; // 0xc76        
         [[maybe_unused]] std::uint8_t pad_0xc77[0x1]; // 0xc77
         Vector m_vLastWallCollidedWithNormal; // 0xc78        

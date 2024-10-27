@@ -33,10 +33,10 @@ namespace source2sdk::server
         // CHandle<server::CCitadelBaseAbility> m_hAbilityToTrigger;
         char m_hAbilityToTrigger[0x4]; // 0xaf8        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flDashCastStartTime; // 0xafc        
         // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vDashCastDir; // 0xb00        
         [[maybe_unused]] std::uint8_t pad_0xb0c[0x3c];
     };
