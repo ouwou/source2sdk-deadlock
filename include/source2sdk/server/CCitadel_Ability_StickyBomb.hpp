@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc58
+    // Size: 0xc20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_nPlayersHit"
@@ -25,10 +25,10 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0xaf8[0x8]; // 0xaf8
         // metadata: MNetworkEnable
         int32_t m_nPlayersHit; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb04[0x154];
+        [[maybe_unused]] std::uint8_t pad_0xb04[0x11c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_StickyBomb because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_StickyBomb) == 0xc58);
+    static_assert(sizeof(CCitadel_Ability_StickyBomb) == 0xc20);
 };

@@ -1,29 +1,28 @@
 #pragma once
-#include "source2sdk/server/CCitadelBaseAbility.hpp"
+#include "source2sdk/client/CScaleFunctionBase.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: server
+// Module: client
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::server
+namespace source2sdk::client
 {
-    // Registered alignment: 0x8
-    // Alignment: 0x8
+    // Registered alignment: unknown
+    // Alignment: 0x1
     // Standard-layout class: false
-    // Size: 0xb38
+    // Size: 0x40
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Ability_Slork_Chomp : public server::CCitadelBaseAbility
+    class CScaleFunctionAbilityProperty_TechRange : public client::CScaleFunctionBase
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf8[0x40];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Slork_Chomp) == 0xb38);
+    static_assert(sizeof(CScaleFunctionAbilityProperty_TechRange) == 0x40);
 };

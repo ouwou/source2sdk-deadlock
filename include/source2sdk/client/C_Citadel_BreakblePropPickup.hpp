@@ -14,12 +14,13 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb00
+    // Size: 0xb18
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bActive"
     // static metadata: MNetworkVarNames "CUtlString m_sPickupName"
     // static metadata: MNetworkVarNames "int m_nNameOffset"
+    // static metadata: MNetworkVarNames "CUtlString m_sAmbientNoise"
     #pragma pack(push, 1)
     class C_Citadel_BreakblePropPickup : public client::CBaseAnimGraph
     {
@@ -32,10 +33,13 @@ namespace source2sdk::client
         CUtlString m_sPickupName; // 0xaf0        
         // metadata: MNetworkEnable
         int32_t m_nNameOffset; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xafc[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xafc[0x4]; // 0xafc
+        // metadata: MNetworkEnable
+        CUtlString m_sAmbientNoise; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb08[0x10];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_BreakblePropPickup because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_BreakblePropPickup) == 0xb00);
+    static_assert(sizeof(C_Citadel_BreakblePropPickup) == 0xb18);
 };

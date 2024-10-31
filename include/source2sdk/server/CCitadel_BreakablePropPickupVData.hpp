@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x318
+    // Size: 0x330
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -62,11 +62,15 @@ namespace source2sdk::server
         CSoundEventName m_sSpawnSound; // 0x300        
         // metadata: MPropertyDescription "Pickup Radius"
         float m_flPickupRadius; // 0x310        
+        [[maybe_unused]] std::uint8_t pad_0x314[0x4]; // 0x314
+        // metadata: MPropertyDescription "Ambient Sound"
+        CSoundEventName m_sAmbientSound; // 0x318        
         // metadata: MPropertyDescription "Pickup Expiration Duration"
-        float m_flPickupExpirationDuration; // 0x314        
+        float m_flPickupExpirationDuration; // 0x328        
+        [[maybe_unused]] std::uint8_t pad_0x32c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropPickupVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropPickupVData) == 0x318);
+    static_assert(sizeof(CCitadel_BreakablePropPickupVData) == 0x330);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x320
+    // Size: 0x338
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,11 +22,11 @@ namespace source2sdk::server
     class CCitadel_BreakablePropGoldPickupVData : public server::CCitadel_BreakablePropPickupVData
     {
     public:
-        float m_flGoldAmount; // 0x318        
-        float m_flGoldPerMinuteAmount; // 0x31c        
+        float m_flGoldAmount; // 0x330        
+        float m_flGoldPerMinuteAmount; // 0x334        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropGoldPickupVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropGoldPickupVData) == 0x320);
+    static_assert(sizeof(CCitadel_BreakablePropGoldPickupVData) == 0x338);
 };

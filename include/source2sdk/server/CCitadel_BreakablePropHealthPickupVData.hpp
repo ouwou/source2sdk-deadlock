@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x320
+    // Size: 0x338
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,11 +24,11 @@ namespace source2sdk::server
     public:
         // metadata: MPropertyFriendlyName "Max health heal percent"
         // metadata: MPropertyDescription "Between 0 and 1 (0 and 100%), what percent of max health should a pickup heal"
-        float m_flHealMaxHealthPercent; // 0x318        
-        [[maybe_unused]] std::uint8_t pad_0x31c[0x4];
+        float m_flHealMaxHealthPercent; // 0x330        
+        [[maybe_unused]] std::uint8_t pad_0x334[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropHealthPickupVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropHealthPickupVData) == 0x320);
+    static_assert(sizeof(CCitadel_BreakablePropHealthPickupVData) == 0x338);
 };

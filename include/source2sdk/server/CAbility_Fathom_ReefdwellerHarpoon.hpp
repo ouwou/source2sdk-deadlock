@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb78
+    // Size: 0xc20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bIsVisibleOnMinimap"
@@ -48,10 +48,10 @@ namespace source2sdk::server
         entity2::GameTime_t m_flCloseEnoughStartTime; // 0xb38        
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flStuckStartTime; // 0xb3c        
-        [[maybe_unused]] std::uint8_t pad_0xb40[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xb40[0xe0];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Fathom_ReefdwellerHarpoon because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Fathom_ReefdwellerHarpoon) == 0xb78);
+    static_assert(sizeof(CAbility_Fathom_ReefdwellerHarpoon) == 0xc20);
 };

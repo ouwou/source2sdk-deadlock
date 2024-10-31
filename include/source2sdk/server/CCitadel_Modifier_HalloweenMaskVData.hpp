@@ -15,21 +15,23 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x6e8
+    // Size: 0x6f0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
-    class CCitadel_Modifier_Chomp_LowHealth_GlowVData : public server::CCitadelModifierVData
+    class CCitadel_Modifier_HalloweenMaskVData : public server::CCitadelModifierVData
     {
     public:
+        int32_t m_nNumMasks; // 0x608        
+        [[maybe_unused]] std::uint8_t pad_0x60c[0x4]; // 0x60c
         // metadata: MPropertyStartGroup "Visuals"
-        // m_strLocalStatusEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strLocalStatusEffect;
-        char m_strLocalStatusEffect[0xe0]; // 0x608        
+        // m_HalloweenMask has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HalloweenMask;
+        char m_HalloweenMask[0xe0]; // 0x610        
     };
     #pragma pack(pop)
     
-    // Cannot assert offsets of fields in CCitadel_Modifier_Chomp_LowHealth_GlowVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Chomp_LowHealth_GlowVData) == 0x6e8);
+    // Cannot assert offsets of fields in CCitadel_Modifier_HalloweenMaskVData because it is not a standard-layout class
+    static_assert(sizeof(CCitadel_Modifier_HalloweenMaskVData) == 0x6f0);
 };

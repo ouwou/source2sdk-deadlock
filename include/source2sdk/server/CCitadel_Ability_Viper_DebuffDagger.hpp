@@ -1,29 +1,29 @@
 #pragma once
-#include "source2sdk/client/CCitadelModifier.hpp"
+#include "source2sdk/server/CCitadelBaseAbility.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: client
+// Module: server
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::client
+namespace source2sdk::server
 {
-    // Registered alignment: unknown
+    // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x168
+    // Size: 0xbd8
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Modifier_Slork_Riptide : public client::CCitadelModifier
+    class CCitadel_Ability_Viper_DebuffDagger : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc0[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0xe0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_Slork_Riptide) == 0x168);
+    static_assert(sizeof(CCitadel_Ability_Viper_DebuffDagger) == 0xbd8);
 };

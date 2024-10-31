@@ -1,29 +1,28 @@
 #pragma once
-#include "source2sdk/client/C_CitadelBaseAbility.hpp"
+#include "source2sdk/client/CScaleFunctionBase.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: client
+// Module: server
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::client
+namespace source2sdk::server
 {
-    // Registered alignment: 0x8
-    // Alignment: 0x8
+    // Registered alignment: unknown
+    // Alignment: 0x1
     // Standard-layout class: false
-    // Size: 0xd78
+    // Size: 0x40
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Ability_Riptide : public client::C_CitadelBaseAbility
+    class CScaleFunctionAbilityProperty_TechDuration : public client::CScaleFunctionBase
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc98[0xe0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Riptide) == 0xd78);
+    static_assert(sizeof(CScaleFunctionAbilityProperty_TechDuration) == 0x40);
 };

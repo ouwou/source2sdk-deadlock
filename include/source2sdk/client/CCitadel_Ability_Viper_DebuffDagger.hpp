@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CCitadelModifierVData.hpp"
+#include "source2sdk/client/C_CitadelBaseAbility.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x608
+    // Size: 0xd78
     // Has VTable
-    // 
-    // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
-    class CModifierChompGrappleVData : public client::CCitadelModifierVData
+    class CCitadel_Ability_Viper_DebuffDagger : public client::C_CitadelBaseAbility
     {
     public:
+        [[maybe_unused]] std::uint8_t pad_0xc98[0xe0];
+        // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CModifierChompGrappleVData) == 0x608);
+    static_assert(sizeof(CCitadel_Ability_Viper_DebuffDagger) == 0xd78);
 };
