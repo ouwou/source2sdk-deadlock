@@ -23,6 +23,9 @@ namespace source2sdk::server
     // Size: 0x50
     // Has VTable
     // 
+    // static metadata: MNetworkVarNames "float m_flGainRate"
+    // static metadata: MNetworkVarNames "float m_flDrainRate"
+    // static metadata: MNetworkVarNames "float m_flMaxValue"
     // static metadata: MNetworkVarNames "float m_flLatchedValue"
     // static metadata: MNetworkVarNames "GameTime_t m_flLatchedTime"
     // static metadata: MNetworkVarNames "ELockonState m_eLockonState"
@@ -32,8 +35,11 @@ namespace source2sdk::server
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x30]; // 0x0
+        // metadata: MNetworkEnable
         float m_flGainRate; // 0x30        
+        // metadata: MNetworkEnable
         float m_flDrainRate; // 0x34        
+        // metadata: MNetworkEnable
         float m_flMaxValue; // 0x38        
         int32_t m_nPrevFullStacks; // 0x3c        
         // metadata: MNetworkEnable
