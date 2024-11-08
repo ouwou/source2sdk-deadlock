@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb58
+    // Size: 0xb60
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_TechUpgrade_SuperAcolyteGloves : public server::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb18[0x38]; // 0xb18
-        float fl_StoredDamage; // 0xb50        
-        [[maybe_unused]] std::uint8_t pad_0xb54[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xb20[0x38]; // 0xb20
+        float fl_StoredDamage; // 0xb58        
+        [[maybe_unused]] std::uint8_t pad_0xb5c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_TechUpgrade_SuperAcolyteGloves because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_TechUpgrade_SuperAcolyteGloves) == 0xb58);
+    static_assert(sizeof(CCitadel_TechUpgrade_SuperAcolyteGloves) == 0xb60);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xce8
+    // Size: 0xcf0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_QuickSilver : public client::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xcb0[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xcb8[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Item_QuickSilver) == 0xce8);
+    static_assert(sizeof(CCitadel_Item_QuickSilver) == 0xcf0);
 };

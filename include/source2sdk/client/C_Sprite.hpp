@@ -22,7 +22,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x950
+    // Size: 0x970
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "HMaterialStrong m_hSpriteMaterial"
@@ -44,66 +44,66 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // m_hSpriteMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hSpriteMaterial;
-        char m_hSpriteMaterial[0x8]; // 0x840        
+        char m_hSpriteMaterial[0x8]; // 0x860        
         // metadata: MNetworkEnable
         // m_hAttachedToEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hAttachedToEntity;
-        char m_hAttachedToEntity[0x4]; // 0x848        
+        char m_hAttachedToEntity[0x4]; // 0x868        
         // metadata: MNetworkEnable
-        modellib::AttachmentHandle_t m_nAttachment; // 0x84c        
-        [[maybe_unused]] std::uint8_t pad_0x84d[0x3]; // 0x84d
+        modellib::AttachmentHandle_t m_nAttachment; // 0x86c        
+        [[maybe_unused]] std::uint8_t pad_0x86d[0x3]; // 0x86d
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "60.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flSpriteFramerate; // 0x850        
+        float m_flSpriteFramerate; // 0x870        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "20"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "256.000000"
         // metadata: MNetworkEncodeFlags "1"
-        float m_flFrame; // 0x854        
-        entity2::GameTime_t m_flDieTime; // 0x858        
-        [[maybe_unused]] std::uint8_t pad_0x85c[0xc]; // 0x85c
+        float m_flFrame; // 0x874        
+        entity2::GameTime_t m_flDieTime; // 0x878        
+        [[maybe_unused]] std::uint8_t pad_0x87c[0xc]; // 0x87c
         // metadata: MNetworkEnable
-        uint32_t m_nBrightness; // 0x868        
+        uint32_t m_nBrightness; // 0x888        
         // metadata: MNetworkEnable
-        float m_flBrightnessDuration; // 0x86c        
+        float m_flBrightnessDuration; // 0x88c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnSpriteScaleChanged"
-        float m_flSpriteScale; // 0x870        
+        float m_flSpriteScale; // 0x890        
         // metadata: MNetworkEnable
-        float m_flScaleDuration; // 0x874        
+        float m_flScaleDuration; // 0x894        
         // metadata: MNetworkEnable
-        bool m_bWorldSpaceScale; // 0x878        
-        [[maybe_unused]] std::uint8_t pad_0x879[0x3]; // 0x879
+        bool m_bWorldSpaceScale; // 0x898        
+        [[maybe_unused]] std::uint8_t pad_0x899[0x3]; // 0x899
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "6"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "64.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flGlowProxySize; // 0x87c        
+        float m_flGlowProxySize; // 0x89c        
         // metadata: MNetworkEnable
-        float m_flHDRColorScale; // 0x880        
-        entity2::GameTime_t m_flLastTime; // 0x884        
-        float m_flMaxFrame; // 0x888        
-        float m_flStartScale; // 0x88c        
-        float m_flDestScale; // 0x890        
-        entity2::GameTime_t m_flScaleTimeStart; // 0x894        
-        int32_t m_nStartBrightness; // 0x898        
-        int32_t m_nDestBrightness; // 0x89c        
-        entity2::GameTime_t m_flBrightnessTimeStart; // 0x8a0        
-        [[maybe_unused]] std::uint8_t pad_0x8a4[0x4]; // 0x8a4
+        float m_flHDRColorScale; // 0x8a0        
+        entity2::GameTime_t m_flLastTime; // 0x8a4        
+        float m_flMaxFrame; // 0x8a8        
+        float m_flStartScale; // 0x8ac        
+        float m_flDestScale; // 0x8b0        
+        entity2::GameTime_t m_flScaleTimeStart; // 0x8b4        
+        int32_t m_nStartBrightness; // 0x8b8        
+        int32_t m_nDestBrightness; // 0x8bc        
+        entity2::GameTime_t m_flBrightnessTimeStart; // 0x8c0        
+        [[maybe_unused]] std::uint8_t pad_0x8c4[0x4]; // 0x8c4
         // m_hOldSpriteMaterial has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CWeakHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_hOldSpriteMaterial;
-        char m_hOldSpriteMaterial[0x8]; // 0x8a8        
-        [[maybe_unused]] std::uint8_t pad_0x8b0[0x98]; // 0x8b0
-        int32_t m_nSpriteWidth; // 0x948        
-        int32_t m_nSpriteHeight; // 0x94c        
+        char m_hOldSpriteMaterial[0x8]; // 0x8c8        
+        [[maybe_unused]] std::uint8_t pad_0x8d0[0x98]; // 0x8d0
+        int32_t m_nSpriteWidth; // 0x968        
+        int32_t m_nSpriteHeight; // 0x96c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Sprite because it is not a standard-layout class
-    static_assert(sizeof(C_Sprite) == 0x950);
+    static_assert(sizeof(C_Sprite) == 0x970);
 };

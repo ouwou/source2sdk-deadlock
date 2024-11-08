@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x528
+    // Size: 0x538
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -30,6 +30,8 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "float m_fIndirectLightStrength"
     // static metadata: MNetworkVarNames "float m_fSunLightStrength"
     // static metadata: MNetworkVarNames "float m_fNoiseStrength"
+    // static metadata: MNetworkVarNames "Color m_TintColor"
+    // static metadata: MNetworkVarNames "bool m_bOverrideTintColor"
     // static metadata: MNetworkVarNames "bool m_bOverrideIndirectLightStrength"
     // static metadata: MNetworkVarNames "bool m_bOverrideSunLightStrength"
     // static metadata: MNetworkVarNames "bool m_bOverrideNoiseStrength"
@@ -39,40 +41,44 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bActive; // 0x4e0        
-        [[maybe_unused]] std::uint8_t pad_0x4e1[0x3]; // 0x4e1
+        bool m_bActive; // 0x4e8        
+        [[maybe_unused]] std::uint8_t pad_0x4e9[0x3]; // 0x4e9
         // metadata: MNetworkEnable
-        Vector m_vBoxMins; // 0x4e4        
+        Vector m_vBoxMins; // 0x4ec        
         // metadata: MNetworkEnable
-        Vector m_vBoxMaxs; // 0x4f0        
+        Vector m_vBoxMaxs; // 0x4f8        
         // metadata: MNetworkEnable
-        bool m_bStartDisabled; // 0x4fc        
-        [[maybe_unused]] std::uint8_t pad_0x4fd[0x3]; // 0x4fd
+        bool m_bStartDisabled; // 0x504        
+        [[maybe_unused]] std::uint8_t pad_0x505[0x3]; // 0x505
         // metadata: MNetworkEnable
-        float m_flStrength; // 0x500        
+        float m_flStrength; // 0x508        
         // metadata: MNetworkEnable
-        int32_t m_nFalloffShape; // 0x504        
+        int32_t m_nFalloffShape; // 0x50c        
         // metadata: MNetworkEnable
-        float m_flFalloffExponent; // 0x508        
+        float m_flFalloffExponent; // 0x510        
         // metadata: MNetworkEnable
-        float m_flHeightFogDepth; // 0x50c        
+        float m_flHeightFogDepth; // 0x514        
         // metadata: MNetworkEnable
-        float m_fHeightFogEdgeWidth; // 0x510        
+        float m_fHeightFogEdgeWidth; // 0x518        
         // metadata: MNetworkEnable
-        float m_fIndirectLightStrength; // 0x514        
+        float m_fIndirectLightStrength; // 0x51c        
         // metadata: MNetworkEnable
-        float m_fSunLightStrength; // 0x518        
+        float m_fSunLightStrength; // 0x520        
         // metadata: MNetworkEnable
-        float m_fNoiseStrength; // 0x51c        
+        float m_fNoiseStrength; // 0x524        
         // metadata: MNetworkEnable
-        bool m_bOverrideIndirectLightStrength; // 0x520        
+        Color m_TintColor; // 0x528        
         // metadata: MNetworkEnable
-        bool m_bOverrideSunLightStrength; // 0x521        
+        bool m_bOverrideTintColor; // 0x52c        
         // metadata: MNetworkEnable
-        bool m_bOverrideNoiseStrength; // 0x522        
+        bool m_bOverrideIndirectLightStrength; // 0x52d        
         // metadata: MNetworkEnable
-        bool m_bAllowLPVIndirect; // 0x523        
-        [[maybe_unused]] std::uint8_t pad_0x524[0x4];
+        bool m_bOverrideSunLightStrength; // 0x52e        
+        // metadata: MNetworkEnable
+        bool m_bOverrideNoiseStrength; // 0x52f        
+        // metadata: MNetworkEnable
+        bool m_bAllowLPVIndirect; // 0x530        
+        [[maybe_unused]] std::uint8_t pad_0x531[0x7];
         
         // Datamap fields:
         // bool InputEnable; // 0x0
@@ -81,5 +87,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvVolumetricFogVolume because it is not a standard-layout class
-    static_assert(sizeof(CEnvVolumetricFogVolume) == 0x528);
+    static_assert(sizeof(CEnvVolumetricFogVolume) == 0x538);
 };

@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd70
+    // Size: 0xd88
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bShadowFormCast"
@@ -45,74 +45,75 @@ namespace source2sdk::server
     class CCitadel_Ability_FlyingStrike : public server::CCitadelBaseYamatoAbility
     {
     public:
-        int32_t m_iTargetPosIndex; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb08[0x10]; // 0xb08
+        int32_t m_iTargetPosIndex; // 0xb18        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        bool m_bShadowFormCast; // 0xb04        
-        [[maybe_unused]] std::uint8_t pad_0xb05[0x3]; // 0xb05
-        // metadata: MNetworkEnable
-        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        // metadata: MNetworkEncoder "coord"
-        Vector m_vYamatoCastPos; // 0xb08        
+        bool m_bShadowFormCast; // 0xb1c        
+        [[maybe_unused]] std::uint8_t pad_0xb1d[0x3]; // 0xb1d
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // metadata: MNetworkEncoder "coord"
-        Vector m_vTargetCastPos; // 0xb14        
+        Vector m_vYamatoCastPos; // 0xb20        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flFlyingToTargetStartTime; // 0xb20        
+        // metadata: MNetworkEncoder "coord"
+        Vector m_vTargetCastPos; // 0xb2c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flEndAttackTime; // 0xb24        
-        // metadata: MNetworkEnable
-        entity2::GameTime_t m_flGrappleStartTime; // 0xb28        
-        // metadata: MNetworkEnable
-        entity2::GameTime_t m_flGrappleArriveTime; // 0xb2c        
+        entity2::GameTime_t m_flFlyingToTargetStartTime; // 0xb38        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flAttackLatchTime; // 0xb30        
+        entity2::GameTime_t m_flEndAttackTime; // 0xb3c        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flGrappleStartTime; // 0xb40        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flGrappleArriveTime; // 0xb44        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vAttackLatchPos; // 0xb34        
+        entity2::GameTime_t m_flAttackLatchTime; // 0xb48        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        Vector m_vAttackLatchPos; // 0xb4c        
         // metadata: MNetworkEnable
         // m_hTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTarget;
-        char m_hTarget[0x4]; // 0xb40        
+        char m_hTarget[0x4]; // 0xb58        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flGrappleShotAttackTime; // 0xb44        
+        entity2::GameTime_t m_flGrappleShotAttackTime; // 0xb5c        
         // m_hAttackTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hAttackTarget;
-        char m_hAttackTarget[0x4]; // 0xb48        
+        char m_hAttackTarget[0x4]; // 0xb60        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // metadata: MNetworkEncoder "coord"
         // metadata: MNetworkChangeCallback "OnPathChanged"
-        Vector m_rgPath[20]; // 0xb4c        
+        Vector m_rgPath[20]; // 0xb64        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        int32_t m_nPathIdx; // 0xc3c        
+        int32_t m_nPathIdx; // 0xc54        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        int32_t m_nPathSize; // 0xc40        
+        int32_t m_nPathSize; // 0xc58        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        float m_flPathLength; // 0xc44        
+        float m_flPathLength; // 0xc5c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vFlyingInitialOffsetToPath; // 0xc48        
+        Vector m_vFlyingInitialOffsetToPath; // 0xc60        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        float flDistFlown; // 0xc54        
-        Vector m_vLastSafePos; // 0xc58        
-        [[maybe_unused]] std::uint8_t pad_0xc64[0xac]; // 0xc64
-        client::ParticleIndex_t m_nGrappleTravelEffect; // 0xd10        
-        [[maybe_unused]] std::uint8_t pad_0xd14[0x54]; // 0xd14
-        bool m_bPathDirty; // 0xd68        
-        [[maybe_unused]] std::uint8_t pad_0xd69[0x7];
+        float flDistFlown; // 0xc6c        
+        Vector m_vLastSafePos; // 0xc70        
+        [[maybe_unused]] std::uint8_t pad_0xc7c[0xac]; // 0xc7c
+        client::ParticleIndex_t m_nGrappleTravelEffect; // 0xd28        
+        [[maybe_unused]] std::uint8_t pad_0xd2c[0x54]; // 0xd2c
+        bool m_bPathDirty; // 0xd80        
+        [[maybe_unused]] std::uint8_t pad_0xd81[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FlyingStrike because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_FlyingStrike) == 0xd70);
+    static_assert(sizeof(CCitadel_Ability_FlyingStrike) == 0xd88);
 };

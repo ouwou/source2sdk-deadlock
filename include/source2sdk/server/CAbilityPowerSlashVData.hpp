@@ -24,33 +24,32 @@ namespace source2sdk::server
     class CAbilityPowerSlashVData : public server::CCitadelYamatoBaseVData
     {
     public:
-        float m_flAirDrag; // 0x1558        
-        float m_flMaxPowerPadding; // 0x155c        
-        float m_flEffectGroundTrace; // 0x1560        
-        float m_flWhizbyMaxRange; // 0x1564        
-        float m_flStartPosTestCapsuleLength; // 0x1568        
+        float m_flAirDrag; // 0x1568        
+        float m_flMaxPowerPadding; // 0x156c        
+        float m_flEffectGroundTrace; // 0x1570        
+        float m_flWhizbyMaxRange; // 0x1574        
+        float m_flStartPosTestCapsuleLength; // 0x1578        
         // metadata: MPropertyDescription "Visual offset for the origin of the long-slash particle effect"
-        Vector m_vecLongEffectOffset; // 0x156c        
+        Vector m_vecLongEffectOffset; // 0x157c        
         // metadata: MPropertyStartGroup "Visuals"
         // m_PowerSlashParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PowerSlashParticle;
-        char m_PowerSlashParticle[0xe0]; // 0x1578        
+        char m_PowerSlashParticle[0xe0]; // 0x1588        
         // m_PowerSlashFullParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PowerSlashFullParticle;
-        char m_PowerSlashFullParticle[0xe0]; // 0x1658        
+        char m_PowerSlashFullParticle[0xe0]; // 0x1668        
         // m_ImpactParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ImpactParticle;
-        char m_ImpactParticle[0xe0]; // 0x1738        
+        char m_ImpactParticle[0xe0]; // 0x1748        
         // m_CastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastParticle;
-        char m_CastParticle[0xe0]; // 0x1818        
+        char m_CastParticle[0xe0]; // 0x1828        
         // m_PowerUpParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PowerUpParticle;
-        char m_PowerUpParticle[0xe0]; // 0x18f8        
+        char m_PowerUpParticle[0xe0]; // 0x1908        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strStartSound; // 0x19d8        
-        CSoundEventName m_strDamageImpactSound; // 0x19e8        
-        CSoundEventName m_strDamageImpactVictimSound; // 0x19f8        
+        CSoundEventName m_strStartSound; // 0x19e8        
+        CSoundEventName m_strHitConfirmSound; // 0x19f8        
         CSoundEventName m_strPowerUp1Sounds; // 0x1a08        
         CSoundEventName m_strPowerUp2Sounds; // 0x1a18        
         CSoundEventName m_strPowerUp3Sounds; // 0x1a28        

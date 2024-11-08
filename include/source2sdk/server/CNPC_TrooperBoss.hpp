@@ -18,7 +18,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1ad0
+    // Size: 0x1b20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelPlayerClipComponent::Storage_t m_CCitadelPlayerClipComponent"
@@ -28,19 +28,19 @@ namespace source2sdk::server
     class CNPC_TrooperBoss : public server::CNPC_Trooper
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x18b8[0x8]; // 0x18b8
+        [[maybe_unused]] std::uint8_t pad_0x1908[0x8]; // 0x1908
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelPlayerClipComponent"
         // metadata: MNetworkAlias "CCitadelPlayerClipComponent"
         // metadata: MNetworkTypeAlias "CCitadelPlayerClipComponent"
-        server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x18c0        
-        [[maybe_unused]] std::uint8_t pad_0x18e0[0x8]; // 0x18e0
-        server::LaneSide_t m_LaneSide; // 0x18e8        
-        [[maybe_unused]] std::uint8_t pad_0x18e9[0x1df]; // 0x18e9
+        server::CCitadelPlayerClipComponent m_CCitadelPlayerClipComponent; // 0x1910        
+        [[maybe_unused]] std::uint8_t pad_0x1930[0x8]; // 0x1930
+        server::LaneSide_t m_LaneSide; // 0x1938        
+        [[maybe_unused]] std::uint8_t pad_0x1939[0x1df]; // 0x1939
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutStart; // 0x1ac8        
+        entity2::GameTime_t m_flFadeOutStart; // 0x1b18        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flFadeOutEnd; // 0x1acc        
+        entity2::GameTime_t m_flFadeOutEnd; // 0x1b1c        
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_TROOPERBOSS_RANGE_ATTACK() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperBoss")->GetStaticFields()[0]->m_pInstance);};
@@ -57,5 +57,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperBoss because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperBoss) == 0x1ad0);
+    static_assert(sizeof(CNPC_TrooperBoss) == 0x1b20);
 };

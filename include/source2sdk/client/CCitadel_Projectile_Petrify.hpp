@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8c8
+    // Size: 0x8e8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_Petrify : public client::C_CitadelProjectile
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Projectile_Petrify) == 0x8c8);
+    static_assert(sizeof(CCitadel_Projectile_Petrify) == 0x8e8);
 };

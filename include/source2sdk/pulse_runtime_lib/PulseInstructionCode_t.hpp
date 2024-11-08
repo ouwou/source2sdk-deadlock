@@ -8,7 +8,7 @@
 
 namespace source2sdk::pulse_runtime_lib
 {
-    // Enumerator count: 86
+    // Enumerator count: 89
     // Alignment: 2
     // Size: 0x2
     enum class PulseInstructionCode_t : std::uint16_t
@@ -84,20 +84,23 @@ namespace source2sdk::pulse_runtime_lib
         EQ_PANEL_HANDLE = 0x44,
         EQ_OPAQUE_HANDLE = 0x45,
         EQ_TEST_HANDLE = 0x46,
-        NE_BOOL = 0x47,
-        NE_INT = 0x48,
-        NE_FLOAT = 0x49,
-        NE_VEC3 = 0x4a,
-        NE_STRING = 0x4b,
-        NE_ENTITY_NAME = 0x4c,
-        NE_SCHEMA_ENUM = 0x4d,
-        NE_EHANDLE = 0x4e,
-        NE_PANEL_HANDLE = 0x4f,
-        NE_OPAQUE_HANDLE = 0x50,
-        NE_TEST_HANDLE = 0x51,
-        SCALE_VEC3 = 0x52,
-        SCALE_INV_VEC3 = 0x53,
-        ELEMENT_ACCESS_VEC3 = 0x54,
-        GET_CONST_INLINE_STORAGE = 0x55,
+        EQ_COLOR_RGB = 0x47,
+        NE_BOOL = 0x48,
+        NE_INT = 0x49,
+        NE_FLOAT = 0x4a,
+        NE_VEC3 = 0x4b,
+        NE_STRING = 0x4c,
+        NE_ENTITY_NAME = 0x4d,
+        NE_SCHEMA_ENUM = 0x4e,
+        NE_EHANDLE = 0x4f,
+        NE_PANEL_HANDLE = 0x50,
+        NE_OPAQUE_HANDLE = 0x51,
+        NE_TEST_HANDLE = 0x52,
+        NE_COLOR_RGB = 0x53,
+        SCALE_VEC3 = 0x54,
+        SCALE_INV_VEC3 = 0x55,
+        ELEMENT_ACCESS_VEC3 = 0x56,
+        ELEMENT_ACCESS_COLOR_RGB = 0x57,
+        GET_CONST_INLINE_STORAGE = 0x58,
     };
 };

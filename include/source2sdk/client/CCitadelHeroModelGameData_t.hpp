@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x108
+    // Size: 0x110
     // 
     // static metadata: MModelGameData
     // static metadata: MGetKV3ClassDefaults
@@ -36,6 +36,8 @@ namespace source2sdk::client
         // m_vecAmbientParticleSettings has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::AmbientParticleSettings_t> m_vecAmbientParticleSettings;
         char m_vecAmbientParticleSettings[0x18]; // 0xf0        
+        float m_flTurnThreshold; // 0x108        
+        float m_flTurnDuration; // 0x10c        
     };
     #pragma pack(pop)
     
@@ -43,6 +45,8 @@ namespace source2sdk::client
     static_assert(offsetof(CCitadelHeroModelGameData_t, m_UIShopAnimGraph) == 0x8);
     static_assert(offsetof(CCitadelHeroModelGameData_t, m_hAmbientParticle) == 0x10);
     static_assert(offsetof(CCitadelHeroModelGameData_t, m_vecAmbientParticleSettings) == 0xf0);
+    static_assert(offsetof(CCitadelHeroModelGameData_t, m_flTurnThreshold) == 0x108);
+    static_assert(offsetof(CCitadelHeroModelGameData_t, m_flTurnDuration) == 0x10c);
     
-    static_assert(sizeof(CCitadelHeroModelGameData_t) == 0x108);
+    static_assert(sizeof(CCitadelHeroModelGameData_t) == 0x110);
 };

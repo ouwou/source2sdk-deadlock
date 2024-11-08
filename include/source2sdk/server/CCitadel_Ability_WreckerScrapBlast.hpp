@@ -15,17 +15,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xba8
+    // Size: 0xbb0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_WreckerScrapBlast : public server::CCitadelBaseAbility
     {
     public:
-        client::ParticleIndex_t m_BlastParticle; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xafc[0xac];
+        client::ParticleIndex_t m_BlastParticle; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb04[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_WreckerScrapBlast because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_WreckerScrapBlast) == 0xba8);
+    static_assert(sizeof(CCitadel_Ability_WreckerScrapBlast) == 0xbb0);
 };

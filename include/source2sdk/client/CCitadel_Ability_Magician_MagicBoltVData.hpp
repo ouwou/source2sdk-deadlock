@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1730
+    // Size: 0x1740
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,21 +25,21 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyStartGroup "Modifiers"
-        // m_SlowDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_SlowDebuffModifier;
-        char m_SlowDebuffModifier[0x10]; // 0x1550        
+        // m_TargetDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<client::CCitadelModifier> m_TargetDebuffModifier;
+        char m_TargetDebuffModifier[0x10]; // 0x1560        
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x1560        
+        char m_ExplodeParticle[0xe0]; // 0x1570        
         // m_RetargetParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RetargetParticle;
-        char m_RetargetParticle[0xe0]; // 0x1640        
+        char m_RetargetParticle[0xe0]; // 0x1650        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strRedirect; // 0x1720        
+        CSoundEventName m_strRedirect; // 0x1730        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Magician_MagicBoltVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Magician_MagicBoltVData) == 0x1730);
+    static_assert(sizeof(CCitadel_Ability_Magician_MagicBoltVData) == 0x1740);
 };

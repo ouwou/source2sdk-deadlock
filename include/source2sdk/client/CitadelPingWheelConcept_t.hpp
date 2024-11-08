@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 39
+    // Enumerator count: 40
     // Alignment: 4
     // Size: 0x4
     enum class CitadelPingWheelConcept_t : std::uint32_t
@@ -44,14 +44,15 @@ namespace source2sdk::client
         CITADEL_PING_HELP_WITH_IDOL = 0x1b,
         CITADEL_PING_YOURE_WELCOME = 0x1c,
         CITADEL_PING_SORRY = 0x1d,
-        CITADEL_PING_YES = 0x1e,
-        CITADEL_PING_NO = 0x1f,
-        CITADEL_PING_ON_MY_WAY = 0x20,
-        CITADEL_PING_THANKS_ALLCHAT = 0x21,
-        CITADEL_PING_GOODJOB_ALLCHAT = 0x22,
-        CITADEL_PING_GOOD_GAME_ALLCHAT = 0x23,
-        CITADEL_PING_WELL_PLAYED_ALLCHAT = 0x24,
+        CITADEL_PING_PURCHASED_MOD = 0x1e,
+        CITADEL_PING_YES = 0x1f,
+        CITADEL_PING_NO = 0x20,
+        CITADEL_PING_ON_MY_WAY = 0x21,
+        CITADEL_PING_THANKS_ALLCHAT = 0x22,
+        CITADEL_PING_GOODJOB_ALLCHAT = 0x23,
+        CITADEL_PING_GOOD_GAME_ALLCHAT = 0x24,
+        CITADEL_PING_WELL_PLAYED_ALLCHAT = 0x25,
         // MPropertySuppressEnumerator
-        CITADEL_PING_CONCEPT_COUNT = 0x25,
+        CITADEL_PING_CONCEPT_COUNT = 0x26,
     };
 };

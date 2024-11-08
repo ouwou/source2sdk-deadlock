@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x980
+    // Size: 0x9a0
     // Has VTable
     #pragma pack(push, 1)
     class CTonemapTrigger : public server::CBaseTrigger
     {
     public:
-        CUtlSymbolLarge m_tonemapControllerName; // 0x970        
-        CEntityHandle m_hTonemapController; // 0x978        
-        [[maybe_unused]] std::uint8_t pad_0x97c[0x4];
+        CUtlSymbolLarge m_tonemapControllerName; // 0x990        
+        CEntityHandle m_hTonemapController; // 0x998        
+        [[maybe_unused]] std::uint8_t pad_0x99c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTonemapTrigger because it is not a standard-layout class
-    static_assert(sizeof(CTonemapTrigger) == 0x980);
+    static_assert(sizeof(CTonemapTrigger) == 0x9a0);
 };

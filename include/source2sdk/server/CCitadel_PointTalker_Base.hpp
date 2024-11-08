@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb40
+    // Size: 0xb60
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_PointTalker_Base : public server::CBaseCombatCharacter
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_PointTalker_Base) == 0xb40);
+    static_assert(sizeof(CCitadel_PointTalker_Base) == 0xb60);
 };

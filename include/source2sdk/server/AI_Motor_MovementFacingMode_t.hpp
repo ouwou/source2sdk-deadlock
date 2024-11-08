@@ -8,12 +8,14 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 2
+    // Enumerator count: 3
     // Alignment: 1
     // Size: 0x1
     enum class AI_Motor_MovementFacingMode_t : std::uint8_t
     {
-        eTarget = 0,
-        eMovementDirection = 1,
+        // MPropertySuppressEnumerator
+        eInvalid = 0,
+        eTarget = 1,
+        ePath = 2,
     };
 };

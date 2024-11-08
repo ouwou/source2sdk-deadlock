@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc78
+    // Size: 0xc98
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByName "m_flAnimTime"
@@ -30,11 +30,11 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bAwake; // 0xc70        
-        [[maybe_unused]] std::uint8_t pad_0xc71[0x7];
+        bool m_bAwake; // 0xc90        
+        [[maybe_unused]] std::uint8_t pad_0xc91[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PhysicsProp because it is not a standard-layout class
-    static_assert(sizeof(C_PhysicsProp) == 0xc78);
+    static_assert(sizeof(C_PhysicsProp) == 0xc98);
 };

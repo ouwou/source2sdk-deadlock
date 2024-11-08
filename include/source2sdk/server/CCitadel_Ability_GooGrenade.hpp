@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd48
+    // Size: 0xd50
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CUtlVector<EHANDLE> m_vecPuddleModifiers"
@@ -31,13 +31,13 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // m_vecPuddleModifiers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecPuddleModifiers;
-        char m_vecPuddleModifiers[0x18]; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xb10[0x230]; // 0xb10
-        entity2::GameTime_t m_LastDetonateTime; // 0xd40        
-        [[maybe_unused]] std::uint8_t pad_0xd44[0x4];
+        char m_vecPuddleModifiers[0x18]; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb18[0x230]; // 0xb18
+        entity2::GameTime_t m_LastDetonateTime; // 0xd48        
+        [[maybe_unused]] std::uint8_t pad_0xd4c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_GooGrenade because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_GooGrenade) == 0xd48);
+    static_assert(sizeof(CCitadel_Ability_GooGrenade) == 0xd50);
 };

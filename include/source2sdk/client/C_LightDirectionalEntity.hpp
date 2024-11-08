@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x848
+    // Size: 0x868
     // Has VTable
     #pragma pack(push, 1)
     class C_LightDirectionalEntity : public client::C_LightEntity
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_LightDirectionalEntity) == 0x848);
+    static_assert(sizeof(C_LightDirectionalEntity) == 0x868);
 };

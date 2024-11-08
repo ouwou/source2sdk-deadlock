@@ -15,13 +15,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1818
+    // Size: 0x1850
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_PestilenceDrone : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x17b8[0x60];
+        [[maybe_unused]] std::uint8_t pad_0x17f0[0x60];
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_PESTILENCE_DRONE_NAVIGATE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_PestilenceDrone")->GetStaticFields()[0]->m_pInstance);};
         static CUtlSymbolLarge &Get_SCHED_PESTILENCE_DRONE_CHARGE() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_PestilenceDrone")->GetStaticFields()[1]->m_pInstance);};
@@ -37,5 +37,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNPC_PestilenceDrone) == 0x1818);
+    static_assert(sizeof(CNPC_PestilenceDrone) == 0x1850);
 };

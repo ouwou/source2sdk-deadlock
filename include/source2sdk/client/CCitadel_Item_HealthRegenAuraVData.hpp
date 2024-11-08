@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1768
+    // Size: 0x1778
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,17 +27,17 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_HealParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HealParticle;
-        char m_HealParticle[0xe0]; // 0x1598        
+        char m_HealParticle[0xe0]; // 0x15a8        
         // m_CastHealParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastHealParticle;
-        char m_CastHealParticle[0xe0]; // 0x1678        
+        char m_CastHealParticle[0xe0]; // 0x1688        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_HealingPulseTrackerModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_HealingPulseTrackerModifier;
-        char m_HealingPulseTrackerModifier[0x10]; // 0x1758        
+        char m_HealingPulseTrackerModifier[0x10]; // 0x1768        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_HealthRegenAuraVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_HealthRegenAuraVData) == 0x1768);
+    static_assert(sizeof(CCitadel_Item_HealthRegenAuraVData) == 0x1778);
 };

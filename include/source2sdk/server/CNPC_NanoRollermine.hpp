@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1840
+    // Size: 0x1878
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flForwardSpeed"
@@ -29,15 +29,15 @@ namespace source2sdk::server
     class CNPC_NanoRollermine : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x17b8[0x38]; // 0x17b8
+        [[maybe_unused]] std::uint8_t pad_0x17f0[0x38]; // 0x17f0
         // metadata: MNetworkEnable
-        float m_flForwardSpeed; // 0x17f0        
-        [[maybe_unused]] std::uint8_t pad_0x17f4[0x44]; // 0x17f4
+        float m_flForwardSpeed; // 0x1828        
+        [[maybe_unused]] std::uint8_t pad_0x182c[0x44]; // 0x182c
         // metadata: MNetworkEnable
         // m_hOwnerPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hOwnerPawn;
-        char m_hOwnerPawn[0x4]; // 0x1838        
-        [[maybe_unused]] std::uint8_t pad_0x183c[0x4];
+        char m_hOwnerPawn[0x4]; // 0x1870        
+        [[maybe_unused]] std::uint8_t pad_0x1874[0x4];
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_NANO_ROLLERMINE_ROLL_FORWARD() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_NanoRollermine")->GetStaticFields()[0]->m_pInstance);};
@@ -52,5 +52,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_NanoRollermine because it is not a standard-layout class
-    static_assert(sizeof(CNPC_NanoRollermine) == 0x1840);
+    static_assert(sizeof(CNPC_NanoRollermine) == 0x1878);
 };

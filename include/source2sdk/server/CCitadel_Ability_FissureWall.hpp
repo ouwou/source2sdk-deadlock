@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc00
+    // Size: 0xc08
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vecStartPos"
@@ -31,29 +31,29 @@ namespace source2sdk::server
     class CCitadel_Ability_FissureWall : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf8[0xb8]; // 0xaf8
+        [[maybe_unused]] std::uint8_t pad_0xb00[0xb8]; // 0xb00
         // metadata: MNetworkEnable
-        Vector m_vecStartPos; // 0xbb0        
+        Vector m_vecStartPos; // 0xbb8        
         // metadata: MNetworkEnable
-        Vector m_vecPosition; // 0xbbc        
+        Vector m_vecPosition; // 0xbc4        
         // metadata: MNetworkEnable
-        Vector m_vecInitialPosition; // 0xbc8        
+        Vector m_vecInitialPosition; // 0xbd0        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_CastTime; // 0xbd4        
+        entity2::GameTime_t m_CastTime; // 0xbdc        
         // metadata: MNetworkEnable
-        Vector m_vecDirection; // 0xbd8        
+        Vector m_vecDirection; // 0xbe0        
         // metadata: MNetworkEnable
-        Vector m_vecLeft; // 0xbe4        
+        Vector m_vecLeft; // 0xbec        
         // metadata: MNetworkEnable
-        float m_Length; // 0xbf0        
-        [[maybe_unused]] std::uint8_t pad_0xbf4[0xa]; // 0xbf4
+        float m_Length; // 0xbf8        
+        [[maybe_unused]] std::uint8_t pad_0xbfc[0xa]; // 0xbfc
         // metadata: MNetworkEnable
-        bool m_bTraveling; // 0xbfe        
+        bool m_bTraveling; // 0xc06        
         // metadata: MNetworkEnable
-        bool m_bPreview; // 0xbff        
+        bool m_bPreview; // 0xc07        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FissureWall because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_FissureWall) == 0xc00);
+    static_assert(sizeof(CCitadel_Ability_FissureWall) == 0xc08);
 };

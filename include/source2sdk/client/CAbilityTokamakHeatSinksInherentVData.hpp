@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1740
+    // Size: 0x1750
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,17 +26,17 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_HotTracerParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HotTracerParticle;
-        char m_HotTracerParticle[0xe0]; // 0x1550        
+        char m_HotTracerParticle[0xe0]; // 0x1560        
         // m_HotWeaponFxParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HotWeaponFxParticle;
-        char m_HotWeaponFxParticle[0xe0]; // 0x1630        
+        char m_HotWeaponFxParticle[0xe0]; // 0x1640        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strHotWeaponShootSound; // 0x1710        
-        CSoundEventName m_strOverheatRed; // 0x1720        
-        CSoundEventName m_strOverheatFull; // 0x1730        
+        CSoundEventName m_strHotWeaponShootSound; // 0x1720        
+        CSoundEventName m_strOverheatRed; // 0x1730        
+        CSoundEventName m_strOverheatFull; // 0x1740        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityTokamakHeatSinksInherentVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityTokamakHeatSinksInherentVData) == 0x1740);
+    static_assert(sizeof(CAbilityTokamakHeatSinksInherentVData) == 0x1750);
 };

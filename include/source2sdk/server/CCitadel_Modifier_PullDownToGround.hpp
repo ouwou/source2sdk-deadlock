@@ -1,29 +1,28 @@
 #pragma once
+#include "source2sdk/server/CCitadelModifier.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: resourcesystem
+// Module: server
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::resourcesystem
+namespace source2sdk::server
 {
     // Registered alignment: unknown
-    // Alignment: 0x1
-    // Standard-layout class: true
-    // Size: 0x1
-    // Has Trivial Constructor
-    // Has Trivial Destructor
-    // 
-    // static metadata: MResourceTypeForInfoType "vtest"
+    // Alignment: 0x8
+    // Standard-layout class: false
+    // Size: 0xc0
+    // Has VTable
     #pragma pack(push, 1)
-    struct InfoForResourceTypeTestResource_t
+    class CCitadel_Modifier_PullDownToGround : public server::CCitadelModifier
     {
     public:
+        // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(InfoForResourceTypeTestResource_t) == 0x1);
+    static_assert(sizeof(CCitadel_Modifier_PullDownToGround) == 0xc0);
 };

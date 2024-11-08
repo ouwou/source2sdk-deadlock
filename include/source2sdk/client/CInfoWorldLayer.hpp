@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5a8
+    // Size: 0x5b0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "string_t m_worldName"
@@ -26,20 +26,20 @@ namespace source2sdk::client
     class CInfoWorldLayer : public client::C_BaseEntity
     {
     public:
-        entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x560        
+        entity2::CEntityIOOutput m_pOutputOnEntitiesSpawned; // 0x568        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_worldName; // 0x588        
+        CUtlSymbolLarge m_worldName; // 0x590        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_layerName; // 0x590        
+        CUtlSymbolLarge m_layerName; // 0x598        
         // metadata: MNetworkEnable
-        bool m_bWorldLayerVisible; // 0x598        
+        bool m_bWorldLayerVisible; // 0x5a0        
         // metadata: MNetworkEnable
-        bool m_bEntitiesSpawned; // 0x599        
-        bool m_bCreateAsChildSpawnGroup; // 0x59a        
-        [[maybe_unused]] std::uint8_t pad_0x59b[0x1]; // 0x59b
-        uint32_t m_hLayerSpawnGroup; // 0x59c        
-        bool m_bWorldLayerActuallyVisible; // 0x5a0        
-        [[maybe_unused]] std::uint8_t pad_0x5a1[0x7];
+        bool m_bEntitiesSpawned; // 0x5a1        
+        bool m_bCreateAsChildSpawnGroup; // 0x5a2        
+        [[maybe_unused]] std::uint8_t pad_0x5a3[0x1]; // 0x5a3
+        uint32_t m_hLayerSpawnGroup; // 0x5a4        
+        bool m_bWorldLayerActuallyVisible; // 0x5a8        
+        [[maybe_unused]] std::uint8_t pad_0x5a9[0x7];
         
         // Datamap fields:
         // void ShowWorldLayer; // 0x0
@@ -52,5 +52,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoWorldLayer because it is not a standard-layout class
-    static_assert(sizeof(CInfoWorldLayer) == 0x5a8);
+    static_assert(sizeof(CInfoWorldLayer) == 0x5b0);
 };

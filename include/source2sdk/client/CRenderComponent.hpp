@@ -23,7 +23,6 @@ namespace source2sdk::client
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x08[0x8]; // 0x8
-        // metadata: MNetworkDisable
         // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x10        
         [[maybe_unused]] std::uint8_t pad_0x38[0x18]; // 0x38

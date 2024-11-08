@@ -15,16 +15,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f0
+    // Size: 0x4f8
     // Has VTable
     #pragma pack(push, 1)
     class CLogicNavigation : public server::CLogicalEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4e0[0x8]; // 0x4e0
-        bool m_isOn; // 0x4e8        
-        [[maybe_unused]] std::uint8_t pad_0x4e9[0x3]; // 0x4e9
-        server::navproperties_t m_navProperty; // 0x4ec        
+        [[maybe_unused]] std::uint8_t pad_0x4e8[0x8]; // 0x4e8
+        bool m_isOn; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4f1[0x3]; // 0x4f1
+        server::navproperties_t m_navProperty; // 0x4f4        
         
         // Datamap fields:
         // void InputTurnOn; // 0x0
@@ -35,5 +35,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicNavigation because it is not a standard-layout class
-    static_assert(sizeof(CLogicNavigation) == 0x4f0);
+    static_assert(sizeof(CLogicNavigation) == 0x4f8);
 };

@@ -34,98 +34,99 @@ namespace source2sdk::client
         // metadata: MPropertyDescription "If true, take full damage when hit by any of the bullets rather than being split across all bullets."
         bool m_bHitOnceAcrossAllBullets; // 0x10        
         [[maybe_unused]] std::uint8_t pad_0x11[0x3]; // 0x11
+        // metadata: MPropertyDescription "How many bullets must hit an orb in order to fully claim it."
+        int32_t m_iBulletsToFullyClaimOrb; // 0x14        
         // metadata: MPropertyDescription "If > 0, this bullet will apply its damage in a radius where it impacts (this is how to make something like a rocket)."
-        float m_flExplosionRadius; // 0x14        
+        float m_flExplosionRadius; // 0x18        
         // metadata: MPropertyDescription "Damage scale at the extent of the explosion radius."
         // metadata: MPropertySuppressExpr "m_flExplosionRadius == 0"
         // metadata: MPropertyAttributeRange "0 1"
-        float m_flExplosionDamageScaleAtMaxRadius; // 0x18        
+        float m_flExplosionDamageScaleAtMaxRadius; // 0x1c        
         // metadata: MPropertyDescription "Does the explosion collect gold (i.e soul orbs)?"
-        bool m_bAllowExplosionToCollectGold; // 0x1c        
-        [[maybe_unused]] std::uint8_t pad_0x1d[0x3]; // 0x1d
+        bool m_bAllowExplosionToCollectGold; // 0x20        
+        [[maybe_unused]] std::uint8_t pad_0x21[0x3]; // 0x21
         // metadata: MPropertyDescription "Clip Size"
-        int32_t m_iClipSize; // 0x20        
+        int32_t m_iClipSize; // 0x24        
         // metadata: MPropertyDescription "The time between shots. In burst it's the time between starting a new burst."
-        float m_flCycleTime; // 0x24        
+        float m_flCycleTime; // 0x28        
         // metadata: MPropertyDescription "How many shots to fire per burst"
-        int32_t m_iBurstShotCount; // 0x28        
+        int32_t m_iBurstShotCount; // 0x2c        
         // metadata: MPropertyDescription "The time between shoots within a burst"
         // metadata: MPropertySuppressExpr "m_iBurstShotCount == 1"
-        float m_flIntraBurstCycleTime; // 0x2c        
+        float m_flIntraBurstCycleTime; // 0x30        
         // metadata: MPropertyDescription "Does this gun fire backwards?"
-        bool m_bFiresBackwards; // 0x30        
-        [[maybe_unused]] std::uint8_t pad_0x31[0x3]; // 0x31
+        bool m_bFiresBackwards; // 0x34        
+        [[maybe_unused]] std::uint8_t pad_0x35[0x3]; // 0x35
         // metadata: MPropertyDescription "How much ammo to consume to shoot this gun."
-        int32_t m_iAmmoConsumedPerShot; // 0x34        
+        int32_t m_iAmmoConsumedPerShot; // 0x38        
         // metadata: MPropertyDescription "The maximum distance bullets will travel"
-        float m_flRange; // 0x38        
+        float m_flRange; // 0x3c        
         // metadata: MPropertyDescription "The maximum distance bullets will travel while zoomed. If 0, uses Range."
-        float m_flRangeWhileZoomed; // 0x3c        
+        float m_flRangeWhileZoomed; // 0x40        
         // metadata: MPropertyDescription "The distance where damage falloff begins. Damage scale before this is clamped to 'Damage Falooff Start Scale'."
-        float m_flDamageFalloffStartRange; // 0x40        
+        float m_flDamageFalloffStartRange; // 0x44        
         // metadata: MPropertyDescription "The distance where damage falloff ends.  Beyond this range, damage scale is clamped to 'Damage Falloff End Scale'"
-        float m_flDamageFalloffEndRange; // 0x44        
+        float m_flDamageFalloffEndRange; // 0x48        
         // metadata: MPropertyDescription "The bias in the damage falloff range"
         // metadata: MPropertyAttributeRange "0 1"
-        float m_flDamageFalloffBias; // 0x48        
+        float m_flDamageFalloffBias; // 0x4c        
         // metadata: MPropertyDescription "Damage falloff start range."
-        float m_flDamageFalloffStartScale; // 0x4c        
+        float m_flDamageFalloffStartScale; // 0x50        
         // metadata: MPropertyDescription "Damage falloff end range"
-        float m_flDamageFalloffEndScale; // 0x50        
+        float m_flDamageFalloffEndScale; // 0x54        
         // metadata: MPropertyDescription "If > 0, bullets will continue through thin surfaces with their damage scaled by this amount"
-        float m_flPenetrationPercent; // 0x54        
+        float m_flPenetrationPercent; // 0x58        
         // metadata: MPropertyDescription "How long does it takes to aim down sights. "
-        float m_flIronSightsTime; // 0x58        
+        float m_flIronSightsTime; // 0x5c        
         // metadata: MPropertyStartGroup "Firing Behavior/+Reload"
         // metadata: MPropertyDescription "How long a reload takes"
         // metadata: MPropertyFriendlyName "Reload Duration"
-        float m_reloadDuration; // 0x5c        
+        float m_reloadDuration; // 0x60        
         // metadata: MPropertyDescription "Reload a single bullet when the reload duration completes rather than the entire clip"
-        bool m_bReloadSingleBullets; // 0x60        
+        bool m_bReloadSingleBullets; // 0x64        
         // metadata: MPropertyDescription "Allows canceling out of the reload at any time by firing your gun."
-        bool m_bReloadSingleBulletsAllowCancel; // 0x61        
-        [[maybe_unused]] std::uint8_t pad_0x62[0x2]; // 0x62
+        bool m_bReloadSingleBulletsAllowCancel; // 0x65        
+        [[maybe_unused]] std::uint8_t pad_0x66[0x2]; // 0x66
         // metadata: MPropertyDescription "Initial Delay before starting to reload bullets when using single bullet reload."
-        float m_flReloadSingleBulletsInitialDelay; // 0x64        
+        float m_flReloadSingleBulletsInitialDelay; // 0x68        
         // metadata: MPropertyStartGroup "Firing Behavior/Crits"
         // metadata: MPropertyDescription "Are we allowed to crit via headshots and weakpoints"
-        bool m_bCanCrit; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0x69[0x3]; // 0x69
+        bool m_bCanCrit; // 0x6c        
+        [[maybe_unused]] std::uint8_t pad_0x6d[0x3]; // 0x6d
         // metadata: MPropertyDescription "The distance where crit bonus damage begins to change"
         // metadata: MPropertySuppressExpr "m_bCanCrit == false"
-        float m_flCritBonusStartRange; // 0x6c        
+        float m_flCritBonusStartRange; // 0x70        
         // metadata: MPropertyDescription "The distance where crit bonus damage ends its change"
         // metadata: MPropertySuppressExpr "m_bCanCrit == false"
-        float m_flCritBonusEndRange; // 0x70        
+        float m_flCritBonusEndRange; // 0x74        
         // metadata: MPropertyDescription "Crit multiplier up to the 'Crit Bonus Start Range'"
         // metadata: MPropertySuppressExpr "m_bCanCrit == false"
-        float m_flCritBonusStart; // 0x74        
+        float m_flCritBonusStart; // 0x78        
         // metadata: MPropertyDescription "Crit multiplier at and beyond  'Crit Bonus End Range'"
         // metadata: MPropertySuppressExpr "m_bCanCrit == false"
-        float m_flCritBonusEnd; // 0x78        
+        float m_flCritBonusEnd; // 0x7c        
         // metadata: MPropertyDescription "Bonus on top of the multiplier when critting NPCs"
         // metadata: MPropertySuppressExpr "m_bCanCrit == false"
-        float m_flCritBonusAgainstNPCs; // 0x7c        
+        float m_flCritBonusAgainstNPCs; // 0x80        
         // metadata: MPropertyStartGroup "Firing Behavior/Spinup"
         // metadata: MPropertyDescription "Does the cycle time of this weapon change the more you fire it?"
-        bool m_bSpinsUp; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x81[0x3]; // 0x81
+        bool m_bSpinsUp; // 0x84        
+        [[maybe_unused]] std::uint8_t pad_0x85[0x3]; // 0x85
         // metadata: MPropertyDescription "-1 means use m_flCycleTime"
         // metadata: MPropertySuppressExpr "m_bSpinsUp == false"
-        float m_flMaxSpinCycleTime; // 0x84        
+        float m_flMaxSpinCycleTime; // 0x88        
         // metadata: MPropertySuppressExpr "m_bSpinsUp == false"
-        float m_flSpinIncreaseRate; // 0x88        
+        float m_flSpinIncreaseRate; // 0x8c        
         // metadata: MPropertySuppressExpr "m_bSpinsUp == false"
-        float m_flSpinDecayRate; // 0x8c        
+        float m_flSpinDecayRate; // 0x90        
         // metadata: MPropertySuppressExpr "m_bSpinsUp == false"
-        float m_flBuildUpRate; // 0x90        
+        float m_flBuildUpRate; // 0x94        
         // metadata: MPropertyStartGroup "Firing Behavior/SemiAuto"
         // metadata: MPropertyDescription "Does this weapon function as semi-auto, i.e you have to release the key to fire again"
-        bool m_bIsSemiAuto; // 0x94        
-        [[maybe_unused]] std::uint8_t pad_0x95[0x3]; // 0x95
+        bool m_bIsSemiAuto; // 0x98        
+        [[maybe_unused]] std::uint8_t pad_0x99[0x3]; // 0x99
         // metadata: MPropertySuppressExpr "m_bIsSemiAuto == false"
-        float m_flSemiAutoCycleRate; // 0x98        
-        [[maybe_unused]] std::uint8_t pad_0x9c[0x4]; // 0x9c
+        float m_flSemiAutoCycleRate; // 0x9c        
         // metadata: MPropertyStartGroup "Bullet Travel"
         CPiecewiseCurve m_BulletSpeedCurve; // 0xa0        
         float m_flBulletSpeedRandomFactor; // 0xe0        
@@ -254,41 +255,42 @@ namespace source2sdk::client
     static_assert(offsetof(CCitadelWeaponInfo, m_flBulletDamage) == 0x8);
     static_assert(offsetof(CCitadelWeaponInfo, m_iBullets) == 0xc);
     static_assert(offsetof(CCitadelWeaponInfo, m_bHitOnceAcrossAllBullets) == 0x10);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flExplosionRadius) == 0x14);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flExplosionDamageScaleAtMaxRadius) == 0x18);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bAllowExplosionToCollectGold) == 0x1c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_iClipSize) == 0x20);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCycleTime) == 0x24);
-    static_assert(offsetof(CCitadelWeaponInfo, m_iBurstShotCount) == 0x28);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flIntraBurstCycleTime) == 0x2c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bFiresBackwards) == 0x30);
-    static_assert(offsetof(CCitadelWeaponInfo, m_iAmmoConsumedPerShot) == 0x34);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flRange) == 0x38);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flRangeWhileZoomed) == 0x3c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffStartRange) == 0x40);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffEndRange) == 0x44);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffBias) == 0x48);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffStartScale) == 0x4c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffEndScale) == 0x50);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flPenetrationPercent) == 0x54);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flIronSightsTime) == 0x58);
-    static_assert(offsetof(CCitadelWeaponInfo, m_reloadDuration) == 0x5c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bReloadSingleBullets) == 0x60);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bReloadSingleBulletsAllowCancel) == 0x61);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flReloadSingleBulletsInitialDelay) == 0x64);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bCanCrit) == 0x68);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusStartRange) == 0x6c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusEndRange) == 0x70);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusStart) == 0x74);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusEnd) == 0x78);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusAgainstNPCs) == 0x7c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bSpinsUp) == 0x80);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flMaxSpinCycleTime) == 0x84);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flSpinIncreaseRate) == 0x88);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flSpinDecayRate) == 0x8c);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flBuildUpRate) == 0x90);
-    static_assert(offsetof(CCitadelWeaponInfo, m_bIsSemiAuto) == 0x94);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flSemiAutoCycleRate) == 0x98);
+    static_assert(offsetof(CCitadelWeaponInfo, m_iBulletsToFullyClaimOrb) == 0x14);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flExplosionRadius) == 0x18);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flExplosionDamageScaleAtMaxRadius) == 0x1c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bAllowExplosionToCollectGold) == 0x20);
+    static_assert(offsetof(CCitadelWeaponInfo, m_iClipSize) == 0x24);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCycleTime) == 0x28);
+    static_assert(offsetof(CCitadelWeaponInfo, m_iBurstShotCount) == 0x2c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flIntraBurstCycleTime) == 0x30);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bFiresBackwards) == 0x34);
+    static_assert(offsetof(CCitadelWeaponInfo, m_iAmmoConsumedPerShot) == 0x38);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flRange) == 0x3c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flRangeWhileZoomed) == 0x40);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffStartRange) == 0x44);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffEndRange) == 0x48);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffBias) == 0x4c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffStartScale) == 0x50);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flDamageFalloffEndScale) == 0x54);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flPenetrationPercent) == 0x58);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flIronSightsTime) == 0x5c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_reloadDuration) == 0x60);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bReloadSingleBullets) == 0x64);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bReloadSingleBulletsAllowCancel) == 0x65);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flReloadSingleBulletsInitialDelay) == 0x68);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bCanCrit) == 0x6c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusStartRange) == 0x70);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusEndRange) == 0x74);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusStart) == 0x78);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusEnd) == 0x7c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flCritBonusAgainstNPCs) == 0x80);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bSpinsUp) == 0x84);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flMaxSpinCycleTime) == 0x88);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flSpinIncreaseRate) == 0x8c);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flSpinDecayRate) == 0x90);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flBuildUpRate) == 0x94);
+    static_assert(offsetof(CCitadelWeaponInfo, m_bIsSemiAuto) == 0x98);
+    static_assert(offsetof(CCitadelWeaponInfo, m_flSemiAutoCycleRate) == 0x9c);
     static_assert(offsetof(CCitadelWeaponInfo, m_BulletSpeedCurve) == 0xa0);
     static_assert(offsetof(CCitadelWeaponInfo, m_flBulletSpeedRandomFactor) == 0xe0);
     static_assert(offsetof(CCitadelWeaponInfo, m_flBulletGravityScale) == 0xe4);

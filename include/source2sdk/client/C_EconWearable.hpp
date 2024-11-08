@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe28
+    // Size: 0xe60
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -22,9 +22,9 @@ namespace source2sdk::client
     class C_EconWearable : public client::C_EconEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xe20[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xe58[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_EconWearable) == 0xe28);
+    static_assert(sizeof(C_EconWearable) == 0xe60);
 };

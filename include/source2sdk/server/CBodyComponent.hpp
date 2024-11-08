@@ -27,10 +27,8 @@ namespace source2sdk::server
     class CBodyComponent : public entity2::CEntityComponent
     {
     public:
-        // metadata: MNetworkDisable
         server::CGameSceneNode* m_pSceneNode; // 0x8        
         [[maybe_unused]] std::uint8_t pad_0x10[0x38]; // 0x10
-        // metadata: MNetworkDisable
         // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x48        
         [[maybe_unused]] std::uint8_t pad_0x70[0x8];

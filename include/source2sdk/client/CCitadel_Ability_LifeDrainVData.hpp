@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1570
+    // Size: 0x1580
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,13 +26,13 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_LifeDrainTargetModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_LifeDrainTargetModifier;
-        char m_LifeDrainTargetModifier[0x10]; // 0x1550        
+        char m_LifeDrainTargetModifier[0x10]; // 0x1560        
         // m_LifeDrainCasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_LifeDrainCasterModifier;
-        char m_LifeDrainCasterModifier[0x10]; // 0x1560        
+        char m_LifeDrainCasterModifier[0x10]; // 0x1570        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_LifeDrainVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_LifeDrainVData) == 0x1570);
+    static_assert(sizeof(CCitadel_Ability_LifeDrainVData) == 0x1580);
 };

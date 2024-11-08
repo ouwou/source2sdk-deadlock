@@ -22,7 +22,8 @@ namespace source2sdk::client
         Vector m_vForce; // 0x0        
         int32_t m_nForceBone; // 0xc        
         bool m_bForceCurrentWorldTransform; // 0x10        
-        [[maybe_unused]] std::uint8_t pad_0x11[0x3]; // 0x11
+        bool m_bUseLRURetirement; // 0x11        
+        [[maybe_unused]] std::uint8_t pad_0x12[0x2]; // 0x12
         int32_t m_nHealthToGrant; // 0x14        
     };
     #pragma pack(pop)
@@ -30,6 +31,7 @@ namespace source2sdk::client
     static_assert(offsetof(RagdollCreationParams_t, m_vForce) == 0x0);
     static_assert(offsetof(RagdollCreationParams_t, m_nForceBone) == 0xc);
     static_assert(offsetof(RagdollCreationParams_t, m_bForceCurrentWorldTransform) == 0x10);
+    static_assert(offsetof(RagdollCreationParams_t, m_bUseLRURetirement) == 0x11);
     static_assert(offsetof(RagdollCreationParams_t, m_nHealthToGrant) == 0x14);
     
     static_assert(sizeof(RagdollCreationParams_t) == 0x18);

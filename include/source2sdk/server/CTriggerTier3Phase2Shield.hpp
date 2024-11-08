@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a0
+    // Size: 0x9c0
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerTier3Phase2Shield : public server::CTriggerNeutralShield
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CTriggerTier3Phase2Shield) == 0x9a0);
+    static_assert(sizeof(CTriggerTier3Phase2Shield) == 0x9c0);
 };

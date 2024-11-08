@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x600
+    // Size: 0x608
     // Has VTable
     #pragma pack(push, 1)
     class CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable : public client::CEnvSoundscapeTriggerable
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable) == 0x600);
+    static_assert(sizeof(CEnvSoundscapeTriggerableAlias_snd_soundscape_triggerable) == 0x608);
 };

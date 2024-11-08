@@ -15,18 +15,18 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdb8
+    // Size: 0xdc0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Lash_Flog : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc98[0x118]; // 0xc98
-        client::ParticleIndex_t m_SandEffect; // 0xdb0        
-        [[maybe_unused]] std::uint8_t pad_0xdb4[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xca0[0x118]; // 0xca0
+        client::ParticleIndex_t m_SandEffect; // 0xdb8        
+        [[maybe_unused]] std::uint8_t pad_0xdbc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Lash_Flog because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Lash_Flog) == 0xdb8);
+    static_assert(sizeof(CCitadel_Ability_Lash_Flog) == 0xdc0);
 };

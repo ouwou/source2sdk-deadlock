@@ -8,11 +8,12 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 58
+    // Enumerator count: 59
     // Alignment: 4
     // Size: 0x4
     enum class EMusicState_t : std::uint32_t
     {
+        EMusicState_Invalid = 0xffffffff,
         EMusicState_None = 0x0,
         EMusicState_Zipline = 0x1,
         EMusicState_Ambient = 0x2,

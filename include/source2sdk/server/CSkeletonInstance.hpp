@@ -34,12 +34,9 @@ namespace source2sdk::server
         bool m_bIsAnimationEnabled; // 0x3f0        
         // metadata: MNetworkEnable
         bool m_bUseParentRenderBounds; // 0x3f1        
-        // metadata: MNetworkDisable
         bool m_bDisableSolidCollisionsForHierarchy; // 0x3f2        
         // start of bitfield block at 0x3f3
-        // metadata: MNetworkDisable
         uint8_t m_bDirtyMotionType: 1;
-        // metadata: MNetworkDisable
         uint8_t m_bIsGeneratingLatchedParentSpaceState: 1;
         // end of bitfield block // 2 bits
         // metadata: MNetworkEnable

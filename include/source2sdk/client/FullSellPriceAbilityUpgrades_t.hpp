@@ -21,7 +21,9 @@ namespace source2sdk::client
     struct FullSellPriceAbilityUpgrades_t
     {
     public:
+        // metadata: MNetworkEnable
         CUtlString m_strAbilityUpgrade; // 0x0        
+        // metadata: MNetworkEnable
         entity2::GameTime_t m_unGameTimePurchased; // 0x8        
         [[maybe_unused]] std::uint8_t pad_0x0c[0x4];
     };

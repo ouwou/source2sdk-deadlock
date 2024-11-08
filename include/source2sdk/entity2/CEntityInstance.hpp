@@ -33,14 +33,11 @@ namespace source2sdk::entity2
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x8]; // 0x0
-        // metadata: MNetworkDisable
         CUtlSymbolLarge m_iszPrivateVScripts; // 0x8        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "56"
         entity2::CEntityIdentity* m_pEntity; // 0x10        
         [[maybe_unused]] std::uint8_t pad_0x18[0x18]; // 0x18
-        // metadata: MNetworkEnable
-        // metadata: MNetworkDisable
         entity2::CScriptComponent* m_CScriptComponent; // 0x30        
         bool m_bVisibleinPVS; // 0x38        
         [[maybe_unused]] std::uint8_t pad_0x39[0x7];

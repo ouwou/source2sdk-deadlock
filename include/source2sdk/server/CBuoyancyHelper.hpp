@@ -13,7 +13,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x80
+    // Size: 0x100
     // Has VTable
     #pragma pack(push, 1)
     class CBuoyancyHelper
@@ -34,6 +34,7 @@ namespace source2sdk::server
         // m_vecWheelDrag has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<float> m_vecWheelDrag;
         char m_vecWheelDrag[0x18]; // 0x68        
+        [[maybe_unused]] std::uint8_t pad_0x80[0x80];
         
         // Datamap fields:
         // void m_pController; // 0x8
@@ -47,5 +48,5 @@ namespace source2sdk::server
     static_assert(offsetof(CBuoyancyHelper, m_vecFractionOfWheelSubmergedForWheelDrag) == 0x50);
     static_assert(offsetof(CBuoyancyHelper, m_vecWheelDrag) == 0x68);
     
-    static_assert(sizeof(CBuoyancyHelper) == 0x80);
+    static_assert(sizeof(CBuoyancyHelper) == 0x100);
 };

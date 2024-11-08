@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaf8
+    // Size: 0xb18
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flProgress"
@@ -24,12 +24,12 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flProgress; // 0xaf0        
+        float m_flProgress; // 0xb10        
         // metadata: MNetworkEnable
-        int32_t m_nNumPushers; // 0xaf4        
+        int32_t m_nNumPushers; // 0xb14        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelPayload because it is not a standard-layout class
-    static_assert(sizeof(C_CitadelPayload) == 0xaf8);
+    static_assert(sizeof(C_CitadelPayload) == 0xb18);
 };

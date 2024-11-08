@@ -24,7 +24,6 @@ namespace source2sdk::client
     class CDestructiblePartsSystemComponent
     {
     public:
-        // metadata: MNetworkDisable
         // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x0        
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.

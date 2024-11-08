@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x568
+    // Size: 0x570
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "string_t m_iszOverlayNames"
@@ -28,19 +28,19 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszOverlayNames[10]; // 0x4e0        
+        CUtlSymbolLarge m_iszOverlayNames[10]; // 0x4e8        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "11"
         // metadata: MNetworkMinValue "-1.000000"
         // metadata: MNetworkMaxValue "63.000000"
-        float m_flOverlayTimes[10]; // 0x530        
+        float m_flOverlayTimes[10]; // 0x538        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartTime; // 0x558        
+        entity2::GameTime_t m_flStartTime; // 0x560        
         // metadata: MNetworkEnable
-        int32_t m_iDesiredOverlay; // 0x55c        
+        int32_t m_iDesiredOverlay; // 0x564        
         // metadata: MNetworkEnable
-        bool m_bIsActive; // 0x560        
-        [[maybe_unused]] std::uint8_t pad_0x561[0x7];
+        bool m_bIsActive; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x569[0x7];
         
         // Datamap fields:
         // void InputStartOverlay; // 0x0
@@ -50,5 +50,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEnvScreenOverlay because it is not a standard-layout class
-    static_assert(sizeof(CEnvScreenOverlay) == 0x568);
+    static_assert(sizeof(CEnvScreenOverlay) == 0x570);
 };

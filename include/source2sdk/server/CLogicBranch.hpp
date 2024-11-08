@@ -20,19 +20,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x550
+    // Size: 0x558
     // Has VTable
     #pragma pack(push, 1)
     class CLogicBranch : public server::CLogicalEntity
     {
     public:
-        bool m_bInValue; // 0x4e0        
-        [[maybe_unused]] std::uint8_t pad_0x4e1[0x7]; // 0x4e1
+        bool m_bInValue; // 0x4e8        
+        [[maybe_unused]] std::uint8_t pad_0x4e9[0x7]; // 0x4e9
         // m_Listeners has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_Listeners;
-        char m_Listeners[0x18]; // 0x4e8        
-        entity2::CEntityIOOutput m_OnTrue; // 0x500        
-        entity2::CEntityIOOutput m_OnFalse; // 0x528        
+        char m_Listeners[0x18]; // 0x4f0        
+        entity2::CEntityIOOutput m_OnTrue; // 0x508        
+        entity2::CEntityIOOutput m_OnFalse; // 0x530        
         
         // Datamap fields:
         // bool InputSetValue; // 0x0
@@ -44,5 +44,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicBranch because it is not a standard-layout class
-    static_assert(sizeof(CLogicBranch) == 0x550);
+    static_assert(sizeof(CLogicBranch) == 0x558);
 };

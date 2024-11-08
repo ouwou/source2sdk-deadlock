@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7a0
+    // Size: 0x7c0
     // Has VTable
     #pragma pack(push, 1)
     class CWorld : public server::CBaseModelEntity
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CWorld) == 0x7a0);
+    static_assert(sizeof(CWorld) == 0x7c0);
 };

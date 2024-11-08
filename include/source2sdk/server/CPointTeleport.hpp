@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x500
+    // Size: 0x508
     // Has VTable
     #pragma pack(push, 1)
     class CPointTeleport : public server::CServerOnlyPointEntity
     {
     public:
-        Vector m_vSaveOrigin; // 0x4e0        
-        QAngle m_vSaveAngles; // 0x4ec        
-        bool m_bTeleportParentedEntities; // 0x4f8        
-        bool m_bTeleportUseCurrentAngle; // 0x4f9        
-        [[maybe_unused]] std::uint8_t pad_0x4fa[0x6];
+        Vector m_vSaveOrigin; // 0x4e8        
+        QAngle m_vSaveAngles; // 0x4f4        
+        bool m_bTeleportParentedEntities; // 0x500        
+        bool m_bTeleportUseCurrentAngle; // 0x501        
+        [[maybe_unused]] std::uint8_t pad_0x502[0x6];
         
         // Datamap fields:
         // void InputTeleport; // 0x0
@@ -35,5 +35,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointTeleport because it is not a standard-layout class
-    static_assert(sizeof(CPointTeleport) == 0x500);
+    static_assert(sizeof(CPointTeleport) == 0x508);
 };

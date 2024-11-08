@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5b8
+    // Size: 0x5d8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_timeLastUpdate"
@@ -27,16 +27,16 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
-        entity2::GameTime_t m_timeLastUpdate; // 0x560        
-        [[maybe_unused]] std::uint8_t pad_0x564[0x4]; // 0x564
+        entity2::GameTime_t m_timeLastUpdate; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x56c[0x4]; // 0x56c
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
         // m_vecFOWEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::STrooperFOWEntity> m_vecFOWEntities;
-        char m_vecFOWEntities[0x50]; // 0x568        
+        char m_vecFOWEntities[0x68]; // 0x570        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelTrooperMinimap because it is not a standard-layout class
-    static_assert(sizeof(CCitadelTrooperMinimap) == 0x5b8);
+    static_assert(sizeof(CCitadelTrooperMinimap) == 0x5d8);
 };

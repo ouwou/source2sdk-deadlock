@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb70
+    // Size: 0xb78
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flVertOffset"
@@ -31,29 +31,29 @@ namespace source2sdk::server
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        float m_flVertOffset; // 0xaf8        
+        float m_flVertOffset; // 0xb00        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        float m_flHorizGap; // 0xafc        
+        float m_flHorizGap; // 0xb04        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vStartPos; // 0xb00        
+        Vector m_vStartPos; // 0xb08        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vTargetPos; // 0xb0c        
+        Vector m_vTargetPos; // 0xb14        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        QAngle m_angFacing; // 0xb18        
+        QAngle m_angFacing; // 0xb20        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        int32_t m_nMantleTypeIndex; // 0xb24        
+        int32_t m_nMantleTypeIndex; // 0xb2c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flStartTime; // 0xb28        
-        [[maybe_unused]] std::uint8_t pad_0xb2c[0x44];
+        entity2::GameTime_t m_flStartTime; // 0xb30        
+        [[maybe_unused]] std::uint8_t pad_0xb34[0x44];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Mantle because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Mantle) == 0xb70);
+    static_assert(sizeof(CCitadel_Ability_Mantle) == 0xb78);
 };

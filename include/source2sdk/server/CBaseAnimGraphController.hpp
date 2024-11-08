@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x580
+    // Size: 0x588
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CAnimGraphNetworkedVariables m_animGraphNetworkedVars"
@@ -34,12 +34,9 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0x10[0x8]; // 0x10
         // metadata: MNetworkEnable
         server::CAnimGraphNetworkedVariables m_animGraphNetworkedVars; // 0x18        
-        // metadata: MNetworkDisable
         bool m_bSequenceFinished; // 0x220        
         [[maybe_unused]] std::uint8_t pad_0x221[0x3]; // 0x221
-        // metadata: MNetworkDisable
         float m_flSoundSyncTime; // 0x224        
-        // metadata: MNetworkDisable
         uint32_t m_nActiveIKChainMask; // 0x228        
         // metadata: MNetworkEnable
         // metadata: MNetworkSerializer "minusone"
@@ -67,19 +64,14 @@ namespace source2sdk::server
         // metadata: MNetworkChangeCallback "OnNetworkedAnimationChanged"
         CNetworkedQuantizedFloat m_flPlaybackRate; // 0x23c        
         [[maybe_unused]] std::uint8_t pad_0x244[0x4]; // 0x244
-        // metadata: MNetworkDisable
         client::SequenceFinishNotifyState_t m_nNotifyState; // 0x248        
         [[maybe_unused]] std::uint8_t pad_0x249[0x1]; // 0x249
-        // metadata: MNetworkDisable
         bool m_bNetworkedAnimationInputsChanged; // 0x24a        
-        // metadata: MNetworkDisable
         bool m_bNetworkedSequenceChanged; // 0x24b        
-        // metadata: MNetworkDisable
         bool m_bLastUpdateSkipped; // 0x24c        
         [[maybe_unused]] std::uint8_t pad_0x24d[0x3]; // 0x24d
-        // metadata: MNetworkDisable
         entity2::GameTime_t m_flPrevAnimUpdateTime; // 0x250        
-        [[maybe_unused]] std::uint8_t pad_0x254[0x32c];
+        [[maybe_unused]] std::uint8_t pad_0x254[0x334];
         
         // Datamap fields:
         // void m_pAnimGraphInstance; // 0x4f0
@@ -88,5 +80,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseAnimGraphController because it is not a standard-layout class
-    static_assert(sizeof(CBaseAnimGraphController) == 0x580);
+    static_assert(sizeof(CBaseAnimGraphController) == 0x588);
 };

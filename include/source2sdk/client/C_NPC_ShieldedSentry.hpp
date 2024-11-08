@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xca0
+    // Size: 0xcc0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -29,16 +29,16 @@ namespace source2sdk::client
         // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
         // metadata: MNetworkAlias "CCitadelAbilityComponent"
         // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xaf0        
-        [[maybe_unused]] std::uint8_t pad_0xc90[0x4]; // 0xc90
+        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xcb0[0x4]; // 0xcb0
         // metadata: MNetworkEnable
-        float m_flAttackRange; // 0xc94        
+        float m_flAttackRange; // 0xcb4        
         // metadata: MNetworkEnable
-        float m_flAimPitch; // 0xc98        
-        [[maybe_unused]] std::uint8_t pad_0xc9c[0x4];
+        float m_flAimPitch; // 0xcb8        
+        [[maybe_unused]] std::uint8_t pad_0xcbc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_ShieldedSentry because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_ShieldedSentry) == 0xca0);
+    static_assert(sizeof(C_NPC_ShieldedSentry) == 0xcc0);
 };

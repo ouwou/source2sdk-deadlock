@@ -28,13 +28,17 @@ namespace source2sdk::animlib
         // m_resources has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CStrongHandleVoid> m_resources;
         char m_resources[0x18]; // 0x10        
-        [[maybe_unused]] std::uint8_t pad_0x28[0x38];
+        [[maybe_unused]] std::uint8_t pad_0x28[0x20]; // 0x28
+        // m_warnings has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlVector<CUtlString> m_warnings;
+        char m_warnings[0x18]; // 0x48        
     };
     #pragma pack(pop)
     
     static_assert(offsetof(CNmGraphDataSet, m_variationID) == 0x0);
     static_assert(offsetof(CNmGraphDataSet, m_skeleton) == 0x8);
     static_assert(offsetof(CNmGraphDataSet, m_resources) == 0x10);
+    static_assert(offsetof(CNmGraphDataSet, m_warnings) == 0x48);
     
     static_assert(sizeof(CNmGraphDataSet) == 0x60);
 };

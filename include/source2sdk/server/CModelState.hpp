@@ -32,7 +32,6 @@ namespace source2sdk::server
         // m_hModel has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCModel> m_hModel;
         char m_hModel[0x8]; // 0xd0        
-        // metadata: MNetworkDisable
         CUtlSymbolLarge m_ModelName; // 0xd8        
         [[maybe_unused]] std::uint8_t pad_0xe0[0x38]; // 0xe0
         // metadata: MNetworkEnable
@@ -51,9 +50,7 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "skeletonMotionTypeChanged"
         int8_t m_nIdealMotionType; // 0x26a        
-        // metadata: MNetworkDisable
         int8_t m_nForceLOD; // 0x26b        
-        // metadata: MNetworkDisable
         int8_t m_nClothUpdateFlags; // 0x26c        
         [[maybe_unused]] std::uint8_t pad_0x26d[0x13];
         

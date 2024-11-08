@@ -17,17 +17,21 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xac0
+    // Size: 0xb30
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "char m_messageText"
     // static metadata: MNetworkVarNames "char m_FontName"
+    // static metadata: MNetworkVarNames "char m_BackgroundMaterialName"
     // static metadata: MNetworkVarNames "bool m_bEnabled"
     // static metadata: MNetworkVarNames "bool m_bFullbright"
     // static metadata: MNetworkVarNames "float m_flWorldUnitsPerPx"
     // static metadata: MNetworkVarNames "float m_flFontSize"
     // static metadata: MNetworkVarNames "float m_flDepthOffset"
     // static metadata: MNetworkVarNames "bool m_bDrawBackground"
+    // static metadata: MNetworkVarNames "float m_flBackgroundBorderWidth"
+    // static metadata: MNetworkVarNames "float m_flBackgroundBorderHeight"
+    // static metadata: MNetworkVarNames "float m_flBackgroundWorldToUV"
     // static metadata: MNetworkVarNames "Color m_Color"
     // static metadata: MNetworkVarNames "PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal"
     // static metadata: MNetworkVarNames "PointWorldTextJustifyVertical_t m_nJustifyVertical"
@@ -36,36 +40,43 @@ namespace source2sdk::client
     class C_PointWorldText : public client::C_ModelPointEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x840[0x8]; // 0x840
-        bool m_bForceRecreateNextUpdate; // 0x848        
-        [[maybe_unused]] std::uint8_t pad_0x849[0xf]; // 0x849
+        [[maybe_unused]] std::uint8_t pad_0x860[0x8]; // 0x860
+        bool m_bForceRecreateNextUpdate; // 0x868        
+        [[maybe_unused]] std::uint8_t pad_0x869[0x17]; // 0x869
         // metadata: MNetworkEnable
-        char m_messageText[512]; // 0x858        
+        char m_messageText[512]; // 0x880        
         // metadata: MNetworkEnable
-        char m_FontName[64]; // 0xa58        
+        char m_FontName[64]; // 0xa80        
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0xa98        
+        char m_BackgroundMaterialName[64]; // 0xac0        
         // metadata: MNetworkEnable
-        bool m_bFullbright; // 0xa99        
-        [[maybe_unused]] std::uint8_t pad_0xa9a[0x2]; // 0xa9a
+        bool m_bEnabled; // 0xb00        
         // metadata: MNetworkEnable
-        float m_flWorldUnitsPerPx; // 0xa9c        
+        bool m_bFullbright; // 0xb01        
+        [[maybe_unused]] std::uint8_t pad_0xb02[0x2]; // 0xb02
         // metadata: MNetworkEnable
-        float m_flFontSize; // 0xaa0        
+        float m_flWorldUnitsPerPx; // 0xb04        
         // metadata: MNetworkEnable
-        float m_flDepthOffset; // 0xaa4        
+        float m_flFontSize; // 0xb08        
         // metadata: MNetworkEnable
-        bool m_bDrawBackground; // 0xaa8        
+        float m_flDepthOffset; // 0xb0c        
         // metadata: MNetworkEnable
-        Color m_Color; // 0xaa9        
-        [[maybe_unused]] std::uint8_t pad_0xaad[0x3]; // 0xaad
+        bool m_bDrawBackground; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb11[0x3]; // 0xb11
         // metadata: MNetworkEnable
-        client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xab0        
+        float m_flBackgroundBorderWidth; // 0xb14        
         // metadata: MNetworkEnable
-        client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xab4        
+        float m_flBackgroundBorderHeight; // 0xb18        
         // metadata: MNetworkEnable
-        client::PointWorldTextReorientMode_t m_nReorientMode; // 0xab8        
-        [[maybe_unused]] std::uint8_t pad_0xabc[0x4];
+        float m_flBackgroundWorldToUV; // 0xb1c        
+        // metadata: MNetworkEnable
+        Color m_Color; // 0xb20        
+        // metadata: MNetworkEnable
+        client::PointWorldTextJustifyHorizontal_t m_nJustifyHorizontal; // 0xb24        
+        // metadata: MNetworkEnable
+        client::PointWorldTextJustifyVertical_t m_nJustifyVertical; // 0xb28        
+        // metadata: MNetworkEnable
+        client::PointWorldTextReorientMode_t m_nReorientMode; // 0xb2c        
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -77,5 +88,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PointWorldText because it is not a standard-layout class
-    static_assert(sizeof(C_PointWorldText) == 0xac0);
+    static_assert(sizeof(C_PointWorldText) == 0xb30);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb20
+    // Size: 0xb28
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_Stasis_Bomb : public server::CCitadel_Item_Bubble
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Item_Stasis_Bomb) == 0xb20);
+    static_assert(sizeof(CCitadel_Item_Stasis_Bomb) == 0xb28);
 };

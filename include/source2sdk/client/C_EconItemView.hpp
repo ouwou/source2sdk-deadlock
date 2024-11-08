@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd8
+    // Size: 0xf0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "item_definition_index_t m_iItemDefinitionIndex"
@@ -65,10 +65,10 @@ namespace source2sdk::client
         [[maybe_unused]] std::uint8_t pad_0x44[0x14]; // 0x44
         // metadata: MNetworkEnable
         client::CAttributeList m_AttributeList; // 0x58        
-        [[maybe_unused]] std::uint8_t pad_0xb8[0x20];
+        [[maybe_unused]] std::uint8_t pad_0xd0[0x20];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EconItemView because it is not a standard-layout class
-    static_assert(sizeof(C_EconItemView) == 0xd8);
+    static_assert(sizeof(C_EconItemView) == 0xf0);
 };

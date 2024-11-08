@@ -32,7 +32,8 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "+Hitgroup"
         // metadata: MPropertyDescription "The hitgroup this is related to."
         client::HitGroup_t m_nHitGroup; // 0x18        
-        // metadata: MPropertyDescription "Do we disable the hitgroup when all sub parts are destroyed?"
+        // metadata: MPropertyDescription "Do we disable the hitgroup and physics bodies tagged with said hitgroup when all sub parts are destroyed?"
+        // metadata: MPropertyFriendlyName "Disable Hit Group & Remove Tagged Physics Bodies When Destroyed"
         bool m_bDisableHitGroupWhenDestroyed; // 0x1c        
         [[maybe_unused]] std::uint8_t pad_0x1d[0x3];
     };

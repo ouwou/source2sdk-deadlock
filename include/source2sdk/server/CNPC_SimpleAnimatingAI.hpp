@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbc0
+    // Size: 0xbe0
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -38,22 +38,22 @@ namespace source2sdk::server
     class CNPC_SimpleAnimatingAI : public server::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xa28[0x14]; // 0xa28
+        [[maybe_unused]] std::uint8_t pad_0xa48[0x14]; // 0xa48
         // metadata: MNetworkEnable
         // m_hEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEnemy;
-        char m_hEnemy[0x4]; // 0xa3c        
+        char m_hEnemy[0x4]; // 0xa5c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelRegenComponent"
         // metadata: MNetworkAlias "CCitadelRegenComponent"
         // metadata: MNetworkTypeAlias "CCitadelRegenComponent"
-        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa40        
+        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa60        
         
         // Datamap fields:
-        // CHandle< CBaseEntity > m_hAbilityOwner; // 0xa30
+        // CHandle< CBaseEntity > m_hAbilityOwner; // 0xa50
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_SimpleAnimatingAI because it is not a standard-layout class
-    static_assert(sizeof(CNPC_SimpleAnimatingAI) == 0xbc0);
+    static_assert(sizeof(CNPC_SimpleAnimatingAI) == 0xbe0);
 };

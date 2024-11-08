@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1570
+    // Size: 0x1580
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,13 +26,13 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_GravityLassoSelf has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_GravityLassoSelf;
-        char m_GravityLassoSelf[0x10]; // 0x1550        
+        char m_GravityLassoSelf[0x10]; // 0x1560        
         // m_GravityLassoTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CBaseModifier> m_GravityLassoTarget;
-        char m_GravityLassoTarget[0x10]; // 0x1560        
+        char m_GravityLassoTarget[0x10]; // 0x1570        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Gravity_Lasso_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Gravity_Lasso_VData) == 0x1570);
+    static_assert(sizeof(CCitadel_Ability_Gravity_Lasso_VData) == 0x1580);
 };

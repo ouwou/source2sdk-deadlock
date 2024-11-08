@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x550
+    // Size: 0x558
     // Has VTable
     #pragma pack(push, 1)
     class CPhysTorque : public server::CPhysForce
     {
     public:
-        Vector m_axis; // 0x540        
-        [[maybe_unused]] std::uint8_t pad_0x54c[0x4];
+        Vector m_axis; // 0x548        
+        [[maybe_unused]] std::uint8_t pad_0x554[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysTorque because it is not a standard-layout class
-    static_assert(sizeof(CPhysTorque) == 0x550);
+    static_assert(sizeof(CPhysTorque) == 0x558);
 };

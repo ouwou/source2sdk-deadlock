@@ -15,19 +15,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x560
+    // Size: 0x568
     // Has VTable
     #pragma pack(push, 1)
     class CLogicAutoCitadel : public server::CBaseEntity
     {
     public:
-        entity2::CEntityIOOutput m_OnWaitingForPlayersToJoin; // 0x4e0        
-        entity2::CEntityIOOutput m_OnPreGameWait; // 0x508        
-        entity2::CEntityIOOutput m_OnGameInProgress; // 0x530        
-        [[maybe_unused]] std::uint8_t pad_0x558[0x8];
+        entity2::CEntityIOOutput m_OnWaitingForPlayersToJoin; // 0x4e8        
+        entity2::CEntityIOOutput m_OnPreGameWait; // 0x510        
+        entity2::CEntityIOOutput m_OnGameInProgress; // 0x538        
+        [[maybe_unused]] std::uint8_t pad_0x560[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLogicAutoCitadel because it is not a standard-layout class
-    static_assert(sizeof(CLogicAutoCitadel) == 0x560);
+    static_assert(sizeof(CLogicAutoCitadel) == 0x568);
 };

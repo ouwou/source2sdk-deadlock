@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb00
+    // Size: 0xb20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flAttackRange"
@@ -23,15 +23,15 @@ namespace source2sdk::client
     class C_NPC_FieldSentry : public client::C_NPC_SimpleAnimatingAI
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf0[0x4]; // 0xaf0
+        [[maybe_unused]] std::uint8_t pad_0xb10[0x4]; // 0xb10
         // metadata: MNetworkEnable
-        float m_flAttackRange; // 0xaf4        
+        float m_flAttackRange; // 0xb14        
         // metadata: MNetworkEnable
-        float m_flAimPitch; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xafc[0x4];
+        float m_flAimPitch; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb1c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_FieldSentry because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_FieldSentry) == 0xb00);
+    static_assert(sizeof(C_NPC_FieldSentry) == 0xb20);
 };

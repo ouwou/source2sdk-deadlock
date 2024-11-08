@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd78
+    // Size: 0xd80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flNextShootTime"
@@ -25,17 +25,17 @@ namespace source2sdk::server
     class CAbility_Synth_Barrage : public server::CCitadelBaseAbility
     {
     public:
-        client::ShotID_t m_tLastShotID; // 0xaf8        
-        [[maybe_unused]] std::uint8_t pad_0xafc[0x26c]; // 0xafc
-        int32_t m_nProjectilesScheduled; // 0xd68        
-        client::ParticleIndex_t m_ChannelParticle; // 0xd6c        
+        client::ShotID_t m_tLastShotID; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb04[0x26c]; // 0xb04
+        int32_t m_nProjectilesScheduled; // 0xd70        
+        client::ParticleIndex_t m_ChannelParticle; // 0xd74        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flNextShootTime; // 0xd70        
-        [[maybe_unused]] std::uint8_t pad_0xd74[0x4];
+        entity2::GameTime_t m_flNextShootTime; // 0xd78        
+        [[maybe_unused]] std::uint8_t pad_0xd7c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Synth_Barrage because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Synth_Barrage) == 0xd78);
+    static_assert(sizeof(CAbility_Synth_Barrage) == 0xd80);
 };

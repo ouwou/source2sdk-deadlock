@@ -1,31 +1,29 @@
 #pragma once
+#include "source2sdk/client/CCitadelAnimatingModelEntity.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
 
 // /////////////////////////////////////////////////////////////
-// Module: resourcesystem
+// Module: client
 // Created using source2gen - github.com/neverlosecc/source2gen
 // /////////////////////////////////////////////////////////////
 
-namespace source2sdk::resourcesystem
+namespace source2sdk::client
 {
     // Registered alignment: 0x8
     // Alignment: 0x8
-    // Standard-layout class: true
-    // Size: 0x8
-    // 
-    // static metadata: MGetKV3ClassDefaults
+    // Standard-layout class: false
+    // Size: 0xb18
+    // Has VTable
     #pragma pack(push, 1)
-    struct TestResource_t
+    class C_Citadel_SpiderAnimating : public client::CCitadelAnimatingModelEntity
     {
     public:
-        // metadata: MKV3TransferName "name"
-        CUtlString m_name; // 0x0        
+        [[maybe_unused]] std::uint8_t pad_0xb10[0x8];
+        // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(offsetof(TestResource_t, m_name) == 0x0);
-    
-    static_assert(sizeof(TestResource_t) == 0x8);
+    static_assert(sizeof(C_Citadel_SpiderAnimating) == 0xb18);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::client
         // MPropertyFriendlyName "FrictionPercentage"
         MODIFIER_VALUE_FRICTION_PERCENTAGE = 0x2,
         // MPropertyFriendlyName "BaseVelocity"
-        // MScriptDescription "GetModifierBaseVelocity"
+        // MScriptDescription "MoveType GetModifierBaseVelocity"
         MODIFIER_VALUE_BASE_VELOCITY = 0x3,
         // MPropertyFriendlyName "MoveType"
         // MScriptDescription "TargetIdentifierOverride GetMoveTypeOverride"

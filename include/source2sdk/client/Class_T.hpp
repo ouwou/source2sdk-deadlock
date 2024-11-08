@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 87
+    // Enumerator count: 89
     // Alignment: 4
     // Size: 0x4
     enum class Class_T : std::uint32_t
@@ -99,6 +99,8 @@ namespace source2sdk::client
         CLASS_VISCOUS_CUBE = 0x53,
         CLASS_FISSURE_WALL_SEGMENT = 0x54,
         CLASS_NANO_STATUE = 0x55,
-        NUM_CLASSIFY_CLASSES = 0x56,
+        CLASS_TRAPPER_SPIDER = 0x56,
+        CLASS_TRAPPER_WEBWALL = 0x57,
+        NUM_CLASSIFY_CLASSES = 0x58,
     };
 };

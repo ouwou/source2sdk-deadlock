@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5b0
+    // Size: 0x5b8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vMins"
@@ -24,12 +24,12 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        Vector m_vMins; // 0x598        
+        Vector m_vMins; // 0x5a0        
         // metadata: MNetworkEnable
-        Vector m_vMaxs; // 0x5a4        
+        Vector m_vMaxs; // 0x5ac        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSoundEventAABBEntity because it is not a standard-layout class
-    static_assert(sizeof(CSoundEventAABBEntity) == 0x5b0);
+    static_assert(sizeof(CSoundEventAABBEntity) == 0x5b8);
 };

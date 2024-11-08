@@ -40,12 +40,12 @@ namespace source2sdk::client
         // CHandle<client::C_BaseEntity> m_hPreviousTeamTarget;
         char m_hPreviousTeamTarget[0x4]; // 0x68        
         // metadata: MNetworkEnable
-        // metadata: MNetworkChangeCallback "LocalPlayerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerExclusive"
         // m_hOverrideObserverTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hOverrideObserverTarget;
         char m_hOverrideObserverTarget[0x4]; // 0x6c        
         // metadata: MNetworkEnable
-        // metadata: MNetworkChangeCallback "LocalPlayerExclusive"
+        // metadata: MNetworkUserGroup "LocalPlayerExclusive"
         client::ObserverMode_t m_iOverrideObserverMode; // 0x70        
         // metadata: MNetworkEnable
         int32_t m_iSecondsAfterDeathToAllowObserving; // 0x74        

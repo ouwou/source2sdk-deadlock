@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xba0
+    // Size: 0xba8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Tokamak_Breach : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf8[0xa8];
+        [[maybe_unused]] std::uint8_t pad_0xb00[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Tokamak_Breach) == 0xba0);
+    static_assert(sizeof(CCitadel_Ability_Tokamak_Breach) == 0xba8);
 };

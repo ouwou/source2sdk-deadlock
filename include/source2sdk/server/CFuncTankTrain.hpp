@@ -15,16 +15,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x918
+    // Size: 0x938
     // Has VTable
     #pragma pack(push, 1)
     class CFuncTankTrain : public server::CFuncTrackTrain
     {
     public:
-        entity2::CEntityIOOutput m_OnDeath; // 0x8f0        
+        entity2::CEntityIOOutput m_OnDeath; // 0x910        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncTankTrain because it is not a standard-layout class
-    static_assert(sizeof(CFuncTankTrain) == 0x918);
+    static_assert(sizeof(CFuncTankTrain) == 0x938);
 };

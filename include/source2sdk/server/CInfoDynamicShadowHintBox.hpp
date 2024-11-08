@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x510
+    // Size: 0x518
     // Has VTable
     #pragma pack(push, 1)
     class CInfoDynamicShadowHintBox : public server::CInfoDynamicShadowHint
     {
     public:
-        Vector m_vBoxMins; // 0x4f8        
-        Vector m_vBoxMaxs; // 0x504        
+        Vector m_vBoxMins; // 0x500        
+        Vector m_vBoxMaxs; // 0x50c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoDynamicShadowHintBox because it is not a standard-layout class
-    static_assert(sizeof(CInfoDynamicShadowHintBox) == 0x510);
+    static_assert(sizeof(CInfoDynamicShadowHintBox) == 0x518);
 };

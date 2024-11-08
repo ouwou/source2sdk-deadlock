@@ -23,7 +23,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x228
+    // Size: 0x230
     #pragma pack(push, 1)
     class CAI_MotorGroundAnimGraph
     {
@@ -48,10 +48,11 @@ namespace source2sdk::server
         Vector m_vPreviousPosition; // 0x208        
         [[maybe_unused]] std::uint8_t pad_0x214[0x4]; // 0x214
         float m_flCurrentLean; // 0x218        
-        [[maybe_unused]] std::uint8_t pad_0x21c[0xc];
+        RotationVector m_vDesiredMovementHeadingChangeVelocity; // 0x21c        
+        [[maybe_unused]] std::uint8_t pad_0x228[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_MotorGroundAnimGraph because it is not a standard-layout class
-    static_assert(sizeof(CAI_MotorGroundAnimGraph) == 0x228);
+    static_assert(sizeof(CAI_MotorGroundAnimGraph) == 0x230);
 };

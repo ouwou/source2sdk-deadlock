@@ -15,18 +15,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9e0
+    // Size: 0xa00
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerItemShopSafeZone : public server::CBaseTrigger
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x970[0x20]; // 0x970
-        entity2::CEntityIOOutput m_OnContested; // 0x990        
-        entity2::CEntityIOOutput m_OnNotContested; // 0x9b8        
+        [[maybe_unused]] std::uint8_t pad_0x990[0x20]; // 0x990
+        entity2::CEntityIOOutput m_OnContested; // 0x9b0        
+        entity2::CEntityIOOutput m_OnNotContested; // 0x9d8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerItemShopSafeZone because it is not a standard-layout class
-    static_assert(sizeof(CTriggerItemShopSafeZone) == 0x9e0);
+    static_assert(sizeof(CTriggerItemShopSafeZone) == 0xa00);
 };

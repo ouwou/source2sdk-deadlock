@@ -26,7 +26,6 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         client::CBaseAnimGraphController m_animationController; // 0x510        
-        [[maybe_unused]] std::uint8_t pad_0x1d68[0x8];
         
         // Static fields:
         static entity2::EntComponentInfo_t &Get_s_EntComponentInfo() {return *reinterpret_cast<entity2::EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("CBodyComponentBaseAnimGraph")->GetStaticFields()[0]->m_pInstance);};

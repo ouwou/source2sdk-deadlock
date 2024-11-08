@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x568
+    // Size: 0x570
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int8 m_iCurrentMaxRagdollCount"
@@ -23,11 +23,11 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        int8_t m_iCurrentMaxRagdollCount; // 0x560        
-        [[maybe_unused]] std::uint8_t pad_0x561[0x7];
+        int8_t m_iCurrentMaxRagdollCount; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x569[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRagdollManager because it is not a standard-layout class
-    static_assert(sizeof(CRagdollManager) == 0x568);
+    static_assert(sizeof(CRagdollManager) == 0x570);
 };

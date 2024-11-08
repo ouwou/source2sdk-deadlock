@@ -26,7 +26,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x18b8
+    // Size: 0x1908
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int m_iLane"
@@ -36,32 +36,32 @@ namespace source2sdk::server
     class CNPC_Trooper : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x17b8[0x8]; // 0x17b8
+        [[maybe_unused]] std::uint8_t pad_0x17f0[0x8]; // 0x17f0
         // metadata: MNetworkEnable
-        int32_t m_iLane; // 0x17c0        
-        int32_t m_iLaneSlot; // 0x17c4        
-        [[maybe_unused]] std::uint8_t pad_0x17c8[0x20]; // 0x17c8
+        int32_t m_iLane; // 0x17f8        
+        int32_t m_iLaneSlot; // 0x17fc        
+        [[maybe_unused]] std::uint8_t pad_0x1800[0x20]; // 0x1800
         // m_hSpawnWaveController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CInfoTrooperBossSpawn> m_hSpawnWaveController;
-        char m_hSpawnWaveController[0x4]; // 0x17e8        
+        char m_hSpawnWaveController[0x4]; // 0x1820        
         // m_hTrooperSpawnPoint has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTrooperSpawnPoint;
-        char m_hTrooperSpawnPoint[0x4]; // 0x17ec        
-        [[maybe_unused]] std::uint8_t pad_0x17f0[0x20]; // 0x17f0
+        char m_hTrooperSpawnPoint[0x4]; // 0x1824        
+        [[maybe_unused]] std::uint8_t pad_0x1828[0x20]; // 0x1828
         // m_hNearDeathModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CModifierHandleTyped<server::CCitadelModifier> m_hNearDeathModifier;
-        char m_hNearDeathModifier[0x18]; // 0x1810        
-        [[maybe_unused]] std::uint8_t pad_0x1828[0x8]; // 0x1828
+        char m_hNearDeathModifier[0x18]; // 0x1848        
+        [[maybe_unused]] std::uint8_t pad_0x1860[0x8]; // 0x1860
         // metadata: MNetworkEnable
         // m_hTargetedEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTargetedEnemy;
-        char m_hTargetedEnemy[0x4]; // 0x1830        
+        char m_hTargetedEnemy[0x4]; // 0x1868        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "1.000000"
-        float m_flHealingChargeParticlePct; // 0x1834        
-        [[maybe_unused]] std::uint8_t pad_0x1838[0x80];
+        float m_flHealingChargeParticlePct; // 0x186c        
+        [[maybe_unused]] std::uint8_t pad_0x1870[0x98];
         
         // Static fields:
         static client::ConditionId_t &Get_COND_TROOPER_MOVE_OUT() {return *reinterpret_cast<client::ConditionId_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->GetStaticFields()[0]->m_pInstance);};
@@ -119,10 +119,10 @@ namespace source2sdk::server
         static CUtlSymbolLarge &Get_TASK_TROOPER_WAIT_FOR_MELEE_MOVEMENT() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_Trooper")->GetStaticFields()[52]->m_pInstance);};
         
         // Datamap fields:
-        // int32_t m_iCoverGroupID; // 0x1718
+        // int32_t m_iCoverGroupID; // 0x1750
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Trooper because it is not a standard-layout class
-    static_assert(sizeof(CNPC_Trooper) == 0x18b8);
+    static_assert(sizeof(CNPC_Trooper) == 0x1908);
 };

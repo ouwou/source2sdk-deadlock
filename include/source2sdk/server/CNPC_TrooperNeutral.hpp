@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1820
+    // Size: 0x1858
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bShieldActive"
@@ -24,12 +24,12 @@ namespace source2sdk::server
     class CNPC_TrooperNeutral : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x17b8[0x63]; // 0x17b8
+        [[maybe_unused]] std::uint8_t pad_0x17f0[0x63]; // 0x17f0
         // metadata: MNetworkEnable
-        bool m_bShieldActive; // 0x181b        
+        bool m_bShieldActive; // 0x1853        
         // metadata: MNetworkEnable
-        bool m_bPlayingIdle; // 0x181c        
-        [[maybe_unused]] std::uint8_t pad_0x181d[0x3];
+        bool m_bPlayingIdle; // 0x1854        
+        [[maybe_unused]] std::uint8_t pad_0x1855[0x3];
         
         // Static fields:
         static CUtlSymbolLarge &Get_SCHED_TROOPERNEUTRAL_MOVE_TO_COVER() {return *reinterpret_cast<CUtlSymbolLarge*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CNPC_TrooperNeutral")->GetStaticFields()[0]->m_pInstance);};
@@ -54,5 +54,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperNeutral because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperNeutral) == 0x1820);
+    static_assert(sizeof(CNPC_TrooperNeutral) == 0x1858);
 };

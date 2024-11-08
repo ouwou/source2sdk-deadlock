@@ -73,7 +73,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcd8
+    // Size: 0xd10
     // Has VTable
     // 
     // static metadata: MNetworkUserGroupProxy "CBasePlayerPawn"
@@ -115,67 +115,70 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        server::CPlayer_WeaponServices* m_pWeaponServices; // 0xb40        
+        server::CPlayer_WeaponServices* m_pWeaponServices; // 0xb60        
         // metadata: MNetworkEnable
-        server::CPlayer_ItemServices* m_pItemServices; // 0xb48        
+        server::CPlayer_ItemServices* m_pItemServices; // 0xb68        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        server::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xb50        
+        server::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xb70        
         // metadata: MNetworkEnable
-        server::CPlayer_ObserverServices* m_pObserverServices; // 0xb58        
+        server::CPlayer_ObserverServices* m_pObserverServices; // 0xb78        
         // metadata: MNetworkEnable
-        server::CPlayer_WaterServices* m_pWaterServices; // 0xb60        
+        server::CPlayer_WaterServices* m_pWaterServices; // 0xb80        
         // metadata: MNetworkEnable
-        server::CPlayer_UseServices* m_pUseServices; // 0xb68        
+        server::CPlayer_UseServices* m_pUseServices; // 0xb88        
         // metadata: MNetworkEnable
-        server::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xb70        
+        server::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xb90        
         // metadata: MNetworkEnable
-        server::CPlayer_CameraServices* m_pCameraServices; // 0xb78        
+        server::CPlayer_CameraServices* m_pCameraServices; // 0xb98        
         // metadata: MNetworkEnable
-        server::CPlayer_MovementServices* m_pMovementServices; // 0xb80        
-        [[maybe_unused]] std::uint8_t pad_0xb88[0x8]; // 0xb88
+        server::CPlayer_MovementServices* m_pMovementServices; // 0xba0        
+        [[maybe_unused]] std::uint8_t pad_0xba8[0x8]; // 0xba8
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
         // m_ServerViewAngleChanges has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVectorEmbeddedNetworkVar<server::ViewAngleServerChange_t> m_ServerViewAngleChanges;
-        char m_ServerViewAngleChanges[0x50]; // 0xb90        
-        uint32_t m_nHighestGeneratedServerViewAngleChangeIndex; // 0xbe0        
-        QAngle v_angle; // 0xbe4        
-        QAngle v_anglePrevious; // 0xbf0        
+        char m_ServerViewAngleChanges[0x68]; // 0xbb0        
+        QAngle v_angle; // 0xc18        
+        QAngle v_anglePrevious; // 0xc24        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        uint32_t m_iHideHUD; // 0xbfc        
+        uint32_t m_iHideHUD; // 0xc30        
+        [[maybe_unused]] std::uint8_t pad_0xc34[0x4]; // 0xc34
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        server::sky3dparams_t m_skybox3d; // 0xc00        
-        entity2::GameTime_t m_fTimeLastHurt; // 0xc90        
+        server::sky3dparams_t m_skybox3d; // 0xc38        
+        entity2::GameTime_t m_fTimeLastHurt; // 0xcc8        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flDeathTime; // 0xc94        
-        entity2::GameTime_t m_fNextSuicideTime; // 0xc98        
-        bool m_fInitHUD; // 0xc9c        
-        [[maybe_unused]] std::uint8_t pad_0xc9d[0x3]; // 0xc9d
-        server::CAI_Expresser* m_pExpresser; // 0xca0        
+        entity2::GameTime_t m_flDeathTime; // 0xccc        
+        entity2::GameTime_t m_fNextSuicideTime; // 0xcd0        
+        bool m_fInitHUD; // 0xcd4        
+        [[maybe_unused]] std::uint8_t pad_0xcd5[0x3]; // 0xcd5
+        server::CAI_Expresser* m_pExpresser; // 0xcd8        
         // metadata: MNetworkEnable
         // m_hController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBasePlayerController> m_hController;
-        char m_hController[0x4]; // 0xca8        
+        char m_hController[0x4]; // 0xce0        
         // metadata: MNetworkEnable
         // m_hDefaultController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBasePlayerController> m_hDefaultController;
-        char m_hDefaultController[0x4]; // 0xcac        
-        [[maybe_unused]] std::uint8_t pad_0xcb0[0x4]; // 0xcb0
-        float m_fHltvReplayDelay; // 0xcb4        
-        float m_fHltvReplayEnd; // 0xcb8        
-        CEntityIndex m_iHltvReplayEntity; // 0xcbc        
+        char m_hDefaultController[0x4]; // 0xce4        
+        [[maybe_unused]] std::uint8_t pad_0xce8[0x4]; // 0xce8
+        float m_fHltvReplayDelay; // 0xcec        
+        float m_fHltvReplayEnd; // 0xcf0        
+        CEntityIndex m_iHltvReplayEntity; // 0xcf4        
         // m_sndOpvarLatchData has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<client::sndopvarlatchdata_t> m_sndOpvarLatchData;
-        char m_sndOpvarLatchData[0x18]; // 0xcc0        
+        char m_sndOpvarLatchData[0x18]; // 0xcf8        
+        
+        // Static fields:
+        static uint32_t &Get_sm_nHighestGeneratedServerViewAngleChangeIndex() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBasePlayerPawn")->GetStaticFields()[0]->m_pInstance);};
         
         // Datamap fields:
-        // void m_hPawnListEntry; // 0xcb0
-        // void m_hLastValidNavArea; // 0xaf0
-        // void m_hCurrentNavArea; // 0xae0
-        // void m_hCurrentNavAreaBlocked; // 0xb00
+        // void m_hPawnListEntry; // 0xce8
+        // void m_hLastValidNavArea; // 0xb10
+        // void m_hCurrentNavArea; // 0xb00
+        // void m_hCurrentNavAreaBlocked; // 0xb20
         // CHandle< CBaseEntity > controller; // 0x7fffffff
         // int32_t InputSetHealth; // 0x0
         // bool InputSetHUDVisibility; // 0x0
@@ -184,5 +187,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBasePlayerPawn because it is not a standard-layout class
-    static_assert(sizeof(CBasePlayerPawn) == 0xcd8);
+    static_assert(sizeof(CBasePlayerPawn) == 0xd10);
 };

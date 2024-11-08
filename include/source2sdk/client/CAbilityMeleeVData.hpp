@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1570
+    // Size: 0x1580
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,18 +24,18 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyDescription "How long we'll buffer input to trigger another melee if we're already performing a melee"
-        float m_flMeleeInputBufferTime; // 0x1550        
+        float m_flMeleeInputBufferTime; // 0x1560        
         // metadata: MPropertyDescription "If we detect an enemy within this distance, forward attack movement will be suppressed so we don't move through them"
-        float m_flCollisionDistance; // 0x1554        
+        float m_flCollisionDistance; // 0x1564        
         // metadata: MPropertyDescription "A heavy attack will trigger after being charged up for this long"
-        float m_flHeavyAttackRequiredHoldTime; // 0x1558        
+        float m_flHeavyAttackRequiredHoldTime; // 0x1568        
         // metadata: MPropertyDescription "A light attack will trigger if the melee button is pressed and released within this time.  After this time, a heavy melee will charge up"
-        float m_flLightAttackMaxHoldTime; // 0x155c        
-        client::TakeDamageFlags_t m_MeleeDamageFlags; // 0x1560        
-        CUtlString m_strEffectsAttachName; // 0x1568        
+        float m_flLightAttackMaxHoldTime; // 0x156c        
+        client::TakeDamageFlags_t m_MeleeDamageFlags; // 0x1570        
+        CUtlString m_strEffectsAttachName; // 0x1578        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityMeleeVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityMeleeVData) == 0x1570);
+    static_assert(sizeof(CAbilityMeleeVData) == 0x1580);
 };

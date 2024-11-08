@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb98
+    // Size: 0xbb8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bEnabled"
@@ -28,23 +28,23 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0x970        
-        [[maybe_unused]] std::uint8_t pad_0x971[0x3]; // 0x971
+        bool m_bEnabled; // 0x990        
+        [[maybe_unused]] std::uint8_t pad_0x991[0x3]; // 0x991
         // metadata: MNetworkEnable
-        float m_MaxWeight; // 0x974        
+        float m_MaxWeight; // 0x994        
         // metadata: MNetworkEnable
-        float m_FadeDuration; // 0x978        
-        bool m_bStartDisabled; // 0x97c        
-        [[maybe_unused]] std::uint8_t pad_0x97d[0x3]; // 0x97d
+        float m_FadeDuration; // 0x998        
+        bool m_bStartDisabled; // 0x99c        
+        [[maybe_unused]] std::uint8_t pad_0x99d[0x3]; // 0x99d
         // metadata: MNetworkEnable
-        float m_Weight; // 0x980        
+        float m_Weight; // 0x9a0        
         // metadata: MNetworkEnable
-        char m_lookupFilename[512]; // 0x984        
-        float m_LastEnterWeight; // 0xb84        
-        entity2::GameTime_t m_LastEnterTime; // 0xb88        
-        float m_LastExitWeight; // 0xb8c        
-        entity2::GameTime_t m_LastExitTime; // 0xb90        
-        [[maybe_unused]] std::uint8_t pad_0xb94[0x4];
+        char m_lookupFilename[512]; // 0x9a4        
+        float m_LastEnterWeight; // 0xba4        
+        entity2::GameTime_t m_LastEnterTime; // 0xba8        
+        float m_LastExitWeight; // 0xbac        
+        entity2::GameTime_t m_LastExitTime; // 0xbb0        
+        [[maybe_unused]] std::uint8_t pad_0xbb4[0x4];
         
         // Datamap fields:
         // void CColorCorrectionVolumeThinkFunc; // 0x0
@@ -54,5 +54,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CColorCorrectionVolume because it is not a standard-layout class
-    static_assert(sizeof(CColorCorrectionVolume) == 0xb98);
+    static_assert(sizeof(CColorCorrectionVolume) == 0xbb8);
 };

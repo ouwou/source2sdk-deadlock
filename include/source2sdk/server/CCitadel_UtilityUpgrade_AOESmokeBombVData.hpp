@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1698
+    // Size: 0x16a8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,16 +27,16 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_CastCompleteParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastCompleteParticle;
-        char m_CastCompleteParticle[0xe0]; // 0x1598        
+        char m_CastCompleteParticle[0xe0]; // 0x15a8        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strBuffGainedSound; // 0x1678        
+        CSoundEventName m_strBuffGainedSound; // 0x1688        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_InvisModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_InvisModifier;
-        char m_InvisModifier[0x10]; // 0x1688        
+        char m_InvisModifier[0x10]; // 0x1698        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_UtilityUpgrade_AOESmokeBombVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_UtilityUpgrade_AOESmokeBombVData) == 0x1698);
+    static_assert(sizeof(CCitadel_UtilityUpgrade_AOESmokeBombVData) == 0x16a8);
 };

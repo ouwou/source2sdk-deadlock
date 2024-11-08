@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7e0
+    // Size: 0x800
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CUtlString m_targetCamera"
@@ -35,26 +35,26 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        CUtlString m_targetCamera; // 0x7c0        
+        CUtlString m_targetCamera; // 0x7e0        
         // metadata: MNetworkEnable
-        int32_t m_nResolutionEnum; // 0x7c8        
+        int32_t m_nResolutionEnum; // 0x7e8        
         // metadata: MNetworkEnable
-        bool m_bRenderShadows; // 0x7cc        
+        bool m_bRenderShadows; // 0x7ec        
         // metadata: MNetworkEnable
-        bool m_bUseUniqueColorTarget; // 0x7cd        
-        [[maybe_unused]] std::uint8_t pad_0x7ce[0x2]; // 0x7ce
+        bool m_bUseUniqueColorTarget; // 0x7ed        
+        [[maybe_unused]] std::uint8_t pad_0x7ee[0x2]; // 0x7ee
         // metadata: MNetworkEnable
-        CUtlString m_brushModelName; // 0x7d0        
+        CUtlString m_brushModelName; // 0x7f0        
         // metadata: MNetworkEnable
         // m_hTargetCamera has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTargetCamera;
-        char m_hTargetCamera[0x4]; // 0x7d8        
+        char m_hTargetCamera[0x4]; // 0x7f8        
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0x7dc        
+        bool m_bEnabled; // 0x7fc        
         // metadata: MNetworkEnable
-        bool m_bDraw3DSkybox; // 0x7dd        
-        bool m_bStartEnabled; // 0x7de        
-        [[maybe_unused]] std::uint8_t pad_0x7df[0x1];
+        bool m_bDraw3DSkybox; // 0x7fd        
+        bool m_bStartEnabled; // 0x7fe        
+        [[maybe_unused]] std::uint8_t pad_0x7ff[0x1];
         
         // Datamap fields:
         // void InputToggle; // 0x0
@@ -65,5 +65,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncMonitor because it is not a standard-layout class
-    static_assert(sizeof(CFuncMonitor) == 0x7e0);
+    static_assert(sizeof(CFuncMonitor) == 0x800);
 };

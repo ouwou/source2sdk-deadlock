@@ -15,22 +15,22 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f8
+    // Size: 0x500
     // Has VTable
     #pragma pack(push, 1)
     class CAI_LookTarget : public server::CPointEntity
     {
     public:
-        int32_t m_iContext; // 0x4e0        
-        int32_t m_iPriority; // 0x4e4        
-        bool m_bDisabled; // 0x4e8        
-        [[maybe_unused]] std::uint8_t pad_0x4e9[0x3]; // 0x4e9
-        entity2::GameTime_t m_flTimeNextAvailable; // 0x4ec        
-        float m_flMaxDist; // 0x4f0        
-        [[maybe_unused]] std::uint8_t pad_0x4f4[0x4];
+        int32_t m_iContext; // 0x4e8        
+        int32_t m_iPriority; // 0x4ec        
+        bool m_bDisabled; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4f1[0x3]; // 0x4f1
+        entity2::GameTime_t m_flTimeNextAvailable; // 0x4f4        
+        float m_flMaxDist; // 0x4f8        
+        [[maybe_unused]] std::uint8_t pad_0x4fc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_LookTarget because it is not a standard-layout class
-    static_assert(sizeof(CAI_LookTarget) == 0x4f8);
+    static_assert(sizeof(CAI_LookTarget) == 0x500);
 };

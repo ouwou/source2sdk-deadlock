@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb18
+    // Size: 0xb20
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Upgrade_OverdriveClip : public server::CCitadel_Item
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Upgrade_OverdriveClip) == 0xb18);
+    static_assert(sizeof(CCitadel_Upgrade_OverdriveClip) == 0xb20);
 };

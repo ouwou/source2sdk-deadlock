@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1678
+    // Size: 0x1688
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Visuals"
         // m_RefreshParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RefreshParticle;
-        char m_RefreshParticle[0xe0]; // 0x1598        
+        char m_RefreshParticle[0xe0]; // 0x15a8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemRefresherVData because it is not a standard-layout class
-    static_assert(sizeof(CItemRefresherVData) == 0x1678);
+    static_assert(sizeof(CItemRefresherVData) == 0x1688);
 };

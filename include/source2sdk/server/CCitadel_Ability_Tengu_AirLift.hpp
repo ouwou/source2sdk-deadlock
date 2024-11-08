@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd18
+    // Size: 0xd20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bFlying"
@@ -27,22 +27,22 @@ namespace source2sdk::server
     class CCitadel_Ability_Tengu_AirLift : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xaf8[0x1c]; // 0xaf8
-        client::ParticleIndex_t m_nHoldBombEffect; // 0xb14        
-        [[maybe_unused]] std::uint8_t pad_0xb18[0x1f8]; // 0xb18
+        [[maybe_unused]] std::uint8_t pad_0xb00[0x1c]; // 0xb00
+        client::ParticleIndex_t m_nHoldBombEffect; // 0xb1c        
+        [[maybe_unused]] std::uint8_t pad_0xb20[0x1f8]; // 0xb20
         // metadata: MNetworkEnable
-        bool m_bFlying; // 0xd10        
+        bool m_bFlying; // 0xd18        
         // metadata: MNetworkEnable
-        bool m_bFlyingStarted; // 0xd11        
+        bool m_bFlyingStarted; // 0xd19        
         // metadata: MNetworkEnable
-        bool m_bIsGrabbing; // 0xd12        
+        bool m_bIsGrabbing; // 0xd1a        
         // metadata: MNetworkEnable
-        bool m_bIsHoldingBomb; // 0xd13        
+        bool m_bIsHoldingBomb; // 0xd1b        
         // metadata: MNetworkEnable
-        float m_flCurrentSpeed; // 0xd14        
+        float m_flCurrentSpeed; // 0xd1c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tengu_AirLift because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Tengu_AirLift) == 0xd18);
+    static_assert(sizeof(CCitadel_Ability_Tengu_AirLift) == 0xd20);
 };

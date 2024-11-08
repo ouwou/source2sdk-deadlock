@@ -14,19 +14,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x928
+    // Size: 0x948
     // Has VTable
     #pragma pack(push, 1)
     class CLaneNode : public server::CCitadelModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x920[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x940[0x8];
         // Datamap fields:
-        // CHandle< CBaseEntity > m_hLastTrooperChecked; // 0x920
-        // CHandle< CBaseEntity > m_hLastBossChecked; // 0x924
+        // CHandle< CBaseEntity > m_hLastTrooperChecked; // 0x940
+        // CHandle< CBaseEntity > m_hLastBossChecked; // 0x944
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CLaneNode) == 0x928);
+    static_assert(sizeof(CLaneNode) == 0x948);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1928
+    // Size: 0x1938
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,39 +27,39 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_SpectatingProjectileParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SpectatingProjectileParticle;
-        char m_SpectatingProjectileParticle[0xe0]; // 0x1550        
+        char m_SpectatingProjectileParticle[0xe0]; // 0x1560        
         // m_ExplosionParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplosionParticle;
-        char m_ExplosionParticle[0xe0]; // 0x1630        
+        char m_ExplosionParticle[0xe0]; // 0x1640        
         // m_ChannelParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChannelParticle;
-        char m_ChannelParticle[0xe0]; // 0x1710        
+        char m_ChannelParticle[0xe0]; // 0x1720        
         // m_CastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastParticle;
-        char m_CastParticle[0xe0]; // 0x17f0        
-        float m_ArrowOffsetX; // 0x18d0        
-        float m_ArrowCameraDistance; // 0x18d4        
-        float m_ArrowCameraHeightOffset; // 0x18d8        
-        float m_ArrowInitialPitch; // 0x18dc        
+        char m_CastParticle[0xe0]; // 0x1800        
+        float m_ArrowOffsetX; // 0x18e0        
+        float m_ArrowCameraDistance; // 0x18e4        
+        float m_ArrowCameraHeightOffset; // 0x18e8        
+        float m_ArrowInitialPitch; // 0x18ec        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_GuidingModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_GuidingModifier;
-        char m_GuidingModifier[0x10]; // 0x18e0        
+        char m_GuidingModifier[0x10]; // 0x18f0        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x18f0        
+        char m_DebuffModifier[0x10]; // 0x1900        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strExplodeSound; // 0x1900        
+        CSoundEventName m_strExplodeSound; // 0x1910        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flTrackAmount; // 0x1910        
-        float m_flSpeedAccel; // 0x1914        
-        float m_flSpeedDeccel; // 0x1918        
-        float m_flBaseProjectileSpeed; // 0x191c        
-        float m_flMaxProjectileSpeed; // 0x1920        
-        [[maybe_unused]] std::uint8_t pad_0x1924[0x4];
+        float m_flTrackAmount; // 0x1920        
+        float m_flSpeedAccel; // 0x1924        
+        float m_flSpeedDeccel; // 0x1928        
+        float m_flBaseProjectileSpeed; // 0x192c        
+        float m_flMaxProjectileSpeed; // 0x1930        
+        [[maybe_unused]] std::uint8_t pad_0x1934[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityWreckerTeleportVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityWreckerTeleportVData) == 0x1928);
+    static_assert(sizeof(CAbilityWreckerTeleportVData) == 0x1938);
 };

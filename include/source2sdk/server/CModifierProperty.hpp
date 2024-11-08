@@ -33,7 +33,6 @@ namespace source2sdk::server
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x8]; // 0x0
-        // metadata: MNetworkDisable
         // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x8        
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.

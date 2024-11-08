@@ -22,36 +22,36 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa18
+    // Size: 0xa38
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerLerpObject : public server::CBaseTrigger
     {
     public:
-        CUtlSymbolLarge m_iszLerpTarget; // 0x970        
+        CUtlSymbolLarge m_iszLerpTarget; // 0x990        
         // m_hLerpTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hLerpTarget;
-        char m_hLerpTarget[0x4]; // 0x978        
-        [[maybe_unused]] std::uint8_t pad_0x97c[0x4]; // 0x97c
-        CUtlSymbolLarge m_iszLerpTargetAttachment; // 0x980        
-        modellib::AttachmentHandle_t m_hLerpTargetAttachment; // 0x988        
-        [[maybe_unused]] std::uint8_t pad_0x989[0x3]; // 0x989
-        float m_flLerpDuration; // 0x98c        
-        bool m_bLerpRestoreMoveType; // 0x990        
-        bool m_bSingleLerpObject; // 0x991        
-        [[maybe_unused]] std::uint8_t pad_0x992[0x6]; // 0x992
+        char m_hLerpTarget[0x4]; // 0x998        
+        [[maybe_unused]] std::uint8_t pad_0x99c[0x4]; // 0x99c
+        CUtlSymbolLarge m_iszLerpTargetAttachment; // 0x9a0        
+        modellib::AttachmentHandle_t m_hLerpTargetAttachment; // 0x9a8        
+        [[maybe_unused]] std::uint8_t pad_0x9a9[0x3]; // 0x9a9
+        float m_flLerpDuration; // 0x9ac        
+        bool m_bLerpRestoreMoveType; // 0x9b0        
+        bool m_bSingleLerpObject; // 0x9b1        
+        [[maybe_unused]] std::uint8_t pad_0x9b2[0x6]; // 0x9b2
         // m_vecLerpingObjects has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::lerpdata_t> m_vecLerpingObjects;
-        char m_vecLerpingObjects[0x18]; // 0x998        
-        CUtlSymbolLarge m_iszLerpEffect; // 0x9b0        
-        CUtlSymbolLarge m_iszLerpSound; // 0x9b8        
-        bool m_bAttachTouchingObject; // 0x9c0        
-        [[maybe_unused]] std::uint8_t pad_0x9c1[0x3]; // 0x9c1
+        char m_vecLerpingObjects[0x18]; // 0x9b8        
+        CUtlSymbolLarge m_iszLerpEffect; // 0x9d0        
+        CUtlSymbolLarge m_iszLerpSound; // 0x9d8        
+        bool m_bAttachTouchingObject; // 0x9e0        
+        [[maybe_unused]] std::uint8_t pad_0x9e1[0x3]; // 0x9e1
         // m_hEntityToWaitForDisconnect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEntityToWaitForDisconnect;
-        char m_hEntityToWaitForDisconnect[0x4]; // 0x9c4        
-        entity2::CEntityIOOutput m_OnLerpStarted; // 0x9c8        
-        entity2::CEntityIOOutput m_OnLerpFinished; // 0x9f0        
+        char m_hEntityToWaitForDisconnect[0x4]; // 0x9e4        
+        entity2::CEntityIOOutput m_OnLerpStarted; // 0x9e8        
+        entity2::CEntityIOOutput m_OnLerpFinished; // 0xa10        
         
         // Datamap fields:
         // void CTriggerLerpObjectLerpThink; // 0x0
@@ -60,5 +60,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerLerpObject because it is not a standard-layout class
-    static_assert(sizeof(CTriggerLerpObject) == 0xa18);
+    static_assert(sizeof(CTriggerLerpObject) == 0xa38);
 };

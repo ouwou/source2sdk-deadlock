@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc90
+    // Size: 0xcb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAbilityComponent::Storage_t m_CCitadelAbilityComponent"
@@ -27,10 +27,10 @@ namespace source2sdk::client
         // metadata: MNetworkUserGroup "CCitadelAbilityComponent"
         // metadata: MNetworkAlias "CCitadelAbilityComponent"
         // metadata: MNetworkTypeAlias "CCitadelAbilityComponent"
-        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xaf0        
+        client::CCitadelAbilityComponent m_CCitadelAbilityComponent; // 0xb10        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_TeslaCoil because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_TeslaCoil) == 0xc90);
+    static_assert(sizeof(C_NPC_TeslaCoil) == 0xcb0);
 };

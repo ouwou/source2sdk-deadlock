@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 44
+    // Enumerator count: 45
     // Alignment: 8
     // Size: 0x8
     enum class TakeDamageFlags_t : std::uint64_t
@@ -48,7 +48,7 @@ namespace source2sdk::client
         DFLAG_PURE_DMG = 0x10000000,
         DFLAG_HEAVY_MELEE = 0x20000000,
         DFLAG_LIGHT_MELEE = 0x40000000,
-        DFLAG_TRACK_DAMAGE = 0x80000000,
+        DFLAG_BONUS_DAMAGE = 0x80000000,
         DFLAG_KILL_CREATES_RAGDOLL = 0x100000000,
         DFLAG_IS_HEALTH_TRANSFER = 0x200000000,
         DFLAG_DO_NOT_RICOCHET = 0x400000000,
@@ -59,5 +59,6 @@ namespace source2sdk::client
         DFLAG_DO_NOT_DISRUPT_HEALING_RITE = 0x8000000000,
         DFLAG_DO_NOT_HEADSHOT = 0x10000000000,
         DFLAG_TOO_LOW = 0x20000000000,
+        DFLAG_DO_NOT_CRIT = 0x40000000000,
     };
 };

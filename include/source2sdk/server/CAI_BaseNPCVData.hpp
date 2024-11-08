@@ -1,4 +1,5 @@
 #pragma once
+#include "source2sdk/client/AI_MovementHeadingSettings_t.hpp"
 #include "source2sdk/client/CDestructiblePartsSystemData_PartRuntimeData.hpp"
 #include "source2sdk/client/CEntitySubclassVDataBase.hpp"
 #include "source2sdk/client/CFootstepTableHandle.hpp"
@@ -22,7 +23,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x240
+    // Size: 0x270
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -96,10 +97,12 @@ namespace source2sdk::server
         CGlobalSymbol m_sCustomDeathHandshake; // 0x230        
         // metadata: MPropertyStartGroup "Movement"
         float m_flMovementMaxPathEndDirectionAngleDifferenceForStop; // 0x238        
-        [[maybe_unused]] std::uint8_t pad_0x23c[0x4];
+        // metadata: MPropertyDescription "What angle between the current move direction and the direction to the next waypoint will trigger a planted turn. Any value <= 0 will use the sharp angle from the vmdl movement settings."
+        float m_flMovementPlantedTurnAngleThreshold; // 0x23c        
+        client::AI_MovementHeadingSettings_t m_movementHeadingSettings; // 0x240        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_BaseNPCVData because it is not a standard-layout class
-    static_assert(sizeof(CAI_BaseNPCVData) == 0x240);
+    static_assert(sizeof(CAI_BaseNPCVData) == 0x270);
 };

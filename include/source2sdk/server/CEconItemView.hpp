@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd8
+    // Size: 0xf0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "item_definition_index_t m_iItemDefinitionIndex"
@@ -65,10 +65,10 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0x44[0x14]; // 0x44
         // metadata: MNetworkEnable
         server::CAttributeList m_AttributeList; // 0x58        
-        [[maybe_unused]] std::uint8_t pad_0xb8[0x20];
+        [[maybe_unused]] std::uint8_t pad_0xd0[0x20];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CEconItemView because it is not a standard-layout class
-    static_assert(sizeof(CEconItemView) == 0xd8);
+    static_assert(sizeof(CEconItemView) == 0xf0);
 };

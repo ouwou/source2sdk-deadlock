@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb90
+    // Size: 0xbb0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bShowLight"
@@ -24,11 +24,11 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "RenderingChanged"
-        bool m_bShowLight; // 0xb88        
-        [[maybe_unused]] std::uint8_t pad_0xb89[0x7];
+        bool m_bShowLight; // 0xba8        
+        [[maybe_unused]] std::uint8_t pad_0xba9[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_RectLight because it is not a standard-layout class
-    static_assert(sizeof(C_RectLight) == 0xb90);
+    static_assert(sizeof(C_RectLight) == 0xbb0);
 };

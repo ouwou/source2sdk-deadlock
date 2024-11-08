@@ -18,7 +18,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x1d8
+    // Size: 0x220
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "int32 m_iLevel"
@@ -168,15 +168,15 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // m_vecImbuements has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::ItemImbuementPair_t> m_vecImbuements;
-        char m_vecImbuements[0x50]; // 0xe8        
+        char m_vecImbuements[0x68]; // 0xe8        
         // metadata: MNetworkEnable
         // m_vecDynamicAbilityValues has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::DynamicAbilityValues_t> m_vecDynamicAbilityValues;
-        char m_vecDynamicAbilityValues[0x50]; // 0x138        
+        char m_vecDynamicAbilityValues[0x68]; // 0x150        
         // metadata: MNetworkEnable
         // m_vecStatViewerModifierValues has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::StatViewerModifierValues_t> m_vecStatViewerModifierValues;
-        char m_vecStatViewerModifierValues[0x50]; // 0x188        
+        char m_vecStatViewerModifierValues[0x68]; // 0x1b8        
     };
     #pragma pack(pop)
     
@@ -220,8 +220,8 @@ namespace source2sdk::client
     static_assert(offsetof(PlayerDataGlobal_t, m_vecBonusCounterValues) == 0xc8);
     static_assert(offsetof(PlayerDataGlobal_t, m_tHeldItem) == 0xe0);
     static_assert(offsetof(PlayerDataGlobal_t, m_vecImbuements) == 0xe8);
-    static_assert(offsetof(PlayerDataGlobal_t, m_vecDynamicAbilityValues) == 0x138);
-    static_assert(offsetof(PlayerDataGlobal_t, m_vecStatViewerModifierValues) == 0x188);
+    static_assert(offsetof(PlayerDataGlobal_t, m_vecDynamicAbilityValues) == 0x150);
+    static_assert(offsetof(PlayerDataGlobal_t, m_vecStatViewerModifierValues) == 0x1b8);
     
-    static_assert(sizeof(PlayerDataGlobal_t) == 0x1d8);
+    static_assert(sizeof(PlayerDataGlobal_t) == 0x220);
 };

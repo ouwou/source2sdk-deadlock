@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1730
+    // Size: 0x1740
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,20 +27,20 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_ChainParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChainParticle;
-        char m_ChainParticle[0xe0]; // 0x1550        
+        char m_ChainParticle[0xe0]; // 0x1560        
         // m_CastHitParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CastHitParticle;
-        char m_CastHitParticle[0xe0]; // 0x1630        
+        char m_CastHitParticle[0xe0]; // 0x1640        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1710        
+        char m_BuffModifier[0x10]; // 0x1720        
         // m_ChainModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ChainModifier;
-        char m_ChainModifier[0x10]; // 0x1720        
+        char m_ChainModifier[0x10]; // 0x1730        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPowerSurgeVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityPowerSurgeVData) == 0x1730);
+    static_assert(sizeof(CAbilityPowerSurgeVData) == 0x1740);
 };

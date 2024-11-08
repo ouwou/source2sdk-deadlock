@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x590
+    // Size: 0x598
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flVisibilityStrength"
@@ -29,21 +29,21 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-        float m_flVisibilityStrength; // 0x560        
+        float m_flVisibilityStrength; // 0x568        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-        float m_flFogDistanceMultiplier; // 0x564        
+        float m_flFogDistanceMultiplier; // 0x56c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-        float m_flFogMaxDensityMultiplier; // 0x568        
+        float m_flFogMaxDensityMultiplier; // 0x570        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "PlayerVisibilityStateChanged"
-        float m_flFadeTime; // 0x56c        
+        float m_flFadeTime; // 0x574        
         // metadata: MNetworkEnable
-        bool m_bStartDisabled; // 0x570        
+        bool m_bStartDisabled; // 0x578        
         // metadata: MNetworkEnable
-        bool m_bIsEnabled; // 0x571        
-        [[maybe_unused]] std::uint8_t pad_0x572[0x1e];
+        bool m_bIsEnabled; // 0x579        
+        [[maybe_unused]] std::uint8_t pad_0x57a[0x1e];
         
         // Datamap fields:
         // bool InputEnable; // 0x0
@@ -55,5 +55,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_PlayerVisibility because it is not a standard-layout class
-    static_assert(sizeof(C_PlayerVisibility) == 0x590);
+    static_assert(sizeof(C_PlayerVisibility) == 0x598);
 };

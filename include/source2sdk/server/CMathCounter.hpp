@@ -15,28 +15,28 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5e0
+    // Size: 0x5e8
     // Has VTable
     #pragma pack(push, 1)
     class CMathCounter : public server::CLogicalEntity
     {
     public:
-        float m_flMin; // 0x4e0        
-        float m_flMax; // 0x4e4        
-        bool m_bHitMin; // 0x4e8        
-        bool m_bHitMax; // 0x4e9        
-        bool m_bDisabled; // 0x4ea        
-        [[maybe_unused]] std::uint8_t pad_0x4eb[0x5]; // 0x4eb
+        float m_flMin; // 0x4e8        
+        float m_flMax; // 0x4ec        
+        bool m_bHitMin; // 0x4f0        
+        bool m_bHitMax; // 0x4f1        
+        bool m_bDisabled; // 0x4f2        
+        [[maybe_unused]] std::uint8_t pad_0x4f3[0x5]; // 0x4f3
         // m_OutValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEntityOutputTemplate<float> m_OutValue;
-        char m_OutValue[0x28]; // 0x4f0        
+        char m_OutValue[0x28]; // 0x4f8        
         // m_OnGetValue has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEntityOutputTemplate<float> m_OnGetValue;
-        char m_OnGetValue[0x28]; // 0x518        
-        entity2::CEntityIOOutput m_OnHitMin; // 0x540        
-        entity2::CEntityIOOutput m_OnHitMax; // 0x568        
-        entity2::CEntityIOOutput m_OnChangedFromMin; // 0x590        
-        entity2::CEntityIOOutput m_OnChangedFromMax; // 0x5b8        
+        char m_OnGetValue[0x28]; // 0x520        
+        entity2::CEntityIOOutput m_OnHitMin; // 0x548        
+        entity2::CEntityIOOutput m_OnHitMax; // 0x570        
+        entity2::CEntityIOOutput m_OnChangedFromMin; // 0x598        
+        entity2::CEntityIOOutput m_OnChangedFromMax; // 0x5c0        
         
         // Datamap fields:
         // float InputAdd; // 0x0
@@ -55,5 +55,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMathCounter because it is not a standard-layout class
-    static_assert(sizeof(CMathCounter) == 0x5e0);
+    static_assert(sizeof(CMathCounter) == 0x5e8);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1650
+    // Size: 0x1660
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,19 +27,19 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CBaseModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x1550        
+        char m_DebuffModifier[0x10]; // 0x1560        
         // metadata: MPropertyStartGroup "Visuals"
         // m_PulseParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PulseParticle;
-        char m_PulseParticle[0xe0]; // 0x1560        
+        char m_PulseParticle[0xe0]; // 0x1570        
         // metadata: MPropertyStartGroup "+Psychic Pulse Properties"
-        float m_flCastEffectLifetime; // 0x1640        
-        float m_flConeAngle; // 0x1644        
-        float m_flConeHalfWidth; // 0x1648        
-        [[maybe_unused]] std::uint8_t pad_0x164c[0x4];
+        float m_flCastEffectLifetime; // 0x1650        
+        float m_flConeAngle; // 0x1654        
+        float m_flConeHalfWidth; // 0x1658        
+        [[maybe_unused]] std::uint8_t pad_0x165c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityPsychicPulseVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityPsychicPulseVData) == 0x1650);
+    static_assert(sizeof(CAbilityPsychicPulseVData) == 0x1660);
 };

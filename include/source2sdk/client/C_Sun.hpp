@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8a0
+    // Size: 0x8c0
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_clrRender"
@@ -42,56 +42,56 @@ namespace source2sdk::client
     class C_Sun : public client::C_BaseModelEntity
     {
     public:
-        client::ParticleIndex_t m_fxSSSunFlareEffectIndex; // 0x840        
-        client::ParticleIndex_t m_fxSunFlareEffectIndex; // 0x844        
-        float m_fdistNormalize; // 0x848        
-        Vector m_vSunPos; // 0x84c        
+        client::ParticleIndex_t m_fxSSSunFlareEffectIndex; // 0x860        
+        client::ParticleIndex_t m_fxSunFlareEffectIndex; // 0x864        
+        float m_fdistNormalize; // 0x868        
+        Vector m_vSunPos; // 0x86c        
         // metadata: MNetworkEnable
-        Vector m_vDirection; // 0x858        
-        [[maybe_unused]] std::uint8_t pad_0x864[0x4]; // 0x864
+        Vector m_vDirection; // 0x878        
+        [[maybe_unused]] std::uint8_t pad_0x884[0x4]; // 0x884
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszEffectName; // 0x868        
+        CUtlSymbolLarge m_iszEffectName; // 0x888        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSSEffectName; // 0x870        
+        CUtlSymbolLarge m_iszSSEffectName; // 0x890        
         // metadata: MNetworkEnable
-        Color m_clrOverlay; // 0x878        
+        Color m_clrOverlay; // 0x898        
         // metadata: MNetworkEnable
-        bool m_bOn; // 0x87c        
+        bool m_bOn; // 0x89c        
         // metadata: MNetworkEnable
-        bool m_bmaxColor; // 0x87d        
-        [[maybe_unused]] std::uint8_t pad_0x87e[0x2]; // 0x87e
-        // metadata: MNetworkEnable
-        // metadata: MNetworkBitCount "10"
-        float m_flSize; // 0x880        
+        bool m_bmaxColor; // 0x89d        
+        [[maybe_unused]] std::uint8_t pad_0x89e[0x2]; // 0x89e
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "10"
-        float m_flHazeScale; // 0x884        
+        float m_flSize; // 0x8a0        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkBitCount "10"
+        float m_flHazeScale; // 0x8a4        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "-360.000000"
         // metadata: MNetworkMaxValue "360.000000"
-        float m_flRotation; // 0x888        
+        float m_flRotation; // 0x8a8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnHDRScaleChanged"
-        float m_flHDRColorScale; // 0x88c        
+        float m_flHDRColorScale; // 0x8ac        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaHaze; // 0x890        
+        float m_flAlphaHaze; // 0x8b0        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaScale; // 0x894        
+        float m_flAlphaScale; // 0x8b4        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "2.000000"
-        float m_flAlphaHdr; // 0x898        
+        float m_flAlphaHdr; // 0x8b8        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "1.000000"
-        float m_flFarZScale; // 0x89c        
+        float m_flFarZScale; // 0x8bc        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Sun because it is not a standard-layout class
-    static_assert(sizeof(C_Sun) == 0x8a0);
+    static_assert(sizeof(C_Sun) == 0x8c0);
 };

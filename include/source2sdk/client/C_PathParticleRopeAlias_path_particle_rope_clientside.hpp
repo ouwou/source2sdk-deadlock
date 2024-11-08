@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x670
+    // Size: 0x678
     // Has VTable
     #pragma pack(push, 1)
     class C_PathParticleRopeAlias_path_particle_rope_clientside : public client::C_PathParticleRope
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_PathParticleRopeAlias_path_particle_rope_clientside) == 0x670);
+    static_assert(sizeof(C_PathParticleRopeAlias_path_particle_rope_clientside) == 0x678);
 };
