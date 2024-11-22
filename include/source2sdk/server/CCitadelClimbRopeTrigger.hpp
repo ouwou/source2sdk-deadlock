@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x998
+    // Size: 0x988
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelClimbRopeTrigger : public server::CBaseTrigger
     {
     public:
-        CUtlStringToken m_tModifier; // 0x990        
-        [[maybe_unused]] std::uint8_t pad_0x994[0x4];
+        CUtlStringToken m_tModifier; // 0x980        
+        [[maybe_unused]] std::uint8_t pad_0x984[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelClimbRopeTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelClimbRopeTrigger) == 0x998);
+    static_assert(sizeof(CCitadelClimbRopeTrigger) == 0x988);
 };

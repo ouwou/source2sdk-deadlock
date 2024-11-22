@@ -1,6 +1,6 @@
 #pragma once
-#include "source2sdk/animlib/CNmGraphDefinition__ChildGraphSlot_t.hpp"
 #include "source2sdk/animlib/CNmGraphDefinition__ExternalGraphSlot_t.hpp"
+#include "source2sdk/animlib/CNmGraphDefinition__ReferencedGraphSlot_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -36,9 +36,9 @@ namespace source2sdk::animlib
         // m_virtualParameterNodeIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<int16_t> m_virtualParameterNodeIndices;
         char m_virtualParameterNodeIndices[0x18]; // 0x50        
-        // m_childGraphSlots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlVector<animlib::CNmGraphDefinition__ChildGraphSlot_t> m_childGraphSlots;
-        char m_childGraphSlots[0x18]; // 0x68        
+        // m_referencedGraphSlots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlVector<animlib::CNmGraphDefinition__ReferencedGraphSlot_t> m_referencedGraphSlots;
+        char m_referencedGraphSlots[0x18]; // 0x68        
         // m_externalGraphSlots has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<animlib::CNmGraphDefinition__ExternalGraphSlot_t> m_externalGraphSlots;
         char m_externalGraphSlots[0x18]; // 0x80        
@@ -55,7 +55,7 @@ namespace source2sdk::animlib
     static_assert(offsetof(CNmGraphDefinition, m_controlParameterIDs) == 0x20);
     static_assert(offsetof(CNmGraphDefinition, m_virtualParameterIDs) == 0x38);
     static_assert(offsetof(CNmGraphDefinition, m_virtualParameterNodeIndices) == 0x50);
-    static_assert(offsetof(CNmGraphDefinition, m_childGraphSlots) == 0x68);
+    static_assert(offsetof(CNmGraphDefinition, m_referencedGraphSlots) == 0x68);
     static_assert(offsetof(CNmGraphDefinition, m_externalGraphSlots) == 0x80);
     static_assert(offsetof(CNmGraphDefinition, m_nodePaths) == 0x108);
     static_assert(offsetof(CNmGraphDefinition, m_runtimeVersionID) == 0x120);

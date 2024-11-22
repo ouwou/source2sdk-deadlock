@@ -14,16 +14,18 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x4
     // Standard-layout class: false
-    // Size: 0x20
+    // Size: 0x28
     // Has VTable
     // Has Trivial Destructor
     #pragma pack(push, 1)
     class CAI_MotorGroundAnimGraph_State_IdleTurn : public server::CAI_MotorGroundAnimGraph_State
     {
     public:
-        // No schema binary for binding
+        int32_t m_eType; // 0x20        
+        [[maybe_unused]] std::uint8_t pad_0x24[0x4];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_IdleTurn) == 0x20);
+    // Cannot assert offsets of fields in CAI_MotorGroundAnimGraph_State_IdleTurn because it is not a standard-layout class
+    static_assert(sizeof(CAI_MotorGroundAnimGraph_State_IdleTurn) == 0x28);
 };

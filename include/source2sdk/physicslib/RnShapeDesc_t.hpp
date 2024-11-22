@@ -28,6 +28,9 @@ namespace source2sdk::physicslib
         [[maybe_unused]] std::uint8_t pad_0x12[0x2]; // 0x12
         uint32_t m_nToolMaterialHash; // 0x14        
         CGlobalSymbol m_sHitGroupName; // 0x18        
+        
+        // Static fields:
+        static CGlobalSymbol &Get_DefaultHitgroupName() {return *reinterpret_cast<CGlobalSymbol*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("RnShapeDesc_t")->GetStaticFields()[0]->m_pInstance);};
     };
     #pragma pack(pop)
     

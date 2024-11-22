@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xf8
+    // Size: 0x130
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_AmmoScavenger : public server::CCitadelModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc0[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_AmmoScavenger) == 0xf8);
+    static_assert(sizeof(CCitadel_Modifier_AmmoScavenger) == 0x130);
 };

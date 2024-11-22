@@ -21,7 +21,7 @@ namespace source2sdk::pulse_runtime_lib
     {
     public:
         CBufferString strCellDesc; // 0x0        
-        CUtlSymbolLarge strBindingName; // 0x10        
+        CGlobalSymbol strBindingName; // 0x10        
     };
     #pragma pack(pop)
     

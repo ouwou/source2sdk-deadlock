@@ -149,7 +149,8 @@ namespace source2sdk::server
         float m_fFireDuration; // 0xba0        
         [[maybe_unused]] std::uint8_t pad_0xba4[0x1]; // 0xba4
         bool m_bFireOnEmpty; // 0xba5        
-        [[maybe_unused]] std::uint8_t pad_0xba6[0x2]; // 0xba6
+        bool m_bHasReleasedForSemiAuto; // 0xba6        
+        [[maybe_unused]] std::uint8_t pad_0xba7[0x1]; // 0xba7
         entity2::GameTime_t m_flNextDisarmSound; // 0xba8        
         int32_t m_nClipSizeBeforeSwap; // 0xbac        
     };

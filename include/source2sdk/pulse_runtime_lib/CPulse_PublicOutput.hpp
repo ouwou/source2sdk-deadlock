@@ -21,7 +21,7 @@ namespace source2sdk::pulse_runtime_lib
     class CPulse_PublicOutput
     {
     public:
-        CUtlSymbolLarge m_Name; // 0x0        
+        CGlobalSymbol m_Name; // 0x0        
         CUtlString m_Description; // 0x8        
         // m_Args has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_Args;

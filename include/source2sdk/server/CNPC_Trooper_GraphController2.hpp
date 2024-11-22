@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x278
+    // Size: 0x260
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_Trooper_GraphController2 : public client::CAnimGraphControllerBase
@@ -74,15 +74,12 @@ namespace source2sdk::server
         // m_bZiplining has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamOptionalRef<bool> m_bZiplining;
         char m_bZiplining[0x18]; // 0x218        
-        // m_bMedicHeal has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CAnimGraph2ParamOptionalRef<bool> m_bMedicHeal;
-        char m_bMedicHeal[0x18]; // 0x230        
         // m_TROOPER_MovementState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamOptionalRef<CGlobalSymbol> m_TROOPER_MovementState;
-        char m_TROOPER_MovementState[0x18]; // 0x248        
+        char m_TROOPER_MovementState[0x18]; // 0x230        
         // m_eTurn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamOptionalRef<CGlobalSymbol> m_eTurn;
-        char m_eTurn[0x18]; // 0x260        
+        char m_eTurn[0x18]; // 0x248        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_Trooper_GraphController2")->GetStaticFields()[0]->m_pInstance);};
@@ -91,5 +88,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Trooper_GraphController2 because it is not a standard-layout class
-    static_assert(sizeof(CNPC_Trooper_GraphController2) == 0x278);
+    static_assert(sizeof(CNPC_Trooper_GraphController2) == 0x260);
 };

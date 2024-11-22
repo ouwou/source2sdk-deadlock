@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbe8
+    // Size: 0xbe0
     // Has VTable
     #pragma pack(push, 1)
     class CRagdollPropAlias_physics_prop_ragdoll : public server::CRagdollProp
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CRagdollPropAlias_physics_prop_ragdoll) == 0xbe8);
+    static_assert(sizeof(CRagdollPropAlias_physics_prop_ragdoll) == 0xbe0);
 };

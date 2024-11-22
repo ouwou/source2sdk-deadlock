@@ -37,9 +37,8 @@ namespace source2sdk::server
         // m_vecPathNodes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CMoverPathNode>> m_vecPathNodes;
         char m_vecPathNodes[0x18]; // 0x550        
-        float m_flPathLength; // 0x568        
-        bool m_bClosedLoop; // 0x56c        
-        [[maybe_unused]] std::uint8_t pad_0x56d[0x53];
+        bool m_bClosedLoop; // 0x568        
+        [[maybe_unused]] std::uint8_t pad_0x569[0x57];
     };
     #pragma pack(pop)
     

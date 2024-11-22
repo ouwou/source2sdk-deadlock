@@ -8,11 +8,12 @@
 
 namespace source2sdk::server
 {
-    // Enumerator count: 2
+    // Enumerator count: 3
     // Alignment: 1
     // Size: 0x1
     enum class AI_Motor_DefaultFacing_t : std::uint8_t
     {
+        eInvalid = 255,
         eLookTarget = 0,
         eForward = 1,
     };

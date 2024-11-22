@@ -22,7 +22,8 @@ namespace source2sdk::server
     public:
         bool m_bActivated; // 0xc0        
         bool m_bSpokeAboutToExpire; // 0xc1        
-        [[maybe_unused]] std::uint8_t pad_0xc2[0x6];
+        [[maybe_unused]] std::uint8_t pad_0xc2[0x2]; // 0xc2
+        int32_t m_iMessageCount; // 0xc4        
     };
     #pragma pack(pop)
     

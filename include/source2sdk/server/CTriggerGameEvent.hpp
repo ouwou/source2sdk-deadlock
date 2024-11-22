@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a8
+    // Size: 0x998
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CUtlString m_strStartTouchEventName"
@@ -25,11 +25,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        CUtlString m_strStartTouchEventName; // 0x990        
+        CUtlString m_strStartTouchEventName; // 0x980        
         // metadata: MNetworkEnable
-        CUtlString m_strEndTouchEventName; // 0x998        
+        CUtlString m_strEndTouchEventName; // 0x988        
         // metadata: MNetworkEnable
-        CUtlString m_strTriggerID; // 0x9a0        
+        CUtlString m_strTriggerID; // 0x990        
         
         // Datamap fields:
         // CUtlSymbolLarge InputSetStartTouchEvent; // 0x0
@@ -38,5 +38,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerGameEvent because it is not a standard-layout class
-    static_assert(sizeof(CTriggerGameEvent) == 0x9a8);
+    static_assert(sizeof(CTriggerGameEvent) == 0x998);
 };

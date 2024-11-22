@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa28
+    // Size: 0xa18
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -29,19 +29,19 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x9a0        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x990        
         // metadata: MNetworkEnable
-        Vector m_vExitOrigin; // 0x9b8        
-        [[maybe_unused]] std::uint8_t pad_0x9c4[0x2c]; // 0x9c4
-        CUtlSymbolLarge m_strExitPoint; // 0x9f0        
-        entity2::CEntityIOOutput m_OnTeleport; // 0x9f8        
-        CUtlSymbolLarge m_strPropModel; // 0xa20        
+        Vector m_vExitOrigin; // 0x9a8        
+        [[maybe_unused]] std::uint8_t pad_0x9b4[0x2c]; // 0x9b4
+        CUtlSymbolLarge m_strExitPoint; // 0x9e0        
+        entity2::CEntityIOOutput m_OnTeleport; // 0x9e8        
+        CUtlSymbolLarge m_strPropModel; // 0xa10        
         
         // Datamap fields:
-        // void m_pEntExit; // 0x9c8
+        // void m_pEntExit; // 0x9b8
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelTeleportTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelTeleportTrigger) == 0xa28);
+    static_assert(sizeof(CCitadelTeleportTrigger) == 0xa18);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd0
+    // Size: 0xd8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -47,9 +47,11 @@ namespace source2sdk::animgraphlib
         bool m_bSyncCycles; // 0xcd        
         bool m_bLoop; // 0xce        
         bool m_bLockWhenWaning; // 0xcf        
+        bool m_bIsAngle; // 0xd0        
+        [[maybe_unused]] std::uint8_t pad_0xd1[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBlendUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CBlendUpdateNode) == 0xd0);
+    static_assert(sizeof(CBlendUpdateNode) == 0xd8);
 };

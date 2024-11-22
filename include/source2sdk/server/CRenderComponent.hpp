@@ -23,7 +23,6 @@ namespace source2sdk::server
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x08[0x8]; // 0x8
-        // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x10        
         [[maybe_unused]] std::uint8_t pad_0x38[0x18]; // 0x38
         bool m_bIsRenderingWithViewModels; // 0x50        

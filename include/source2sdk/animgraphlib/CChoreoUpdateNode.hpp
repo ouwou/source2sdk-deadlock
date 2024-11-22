@@ -14,7 +14,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x70
+    // Size: 0x78
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,9 +22,9 @@ namespace source2sdk::animgraphlib
     class CChoreoUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x70[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CChoreoUpdateNode) == 0x70);
+    static_assert(sizeof(CChoreoUpdateNode) == 0x78);
 };

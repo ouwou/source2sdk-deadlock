@@ -29,8 +29,8 @@ namespace source2sdk::pulse_runtime_lib
     class CPulseCell_Step_CallExternalMethod : public pulse_runtime_lib::CPulseCell_BaseYieldingInflow
     {
     public:
-        CUtlSymbolLarge m_MethodName; // 0x48        
-        CUtlSymbolLarge m_GameBlackboard; // 0x50        
+        CGlobalSymbol m_MethodName; // 0x48        
+        CGlobalSymbol m_GameBlackboard; // 0x50        
         // m_ExpectedArgs has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlLeanVector<pulse_runtime_lib::CPulseRuntimeMethodArg> m_ExpectedArgs;
         char m_ExpectedArgs[0x10]; // 0x58        

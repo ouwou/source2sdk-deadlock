@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb00
+    // Size: 0xc68
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_Boss_Tier1_GraphController : public server::CNPC_Trooper_GraphController
@@ -22,13 +22,13 @@ namespace source2sdk::server
     public:
         // m_pszActivity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamRef<char*> m_pszActivity;
-        char m_pszActivity[0x28]; // 0xa90        
+        char m_pszActivity[0x28]; // 0xbf8        
         // m_pszLaneSide has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamRef<char*> m_pszLaneSide;
-        char m_pszLaneSide[0x28]; // 0xab8        
+        char m_pszLaneSide[0x28]; // 0xc20        
         // m_bShieldMode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamRef<bool> m_bShieldMode;
-        char m_bShieldMode[0x20]; // 0xae0        
+        char m_bShieldMode[0x20]; // 0xc48        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_Boss_Tier1_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -37,5 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_Boss_Tier1_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CNPC_Boss_Tier1_GraphController) == 0xb00);
+    static_assert(sizeof(CNPC_Boss_Tier1_GraphController) == 0xc68);
 };

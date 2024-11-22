@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc00
+    // Size: 0xb90
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_ArmorUpgrade_RegeneratingBulletShield : public server::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb20[0xe0];
+        [[maybe_unused]] std::uint8_t pad_0xb20[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_ArmorUpgrade_RegeneratingBulletShield) == 0xc00);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_RegeneratingBulletShield) == 0xb90);
 };

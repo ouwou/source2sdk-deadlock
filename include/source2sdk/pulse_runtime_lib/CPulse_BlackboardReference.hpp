@@ -25,7 +25,7 @@ namespace source2sdk::pulse_runtime_lib
         // m_hBlackboardResource has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIPulseGraphDef>> m_hBlackboardResource;
         char m_hBlackboardResource[0xe0]; // 0x0        
-        CUtlSymbolLarge m_BlackboardResource; // 0xe0        
+        CGlobalSymbol m_BlackboardResource; // 0xe0        
         pulse_runtime_lib::PulseDocNodeID_t m_nNodeID; // 0xe8        
         [[maybe_unused]] std::uint8_t pad_0xec[0x4]; // 0xec
         CGlobalSymbol m_NodeName; // 0xf0        

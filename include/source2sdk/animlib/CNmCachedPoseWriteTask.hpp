@@ -14,16 +14,16 @@ namespace source2sdk::animlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x40
+    // Size: 0x38
     // Has VTable
     #pragma pack(push, 1)
     class CNmCachedPoseWriteTask : public animlib::CNmTask
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x30[0x10];
+        [[maybe_unused]] std::uint8_t pad_0x30[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNmCachedPoseWriteTask) == 0x40);
+    static_assert(sizeof(CNmCachedPoseWriteTask) == 0x38);
 };

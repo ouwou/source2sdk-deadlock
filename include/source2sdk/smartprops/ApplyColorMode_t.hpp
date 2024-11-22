@@ -13,7 +13,7 @@ namespace source2sdk::smartprops
     // Size: 0x4
     enum class ApplyColorMode_t : std::uint32_t
     {
-        // MPropertyFriendlyName "Mulitply object tint"
+        // MPropertyFriendlyName "Multiply object tint"
         // MPropertyDescription "Multiply with the object level color tint and replace the current color value."
         MULTIPLY_OBJECT = 0x0,
         // MPropertyFriendlyName "Multiply current tint"

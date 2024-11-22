@@ -32,7 +32,6 @@ namespace source2sdk::entity2
         [[maybe_unused]] std::uint8_t pad_0x34[0x4]; // 0x34
         WorldGroupId_t m_worldGroupId; // 0x38        
         uint32_t m_fDataObjectTypes; // 0x3c        
-        // metadata: MNetworkChangeAccessorFieldPathIndex
         networksystem::ChangeAccessorFieldPathIndex_t m_PathIndex; // 0x40        
         [[maybe_unused]] std::uint8_t pad_0x44[0x14]; // 0x44
         entity2::CEntityIdentity* m_pPrev; // 0x58        

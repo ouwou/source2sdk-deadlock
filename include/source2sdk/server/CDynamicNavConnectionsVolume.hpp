@@ -15,21 +15,21 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9e0
+    // Size: 0x9d0
     // Has VTable
     #pragma pack(push, 1)
     class CDynamicNavConnectionsVolume : public server::CTriggerMultiple
     {
     public:
-        CUtlSymbolLarge m_iszConnectionTarget; // 0x9b8        
+        CUtlSymbolLarge m_iszConnectionTarget; // 0x9a8        
         // m_vecConnections has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::DynamicVolumeDef_t> m_vecConnections;
-        char m_vecConnections[0x18]; // 0x9c0        
-        bool m_bConnectionsEnabled; // 0x9d8        
-        [[maybe_unused]] std::uint8_t pad_0x9d9[0x7];
+        char m_vecConnections[0x18]; // 0x9b0        
+        bool m_bConnectionsEnabled; // 0x9c8        
+        [[maybe_unused]] std::uint8_t pad_0x9c9[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CDynamicNavConnectionsVolume because it is not a standard-layout class
-    static_assert(sizeof(CDynamicNavConnectionsVolume) == 0x9e0);
+    static_assert(sizeof(CDynamicNavConnectionsVolume) == 0x9d0);
 };

@@ -67,7 +67,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xee0
+    // Size: 0xed8
     // Has VTable
     // 
     // static metadata: MNetworkUserGroupProxy "C_BasePlayerPawn"
@@ -108,71 +108,71 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        client::CPlayer_WeaponServices* m_pWeaponServices; // 0xd28        
+        client::CPlayer_WeaponServices* m_pWeaponServices; // 0xd20        
         // metadata: MNetworkEnable
-        client::CPlayer_ItemServices* m_pItemServices; // 0xd30        
+        client::CPlayer_ItemServices* m_pItemServices; // 0xd28        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        client::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xd38        
+        client::CPlayer_AutoaimServices* m_pAutoaimServices; // 0xd30        
         // metadata: MNetworkEnable
-        client::CPlayer_ObserverServices* m_pObserverServices; // 0xd40        
+        client::CPlayer_ObserverServices* m_pObserverServices; // 0xd38        
         // metadata: MNetworkEnable
-        client::CPlayer_WaterServices* m_pWaterServices; // 0xd48        
+        client::CPlayer_WaterServices* m_pWaterServices; // 0xd40        
         // metadata: MNetworkEnable
-        client::CPlayer_UseServices* m_pUseServices; // 0xd50        
+        client::CPlayer_UseServices* m_pUseServices; // 0xd48        
         // metadata: MNetworkEnable
-        client::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xd58        
+        client::CPlayer_FlashlightServices* m_pFlashlightServices; // 0xd50        
         // metadata: MNetworkEnable
-        client::CPlayer_CameraServices* m_pCameraServices; // 0xd60        
+        client::CPlayer_CameraServices* m_pCameraServices; // 0xd58        
         // metadata: MNetworkEnable
-        client::CPlayer_MovementServices* m_pMovementServices; // 0xd68        
-        [[maybe_unused]] std::uint8_t pad_0xd70[0x8]; // 0xd70
+        client::CPlayer_MovementServices* m_pMovementServices; // 0xd60        
+        [[maybe_unused]] std::uint8_t pad_0xd68[0x8]; // 0xd68
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
         // m_ServerViewAngleChanges has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::ViewAngleServerChange_t> m_ServerViewAngleChanges;
-        char m_ServerViewAngleChanges[0x68]; // 0xd78        
-        QAngle v_angle; // 0xde0        
-        QAngle v_anglePrevious; // 0xdec        
+        char m_ServerViewAngleChanges[0x68]; // 0xd70        
+        QAngle v_angle; // 0xdd8        
+        QAngle v_anglePrevious; // 0xde4        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        uint32_t m_iHideHUD; // 0xdf8        
-        [[maybe_unused]] std::uint8_t pad_0xdfc[0x4]; // 0xdfc
+        uint32_t m_iHideHUD; // 0xdf0        
+        [[maybe_unused]] std::uint8_t pad_0xdf4[0x4]; // 0xdf4
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        client::sky3dparams_t m_skybox3d; // 0xe00        
+        client::sky3dparams_t m_skybox3d; // 0xdf8        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flDeathTime; // 0xe90        
-        Vector m_vecPredictionError; // 0xe94        
-        entity2::GameTime_t m_flPredictionErrorTime; // 0xea0        
-        Vector m_vecLastCameraSetupLocalOrigin; // 0xea4        
-        entity2::GameTime_t m_flLastCameraSetupTime; // 0xeb0        
-        float m_flFOVSensitivityAdjust; // 0xeb4        
-        float m_flMouseSensitivity; // 0xeb8        
-        Vector m_vOldOrigin; // 0xebc        
-        float m_flOldSimulationTime; // 0xec8        
-        int32_t m_nLastExecutedCommandNumber; // 0xecc        
-        int32_t m_nLastExecutedCommandTick; // 0xed0        
+        entity2::GameTime_t m_flDeathTime; // 0xe88        
+        Vector m_vecPredictionError; // 0xe8c        
+        entity2::GameTime_t m_flPredictionErrorTime; // 0xe98        
+        Vector m_vecLastCameraSetupLocalOrigin; // 0xe9c        
+        entity2::GameTime_t m_flLastCameraSetupTime; // 0xea8        
+        float m_flFOVSensitivityAdjust; // 0xeac        
+        float m_flMouseSensitivity; // 0xeb0        
+        Vector m_vOldOrigin; // 0xeb4        
+        float m_flOldSimulationTime; // 0xec0        
+        int32_t m_nLastExecutedCommandNumber; // 0xec4        
+        int32_t m_nLastExecutedCommandTick; // 0xec8        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnControllerChanged"
         // m_hController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::CBasePlayerController> m_hController;
-        char m_hController[0x4]; // 0xed4        
+        char m_hController[0x4]; // 0xecc        
         // metadata: MNetworkEnable
         // m_hDefaultController has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::CBasePlayerController> m_hDefaultController;
-        char m_hDefaultController[0x4]; // 0xed8        
-        bool m_bIsSwappingToPredictableController; // 0xedc        
-        [[maybe_unused]] std::uint8_t pad_0xedd[0x3];
+        char m_hDefaultController[0x4]; // 0xed0        
+        bool m_bIsSwappingToPredictableController; // 0xed4        
+        [[maybe_unused]] std::uint8_t pad_0xed5[0x3];
         
         // Static fields:
         static uint32_t &Get_sm_nHighestConsumedServerViewAngleChangeIndex() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_BasePlayerPawn")->GetStaticFields()[0]->m_pInstance);};
         
         // Datamap fields:
-        // void m_hPawnListEntry; // 0xede
+        // void m_hPawnListEntry; // 0xed6
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BasePlayerPawn because it is not a standard-layout class
-    static_assert(sizeof(C_BasePlayerPawn) == 0xee0);
+    static_assert(sizeof(C_BasePlayerPawn) == 0xed8);
 };

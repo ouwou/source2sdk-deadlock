@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1708
+    // Size: 0x1830
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,21 +23,21 @@ namespace source2sdk::client
     class CNPC_TrooperBarrackBossVData : public client::CNPC_TrooperBossVData
     {
     public:
-        float m_flBackDoorProtectionRange; // 0x16d0        
-        [[maybe_unused]] std::uint8_t pad_0x16d4[0x4]; // 0x16d4
+        float m_flBackDoorProtectionRange; // 0x17f8        
+        [[maybe_unused]] std::uint8_t pad_0x17fc[0x4]; // 0x17fc
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BackdoorProtectionModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BackdoorProtectionModifier;
-        char m_BackdoorProtectionModifier[0x10]; // 0x16d8        
+        char m_BackdoorProtectionModifier[0x10]; // 0x1800        
         // m_BackdoorBulletResistModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BackdoorBulletResistModifier;
-        char m_BackdoorBulletResistModifier[0x10]; // 0x16e8        
+        char m_BackdoorBulletResistModifier[0x10]; // 0x1810        
         // m_ObjectiveRegen has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ObjectiveRegen;
-        char m_ObjectiveRegen[0x10]; // 0x16f8        
+        char m_ObjectiveRegen[0x10]; // 0x1820        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperBarrackBossVData because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperBarrackBossVData) == 0x1708);
+    static_assert(sizeof(CNPC_TrooperBarrackBossVData) == 0x1830);
 };

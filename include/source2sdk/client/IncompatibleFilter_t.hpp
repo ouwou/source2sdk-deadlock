@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x4
     // Alignment: 0x4
     // Standard-layout class: true
-    // Size: 0x10
+    // Size: 0x14
     // Has Trivial Destructor
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,16 +26,16 @@ namespace source2sdk::client
     public:
         // m_AbilityBehaviorsBits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CBitVecEnum<client::EAbilityBehavior_t> m_AbilityBehaviorsBits;
-        char m_AbilityBehaviorsBits[0x8]; // 0x0        
-        client::EAbilityActivation_t m_eAbilityActivation; // 0x8        
-        client::EAbilityType_t m_eIncompatibleAbilityType; // 0xc        
-        [[maybe_unused]] std::uint8_t pad_0x0d[0x3];
+        char m_AbilityBehaviorsBits[0xc]; // 0x0        
+        client::EAbilityActivation_t m_eAbilityActivation; // 0xc        
+        client::EAbilityType_t m_eIncompatibleAbilityType; // 0x10        
+        [[maybe_unused]] std::uint8_t pad_0x11[0x3];
     };
     #pragma pack(pop)
     
     static_assert(offsetof(IncompatibleFilter_t, m_AbilityBehaviorsBits) == 0x0);
-    static_assert(offsetof(IncompatibleFilter_t, m_eAbilityActivation) == 0x8);
-    static_assert(offsetof(IncompatibleFilter_t, m_eIncompatibleAbilityType) == 0xc);
+    static_assert(offsetof(IncompatibleFilter_t, m_eAbilityActivation) == 0xc);
+    static_assert(offsetof(IncompatibleFilter_t, m_eIncompatibleAbilityType) == 0x10);
     
-    static_assert(sizeof(IncompatibleFilter_t) == 0x10);
+    static_assert(sizeof(IncompatibleFilter_t) == 0x14);
 };

@@ -4,7 +4,7 @@
 #include "source2sdk/client/ScriptedOnDeath_t.hpp"
 #include "source2sdk/entity2/CEntityIOOutput.hpp"
 #include "source2sdk/entity2/GameTime_t.hpp"
-#include "source2sdk/modellib/MovementGait_t.hpp"
+#include "source2sdk/modellib/SharedMovementGait_t.hpp"
 #include "source2sdk/server/CBaseEntity.hpp"
 #include "source2sdk/server/ScriptedConflictResponse_t.hpp"
 #include "source2sdk/source2gen.hpp"
@@ -46,7 +46,7 @@ namespace source2sdk::server
         CUtlSymbolLarge m_iszEntity; // 0x518        
         CUtlSymbolLarge m_iszSyncGroup; // 0x520        
         client::ScriptedMoveTo_t m_nMoveTo; // 0x528        
-        modellib::MovementGait_t m_nMoveToGait; // 0x52c        
+        modellib::SharedMovementGait_t m_nMoveToGait; // 0x52c        
         [[maybe_unused]] std::uint8_t pad_0x52d[0x3]; // 0x52d
         client::ScriptedHeldWeaponBehavior_t m_nHeldWeaponBehavior; // 0x530        
         bool m_bIsPlayingPreIdle; // 0x534        

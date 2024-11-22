@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x90
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,18 +23,18 @@ namespace source2sdk::animgraphlib
     class CTurnHelperUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x4]; // 0x68
-        animgraphlib::AnimValueSource m_facingTarget; // 0x6c        
-        float m_turnStartTimeOffset; // 0x70        
-        float m_turnDuration; // 0x74        
-        bool m_bMatchChildDuration; // 0x78        
-        [[maybe_unused]] std::uint8_t pad_0x79[0x3]; // 0x79
-        float m_manualTurnOffset; // 0x7c        
-        bool m_bUseManualTurnOffset; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x81[0x7];
+        [[maybe_unused]] std::uint8_t pad_0x70[0x4]; // 0x70
+        animgraphlib::AnimValueSource m_facingTarget; // 0x74        
+        float m_turnStartTimeOffset; // 0x78        
+        float m_turnDuration; // 0x7c        
+        bool m_bMatchChildDuration; // 0x80        
+        [[maybe_unused]] std::uint8_t pad_0x81[0x3]; // 0x81
+        float m_manualTurnOffset; // 0x84        
+        bool m_bUseManualTurnOffset; // 0x88        
+        [[maybe_unused]] std::uint8_t pad_0x89[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTurnHelperUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CTurnHelperUpdateNode) == 0x88);
+    static_assert(sizeof(CTurnHelperUpdateNode) == 0x90);
 };

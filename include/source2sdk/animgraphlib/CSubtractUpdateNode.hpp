@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x98
+    // Size: 0xa0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,15 +23,15 @@ namespace source2sdk::animgraphlib
     class CSubtractUpdateNode : public animgraphlib::CBinaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x88[0x4]; // 0x88
-        animgraphlib::BinaryNodeChildOption m_footMotionTiming; // 0x8c        
-        bool m_bApplyToFootMotion; // 0x90        
-        bool m_bApplyChannelsSeparately; // 0x91        
-        bool m_bUseModelSpace; // 0x92        
-        [[maybe_unused]] std::uint8_t pad_0x93[0x5];
+        [[maybe_unused]] std::uint8_t pad_0x90[0x4]; // 0x90
+        animgraphlib::BinaryNodeChildOption m_footMotionTiming; // 0x94        
+        bool m_bApplyToFootMotion; // 0x98        
+        bool m_bApplyChannelsSeparately; // 0x99        
+        bool m_bUseModelSpace; // 0x9a        
+        [[maybe_unused]] std::uint8_t pad_0x9b[0x5];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSubtractUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CSubtractUpdateNode) == 0x98);
+    static_assert(sizeof(CSubtractUpdateNode) == 0xa0);
 };

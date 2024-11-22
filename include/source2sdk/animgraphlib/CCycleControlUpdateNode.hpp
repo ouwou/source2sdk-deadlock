@@ -16,7 +16,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x70
+    // Size: 0x78
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,12 +24,12 @@ namespace source2sdk::animgraphlib
     class CCycleControlUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        animgraphlib::AnimValueSource m_valueSource; // 0x68        
-        animgraphlib::CAnimParamHandle m_paramIndex; // 0x6c        
-        [[maybe_unused]] std::uint8_t pad_0x6e[0x2];
+        animgraphlib::AnimValueSource m_valueSource; // 0x70        
+        animgraphlib::CAnimParamHandle m_paramIndex; // 0x74        
+        [[maybe_unused]] std::uint8_t pad_0x76[0x2];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCycleControlUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CCycleControlUpdateNode) == 0x70);
+    static_assert(sizeof(CCycleControlUpdateNode) == 0x78);
 };

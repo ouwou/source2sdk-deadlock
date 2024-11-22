@@ -23,7 +23,6 @@ namespace source2sdk::animgraphlib
     class CFollowAttachmentUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x8]; // 0x68
         animgraphlib::FollowAttachmentSettings_t m_opFixedData; // 0x70        
         [[maybe_unused]] std::uint8_t pad_0x100[0x10];
     };

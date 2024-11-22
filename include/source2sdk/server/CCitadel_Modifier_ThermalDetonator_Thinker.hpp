@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x290
+    // Size: 0x1b0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_ThermalDetonator_Thinker : public server::CCitadelModifierAura
@@ -23,10 +23,10 @@ namespace source2sdk::server
         Vector m_vecOrigin; // 0xe0        
         Vector m_vecWorldSpaceMins; // 0xec        
         Vector m_vecWorldSpaceMaxs; // 0xf8        
-        [[maybe_unused]] std::uint8_t pad_0x104[0x18c];
+        [[maybe_unused]] std::uint8_t pad_0x104[0xac];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ThermalDetonator_Thinker because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ThermalDetonator_Thinker) == 0x290);
+    static_assert(sizeof(CCitadel_Modifier_ThermalDetonator_Thinker) == 0x1b0);
 };

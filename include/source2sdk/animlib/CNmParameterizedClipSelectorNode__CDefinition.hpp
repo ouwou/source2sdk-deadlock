@@ -14,7 +14,7 @@ namespace source2sdk::animlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x30
+    // Size: 0x40
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,11 +25,14 @@ namespace source2sdk::animlib
         // m_optionNodeIndices has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlLeanVectorFixedGrowable<int16_t,5> m_optionNodeIndices;
         char m_optionNodeIndices[0x18]; // 0x10        
-        int16_t m_parameterNodeIdx; // 0x28        
-        [[maybe_unused]] std::uint8_t pad_0x2a[0x6];
+        // m_optionWeights has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CUtlLeanVectorFixedGrowable<uint8_t,5> m_optionWeights;
+        char m_optionWeights[0x10]; // 0x28        
+        int16_t m_parameterNodeIdx; // 0x38        
+        [[maybe_unused]] std::uint8_t pad_0x3a[0x6];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNmParameterizedClipSelectorNode::CDefinition because it is not a standard-layout class
-    static_assert(sizeof(CNmParameterizedClipSelectorNode__CDefinition) == 0x30);
+    static_assert(sizeof(CNmParameterizedClipSelectorNode__CDefinition) == 0x40);
 };

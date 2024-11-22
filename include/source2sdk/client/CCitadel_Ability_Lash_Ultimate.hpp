@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xf60
+    // Size: 0xf98
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "ELashGrappleState m_EGrappleState"
@@ -37,10 +37,10 @@ namespace source2sdk::client
         entity2::GameTime_t m_flNextStateTime; // 0xe38        
         // metadata: MNetworkEnable
         entity2::GameTime_t m_flBoostEndTime; // 0xe3c        
-        [[maybe_unused]] std::uint8_t pad_0xe40[0x120];
+        [[maybe_unused]] std::uint8_t pad_0xe40[0x158];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Lash_Ultimate because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Lash_Ultimate) == 0xf60);
+    static_assert(sizeof(CCitadel_Ability_Lash_Ultimate) == 0xf98);
 };

@@ -23,7 +23,7 @@ namespace source2sdk::pulse_runtime_lib
     class CPulse_CallInfo
     {
     public:
-        CUtlSymbolLarge m_PortName; // 0x0        
+        CGlobalSymbol m_PortName; // 0x0        
         pulse_runtime_lib::PulseDocNodeID_t m_nEditorNodeID; // 0x8        
         [[maybe_unused]] std::uint8_t pad_0x0c[0x4]; // 0xc
         pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; // 0x10        

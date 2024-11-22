@@ -21,7 +21,7 @@ namespace source2sdk::pulse_runtime_lib
     class CPulse_Variable
     {
     public:
-        CUtlSymbolLarge m_Name; // 0x0        
+        CGlobalSymbol m_Name; // 0x0        
         CUtlString m_Description; // 0x8        
         CPulseValueFullType m_Type; // 0x10        
         KeyValues3 m_DefaultValue; // 0x20        

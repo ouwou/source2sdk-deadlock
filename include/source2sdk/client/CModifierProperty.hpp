@@ -33,20 +33,20 @@ namespace source2sdk::client
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x8]; // 0x0
-        // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x8        
         // m_hOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hOwner;
         char m_hOwner[0x4]; // 0x30        
-        [[maybe_unused]] std::uint8_t pad_0x34[0x164]; // 0x34
-        uint8_t m_nProviderVisitedFlags; // 0x198        
-        bool m_bModifierStatesDirty; // 0x199        
-        bool m_bPredictedOwner; // 0x19a        
-        int8_t m_iLockRefCount; // 0x19b        
-        client::ModifierPropRuntimeHandle_t m_hHandle; // 0x19c        
-        [[maybe_unused]] std::uint8_t pad_0x19e[0x2]; // 0x19e
-        uint32_t m_nBroadcastEventListenerMask; // 0x1a0        
-        [[maybe_unused]] std::uint8_t pad_0x1a4[0xc]; // 0x1a4
+        [[maybe_unused]] std::uint8_t pad_0x34[0x167]; // 0x34
+        uint8_t m_nProviderVisitedFlags; // 0x19b        
+        bool m_bModifierStatesDirty; // 0x19c        
+        bool m_bPredictedOwner; // 0x19d        
+        int8_t m_iLockRefCount; // 0x19e        
+        [[maybe_unused]] std::uint8_t pad_0x19f[0x1]; // 0x19f
+        client::ModifierPropRuntimeHandle_t m_hHandle; // 0x1a0        
+        [[maybe_unused]] std::uint8_t pad_0x1a2[0x2]; // 0x1a2
+        uint32_t m_nBroadcastEventListenerMask; // 0x1a4        
+        [[maybe_unused]] std::uint8_t pad_0x1a8[0x8]; // 0x1a8
         // metadata: MNetworkEnable
         // m_vecProviders has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_NetworkUtlVectorBase<CHandle<client::C_BaseEntity>> m_vecProviders;
@@ -72,12 +72,12 @@ namespace source2sdk::client
     
     static_assert(offsetof(CModifierProperty, __m_pChainEntity) == 0x8);
     static_assert(offsetof(CModifierProperty, m_hOwner) == 0x30);
-    static_assert(offsetof(CModifierProperty, m_nProviderVisitedFlags) == 0x198);
-    static_assert(offsetof(CModifierProperty, m_bModifierStatesDirty) == 0x199);
-    static_assert(offsetof(CModifierProperty, m_bPredictedOwner) == 0x19a);
-    static_assert(offsetof(CModifierProperty, m_iLockRefCount) == 0x19b);
-    static_assert(offsetof(CModifierProperty, m_hHandle) == 0x19c);
-    static_assert(offsetof(CModifierProperty, m_nBroadcastEventListenerMask) == 0x1a0);
+    static_assert(offsetof(CModifierProperty, m_nProviderVisitedFlags) == 0x19b);
+    static_assert(offsetof(CModifierProperty, m_bModifierStatesDirty) == 0x19c);
+    static_assert(offsetof(CModifierProperty, m_bPredictedOwner) == 0x19d);
+    static_assert(offsetof(CModifierProperty, m_iLockRefCount) == 0x19e);
+    static_assert(offsetof(CModifierProperty, m_hHandle) == 0x1a0);
+    static_assert(offsetof(CModifierProperty, m_nBroadcastEventListenerMask) == 0x1a4);
     static_assert(offsetof(CModifierProperty, m_vecProviders) == 0x1b0);
     static_assert(offsetof(CModifierProperty, m_nDisabledGroups) == 0x1c8);
     static_assert(offsetof(CModifierProperty, m_bvEnabledStateMask) == 0x1cc);

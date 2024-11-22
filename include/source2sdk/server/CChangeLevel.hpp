@@ -15,20 +15,20 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9d0
+    // Size: 0x9c0
     // Has VTable
     #pragma pack(push, 1)
     class CChangeLevel : public server::CBaseTrigger
     {
     public:
-        CUtlString m_sMapName; // 0x990        
-        CUtlString m_sLandmarkName; // 0x998        
-        entity2::CEntityIOOutput m_OnChangeLevel; // 0x9a0        
-        bool m_bTouched; // 0x9c8        
-        bool m_bNoTouch; // 0x9c9        
-        bool m_bNewChapter; // 0x9ca        
-        bool m_bOnChangeLevelFired; // 0x9cb        
-        [[maybe_unused]] std::uint8_t pad_0x9cc[0x4];
+        CUtlString m_sMapName; // 0x980        
+        CUtlString m_sLandmarkName; // 0x988        
+        entity2::CEntityIOOutput m_OnChangeLevel; // 0x990        
+        bool m_bTouched; // 0x9b8        
+        bool m_bNoTouch; // 0x9b9        
+        bool m_bNewChapter; // 0x9ba        
+        bool m_bOnChangeLevelFired; // 0x9bb        
+        [[maybe_unused]] std::uint8_t pad_0x9bc[0x4];
         
         // Datamap fields:
         // void InputChangeLevel; // 0x0
@@ -38,5 +38,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CChangeLevel because it is not a standard-layout class
-    static_assert(sizeof(CChangeLevel) == 0x9d0);
+    static_assert(sizeof(CChangeLevel) == 0x9c0);
 };

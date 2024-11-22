@@ -124,9 +124,7 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Firing Behavior/SemiAuto"
         // metadata: MPropertyDescription "Does this weapon function as semi-auto, i.e you have to release the key to fire again"
         bool m_bIsSemiAuto; // 0x98        
-        [[maybe_unused]] std::uint8_t pad_0x99[0x3]; // 0x99
-        // metadata: MPropertySuppressExpr "m_bIsSemiAuto == false"
-        float m_flSemiAutoCycleRate; // 0x9c        
+        [[maybe_unused]] std::uint8_t pad_0x99[0x7]; // 0x99
         // metadata: MPropertyStartGroup "Bullet Travel"
         CPiecewiseCurve m_BulletSpeedCurve; // 0xa0        
         float m_flBulletSpeedRandomFactor; // 0xe0        
@@ -290,7 +288,6 @@ namespace source2sdk::client
     static_assert(offsetof(CCitadelWeaponInfo, m_flSpinDecayRate) == 0x90);
     static_assert(offsetof(CCitadelWeaponInfo, m_flBuildUpRate) == 0x94);
     static_assert(offsetof(CCitadelWeaponInfo, m_bIsSemiAuto) == 0x98);
-    static_assert(offsetof(CCitadelWeaponInfo, m_flSemiAutoCycleRate) == 0x9c);
     static_assert(offsetof(CCitadelWeaponInfo, m_BulletSpeedCurve) == 0xa0);
     static_assert(offsetof(CCitadelWeaponInfo, m_flBulletSpeedRandomFactor) == 0xe0);
     static_assert(offsetof(CCitadelWeaponInfo, m_flBulletGravityScale) == 0xe4);

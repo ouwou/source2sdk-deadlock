@@ -34,7 +34,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0xec0
+    // Size: 0xef0
     // 
     // static metadata: MVDataRoot
     // static metadata: MVDataSingleton
@@ -73,27 +73,29 @@ namespace source2sdk::client
         Color m_MinimapTeamCombineColor; // 0x52c        
         client::NewPlayerMetrics_t m_NewPlayerMetrics[4]; // 0x530        
         int32_t m_nItemPricePerTier[5]; // 0x5f0        
-        [[maybe_unused]] std::uint8_t pad_0x604[0x4]; // 0x604
+        float m_flLanePhaseGoldShareFrac[6]; // 0x604        
+        float m_flPostLanePhaseGoldShareFrac[6]; // 0x61c        
+        [[maybe_unused]] std::uint8_t pad_0x634[0x4]; // 0x634
         // m_HeroTestingTargetDummyUpgrades has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CSubclassName<4>> m_HeroTestingTargetDummyUpgrades;
-        char m_HeroTestingTargetDummyUpgrades[0x18]; // 0x608        
-        [[maybe_unused]] std::uint8_t pad_0x620[0x58]; // 0x620
-        client::DOFDesc_t m_DefaultDOF; // 0x678        
-        client::RejuvinatorParams_t m_RejuvParams; // 0x688        
-        client::IdolParams_t m_IdolParams; // 0x6d8        
-        client::TeleporterParams_t m_TeleporterParams; // 0xc30        
-        client::ObjectivesParams_t m_ObjectiveParams; // 0xe20        
-        [[maybe_unused]] std::uint8_t pad_0xe4c[0x4]; // 0xe4c
+        char m_HeroTestingTargetDummyUpgrades[0x18]; // 0x638        
+        [[maybe_unused]] std::uint8_t pad_0x650[0x58]; // 0x650
+        client::DOFDesc_t m_DefaultDOF; // 0x6a8        
+        client::RejuvinatorParams_t m_RejuvParams; // 0x6b8        
+        client::IdolParams_t m_IdolParams; // 0x708        
+        client::TeleporterParams_t m_TeleporterParams; // 0xc60        
+        client::ObjectivesParams_t m_ObjectiveParams; // 0xe50        
+        [[maybe_unused]] std::uint8_t pad_0xe7c[0x4]; // 0xe7c
         // m_mapStatTypeImages has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EStatsType,CUtlString> m_mapStatTypeImages;
-        char m_mapStatTypeImages[0x28]; // 0xe50        
+        char m_mapStatTypeImages[0x28]; // 0xe80        
         // metadata: MPropertyDescription "Remap camera angle delta to aim spring strength"
-        client::CRemapFloat m_AimSpringStrength; // 0xe78        
+        client::CRemapFloat m_AimSpringStrength; // 0xea8        
         // metadata: MPropertyDescription "Remap camera angle delta to ability targeting spring strength"
-        client::CRemapFloat m_TargetingSpringStrength; // 0xe88        
+        client::CRemapFloat m_TargetingSpringStrength; // 0xeb8        
         // m_mapResourceTypes has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlOrderedMap<client::EAbilityResourceType,client::HeroAbilityResourceDef_t> m_mapResourceTypes;
-        char m_mapResourceTypes[0x28]; // 0xe98        
+        char m_mapResourceTypes[0x28]; // 0xec8        
     };
     #pragma pack(pop)
     
@@ -114,16 +116,18 @@ namespace source2sdk::client
     static_assert(offsetof(CitadelGenericData_t, m_MinimapTeamCombineColor) == 0x52c);
     static_assert(offsetof(CitadelGenericData_t, m_NewPlayerMetrics) == 0x530);
     static_assert(offsetof(CitadelGenericData_t, m_nItemPricePerTier) == 0x5f0);
-    static_assert(offsetof(CitadelGenericData_t, m_HeroTestingTargetDummyUpgrades) == 0x608);
-    static_assert(offsetof(CitadelGenericData_t, m_DefaultDOF) == 0x678);
-    static_assert(offsetof(CitadelGenericData_t, m_RejuvParams) == 0x688);
-    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x6d8);
-    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xc30);
-    static_assert(offsetof(CitadelGenericData_t, m_ObjectiveParams) == 0xe20);
-    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xe50);
-    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xe78);
-    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xe88);
-    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xe98);
+    static_assert(offsetof(CitadelGenericData_t, m_flLanePhaseGoldShareFrac) == 0x604);
+    static_assert(offsetof(CitadelGenericData_t, m_flPostLanePhaseGoldShareFrac) == 0x61c);
+    static_assert(offsetof(CitadelGenericData_t, m_HeroTestingTargetDummyUpgrades) == 0x638);
+    static_assert(offsetof(CitadelGenericData_t, m_DefaultDOF) == 0x6a8);
+    static_assert(offsetof(CitadelGenericData_t, m_RejuvParams) == 0x6b8);
+    static_assert(offsetof(CitadelGenericData_t, m_IdolParams) == 0x708);
+    static_assert(offsetof(CitadelGenericData_t, m_TeleporterParams) == 0xc60);
+    static_assert(offsetof(CitadelGenericData_t, m_ObjectiveParams) == 0xe50);
+    static_assert(offsetof(CitadelGenericData_t, m_mapStatTypeImages) == 0xe80);
+    static_assert(offsetof(CitadelGenericData_t, m_AimSpringStrength) == 0xea8);
+    static_assert(offsetof(CitadelGenericData_t, m_TargetingSpringStrength) == 0xeb8);
+    static_assert(offsetof(CitadelGenericData_t, m_mapResourceTypes) == 0xec8);
     
-    static_assert(sizeof(CitadelGenericData_t) == 0xec0);
+    static_assert(sizeof(CitadelGenericData_t) == 0xef0);
 };

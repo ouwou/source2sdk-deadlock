@@ -30,27 +30,27 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbe0        
-        [[maybe_unused]] std::uint8_t pad_0xbf8[0xc]; // 0xbf8
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbd8        
+        [[maybe_unused]] std::uint8_t pad_0xbf0[0xc]; // 0xbf0
         // metadata: MNetworkEnable
-        float m_flAimPitch; // 0xc04        
-        entity2::GameTime_t m_flNextAttackTime; // 0xc08        
-        float m_flAttackCone; // 0xc0c        
-        float m_flAttackDelay; // 0xc10        
-        entity2::GameTime_t m_flLastAlertSound; // 0xc14        
-        float m_flTrackingSpeed; // 0xc18        
-        float m_flDeployTime; // 0xc1c        
-        [[maybe_unused]] std::uint8_t pad_0xc20[0xa]; // 0xc20
-        bool m_bHadEnemy; // 0xc2a        
-        bool m_bLockedOn; // 0xc2b        
-        [[maybe_unused]] std::uint8_t pad_0xc2c[0x8]; // 0xc2c
+        float m_flAimPitch; // 0xbfc        
+        entity2::GameTime_t m_flNextAttackTime; // 0xc00        
+        float m_flAttackCone; // 0xc04        
+        float m_flAttackDelay; // 0xc08        
+        entity2::GameTime_t m_flLastAlertSound; // 0xc0c        
+        float m_flTrackingSpeed; // 0xc10        
+        float m_flDeployTime; // 0xc14        
+        [[maybe_unused]] std::uint8_t pad_0xc18[0xa]; // 0xc18
+        bool m_bHadEnemy; // 0xc22        
+        bool m_bLockedOn; // 0xc23        
+        [[maybe_unused]] std::uint8_t pad_0xc24[0x8]; // 0xc24
         // metadata: MNetworkEnable
-        float m_flAttackRange; // 0xc34        
-        [[maybe_unused]] std::uint8_t pad_0xc38[0x20];
+        float m_flAttackRange; // 0xc2c        
+        [[maybe_unused]] std::uint8_t pad_0xc30[0x28];
         
         // Datamap fields:
-        // float m_flLifeTime; // 0xc24
-        // void m_flSpawnTime; // 0xc20
+        // float m_flLifeTime; // 0xc1c
+        // void m_flSpawnTime; // 0xc18
     };
     #pragma pack(pop)
     

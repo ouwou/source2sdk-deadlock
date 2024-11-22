@@ -21,7 +21,7 @@ namespace source2sdk::client
         EFlexSlot_Kill2Tier2 = 0x2,
         // MPropertyFriendlyName "All Tier 2"
         EFlexSlot_AllTier2 = 0x4,
-        // MPropertyFriendlyName "Generator"
+        // MPropertyFriendlyName "1 Generator 1 Set of Base Guardians"
         EFlexSlot_Generator = 0x8,
     };
 };

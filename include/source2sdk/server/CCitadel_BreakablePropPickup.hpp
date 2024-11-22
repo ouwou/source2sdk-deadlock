@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa88
+    // Size: 0xa80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -31,18 +31,18 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xa48        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xa40        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0xa60        
-        [[maybe_unused]] std::uint8_t pad_0xa61[0x7]; // 0xa61
+        bool m_bActive; // 0xa58        
+        [[maybe_unused]] std::uint8_t pad_0xa59[0x7]; // 0xa59
         // metadata: MNetworkEnable
-        CUtlString m_sPickupName; // 0xa68        
+        CUtlString m_sPickupName; // 0xa60        
         // metadata: MNetworkEnable
-        int32_t m_nNameOffset; // 0xa70        
-        [[maybe_unused]] std::uint8_t pad_0xa74[0x4]; // 0xa74
+        int32_t m_nNameOffset; // 0xa68        
+        [[maybe_unused]] std::uint8_t pad_0xa6c[0x4]; // 0xa6c
         // metadata: MNetworkEnable
-        CUtlString m_sAmbientNoise; // 0xa78        
-        [[maybe_unused]] std::uint8_t pad_0xa80[0x8];
+        CUtlString m_sAmbientNoise; // 0xa70        
+        [[maybe_unused]] std::uint8_t pad_0xa78[0x8];
         
         // Datamap fields:
         // Vector spawn_position; // 0x7fffffff
@@ -50,5 +50,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_BreakablePropPickup because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_BreakablePropPickup) == 0xa88);
+    static_assert(sizeof(CCitadel_BreakablePropPickup) == 0xa80);
 };

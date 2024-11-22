@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x630
+    // Size: 0x638
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -35,9 +35,12 @@ namespace source2sdk::server
         float m_flBonusMoveSpeedMeterPerSecond; // 0x61c        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_sExpireSound; // 0x620        
+        // metadata: MPropertyStartGroup "UI Messages"
+        int32_t m_iMaxMessages; // 0x630        
+        float m_flMessageInterval; // 0x634        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_RespawnCreditVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_RespawnCreditVData) == 0x630);
+    static_assert(sizeof(CCitadel_Modifier_RespawnCreditVData) == 0x638);
 };

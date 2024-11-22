@@ -65,7 +65,8 @@ namespace source2sdk::client
         // metadata: MPropertySuppressExpr "m_bIsSubnavMessage == true"
         client::ECitadelPingWheelSliceTypes_t m_eSliceType; // 0x78        
         bool m_bBindable; // 0x7c        
-        [[maybe_unused]] std::uint8_t pad_0x7d[0x3];
+        bool m_bPingWheelBindable; // 0x7d        
+        [[maybe_unused]] std::uint8_t pad_0x7e[0x2];
     };
     #pragma pack(pop)
     
@@ -85,6 +86,7 @@ namespace source2sdk::client
     static_assert(offsetof(PingWheelMessage_t, m_vecSubnavMessageNames) == 0x60);
     static_assert(offsetof(PingWheelMessage_t, m_eSliceType) == 0x78);
     static_assert(offsetof(PingWheelMessage_t, m_bBindable) == 0x7c);
+    static_assert(offsetof(PingWheelMessage_t, m_bPingWheelBindable) == 0x7d);
     
     static_assert(sizeof(PingWheelMessage_t) == 0x80);
 };

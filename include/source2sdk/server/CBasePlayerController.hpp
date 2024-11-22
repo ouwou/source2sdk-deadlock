@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x770
+    // Size: 0x790
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_pEntity"
@@ -81,20 +81,20 @@ namespace source2sdk::server
         bool m_bAutoKickDisabled; // 0x5e6        
         bool m_bIsLowViolence; // 0x5e7        
         bool m_bGamePaused; // 0x5e8        
-        [[maybe_unused]] std::uint8_t pad_0x5e9[0x12f]; // 0x5e9
-        client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x718        
-        float m_flLastPlayerTalkTime; // 0x71c        
-        float m_flLastEntitySteadyState; // 0x720        
-        int32_t m_nAvailableEntitySteadyState; // 0x724        
-        bool m_bHasAnySteadyStateEnts; // 0x728        
-        [[maybe_unused]] std::uint8_t pad_0x729[0xf]; // 0x729
+        [[maybe_unused]] std::uint8_t pad_0x5e9[0x14f]; // 0x5e9
+        client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x738        
+        float m_flLastPlayerTalkTime; // 0x73c        
+        float m_flLastEntitySteadyState; // 0x740        
+        int32_t m_nAvailableEntitySteadyState; // 0x744        
+        bool m_bHasAnySteadyStateEnts; // 0x748        
+        [[maybe_unused]] std::uint8_t pad_0x749[0xf]; // 0x749
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "fixed64"
         // metadata: MNetworkChangeCallback "OnSteamIDChanged"
-        uint64_t m_steamID; // 0x738        
+        uint64_t m_steamID; // 0x758        
         // metadata: MNetworkEnable
-        uint32_t m_iDesiredFOV; // 0x740        
-        [[maybe_unused]] std::uint8_t pad_0x744[0x2c];
+        uint32_t m_iDesiredFOV; // 0x760        
+        [[maybe_unused]] std::uint8_t pad_0x764[0x2c];
         
         // Static fields:
         static bool &Get_sm_bRunningPredictedClientStringCommands() {return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBasePlayerController")->GetStaticFields()[0]->m_pInstance);};
@@ -104,13 +104,13 @@ namespace source2sdk::server
         // bool is_hltv; // 0x7fffffff
         // const char * playername; // 0x7fffffff
         // bool reserving; // 0x7fffffff
-        // void m_pCurrentCommand; // 0x730
+        // void m_pCurrentCommand; // 0x750
         // void m_LastCmd; // 0x5f0
-        // void m_nLastRealCommandNumberExecuted; // 0x6fc
-        // void m_nLastLateCommandExecuted; // 0x700
+        // void m_nLastRealCommandNumberExecuted; // 0x71c
+        // void m_nLastLateCommandExecuted; // 0x720
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBasePlayerController because it is not a standard-layout class
-    static_assert(sizeof(CBasePlayerController) == 0x770);
+    static_assert(sizeof(CBasePlayerController) == 0x790);
 };

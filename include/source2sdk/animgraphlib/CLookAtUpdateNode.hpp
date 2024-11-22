@@ -25,7 +25,6 @@ namespace source2sdk::animgraphlib
     class CLookAtUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x8]; // 0x68
         animgraphlib::LookAtOpFixedSettings_t m_opFixedSettings; // 0x70        
         [[maybe_unused]] std::uint8_t pad_0x130[0x8]; // 0x130
         animgraphlib::AnimVectorSource m_target; // 0x138        

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9b0
+    // Size: 0x9a0
     // Has VTable
     #pragma pack(push, 1)
     class CNpcFootSweep : public server::CBaseTrigger
@@ -23,13 +23,13 @@ namespace source2sdk::server
     public:
         // m_vecPushers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<server::FootSweepPusher_t> m_vecPushers;
-        char m_vecPushers[0x18]; // 0x990        
-        bool m_bUseCenterPusher; // 0x9a8        
-        bool m_bUseForwardPusher; // 0x9a9        
-        [[maybe_unused]] std::uint8_t pad_0x9aa[0x6];
+        char m_vecPushers[0x18]; // 0x980        
+        bool m_bUseCenterPusher; // 0x998        
+        bool m_bUseForwardPusher; // 0x999        
+        [[maybe_unused]] std::uint8_t pad_0x99a[0x6];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNpcFootSweep because it is not a standard-layout class
-    static_assert(sizeof(CNpcFootSweep) == 0x9b0);
+    static_assert(sizeof(CNpcFootSweep) == 0x9a0);
 };

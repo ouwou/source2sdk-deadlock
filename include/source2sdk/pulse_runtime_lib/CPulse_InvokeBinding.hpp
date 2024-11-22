@@ -24,7 +24,7 @@ namespace source2sdk::pulse_runtime_lib
     {
     public:
         pulse_runtime_lib::PulseRegisterMap_t m_RegisterMap; // 0x0        
-        CUtlSymbolLarge m_FuncName; // 0x20        
+        CGlobalSymbol m_FuncName; // 0x20        
         pulse_runtime_lib::PulseRuntimeCellIndex_t m_nCellIndex; // 0x28        
         pulse_runtime_lib::PulseRuntimeChunkIndex_t m_nSrcChunk; // 0x2c        
         int32_t m_nSrcInstruction; // 0x30        

@@ -17,7 +17,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa8
+    // Size: 0xb0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,28 +25,27 @@ namespace source2sdk::animgraphlib
     class CFollowPathUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x4]; // 0x68
-        float m_flBlendOutTime; // 0x6c        
-        bool m_bBlockNonPathMovement; // 0x70        
-        bool m_bStopFeetAtGoal; // 0x71        
-        bool m_bScaleSpeed; // 0x72        
-        [[maybe_unused]] std::uint8_t pad_0x73[0x1]; // 0x73
-        float m_flScale; // 0x74        
-        float m_flMinAngle; // 0x78        
-        float m_flMaxAngle; // 0x7c        
-        float m_flSpeedScaleBlending; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x84[0x4]; // 0x84
-        animgraphlib::CAnimInputDamping m_turnDamping; // 0x88        
-        animgraphlib::AnimValueSource m_facingTarget; // 0x98        
-        animgraphlib::CAnimParamHandle m_hParam; // 0x9c        
-        [[maybe_unused]] std::uint8_t pad_0x9e[0x2]; // 0x9e
-        float m_flTurnToFaceOffset; // 0xa0        
-        bool m_bTurnToFace; // 0xa4        
-        bool m_bAlignRootMotionWithMoveDirection; // 0xa5        
-        [[maybe_unused]] std::uint8_t pad_0xa6[0x2];
+        [[maybe_unused]] std::uint8_t pad_0x70[0x4]; // 0x70
+        float m_flBlendOutTime; // 0x74        
+        bool m_bBlockNonPathMovement; // 0x78        
+        bool m_bStopFeetAtGoal; // 0x79        
+        bool m_bScaleSpeed; // 0x7a        
+        [[maybe_unused]] std::uint8_t pad_0x7b[0x1]; // 0x7b
+        float m_flScale; // 0x7c        
+        float m_flMinAngle; // 0x80        
+        float m_flMaxAngle; // 0x84        
+        float m_flSpeedScaleBlending; // 0x88        
+        [[maybe_unused]] std::uint8_t pad_0x8c[0x4]; // 0x8c
+        animgraphlib::CAnimInputDamping m_turnDamping; // 0x90        
+        animgraphlib::AnimValueSource m_facingTarget; // 0xa0        
+        animgraphlib::CAnimParamHandle m_hParam; // 0xa4        
+        [[maybe_unused]] std::uint8_t pad_0xa6[0x2]; // 0xa6
+        float m_flTurnToFaceOffset; // 0xa8        
+        bool m_bTurnToFace; // 0xac        
+        [[maybe_unused]] std::uint8_t pad_0xad[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFollowPathUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CFollowPathUpdateNode) == 0xa8);
+    static_assert(sizeof(CFollowPathUpdateNode) == 0xb0);
 };

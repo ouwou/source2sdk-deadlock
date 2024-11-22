@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xaf8
+    // Size: 0xc60
     // Has VTable
     #pragma pack(push, 1)
     class CNPC_TrooperNeutral_GraphController : public server::CAI_CitadelNPC_GraphController
@@ -22,19 +22,19 @@ namespace source2sdk::server
     public:
         // m_bShielded has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bShielded;
-        char m_bShielded[0x20]; // 0xa48        
+        char m_bShielded[0x20]; // 0xbb0        
         // m_bAlert has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bAlert;
-        char m_bAlert[0x20]; // 0xa68        
+        char m_bAlert[0x20]; // 0xbd0        
         // m_pszAttackLeanPosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszAttackLeanPosition;
-        char m_pszAttackLeanPosition[0x28]; // 0xa88        
+        char m_pszAttackLeanPosition[0x28]; // 0xbf0        
         // m_pszOrbDrop has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<char*> m_pszOrbDrop;
-        char m_pszOrbDrop[0x28]; // 0xab0        
+        char m_pszOrbDrop[0x28]; // 0xc18        
         // m_bHeavyMelee has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraphParamOptionalRef<bool> m_bHeavyMelee;
-        char m_bHeavyMelee[0x20]; // 0xad8        
+        char m_bHeavyMelee[0x20]; // 0xc40        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CNPC_TrooperNeutral_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -43,5 +43,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_TrooperNeutral_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CNPC_TrooperNeutral_GraphController) == 0xaf8);
+    static_assert(sizeof(CNPC_TrooperNeutral_GraphController) == 0xc60);
 };

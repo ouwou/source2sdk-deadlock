@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/client/CCitadel_Modifier_RegeneratingTechShield.hpp"
+#include "source2sdk/client/CCitadel_Modifier_BaseShield.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x168
+    // Size: 0x130
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Modifier_GalvanicStormTechShield : public client::CCitadel_Modifier_RegeneratingTechShield
+    class CCitadel_Modifier_GalvanicStormTechShield : public client::CCitadel_Modifier_BaseShield
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xf8[0x70];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_GalvanicStormTechShield) == 0x168);
+    static_assert(sizeof(CCitadel_Modifier_GalvanicStormTechShield) == 0x130);
 };

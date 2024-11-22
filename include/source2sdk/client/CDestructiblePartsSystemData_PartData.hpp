@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x80
+    // Size: 0x90
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -55,5 +55,5 @@ namespace source2sdk::client
     static_assert(offsetof(CDestructiblePartsSystemData_PartData, m_sAnimGraphParamName_PartNormalizedHealth) == 0x28);
     static_assert(offsetof(CDestructiblePartsSystemData_PartData, m_DefaultRuntimeData) == 0x30);
     
-    static_assert(sizeof(CDestructiblePartsSystemData_PartData) == 0x80);
+    static_assert(sizeof(CDestructiblePartsSystemData_PartData) == 0x90);
 };

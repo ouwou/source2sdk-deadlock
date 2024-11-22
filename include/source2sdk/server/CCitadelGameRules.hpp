@@ -30,7 +30,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2800
+    // Size: 0x2808
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bFreezePeriod"
@@ -149,51 +149,51 @@ namespace source2sdk::server
         [[maybe_unused]] std::uint8_t pad_0x1ab[0x2a5]; // 0x1ab
         entity2::GameTime_t m_flGameTimeAllPlayersDisconnected; // 0x450        
         int32_t m_nNextHeroDraftPosition; // 0x454        
-        [[maybe_unused]] std::uint8_t pad_0x458[0x1248]; // 0x458
-        server::CountdownTimer m_CheckIdleTimer; // 0x16a0        
-        server::CountdownTimer m_CheckCheatersTimer; // 0x16b8        
-        [[maybe_unused]] std::uint8_t pad_0x16d0[0x1058]; // 0x16d0
+        [[maybe_unused]] std::uint8_t pad_0x458[0x1250]; // 0x458
+        server::CountdownTimer m_CheckIdleTimer; // 0x16a8        
+        server::CountdownTimer m_CheckCheatersTimer; // 0x16c0        
+        [[maybe_unused]] std::uint8_t pad_0x16d8[0x1058]; // 0x16d8
         // metadata: MNetworkEnable
-        bool m_bServerPaused; // 0x2728        
-        [[maybe_unused]] std::uint8_t pad_0x2729[0x3]; // 0x2729
+        bool m_bServerPaused; // 0x2730        
+        [[maybe_unused]] std::uint8_t pad_0x2731[0x3]; // 0x2731
         // metadata: MNetworkEnable
-        int32_t m_iPauseTeam; // 0x272c        
+        int32_t m_iPauseTeam; // 0x2734        
         // metadata: MNetworkEnable
-        int32_t m_nMatchClockUpdateTick; // 0x2730        
+        int32_t m_nMatchClockUpdateTick; // 0x2738        
         // metadata: MNetworkEnable
-        float m_flMatchClockAtLastUpdate; // 0x2734        
-        double m_flPauseTime; // 0x2738        
-        CPlayerSlot m_pausingPlayerId; // 0x2740        
-        CPlayerSlot m_unpausingPlayerId; // 0x2744        
-        float m_fPauseRawTime; // 0x2748        
-        float m_fPauseCurTime; // 0x274c        
-        float m_fUnpauseRawTime; // 0x2750        
-        float m_fUnpauseCurTime; // 0x2754        
-        [[maybe_unused]] std::uint8_t pad_0x2758[0x50]; // 0x2758
+        float m_flMatchClockAtLastUpdate; // 0x273c        
+        double m_flPauseTime; // 0x2740        
+        CPlayerSlot m_pausingPlayerId; // 0x2748        
+        CPlayerSlot m_unpausingPlayerId; // 0x274c        
+        float m_fPauseRawTime; // 0x2750        
+        float m_fPauseCurTime; // 0x2754        
+        float m_fUnpauseRawTime; // 0x2758        
+        float m_fUnpauseCurTime; // 0x275c        
+        [[maybe_unused]] std::uint8_t pad_0x2760[0x50]; // 0x2760
         // metadata: MNetworkEnable
-        bool m_bRequiresReportCardDismissal; // 0x27a8        
-        [[maybe_unused]] std::uint8_t pad_0x27a9[0x3]; // 0x27a9
-        entity2::GameTime_t m_flPreGameWaitEndTime; // 0x27ac        
-        entity2::GameTime_t m_flReportCardDismissalWaitStart; // 0x27b0        
-        int32_t m_nLastPreGameCount; // 0x27b4        
+        bool m_bRequiresReportCardDismissal; // 0x27b0        
+        [[maybe_unused]] std::uint8_t pad_0x27b1[0x3]; // 0x27b1
+        entity2::GameTime_t m_flPreGameWaitEndTime; // 0x27b4        
+        entity2::GameTime_t m_flReportCardDismissalWaitStart; // 0x27b8        
+        int32_t m_nLastPreGameCount; // 0x27bc        
         // metadata: MNetworkEnable
-        int32_t m_eGGTeam; // 0x27b8        
+        int32_t m_eGGTeam; // 0x27c0        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flGGEndsAtTime; // 0x27bc        
+        entity2::GameTime_t m_flGGEndsAtTime; // 0x27c4        
         // metadata: MNetworkEnable
-        client::MatchID_t m_unMatchID; // 0x27c0        
+        client::MatchID_t m_unMatchID; // 0x27c8        
         // metadata: MNetworkEnable
-        int32_t m_nExperimentalGameplayState; // 0x27c8        
-        int32_t m_nPlayerDeathEventID; // 0x27cc        
-        int32_t m_nReplayChangedEvent; // 0x27d0        
-        int32_t m_nGameOverEvent; // 0x27d4        
-        [[maybe_unused]] std::uint8_t pad_0x27d8[0x20]; // 0x27d8
+        int32_t m_nExperimentalGameplayState; // 0x27d0        
+        int32_t m_nPlayerDeathEventID; // 0x27d4        
+        int32_t m_nReplayChangedEvent; // 0x27d8        
+        int32_t m_nGameOverEvent; // 0x27dc        
+        [[maybe_unused]] std::uint8_t pad_0x27e0[0x20]; // 0x27e0
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flHeroDiedTime; // 0x27f8        
-        [[maybe_unused]] std::uint8_t pad_0x27fc[0x4];
+        entity2::GameTime_t m_flHeroDiedTime; // 0x2800        
+        [[maybe_unused]] std::uint8_t pad_0x2804[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelGameRules because it is not a standard-layout class
-    static_assert(sizeof(CCitadelGameRules) == 0x2800);
+    static_assert(sizeof(CCitadelGameRules) == 0x2808);
 };

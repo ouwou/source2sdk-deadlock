@@ -29,7 +29,6 @@ namespace source2sdk::server
     public:
         server::CGameSceneNode* m_pSceneNode; // 0x8        
         [[maybe_unused]] std::uint8_t pad_0x10[0x38]; // 0x10
-        // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x48        
         [[maybe_unused]] std::uint8_t pad_0x70[0x8];
         

@@ -27,8 +27,8 @@ namespace source2sdk::soundsystem_voicecontainers
     public:
         // metadata: MPropertyFriendlyName "Envelope Mode"
         soundsystem_voicecontainers::EMode_t m_mode; // 0x50        
-        // metadata: MPropertyFriendlyName "Number of sections"
-        int32_t m_nSamples; // 0x54        
+        // metadata: MPropertyFriendlyName "Analysis Window"
+        float m_fAnalysisWindowMs; // 0x54        
         // metadata: MPropertyFriendlyName "Threshold"
         float m_flThreshold; // 0x58        
         [[maybe_unused]] std::uint8_t pad_0x5c[0x4];

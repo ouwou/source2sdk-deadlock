@@ -27,7 +27,7 @@ namespace source2sdk::pulse_runtime_lib
         pulse_runtime_lib::PulseDocNodeID_t nEditorID; // 0x4        
         float flExecTime; // 0x8        
         uint32_t unFlags; // 0xc        
-        CUtlSymbolLarge tagName; // 0x10        
+        CGlobalSymbol tagName; // 0x10        
     };
     #pragma pack(pop)
     

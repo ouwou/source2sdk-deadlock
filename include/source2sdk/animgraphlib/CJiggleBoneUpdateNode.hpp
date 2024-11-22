@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x90
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,11 +23,11 @@ namespace source2sdk::animgraphlib
     class CJiggleBoneUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        animgraphlib::JiggleBoneSettingsList_t m_opFixedData; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0x80[0x8];
+        animgraphlib::JiggleBoneSettingsList_t m_opFixedData; // 0x70        
+        [[maybe_unused]] std::uint8_t pad_0x88[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CJiggleBoneUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CJiggleBoneUpdateNode) == 0x88);
+    static_assert(sizeof(CJiggleBoneUpdateNode) == 0x90);
 };

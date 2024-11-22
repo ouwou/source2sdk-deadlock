@@ -1,4 +1,5 @@
 #pragma once
+#include "source2sdk/client/ParticleIndex_t.hpp"
 #include "source2sdk/server/CCitadelProjectile.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -22,11 +23,12 @@ namespace source2sdk::server
     public:
         bool bHasDetonatedOnTarget; // 0x870        
         [[maybe_unused]] std::uint8_t pad_0x871[0x3]; // 0x871
-        Vector m_vecCastPosition; // 0x874        
-        Vector m_vecCastPositionNormal; // 0x880        
-        Vector m_vecEndPosition; // 0x88c        
-        Vector m_vecEndPositionNormal; // 0x898        
-        [[maybe_unused]] std::uint8_t pad_0x8a4[0x11c];
+        client::ParticleIndex_t m_nWebWallFxIndex; // 0x874        
+        Vector m_vecCastPosition; // 0x878        
+        Vector m_vecCastPositionNormal; // 0x884        
+        Vector m_vecEndPosition; // 0x890        
+        Vector m_vecEndPositionNormal; // 0x89c        
+        [[maybe_unused]] std::uint8_t pad_0x8a8[0x118];
     };
     #pragma pack(pop)
     

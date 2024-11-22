@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1730
+    // Size: 0x1740
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -32,13 +32,15 @@ namespace source2sdk::client
         // m_FlogLifeLeachParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FlogLifeLeachParticle;
         char m_FlogLifeLeachParticle[0xe0]; // 0x1640        
+        // metadata: MPropertyStartGroup "Sounds"
+        CSoundEventName m_strHitConfirmSound; // 0x1720        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_FlogDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_FlogDebuffModifier;
-        char m_FlogDebuffModifier[0x10]; // 0x1720        
+        char m_FlogDebuffModifier[0x10]; // 0x1730        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityLashFlogVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityLashFlogVData) == 0x1730);
+    static_assert(sizeof(CAbilityLashFlogVData) == 0x1740);
 };

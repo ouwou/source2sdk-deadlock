@@ -44,9 +44,9 @@ namespace source2sdk::client
         CSoundEventName m_strImmobilizeTargetSound; // 0x1910        
         CSoundEventName m_strArmingSound; // 0x1920        
         // metadata: MPropertyStartGroup "Modifiers"
-        // m_TrapModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_TrapModifier;
-        char m_TrapModifier[0x10]; // 0x1930        
+        // m_TetherModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<client::CCitadelModifier> m_TetherModifier;
+        char m_TetherModifier[0x10]; // 0x1930        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffModifier;
         char m_DebuffModifier[0x10]; // 0x1940        

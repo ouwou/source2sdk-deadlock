@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a8
+    // Size: 0x998
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vLaunchTarget"
@@ -24,13 +24,13 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        Vector m_vLaunchTarget; // 0x990        
+        Vector m_vLaunchTarget; // 0x980        
         // metadata: MNetworkEnable
-        float m_flLaunchSpeed; // 0x99c        
-        CUtlSymbolLarge m_nameTarget; // 0x9a0        
+        float m_flLaunchSpeed; // 0x98c        
+        CUtlSymbolLarge m_nameTarget; // 0x990        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelCatapultTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelCatapultTrigger) == 0x9a8);
+    static_assert(sizeof(CCitadelCatapultTrigger) == 0x998);
 };

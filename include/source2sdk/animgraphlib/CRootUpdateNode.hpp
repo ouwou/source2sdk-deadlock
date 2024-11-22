@@ -14,7 +14,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x68
+    // Size: 0x70
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,5 +25,5 @@ namespace source2sdk::animgraphlib
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CRootUpdateNode) == 0x68);
+    static_assert(sizeof(CRootUpdateNode) == 0x70);
 };

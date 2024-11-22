@@ -26,7 +26,6 @@ namespace source2sdk::animgraphlib
     class CAimMatrixUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x8]; // 0x68
         animgraphlib::AimMatrixOpFixedSettings_t m_opFixedSettings; // 0x70        
         [[maybe_unused]] std::uint8_t pad_0x150[0x8]; // 0x150
         animgraphlib::AnimVectorSource m_target; // 0x158        

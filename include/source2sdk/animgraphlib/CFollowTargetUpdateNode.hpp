@@ -16,7 +16,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x90
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,14 +24,14 @@ namespace source2sdk::animgraphlib
     class CFollowTargetUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        animgraphlib::FollowTargetOpFixedSettings_t m_opFixedData; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0x78[0x8]; // 0x78
-        animgraphlib::CAnimParamHandle m_hParameterPosition; // 0x80        
-        animgraphlib::CAnimParamHandle m_hParameterOrientation; // 0x82        
-        [[maybe_unused]] std::uint8_t pad_0x84[0x4];
+        animgraphlib::FollowTargetOpFixedSettings_t m_opFixedData; // 0x70        
+        [[maybe_unused]] std::uint8_t pad_0x80[0x8]; // 0x80
+        animgraphlib::CAnimParamHandle m_hParameterPosition; // 0x88        
+        animgraphlib::CAnimParamHandle m_hParameterOrientation; // 0x8a        
+        [[maybe_unused]] std::uint8_t pad_0x8c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFollowTargetUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CFollowTargetUpdateNode) == 0x88);
+    static_assert(sizeof(CFollowTargetUpdateNode) == 0x90);
 };

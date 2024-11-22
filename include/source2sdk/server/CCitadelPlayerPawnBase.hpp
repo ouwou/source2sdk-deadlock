@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd28
+    // Size: 0xd20
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelPlayerPawnBase : public server::CBasePlayerPawn
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xd10[0x18];
+        [[maybe_unused]] std::uint8_t pad_0xd08[0x18];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelPlayerPawnBase) == 0xd28);
+    static_assert(sizeof(CCitadelPlayerPawnBase) == 0xd20);
 };

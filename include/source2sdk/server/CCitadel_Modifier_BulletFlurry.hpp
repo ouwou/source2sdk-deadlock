@@ -1,5 +1,5 @@
 #pragma once
-#include "source2sdk/server/CCitadelModifier.hpp"
+#include "source2sdk/server/CCitadel_Modifier_BaseBulletPreRollProc.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x130
+    // Size: 0x230
     // Has VTable
     #pragma pack(push, 1)
-    class CCitadel_Modifier_BulletFlurry : public server::CCitadelModifier
+    class CCitadel_Modifier_BulletFlurry : public server::CCitadel_Modifier_BaseBulletPreRollProc
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc0[0x70];
+        [[maybe_unused]] std::uint8_t pad_0x188[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_BulletFlurry) == 0x130);
+    static_assert(sizeof(CCitadel_Modifier_BulletFlurry) == 0x230);
 };

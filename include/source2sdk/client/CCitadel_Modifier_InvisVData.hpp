@@ -40,9 +40,9 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Behavior"
         bool m_bFadeInsteadOfRemoveOnBulletFire; // 0x8c0        
         bool m_bFadeInsteadOfRemoveOnAbilityUse; // 0x8c1        
+        bool m_bBreakOnItemUse; // 0x8c2        
         // metadata: MPropertyDescription "Fade from hidden to fully visible as invis is about to expire. Does not work with Aura applied invis, since that has no duration."
-        bool m_bFadeToVisibleAtEndOfDuration; // 0x8c2        
-        [[maybe_unused]] std::uint8_t pad_0x8c3[0x1]; // 0x8c3
+        bool m_bFadeToVisibleAtEndOfDuration; // 0x8c3        
         float m_flMinCloak; // 0x8c4        
         float m_flMaxCloak; // 0x8c8        
         [[maybe_unused]] std::uint8_t pad_0x8cc[0x4];

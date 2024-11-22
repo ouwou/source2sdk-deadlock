@@ -1,6 +1,7 @@
 #pragma once
 #include "source2sdk/client/CAI_Component.hpp"
 #include "source2sdk/client/CSimTimer.hpp"
+#include "source2sdk/client/StanceType_t.hpp"
 #include "source2sdk/entity2/GameTime_t.hpp"
 #include "source2sdk/server/CAI_WaypointList.hpp"
 #include "source2sdk/server/CNavSmartGoalHelper.hpp"
@@ -80,10 +81,9 @@ namespace source2sdk::server
         // CHandle<server::CBaseEntity> m_hGoalDirectionTarget;
         char m_hGoalDirectionTarget[0x4]; // 0x10c        
         float m_flGoalDirectionToleranceDot; // 0x110        
-        float m_flPathEndGoalRange; // 0x114        
-        float m_flPathEndGoalRange_Repathing; // 0x118        
-        bool m_bGoalRequiresCrouch; // 0x11c        
-        [[maybe_unused]] std::uint8_t pad_0x11d[0x3]; // 0x11d
+        client::StanceType_t m_eGoalStance; // 0x114        
+        float m_flPathEndGoalRange; // 0x118        
+        float m_flPathEndGoalRange_Repathing; // 0x11c        
         float m_flGoalMaxPathLength; // 0x120        
         float m_flGoalMaxTravelDist; // 0x124        
         CUtlString m_pathRestrictionTag; // 0x128        

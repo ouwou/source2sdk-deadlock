@@ -17,7 +17,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa8
+    // Size: 0xb0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -35,11 +35,11 @@ namespace source2sdk::animgraphlib
         bool m_bMoveVarsDisabled; // 0x68        
         bool m_bNetworkPath; // 0x69        
         bool m_bNetworkFacing; // 0x6a        
-        animgraphlib::CAnimParamHandle m_paramHandles[30]; // 0x6b        
-        [[maybe_unused]] std::uint8_t pad_0xa7[0x1];
+        animgraphlib::CAnimParamHandle m_paramHandles[34]; // 0x6b        
+        [[maybe_unused]] std::uint8_t pad_0xaf[0x1];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMovementComponentUpdater because it is not a standard-layout class
-    static_assert(sizeof(CMovementComponentUpdater) == 0xa8);
+    static_assert(sizeof(CMovementComponentUpdater) == 0xb0);
 };

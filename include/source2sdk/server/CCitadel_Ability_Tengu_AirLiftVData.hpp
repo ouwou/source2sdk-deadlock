@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x17f8
+    // Size: 0x1800
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -57,31 +57,33 @@ namespace source2sdk::server
         float m_flMaxFallSpeed; // 0x1794        
         float m_flTargetAirSpeedFast; // 0x1798        
         float m_flTargetAirSpeedBase; // 0x179c        
-        float m_flAcceleration; // 0x17a0        
-        float m_flDecceleration; // 0x17a4        
-        float m_flAirSideSpeedPercent; // 0x17a8        
-        float m_flBoostTime; // 0x17ac        
-        float m_flBoostSpeedUp; // 0x17b0        
-        float m_flMinFlyHeight; // 0x17b4        
-        float m_flMaxFlyHeight; // 0x17b8        
-        float m_flMaxPitchUp; // 0x17bc        
-        float m_flMaxPitchDown; // 0x17c0        
-        float m_flAllyDelayedBoostTime; // 0x17c4        
-        float m_flChannelingAirDrag; // 0x17c8        
-        float m_flChannelingMaxFallSpeed; // 0x17cc        
-        float m_flBombReleaseSpeed; // 0x17d0        
-        float m_flBombReleasePitch; // 0x17d4        
-        float m_flBombDropReleaseOffset; // 0x17d8        
-        float m_flHoldBombOffsetX; // 0x17dc        
-        float m_flHoldBombOffsetY; // 0x17e0        
-        float m_flHoldBombOffsetZ; // 0x17e4        
-        float m_flAnglePitchBias; // 0x17e8        
-        float m_flTrackAmount; // 0x17ec        
-        float m_flMoveCollideSpeed; // 0x17f0        
-        [[maybe_unused]] std::uint8_t pad_0x17f4[0x4];
+        float m_flSprintMult; // 0x17a0        
+        float m_flAcceleration; // 0x17a4        
+        float m_flDecceleration; // 0x17a8        
+        float m_flAirSideSpeedPercent; // 0x17ac        
+        float m_flBoostTime; // 0x17b0        
+        float m_flBoostSpeedUp; // 0x17b4        
+        float m_flCrouchLaunchReduction; // 0x17b8        
+        float m_flMinFlyHeight; // 0x17bc        
+        float m_flMaxFlyHeight; // 0x17c0        
+        float m_flMaxPitchUp; // 0x17c4        
+        float m_flMaxPitchDown; // 0x17c8        
+        float m_flAllyDelayedBoostTime; // 0x17cc        
+        float m_flChannelingAirDrag; // 0x17d0        
+        float m_flChannelingMaxFallSpeed; // 0x17d4        
+        float m_flBombReleaseSpeed; // 0x17d8        
+        float m_flBombReleasePitch; // 0x17dc        
+        float m_flBombDropReleaseOffset; // 0x17e0        
+        float m_flHoldBombOffsetX; // 0x17e4        
+        float m_flHoldBombOffsetY; // 0x17e8        
+        float m_flHoldBombOffsetZ; // 0x17ec        
+        float m_flAnglePitchBias; // 0x17f0        
+        float m_flTrackAmount; // 0x17f4        
+        float m_flMoveCollideSpeed; // 0x17f8        
+        [[maybe_unused]] std::uint8_t pad_0x17fc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tengu_AirLiftVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Tengu_AirLiftVData) == 0x17f8);
+    static_assert(sizeof(CCitadel_Ability_Tengu_AirLiftVData) == 0x1800);
 };

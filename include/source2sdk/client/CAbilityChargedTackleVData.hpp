@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1690
+    // Size: 0x1680
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -35,17 +35,14 @@ namespace source2sdk::client
         // m_ChargeActiveModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ChargeActiveModifier;
         char m_ChargeActiveModifier[0x10]; // 0x1650        
-        // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1660        
         // m_DragModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DragModifier;
-        char m_DragModifier[0x10]; // 0x1670        
+        char m_DragModifier[0x10]; // 0x1660        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strHitSound; // 0x1680        
+        CSoundEventName m_strHitSound; // 0x1670        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityChargedTackleVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityChargedTackleVData) == 0x1690);
+    static_assert(sizeof(CAbilityChargedTackleVData) == 0x1680);
 };

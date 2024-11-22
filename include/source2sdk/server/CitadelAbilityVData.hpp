@@ -65,19 +65,18 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Behavior"
         // m_AbilityBehaviorsBits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CBitVecEnum<client::EAbilityBehavior_t> m_AbilityBehaviorsBits;
-        char m_AbilityBehaviorsBits[0x8]; // 0x4c        
-        client::EAbilityTargetingLocation_t m_eAbilityTargetingLocation; // 0x54        
-        client::EAbilityTargetingShape_t m_eAbilityTargetingShape; // 0x58        
+        char m_AbilityBehaviorsBits[0xc]; // 0x4c        
+        client::EAbilityTargetingLocation_t m_eAbilityTargetingLocation; // 0x58        
+        client::EAbilityTargetingShape_t m_eAbilityTargetingShape; // 0x5c        
         // metadata: MPropertySuppressExpr "m_eAbilityTargetingShape != CITADEL_ABILITY_TARGETING_SHAPE_CONE"
-        float m_flTargetingConeAngle; // 0x5c        
+        float m_flTargetingConeAngle; // 0x60        
         // metadata: MPropertySuppressExpr "m_eAbilityTargetingShape != CITADEL_ABILITY_TARGETING_SHAPE_CONE"
-        float m_flTargetingConeHalfWidth; // 0x60        
+        float m_flTargetingConeHalfWidth; // 0x64        
         // metadata: MPropertyDescription "When true, we will do an extra trace with the same cone shape, but with the cone laying flat in XY"
         // metadata: MPropertySuppressExpr "m_eAbilityTargetingShape != CITADEL_ABILITY_TARGETING_SHAPE_CONE"
-        bool m_bIncludeExtra2DCone; // 0x64        
-        [[maybe_unused]] std::uint8_t pad_0x65[0x3]; // 0x65
-        client::EAbilityActivation_t m_eAbilityActivation; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0x6c[0x4]; // 0x6c
+        bool m_bIncludeExtra2DCone; // 0x68        
+        [[maybe_unused]] std::uint8_t pad_0x69[0x3]; // 0x69
+        client::EAbilityActivation_t m_eAbilityActivation; // 0x6c        
         // metadata: MPropertyDescription "If set, this button must be down in addition to our trigger button (be default the slot button) in order to activate this ability."
         client::InputBitMask_t m_TriggerButtonPreReqButton; // 0x70        
         // metadata: MPropertyDescription "If set, this is the button requierd to be pressed to activate this ability."
@@ -88,17 +87,17 @@ namespace source2sdk::server
         // CBitVecEnum<client::EModifierState> m_bitsInterruptingStates;
         char m_bitsInterruptingStates[0x18]; // 0x84        
         client::IncompatibleFilter_t m_IncompatibleFilter; // 0x9c        
-        client::CITADEL_UNIT_TARGET_TYPE m_nAbilityTargetTypes; // 0xac        
-        client::CITADEL_UNIT_TARGET_FLAGS m_nAbilityTargetFlags; // 0xb0        
+        client::CITADEL_UNIT_TARGET_TYPE m_nAbilityTargetTypes; // 0xb0        
+        client::CITADEL_UNIT_TARGET_FLAGS m_nAbilityTargetFlags; // 0xb4        
         // metadata: MPropertyDescription "During post-cast, what modifier states are set."
         // m_bitsPostCastEnabledStateMask has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CBitVecEnum<client::EModifierState> m_bitsPostCastEnabledStateMask;
-        char m_bitsPostCastEnabledStateMask[0x18]; // 0xb4        
+        char m_bitsPostCastEnabledStateMask[0x18]; // 0xb8        
         // metadata: MPropertyDescription "This ability provides these types of ability target effects."
-        client::ECitadelTargetAbilityEffects m_TargetAbilityEffectsToApply; // 0xcc        
-        bool m_bShowTargetingPreviewWhileChanneling; // 0xd0        
-        bool m_bShowTargetingPreviewWhileCasting; // 0xd1        
-        [[maybe_unused]] std::uint8_t pad_0xd2[0x6]; // 0xd2
+        client::ECitadelTargetAbilityEffects m_TargetAbilityEffectsToApply; // 0xd0        
+        bool m_bShowTargetingPreviewWhileChanneling; // 0xd4        
+        bool m_bShowTargetingPreviewWhileCasting; // 0xd5        
+        [[maybe_unused]] std::uint8_t pad_0xd6[0x2]; // 0xd6
         // metadata: MPropertyStartGroup
         // metadata: MPropertyFriendlyName "Weapon Info"
         client::CCitadelWeaponInfo m_WeaponInfo; // 0xd8        

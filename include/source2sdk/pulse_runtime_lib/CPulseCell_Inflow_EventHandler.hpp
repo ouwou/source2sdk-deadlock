@@ -26,7 +26,7 @@ namespace source2sdk::pulse_runtime_lib
     class CPulseCell_Inflow_EventHandler : public pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint
     {
     public:
-        CUtlSymbolLarge m_EventName; // 0x70        
+        CGlobalSymbol m_EventName; // 0x70        
     };
     #pragma pack(pop)
     

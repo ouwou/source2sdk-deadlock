@@ -18,7 +18,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa8
+    // Size: 0xb0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,19 +26,19 @@ namespace source2sdk::animgraphlib
     class CBoneMaskUpdateNode : public animgraphlib::CBinaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x88[0x4]; // 0x88
-        int32_t m_nWeightListIndex; // 0x8c        
-        float m_flRootMotionBlend; // 0x90        
-        animgraphlib::BoneMaskBlendSpace m_blendSpace; // 0x94        
-        animgraphlib::BinaryNodeChildOption m_footMotionTiming; // 0x98        
-        bool m_bUseBlendScale; // 0x9c        
-        [[maybe_unused]] std::uint8_t pad_0x9d[0x3]; // 0x9d
-        animgraphlib::AnimValueSource m_blendValueSource; // 0xa0        
-        animgraphlib::CAnimParamHandle m_hBlendParameter; // 0xa4        
-        [[maybe_unused]] std::uint8_t pad_0xa6[0x2];
+        [[maybe_unused]] std::uint8_t pad_0x90[0x4]; // 0x90
+        int32_t m_nWeightListIndex; // 0x94        
+        float m_flRootMotionBlend; // 0x98        
+        animgraphlib::BoneMaskBlendSpace m_blendSpace; // 0x9c        
+        animgraphlib::BinaryNodeChildOption m_footMotionTiming; // 0xa0        
+        bool m_bUseBlendScale; // 0xa4        
+        [[maybe_unused]] std::uint8_t pad_0xa5[0x3]; // 0xa5
+        animgraphlib::AnimValueSource m_blendValueSource; // 0xa8        
+        animgraphlib::CAnimParamHandle m_hBlendParameter; // 0xac        
+        [[maybe_unused]] std::uint8_t pad_0xae[0x2];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBoneMaskUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CBoneMaskUpdateNode) == 0xa8);
+    static_assert(sizeof(CBoneMaskUpdateNode) == 0xb0);
 };

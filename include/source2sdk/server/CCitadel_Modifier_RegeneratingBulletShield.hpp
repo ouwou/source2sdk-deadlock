@@ -14,16 +14,15 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x100
+    // Size: 0xc8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_RegeneratingBulletShield : public server::CCitadel_Modifier_BaseShield
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_RegeneratingBulletShield) == 0x100);
+    static_assert(sizeof(CCitadel_Modifier_RegeneratingBulletShield) == 0xc8);
 };

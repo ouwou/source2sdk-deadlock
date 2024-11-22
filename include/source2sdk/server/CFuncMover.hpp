@@ -47,45 +47,46 @@ namespace source2sdk::server
         char m_hPathMover[0x4]; // 0x7c8        
         [[maybe_unused]] std::uint8_t pad_0x7cc[0x4]; // 0x7cc
         CUtlSymbolLarge m_iszPathNodeStart; // 0x7d0        
-        server::CFuncMover__Move_t m_eMoveType; // 0x7d8        
-        bool m_bIsReversing; // 0x7dc        
-        [[maybe_unused]] std::uint8_t pad_0x7dd[0x3]; // 0x7dd
-        Vector m_vTarget; // 0x7e0        
-        float m_flStartSpeed; // 0x7ec        
-        float m_flPathLocation; // 0x7f0        
-        float m_flT; // 0x7f4        
-        int32_t m_nCurrentNodeIndex; // 0x7f8        
-        int32_t m_nPreviousNodeIndex; // 0x7fc        
-        client::SolidType_t m_eSolidType; // 0x800        
-        bool m_bIsMoving; // 0x801        
-        [[maybe_unused]] std::uint8_t pad_0x802[0x2]; // 0x802
-        float m_flTimeToReachMaxSpeed; // 0x804        
-        float m_flDistanceToReachMaxSpeed; // 0x808        
-        float m_flTimeToReachZeroSpeed; // 0x80c        
-        float m_flDistanceToReachZeroSpeed; // 0x810        
-        entity2::GameTime_t m_flTimeMovementStart; // 0x814        
-        entity2::GameTime_t m_flTimeMovementStop; // 0x818        
+        CUtlSymbolLarge m_iszPathNodeEnd; // 0x7d8        
+        server::CFuncMover__Move_t m_eMoveType; // 0x7e0        
+        bool m_bIsReversing; // 0x7e4        
+        [[maybe_unused]] std::uint8_t pad_0x7e5[0x3]; // 0x7e5
+        Vector m_vTarget; // 0x7e8        
+        float m_flStartSpeed; // 0x7f4        
+        float m_flPathLocation; // 0x7f8        
+        float m_flT; // 0x7fc        
+        int32_t m_nCurrentNodeIndex; // 0x800        
+        int32_t m_nPreviousNodeIndex; // 0x804        
+        client::SolidType_t m_eSolidType; // 0x808        
+        bool m_bIsMoving; // 0x809        
+        [[maybe_unused]] std::uint8_t pad_0x80a[0x2]; // 0x80a
+        float m_flTimeToReachMaxSpeed; // 0x80c        
+        float m_flDistanceToReachMaxSpeed; // 0x810        
+        float m_flTimeToReachZeroSpeed; // 0x814        
+        float m_flDistanceToReachZeroSpeed; // 0x818        
+        entity2::GameTime_t m_flTimeMovementStart; // 0x81c        
+        entity2::GameTime_t m_flTimeMovementStop; // 0x820        
         // m_hStopAtNode has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CMoverPathNode> m_hStopAtNode;
-        char m_hStopAtNode[0x4]; // 0x81c        
-        float m_flPathLocationToBeginStop; // 0x820        
-        [[maybe_unused]] std::uint8_t pad_0x824[0x4]; // 0x824
-        CUtlSymbolLarge m_iszStartForwardSound; // 0x828        
-        CUtlSymbolLarge m_iszLoopForwardSound; // 0x830        
-        CUtlSymbolLarge m_iszStopForwardSound; // 0x838        
-        CUtlSymbolLarge m_iszStartReverseSound; // 0x840        
-        CUtlSymbolLarge m_iszLoopReverseSound; // 0x848        
-        CUtlSymbolLarge m_iszStopReverseSound; // 0x850        
-        CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x858        
-        [[maybe_unused]] std::uint8_t pad_0x860[0x8]; // 0x860
-        entity2::CEntityIOOutput m_OnMovementEnd; // 0x868        
-        bool m_bStartAtEnd; // 0x890        
-        [[maybe_unused]] std::uint8_t pad_0x891[0x3]; // 0x891
-        server::CFuncMover__OrientationUpdate_t m_eOrientationUpdate; // 0x894        
-        entity2::GameTime_t m_flTimeStartOrientationChange; // 0x898        
-        float m_flTimeToBlendToNewOrientation; // 0x89c        
-        float m_flDurationBlendToNewOrientationRan; // 0x8a0        
-        [[maybe_unused]] std::uint8_t pad_0x8a4[0xc]; // 0x8a4
+        char m_hStopAtNode[0x4]; // 0x824        
+        float m_flPathLocationToBeginStop; // 0x828        
+        [[maybe_unused]] std::uint8_t pad_0x82c[0x4]; // 0x82c
+        CUtlSymbolLarge m_iszStartForwardSound; // 0x830        
+        CUtlSymbolLarge m_iszLoopForwardSound; // 0x838        
+        CUtlSymbolLarge m_iszStopForwardSound; // 0x840        
+        CUtlSymbolLarge m_iszStartReverseSound; // 0x848        
+        CUtlSymbolLarge m_iszLoopReverseSound; // 0x850        
+        CUtlSymbolLarge m_iszStopReverseSound; // 0x858        
+        CUtlSymbolLarge m_iszArriveAtDestinationSound; // 0x860        
+        [[maybe_unused]] std::uint8_t pad_0x868[0x8]; // 0x868
+        entity2::CEntityIOOutput m_OnMovementEnd; // 0x870        
+        bool m_bStartAtEnd; // 0x898        
+        [[maybe_unused]] std::uint8_t pad_0x899[0x3]; // 0x899
+        server::CFuncMover__OrientationUpdate_t m_eOrientationUpdate; // 0x89c        
+        entity2::GameTime_t m_flTimeStartOrientationChange; // 0x8a0        
+        float m_flTimeToBlendToNewOrientation; // 0x8a4        
+        float m_flDurationBlendToNewOrientationRan; // 0x8a8        
+        [[maybe_unused]] std::uint8_t pad_0x8ac[0x4]; // 0x8ac
         Quaternion m_qOriginalOrientation; // 0x8b0        
         bool m_bCreateMovableNavMesh; // 0x8c0        
         [[maybe_unused]] std::uint8_t pad_0x8c1[0x7]; // 0x8c1

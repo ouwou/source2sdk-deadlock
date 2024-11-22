@@ -27,7 +27,7 @@ namespace source2sdk::pulse_runtime_lib
     class CPulseCell_Inflow_Method : public pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint
     {
     public:
-        CUtlSymbolLarge m_MethodName; // 0x70        
+        CGlobalSymbol m_MethodName; // 0x70        
         CUtlString m_Description; // 0x78        
         bool m_bIsPublic; // 0x80        
         [[maybe_unused]] std::uint8_t pad_0x81[0x7]; // 0x81

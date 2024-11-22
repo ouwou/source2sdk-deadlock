@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9f8
+    // Size: 0x9e8
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerTrooperDetector : public server::CBaseTrigger
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x990[0x60]; // 0x990
-        float m_flRadius; // 0x9f0        
-        [[maybe_unused]] std::uint8_t pad_0x9f4[0x4];
+        [[maybe_unused]] std::uint8_t pad_0x980[0x60]; // 0x980
+        float m_flRadius; // 0x9e0        
+        [[maybe_unused]] std::uint8_t pad_0x9e4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerTrooperDetector because it is not a standard-layout class
-    static_assert(sizeof(CTriggerTrooperDetector) == 0x9f8);
+    static_assert(sizeof(CTriggerTrooperDetector) == 0x9e8);
 };

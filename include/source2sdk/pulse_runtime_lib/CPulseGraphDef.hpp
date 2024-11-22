@@ -52,11 +52,11 @@ namespace source2sdk::pulse_runtime_lib
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x8]; // 0x0
-        CUtlSymbolLarge m_DomainIdentifier; // 0x8        
-        CUtlSymbolLarge m_ParentMapName; // 0x10        
-        CUtlSymbolLarge m_ParentXmlName; // 0x18        
+        CGlobalSymbol m_DomainIdentifier; // 0x8        
+        CGlobalSymbol m_ParentMapName; // 0x10        
+        CGlobalSymbol m_ParentXmlName; // 0x18        
         // m_vecGameBlackboards has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlVector<CUtlSymbolLarge> m_vecGameBlackboards;
+        // CUtlVector<CGlobalSymbol> m_vecGameBlackboards;
         char m_vecGameBlackboards[0x18]; // 0x20        
         // m_Chunks has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<pulse_runtime_lib::CPulse_Chunk*> m_Chunks;

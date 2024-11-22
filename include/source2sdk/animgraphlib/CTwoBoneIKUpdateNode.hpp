@@ -23,7 +23,6 @@ namespace source2sdk::animgraphlib
     class CTwoBoneIKUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x8]; // 0x68
         animgraphlib::TwoBoneIKSettings_t m_opFixedData; // 0x70        
         [[maybe_unused]] std::uint8_t pad_0x1d0[0x10];
     };

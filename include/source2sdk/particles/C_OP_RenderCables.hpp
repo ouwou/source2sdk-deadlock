@@ -22,7 +22,7 @@ namespace source2sdk::particles
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1488
+    // Size: 0x1468
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -86,17 +86,17 @@ namespace source2sdk::particles
         particleslib::CParticleTransformInput m_LightingTransform; // 0x13c0        
         // metadata: MPropertyFriendlyName "material float variables"
         // m_MaterialFloatVars has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlVector<particles::FloatInputMaterialVariable_t> m_MaterialFloatVars;
-        char m_MaterialFloatVars[0x18]; // 0x1428        
-        [[maybe_unused]] std::uint8_t pad_0x1440[0x18]; // 0x1440
+        // CUtlLeanVector<particles::FloatInputMaterialVariable_t> m_MaterialFloatVars;
+        char m_MaterialFloatVars[0x10]; // 0x1428        
+        [[maybe_unused]] std::uint8_t pad_0x1438[0x10]; // 0x1438
         // metadata: MPropertyFriendlyName "material vector variables"
         // m_MaterialVecVars has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CUtlVector<particles::VecInputMaterialVariable_t> m_MaterialVecVars;
-        char m_MaterialVecVars[0x18]; // 0x1458        
-        [[maybe_unused]] std::uint8_t pad_0x1470[0x18];
+        // CUtlLeanVector<particles::VecInputMaterialVariable_t> m_MaterialVecVars;
+        char m_MaterialVecVars[0x10]; // 0x1448        
+        [[maybe_unused]] std::uint8_t pad_0x1458[0x10];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_RenderCables because it is not a standard-layout class
-    static_assert(sizeof(C_OP_RenderCables) == 0x1488);
+    static_assert(sizeof(C_OP_RenderCables) == 0x1468);
 };

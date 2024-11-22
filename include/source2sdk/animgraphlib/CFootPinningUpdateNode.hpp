@@ -25,7 +25,7 @@ namespace source2sdk::animgraphlib
     class CFootPinningUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x68[0x10]; // 0x68
+        [[maybe_unused]] std::uint8_t pad_0x70[0x8]; // 0x70
         animgraphlib::FootPinningPoseOpFixedData_t m_poseOpFixedData; // 0x78        
         animgraphlib::FootPinningTimingSource m_eTimingSource; // 0xa8        
         [[maybe_unused]] std::uint8_t pad_0xac[0x4]; // 0xac

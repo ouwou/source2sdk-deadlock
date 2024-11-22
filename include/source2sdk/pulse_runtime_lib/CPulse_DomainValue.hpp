@@ -24,8 +24,8 @@ namespace source2sdk::pulse_runtime_lib
     public:
         pulse_runtime_lib::PulseDomainValueType_t m_nType; // 0x0        
         [[maybe_unused]] std::uint8_t pad_0x04[0x4]; // 0x4
-        CGlobalSymbol m_Value; // 0x8        
-        CGlobalSymbol m_ExpectedRuntimeType; // 0x10        
+        CGlobalSymbolCaseSensitive m_Value; // 0x8        
+        CGlobalSymbolCaseSensitive m_ExpectedRuntimeType; // 0x10        
     };
     #pragma pack(pop)
     

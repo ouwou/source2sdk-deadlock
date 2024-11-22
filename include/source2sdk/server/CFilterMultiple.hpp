@@ -1,6 +1,6 @@
 #pragma once
+#include "source2sdk/client/filter_t.hpp"
 #include "source2sdk/server/CBaseFilter.hpp"
-#include "source2sdk/server/filter_t.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -26,7 +26,7 @@ namespace source2sdk::server
     class CFilterMultiple : public server::CBaseFilter
     {
     public:
-        server::filter_t m_nFilterType; // 0x540        
+        client::filter_t m_nFilterType; // 0x540        
         [[maybe_unused]] std::uint8_t pad_0x544[0x4]; // 0x544
         CUtlSymbolLarge m_iFilterName[10]; // 0x548        
         // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.

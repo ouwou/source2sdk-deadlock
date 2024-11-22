@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x68
+    // Size: 0x70
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,10 +23,11 @@ namespace source2sdk::animgraphlib
     class CUnaryUpdateNode : public animgraphlib::CAnimUpdateNodeBase
     {
     public:
-        animgraphlib::CAnimUpdateNodeRef m_pChildNode; // 0x58        
+        [[maybe_unused]] std::uint8_t pad_0x58[0x8]; // 0x58
+        animgraphlib::CAnimUpdateNodeRef m_pChildNode; // 0x60        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CUnaryUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CUnaryUpdateNode) == 0x68);
+    static_assert(sizeof(CUnaryUpdateNode) == 0x70);
 };

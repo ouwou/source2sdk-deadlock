@@ -16,7 +16,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc8
+    // Size: 0xd0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,20 +24,20 @@ namespace source2sdk::animgraphlib
     class CHitReactUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        animgraphlib::HitReactFixedSettings_t m_opFixedSettings; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0xac[0x8]; // 0xac
-        animgraphlib::CAnimParamHandle m_triggerParam; // 0xb4        
-        animgraphlib::CAnimParamHandle m_hitBoneParam; // 0xb6        
-        animgraphlib::CAnimParamHandle m_hitOffsetParam; // 0xb8        
-        animgraphlib::CAnimParamHandle m_hitDirectionParam; // 0xba        
-        animgraphlib::CAnimParamHandle m_hitStrengthParam; // 0xbc        
-        [[maybe_unused]] std::uint8_t pad_0xbe[0x2]; // 0xbe
-        float m_flMinDelayBetweenHits; // 0xc0        
-        bool m_bResetChild; // 0xc4        
-        [[maybe_unused]] std::uint8_t pad_0xc5[0x3];
+        animgraphlib::HitReactFixedSettings_t m_opFixedSettings; // 0x70        
+        [[maybe_unused]] std::uint8_t pad_0xb4[0x8]; // 0xb4
+        animgraphlib::CAnimParamHandle m_triggerParam; // 0xbc        
+        animgraphlib::CAnimParamHandle m_hitBoneParam; // 0xbe        
+        animgraphlib::CAnimParamHandle m_hitOffsetParam; // 0xc0        
+        animgraphlib::CAnimParamHandle m_hitDirectionParam; // 0xc2        
+        animgraphlib::CAnimParamHandle m_hitStrengthParam; // 0xc4        
+        [[maybe_unused]] std::uint8_t pad_0xc6[0x2]; // 0xc6
+        float m_flMinDelayBetweenHits; // 0xc8        
+        bool m_bResetChild; // 0xcc        
+        [[maybe_unused]] std::uint8_t pad_0xcd[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CHitReactUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CHitReactUpdateNode) == 0xc8);
+    static_assert(sizeof(CHitReactUpdateNode) == 0xd0);
 };

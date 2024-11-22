@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a8
+    // Size: 0x998
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelInteriorTrigger : public server::CTriggerModifier
     {
     public:
-        int32_t m_nInteriorType; // 0x9a0        
-        CUtlStringToken m_tInteriorModifier; // 0x9a4        
+        int32_t m_nInteriorType; // 0x990        
+        CUtlStringToken m_tInteriorModifier; // 0x994        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelInteriorTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelInteriorTrigger) == 0x9a8);
+    static_assert(sizeof(CCitadelInteriorTrigger) == 0x998);
 };

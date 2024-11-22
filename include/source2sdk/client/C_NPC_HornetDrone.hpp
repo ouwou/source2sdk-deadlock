@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1470
+    // Size: 0x1468
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -26,5 +26,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_NPC_HornetDrone) == 0x1470);
+    static_assert(sizeof(C_NPC_HornetDrone) == 0x1468);
 };

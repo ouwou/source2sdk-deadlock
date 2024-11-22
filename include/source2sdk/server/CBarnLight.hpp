@@ -57,6 +57,7 @@ namespace source2sdk::server
     // static metadata: MNetworkVarNames "int m_nShadowMapSize"
     // static metadata: MNetworkVarNames "int m_nShadowPriority"
     // static metadata: MNetworkVarNames "bool m_bContactShadow"
+    // static metadata: MNetworkVarNames "bool m_bForceShadowsEnabled"
     // static metadata: MNetworkVarNames "int m_nBounceLight"
     // static metadata: MNetworkVarNames "float m_flBounceScale"
     // static metadata: MNetworkVarNames "float m_flMinRoughness"
@@ -207,7 +208,10 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "RenderingChanged"
         bool m_bContactShadow; // 0x95c        
-        [[maybe_unused]] std::uint8_t pad_0x95d[0x3]; // 0x95d
+        // metadata: MNetworkEnable
+        // metadata: MNetworkChangeCallback "RenderingChanged"
+        bool m_bForceShadowsEnabled; // 0x95d        
+        [[maybe_unused]] std::uint8_t pad_0x95e[0x2]; // 0x95e
         // metadata: MNetworkEnable
         int32_t m_nBounceLight; // 0x960        
         // metadata: MNetworkEnable

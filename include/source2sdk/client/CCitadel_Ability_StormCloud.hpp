@@ -16,12 +16,16 @@ namespace source2sdk::client
     // Standard-layout class: false
     // Size: 0xd18
     // Has VTable
+    // 
+    // static metadata: MNetworkVarNames "float m_flFloat"
     #pragma pack(push, 1)
     class CCitadel_Ability_StormCloud : public client::C_CitadelBaseAbility
     {
     public:
-        bool m_bApplyingVerticalAirDrag; // 0xca0        
-        [[maybe_unused]] std::uint8_t pad_0xca1[0x77];
+        [[maybe_unused]] std::uint8_t pad_0xca0[0x70]; // 0xca0
+        // metadata: MNetworkEnable
+        float m_flFloat; // 0xd10        
+        [[maybe_unused]] std::uint8_t pad_0xd14[0x4];
     };
     #pragma pack(pop)
     

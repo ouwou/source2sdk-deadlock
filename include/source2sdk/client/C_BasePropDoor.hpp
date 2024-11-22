@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xde8
+    // Size: 0xde0
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByName "m_flAnimTime"
@@ -35,27 +35,27 @@ namespace source2sdk::client
     class C_BasePropDoor : public client::C_DynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xda8[0x10]; // 0xda8
+        [[maybe_unused]] std::uint8_t pad_0xda0[0x10]; // 0xda0
         // metadata: MNetworkEnable
-        client::DoorState_t m_eDoorState; // 0xdb8        
-        bool m_modelChanged; // 0xdbc        
+        client::DoorState_t m_eDoorState; // 0xdb0        
+        bool m_modelChanged; // 0xdb4        
         // metadata: MNetworkEnable
-        bool m_bLocked; // 0xdbd        
+        bool m_bLocked; // 0xdb5        
         // metadata: MNetworkEnable
-        bool m_bNoNPCs; // 0xdbe        
-        [[maybe_unused]] std::uint8_t pad_0xdbf[0x1]; // 0xdbf
+        bool m_bNoNPCs; // 0xdb6        
+        [[maybe_unused]] std::uint8_t pad_0xdb7[0x1]; // 0xdb7
         // metadata: MNetworkEnable
-        Vector m_closedPosition; // 0xdc0        
+        Vector m_closedPosition; // 0xdb8        
         // metadata: MNetworkEnable
-        QAngle m_closedAngles; // 0xdcc        
+        QAngle m_closedAngles; // 0xdc4        
         // metadata: MNetworkEnable
         // m_hMaster has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BasePropDoor> m_hMaster;
-        char m_hMaster[0x4]; // 0xdd8        
-        Vector m_vWhereToSetLightingOrigin; // 0xddc        
+        char m_hMaster[0x4]; // 0xdd0        
+        Vector m_vWhereToSetLightingOrigin; // 0xdd4        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BasePropDoor because it is not a standard-layout class
-    static_assert(sizeof(C_BasePropDoor) == 0xde8);
+    static_assert(sizeof(C_BasePropDoor) == 0xde0);
 };

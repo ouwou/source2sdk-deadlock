@@ -16,7 +16,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa0
+    // Size: 0xa8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,12 +26,12 @@ namespace source2sdk::animgraphlib
     public:
         // m_targetHandles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<animgraphlib::CSolveIKTargetHandle_t> m_targetHandles;
-        char m_targetHandles[0x18]; // 0x68        
-        animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x98[0x8];
+        char m_targetHandles[0x18]; // 0x70        
+        animgraphlib::SolveIKChainPoseOpFixedSettings_t m_opFixedData; // 0x88        
+        [[maybe_unused]] std::uint8_t pad_0xa0[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSolveIKChainUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CSolveIKChainUpdateNode) == 0xa0);
+    static_assert(sizeof(CSolveIKChainUpdateNode) == 0xa8);
 };

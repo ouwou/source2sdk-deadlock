@@ -26,9 +26,9 @@ namespace source2sdk::pulse_runtime_lib
     class CPulseCell_Inflow_EntOutputHandler : public pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint
     {
     public:
-        CUtlSymbolLarge m_SourceEntity; // 0x70        
-        CUtlSymbolLarge m_SourceOutput; // 0x78        
-        CUtlSymbolLarge m_TargetInput; // 0x80        
+        CGlobalSymbol m_SourceEntity; // 0x70        
+        CGlobalSymbol m_SourceOutput; // 0x78        
+        CGlobalSymbol m_TargetInput; // 0x80        
         CPulseValueFullType m_ExpectedParamType; // 0x88        
     };
     #pragma pack(pop)

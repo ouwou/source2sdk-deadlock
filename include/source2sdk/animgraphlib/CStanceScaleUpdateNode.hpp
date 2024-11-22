@@ -15,7 +15,7 @@ namespace source2sdk::animgraphlib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x70
+    // Size: 0x78
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,11 +23,11 @@ namespace source2sdk::animgraphlib
     class CStanceScaleUpdateNode : public animgraphlib::CUnaryUpdateNode
     {
     public:
-        animgraphlib::CAnimParamHandle m_hParam; // 0x68        
-        [[maybe_unused]] std::uint8_t pad_0x6a[0x6];
+        animgraphlib::CAnimParamHandle m_hParam; // 0x70        
+        [[maybe_unused]] std::uint8_t pad_0x72[0x6];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CStanceScaleUpdateNode because it is not a standard-layout class
-    static_assert(sizeof(CStanceScaleUpdateNode) == 0x70);
+    static_assert(sizeof(CStanceScaleUpdateNode) == 0x78);
 };

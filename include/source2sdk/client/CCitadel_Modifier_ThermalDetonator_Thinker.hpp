@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x268
+    // Size: 0x188
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_ThermalDetonator_Thinker : public client::CCitadelModifierAura
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xe0[0x188];
+        [[maybe_unused]] std::uint8_t pad_0xe0[0xa8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_ThermalDetonator_Thinker) == 0x268);
+    static_assert(sizeof(CCitadel_Modifier_ThermalDetonator_Thinker) == 0x188);
 };

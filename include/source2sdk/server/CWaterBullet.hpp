@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa48
+    // Size: 0xa40
     // Has VTable
     #pragma pack(push, 1)
     class CWaterBullet : public server::CBaseAnimGraph
@@ -27,5 +27,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CWaterBullet) == 0xa48);
+    static_assert(sizeof(CWaterBullet) == 0xa40);
 };

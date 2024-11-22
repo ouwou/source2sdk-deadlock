@@ -23,7 +23,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1128
+    // Size: 0x1130
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_flTimeStartZipping"
@@ -41,6 +41,7 @@ namespace source2sdk::client
     // static metadata: MNetworkVarNames "int m_iAttachedZipLineLane"
     // static metadata: MNetworkVarNames "bool m_bDroppedFromZipline"
     // static metadata: MNetworkVarNames "Vector m_vAttachZipLineOffset"
+    // static metadata: MNetworkVarNames "float m_flZiplineAirDrag"
     #pragma pack(push, 1)
     class CCitadel_Ability_ZipLine : public client::C_CitadelBaseAbility
     {
@@ -97,9 +98,13 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         Vector m_vAttachZipLineOffset; // 0x111c        
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
+        float m_flZiplineAirDrag; // 0x1128        
+        [[maybe_unused]] std::uint8_t pad_0x112c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ZipLine because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ZipLine) == 0x1128);
+    static_assert(sizeof(CCitadel_Ability_ZipLine) == 0x1130);
 };

@@ -26,7 +26,6 @@ namespace source2sdk::server
     {
     public:
         [[maybe_unused]] std::uint8_t pad_0x00[0x8]; // 0x0
-        // metadata: MNetworkChangeAccessorFieldPathIndex
         entity2::CNetworkVarChainer __m_pChainEntity; // 0x8        
         char m_szQuestName[128]; // 0x30        
         int32_t m_nQuestPhase; // 0xb0        

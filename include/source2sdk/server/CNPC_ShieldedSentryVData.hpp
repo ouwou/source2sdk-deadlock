@@ -56,7 +56,7 @@ namespace source2sdk::server
         float m_flNotifyEventTime; // 0x350        
         float m_flNearDeathDuration; // 0x354        
         float m_flMinimapRevealTime; // 0x358        
-        [[maybe_unused]] std::uint8_t pad_0x35c[0x4];
+        float m_flMinLifetime; // 0x35c        
     };
     #pragma pack(pop)
     

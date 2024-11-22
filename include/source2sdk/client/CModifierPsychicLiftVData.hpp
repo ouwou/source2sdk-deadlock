@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x7e0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -29,9 +29,12 @@ namespace source2sdk::client
         char m_LiftParticle[0xe0]; // 0x6e8        
         // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_strStartSound; // 0x7c8        
+        // metadata: MPropertyStartGroup "Gameplay"
+        float m_flOscillateFrequency; // 0x7d8        
+        float m_flOscillateHeight; // 0x7dc        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierPsychicLiftVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierPsychicLiftVData) == 0x7d8);
+    static_assert(sizeof(CModifierPsychicLiftVData) == 0x7e0);
 };
