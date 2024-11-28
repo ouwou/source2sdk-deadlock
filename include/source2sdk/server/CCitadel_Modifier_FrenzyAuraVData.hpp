@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x658
+    // Size: 0x660
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_KillModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_KillModifier;
-        char m_KillModifier[0x10]; // 0x648        
+        char m_KillModifier[0x10]; // 0x650        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_FrenzyAuraVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_FrenzyAuraVData) == 0x658);
+    static_assert(sizeof(CCitadel_Modifier_FrenzyAuraVData) == 0x660);
 };

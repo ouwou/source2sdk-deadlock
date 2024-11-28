@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x648
+    // Size: 0x650
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,5 +25,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelModifer_Viscous_Goo_Aura_VData) == 0x648);
+    static_assert(sizeof(CCitadelModifer_Viscous_Goo_Aura_VData) == 0x650);
 };

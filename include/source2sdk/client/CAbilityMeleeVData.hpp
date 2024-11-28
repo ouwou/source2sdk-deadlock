@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1580
+    // Size: 0x1588
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -31,11 +31,15 @@ namespace source2sdk::client
         float m_flHeavyAttackRequiredHoldTime; // 0x1568        
         // metadata: MPropertyDescription "A light attack will trigger if the melee button is pressed and released within this time.  After this time, a heavy melee will charge up"
         float m_flLightAttackMaxHoldTime; // 0x156c        
-        client::TakeDamageFlags_t m_MeleeDamageFlags; // 0x1570        
-        CUtlString m_strEffectsAttachName; // 0x1578        
+        // metadata: MPropertyDescription "How far to the side a target must dash during the melee attack delay window  in order to dodge a pending hit"
+        float m_flSideDashDodgeDist; // 0x1570        
+        // metadata: MPropertyDescription "How far back a target must dash during the melee attack delay window  in order to dodge a pending hit"
+        float m_flBackDashDodgeDist; // 0x1574        
+        client::TakeDamageFlags_t m_MeleeDamageFlags; // 0x1578        
+        CUtlString m_strEffectsAttachName; // 0x1580        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityMeleeVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityMeleeVData) == 0x1580);
+    static_assert(sizeof(CAbilityMeleeVData) == 0x1588);
 };

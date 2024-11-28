@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x728
+    // Size: 0x730
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_AuraParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_AuraParticle;
-        char m_AuraParticle[0xe0]; // 0x648        
+        char m_AuraParticle[0xe0]; // 0x650        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Cadence_Crescendo_AOE_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Cadence_Crescendo_AOE_VData) == 0x728);
+    static_assert(sizeof(CCitadel_Modifier_Cadence_Crescendo_AOE_VData) == 0x730);
 };

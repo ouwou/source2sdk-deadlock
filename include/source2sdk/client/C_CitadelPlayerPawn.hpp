@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1408
+    // Size: 0x1468
     // Has VTable
     // 
     // static metadata: MNetworkVarTypeOverride "CCitadelPlayer_CameraServices m_pCameraServices"
@@ -188,7 +188,7 @@ namespace source2sdk::client
         Vector m_vShootTestOffsetStanding; // 0x13c0        
         Vector m_vShootTestOffsetCrouching; // 0x13cc        
         entity2::GameTime_t m_leanStartTime; // 0x13d8        
-        [[maybe_unused]] std::uint8_t pad_0x13dc[0x2c];
+        [[maybe_unused]] std::uint8_t pad_0x13dc[0x8c];
         
         // Datamap fields:
         // CCitadelPlayer_CameraServices m_pCameraServices; // 0xd58
@@ -197,5 +197,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelPlayerPawn because it is not a standard-layout class
-    static_assert(sizeof(C_CitadelPlayerPawn) == 0x1408);
+    static_assert(sizeof(C_CitadelPlayerPawn) == 0x1468);
 };

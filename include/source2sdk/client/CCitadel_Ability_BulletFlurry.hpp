@@ -22,7 +22,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe00
+    // Size: 0xe08
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flFlurryEndTime"
@@ -42,9 +42,11 @@ namespace source2sdk::client
         int32_t m_nBurstShots; // 0xdf4        
         entity2::GameTime_t m_flNextAttackTime; // 0xdf8        
         client::SatVolumeIndex_t m_nSatVolumeIndex; // 0xdfc        
+        bool m_bHasCameraOverride; // 0xe00        
+        [[maybe_unused]] std::uint8_t pad_0xe01[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_BulletFlurry because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_BulletFlurry) == 0xe00);
+    static_assert(sizeof(CCitadel_Ability_BulletFlurry) == 0xe08);
 };

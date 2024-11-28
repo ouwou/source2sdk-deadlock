@@ -40,7 +40,8 @@ namespace source2sdk::server
         int32_t m_nShootIndexNPC; // 0xc50        
         int32_t m_nBurstShots; // 0xc54        
         entity2::GameTime_t m_flNextAttackTime; // 0xc58        
-        [[maybe_unused]] std::uint8_t pad_0xc5c[0x4];
+        bool m_bHasCameraOverride; // 0xc5c        
+        [[maybe_unused]] std::uint8_t pad_0xc5d[0x3];
     };
     #pragma pack(pop)
     

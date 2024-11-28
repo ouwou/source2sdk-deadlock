@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x360
+    // Size: 0x368
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -57,9 +57,11 @@ namespace source2sdk::server
         float m_flNearDeathDuration; // 0x354        
         float m_flMinimapRevealTime; // 0x358        
         float m_flMinLifetime; // 0x35c        
+        float m_flAttackThinkTime; // 0x360        
+        [[maybe_unused]] std::uint8_t pad_0x364[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPC_ShieldedSentryVData because it is not a standard-layout class
-    static_assert(sizeof(CNPC_ShieldedSentryVData) == 0x360);
+    static_assert(sizeof(CNPC_ShieldedSentryVData) == 0x368);
 };

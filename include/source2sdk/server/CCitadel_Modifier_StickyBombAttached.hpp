@@ -21,8 +21,9 @@ namespace source2sdk::server
     class CCitadel_Modifier_StickyBombAttached : public server::CCitadelModifier
     {
     public:
-        client::ParticleIndex_t m_nParticleIndex; // 0xc0        
-        [[maybe_unused]] std::uint8_t pad_0xc4[0xac];
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x4]; // 0xc0
+        client::ParticleIndex_t m_nParticleIndex; // 0xc4        
+        [[maybe_unused]] std::uint8_t pad_0xc8[0xa8];
     };
     #pragma pack(pop)
     

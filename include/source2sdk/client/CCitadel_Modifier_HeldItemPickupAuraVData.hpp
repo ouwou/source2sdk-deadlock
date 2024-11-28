@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x658
+    // Size: 0x660
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,10 +24,10 @@ namespace source2sdk::client
     public:
         // m_strFilterAbilityName has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CSubclassName<4> m_strFilterAbilityName;
-        char m_strFilterAbilityName[0x10]; // 0x648        
+        char m_strFilterAbilityName[0x10]; // 0x650        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_HeldItemPickupAuraVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_HeldItemPickupAuraVData) == 0x658);
+    static_assert(sizeof(CCitadel_Modifier_HeldItemPickupAuraVData) == 0x660);
 };

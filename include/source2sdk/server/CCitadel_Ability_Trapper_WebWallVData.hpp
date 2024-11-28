@@ -28,9 +28,9 @@ namespace source2sdk::server
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
         char m_DebuffModifier[0x10]; // 0x1560        
-        // m_DisarmModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<server::CCitadelModifier> m_DisarmModifier;
-        char m_DisarmModifier[0x10]; // 0x1570        
+        // m_SilenceModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<server::CCitadelModifier> m_SilenceModifier;
+        char m_SilenceModifier[0x10]; // 0x1570        
         // metadata: MPropertyStartGroup "Visuals"
         // m_WebWallParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_WebWallParticle;

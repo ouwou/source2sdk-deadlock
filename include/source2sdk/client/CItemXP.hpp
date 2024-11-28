@@ -19,6 +19,7 @@ namespace source2sdk::client
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_timeLaunch"
+    // static metadata: MNetworkVarNames "GameTime_t m_flAttackableTime"
     #pragma pack(push, 1)
     class CItemXP : public client::C_BaseModelEntity
     {
@@ -27,7 +28,9 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnLaunchTimeChanged"
         entity2::GameTime_t m_timeLaunch; // 0x8c0        
-        [[maybe_unused]] std::uint8_t pad_0x8c4[0x2c];
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flAttackableTime; // 0x8c4        
+        [[maybe_unused]] std::uint8_t pad_0x8c8[0x28];
     };
     #pragma pack(pop)
     

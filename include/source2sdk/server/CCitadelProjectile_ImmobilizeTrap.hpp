@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb70
+    // Size: 0xb78
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelProjectile_ImmobilizeTrap : public server::CCitadelProjectile
@@ -25,10 +25,10 @@ namespace source2sdk::server
         Vector m_vecStartPos; // 0x874        
         Vector m_vecEndPos; // 0x880        
         entity2::GameTime_t m_flProjectileLandTime; // 0x88c        
-        [[maybe_unused]] std::uint8_t pad_0x890[0x2e0];
+        [[maybe_unused]] std::uint8_t pad_0x890[0x2e8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelProjectile_ImmobilizeTrap because it is not a standard-layout class
-    static_assert(sizeof(CCitadelProjectile_ImmobilizeTrap) == 0xb70);
+    static_assert(sizeof(CCitadelProjectile_ImmobilizeTrap) == 0xb78);
 };
