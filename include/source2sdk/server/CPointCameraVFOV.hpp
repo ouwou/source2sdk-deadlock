@@ -14,22 +14,22 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x550
+    // Size: 0x548
     // Has VTable
     #pragma pack(push, 1)
     class CPointCameraVFOV : public server::CPointCamera
     {
     public:
-        float m_flVerticalFOV; // 0x548        
-        [[maybe_unused]] std::uint8_t pad_0x54c[0x4];
+        float m_flVerticalFOV; // 0x540        
+        [[maybe_unused]] std::uint8_t pad_0x544[0x4];
         
         // Datamap fields:
-        // float m_flDofFarCrisp; // 0x528
-        // float m_flDofFarBlurry; // 0x52c
-        // float m_flDofTiltToGround; // 0x530
+        // float m_flDofFarCrisp; // 0x520
+        // float m_flDofFarBlurry; // 0x524
+        // float m_flDofTiltToGround; // 0x528
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointCameraVFOV because it is not a standard-layout class
-    static_assert(sizeof(CPointCameraVFOV) == 0x550);
+    static_assert(sizeof(CPointCameraVFOV) == 0x548);
 };

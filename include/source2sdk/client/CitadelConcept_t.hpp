@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 79
+    // Enumerator count: 80
     // Alignment: 4
     // Size: 0x4
     enum class CitadelConcept_t : std::uint32_t
@@ -88,88 +88,90 @@ namespace source2sdk::client
         // MPropertyDescription
         TLK_CITADEL_OPEN_SHOP = 0x23,
         // MPropertyDescription
-        TLK_CITADEL_INTERACT_WITH_ABILITY = 0x24,
+        TLK_CITADEL_SEASONAL_EVENT = 0x24,
         // MPropertyDescription
-        TLK_CITADEL_ULTIMATE_READY = 0x25,
+        TLK_CITADEL_INTERACT_WITH_ABILITY = 0x25,
         // MPropertyDescription
-        TLK_CITADEL_NEUTRAL_IDLE = 0x26,
+        TLK_CITADEL_ULTIMATE_READY = 0x26,
         // MPropertyDescription
-        TLK_CITADEL_NEUTRAL_AGGRO = 0x27,
+        TLK_CITADEL_NEUTRAL_IDLE = 0x27,
         // MPropertyDescription
-        TLK_CITADEL_ALLY_KILLED = 0x28,
+        TLK_CITADEL_NEUTRAL_AGGRO = 0x28,
         // MPropertyDescription
-        TLK_CITADEL_ENEMY_PICKED_UP_REJUVENATOR = 0x29,
+        TLK_CITADEL_ALLY_KILLED = 0x29,
         // MPropertyDescription
-        TLK_CITADEL_PARRY = 0x2a,
+        TLK_CITADEL_ENEMY_PICKED_UP_REJUVENATOR = 0x2a,
+        // MPropertyDescription
+        TLK_CITADEL_PARRY = 0x2b,
         // MPropertyDescription "played at the end of a channeled ability"
-        TLK_CITADEL_CAST_FINISH = 0x2b,
+        TLK_CITADEL_CAST_FINISH = 0x2c,
         // MPropertyDescription "played for the victim of a targeted ability"
-        TLK_CITADEL_CAST_TARGET_VICTIM = 0x2c,
+        TLK_CITADEL_CAST_TARGET_VICTIM = 0x2d,
         // MPropertyDescription "played for the victim of a channeled ability"
-        TLK_CITADEL_CAST_FINISH_VICTIM = 0x2d,
+        TLK_CITADEL_CAST_FINISH_VICTIM = 0x2e,
         // MPropertyDescription "an ability projectile hit an enemy"
-        TLK_CITADEL_PROJECTILE_HIT = 0x2e,
+        TLK_CITADEL_PROJECTILE_HIT = 0x2f,
         // MPropertyDescription "the victim of the projectile"
-        TLK_CITADEL_HIT_BY_PROJECTILE = 0x2f,
+        TLK_CITADEL_HIT_BY_PROJECTILE = 0x30,
         // MPropertyDescription
-        TLK_CITADEL_DROP_ITEM = 0x30,
+        TLK_CITADEL_DROP_ITEM = 0x31,
         // MPropertyDescription
-        TLK_CITADEL_HEALED = 0x31,
+        TLK_CITADEL_HEALED = 0x32,
         // MPropertyDescription "up to one player will play a line observing this"
-        TLK_CITADEL_OBSERVE_CAST = 0x32,
+        TLK_CITADEL_OBSERVE_CAST = 0x33,
         // MPropertyDescription "up to one player will play a line observing this"
-        TLK_CITADEL_OBSERVE_CAST_FINISH = 0x33,
+        TLK_CITADEL_OBSERVE_CAST_FINISH = 0x34,
         // MPropertyDescription "up to one player will play a line observing this"
-        TLK_CITADEL_OBSERVE_PROJECTILE_HIT = 0x34,
+        TLK_CITADEL_OBSERVE_PROJECTILE_HIT = 0x35,
         // MPropertyDescription
-        TLK_CITADEL_PING = 0x35,
+        TLK_CITADEL_PING = 0x36,
         // MPropertyDescription
-        TLK_CITADEL_MOVEMENT_EFFORT = 0x36,
+        TLK_CITADEL_MOVEMENT_EFFORT = 0x37,
         // MPropertyDescription
-        TLK_CITADEL_ANN_BEGIN_REGEN = 0x37,
+        TLK_CITADEL_ANN_BEGIN_REGEN = 0x38,
         // MPropertyDescription
-        TLK_CITADEL_ANN_MIDBOSS_SPAWN = 0x38,
+        TLK_CITADEL_ANN_MIDBOSS_SPAWN = 0x39,
         // MPropertyDescription
-        TLK_CITADEL_ANN_MIDBOSS_KILLED = 0x39,
+        TLK_CITADEL_ANN_MIDBOSS_KILLED = 0x3a,
         // MPropertyDescription
-        TLK_CITADEL_ANN_ENEMY_DETECTED = 0x3a,
+        TLK_CITADEL_ANN_ENEMY_DETECTED = 0x3b,
         // MPropertyDescription
-        TLK_CITADEL_ANN_REJUVINATOR = 0x3b,
+        TLK_CITADEL_ANN_REJUVINATOR = 0x3c,
         // MPropertyDescription
-        TLK_CITADEL_ANN_DEFEAT = 0x3c,
+        TLK_CITADEL_ANN_DEFEAT = 0x3d,
         // MPropertyDescription
-        TLK_CITADEL_ANN_VICTORY = 0x3d,
+        TLK_CITADEL_ANN_VICTORY = 0x3e,
         // MPropertyDescription
-        TLK_CITADEL_ANN_PICKUP_ITEM = 0x3e,
+        TLK_CITADEL_ANN_PICKUP_ITEM = 0x3f,
         // MPropertyDescription
-        TLK_CITADEL_ANN_DROP_ITEM = 0x3f,
+        TLK_CITADEL_ANN_DROP_ITEM = 0x40,
         // MPropertyDescription
-        TLK_CITADEL_ANN_IDOL = 0x40,
+        TLK_CITADEL_ANN_IDOL = 0x41,
         // MPropertyDescription
-        TLK_CITADEL_ANN_TEAM_LANE_BOSS_ATTACKED = 0x41,
+        TLK_CITADEL_ANN_TEAM_LANE_BOSS_ATTACKED = 0x42,
         // MPropertyDescription
-        TLK_CITADEL_ANN_TEAM_BASE_BOSS_ATTACKED = 0x42,
+        TLK_CITADEL_ANN_TEAM_BASE_BOSS_ATTACKED = 0x43,
         // MPropertyDescription
-        TLK_CITADEL_ANN_ENEMY_LANE_BOSS_ATTACKED = 0x43,
+        TLK_CITADEL_ANN_ENEMY_LANE_BOSS_ATTACKED = 0x44,
         // MPropertyDescription
-        TLK_CITADEL_ANN_ENEMY_BASE_BOSS_ATTACKED = 0x44,
+        TLK_CITADEL_ANN_ENEMY_BASE_BOSS_ATTACKED = 0x45,
         // MPropertyDescription
-        TLK_CITADEL_ANN_TEAM_LANE_BOSS_DESTROYED = 0x45,
+        TLK_CITADEL_ANN_TEAM_LANE_BOSS_DESTROYED = 0x46,
         // MPropertyDescription
-        TLK_CITADEL_ANN_TEAM_BASE_BOSS_DESTROYED = 0x46,
+        TLK_CITADEL_ANN_TEAM_BASE_BOSS_DESTROYED = 0x47,
         // MPropertyDescription
-        TLK_CITADEL_ANN_ENEMY_LANE_BOSS_DESTROYED = 0x47,
+        TLK_CITADEL_ANN_ENEMY_LANE_BOSS_DESTROYED = 0x48,
         // MPropertyDescription
-        TLK_CITADEL_ANN_ENEMY_BASE_BOSS_DESTROYED = 0x48,
+        TLK_CITADEL_ANN_ENEMY_BASE_BOSS_DESTROYED = 0x49,
         // MPropertyDescription
-        TLK_CITADEL_ANN_KILL = 0x49,
+        TLK_CITADEL_ANN_KILL = 0x4a,
         // MPropertyDescription
-        TLK_CITADEL_ANN_KILL_STREAK = 0x4a,
+        TLK_CITADEL_ANN_KILL_STREAK = 0x4b,
         // MPropertyDescription
-        TLK_CITADEL_ANN_COMMEND_HERO = 0x4b,
+        TLK_CITADEL_ANN_COMMEND_HERO = 0x4c,
         // MPropertyDescription
-        TLK_CITADEL_ANN_GUIDED_BOT_MATCH = 0x4c,
+        TLK_CITADEL_ANN_GUIDED_BOT_MATCH = 0x4d,
         // MPropertySuppressEnumerator
-        CITADEL_CONCEPT_COUNT = 0x4d,
+        CITADEL_CONCEPT_COUNT = 0x4e,
     };
 };

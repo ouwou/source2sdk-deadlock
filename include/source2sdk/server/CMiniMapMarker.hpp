@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x508
+    // Size: 0x500
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -29,13 +29,13 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x4e8        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x4e0        
         // metadata: MNetworkEnable
-        client::EMiniMapMarkerType_t m_eType; // 0x500        
-        [[maybe_unused]] std::uint8_t pad_0x504[0x4];
+        client::EMiniMapMarkerType_t m_eType; // 0x4f8        
+        [[maybe_unused]] std::uint8_t pad_0x4fc[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMiniMapMarker because it is not a standard-layout class
-    static_assert(sizeof(CMiniMapMarker) == 0x508);
+    static_assert(sizeof(CMiniMapMarker) == 0x500);
 };

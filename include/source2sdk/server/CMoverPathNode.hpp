@@ -20,26 +20,26 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x590
+    // Size: 0x588
     // Has VTable
     #pragma pack(push, 1)
     class CMoverPathNode : public server::CPointEntity
     {
     public:
-        Vector m_vInTangentLocal; // 0x4e8        
-        Vector m_vOutTangentLocal; // 0x4f4        
-        CUtlSymbolLarge m_szParentPathUniqueID; // 0x500        
-        CUtlSymbolLarge m_szPathNodeParameter; // 0x508        
-        entity2::CEntityIOOutput m_OnPassThrough; // 0x510        
-        entity2::CEntityIOOutput m_OnPassThroughForward; // 0x538        
-        entity2::CEntityIOOutput m_OnPassThroughReverse; // 0x560        
+        Vector m_vInTangentLocal; // 0x4e0        
+        Vector m_vOutTangentLocal; // 0x4ec        
+        CUtlSymbolLarge m_szParentPathUniqueID; // 0x4f8        
+        CUtlSymbolLarge m_szPathNodeParameter; // 0x500        
+        entity2::CEntityIOOutput m_OnPassThrough; // 0x508        
+        entity2::CEntityIOOutput m_OnPassThroughForward; // 0x530        
+        entity2::CEntityIOOutput m_OnPassThroughReverse; // 0x558        
         // m_hMover has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CPathMover> m_hMover;
-        char m_hMover[0x4]; // 0x588        
-        [[maybe_unused]] std::uint8_t pad_0x58c[0x4];
+        char m_hMover[0x4]; // 0x580        
+        [[maybe_unused]] std::uint8_t pad_0x584[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMoverPathNode because it is not a standard-layout class
-    static_assert(sizeof(CMoverPathNode) == 0x590);
+    static_assert(sizeof(CMoverPathNode) == 0x588);
 };

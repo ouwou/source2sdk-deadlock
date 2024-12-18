@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x638
+    // Size: 0x660
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,14 +26,14 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_TossModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_TossModifier;
-        char m_TossModifier[0x10]; // 0x608        
+        char m_TossModifier[0x10]; // 0x630        
         // m_LiftModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_LiftModifier;
-        char m_LiftModifier[0x10]; // 0x618        
-        CSoundEventName m_strHitConfirmSound; // 0x628        
+        char m_LiftModifier[0x10]; // 0x640        
+        CSoundEventName m_strHitConfirmSound; // 0x650        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Mirage_Tornado_Aura_Apply_VData because it is not a standard-layout class
-    static_assert(sizeof(CModifier_Mirage_Tornado_Aura_Apply_VData) == 0x638);
+    static_assert(sizeof(CModifier_Mirage_Tornado_Aura_Apply_VData) == 0x660);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8f8
+    // Size: 0x8f0
     // Has VTable
     #pragma pack(push, 1)
     class C_Citadel_Projectile_Wrecker_Teleport : public client::C_CitadelProjectile
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x8e8[0x10];
+        [[maybe_unused]] std::uint8_t pad_0x8e0[0x10];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_Citadel_Projectile_Wrecker_Teleport) == 0x8f8);
+    static_assert(sizeof(C_Citadel_Projectile_Wrecker_Teleport) == 0x8f0);
 };

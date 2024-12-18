@@ -16,18 +16,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x500
+    // Size: 0x4f8
     // Has VTable
     #pragma pack(push, 1)
     class CAISound : public server::CPointEntity
     {
     public:
-        server::SoundTypes_t m_iSoundType; // 0x4e8        
-        server::SoundFlags_t m_iSoundFlags; // 0x4ea        
-        int32_t m_iVolume; // 0x4ec        
-        int32_t m_iSoundIndex; // 0x4f0        
-        float m_flDuration; // 0x4f4        
-        CUtlSymbolLarge m_iszProxyEntityName; // 0x4f8        
+        server::SoundTypes_t m_iSoundType; // 0x4e0        
+        server::SoundFlags_t m_iSoundFlags; // 0x4e2        
+        int32_t m_iVolume; // 0x4e4        
+        int32_t m_iSoundIndex; // 0x4e8        
+        float m_flDuration; // 0x4ec        
+        CUtlSymbolLarge m_iszProxyEntityName; // 0x4f0        
         
         // Datamap fields:
         // int32_t InputInsertSound; // 0x0
@@ -37,5 +37,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAISound because it is not a standard-layout class
-    static_assert(sizeof(CAISound) == 0x500);
+    static_assert(sizeof(CAISound) == 0x4f8);
 };

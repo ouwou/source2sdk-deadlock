@@ -14,7 +14,7 @@ namespace source2sdk::pulse_system
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x90
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -29,11 +29,11 @@ namespace source2sdk::pulse_system
     {
     public:
         // metadata: MPropertyDescription "Any cursors above this count will wait, up to the limit."
-        int32_t m_nCursorsAllowedToRunParallel; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x84[0x4];
+        int32_t m_nCursorsAllowedToRunParallel; // 0x88        
+        [[maybe_unused]] std::uint8_t pad_0x8c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_CursorQueue because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_CursorQueue) == 0x88);
+    static_assert(sizeof(CPulseCell_CursorQueue) == 0x90);
 };

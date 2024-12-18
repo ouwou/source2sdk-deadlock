@@ -25,7 +25,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc70
+    // Size: 0xc68
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hProjectile"
@@ -36,34 +36,34 @@ namespace source2sdk::server
     class CCitadel_Ability_GuidedArrow : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb00[0x8]; // 0xb00
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x8]; // 0xaf8
         // metadata: MNetworkEnable
         // m_hProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hProjectile;
-        char m_hProjectile[0x4]; // 0xb08        
+        char m_hProjectile[0x4]; // 0xb00        
         // metadata: MNetworkEnable
-        float m_flArrowSpeed; // 0xb0c        
+        float m_flArrowSpeed; // 0xb04        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flSnapAnglesBackTime; // 0xb10        
+        entity2::GameTime_t m_flSnapAnglesBackTime; // 0xb08        
         // metadata: MNetworkEnable
-        int32_t m_nBonusTechPower; // 0xb14        
+        int32_t m_nBonusTechPower; // 0xb0c        
         // m_hOwl has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelAnimatingModelEntity> m_hOwl;
-        char m_hOwl[0x4]; // 0xb18        
-        [[maybe_unused]] std::uint8_t pad_0xb1c[0xc]; // 0xb1c
-        entity2::GameTime_t m_flCastTime; // 0xb28        
-        bool m_bNeedsExplosion; // 0xb2c        
-        [[maybe_unused]] std::uint8_t pad_0xb2d[0x3]; // 0xb2d
-        Vector m_vProjectileRemovedOrigin; // 0xb30        
-        QAngle m_angCasterAnglesAtCastTime; // 0xb3c        
-        float m_flTravelDistance; // 0xb48        
-        bool m_bInKillFlow; // 0xb4c        
-        [[maybe_unused]] std::uint8_t pad_0xb4d[0x3]; // 0xb4d
-        float m_flProjectileTurnVel; // 0xb50        
-        [[maybe_unused]] std::uint8_t pad_0xb54[0x11c];
+        char m_hOwl[0x4]; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb14[0xc]; // 0xb14
+        entity2::GameTime_t m_flCastTime; // 0xb20        
+        bool m_bNeedsExplosion; // 0xb24        
+        [[maybe_unused]] std::uint8_t pad_0xb25[0x3]; // 0xb25
+        Vector m_vProjectileRemovedOrigin; // 0xb28        
+        QAngle m_angCasterAnglesAtCastTime; // 0xb34        
+        float m_flTravelDistance; // 0xb40        
+        bool m_bInKillFlow; // 0xb44        
+        [[maybe_unused]] std::uint8_t pad_0xb45[0x3]; // 0xb45
+        float m_flProjectileTurnVel; // 0xb48        
+        [[maybe_unused]] std::uint8_t pad_0xb4c[0x11c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_GuidedArrow because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_GuidedArrow) == 0xc70);
+    static_assert(sizeof(CCitadel_Ability_GuidedArrow) == 0xc68);
 };

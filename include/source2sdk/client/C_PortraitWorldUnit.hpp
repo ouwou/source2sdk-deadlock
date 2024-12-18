@@ -26,17 +26,18 @@ namespace source2sdk::client
     class C_PortraitWorldUnit : public client::C_BaseCombatCharacter
     {
     public:
-        bool m_bSuppressIntroEffects; // 0xd20        
-        bool m_bIsAlternateLoadout; // 0xd21        
-        bool m_bSpawnBackgroundModels; // 0xd22        
-        bool m_bDeferredPortrait; // 0xd23        
-        bool m_bShowParticleAssetModifiers; // 0xd24        
-        bool m_bIgnorePortraitInfo; // 0xd25        
-        bool m_bFlyingCourier; // 0xd26        
-        [[maybe_unused]] std::uint8_t pad_0xd27[0x1]; // 0xd27
-        int32_t m_nEffigyStatusEffect; // 0xd28        
-        [[maybe_unused]] std::uint8_t pad_0xd2c[0x4]; // 0xd2c
-        CUtlSymbolLarge m_effigySequenceName; // 0xd30        
+        bool m_bSuppressIntroEffects; // 0xd18        
+        bool m_bIsAlternateLoadout; // 0xd19        
+        bool m_bSpawnBackgroundModels; // 0xd1a        
+        bool m_bDeferredPortrait; // 0xd1b        
+        bool m_bShowParticleAssetModifiers; // 0xd1c        
+        bool m_bIgnorePortraitInfo; // 0xd1d        
+        bool m_bFlyingCourier; // 0xd1e        
+        [[maybe_unused]] std::uint8_t pad_0xd1f[0x1]; // 0xd1f
+        int32_t m_nEffigyStatusEffect; // 0xd20        
+        [[maybe_unused]] std::uint8_t pad_0xd24[0x4]; // 0xd24
+        CUtlSymbolLarge m_effigySequenceName; // 0xd28        
+        CUtlSymbolLarge m_BodyGroup; // 0xd30        
         float m_flStartingAnimationCycle; // 0xd38        
         float m_flRareLoadoutAnimChance; // 0xd3c        
         [[maybe_unused]] std::uint8_t pad_0xd40[0x10]; // 0xd40

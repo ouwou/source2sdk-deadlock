@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb00
+    // Size: 0xaf8
     // Has VTable
     // Is Abstract
     #pragma pack(push, 1)
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelBaseShivAbility) == 0xb00);
+    static_assert(sizeof(CCitadelBaseShivAbility) == 0xaf8);
 };

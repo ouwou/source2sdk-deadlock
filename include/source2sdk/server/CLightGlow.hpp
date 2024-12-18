@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7e0
+    // Size: 0x7d8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -34,26 +34,26 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        uint32_t m_nHorizontalSize; // 0x7c0        
+        uint32_t m_nHorizontalSize; // 0x7b8        
         // metadata: MNetworkEnable
-        uint32_t m_nVerticalSize; // 0x7c4        
+        uint32_t m_nVerticalSize; // 0x7bc        
         // metadata: MNetworkEnable
-        uint32_t m_nMinDist; // 0x7c8        
+        uint32_t m_nMinDist; // 0x7c0        
         // metadata: MNetworkEnable
-        uint32_t m_nMaxDist; // 0x7cc        
+        uint32_t m_nMaxDist; // 0x7c4        
         // metadata: MNetworkEnable
-        uint32_t m_nOuterMaxDist; // 0x7d0        
+        uint32_t m_nOuterMaxDist; // 0x7c8        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "6"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "64.000000"
         // metadata: MNetworkEncodeFlags "2"
-        float m_flGlowProxySize; // 0x7d4        
+        float m_flGlowProxySize; // 0x7cc        
         // metadata: MNetworkEnable
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "100.000000"
-        float m_flHDRColorScale; // 0x7d8        
-        [[maybe_unused]] std::uint8_t pad_0x7dc[0x4];
+        float m_flHDRColorScale; // 0x7d0        
+        [[maybe_unused]] std::uint8_t pad_0x7d4[0x4];
         
         // Datamap fields:
         // Color InputColor; // 0x0
@@ -61,5 +61,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CLightGlow because it is not a standard-layout class
-    static_assert(sizeof(CLightGlow) == 0x7e0);
+    static_assert(sizeof(CLightGlow) == 0x7d8);
 };

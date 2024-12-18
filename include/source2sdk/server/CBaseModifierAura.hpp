@@ -1,5 +1,4 @@
 #pragma once
-#include "source2sdk/client/ParticleIndex_t.hpp"
 #include "source2sdk/server/CCitadelModifier.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
@@ -30,8 +29,8 @@ namespace source2sdk::server
         // m_hAuraUnits has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_hAuraUnits;
         char m_hAuraUnits[0x18]; // 0xc0        
-        client::ParticleIndex_t m_hAmbientEffect; // 0xd8        
-        float m_flOverrideRadius; // 0xdc        
+        float m_flOverrideRadius; // 0xd8        
+        [[maybe_unused]] std::uint8_t pad_0xdc[0x4];
     };
     #pragma pack(pop)
     

@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x618
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_SilenceModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_SilenceModifier;
-        char m_SilenceModifier[0x10]; // 0x608        
+        char m_SilenceModifier[0x10]; // 0x630        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_SilenceProc_DebuffVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_SilenceProc_DebuffVData) == 0x618);
+    static_assert(sizeof(CCitadel_Modifier_SilenceProc_DebuffVData) == 0x640);
 };

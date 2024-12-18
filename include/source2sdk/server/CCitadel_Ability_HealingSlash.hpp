@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc40
+    // Size: 0xc38
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_HealingSlash : public server::CCitadelBaseYamatoAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb08[0x138];
+        [[maybe_unused]] std::uint8_t pad_0xb00[0x138];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_HealingSlash) == 0xc40);
+    static_assert(sizeof(CCitadel_Ability_HealingSlash) == 0xc38);
 };

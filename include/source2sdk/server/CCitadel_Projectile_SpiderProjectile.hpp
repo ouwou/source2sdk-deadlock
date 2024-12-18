@@ -15,17 +15,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa10
+    // Size: 0xa08
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_SpiderProjectile : public server::CCitadelProjectile
     {
     public:
-        entity2::GameTime_t m_flNextRandomPositionTime; // 0x870        
-        [[maybe_unused]] std::uint8_t pad_0x874[0x19c];
+        entity2::GameTime_t m_flNextRandomPositionTime; // 0x868        
+        [[maybe_unused]] std::uint8_t pad_0x86c[0x19c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_SpiderProjectile because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_SpiderProjectile) == 0xa10);
+    static_assert(sizeof(CCitadel_Projectile_SpiderProjectile) == 0xa08);
 };

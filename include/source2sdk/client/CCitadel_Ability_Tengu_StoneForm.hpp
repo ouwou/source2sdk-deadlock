@@ -29,7 +29,7 @@ namespace source2sdk::client
     class CCitadel_Ability_Tengu_StoneForm : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x1c0]; // 0xca0
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x1c8]; // 0xc98
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         entity2::GameTime_t m_flStartTime; // 0xe60        

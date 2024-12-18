@@ -21,7 +21,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x6a0
+    // Size: 0x698
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hPayload"
@@ -37,24 +37,24 @@ namespace source2sdk::client
         // metadata: MNetworkEnable
         // m_hPayload has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hPayload;
-        char m_hPayload[0x4]; // 0x620        
+        char m_hPayload[0x4]; // 0x618        
         // metadata: MNetworkEnable
-        int32_t m_nBossesAlive; // 0x624        
+        int32_t m_nBossesAlive; // 0x61c        
         // metadata: MNetworkEnable
-        int32_t m_nBossesMax; // 0x628        
+        int32_t m_nBossesMax; // 0x620        
         // metadata: MNetworkEnable
-        client::EFlexSlotTypes_t m_nFlexSlotsUnlocked; // 0x62c        
-        [[maybe_unused]] std::uint8_t pad_0x62e[0x2]; // 0x62e
+        client::EFlexSlotTypes_t m_nFlexSlotsUnlocked; // 0x624        
+        [[maybe_unused]] std::uint8_t pad_0x626[0x2]; // 0x626
         // metadata: MNetworkEnable
-        int32_t m_nBaseGuardianLanesCleared; // 0x630        
-        [[maybe_unused]] std::uint8_t pad_0x634[0x4]; // 0x634
+        int32_t m_nBaseGuardianLanesCleared; // 0x628        
+        [[maybe_unused]] std::uint8_t pad_0x62c[0x4]; // 0x62c
         // metadata: MNetworkEnable
         // m_vecFOWEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_UtlVectorEmbeddedNetworkVar<client::STeamFOWEntity> m_vecFOWEntities;
-        char m_vecFOWEntities[0x68]; // 0x638        
+        char m_vecFOWEntities[0x68]; // 0x630        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_CitadelTeam because it is not a standard-layout class
-    static_assert(sizeof(C_CitadelTeam) == 0x6a0);
+    static_assert(sizeof(C_CitadelTeam) == 0x698);
 };

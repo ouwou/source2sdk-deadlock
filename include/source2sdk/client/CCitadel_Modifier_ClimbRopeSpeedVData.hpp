@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x618
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,13 +22,13 @@ namespace source2sdk::client
     class CCitadel_Modifier_ClimbRopeSpeedVData : public client::CCitadelModifierVData
     {
     public:
-        float m_flRampUpTime; // 0x608        
-        float m_flPercentageMultiplierStart; // 0x60c        
-        float m_flPercentageMultiplierEnd; // 0x610        
-        [[maybe_unused]] std::uint8_t pad_0x614[0x4];
+        float m_flRampUpTime; // 0x630        
+        float m_flPercentageMultiplierStart; // 0x634        
+        float m_flPercentageMultiplierEnd; // 0x638        
+        [[maybe_unused]] std::uint8_t pad_0x63c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ClimbRopeSpeedVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ClimbRopeSpeedVData) == 0x618);
+    static_assert(sizeof(CCitadel_Modifier_ClimbRopeSpeedVData) == 0x640);
 };

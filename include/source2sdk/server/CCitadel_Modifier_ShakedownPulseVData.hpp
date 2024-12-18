@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x800
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,17 +24,17 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strFireSound; // 0x608        
+        CSoundEventName m_strFireSound; // 0x630        
         // metadata: MPropertyStartGroup "Visuals"
         // m_ShakeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ShakeParticle;
-        char m_ShakeParticle[0xe0]; // 0x618        
+        char m_ShakeParticle[0xe0]; // 0x640        
         // m_ChainParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ChainParticle;
-        char m_ChainParticle[0xe0]; // 0x6f8        
+        char m_ChainParticle[0xe0]; // 0x720        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ShakedownPulseVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ShakedownPulseVData) == 0x7d8);
+    static_assert(sizeof(CCitadel_Modifier_ShakedownPulseVData) == 0x800);
 };

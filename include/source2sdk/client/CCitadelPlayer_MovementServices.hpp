@@ -19,6 +19,7 @@ namespace source2sdk::client
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CNetworkVelocityVector m_vPositionDeltaVelocity"
+    // static metadata: MNetworkVarNames "bool m_bToggleDuckActive"
     #pragma pack(push, 1)
     class CCitadelPlayer_MovementServices : public client::CPlayer_MovementServices_Humanoid
     {
@@ -28,12 +29,17 @@ namespace source2sdk::client
         // metadata: MNetworkPriority "32"
         client::CNetworkVelocityVector m_vPositionDeltaVelocity; // 0x218        
         [[maybe_unused]] std::uint8_t pad_0x240[0x8]; // 0x240
-        Vector m_vecPogoVelocity; // 0x248        
-        Vector m_vecSupport; // 0x254        
-        bool m_bColliding; // 0x260        
-        bool m_bLandedOnGround; // 0x261        
-        bool m_bHasFreeCursor; // 0x262        
-        [[maybe_unused]] std::uint8_t pad_0x263[0x1d];
+        // metadata: MNetworkEnable
+        // metadata: MNetworkUserGroup "LocalPlayerExclusive"
+        // metadata: MNetworkPriority "32"
+        bool m_bToggleDuckActive; // 0x248        
+        [[maybe_unused]] std::uint8_t pad_0x249[0x3]; // 0x249
+        Vector m_vecPogoVelocity; // 0x24c        
+        Vector m_vecSupport; // 0x258        
+        bool m_bColliding; // 0x264        
+        bool m_bLandedOnGround; // 0x265        
+        bool m_bHasFreeCursor; // 0x266        
+        [[maybe_unused]] std::uint8_t pad_0x267[0x19];
     };
     #pragma pack(pop)
     

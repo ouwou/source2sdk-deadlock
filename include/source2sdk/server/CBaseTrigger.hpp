@@ -25,7 +25,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x980
+    // Size: 0x978
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_spawnflags"
@@ -34,23 +34,23 @@ namespace source2sdk::server
     class CBaseTrigger : public server::CBaseToggle
     {
     public:
-        entity2::CEntityIOOutput m_OnStartTouch; // 0x840        
-        entity2::CEntityIOOutput m_OnStartTouchAll; // 0x868        
-        entity2::CEntityIOOutput m_OnEndTouch; // 0x890        
-        entity2::CEntityIOOutput m_OnEndTouchAll; // 0x8b8        
-        entity2::CEntityIOOutput m_OnTouching; // 0x8e0        
-        entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x908        
-        entity2::CEntityIOOutput m_OnNotTouching; // 0x930        
+        entity2::CEntityIOOutput m_OnStartTouch; // 0x838        
+        entity2::CEntityIOOutput m_OnStartTouchAll; // 0x860        
+        entity2::CEntityIOOutput m_OnEndTouch; // 0x888        
+        entity2::CEntityIOOutput m_OnEndTouchAll; // 0x8b0        
+        entity2::CEntityIOOutput m_OnTouching; // 0x8d8        
+        entity2::CEntityIOOutput m_OnTouchingEachEntity; // 0x900        
+        entity2::CEntityIOOutput m_OnNotTouching; // 0x928        
         // m_hTouchingEntities has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_hTouchingEntities;
-        char m_hTouchingEntities[0x18]; // 0x958        
-        CUtlSymbolLarge m_iFilterName; // 0x970        
+        char m_hTouchingEntities[0x18]; // 0x950        
+        CUtlSymbolLarge m_iFilterName; // 0x968        
         // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseFilter> m_hFilter;
-        char m_hFilter[0x4]; // 0x978        
+        char m_hFilter[0x4]; // 0x970        
         // metadata: MNetworkEnable
-        bool m_bDisabled; // 0x97c        
-        [[maybe_unused]] std::uint8_t pad_0x97d[0x3];
+        bool m_bDisabled; // 0x974        
+        [[maybe_unused]] std::uint8_t pad_0x975[0x3];
         
         // Datamap fields:
         // void InputEnable; // 0x0
@@ -65,5 +65,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBaseTrigger because it is not a standard-layout class
-    static_assert(sizeof(CBaseTrigger) == 0x980);
+    static_assert(sizeof(CBaseTrigger) == 0x978);
 };

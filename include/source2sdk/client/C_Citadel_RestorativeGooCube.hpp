@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb10
+    // Size: 0xb08
     // Has VTable
     #pragma pack(push, 1)
     class C_Citadel_RestorativeGooCube : public client::CCitadelAnimatingModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb08[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xb00[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_Citadel_RestorativeGooCube) == 0xb10);
+    static_assert(sizeof(C_Citadel_RestorativeGooCube) == 0xb08);
 };

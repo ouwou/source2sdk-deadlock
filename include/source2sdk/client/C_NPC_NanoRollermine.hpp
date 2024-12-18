@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1488
+    // Size: 0x1480
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flForwardSpeed"
@@ -28,16 +28,16 @@ namespace source2sdk::client
     class C_NPC_NanoRollermine : public client::C_AI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x1468[0x18]; // 0x1468
+        [[maybe_unused]] std::uint8_t pad_0x1460[0x18]; // 0x1460
         // metadata: MNetworkEnable
-        float m_flForwardSpeed; // 0x1480        
+        float m_flForwardSpeed; // 0x1478        
         // metadata: MNetworkEnable
         // m_hOwnerPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hOwnerPawn;
-        char m_hOwnerPawn[0x4]; // 0x1484        
+        char m_hOwnerPawn[0x4]; // 0x147c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_NPC_NanoRollermine because it is not a standard-layout class
-    static_assert(sizeof(C_NPC_NanoRollermine) == 0x1488);
+    static_assert(sizeof(C_NPC_NanoRollermine) == 0x1480);
 };

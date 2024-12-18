@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe0
+    // Size: 0xf0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_Hero_Testing_Damage_Aura : public client::CCitadelModifierAura
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Modifier_Hero_Testing_Damage_Aura) == 0xe0);
+    static_assert(sizeof(CCitadel_Modifier_Hero_Testing_Damage_Aura) == 0xf0);
 };

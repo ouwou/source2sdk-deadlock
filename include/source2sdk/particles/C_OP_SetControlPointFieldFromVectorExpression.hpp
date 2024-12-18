@@ -3,6 +3,7 @@
 #include "source2sdk/particles/VectorFloatExpressionType_t.hpp"
 #include "source2sdk/particleslib/CParticleCollectionVecInput.hpp"
 #include "source2sdk/particleslib/CParticleRemapFloatInput.hpp"
+#include "source2sdk/particleslib/CPerParticleFloatInput.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -17,7 +18,7 @@ namespace source2sdk::particles
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1028
+    // Size: 0x1188
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -32,16 +33,19 @@ namespace source2sdk::particles
         particleslib::CParticleCollectionVecInput m_vecInput1; // 0x1d0        
         // metadata: MPropertyFriendlyName "input 2"
         particleslib::CParticleCollectionVecInput m_vecInput2; // 0x848        
+        // metadata: MPropertyFriendlyName "lerp value"
+        // metadata: MPropertySuppressExpr "m_nExpression != VECTOR_EXPRESSION_LERP"
+        particleslib::CPerParticleFloatInput m_flLerp; // 0xec0        
         // metadata: MPropertyFriendlyName "output"
-        particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0xec0        
+        particleslib::CParticleRemapFloatInput m_flOutputRemap; // 0x1020        
         // metadata: MPropertyFriendlyName "output control point"
-        int32_t m_nOutputCP; // 0x1020        
+        int32_t m_nOutputCP; // 0x1180        
         // metadata: MPropertyFriendlyName "output component"
         // metadata: MPropertyAttributeChoiceName "vector_component"
-        int32_t m_nOutVectorField; // 0x1024        
+        int32_t m_nOutVectorField; // 0x1184        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_SetControlPointFieldFromVectorExpression because it is not a standard-layout class
-    static_assert(sizeof(C_OP_SetControlPointFieldFromVectorExpression) == 0x1028);
+    static_assert(sizeof(C_OP_SetControlPointFieldFromVectorExpression) == 0x1188);
 };

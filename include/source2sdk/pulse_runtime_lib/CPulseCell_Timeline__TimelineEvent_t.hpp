@@ -14,7 +14,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x38
+    // Size: 0x40
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -34,5 +34,5 @@ namespace source2sdk::pulse_runtime_lib
     static_assert(offsetof(CPulseCell_Timeline__TimelineEvent_t, m_bCallModeSync) == 0x5);
     static_assert(offsetof(CPulseCell_Timeline__TimelineEvent_t, m_EventOutflow) == 0x8);
     
-    static_assert(sizeof(CPulseCell_Timeline__TimelineEvent_t) == 0x38);
+    static_assert(sizeof(CPulseCell_Timeline__TimelineEvent_t) == 0x40);
 };

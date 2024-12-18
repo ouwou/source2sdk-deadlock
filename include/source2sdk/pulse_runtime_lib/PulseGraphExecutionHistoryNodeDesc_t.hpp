@@ -13,7 +13,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x18
+    // Size: 0x20
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -21,12 +21,12 @@ namespace source2sdk::pulse_runtime_lib
     {
     public:
         CBufferString strCellDesc; // 0x0        
-        CGlobalSymbol strBindingName; // 0x10        
+        PulseSymbol_t strBindingName; // 0x10        
     };
     #pragma pack(pop)
     
     static_assert(offsetof(PulseGraphExecutionHistoryNodeDesc_t, strCellDesc) == 0x0);
     static_assert(offsetof(PulseGraphExecutionHistoryNodeDesc_t, strBindingName) == 0x10);
     
-    static_assert(sizeof(PulseGraphExecutionHistoryNodeDesc_t) == 0x18);
+    static_assert(sizeof(PulseGraphExecutionHistoryNodeDesc_t) == 0x20);
 };

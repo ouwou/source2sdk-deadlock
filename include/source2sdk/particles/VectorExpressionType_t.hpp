@@ -8,7 +8,7 @@
 
 namespace source2sdk::particles
 {
-    // Enumerator count: 9
+    // Enumerator count: 10
     // Alignment: 4
     // Size: 0x4
     enum class VectorExpressionType_t : std::uint32_t
@@ -31,5 +31,7 @@ namespace source2sdk::particles
         VECTOR_EXPRESSION_MAX = 0x6,
         // MPropertyFriendlyName "Cross Product"
         VECTOR_EXPRESSION_CROSSPRODUCT = 0x7,
+        // MPropertyFriendlyName "Lerp"
+        VECTOR_EXPRESSION_LERP = 0x8,
     };
 };

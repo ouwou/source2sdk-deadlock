@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdb8
+    // Size: 0xdb0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_DeathTax : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x118];
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x118];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_DeathTax) == 0xdb8);
+    static_assert(sizeof(CCitadel_Ability_DeathTax) == 0xdb0);
 };

@@ -20,7 +20,7 @@ namespace source2sdk::client
     class CCitadel_Ability_VoidSphere : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0xc8];
+        [[maybe_unused]] std::uint8_t pad_0xc98[0xd0];
         // No schema binary for binding
     };
     #pragma pack(pop)

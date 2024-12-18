@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4e8
+    // Size: 0x4e0
     // Has VTable
     #pragma pack(push, 1)
     class CHandleDummy : public server::CBaseEntity
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CHandleDummy) == 0x4e8);
+    static_assert(sizeof(CHandleDummy) == 0x4e0);
 };

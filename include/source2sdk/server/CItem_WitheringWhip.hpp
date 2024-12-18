@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb58
+    // Size: 0xb50
     // Has VTable
     #pragma pack(push, 1)
     class CItem_WitheringWhip : public server::CCitadel_Item_TrackingProjectileApplyModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb20[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xb18[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CItem_WitheringWhip) == 0xb58);
+    static_assert(sizeof(CItem_WitheringWhip) == 0xb50);
 };

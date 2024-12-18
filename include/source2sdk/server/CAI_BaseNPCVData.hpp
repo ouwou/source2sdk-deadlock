@@ -24,7 +24,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x398
+    // Size: 0x3a8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -87,9 +87,7 @@ namespace source2sdk::server
         float m_flCapsuleRadiusOverride; // 0x2e4        
         // metadata: MPropertyDescription "Override the height of the capsule. Requires m_bAllowNonZUpMovement or m_bRequestCapsuleCollision to be set. 0 to use collision prop height."
         float m_flCapsuleHeightOverride; // 0x2e8        
-        // metadata: MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
-        bool m_bAllowAnimgraphMotorMovementStates; // 0x2ec        
-        [[maybe_unused]] std::uint8_t pad_0x2ed[0x3]; // 0x2ed
+        [[maybe_unused]] std::uint8_t pad_0x2ec[0x4]; // 0x2ec
         // metadata: MPropertyStartGroup "Animation"
         // metadata: MPropertyFriendlyName "Enabled Shared Actions"
         // metadata: MPropertyDescription "List of the shared BaseNPC actions this NPC supports"
@@ -100,12 +98,16 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Sounds"
         // metadata: MPropertyDescription "Player Killed NPC Sound"
         CSoundEventName m_sPlayerKilledNpcSound; // 0x308        
+        // metadata: MPropertyStartGroup "Death"
         CGlobalSymbol m_sCustomDeathHandshake; // 0x318        
         // metadata: MPropertyStartGroup "Movement"
-        client::AI_AdditionalMovementSettings m_defaultAdditionalMovementSettings; // 0x320        
+        // metadata: MPropertyDescription "If true, this NPC will use code driven animgraph movement actions such as starts and stops"
+        bool m_bEnableCodeDrivenAnimgraphMovement; // 0x320        
+        [[maybe_unused]] std::uint8_t pad_0x321[0x7]; // 0x321
+        client::AI_AdditionalMovementSettings m_defaultAdditionalMovementSettings; // 0x328        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAI_BaseNPCVData because it is not a standard-layout class
-    static_assert(sizeof(CAI_BaseNPCVData) == 0x398);
+    static_assert(sizeof(CAI_BaseNPCVData) == 0x3a8);
 };

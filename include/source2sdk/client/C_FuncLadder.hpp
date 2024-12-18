@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8b8
+    // Size: 0x8b0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "Vector m_vecLadderDir"
@@ -33,25 +33,25 @@ namespace source2sdk::client
     public:
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecLadderDir; // 0x860        
-        [[maybe_unused]] std::uint8_t pad_0x86c[0x4]; // 0x86c
+        Vector m_vecLadderDir; // 0x858        
+        [[maybe_unused]] std::uint8_t pad_0x864[0x4]; // 0x864
         // m_Dismounts has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<client::C_InfoLadderDismount>> m_Dismounts;
-        char m_Dismounts[0x18]; // 0x870        
-        Vector m_vecLocalTop; // 0x888        
+        char m_Dismounts[0x18]; // 0x868        
+        Vector m_vecLocalTop; // 0x880        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecPlayerMountPositionTop; // 0x894        
+        Vector m_vecPlayerMountPositionTop; // 0x88c        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
-        Vector m_vecPlayerMountPositionBottom; // 0x8a0        
+        Vector m_vecPlayerMountPositionBottom; // 0x898        
         // metadata: MNetworkEnable
-        float m_flAutoRideSpeed; // 0x8ac        
-        bool m_bDisabled; // 0x8b0        
+        float m_flAutoRideSpeed; // 0x8a4        
+        bool m_bDisabled; // 0x8a8        
         // metadata: MNetworkEnable
-        bool m_bFakeLadder; // 0x8b1        
-        bool m_bHasSlack; // 0x8b2        
-        [[maybe_unused]] std::uint8_t pad_0x8b3[0x5];
+        bool m_bFakeLadder; // 0x8a9        
+        bool m_bHasSlack; // 0x8aa        
+        [[maybe_unused]] std::uint8_t pad_0x8ab[0x5];
         
         // Static fields:
         static CUtlVector<client::C_FuncLadder*> &Get_s_Ladders() {return *reinterpret_cast<CUtlVector<client::C_FuncLadder*>*>(interfaces::g_schema->FindTypeScopeForModule("client.dll")->FindDeclaredClass("C_FuncLadder")->GetStaticFields()[0]->m_pInstance);};
@@ -59,5 +59,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_FuncLadder because it is not a standard-layout class
-    static_assert(sizeof(C_FuncLadder) == 0x8b8);
+    static_assert(sizeof(C_FuncLadder) == 0x8b0);
 };

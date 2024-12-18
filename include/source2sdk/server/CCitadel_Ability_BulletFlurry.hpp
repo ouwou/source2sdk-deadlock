@@ -25,13 +25,16 @@ namespace source2sdk::server
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flFlurryEndTime"
+    // static metadata: MNetworkVarNames "GameTime_t m_flNextAttackTime"
     #pragma pack(push, 1)
     class CCitadel_Ability_BulletFlurry : public server::CCitadelBaseAbility
     {
     public:
         // metadata: MNetworkEnable
-        server::CCitadelAutoScaledTime m_flFlurryEndTime; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb18[0x118]; // 0xb18
+        server::CCitadelAutoScaledTime m_flFlurryEndTime; // 0xaf8        
+        // metadata: MNetworkEnable
+        entity2::GameTime_t m_flNextAttackTime; // 0xb10        
+        [[maybe_unused]] std::uint8_t pad_0xb14[0x11c]; // 0xb14
         // m_vecShootTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBaseEntity>> m_vecShootTargets;
         char m_vecShootTargets[0x18]; // 0xc30        
@@ -39,9 +42,8 @@ namespace source2sdk::server
         int32_t m_nShootIndex; // 0xc4c        
         int32_t m_nShootIndexNPC; // 0xc50        
         int32_t m_nBurstShots; // 0xc54        
-        entity2::GameTime_t m_flNextAttackTime; // 0xc58        
-        bool m_bHasCameraOverride; // 0xc5c        
-        [[maybe_unused]] std::uint8_t pad_0xc5d[0x3];
+        bool m_bHasCameraOverride; // 0xc58        
+        [[maybe_unused]] std::uint8_t pad_0xc59[0x7];
     };
     #pragma pack(pop)
     

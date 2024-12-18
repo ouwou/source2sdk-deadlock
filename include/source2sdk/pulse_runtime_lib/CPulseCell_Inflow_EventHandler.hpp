@@ -14,7 +14,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x78
+    // Size: 0x80
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::pulse_runtime_lib
     class CPulseCell_Inflow_EventHandler : public pulse_runtime_lib::CPulseCell_Inflow_BaseEntrypoint
     {
     public:
-        CGlobalSymbol m_EventName; // 0x70        
+        PulseSymbol_t m_EventName; // 0x70        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_Inflow_EventHandler because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_Inflow_EventHandler) == 0x78);
+    static_assert(sizeof(CPulseCell_Inflow_EventHandler) == 0x80);
 };

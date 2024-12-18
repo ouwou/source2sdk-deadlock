@@ -15,7 +15,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x18
+    // Size: 0x20
     // Has Trivial Destructor
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,7 +27,7 @@ namespace source2sdk::pulse_runtime_lib
         pulse_runtime_lib::PulseDocNodeID_t nEditorID; // 0x4        
         float flExecTime; // 0x8        
         uint32_t unFlags; // 0xc        
-        CGlobalSymbol tagName; // 0x10        
+        PulseSymbol_t tagName; // 0x10        
     };
     #pragma pack(pop)
     
@@ -37,5 +37,5 @@ namespace source2sdk::pulse_runtime_lib
     static_assert(offsetof(PulseGraphExecutionHistoryEntry_t, unFlags) == 0xc);
     static_assert(offsetof(PulseGraphExecutionHistoryEntry_t, tagName) == 0x10);
     
-    static_assert(sizeof(PulseGraphExecutionHistoryEntry_t) == 0x18);
+    static_assert(sizeof(PulseGraphExecutionHistoryEntry_t) == 0x20);
 };

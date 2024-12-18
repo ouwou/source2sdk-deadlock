@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 4
+    // Enumerator count: 6
     // Alignment: 4
     // Size: 0x4
     enum class PropertyValueApplyFilter_t : std::uint32_t
@@ -17,5 +17,7 @@ namespace source2sdk::client
         EApplyFilter_OnlyIfImbued = 0x1,
         EApplyFilter_OnlyIfNonImbued = 0x2,
         EApplyFilter_OnlyIfHasCharges = 0x3,
+        EApplyFilter_OnlyIfUltimate = 0x4,
+        EApplyFilter_OnlyIfSignature = 0x5,
     };
 };

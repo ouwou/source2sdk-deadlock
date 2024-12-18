@@ -14,13 +14,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x870
+    // Size: 0x868
     // Has VTable
     #pragma pack(push, 1)
     class CFuncPlat : public server::CBasePlatTrain
     {
     public:
-        CUtlSymbolLarge m_sNoise; // 0x868        
+        CUtlSymbolLarge m_sNoise; // 0x860        
         
         // Datamap fields:
         // void CFuncPlatPlatUse; // 0x0
@@ -34,5 +34,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncPlat because it is not a standard-layout class
-    static_assert(sizeof(CFuncPlat) == 0x870);
+    static_assert(sizeof(CFuncPlat) == 0x868);
 };

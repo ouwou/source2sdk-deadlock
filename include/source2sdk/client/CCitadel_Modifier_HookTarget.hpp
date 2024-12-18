@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x258
+    // Size: 0x178
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Modifier_HookTarget : public client::CCitadelModifier
@@ -27,10 +27,10 @@ namespace source2sdk::client
         bool m_bPlayedApproachingWhoosh; // 0xca        
         [[maybe_unused]] std::uint8_t pad_0xcb[0x1]; // 0xcb
         float m_flInitialTravelDistance; // 0xcc        
-        [[maybe_unused]] std::uint8_t pad_0xd0[0x188];
+        [[maybe_unused]] std::uint8_t pad_0xd0[0xa8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_HookTarget because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_HookTarget) == 0x258);
+    static_assert(sizeof(CCitadel_Modifier_HookTarget) == 0x178);
 };

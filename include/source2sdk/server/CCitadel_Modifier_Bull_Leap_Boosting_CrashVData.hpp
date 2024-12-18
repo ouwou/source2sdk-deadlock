@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x700
+    // Size: 0x728
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,17 +27,17 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DragModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DragModifier;
-        char m_DragModifier[0x10]; // 0x608        
+        char m_DragModifier[0x10]; // 0x630        
         // metadata: MPropertyStartGroup "Visuals"
         // m_CrashTrailParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_CrashTrailParticle;
-        char m_CrashTrailParticle[0xe0]; // 0x618        
+        char m_CrashTrailParticle[0xe0]; // 0x640        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flCollideRadius; // 0x6f8        
-        [[maybe_unused]] std::uint8_t pad_0x6fc[0x4];
+        float m_flCollideRadius; // 0x720        
+        [[maybe_unused]] std::uint8_t pad_0x724[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Bull_Leap_Boosting_CrashVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Bull_Leap_Boosting_CrashVData) == 0x700);
+    static_assert(sizeof(CCitadel_Modifier_Bull_Leap_Boosting_CrashVData) == 0x728);
 };

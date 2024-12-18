@@ -14,19 +14,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x500
+    // Size: 0x4f8
     // Has VTable
     #pragma pack(push, 1)
     class CItemCrateSpawn : public server::CServerOnlyPointEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4e8[0x18];
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x18];
         // Datamap fields:
-        // int32_t m_eLootType; // 0x4f0
-        // int32_t m_eObjectivePosition; // 0x4f4
+        // int32_t m_eLootType; // 0x4e8
+        // int32_t m_eObjectivePosition; // 0x4ec
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CItemCrateSpawn) == 0x500);
+    static_assert(sizeof(CItemCrateSpawn) == 0x4f8);
 };

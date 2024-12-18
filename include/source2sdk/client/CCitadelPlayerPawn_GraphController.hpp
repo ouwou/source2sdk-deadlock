@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2d0
+    // Size: 0x2e8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelPlayerPawn_GraphController : public client::CBaseAnimGraphAnimGraphController
@@ -74,6 +74,9 @@ namespace source2sdk::client
         // m_bSpawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph1ParamOptionalRef<bool> m_bSpawn;
         char m_bSpawn[0x18]; // 0x2b8        
+        // m_flAmmoFraction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraph1ParamOptionalRef<float> m_flAmmoFraction;
+        char m_flAmmoFraction[0x18]; // 0x2d0        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CCitadelPlayerPawn_GraphController")->GetStaticFields()[0]->m_pInstance);};
@@ -82,5 +85,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerPawn_GraphController because it is not a standard-layout class
-    static_assert(sizeof(CCitadelPlayerPawn_GraphController) == 0x2d0);
+    static_assert(sizeof(CCitadelPlayerPawn_GraphController) == 0x2e8);
 };

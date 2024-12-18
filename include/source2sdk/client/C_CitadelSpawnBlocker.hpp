@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x860
+    // Size: 0x858
     // Has VTable
     #pragma pack(push, 1)
     class C_CitadelSpawnBlocker : public client::C_FuncBrush
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_CitadelSpawnBlocker) == 0x860);
+    static_assert(sizeof(C_CitadelSpawnBlocker) == 0x858);
 };

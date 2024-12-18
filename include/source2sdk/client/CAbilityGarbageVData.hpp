@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1660
+    // Size: 0x1668
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,19 +27,19 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Modifiers"
         // m_GarbageAuraModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_GarbageAuraModifier;
-        char m_GarbageAuraModifier[0x10]; // 0x1560        
+        char m_GarbageAuraModifier[0x10]; // 0x1568        
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x1570        
+        char m_ExplodeParticle[0xe0]; // 0x1578        
         // metadata: MPropertyStartGroup "+Vacuum Properties"
-        float m_flAirSpeedMax; // 0x1650        
-        float m_flFallSpeedMax; // 0x1654        
-        float m_flAirDrag; // 0x1658        
-        float m_flMaxMovespeed; // 0x165c        
+        float m_flAirSpeedMax; // 0x1658        
+        float m_flFallSpeedMax; // 0x165c        
+        float m_flAirDrag; // 0x1660        
+        float m_flMaxMovespeed; // 0x1664        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityGarbageVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityGarbageVData) == 0x1660);
+    static_assert(sizeof(CAbilityGarbageVData) == 0x1668);
 };

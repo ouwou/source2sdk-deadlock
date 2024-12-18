@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb90
+    // Size: 0xb88
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iMaxHealth"
@@ -25,10 +25,10 @@ namespace source2sdk::client
     class CPropAnimatingBreakable : public client::CBaseAnimGraph
     {
     public:
-        client::CBreakableStageHelper m_stages; // 0xb00        
-        entity2::CEntityIOOutput m_OnTakeDamage; // 0xb18        
-        entity2::CEntityIOOutput m_OnFinalBreak; // 0xb40        
-        entity2::CEntityIOOutput m_OnStageAdvanced; // 0xb68        
+        client::CBreakableStageHelper m_stages; // 0xaf8        
+        entity2::CEntityIOOutput m_OnTakeDamage; // 0xb10        
+        entity2::CEntityIOOutput m_OnFinalBreak; // 0xb38        
+        entity2::CEntityIOOutput m_OnStageAdvanced; // 0xb60        
         
         // Datamap fields:
         // void InputNextBreakStage; // 0x0
@@ -36,5 +36,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPropAnimatingBreakable because it is not a standard-layout class
-    static_assert(sizeof(CPropAnimatingBreakable) == 0xb90);
+    static_assert(sizeof(CPropAnimatingBreakable) == 0xb88);
 };

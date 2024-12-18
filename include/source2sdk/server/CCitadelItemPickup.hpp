@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x64c8
+    // Size: 0x64c0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -35,40 +35,40 @@ namespace source2sdk::server
     class CCitadelItemPickup : public server::CCitadelAnimatingModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xbc0[0x8]; // 0xbc0
+        [[maybe_unused]] std::uint8_t pad_0xbb8[0x8]; // 0xbb8
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbc8        
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0xbc0        
         // metadata: MNetworkEnable
-        int32_t m_eLootType; // 0xbe0        
+        int32_t m_eLootType; // 0xbd8        
         // metadata: MNetworkEnable
-        int32_t m_nCurrencyValue; // 0xbe4        
+        int32_t m_nCurrencyValue; // 0xbdc        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszModelName; // 0xbe8        
+        CUtlSymbolLarge m_iszModelName; // 0xbe0        
         // metadata: MNetworkEnable
-        float m_flModelScale; // 0xbf0        
+        float m_flModelScale; // 0xbe8        
         // metadata: MNetworkEnable
         // m_hTargetPlayer has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hTargetPlayer;
-        char m_hTargetPlayer[0x4]; // 0xbf4        
+        char m_hTargetPlayer[0x4]; // 0xbec        
         // metadata: MNetworkEnable
-        float m_flFallRate; // 0xbf8        
-        [[maybe_unused]] std::uint8_t pad_0xbfc[0xc]; // 0xbfc
-        Vector m_vHomePosition; // 0xc08        
-        Vector m_vDropPosition; // 0xc14        
-        entity2::GameTime_t m_tFirstPickupTime; // 0xc20        
-        [[maybe_unused]] std::uint8_t pad_0xc24[0x58a4];
+        float m_flFallRate; // 0xbf0        
+        [[maybe_unused]] std::uint8_t pad_0xbf4[0xc]; // 0xbf4
+        Vector m_vHomePosition; // 0xc00        
+        Vector m_vDropPosition; // 0xc0c        
+        entity2::GameTime_t m_tFirstPickupTime; // 0xc18        
+        [[maybe_unused]] std::uint8_t pad_0xc1c[0x58a4];
         
         // Datamap fields:
-        // bool m_bRequireGroundForPickup; // 0xc00
+        // bool m_bRequireGroundForPickup; // 0xbf8
         // bool from_crate; // 0x7fffffff
-        // int32_t m_eObjectivePosition; // 0xbfc
-        // int32_t m_nKillingTeamNumber; // 0xc04
+        // int32_t m_eObjectivePosition; // 0xbf4
+        // int32_t m_nKillingTeamNumber; // 0xbfc
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelItemPickup because it is not a standard-layout class
-    static_assert(sizeof(CCitadelItemPickup) == 0x64c8);
+    static_assert(sizeof(CCitadelItemPickup) == 0x64c0);
 };

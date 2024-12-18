@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x898
+    // Size: 0x890
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bLoop"
@@ -31,26 +31,26 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        bool m_bLoop; // 0x860        
-        [[maybe_unused]] std::uint8_t pad_0x861[0x3]; // 0x861
+        bool m_bLoop; // 0x858        
+        [[maybe_unused]] std::uint8_t pad_0x859[0x3]; // 0x859
         // metadata: MNetworkEnable
-        float m_flFPS; // 0x864        
+        float m_flFPS; // 0x85c        
         // metadata: MNetworkEnable
         // m_hPositionKeys has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hPositionKeys;
-        char m_hPositionKeys[0x8]; // 0x868        
+        char m_hPositionKeys[0x8]; // 0x860        
         // metadata: MNetworkEnable
         // m_hRotationKeys has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeCTextureBase> m_hRotationKeys;
-        char m_hRotationKeys[0x8]; // 0x870        
+        char m_hRotationKeys[0x8]; // 0x868        
         // metadata: MNetworkEnable
-        Vector m_vAnimationBoundsMin; // 0x878        
+        Vector m_vAnimationBoundsMin; // 0x870        
         // metadata: MNetworkEnable
-        Vector m_vAnimationBoundsMax; // 0x884        
+        Vector m_vAnimationBoundsMax; // 0x87c        
         // metadata: MNetworkEnable
-        float m_flStartTime; // 0x890        
+        float m_flStartTime; // 0x888        
         // metadata: MNetworkEnable
-        float m_flStartFrame; // 0x894        
+        float m_flStartFrame; // 0x88c        
         
         // Datamap fields:
         // void InputStart; // 0x0
@@ -61,5 +61,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_TextureBasedAnimatable because it is not a standard-layout class
-    static_assert(sizeof(C_TextureBasedAnimatable) == 0x898);
+    static_assert(sizeof(C_TextureBasedAnimatable) == 0x890);
 };

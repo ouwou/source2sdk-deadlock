@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x508
+    // Size: 0x500
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelHeroComponent::Storage_t m_CCitadelHeroComponent"
@@ -27,10 +27,10 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelHeroComponent"
         // metadata: MNetworkAlias "CCitadelHeroComponent"
         // metadata: MNetworkTypeAlias "CCitadelHeroComponent"
-        server::CCitadelHeroComponent m_CCitadelHeroComponent; // 0x4e8        
+        server::CCitadelHeroComponent m_CCitadelHeroComponent; // 0x4e0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_HeroPreview because it is not a standard-layout class
-    static_assert(sizeof(C_HeroPreview) == 0x508);
+    static_assert(sizeof(C_HeroPreview) == 0x500);
 };

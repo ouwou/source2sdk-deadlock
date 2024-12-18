@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x818
+    // Size: 0x810
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByUserGroup "Origin"
@@ -51,59 +51,59 @@ namespace source2sdk::server
     class CRopeKeyframe : public server::CBaseModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x7c0[0x8]; // 0x7c0
+        [[maybe_unused]] std::uint8_t pad_0x7b8[0x8]; // 0x7b8
         // metadata: MNetworkEnable
-        uint16_t m_RopeFlags; // 0x7c8        
-        [[maybe_unused]] std::uint8_t pad_0x7ca[0x6]; // 0x7ca
-        CUtlSymbolLarge m_iNextLinkName; // 0x7d0        
+        uint16_t m_RopeFlags; // 0x7c0        
+        [[maybe_unused]] std::uint8_t pad_0x7c2[0x6]; // 0x7c2
+        CUtlSymbolLarge m_iNextLinkName; // 0x7c8        
         // metadata: MNetworkEnable
-        int16_t m_Slack; // 0x7d8        
-        [[maybe_unused]] std::uint8_t pad_0x7da[0x2]; // 0x7da
+        int16_t m_Slack; // 0x7d0        
+        [[maybe_unused]] std::uint8_t pad_0x7d2[0x2]; // 0x7d2
         // metadata: MNetworkEnable
-        float m_Width; // 0x7dc        
+        float m_Width; // 0x7d4        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "10"
         // metadata: MNetworkMinValue "0.100000"
         // metadata: MNetworkMaxValue "10.000000"
-        float m_TextureScale; // 0x7e0        
+        float m_TextureScale; // 0x7d8        
         // metadata: MNetworkEnable
-        uint8_t m_nSegments; // 0x7e4        
+        uint8_t m_nSegments; // 0x7dc        
         // metadata: MNetworkEnable
-        bool m_bConstrainBetweenEndpoints; // 0x7e5        
-        [[maybe_unused]] std::uint8_t pad_0x7e6[0x2]; // 0x7e6
-        CUtlSymbolLarge m_strRopeMaterialModel; // 0x7e8        
+        bool m_bConstrainBetweenEndpoints; // 0x7dd        
+        [[maybe_unused]] std::uint8_t pad_0x7de[0x2]; // 0x7de
+        CUtlSymbolLarge m_strRopeMaterialModel; // 0x7e0        
         // metadata: MNetworkEnable
         // m_iRopeMaterialModelIndex has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIMaterial2> m_iRopeMaterialModelIndex;
-        char m_iRopeMaterialModelIndex[0x8]; // 0x7f0        
+        char m_iRopeMaterialModelIndex[0x8]; // 0x7e8        
         // metadata: MNetworkEnable
-        uint8_t m_Subdiv; // 0x7f8        
+        uint8_t m_Subdiv; // 0x7f0        
         // metadata: MNetworkEnable
-        uint8_t m_nChangeCount; // 0x7f9        
+        uint8_t m_nChangeCount; // 0x7f1        
         // metadata: MNetworkEnable
-        int16_t m_RopeLength; // 0x7fa        
+        int16_t m_RopeLength; // 0x7f2        
         // metadata: MNetworkEnable
-        uint8_t m_fLockedPoints; // 0x7fc        
-        bool m_bCreatedFromMapFile; // 0x7fd        
+        uint8_t m_fLockedPoints; // 0x7f4        
+        bool m_bCreatedFromMapFile; // 0x7f5        
+        [[maybe_unused]] std::uint8_t pad_0x7f6[0x2]; // 0x7f6
+        // metadata: MNetworkEnable
+        float m_flScrollSpeed; // 0x7f8        
+        bool m_bStartPointValid; // 0x7fc        
+        bool m_bEndPointValid; // 0x7fd        
         [[maybe_unused]] std::uint8_t pad_0x7fe[0x2]; // 0x7fe
-        // metadata: MNetworkEnable
-        float m_flScrollSpeed; // 0x800        
-        bool m_bStartPointValid; // 0x804        
-        bool m_bEndPointValid; // 0x805        
-        [[maybe_unused]] std::uint8_t pad_0x806[0x2]; // 0x806
         // metadata: MNetworkEnable
         // m_hStartPoint has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hStartPoint;
-        char m_hStartPoint[0x4]; // 0x808        
+        char m_hStartPoint[0x4]; // 0x800        
         // metadata: MNetworkEnable
         // m_hEndPoint has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEndPoint;
-        char m_hEndPoint[0x4]; // 0x80c        
+        char m_hEndPoint[0x4]; // 0x804        
         // metadata: MNetworkEnable
-        modellib::AttachmentHandle_t m_iStartAttachment; // 0x810        
+        modellib::AttachmentHandle_t m_iStartAttachment; // 0x808        
         // metadata: MNetworkEnable
-        modellib::AttachmentHandle_t m_iEndAttachment; // 0x811        
-        [[maybe_unused]] std::uint8_t pad_0x812[0x6];
+        modellib::AttachmentHandle_t m_iEndAttachment; // 0x809        
+        [[maybe_unused]] std::uint8_t pad_0x80a[0x6];
         
         // Datamap fields:
         // float InputSetScrollSpeed; // 0x0
@@ -121,5 +121,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRopeKeyframe because it is not a standard-layout class
-    static_assert(sizeof(CRopeKeyframe) == 0x818);
+    static_assert(sizeof(CRopeKeyframe) == 0x810);
 };

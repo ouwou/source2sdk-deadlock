@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a8
+    // Size: 0x9a0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "string_t m_iszSoundName"
@@ -23,10 +23,10 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSoundName; // 0x9a0        
+        CUtlSymbolLarge m_iszSoundName; // 0x998        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_TriggerItemShop because it is not a standard-layout class
-    static_assert(sizeof(C_TriggerItemShop) == 0x9a8);
+    static_assert(sizeof(C_TriggerItemShop) == 0x9a0);
 };

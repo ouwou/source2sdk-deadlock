@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x890
+    // Size: 0x888
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -27,11 +27,11 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x870        
-        [[maybe_unused]] std::uint8_t pad_0x888[0x8];
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x868        
+        [[maybe_unused]] std::uint8_t pad_0x880[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Guided_Arrow because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_Guided_Arrow) == 0x890);
+    static_assert(sizeof(CCitadel_Projectile_Guided_Arrow) == 0x888);
 };

@@ -20,8 +20,9 @@ namespace source2sdk::server
     class CPathKeyFrame : public server::CLogicalEntity
     {
     public:
-        Vector m_Origin; // 0x4e8        
-        QAngle m_Angles; // 0x4f4        
+        Vector m_Origin; // 0x4e0        
+        QAngle m_Angles; // 0x4ec        
+        [[maybe_unused]] std::uint8_t pad_0x4f8[0x8]; // 0x4f8
         Quaternion m_qAngle; // 0x500        
         CUtlSymbolLarge m_iNextKey; // 0x510        
         float m_flNextTime; // 0x518        

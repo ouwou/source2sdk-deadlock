@@ -15,7 +15,7 @@ namespace source2sdk::pulse_system
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x88
+    // Size: 0x90
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -30,13 +30,13 @@ namespace source2sdk::pulse_system
     {
     public:
         // metadata: MPropertyDescription "Apply the same tag we're waiting on to the resulting cursor upon wait completion. Can be used to wait on our result cursor with the same tag."
-        bool m_bTagSelfWhenComplete; // 0x80        
-        [[maybe_unused]] std::uint8_t pad_0x81[0x3]; // 0x81
+        bool m_bTagSelfWhenComplete; // 0x88        
+        [[maybe_unused]] std::uint8_t pad_0x89[0x3]; // 0x89
         // metadata: MPropertyDescription "When we start waiting, how should we handle existing cursors?"
-        pulse_runtime_lib::PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x84        
+        pulse_runtime_lib::PulseCursorCancelPriority_t m_nDesiredKillPriority; // 0x8c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_WaitForCursorsWithTag because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_WaitForCursorsWithTag) == 0x88);
+    static_assert(sizeof(CPulseCell_WaitForCursorsWithTag) == 0x90);
 };

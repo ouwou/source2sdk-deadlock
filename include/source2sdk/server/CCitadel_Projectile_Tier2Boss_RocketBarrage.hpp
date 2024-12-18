@@ -15,17 +15,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x880
+    // Size: 0x878
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Projectile_Tier2Boss_RocketBarrage : public server::CCitadelProjectile
     {
     public:
-        client::ParticleIndex_t m_nLaserParticleIndex; // 0x870        
-        Vector m_vecSmoothedVelocity; // 0x874        
+        client::ParticleIndex_t m_nLaserParticleIndex; // 0x868        
+        Vector m_vecSmoothedVelocity; // 0x86c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Projectile_Tier2Boss_RocketBarrage because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Projectile_Tier2Boss_RocketBarrage) == 0x880);
+    static_assert(sizeof(CCitadel_Projectile_Tier2Boss_RocketBarrage) == 0x878);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb60
+    // Size: 0xb58
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "GameTime_t m_nFastFireEndTime"
@@ -24,11 +24,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_nFastFireEndTime; // 0xb20        
-        [[maybe_unused]] std::uint8_t pad_0xb24[0x3c];
+        entity2::GameTime_t m_nFastFireEndTime; // 0xb18        
+        [[maybe_unused]] std::uint8_t pad_0xb1c[0x3c];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_BurstFire because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_WeaponUpgrade_BurstFire) == 0xb60);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_BurstFire) == 0xb58);
 };

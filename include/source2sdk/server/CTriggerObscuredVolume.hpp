@@ -14,18 +14,18 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x990
+    // Size: 0x988
     // Has VTable
     #pragma pack(push, 1)
     class CTriggerObscuredVolume : public server::CBaseTrigger
     {
     public:
-        CUtlSymbolLarge m_iszModifierName; // 0x980        
-        CUtlStringToken m_tModifier; // 0x988        
-        [[maybe_unused]] std::uint8_t pad_0x98c[0x4];
+        CUtlSymbolLarge m_iszModifierName; // 0x978        
+        CUtlStringToken m_tModifier; // 0x980        
+        [[maybe_unused]] std::uint8_t pad_0x984[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTriggerObscuredVolume because it is not a standard-layout class
-    static_assert(sizeof(CTriggerObscuredVolume) == 0x990);
+    static_assert(sizeof(CTriggerObscuredVolume) == 0x988);
 };

@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xe88
+    // Size: 0xe80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "EHANDLE m_hHookVictim"
@@ -33,18 +33,18 @@ namespace source2sdk::client
         // metadata: MNetworkChangeCallback "HookVictimChanged"
         // m_hHookVictim has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hHookVictim;
-        char m_hHookVictim[0x4]; // 0xca0        
+        char m_hHookVictim[0x4]; // 0xc98        
         // metadata: MNetworkEnable
         // m_hProjectile has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hProjectile;
-        char m_hProjectile[0x4]; // 0xca4        
+        char m_hProjectile[0x4]; // 0xc9c        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        Vector m_vecHookTargetStartPos; // 0xca8        
-        [[maybe_unused]] std::uint8_t pad_0xcb4[0x1d4];
+        Vector m_vecHookTargetStartPos; // 0xca0        
+        [[maybe_unused]] std::uint8_t pad_0xcac[0x1d4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Hook because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Hook) == 0xe88);
+    static_assert(sizeof(CCitadel_Ability_Hook) == 0xe80);
 };

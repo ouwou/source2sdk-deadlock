@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1588
+    // Size: 0x1590
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,16 +26,16 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_InnateModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CBaseModifier> m_InnateModifier;
-        char m_InnateModifier[0x10]; // 0x1560        
+        char m_InnateModifier[0x10]; // 0x1568        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CBaseModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x1570        
+        char m_DebuffModifier[0x10]; // 0x1578        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flDamageFalloffEndScale; // 0x1580        
-        [[maybe_unused]] std::uint8_t pad_0x1584[0x4];
+        float m_flDamageFalloffEndScale; // 0x1588        
+        [[maybe_unused]] std::uint8_t pad_0x158c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_ShieldedSentry_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_ShieldedSentry_VData) == 0x1588);
+    static_assert(sizeof(CCitadel_Ability_ShieldedSentry_VData) == 0x1590);
 };

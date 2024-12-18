@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7e8
+    // Size: 0x810
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,19 +27,19 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x608        
+        char m_DebuffModifier[0x10]; // 0x630        
         // metadata: MPropertyStartGroup "Visuals"
         // m_BuffParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffParticle;
-        char m_BuffParticle[0xe0]; // 0x618        
+        char m_BuffParticle[0xe0]; // 0x640        
         // m_DebuffParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DebuffParticle;
-        char m_DebuffParticle[0xe0]; // 0x6f8        
+        char m_DebuffParticle[0xe0]; // 0x720        
         // metadata: MPropertyGroupName "Sounds"
-        CSoundEventName m_strDamageSound; // 0x7d8        
+        CSoundEventName m_strDamageSound; // 0x800        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Chrono_TimeWall_EffectVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Chrono_TimeWall_EffectVData) == 0x7e8);
+    static_assert(sizeof(CCitadel_Modifier_Chrono_TimeWall_EffectVData) == 0x810);
 };

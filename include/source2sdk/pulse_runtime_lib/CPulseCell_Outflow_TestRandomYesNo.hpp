@@ -15,7 +15,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa8
+    // Size: 0xb8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -33,10 +33,10 @@ namespace source2sdk::pulse_runtime_lib
         pulse_runtime_lib::CPulse_OutflowConnection m_Yes; // 0x48        
         // metadata: MPropertyFriendlyName "No"
         // metadata: MPropertyDescription "Randomly taken half of the time"
-        pulse_runtime_lib::CPulse_OutflowConnection m_No; // 0x78        
+        pulse_runtime_lib::CPulse_OutflowConnection m_No; // 0x80        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_Outflow_TestRandomYesNo because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_Outflow_TestRandomYesNo) == 0xa8);
+    static_assert(sizeof(CPulseCell_Outflow_TestRandomYesNo) == 0xb8);
 };

@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 213
+    // Enumerator count: 215
     // Alignment: 4
     // Size: 0x4
     enum class EModifierValue : std::uint32_t
@@ -334,8 +334,10 @@ namespace source2sdk::client
         MODIFIER_VALUE_RESPAWN_TIME_ADDITIVE = 0xd0,
         MODIFIER_VALUE_RESPAWN_RAMP_TIME_REDUCTION_PERCENT = 0xd1,
         MODIFIER_VALUE_BOON_COUNT = 0xd2,
+        MODIFIER_VALUE_FOOTSTEP_ADDITIONAL = 0xd3,
+        MODIFIER_VALUE_FOOTSTEP_OVERRIDE = 0xd4,
         // MPropertySuppressEnumerator
-        MODIFIER_VALUE_COUNT = 0xd3,
+        MODIFIER_VALUE_COUNT = 0xd5,
         // MPropertySuppressEnumerator
         MODIFIER_VALUE_INVALID = 0xff,
     };

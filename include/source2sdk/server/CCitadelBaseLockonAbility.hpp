@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc88
+    // Size: 0xc80
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "LockonTarget_t m_vecLockonTargets"
@@ -25,18 +25,18 @@ namespace source2sdk::server
     class CCitadelBaseLockonAbility : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb00[0x118]; // 0xb00
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x118]; // 0xaf8
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
         // m_vecLockonTargets has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVectorEmbeddedNetworkVar<server::LockonTarget_t> m_vecLockonTargets;
-        char m_vecLockonTargets[0x68]; // 0xc18        
+        char m_vecLockonTargets[0x68]; // 0xc10        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_LockOnStartTime; // 0xc80        
-        [[maybe_unused]] std::uint8_t pad_0xc84[0x4];
+        entity2::GameTime_t m_LockOnStartTime; // 0xc78        
+        [[maybe_unused]] std::uint8_t pad_0xc7c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelBaseLockonAbility because it is not a standard-layout class
-    static_assert(sizeof(CCitadelBaseLockonAbility) == 0xc88);
+    static_assert(sizeof(CCitadelBaseLockonAbility) == 0xc80);
 };

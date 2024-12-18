@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1570
+    // Size: 0x1578
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_EmpowerBulletModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_EmpowerBulletModifier;
-        char m_EmpowerBulletModifier[0x10]; // 0x1560        
+        char m_EmpowerBulletModifier[0x10]; // 0x1568        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityEmpowerBulletVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityEmpowerBulletVData) == 0x1570);
+    static_assert(sizeof(CAbilityEmpowerBulletVData) == 0x1578);
 };

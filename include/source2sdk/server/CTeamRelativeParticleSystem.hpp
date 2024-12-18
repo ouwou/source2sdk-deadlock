@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd58
+    // Size: 0xd50
     // Has VTable
     // 
     // static metadata: MNetworkExcludeByName "m_iEffectIndex"
@@ -26,19 +26,19 @@ namespace source2sdk::server
     class CTeamRelativeParticleSystem : public server::CParticleSystem
     {
     public:
-        CUtlSymbolLarge m_iszFriendlyEffectName; // 0xd38        
-        CUtlSymbolLarge m_iszEnemyEffectName; // 0xd40        
+        CUtlSymbolLarge m_iszFriendlyEffectName; // 0xd30        
+        CUtlSymbolLarge m_iszEnemyEffectName; // 0xd38        
         // metadata: MNetworkEnable
         // m_iFriendlyEffectIndex has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iFriendlyEffectIndex;
-        char m_iFriendlyEffectIndex[0x8]; // 0xd48        
+        char m_iFriendlyEffectIndex[0x8]; // 0xd40        
         // metadata: MNetworkEnable
         // m_iEnemyEffectIndex has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CStrongHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition> m_iEnemyEffectIndex;
-        char m_iEnemyEffectIndex[0x8]; // 0xd50        
+        char m_iEnemyEffectIndex[0x8]; // 0xd48        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CTeamRelativeParticleSystem because it is not a standard-layout class
-    static_assert(sizeof(CTeamRelativeParticleSystem) == 0xd58);
+    static_assert(sizeof(CTeamRelativeParticleSystem) == 0xd50);
 };

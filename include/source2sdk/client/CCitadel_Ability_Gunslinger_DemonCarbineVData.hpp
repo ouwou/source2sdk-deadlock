@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1610
+    // Size: 0x1618
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,20 +24,20 @@ namespace source2sdk::client
     class CCitadel_Ability_Gunslinger_DemonCarbineVData : public client::CitadelAbilityVData
     {
     public:
-        float m_flShotTimeScaleLingerDuration; // 0x1560        
-        [[maybe_unused]] std::uint8_t pad_0x1564[0x4]; // 0x1564
+        float m_flShotTimeScaleLingerDuration; // 0x1568        
+        [[maybe_unused]] std::uint8_t pad_0x156c[0x4]; // 0x156c
         // metadata: MPropertyStartGroup "Modifiers"
         // m_ChargingModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_ChargingModifier;
-        char m_ChargingModifier[0x10]; // 0x1568        
+        char m_ChargingModifier[0x10]; // 0x1570        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x1578        
+        char m_DebuffModifier[0x10]; // 0x1580        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraDemonCarbineShotFired; // 0x1588        
+        client::CitadelCameraOperationsSequence_t m_cameraDemonCarbineShotFired; // 0x1590        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Gunslinger_DemonCarbineVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Gunslinger_DemonCarbineVData) == 0x1610);
+    static_assert(sizeof(CCitadel_Ability_Gunslinger_DemonCarbineVData) == 0x1618);
 };

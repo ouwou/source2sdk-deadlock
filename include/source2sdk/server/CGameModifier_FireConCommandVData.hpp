@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x618
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,12 +24,12 @@ namespace source2sdk::server
     public:
         // metadata: MPropertyStartGroup "Fire Con Command"
         // metadata: MPropertyDescription "ConCommand to fire when modifier added."
-        CUtlString m_FireOnAdded; // 0x608        
+        CUtlString m_FireOnAdded; // 0x630        
         // metadata: MPropertyDescription "ConCommand to fire when modifier removed."
-        CUtlString m_FireOnRemoved; // 0x610        
+        CUtlString m_FireOnRemoved; // 0x638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CGameModifier_FireConCommandVData because it is not a standard-layout class
-    static_assert(sizeof(CGameModifier_FireConCommandVData) == 0x618);
+    static_assert(sizeof(CGameModifier_FireConCommandVData) == 0x640);
 };

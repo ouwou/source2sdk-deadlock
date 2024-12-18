@@ -16,7 +16,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc8
+    // Size: 0xd8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -34,7 +34,7 @@ namespace source2sdk::pulse_runtime_lib
         bool m_bWaitForChildOutflows; // 0x60        
         [[maybe_unused]] std::uint8_t pad_0x61[0x7]; // 0x61
         pulse_runtime_lib::CPulse_ResumePoint m_OnFinished; // 0x68        
-        pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0x98        
+        pulse_runtime_lib::CPulse_ResumePoint m_OnCanceled; // 0xa0        
         
         // Static fields:
         static char* &Get_m_pTagName() {return *reinterpret_cast<char**>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CPulseCell_FireCursors")->GetStaticFields()[0]->m_pInstance);};
@@ -42,5 +42,5 @@ namespace source2sdk::pulse_runtime_lib
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_FireCursors because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_FireCursors) == 0xc8);
+    static_assert(sizeof(CPulseCell_FireCursors) == 0xd8);
 };

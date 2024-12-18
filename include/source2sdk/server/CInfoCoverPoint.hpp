@@ -14,19 +14,19 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f8
+    // Size: 0x4f0
     // Has VTable
     #pragma pack(push, 1)
     class CInfoCoverPoint : public server::CServerOnlyPointEntity
     {
     public:
-        int32_t m_nGroupID; // 0x4e8        
-        int32_t m_nVisionRadius; // 0x4ec        
-        bool m_bAllowOffNav; // 0x4f0        
-        [[maybe_unused]] std::uint8_t pad_0x4f1[0x7];
+        int32_t m_nGroupID; // 0x4e0        
+        int32_t m_nVisionRadius; // 0x4e4        
+        bool m_bAllowOffNav; // 0x4e8        
+        [[maybe_unused]] std::uint8_t pad_0x4e9[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CInfoCoverPoint because it is not a standard-layout class
-    static_assert(sizeof(CInfoCoverPoint) == 0x4f8);
+    static_assert(sizeof(CInfoCoverPoint) == 0x4f0);
 };

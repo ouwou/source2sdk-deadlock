@@ -14,7 +14,7 @@ namespace source2sdk::smartprops
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x2e0
+    // Size: 0x2e8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -51,9 +51,12 @@ namespace source2sdk::smartprops
         // metadata: MPropertyFriendlyName "Falloff"
         // metadata: MPropertyDescription "Adjust deformation falloff from the center of the region to the endpoints."
         CSmartPropAttributeFloat m_fFalloff; // 0x2a0        
+        // metadata: MPropertyAttributeEditor "SmartPropItemNameEditor( Variable:Vector )"
+        // metadata: MPropertyDescription "Outputs the absolute position of the midpoint post deformation."
+        CUtlString m_OutputVariable; // 0x2e0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CSmartPropElement_MidpointDeformer because it is not a standard-layout class
-    static_assert(sizeof(CSmartPropElement_MidpointDeformer) == 0x2e0);
+    static_assert(sizeof(CSmartPropElement_MidpointDeformer) == 0x2e8);
 };

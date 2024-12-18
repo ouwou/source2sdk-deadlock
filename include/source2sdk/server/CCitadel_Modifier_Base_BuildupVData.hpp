@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x620
+    // Size: 0x648
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,19 +23,19 @@ namespace source2sdk::server
     class CCitadel_Modifier_Base_BuildupVData : public server::CCitadelModifierVData
     {
     public:
-        bool m_bUseBaseWeaponCycleTimeForDelay; // 0x608        
-        [[maybe_unused]] std::uint8_t pad_0x609[0x3]; // 0x609
-        float m_flCycleTimeDelayAdd; // 0x60c        
-        float m_flBuildUpDecayDelay; // 0x610        
-        client::BuildupMode_t m_eBuildupMode; // 0x614        
+        bool m_bUseBaseWeaponCycleTimeForDelay; // 0x630        
+        [[maybe_unused]] std::uint8_t pad_0x631[0x3]; // 0x631
+        float m_flCycleTimeDelayAdd; // 0x634        
+        float m_flBuildUpDecayDelay; // 0x638        
+        client::BuildupMode_t m_eBuildupMode; // 0x63c        
         // metadata: MPropertyDescription "When true, effectiveness (distance falloff) will be applied to the buildup."
-        bool m_bBuildupAffectedByEffectiveness; // 0x618        
+        bool m_bBuildupAffectedByEffectiveness; // 0x640        
         // metadata: MPropertyDescription "When true, the averaged effectiveness of the build up modifier will be passed to the fill modifier"
-        bool m_bPassBuildupEffectivenessToFillModifier; // 0x619        
-        [[maybe_unused]] std::uint8_t pad_0x61a[0x6];
+        bool m_bPassBuildupEffectivenessToFillModifier; // 0x641        
+        [[maybe_unused]] std::uint8_t pad_0x642[0x6];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Base_BuildupVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Base_BuildupVData) == 0x620);
+    static_assert(sizeof(CCitadel_Modifier_Base_BuildupVData) == 0x648);
 };

@@ -14,18 +14,18 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x980
+    // Size: 0x978
     // Has VTable
     #pragma pack(push, 1)
     class C_FireSprite : public client::C_Sprite
     {
     public:
-        Vector m_vecMoveDir; // 0x970        
-        bool m_bFadeFromAbove; // 0x97c        
-        [[maybe_unused]] std::uint8_t pad_0x97d[0x3];
+        Vector m_vecMoveDir; // 0x968        
+        bool m_bFadeFromAbove; // 0x974        
+        [[maybe_unused]] std::uint8_t pad_0x975[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_FireSprite because it is not a standard-layout class
-    static_assert(sizeof(C_FireSprite) == 0x980);
+    static_assert(sizeof(C_FireSprite) == 0x978);
 };

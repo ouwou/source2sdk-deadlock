@@ -14,13 +14,13 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7e8
+    // Size: 0x7e0
     // Has VTable
     #pragma pack(push, 1)
     class CGamePlayerEquip : public server::CRulePointEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x7d0[0x18];
+        [[maybe_unused]] std::uint8_t pad_0x7c8[0x18];
         // Datamap fields:
         // CUtlString weapon%d[32]; // 0x7fffffff
         // void InputTriggerForAllPlayers; // 0x0
@@ -29,5 +29,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CGamePlayerEquip) == 0x7e8);
+    static_assert(sizeof(CGamePlayerEquip) == 0x7e0);
 };

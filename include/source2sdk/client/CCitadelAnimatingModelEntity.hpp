@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb08
+    // Size: 0xb00
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -23,9 +23,9 @@ namespace source2sdk::client
     class CCitadelAnimatingModelEntity : public client::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb00[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelAnimatingModelEntity) == 0xb08);
+    static_assert(sizeof(CCitadelAnimatingModelEntity) == 0xb00);
 };

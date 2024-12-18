@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x790
+    // Size: 0x7d8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_pEntity"
@@ -44,57 +44,57 @@ namespace source2sdk::server
     class CBasePlayerController : public server::CBaseEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4e8[0x8]; // 0x4e8
-        uint64_t m_nInButtonsWhichAreToggles; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x8]; // 0x4e0
+        uint64_t m_nInButtonsWhichAreToggles; // 0x4e8        
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "1"
         // metadata: MNetworkUserGroup "LocalPlayerExclusive"
-        uint32_t m_nTickBase; // 0x4f8        
-        [[maybe_unused]] std::uint8_t pad_0x4fc[0x2c]; // 0x4fc
+        uint32_t m_nTickBase; // 0x4f0        
+        [[maybe_unused]] std::uint8_t pad_0x4f4[0x2c]; // 0x4f4
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnPawnChanged"
         // m_hPawn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBasePlayerPawn> m_hPawn;
-        char m_hPawn[0x4]; // 0x528        
+        char m_hPawn[0x4]; // 0x520        
         // metadata: MNetworkEnable
-        bool m_bKnownTeamMismatch; // 0x52c        
-        [[maybe_unused]] std::uint8_t pad_0x52d[0x3]; // 0x52d
-        CSplitScreenSlot m_nSplitScreenSlot; // 0x530        
+        bool m_bKnownTeamMismatch; // 0x524        
+        [[maybe_unused]] std::uint8_t pad_0x525[0x3]; // 0x525
+        CSplitScreenSlot m_nSplitScreenSlot; // 0x528        
         // m_hSplitOwner has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBasePlayerController> m_hSplitOwner;
-        char m_hSplitOwner[0x4]; // 0x534        
+        char m_hSplitOwner[0x4]; // 0x52c        
         // m_hSplitScreenPlayers has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<CHandle<server::CBasePlayerController>> m_hSplitScreenPlayers;
-        char m_hSplitScreenPlayers[0x18]; // 0x538        
-        bool m_bIsHLTV; // 0x550        
-        [[maybe_unused]] std::uint8_t pad_0x551[0x3]; // 0x551
+        char m_hSplitScreenPlayers[0x18]; // 0x530        
+        bool m_bIsHLTV; // 0x548        
+        [[maybe_unused]] std::uint8_t pad_0x549[0x3]; // 0x549
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnConnectionStateChanged"
-        client::PlayerConnectedState m_iConnected; // 0x554        
+        client::PlayerConnectedState m_iConnected; // 0x54c        
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnPlayerControllerNameChanged"
-        char m_iszPlayerName[128]; // 0x558        
-        CUtlString m_szNetworkIDString; // 0x5d8        
-        float m_fLerpTime; // 0x5e0        
-        bool m_bLagCompensation; // 0x5e4        
-        bool m_bPredict; // 0x5e5        
-        bool m_bAutoKickDisabled; // 0x5e6        
-        bool m_bIsLowViolence; // 0x5e7        
-        bool m_bGamePaused; // 0x5e8        
-        [[maybe_unused]] std::uint8_t pad_0x5e9[0x14f]; // 0x5e9
-        client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x738        
-        float m_flLastPlayerTalkTime; // 0x73c        
-        float m_flLastEntitySteadyState; // 0x740        
-        int32_t m_nAvailableEntitySteadyState; // 0x744        
-        bool m_bHasAnySteadyStateEnts; // 0x748        
-        [[maybe_unused]] std::uint8_t pad_0x749[0xf]; // 0x749
+        char m_iszPlayerName[128]; // 0x550        
+        CUtlString m_szNetworkIDString; // 0x5d0        
+        float m_fLerpTime; // 0x5d8        
+        bool m_bLagCompensation; // 0x5dc        
+        bool m_bPredict; // 0x5dd        
+        bool m_bAutoKickDisabled; // 0x5de        
+        bool m_bIsLowViolence; // 0x5df        
+        bool m_bGamePaused; // 0x5e0        
+        [[maybe_unused]] std::uint8_t pad_0x5e1[0x14f]; // 0x5e1
+        client::ChatIgnoreType_t m_iIgnoreGlobalChat; // 0x730        
+        float m_flLastPlayerTalkTime; // 0x734        
+        float m_flLastEntitySteadyState; // 0x738        
+        int32_t m_nAvailableEntitySteadyState; // 0x73c        
+        bool m_bHasAnySteadyStateEnts; // 0x740        
+        [[maybe_unused]] std::uint8_t pad_0x741[0xf]; // 0x741
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "fixed64"
         // metadata: MNetworkChangeCallback "OnSteamIDChanged"
-        uint64_t m_steamID; // 0x758        
+        uint64_t m_steamID; // 0x750        
         // metadata: MNetworkEnable
-        uint32_t m_iDesiredFOV; // 0x760        
-        [[maybe_unused]] std::uint8_t pad_0x764[0x2c];
+        uint32_t m_iDesiredFOV; // 0x758        
+        [[maybe_unused]] std::uint8_t pad_0x75c[0x7c];
         
         // Static fields:
         static bool &Get_sm_bRunningPredictedClientStringCommands() {return *reinterpret_cast<bool*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CBasePlayerController")->GetStaticFields()[0]->m_pInstance);};
@@ -104,13 +104,13 @@ namespace source2sdk::server
         // bool is_hltv; // 0x7fffffff
         // const char * playername; // 0x7fffffff
         // bool reserving; // 0x7fffffff
-        // void m_pCurrentCommand; // 0x750
-        // void m_LastCmd; // 0x5f0
-        // void m_nLastRealCommandNumberExecuted; // 0x71c
-        // void m_nLastLateCommandExecuted; // 0x720
+        // void m_pCurrentCommand; // 0x748
+        // void m_LastCmd; // 0x5e8
+        // void m_nLastRealCommandNumberExecuted; // 0x714
+        // void m_nLastLateCommandExecuted; // 0x718
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CBasePlayerController because it is not a standard-layout class
-    static_assert(sizeof(CBasePlayerController) == 0x790);
+    static_assert(sizeof(CBasePlayerController) == 0x7d8);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x870
+    // Size: 0x868
     // Has VTable
     #pragma pack(push, 1)
     class CProjectile_Synth_PlasmaFlux : public server::CCitadelProjectile
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CProjectile_Synth_PlasmaFlux) == 0x870);
+    static_assert(sizeof(CProjectile_Synth_PlasmaFlux) == 0x868);
 };

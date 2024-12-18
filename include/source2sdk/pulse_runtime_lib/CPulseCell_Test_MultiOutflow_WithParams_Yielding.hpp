@@ -16,7 +16,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x138
+    // Size: 0x160
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -31,16 +31,16 @@ namespace source2sdk::pulse_runtime_lib
         // metadata: MPulseSignatureName
         pulse_runtime_lib::SignatureOutflow_Continue m_Out1; // 0x48        
         // metadata: MPulseSignatureName
-        pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild1; // 0x78        
+        pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild1; // 0x80        
         // metadata: MPulseSignatureName
-        pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild2; // 0xa8        
+        pulse_runtime_lib::SignatureOutflow_Continue m_AsyncChild2; // 0xb8        
         // metadata: MPulseSignatureName
-        pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume1; // 0xd8        
+        pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume1; // 0xf0        
         // metadata: MPulseSignatureName
-        pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume2; // 0x108        
+        pulse_runtime_lib::SignatureOutflow_Resume m_YieldResume2; // 0x128        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_Test_MultiOutflow_WithParams_Yielding because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_Test_MultiOutflow_WithParams_Yielding) == 0x138);
+    static_assert(sizeof(CPulseCell_Test_MultiOutflow_WithParams_Yielding) == 0x160);
 };

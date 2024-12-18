@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x5a0
+    // Size: 0x598
     // Has VTable
     #pragma pack(push, 1)
     class CSoundEventEntityAlias_snd_event_point : public server::CSoundEventEntity
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CSoundEventEntityAlias_snd_event_point) == 0x5a0);
+    static_assert(sizeof(CSoundEventEntityAlias_snd_event_point) == 0x598);
 };

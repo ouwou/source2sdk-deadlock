@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 7
+    // Enumerator count: 6
     // Alignment: 4
     // Size: 0x4
     enum class EDenyDistributionType : std::uint32_t
@@ -18,7 +18,6 @@ namespace source2sdk::client
         EDenyToDenierTeam = 0x2,
         EDenyToNobody = 0x3,
         EDenyInLaningPhase = 0x4,
-        EDenyInLaningPhaseDuo = 0x5,
-        EDenyTypesCount = 0x6,
+        EDenyTypesCount = 0x5,
     };
 };

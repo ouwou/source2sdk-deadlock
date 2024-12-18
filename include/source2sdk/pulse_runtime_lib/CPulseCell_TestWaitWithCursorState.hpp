@@ -15,7 +15,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd8
+    // Size: 0xf0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,11 +28,11 @@ namespace source2sdk::pulse_runtime_lib
     public:
         // metadata: MPulseCellOutflow_IsDefault
         pulse_runtime_lib::CPulse_ResumePoint m_WakeResume; // 0x48        
-        pulse_runtime_lib::CPulse_ResumePoint m_WakeCancel; // 0x78        
-        pulse_runtime_lib::CPulse_ResumePoint m_WakeFail; // 0xa8        
+        pulse_runtime_lib::CPulse_ResumePoint m_WakeCancel; // 0x80        
+        pulse_runtime_lib::CPulse_ResumePoint m_WakeFail; // 0xb8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_TestWaitWithCursorState because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_TestWaitWithCursorState) == 0xd8);
+    static_assert(sizeof(CPulseCell_TestWaitWithCursorState) == 0xf0);
 };

@@ -22,6 +22,7 @@ namespace source2sdk::server
     // 
     // static metadata: MNetworkVarNames "HeroID_t m_nHeroID"
     // static metadata: MNetworkVarNames "HeroID_t m_nHeroLoading"
+    // static metadata: MNetworkVarNames "bool m_bIsUsingSeasonalSkin"
     #pragma pack(push, 1)
     class CCitadelHeroComponent : public entity2::CEntityComponent
     {
@@ -33,7 +34,9 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // metadata: MNetworkPriority "32"
         client::HeroID_t m_nHeroLoading; // 0x18        
-        [[maybe_unused]] std::uint8_t pad_0x1c[0x4];
+        // metadata: MNetworkEnable
+        bool m_bIsUsingSeasonalSkin; // 0x1c        
+        [[maybe_unused]] std::uint8_t pad_0x1d[0x3];
         
         // Static fields:
         static entity2::EntComponentInfo_t &Get_s_EntComponentInfo() {return *reinterpret_cast<entity2::EntComponentInfo_t*>(interfaces::g_schema->FindTypeScopeForModule("server.dll")->FindDeclaredClass("CCitadelHeroComponent")->GetStaticFields()[0]->m_pInstance);};

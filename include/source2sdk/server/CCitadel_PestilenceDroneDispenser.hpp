@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1838
+    // Size: 0x1830
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_PestilenceDroneDispenser : public server::CAI_CitadelNPC
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x17f0[0x48];
+        [[maybe_unused]] std::uint8_t pad_0x17e8[0x48];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_PestilenceDroneDispenser) == 0x1838);
+    static_assert(sizeof(CCitadel_PestilenceDroneDispenser) == 0x1830);
 };

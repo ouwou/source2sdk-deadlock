@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d0
+    // Size: 0x7c8
     // Has VTable
     #pragma pack(push, 1)
     class CRulePointEntity : public server::CRuleEntity
     {
     public:
-        int32_t m_Score; // 0x7c8        
-        [[maybe_unused]] std::uint8_t pad_0x7cc[0x4];
+        int32_t m_Score; // 0x7c0        
+        [[maybe_unused]] std::uint8_t pad_0x7c4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CRulePointEntity because it is not a standard-layout class
-    static_assert(sizeof(CRulePointEntity) == 0x7d0);
+    static_assert(sizeof(CRulePointEntity) == 0x7c8);
 };

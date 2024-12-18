@@ -14,20 +14,20 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x610
+    // Size: 0x608
     // Has VTable
     #pragma pack(push, 1)
     class CNPCMaker : public server::CBaseNPCMaker
     {
     public:
-        CUtlSymbolLarge m_iszNPCSubClass; // 0x5e8        
-        CUtlSymbolLarge m_iszSquadName; // 0x5f0        
-        CUtlSymbolLarge m_iszHintGroup; // 0x5f8        
-        CUtlSymbolLarge m_RelationshipString; // 0x600        
-        CUtlSymbolLarge m_ChildTargetName; // 0x608        
+        CUtlSymbolLarge m_iszNPCSubClass; // 0x5e0        
+        CUtlSymbolLarge m_iszSquadName; // 0x5e8        
+        CUtlSymbolLarge m_iszHintGroup; // 0x5f0        
+        CUtlSymbolLarge m_RelationshipString; // 0x5f8        
+        CUtlSymbolLarge m_ChildTargetName; // 0x600        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CNPCMaker because it is not a standard-layout class
-    static_assert(sizeof(CNPCMaker) == 0x610);
+    static_assert(sizeof(CNPCMaker) == 0x608);
 };

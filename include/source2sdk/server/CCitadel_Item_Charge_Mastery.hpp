@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb90
+    // Size: 0xb88
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_Charge_Mastery : public server::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb20[0x70];
+        [[maybe_unused]] std::uint8_t pad_0xb18[0x70];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Item_Charge_Mastery) == 0xb90);
+    static_assert(sizeof(CCitadel_Item_Charge_Mastery) == 0xb88);
 };

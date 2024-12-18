@@ -23,7 +23,7 @@ namespace source2sdk::entity2
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x40
+    // Size: 0x38
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CEntityIdentity * m_pEntity"
@@ -39,15 +39,12 @@ namespace source2sdk::entity2
         entity2::CEntityIdentity* m_pEntity; // 0x10        
         [[maybe_unused]] std::uint8_t pad_0x18[0x18]; // 0x18
         entity2::CScriptComponent* m_CScriptComponent; // 0x30        
-        bool m_bVisibleinPVS; // 0x38        
-        [[maybe_unused]] std::uint8_t pad_0x39[0x7];
     };
     #pragma pack(pop)
     
     static_assert(offsetof(CEntityInstance, m_iszPrivateVScripts) == 0x8);
     static_assert(offsetof(CEntityInstance, m_pEntity) == 0x10);
     static_assert(offsetof(CEntityInstance, m_CScriptComponent) == 0x30);
-    static_assert(offsetof(CEntityInstance, m_bVisibleinPVS) == 0x38);
     
-    static_assert(sizeof(CEntityInstance) == 0x40);
+    static_assert(sizeof(CEntityInstance) == 0x38);
 };

@@ -13,7 +13,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0x20
+    // Size: 0x40
     // Has Trivial Destructor
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -21,17 +21,17 @@ namespace source2sdk::pulse_runtime_lib
     class CPulse_OutputConnection
     {
     public:
-        CGlobalSymbol m_SourceOutput; // 0x0        
-        CGlobalSymbol m_TargetEntity; // 0x8        
-        CGlobalSymbol m_TargetInput; // 0x10        
-        CGlobalSymbol m_Param; // 0x18        
+        PulseSymbol_t m_SourceOutput; // 0x0        
+        PulseSymbol_t m_TargetEntity; // 0x10        
+        PulseSymbol_t m_TargetInput; // 0x20        
+        PulseSymbol_t m_Param; // 0x30        
     };
     #pragma pack(pop)
     
     static_assert(offsetof(CPulse_OutputConnection, m_SourceOutput) == 0x0);
-    static_assert(offsetof(CPulse_OutputConnection, m_TargetEntity) == 0x8);
-    static_assert(offsetof(CPulse_OutputConnection, m_TargetInput) == 0x10);
-    static_assert(offsetof(CPulse_OutputConnection, m_Param) == 0x18);
+    static_assert(offsetof(CPulse_OutputConnection, m_TargetEntity) == 0x10);
+    static_assert(offsetof(CPulse_OutputConnection, m_TargetInput) == 0x20);
+    static_assert(offsetof(CPulse_OutputConnection, m_Param) == 0x30);
     
-    static_assert(sizeof(CPulse_OutputConnection) == 0x20);
+    static_assert(sizeof(CPulse_OutputConnection) == 0x40);
 };

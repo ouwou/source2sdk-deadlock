@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8e8
+    // Size: 0x8e0
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_fFlags"
@@ -26,24 +26,24 @@ namespace source2sdk::server
     class CFuncMoveLinear : public server::CBaseToggle
     {
     public:
-        server::MoveLinearAuthoredPos_t m_authoredPosition; // 0x840        
-        QAngle m_angMoveEntitySpace; // 0x844        
-        Vector m_vecMoveDirParentSpace; // 0x850        
-        [[maybe_unused]] std::uint8_t pad_0x85c[0x4]; // 0x85c
-        CUtlSymbolLarge m_soundStart; // 0x860        
-        CUtlSymbolLarge m_soundStop; // 0x868        
-        CUtlSymbolLarge m_currentSound; // 0x870        
-        float m_flBlockDamage; // 0x878        
-        float m_flStartPosition; // 0x87c        
-        [[maybe_unused]] std::uint8_t pad_0x880[0x8]; // 0x880
-        entity2::CEntityIOOutput m_OnFullyOpen; // 0x888        
-        entity2::CEntityIOOutput m_OnFullyClosed; // 0x8b0        
-        bool m_bCreateMovableNavMesh; // 0x8d8        
-        bool m_bCreateNavObstacle; // 0x8d9        
-        [[maybe_unused]] std::uint8_t pad_0x8da[0xe];
+        server::MoveLinearAuthoredPos_t m_authoredPosition; // 0x838        
+        QAngle m_angMoveEntitySpace; // 0x83c        
+        Vector m_vecMoveDirParentSpace; // 0x848        
+        [[maybe_unused]] std::uint8_t pad_0x854[0x4]; // 0x854
+        CUtlSymbolLarge m_soundStart; // 0x858        
+        CUtlSymbolLarge m_soundStop; // 0x860        
+        CUtlSymbolLarge m_currentSound; // 0x868        
+        float m_flBlockDamage; // 0x870        
+        float m_flStartPosition; // 0x874        
+        [[maybe_unused]] std::uint8_t pad_0x878[0x8]; // 0x878
+        entity2::CEntityIOOutput m_OnFullyOpen; // 0x880        
+        entity2::CEntityIOOutput m_OnFullyClosed; // 0x8a8        
+        bool m_bCreateMovableNavMesh; // 0x8d0        
+        bool m_bCreateNavObstacle; // 0x8d1        
+        [[maybe_unused]] std::uint8_t pad_0x8d2[0xe];
         
         // Datamap fields:
-        // float m_flMoveDistance; // 0x7c4
+        // float m_flMoveDistance; // 0x7bc
         // bool movewithoutpushingblockers; // 0x7fffffff
         // void CFuncMoveLinearNavObstacleThink; // 0x0
         // void CFuncMoveLinearNavMovableThink; // 0x0
@@ -60,5 +60,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncMoveLinear because it is not a standard-layout class
-    static_assert(sizeof(CFuncMoveLinear) == 0x8e8);
+    static_assert(sizeof(CFuncMoveLinear) == 0x8e0);
 };

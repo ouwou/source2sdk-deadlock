@@ -19,7 +19,7 @@ namespace source2sdk::client
     // Registered alignment: 0x10
     // Alignment: 0x10
     // Standard-layout class: false
-    // Size: 0xd20
+    // Size: 0xd10
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CUtlString m_targetCamera"
@@ -35,28 +35,28 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        CUtlString m_targetCamera; // 0x860        
+        CUtlString m_targetCamera; // 0x858        
         // metadata: MNetworkEnable
-        int32_t m_nResolutionEnum; // 0x868        
+        int32_t m_nResolutionEnum; // 0x860        
         // metadata: MNetworkEnable
-        bool m_bRenderShadows; // 0x86c        
+        bool m_bRenderShadows; // 0x864        
         // metadata: MNetworkEnable
-        bool m_bUseUniqueColorTarget; // 0x86d        
-        [[maybe_unused]] std::uint8_t pad_0x86e[0x2]; // 0x86e
+        bool m_bUseUniqueColorTarget; // 0x865        
+        [[maybe_unused]] std::uint8_t pad_0x866[0x2]; // 0x866
         // metadata: MNetworkEnable
-        CUtlString m_brushModelName; // 0x870        
+        CUtlString m_brushModelName; // 0x868        
         // metadata: MNetworkEnable
         // m_hTargetCamera has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hTargetCamera;
-        char m_hTargetCamera[0x4]; // 0x878        
+        char m_hTargetCamera[0x4]; // 0x870        
         // metadata: MNetworkEnable
-        bool m_bEnabled; // 0x87c        
+        bool m_bEnabled; // 0x874        
         // metadata: MNetworkEnable
-        bool m_bDraw3DSkybox; // 0x87d        
-        [[maybe_unused]] std::uint8_t pad_0x87e[0x4a2];
+        bool m_bDraw3DSkybox; // 0x875        
+        [[maybe_unused]] std::uint8_t pad_0x876[0x49a];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_FuncMonitor because it is not a standard-layout class
-    static_assert(sizeof(C_FuncMonitor) == 0xd20);
+    static_assert(sizeof(C_FuncMonitor) == 0xd10);
 };

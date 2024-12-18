@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9a0
+    // Size: 0x998
     // Has VTable
     #pragma pack(push, 1)
     class C_CitadelShopTunnelTrigger : public client::C_BaseTrigger
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_CitadelShopTunnelTrigger) == 0x9a0);
+    static_assert(sizeof(C_CitadelShopTunnelTrigger) == 0x998);
 };

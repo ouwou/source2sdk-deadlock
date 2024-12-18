@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1798
+    // Size: 0x17a0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,20 +27,20 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_DamagePulseParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DamagePulseParticle;
-        char m_DamagePulseParticle[0xe0]; // 0x15a8        
+        char m_DamagePulseParticle[0xe0]; // 0x15b0        
         // m_DamageTargetParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_DamageTargetParticle;
-        char m_DamageTargetParticle[0xe0]; // 0x1688        
+        char m_DamageTargetParticle[0xe0]; // 0x1690        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_sHealPulseSound; // 0x1768        
-        CSoundEventName m_sHealAndDamagePulseSound; // 0x1778        
+        CSoundEventName m_sHealPulseSound; // 0x1770        
+        CSoundEventName m_sHealAndDamagePulseSound; // 0x1780        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_DeathImmuneModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_DeathImmuneModifier;
-        char m_DeathImmuneModifier[0x10]; // 0x1788        
+        char m_DeathImmuneModifier[0x10]; // 0x1790        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Item_CheatDeathVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Item_CheatDeathVData) == 0x1798);
+    static_assert(sizeof(CCitadel_Item_CheatDeathVData) == 0x17a0);
 };

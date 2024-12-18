@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa08
+    // Size: 0xa00
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flWidth"
@@ -25,13 +25,13 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flWidth; // 0x8e8        
+        float m_flWidth; // 0x8e0        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_tDieTime; // 0x8ec        
-        [[maybe_unused]] std::uint8_t pad_0x8f0[0x118];
+        entity2::GameTime_t m_tDieTime; // 0x8e4        
+        [[maybe_unused]] std::uint8_t pad_0x8e8[0x118];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Projectile_Stomp_Projectile because it is not a standard-layout class
-    static_assert(sizeof(C_Projectile_Stomp_Projectile) == 0xa08);
+    static_assert(sizeof(C_Projectile_Stomp_Projectile) == 0xa00);
 };

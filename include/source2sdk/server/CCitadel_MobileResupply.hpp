@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc28
+    // Size: 0xc20
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CHandle< CCitadelBaseAbility> m_hAbility"
@@ -28,17 +28,17 @@ namespace source2sdk::server
     class CCitadel_MobileResupply : public server::CCitadelAnimatingModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xbc0[0x5c]; // 0xbc0
+        [[maybe_unused]] std::uint8_t pad_0xbb8[0x5c]; // 0xbb8
         // metadata: MNetworkEnable
         // m_hAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CCitadelBaseAbility> m_hAbility;
-        char m_hAbility[0x4]; // 0xc1c        
+        char m_hAbility[0x4]; // 0xc14        
         // metadata: MNetworkEnable
-        bool m_bFloating; // 0xc20        
-        [[maybe_unused]] std::uint8_t pad_0xc21[0x7];
+        bool m_bFloating; // 0xc18        
+        [[maybe_unused]] std::uint8_t pad_0xc19[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_MobileResupply because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_MobileResupply) == 0xc28);
+    static_assert(sizeof(CCitadel_MobileResupply) == 0xc20);
 };

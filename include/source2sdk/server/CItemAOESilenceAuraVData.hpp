@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x730
+    // Size: 0x758
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,10 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_empWaveParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_empWaveParticle;
-        char m_empWaveParticle[0xe0]; // 0x650        
+        char m_empWaveParticle[0xe0]; // 0x678        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemAOESilenceAuraVData because it is not a standard-layout class
-    static_assert(sizeof(CItemAOESilenceAuraVData) == 0x730);
+    static_assert(sizeof(CItemAOESilenceAuraVData) == 0x758);
 };

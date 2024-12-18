@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x578
+    // Size: 0x570
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float32 m_flScale"
@@ -26,16 +26,16 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flScale; // 0x568        
+        float m_flScale; // 0x560        
         // metadata: MNetworkEnable
-        float m_flStartScale; // 0x56c        
+        float m_flStartScale; // 0x564        
         // metadata: MNetworkEnable
-        float m_flScaleTime; // 0x570        
+        float m_flScaleTime; // 0x568        
         // metadata: MNetworkEnable
-        uint32_t m_nFlags; // 0x574        
+        uint32_t m_nFlags; // 0x56c        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseFire because it is not a standard-layout class
-    static_assert(sizeof(C_BaseFire) == 0x578);
+    static_assert(sizeof(C_BaseFire) == 0x570);
 };

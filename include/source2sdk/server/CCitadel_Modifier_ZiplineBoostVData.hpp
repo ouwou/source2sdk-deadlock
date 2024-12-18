@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x698
+    // Size: 0x6c0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -24,13 +24,13 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flRampUpTime; // 0x608        
-        float m_flPercentageSpeedIncrease; // 0x60c        
+        float m_flRampUpTime; // 0x630        
+        float m_flPercentageSpeedIncrease; // 0x634        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceStartBoost; // 0x610        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceStartBoost; // 0x638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ZiplineBoostVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ZiplineBoostVData) == 0x698);
+    static_assert(sizeof(CCitadel_Modifier_ZiplineBoostVData) == 0x6c0);
 };

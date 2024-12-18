@@ -14,17 +14,17 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f0
+    // Size: 0x4e8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelTeleportLocation : public server::CServerOnlyEntity
     {
     public:
-        int32_t m_iLane; // 0x4e8        
-        int32_t m_iObjective; // 0x4ec        
+        int32_t m_iLane; // 0x4e0        
+        int32_t m_iObjective; // 0x4e4        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelTeleportLocation because it is not a standard-layout class
-    static_assert(sizeof(CCitadelTeleportLocation) == 0x4f0);
+    static_assert(sizeof(CCitadelTeleportLocation) == 0x4e8);
 };

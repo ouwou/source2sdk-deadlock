@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdf0
+    // Size: 0xde8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_ViperVenom : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x150];
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x150];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_ViperVenom) == 0xdf0);
+    static_assert(sizeof(CCitadel_Ability_ViperVenom) == 0xde8);
 };

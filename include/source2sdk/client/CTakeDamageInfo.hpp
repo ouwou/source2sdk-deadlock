@@ -71,13 +71,15 @@ namespace source2sdk::client
         int32_t m_iBatchCount; // 0xb4        
         float m_flEffectiveness; // 0xb8        
         float m_timeDamage; // 0xbc        
-        HSCRIPT m_hScriptInstance; // 0xc0        
-        [[maybe_unused]] std::uint8_t pad_0xc8[0x14]; // 0xc8
+        [[maybe_unused]] std::uint8_t pad_0xc0[0x1c]; // 0xc0
         bool m_bInTakeDamageFlow; // 0xdc        
         [[maybe_unused]] std::uint8_t pad_0xdd[0xb];
         
         // Static fields:
         static client::CTakeDamageInfo &Get_EmptyInfo() {return *reinterpret_cast<client::CTakeDamageInfo*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CTakeDamageInfo")->GetStaticFields()[0]->m_pInstance);};
+        
+        // Datamap fields:
+        // void m_hScriptInstance; // 0xc0
     };
     #pragma pack(pop)
     
@@ -109,7 +111,6 @@ namespace source2sdk::client
     static_assert(offsetof(CTakeDamageInfo, m_iBatchCount) == 0xb4);
     static_assert(offsetof(CTakeDamageInfo, m_flEffectiveness) == 0xb8);
     static_assert(offsetof(CTakeDamageInfo, m_timeDamage) == 0xbc);
-    static_assert(offsetof(CTakeDamageInfo, m_hScriptInstance) == 0xc0);
     static_assert(offsetof(CTakeDamageInfo, m_bInTakeDamageFlow) == 0xdc);
     
     static_assert(sizeof(CTakeDamageInfo) == 0xe8);

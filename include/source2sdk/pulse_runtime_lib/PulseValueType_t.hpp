@@ -8,7 +8,7 @@
 
 namespace source2sdk::pulse_runtime_lib
 {
-    // Enumerator count: 24
+    // Enumerator count: 25
     // Alignment: 4
     // Size: 0x4
     enum class PulseValueType_t : std::uint32_t
@@ -59,7 +59,10 @@ namespace source2sdk::pulse_runtime_lib
         PVAL_PANORAMA_PANEL_HANDLE = 0x14,
         // MPropertyFriendlyName "Test Handle"
         PVAL_TEST_HANDLE = 0x15,
+        // MPropertyFriendlyName "Array"
         // MPropertySuppressEnumerator
-        PVAL_COUNT = 0x16,
+        PVAL_ARRAY = 0x16,
+        // MPropertySuppressEnumerator
+        PVAL_COUNT = 0x17,
     };
 };

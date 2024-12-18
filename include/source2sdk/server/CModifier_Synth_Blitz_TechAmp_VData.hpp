@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x608
+    // Size: 0x630
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -25,5 +25,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CModifier_Synth_Blitz_TechAmp_VData) == 0x608);
+    static_assert(sizeof(CModifier_Synth_Blitz_TechAmp_VData) == 0x630);
 };

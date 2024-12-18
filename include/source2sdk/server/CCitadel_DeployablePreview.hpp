@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa48
+    // Size: 0xa40
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_DeployablePreview : public server::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xa40[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xa38[0x8];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_DeployablePreview) == 0xa48);
+    static_assert(sizeof(CCitadel_DeployablePreview) == 0xa40);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x8b8
+    // Size: 0x8e0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,20 +27,20 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_BuffParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuffParticle;
-        char m_BuffParticle[0xe0]; // 0x608        
+        char m_BuffParticle[0xe0]; // 0x630        
         // m_RadiusParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_RadiusParticle;
-        char m_RadiusParticle[0xe0]; // 0x6e8        
+        char m_RadiusParticle[0xe0]; // 0x710        
         // m_PulseParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PulseParticle;
-        char m_PulseParticle[0xe0]; // 0x7c8        
+        char m_PulseParticle[0xe0]; // 0x7f0        
         // metadata: MPropertyGroupName "Modifiers"
         // m_PulseDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_PulseDebuffModifier;
-        char m_PulseDebuffModifier[0x10]; // 0x8a8        
+        char m_PulseDebuffModifier[0x10]; // 0x8d0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierSpiderShieldBuffVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierSpiderShieldBuffVData) == 0x8b8);
+    static_assert(sizeof(CModifierSpiderShieldBuffVData) == 0x8e0);
 };

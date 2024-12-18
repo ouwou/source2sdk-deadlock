@@ -50,11 +50,11 @@ namespace source2sdk::client
     class C_PointClientUIWorldPanel : public client::C_BaseClientUIEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x890[0x8]; // 0x890
-        bool m_bForceRecreateNextUpdate; // 0x898        
-        bool m_bMoveViewToPlayerNextThink; // 0x899        
-        bool m_bCheckCSSClasses; // 0x89a        
-        [[maybe_unused]] std::uint8_t pad_0x89b[0x5]; // 0x89b
+        [[maybe_unused]] std::uint8_t pad_0x888[0x8]; // 0x888
+        bool m_bForceRecreateNextUpdate; // 0x890        
+        bool m_bMoveViewToPlayerNextThink; // 0x891        
+        bool m_bCheckCSSClasses; // 0x892        
+        [[maybe_unused]] std::uint8_t pad_0x893[0xd]; // 0x893
         CTransform m_anchorDeltaTransform; // 0x8a0        
         [[maybe_unused]] std::uint8_t pad_0x8c0[0x178]; // 0x8c0
         client::CPointOffScreenIndicatorUi* m_pOffScreenIndicator; // 0xa38        

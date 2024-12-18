@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1740
+    // Size: 0x1748
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,20 +27,20 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Visuals"
         // m_FlogParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FlogParticle;
-        char m_FlogParticle[0xe0]; // 0x1560        
+        char m_FlogParticle[0xe0]; // 0x1568        
         // metadata: MPropertyGroupName "Visuals"
         // m_FlogLifeLeachParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FlogLifeLeachParticle;
-        char m_FlogLifeLeachParticle[0xe0]; // 0x1640        
+        char m_FlogLifeLeachParticle[0xe0]; // 0x1648        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strHitConfirmSound; // 0x1720        
+        CSoundEventName m_strHitConfirmSound; // 0x1728        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_FlogDebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_FlogDebuffModifier;
-        char m_FlogDebuffModifier[0x10]; // 0x1730        
+        char m_FlogDebuffModifier[0x10]; // 0x1738        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbilityLashFlogVData because it is not a standard-layout class
-    static_assert(sizeof(CAbilityLashFlogVData) == 0x1740);
+    static_assert(sizeof(CAbilityLashFlogVData) == 0x1748);
 };

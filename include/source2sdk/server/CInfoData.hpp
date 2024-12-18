@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x10
     // Alignment: 0x10
     // Standard-layout class: false
-    // Size: 0x880
+    // Size: 0x870
     // Has VTable
     #pragma pack(push, 1)
     class CInfoData : public server::CServerOnlyEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x4e8[0x398];
+        [[maybe_unused]] std::uint8_t pad_0x4e0[0x390];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CInfoData) == 0x880);
+    static_assert(sizeof(CInfoData) == 0x870);
 };

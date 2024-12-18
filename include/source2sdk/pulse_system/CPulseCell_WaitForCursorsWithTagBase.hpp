@@ -15,7 +15,7 @@ namespace source2sdk::pulse_system
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x80
+    // Size: 0x88
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -32,5 +32,5 @@ namespace source2sdk::pulse_system
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPulseCell_WaitForCursorsWithTagBase because it is not a standard-layout class
-    static_assert(sizeof(CPulseCell_WaitForCursorsWithTagBase) == 0x80);
+    static_assert(sizeof(CPulseCell_WaitForCursorsWithTagBase) == 0x88);
 };

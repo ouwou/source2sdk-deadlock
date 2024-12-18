@@ -16,7 +16,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x828
+    // Size: 0x850
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,14 +27,14 @@ namespace source2sdk::server
         // metadata: MPropertyGroupName "Visuals"
         // m_TracerParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TracerParticle;
-        char m_TracerParticle[0xe0]; // 0x738        
+        char m_TracerParticle[0xe0]; // 0x760        
         // metadata: MPropertyGroupName "Modifiers"
         // m_ChainModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_ChainModifier;
-        char m_ChainModifier[0x10]; // 0x818        
+        char m_ChainModifier[0x10]; // 0x840        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_ChainLightningVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_ChainLightningVData) == 0x828);
+    static_assert(sizeof(CCitadel_Modifier_ChainLightningVData) == 0x850);
 };

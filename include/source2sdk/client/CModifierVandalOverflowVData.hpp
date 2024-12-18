@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x800
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,12 +26,12 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_LiftParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_LiftParticle;
-        char m_LiftParticle[0xe0]; // 0x6e8        
+        char m_LiftParticle[0xe0]; // 0x710        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strStartSound; // 0x7c8        
+        CSoundEventName m_strStartSound; // 0x7f0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierVandalOverflowVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierVandalOverflowVData) == 0x7d8);
+    static_assert(sizeof(CModifierVandalOverflowVData) == 0x800);
 };

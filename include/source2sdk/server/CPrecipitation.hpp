@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x980
+    // Size: 0x978
     // Has VTable
     #pragma pack(push, 1)
     class CPrecipitation : public server::CBaseTrigger
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CPrecipitation) == 0x980);
+    static_assert(sizeof(CPrecipitation) == 0x978);
 };

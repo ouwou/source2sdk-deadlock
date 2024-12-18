@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4e8
+    // Size: 0x500
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelPlayerPawn_GraphController2 : public client::CAnimGraphControllerBase
@@ -119,48 +119,51 @@ namespace source2sdk::client
         // m_flStrafeSpeed has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<float> m_flStrafeSpeed;
         char m_flStrafeSpeed[0x18]; // 0x380        
+        // m_flAmmoFraction has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CAnimGraph2ParamRef<float> m_flAmmoFraction;
+        char m_flAmmoFraction[0x18]; // 0x398        
         // m_eDeathSequence has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eDeathSequence;
-        char m_eDeathSequence[0x18]; // 0x398        
+        char m_eDeathSequence[0x18]; // 0x3b0        
         // m_eFlinchType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eFlinchType;
-        char m_eFlinchType[0x18]; // 0x3b0        
+        char m_eFlinchType[0x18]; // 0x3c8        
         // m_eFullBodySequence has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eFullBodySequence;
-        char m_eFullBodySequence[0x18]; // 0x3c8        
+        char m_eFullBodySequence[0x18]; // 0x3e0        
         // m_eGenericCast has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eGenericCast;
-        char m_eGenericCast[0x18]; // 0x3e0        
+        char m_eGenericCast[0x18]; // 0x3f8        
         // m_eGenericThrow has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eGenericThrow;
-        char m_eGenericThrow[0x18]; // 0x3f8        
+        char m_eGenericThrow[0x18]; // 0x410        
         // m_eLaunchType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eLaunchType;
-        char m_eLaunchType[0x18]; // 0x410        
+        char m_eLaunchType[0x18]; // 0x428        
         // m_eMelee has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eMelee;
-        char m_eMelee[0x18]; // 0x428        
+        char m_eMelee[0x18]; // 0x440        
         // m_eMovementType has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eMovementType;
-        char m_eMovementType[0x18]; // 0x440        
+        char m_eMovementType[0x18]; // 0x458        
         // m_eRopeClimb has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eRopeClimb;
-        char m_eRopeClimb[0x18]; // 0x458        
+        char m_eRopeClimb[0x18]; // 0x470        
         // m_eSelectedAbility has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eSelectedAbility;
-        char m_eSelectedAbility[0x18]; // 0x470        
+        char m_eSelectedAbility[0x18]; // 0x488        
         // m_eTurn has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eTurn;
-        char m_eTurn[0x18]; // 0x488        
+        char m_eTurn[0x18]; // 0x4a0        
         // m_eZiplineState has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<CGlobalSymbol> m_eZiplineState;
-        char m_eZiplineState[0x18]; // 0x4a0        
+        char m_eZiplineState[0x18]; // 0x4b8        
         // m_Locomotion_Facing has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamRef<Vector> m_Locomotion_Facing;
-        char m_Locomotion_Facing[0x18]; // 0x4b8        
+        char m_Locomotion_Facing[0x18]; // 0x4d0        
         // m_Look_Target has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CAnimGraph2ParamOptionalRef<Vector> m_Look_Target;
-        char m_Look_Target[0x18]; // 0x4d0        
+        char m_Look_Target[0x18]; // 0x4e8        
         
         // Static fields:
         static uint32_t &Get_s_nControllerTypeID() {return *reinterpret_cast<uint32_t*>(interfaces::g_schema->FindTypeScopeForModule("!GlobalTypes")->FindDeclaredClass("CCitadelPlayerPawn_GraphController2")->GetStaticFields()[0]->m_pInstance);};
@@ -169,5 +172,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelPlayerPawn_GraphController2 because it is not a standard-layout class
-    static_assert(sizeof(CCitadelPlayerPawn_GraphController2) == 0x4e8);
+    static_assert(sizeof(CCitadelPlayerPawn_GraphController2) == 0x500);
 };

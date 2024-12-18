@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x540
+    // Size: 0x538
     // Has VTable
     #pragma pack(push, 1)
     class CNodeEnt_InfoNodeAirHint : public server::CNodeEnt
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CNodeEnt_InfoNodeAirHint) == 0x540);
+    static_assert(sizeof(CNodeEnt_InfoNodeAirHint) == 0x538);
 };

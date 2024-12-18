@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x17c8
+    // Size: 0x17d0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,21 +28,21 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_EscapedModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_EscapedModifier;
-        char m_EscapedModifier[0x10]; // 0x1560        
+        char m_EscapedModifier[0x10]; // 0x1568        
         // metadata: MPropertyStartGroup "Visuals"
         // m_PoofParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_PoofParticle;
-        char m_PoofParticle[0xe0]; // 0x1570        
+        char m_PoofParticle[0xe0]; // 0x1578        
         // m_TetherParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TetherParticle;
-        char m_TetherParticle[0xe0]; // 0x1650        
+        char m_TetherParticle[0xe0]; // 0x1658        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strEscaped; // 0x1730        
+        CSoundEventName m_strEscaped; // 0x1738        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceTeleport; // 0x1740        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceTeleport; // 0x1748        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Magician_EscapeVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Magician_EscapeVData) == 0x17c8);
+    static_assert(sizeof(CCitadel_Ability_Magician_EscapeVData) == 0x17d0);
 };

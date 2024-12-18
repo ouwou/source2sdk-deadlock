@@ -16,25 +16,25 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xde0
+    // Size: 0xdd8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_TurretClone : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x118]; // 0xca0
-        entity2::GameTime_t m_flTurretExpireTime; // 0xdb8        
-        [[maybe_unused]] std::uint8_t pad_0xdbc[0x4]; // 0xdbc
-        bool m_bTeleported; // 0xdc0        
-        bool m_bHasTurretReady; // 0xdc1        
-        [[maybe_unused]] std::uint8_t pad_0xdc2[0x2]; // 0xdc2
-        int32_t m_iCurrentSwapCount; // 0xdc4        
-        Vector m_vecTurretPosition; // 0xdc8        
-        client::ParticleIndex_t m_nFXIndex; // 0xdd4        
-        [[maybe_unused]] std::uint8_t pad_0xdd8[0x8];
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x118]; // 0xc98
+        entity2::GameTime_t m_flTurretExpireTime; // 0xdb0        
+        [[maybe_unused]] std::uint8_t pad_0xdb4[0x4]; // 0xdb4
+        bool m_bTeleported; // 0xdb8        
+        bool m_bHasTurretReady; // 0xdb9        
+        [[maybe_unused]] std::uint8_t pad_0xdba[0x2]; // 0xdba
+        int32_t m_iCurrentSwapCount; // 0xdbc        
+        Vector m_vecTurretPosition; // 0xdc0        
+        client::ParticleIndex_t m_nFXIndex; // 0xdcc        
+        [[maybe_unused]] std::uint8_t pad_0xdd0[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_TurretClone because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_TurretClone) == 0xde0);
+    static_assert(sizeof(CCitadel_Ability_TurretClone) == 0xdd8);
 };

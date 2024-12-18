@@ -14,8 +14,7 @@ namespace source2sdk::modellib
     // Registered alignment: 0x10
     // Alignment: 0x10
     // Standard-layout class: true
-    // Size: 0xc0
-    // Has Trivial Destructor
+    // Size: 0xd0
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -55,7 +54,9 @@ namespace source2sdk::modellib
         float m_flElasticity; // 0xb0        
         float m_flElasticDamping; // 0xb4        
         float m_flPlasticity; // 0xb8        
-        [[maybe_unused]] std::uint8_t pad_0xbc[0x4];
+        [[maybe_unused]] std::uint8_t pad_0xbc[0x4]; // 0xbc
+        CUtlString m_Tag; // 0xc0        
+        [[maybe_unused]] std::uint8_t pad_0xc8[0x8];
     };
     #pragma pack(pop)
     
@@ -86,6 +87,7 @@ namespace source2sdk::modellib
     static_assert(offsetof(VPhysXJoint_t, m_flElasticity) == 0xb0);
     static_assert(offsetof(VPhysXJoint_t, m_flElasticDamping) == 0xb4);
     static_assert(offsetof(VPhysXJoint_t, m_flPlasticity) == 0xb8);
+    static_assert(offsetof(VPhysXJoint_t, m_Tag) == 0xc0);
     
-    static_assert(sizeof(VPhysXJoint_t) == 0xc0);
+    static_assert(sizeof(VPhysXJoint_t) == 0xd0);
 };

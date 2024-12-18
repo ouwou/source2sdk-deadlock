@@ -20,7 +20,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x888
+    // Size: 0x880
     // Has VTable
     #pragma pack(push, 1)
     class CFuncTrain : public server::CBasePlatTrain
@@ -28,16 +28,16 @@ namespace source2sdk::server
     public:
         // m_hCurrentTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hCurrentTarget;
-        char m_hCurrentTarget[0x4]; // 0x868        
-        bool m_activated; // 0x86c        
-        [[maybe_unused]] std::uint8_t pad_0x86d[0x3]; // 0x86d
+        char m_hCurrentTarget[0x4]; // 0x860        
+        bool m_activated; // 0x864        
+        [[maybe_unused]] std::uint8_t pad_0x865[0x3]; // 0x865
         // m_hEnemy has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hEnemy;
-        char m_hEnemy[0x4]; // 0x870        
-        float m_flBlockDamage; // 0x874        
-        entity2::GameTime_t m_flNextBlockTime; // 0x878        
-        [[maybe_unused]] std::uint8_t pad_0x87c[0x4]; // 0x87c
-        CUtlSymbolLarge m_iszLastTarget; // 0x880        
+        char m_hEnemy[0x4]; // 0x868        
+        float m_flBlockDamage; // 0x86c        
+        entity2::GameTime_t m_flNextBlockTime; // 0x870        
+        [[maybe_unused]] std::uint8_t pad_0x874[0x4]; // 0x874
+        CUtlSymbolLarge m_iszLastTarget; // 0x878        
         
         // Datamap fields:
         // void CFuncTrainWait; // 0x0
@@ -49,5 +49,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFuncTrain because it is not a standard-layout class
-    static_assert(sizeof(CFuncTrain) == 0x888);
+    static_assert(sizeof(CFuncTrain) == 0x880);
 };

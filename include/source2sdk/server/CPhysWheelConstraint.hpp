@@ -19,28 +19,28 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x590
+    // Size: 0x588
     // Has VTable
     #pragma pack(push, 1)
     class CPhysWheelConstraint : public server::CPhysConstraint
     {
     public:
-        float m_flSuspensionFrequency; // 0x560        
-        float m_flSuspensionDampingRatio; // 0x564        
-        float m_flSuspensionHeightOffset; // 0x568        
-        bool m_bEnableSuspensionLimit; // 0x56c        
-        [[maybe_unused]] std::uint8_t pad_0x56d[0x3]; // 0x56d
-        float m_flMinSuspensionOffset; // 0x570        
-        float m_flMaxSuspensionOffset; // 0x574        
-        bool m_bEnableSteeringLimit; // 0x578        
-        [[maybe_unused]] std::uint8_t pad_0x579[0x3]; // 0x579
-        float m_flMinSteeringAngle; // 0x57c        
-        float m_flMaxSteeringAngle; // 0x580        
-        float m_flSteeringAxisFriction; // 0x584        
-        float m_flSpinAxisFriction; // 0x588        
+        float m_flSuspensionFrequency; // 0x558        
+        float m_flSuspensionDampingRatio; // 0x55c        
+        float m_flSuspensionHeightOffset; // 0x560        
+        bool m_bEnableSuspensionLimit; // 0x564        
+        [[maybe_unused]] std::uint8_t pad_0x565[0x3]; // 0x565
+        float m_flMinSuspensionOffset; // 0x568        
+        float m_flMaxSuspensionOffset; // 0x56c        
+        bool m_bEnableSteeringLimit; // 0x570        
+        [[maybe_unused]] std::uint8_t pad_0x571[0x3]; // 0x571
+        float m_flMinSteeringAngle; // 0x574        
+        float m_flMaxSteeringAngle; // 0x578        
+        float m_flSteeringAxisFriction; // 0x57c        
+        float m_flSpinAxisFriction; // 0x580        
         // m_hSteeringMimicsEntity has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hSteeringMimicsEntity;
-        char m_hSteeringMimicsEntity[0x4]; // 0x58c        
+        char m_hSteeringMimicsEntity[0x4]; // 0x584        
         
         // Datamap fields:
         // CUtlSymbolLarge InputSetSteeringMimicsEntity; // 0x0
@@ -48,5 +48,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPhysWheelConstraint because it is not a standard-layout class
-    static_assert(sizeof(CPhysWheelConstraint) == 0x590);
+    static_assert(sizeof(CPhysWheelConstraint) == 0x588);
 };

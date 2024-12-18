@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x610
+    // Size: 0x638
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,11 +23,11 @@ namespace source2sdk::client
     {
     public:
         // metadata: MPropertyStartGroup "Visuals"
-        float m_flHideDuration; // 0x608        
-        float m_flRevealDuration; // 0x60c        
+        float m_flHideDuration; // 0x630        
+        float m_flRevealDuration; // 0x634        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifierObscuredVData because it is not a standard-layout class
-    static_assert(sizeof(CModifierObscuredVData) == 0x610);
+    static_assert(sizeof(CModifierObscuredVData) == 0x638);
 };

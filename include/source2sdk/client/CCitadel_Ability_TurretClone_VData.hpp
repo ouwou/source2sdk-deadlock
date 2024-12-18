@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x17c8
+    // Size: 0x17d0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,21 +28,21 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_strTurretParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strTurretParticle;
-        char m_strTurretParticle[0xe0]; // 0x1560        
+        char m_strTurretParticle[0xe0]; // 0x1568        
         // m_strSwapParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_strSwapParticle;
-        char m_strSwapParticle[0xe0]; // 0x1640        
+        char m_strSwapParticle[0xe0]; // 0x1648        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_TurretSound; // 0x1720        
+        CSoundEventName m_TurretSound; // 0x1728        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_BuffModifier;
-        char m_BuffModifier[0x10]; // 0x1730        
+        char m_BuffModifier[0x10]; // 0x1738        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceTeleport; // 0x1740        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceTeleport; // 0x1748        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_TurretClone_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_TurretClone_VData) == 0x17c8);
+    static_assert(sizeof(CCitadel_Ability_TurretClone_VData) == 0x17d0);
 };

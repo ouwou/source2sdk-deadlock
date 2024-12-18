@@ -21,7 +21,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb38
+    // Size: 0xb30
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "string_t m_iszCommentaryFile"
@@ -38,59 +38,59 @@ namespace source2sdk::server
     class CPointCommentaryNode : public server::CBaseAnimGraph
     {
     public:
-        CUtlSymbolLarge m_iszPreCommands; // 0xa40        
-        CUtlSymbolLarge m_iszPostCommands; // 0xa48        
+        CUtlSymbolLarge m_iszPreCommands; // 0xa38        
+        CUtlSymbolLarge m_iszPostCommands; // 0xa40        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszCommentaryFile; // 0xa50        
-        CUtlSymbolLarge m_iszViewTarget; // 0xa58        
+        CUtlSymbolLarge m_iszCommentaryFile; // 0xa48        
+        CUtlSymbolLarge m_iszViewTarget; // 0xa50        
         // m_hViewTarget has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hViewTarget;
-        char m_hViewTarget[0x4]; // 0xa60        
+        char m_hViewTarget[0x4]; // 0xa58        
         // m_hViewTargetAngles has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hViewTargetAngles;
-        char m_hViewTargetAngles[0x4]; // 0xa64        
-        CUtlSymbolLarge m_iszViewPosition; // 0xa68        
+        char m_hViewTargetAngles[0x4]; // 0xa5c        
+        CUtlSymbolLarge m_iszViewPosition; // 0xa60        
         // metadata: MNetworkEnable
         // m_hViewPosition has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hViewPosition;
-        char m_hViewPosition[0x4]; // 0xa70        
+        char m_hViewPosition[0x4]; // 0xa68        
         // m_hViewPositionMover has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_hViewPositionMover;
-        char m_hViewPositionMover[0x4]; // 0xa74        
-        bool m_bPreventMovement; // 0xa78        
-        bool m_bUnderCrosshair; // 0xa79        
-        bool m_bUnstoppable; // 0xa7a        
-        [[maybe_unused]] std::uint8_t pad_0xa7b[0x1]; // 0xa7b
-        entity2::GameTime_t m_flFinishedTime; // 0xa7c        
-        Vector m_vecFinishOrigin; // 0xa80        
-        QAngle m_vecOriginalAngles; // 0xa8c        
-        QAngle m_vecFinishAngles; // 0xa98        
-        bool m_bPreventChangesWhileMoving; // 0xaa4        
-        bool m_bDisabled; // 0xaa5        
-        [[maybe_unused]] std::uint8_t pad_0xaa6[0x2]; // 0xaa6
-        Vector m_vecTeleportOrigin; // 0xaa8        
-        entity2::GameTime_t m_flAbortedPlaybackAt; // 0xab4        
-        entity2::CEntityIOOutput m_pOnCommentaryStarted; // 0xab8        
-        entity2::CEntityIOOutput m_pOnCommentaryStopped; // 0xae0        
+        char m_hViewPositionMover[0x4]; // 0xa6c        
+        bool m_bPreventMovement; // 0xa70        
+        bool m_bUnderCrosshair; // 0xa71        
+        bool m_bUnstoppable; // 0xa72        
+        [[maybe_unused]] std::uint8_t pad_0xa73[0x1]; // 0xa73
+        entity2::GameTime_t m_flFinishedTime; // 0xa74        
+        Vector m_vecFinishOrigin; // 0xa78        
+        QAngle m_vecOriginalAngles; // 0xa84        
+        QAngle m_vecFinishAngles; // 0xa90        
+        bool m_bPreventChangesWhileMoving; // 0xa9c        
+        bool m_bDisabled; // 0xa9d        
+        [[maybe_unused]] std::uint8_t pad_0xa9e[0x2]; // 0xa9e
+        Vector m_vecTeleportOrigin; // 0xaa0        
+        entity2::GameTime_t m_flAbortedPlaybackAt; // 0xaac        
+        entity2::CEntityIOOutput m_pOnCommentaryStarted; // 0xab0        
+        entity2::CEntityIOOutput m_pOnCommentaryStopped; // 0xad8        
         // metadata: MNetworkEnable
-        bool m_bActive; // 0xb08        
-        [[maybe_unused]] std::uint8_t pad_0xb09[0x3]; // 0xb09
+        bool m_bActive; // 0xb00        
+        [[maybe_unused]] std::uint8_t pad_0xb01[0x3]; // 0xb01
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStartTime; // 0xb0c        
+        entity2::GameTime_t m_flStartTime; // 0xb04        
         // metadata: MNetworkEnable
-        float m_flStartTimeInCommentary; // 0xb10        
-        [[maybe_unused]] std::uint8_t pad_0xb14[0x4]; // 0xb14
+        float m_flStartTimeInCommentary; // 0xb08        
+        [[maybe_unused]] std::uint8_t pad_0xb0c[0x4]; // 0xb0c
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszTitle; // 0xb18        
+        CUtlSymbolLarge m_iszTitle; // 0xb10        
         // metadata: MNetworkEnable
-        CUtlSymbolLarge m_iszSpeakers; // 0xb20        
+        CUtlSymbolLarge m_iszSpeakers; // 0xb18        
         // metadata: MNetworkEnable
-        int32_t m_iNodeNumber; // 0xb28        
+        int32_t m_iNodeNumber; // 0xb20        
         // metadata: MNetworkEnable
-        int32_t m_iNodeNumberMax; // 0xb2c        
+        int32_t m_iNodeNumberMax; // 0xb24        
         // metadata: MNetworkEnable
-        bool m_bListenedTo; // 0xb30        
-        [[maybe_unused]] std::uint8_t pad_0xb31[0x7];
+        bool m_bListenedTo; // 0xb28        
+        [[maybe_unused]] std::uint8_t pad_0xb29[0x7];
         
         // Datamap fields:
         // void InputStartCommentary; // 0x0
@@ -105,5 +105,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPointCommentaryNode because it is not a standard-layout class
-    static_assert(sizeof(CPointCommentaryNode) == 0xb38);
+    static_assert(sizeof(CPointCommentaryNode) == 0xb30);
 };

@@ -20,23 +20,23 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x648
+    // Size: 0x640
     // Has VTable
     #pragma pack(push, 1)
     class CFilterMultiple : public client::CBaseFilter
     {
     public:
-        client::filter_t m_nFilterType; // 0x5c0        
-        [[maybe_unused]] std::uint8_t pad_0x5c4[0x4]; // 0x5c4
-        CUtlSymbolLarge m_iFilterName[10]; // 0x5c8        
+        client::filter_t m_nFilterType; // 0x5b8        
+        [[maybe_unused]] std::uint8_t pad_0x5bc[0x4]; // 0x5bc
+        CUtlSymbolLarge m_iFilterName[10]; // 0x5c0        
         // m_hFilter has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<client::C_BaseEntity> m_hFilter[10];
-        char m_hFilter[0x28]; // 0x618        
-        int32_t m_nFilterCount; // 0x640        
-        [[maybe_unused]] std::uint8_t pad_0x644[0x4];
+        char m_hFilter[0x28]; // 0x610        
+        int32_t m_nFilterCount; // 0x638        
+        [[maybe_unused]] std::uint8_t pad_0x63c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CFilterMultiple because it is not a standard-layout class
-    static_assert(sizeof(CFilterMultiple) == 0x648);
+    static_assert(sizeof(CFilterMultiple) == 0x640);
 };

@@ -8,7 +8,7 @@
 
 namespace source2sdk::client
 {
-    // Enumerator count: 50
+    // Enumerator count: 53
     // Alignment: 4
     // Size: 0x4
     enum class GameAnimEventIndex_t : std::uint32_t
@@ -46,22 +46,25 @@ namespace source2sdk::client
         AE_PULSE_GRAPH_IKLOCKLEFTARM = 0x1e,
         AE_PULSE_GRAPH_IKLOCKRIGHTARM = 0x1f,
         AE_DISABLE_PLATFORM = 0x20,
-        AE_ENABLE_PLATFORM = 0x21,
-        AE_ANIMGRAPH_SET_PARAM = 0x22,
-        AE_ANIMGRAPH_WARP_SECTION_START = 0x23,
-        AE_ANIMGRAPH_WARP_SECTION_END = 0x24,
-        AE_NPC_LEFTFOOT = 0x25,
-        AE_NPC_RIGHTFOOT = 0x26,
-        AE_NPC_BODYDROP_LIGHT = 0x27,
-        AE_NPC_BODYDROP_HEAVY = 0x28,
-        AE_NPC_SWISHSOUND = 0x29,
-        AE_NPC_WEAPON_DROP = 0x2a,
-        AE_NPC_RAGDOLL = 0x2b,
-        AE_NPC_ATTACK_BROADCAST = 0x2c,
-        AE_NPC_GIB = 0x2d,
-        AE_HURDLE_RISE_START = 0x2e,
-        AE_HURDLE_DROP_START = 0x2f,
-        AE_RAGDOLL_WINDOW = 0x30,
-        AE_MELEE_ATTACK = 0x31,
+        AE_ENABLE_PLATFORM_PLAYER_FOLLOWS_YAW = 0x21,
+        AE_ENABLE_PLATFORM_PLAYER_IGNORES_YAW = 0x22,
+        AE_ANIMGRAPH_SET_PARAM = 0x23,
+        AE_ANIMGRAPH_WARP_SECTION_START = 0x24,
+        AE_ANIMGRAPH_WARP_SECTION_END = 0x25,
+        AE_ANIMGRAPH_ORIENTATION_WARP_SECTION_START = 0x26,
+        AE_ANIMGRAPH_ORIENTATION_WARP_SECTION_END = 0x27,
+        AE_NPC_LEFTFOOT = 0x28,
+        AE_NPC_RIGHTFOOT = 0x29,
+        AE_NPC_BODYDROP_LIGHT = 0x2a,
+        AE_NPC_BODYDROP_HEAVY = 0x2b,
+        AE_NPC_SWISHSOUND = 0x2c,
+        AE_NPC_WEAPON_DROP = 0x2d,
+        AE_NPC_RAGDOLL = 0x2e,
+        AE_NPC_ATTACK_BROADCAST = 0x2f,
+        AE_NPC_GIB = 0x30,
+        AE_HURDLE_RISE_START = 0x31,
+        AE_HURDLE_DROP_START = 0x32,
+        AE_RAGDOLL_WINDOW = 0x33,
+        AE_MELEE_ATTACK = 0x34,
     };
 };

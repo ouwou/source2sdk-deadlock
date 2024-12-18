@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x610
+    // Size: 0x638
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,11 +23,11 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flPushSpeed; // 0x608        
-        float m_flPushRange; // 0x60c        
+        float m_flPushSpeed; // 0x630        
+        float m_flPushRange; // 0x634        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_Neutral_Debuff_PushbackVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_Neutral_Debuff_PushbackVData) == 0x610);
+    static_assert(sizeof(CCitadel_Modifier_Neutral_Debuff_PushbackVData) == 0x638);
 };

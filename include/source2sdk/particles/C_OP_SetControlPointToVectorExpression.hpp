@@ -2,6 +2,7 @@
 #include "source2sdk/particles/CParticleFunctionPreEmission.hpp"
 #include "source2sdk/particles/VectorExpressionType_t.hpp"
 #include "source2sdk/particleslib/CParticleCollectionVecInput.hpp"
+#include "source2sdk/particleslib/CPerParticleFloatInput.hpp"
 #include "source2sdk/source2gen.hpp"
 #include <cstddef>
 #include <cstdint>
@@ -16,7 +17,7 @@ namespace source2sdk::particles
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xec8
+    // Size: 0x1028
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -32,12 +33,15 @@ namespace source2sdk::particles
         particleslib::CParticleCollectionVecInput m_vInput1; // 0x1d0        
         // metadata: MPropertyFriendlyName "input 2"
         particleslib::CParticleCollectionVecInput m_vInput2; // 0x848        
+        // metadata: MPropertyFriendlyName "lerp value"
+        // metadata: MPropertySuppressExpr "m_nExpression != VECTOR_EXPRESSION_LERP"
+        particleslib::CPerParticleFloatInput m_flLerp; // 0xec0        
         // metadata: MPropertyFriendlyName "normalize result"
-        bool m_bNormalizedOutput; // 0xec0        
-        [[maybe_unused]] std::uint8_t pad_0xec1[0x7];
+        bool m_bNormalizedOutput; // 0x1020        
+        [[maybe_unused]] std::uint8_t pad_0x1021[0x7];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_OP_SetControlPointToVectorExpression because it is not a standard-layout class
-    static_assert(sizeof(C_OP_SetControlPointToVectorExpression) == 0xec8);
+    static_assert(sizeof(C_OP_SetControlPointToVectorExpression) == 0x1028);
 };

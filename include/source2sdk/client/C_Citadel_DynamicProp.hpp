@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xdd8
+    // Size: 0xdd0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CUtlString m_strDefaultSkin"
@@ -25,18 +25,18 @@ namespace source2sdk::client
     class C_Citadel_DynamicProp : public client::C_DynamicProp
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xda0[0x10]; // 0xda0
-        int32_t m_nPlayerTeamEvent; // 0xdb0        
-        [[maybe_unused]] std::uint8_t pad_0xdb4[0x4]; // 0xdb4
+        [[maybe_unused]] std::uint8_t pad_0xd98[0x10]; // 0xd98
+        int32_t m_nPlayerTeamEvent; // 0xda8        
+        [[maybe_unused]] std::uint8_t pad_0xdac[0x4]; // 0xdac
         // metadata: MNetworkEnable
-        CUtlString m_strDefaultSkin; // 0xdb8        
+        CUtlString m_strDefaultSkin; // 0xdb0        
         // metadata: MNetworkEnable
-        CUtlString m_strFriendlySkin; // 0xdc0        
+        CUtlString m_strFriendlySkin; // 0xdb8        
         // metadata: MNetworkEnable
-        CUtlString m_strEnemySkin; // 0xdc8        
+        CUtlString m_strEnemySkin; // 0xdc0        
         // metadata: MNetworkEnable
-        bool m_bIsWorld; // 0xdd0        
-        [[maybe_unused]] std::uint8_t pad_0xdd1[0x7];
+        bool m_bIsWorld; // 0xdc8        
+        [[maybe_unused]] std::uint8_t pad_0xdc9[0x7];
         
         // Datamap fields:
         // CUtlSymbolLarge SetFriendlySkin; // 0x0
@@ -45,5 +45,5 @@ namespace source2sdk::client
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_DynamicProp because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_DynamicProp) == 0xdd8);
+    static_assert(sizeof(C_Citadel_DynamicProp) == 0xdd0);
 };

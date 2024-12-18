@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa90
+    // Size: 0xa88
     // Has VTable
     #pragma pack(push, 1)
     class CMomentaryRotButton : public server::CRotButton
@@ -23,24 +23,24 @@ namespace source2sdk::server
     public:
         // m_Position has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEntityOutputTemplate<float> m_Position;
-        char m_Position[0x28]; // 0x990        
-        entity2::CEntityIOOutput m_OnUnpressed; // 0x9b8        
-        entity2::CEntityIOOutput m_OnFullyOpen; // 0x9e0        
-        entity2::CEntityIOOutput m_OnFullyClosed; // 0xa08        
-        entity2::CEntityIOOutput m_OnReachedPosition; // 0xa30        
-        int32_t m_lastUsed; // 0xa58        
-        QAngle m_start; // 0xa5c        
-        QAngle m_end; // 0xa68        
-        float m_IdealYaw; // 0xa74        
-        CUtlSymbolLarge m_sNoise; // 0xa78        
-        bool m_bUpdateTarget; // 0xa80        
-        [[maybe_unused]] std::uint8_t pad_0xa81[0x3]; // 0xa81
-        int32_t m_direction; // 0xa84        
-        float m_returnSpeed; // 0xa88        
-        float m_flStartPosition; // 0xa8c        
+        char m_Position[0x28]; // 0x988        
+        entity2::CEntityIOOutput m_OnUnpressed; // 0x9b0        
+        entity2::CEntityIOOutput m_OnFullyOpen; // 0x9d8        
+        entity2::CEntityIOOutput m_OnFullyClosed; // 0xa00        
+        entity2::CEntityIOOutput m_OnReachedPosition; // 0xa28        
+        int32_t m_lastUsed; // 0xa50        
+        QAngle m_start; // 0xa54        
+        QAngle m_end; // 0xa60        
+        float m_IdealYaw; // 0xa6c        
+        CUtlSymbolLarge m_sNoise; // 0xa70        
+        bool m_bUpdateTarget; // 0xa78        
+        [[maybe_unused]] std::uint8_t pad_0xa79[0x3]; // 0xa79
+        int32_t m_direction; // 0xa7c        
+        float m_returnSpeed; // 0xa80        
+        float m_flStartPosition; // 0xa84        
         
         // Datamap fields:
-        // bool m_bSolidBsp; // 0x898
+        // bool m_bSolidBsp; // 0x890
         // void CMomentaryRotButtonUseMoveDone; // 0x0
         // void CMomentaryRotButtonReturnMoveDone; // 0x0
         // void CMomentaryRotButtonSetPositionMoveDone; // 0x0
@@ -53,5 +53,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CMomentaryRotButton because it is not a standard-layout class
-    static_assert(sizeof(CMomentaryRotButton) == 0xa90);
+    static_assert(sizeof(CMomentaryRotButton) == 0xa88);
 };

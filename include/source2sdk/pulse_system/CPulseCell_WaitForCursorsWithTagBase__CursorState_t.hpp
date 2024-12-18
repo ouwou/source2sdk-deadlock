@@ -18,8 +18,8 @@ namespace source2sdk::pulse_system
     struct CPulseCell_WaitForCursorsWithTagBase__CursorState_t
     {
     public:
-        CGlobalSymbol m_TagName; // 0x0        
-        [[maybe_unused]] std::uint8_t pad_0x08[0x28];
+        PulseSymbol_t m_TagName; // 0x0        
+        [[maybe_unused]] std::uint8_t pad_0x10[0x20];
     };
     #pragma pack(pop)
     

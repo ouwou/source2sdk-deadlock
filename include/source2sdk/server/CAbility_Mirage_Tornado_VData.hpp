@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x1708
+    // Size: 0x1710
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,25 +28,25 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Visuals"
         // m_TornadoCastParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_TornadoCastParticle;
-        char m_TornadoCastParticle[0xe0]; // 0x1560        
+        char m_TornadoCastParticle[0xe0]; // 0x1568        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_CasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_CasterModifier;
-        char m_CasterModifier[0x10]; // 0x1640        
+        char m_CasterModifier[0x10]; // 0x1648        
         // m_WhirlwindEvasionModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_WhirlwindEvasionModifier;
-        char m_WhirlwindEvasionModifier[0x10]; // 0x1650        
+        char m_WhirlwindEvasionModifier[0x10]; // 0x1658        
         // m_TornadoAura has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_TornadoAura;
-        char m_TornadoAura[0x10]; // 0x1660        
+        char m_TornadoAura[0x10]; // 0x1668        
         // m_GrenadeTrailModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_GrenadeTrailModifier;
-        char m_GrenadeTrailModifier[0x10]; // 0x1670        
+        char m_GrenadeTrailModifier[0x10]; // 0x1678        
         // metadata: MPropertyStartGroup "Camera"
-        client::CitadelCameraOperationsSequence_t m_cameraSequenceTravelingInTornado; // 0x1680        
+        client::CitadelCameraOperationsSequence_t m_cameraSequenceTravelingInTornado; // 0x1688        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Mirage_Tornado_VData because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Mirage_Tornado_VData) == 0x1708);
+    static_assert(sizeof(CAbility_Mirage_Tornado_VData) == 0x1710);
 };

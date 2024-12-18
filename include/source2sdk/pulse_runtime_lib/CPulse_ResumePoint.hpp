@@ -14,7 +14,7 @@ namespace source2sdk::pulse_runtime_lib
     // Registered alignment: unknown
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x30
+    // Size: 0x38
     #pragma pack(push, 1)
     class CPulse_ResumePoint : public pulse_runtime_lib::CPulse_OutflowConnection
     {
@@ -25,5 +25,5 @@ namespace source2sdk::pulse_runtime_lib
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CPulse_ResumePoint) == 0x30);
+    static_assert(sizeof(CPulse_ResumePoint) == 0x38);
 };

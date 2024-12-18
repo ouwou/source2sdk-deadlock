@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x770
+    // Size: 0x768
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CEnvWindShared m_EnvWindShared"
@@ -24,10 +24,10 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        client::C_EnvWindShared m_EnvWindShared; // 0x568        
+        client::C_EnvWindShared m_EnvWindShared; // 0x560        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_EnvWindClientside because it is not a standard-layout class
-    static_assert(sizeof(C_EnvWindClientside) == 0x770);
+    static_assert(sizeof(C_EnvWindClientside) == 0x768);
 };

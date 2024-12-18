@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc48
+    // Size: 0xc40
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "bool m_bBulletFlying"
@@ -30,30 +30,30 @@ namespace source2sdk::server
     class CAbility_Fathom_ReefdwellerHarpoon : public server::CCitadelBaseAbility
     {
     public:
-        bool m_bHitTarget; // 0xb00        
-        [[maybe_unused]] std::uint8_t pad_0xb01[0x3]; // 0xb01
-        Vector m_vPrevPos; // 0xb04        
+        bool m_bHitTarget; // 0xaf8        
+        [[maybe_unused]] std::uint8_t pad_0xaf9[0x3]; // 0xaf9
+        Vector m_vPrevPos; // 0xafc        
         // metadata: MNetworkEnable
-        bool m_bBulletFlying; // 0xb10        
+        bool m_bBulletFlying; // 0xb08        
         // metadata: MNetworkEnable
-        bool m_bHasLatchedOnce; // 0xb11        
+        bool m_bHasLatchedOnce; // 0xb09        
         // metadata: MNetworkEnable
-        bool m_bLatched; // 0xb12        
-        [[maybe_unused]] std::uint8_t pad_0xb13[0x1]; // 0xb13
+        bool m_bLatched; // 0xb0a        
+        [[maybe_unused]] std::uint8_t pad_0xb0b[0x1]; // 0xb0b
         // metadata: MNetworkEnable
-        Vector m_vHarpoonTarget; // 0xb14        
+        Vector m_vHarpoonTarget; // 0xb0c        
         // metadata: MNetworkEnable
-        float m_flLatchedYaw; // 0xb20        
+        float m_flLatchedYaw; // 0xb18        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flCloseEnoughStartTime; // 0xb24        
+        entity2::GameTime_t m_flCloseEnoughStartTime; // 0xb1c        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flStuckStartTime; // 0xb28        
+        entity2::GameTime_t m_flStuckStartTime; // 0xb20        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flReelStartTime; // 0xb2c        
-        [[maybe_unused]] std::uint8_t pad_0xb30[0x118];
+        entity2::GameTime_t m_flReelStartTime; // 0xb24        
+        [[maybe_unused]] std::uint8_t pad_0xb28[0x118];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CAbility_Fathom_ReefdwellerHarpoon because it is not a standard-layout class
-    static_assert(sizeof(CAbility_Fathom_ReefdwellerHarpoon) == 0xc48);
+    static_assert(sizeof(CAbility_Fathom_ReefdwellerHarpoon) == 0xc40);
 };

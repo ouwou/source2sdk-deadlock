@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xd38
+    // Size: 0xd30
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelAutoScaledTime m_flDetonateTime"
@@ -25,17 +25,17 @@ namespace source2sdk::client
     class CCitadel_Ability_FireBomb : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x78]; // 0xca0
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x78]; // 0xc98
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        client::CCitadelAutoScaledTime m_flDetonateTime; // 0xd18        
+        client::CCitadelAutoScaledTime m_flDetonateTime; // 0xd10        
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "LocalPlayerOwnerAndObserversExclusive"
-        entity2::GameTime_t m_flStartTime; // 0xd30        
-        [[maybe_unused]] std::uint8_t pad_0xd34[0x4];
+        entity2::GameTime_t m_flStartTime; // 0xd28        
+        [[maybe_unused]] std::uint8_t pad_0xd2c[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_FireBomb because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_FireBomb) == 0xd38);
+    static_assert(sizeof(CCitadel_Ability_FireBomb) == 0xd30);
 };

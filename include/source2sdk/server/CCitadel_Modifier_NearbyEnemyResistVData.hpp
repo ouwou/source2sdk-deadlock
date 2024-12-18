@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x628
+    // Size: 0x650
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -22,14 +22,14 @@ namespace source2sdk::server
     class CCitadel_Modifier_NearbyEnemyResistVData : public server::CCitadelModifierVData
     {
     public:
-        float m_flNearbyEnemyResistRange; // 0x608        
-        [[maybe_unused]] std::uint8_t pad_0x60c[0x4]; // 0x60c
+        float m_flNearbyEnemyResistRange; // 0x630        
+        [[maybe_unused]] std::uint8_t pad_0x634[0x4]; // 0x634
         // m_flResistValues has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CUtlVector<float> m_flResistValues;
-        char m_flResistValues[0x18]; // 0x610        
+        char m_flResistValues[0x18]; // 0x638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_NearbyEnemyResistVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_NearbyEnemyResistVData) == 0x628);
+    static_assert(sizeof(CCitadel_Modifier_NearbyEnemyResistVData) == 0x650);
 };

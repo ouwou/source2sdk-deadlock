@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xbc0
+    // Size: 0xbb8
     // Has VTable
     // 
     // static metadata: MNetworkIncludeByName "m_iHealth"
@@ -29,10 +29,10 @@ namespace source2sdk::server
         // metadata: MNetworkUserGroup "CCitadelRegenComponent"
         // metadata: MNetworkAlias "CCitadelRegenComponent"
         // metadata: MNetworkTypeAlias "CCitadelRegenComponent"
-        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa40        
+        server::CCitadelRegenComponent m_CCitadelRegenComponent; // 0xa38        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelAnimatingModelEntity because it is not a standard-layout class
-    static_assert(sizeof(CCitadelAnimatingModelEntity) == 0xbc0);
+    static_assert(sizeof(CCitadelAnimatingModelEntity) == 0xbb8);
 };

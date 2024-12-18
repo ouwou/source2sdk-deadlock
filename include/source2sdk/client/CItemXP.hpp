@@ -24,13 +24,13 @@ namespace source2sdk::client
     class CItemXP : public client::C_BaseModelEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x860[0x60]; // 0x860
+        [[maybe_unused]] std::uint8_t pad_0x858[0x64]; // 0x858
         // metadata: MNetworkEnable
         // metadata: MNetworkChangeCallback "OnLaunchTimeChanged"
-        entity2::GameTime_t m_timeLaunch; // 0x8c0        
+        entity2::GameTime_t m_timeLaunch; // 0x8bc        
         // metadata: MNetworkEnable
-        entity2::GameTime_t m_flAttackableTime; // 0x8c4        
-        [[maybe_unused]] std::uint8_t pad_0x8c8[0x28];
+        entity2::GameTime_t m_flAttackableTime; // 0x8c0        
+        [[maybe_unused]] std::uint8_t pad_0x8c4[0x2c];
     };
     #pragma pack(pop)
     

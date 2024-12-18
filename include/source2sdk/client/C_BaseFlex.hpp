@@ -17,7 +17,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc98
+    // Size: 0xc90
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float32 m_flexWeight"
@@ -26,7 +26,7 @@ namespace source2sdk::client
     class C_BaseFlex : public client::CBaseAnimGraph
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb00[0x10]; // 0xb00
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x10]; // 0xaf8
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "12"
         // metadata: MNetworkMinValue "0.000000"
@@ -34,37 +34,37 @@ namespace source2sdk::client
         // metadata: MNetworkEncodeFlags "1"
         // m_flexWeight has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // C_NetworkUtlVectorBase<float> m_flexWeight;
-        char m_flexWeight[0x18]; // 0xb10        
+        char m_flexWeight[0x18]; // 0xb08        
         // metadata: MNetworkEnable
         // metadata: MNetworkEncoder "coord"
         // metadata: MNetworkChangeCallback "OnViewTargetChanged"
-        Vector m_vLookTargetPosition; // 0xb28        
-        [[maybe_unused]] std::uint8_t pad_0xb34[0xc]; // 0xb34
+        Vector m_vLookTargetPosition; // 0xb20        
+        [[maybe_unused]] std::uint8_t pad_0xb2c[0xc]; // 0xb2c
         // metadata: MNetworkEnable
-        bool m_blinktoggle; // 0xb40        
-        [[maybe_unused]] std::uint8_t pad_0xb41[0x5f]; // 0xb41
-        int32_t m_nLastFlexUpdateFrameCount; // 0xba0        
-        Vector m_CachedViewTarget; // 0xba4        
-        client::SceneEventId_t m_nNextSceneEventId; // 0xbb0        
-        int32_t m_iBlink; // 0xbb4        
-        float m_blinktime; // 0xbb8        
-        bool m_prevblinktoggle; // 0xbbc        
-        [[maybe_unused]] std::uint8_t pad_0xbbd[0x3]; // 0xbbd
-        int32_t m_iJawOpen; // 0xbc0        
-        float m_flJawOpenAmount; // 0xbc4        
-        float m_flBlinkAmount; // 0xbc8        
-        modellib::AttachmentHandle_t m_iMouthAttachment; // 0xbcc        
-        modellib::AttachmentHandle_t m_iEyeAttachment; // 0xbcd        
-        bool m_bResetFlexWeightsOnModelChange; // 0xbce        
-        [[maybe_unused]] std::uint8_t pad_0xbcf[0x19]; // 0xbcf
-        int32_t m_nEyeOcclusionRendererBone; // 0xbe8        
-        matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xbec        
-        Vector m_vEyeOcclusionRendererHalfExtent; // 0xc1c        
-        [[maybe_unused]] std::uint8_t pad_0xc28[0x10]; // 0xc28
-        client::C_BaseFlex__Emphasized_Phoneme m_PhonemeClasses[3]; // 0xc38        
+        bool m_blinktoggle; // 0xb38        
+        [[maybe_unused]] std::uint8_t pad_0xb39[0x5f]; // 0xb39
+        int32_t m_nLastFlexUpdateFrameCount; // 0xb98        
+        Vector m_CachedViewTarget; // 0xb9c        
+        client::SceneEventId_t m_nNextSceneEventId; // 0xba8        
+        int32_t m_iBlink; // 0xbac        
+        float m_blinktime; // 0xbb0        
+        bool m_prevblinktoggle; // 0xbb4        
+        [[maybe_unused]] std::uint8_t pad_0xbb5[0x3]; // 0xbb5
+        int32_t m_iJawOpen; // 0xbb8        
+        float m_flJawOpenAmount; // 0xbbc        
+        float m_flBlinkAmount; // 0xbc0        
+        modellib::AttachmentHandle_t m_iMouthAttachment; // 0xbc4        
+        modellib::AttachmentHandle_t m_iEyeAttachment; // 0xbc5        
+        bool m_bResetFlexWeightsOnModelChange; // 0xbc6        
+        [[maybe_unused]] std::uint8_t pad_0xbc7[0x19]; // 0xbc7
+        int32_t m_nEyeOcclusionRendererBone; // 0xbe0        
+        matrix3x4_t m_mEyeOcclusionRendererCameraToBoneTransform; // 0xbe4        
+        Vector m_vEyeOcclusionRendererHalfExtent; // 0xc14        
+        [[maybe_unused]] std::uint8_t pad_0xc20[0x10]; // 0xc20
+        client::C_BaseFlex__Emphasized_Phoneme m_PhonemeClasses[3]; // 0xc30        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_BaseFlex because it is not a standard-layout class
-    static_assert(sizeof(C_BaseFlex) == 0xc98);
+    static_assert(sizeof(C_BaseFlex) == 0xc90);
 };

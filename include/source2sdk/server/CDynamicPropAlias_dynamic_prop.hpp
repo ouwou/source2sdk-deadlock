@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcf0
+    // Size: 0xce8
     // Has VTable
     #pragma pack(push, 1)
     class CDynamicPropAlias_dynamic_prop : public server::CDynamicProp
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CDynamicPropAlias_dynamic_prop) == 0xcf0);
+    static_assert(sizeof(CDynamicPropAlias_dynamic_prop) == 0xce8);
 };

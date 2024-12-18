@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xa20
+    // Size: 0xa18
     // Has VTable
     #pragma pack(push, 1)
     class CCitadelTriggerHurt : public server::CTriggerHurt
@@ -24,5 +24,5 @@ namespace source2sdk::server
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadelTriggerHurt) == 0xa20);
+    static_assert(sizeof(CCitadelTriggerHurt) == 0xa18);
 };

@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcb8
+    // Size: 0xcb0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_ArmorUpgrade_ReturnFire : public client::CCitadel_Item
@@ -24,5 +24,5 @@ namespace source2sdk::client
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_ArmorUpgrade_ReturnFire) == 0xcb8);
+    static_assert(sizeof(CCitadel_ArmorUpgrade_ReturnFire) == 0xcb0);
 };

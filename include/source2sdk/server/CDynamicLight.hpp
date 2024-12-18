@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7d8
+    // Size: 0x7d0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "uint8 m_Flags"
@@ -28,28 +28,28 @@ namespace source2sdk::server
     class CDynamicLight : public server::CBaseModelEntity
     {
     public:
-        uint8_t m_ActualFlags; // 0x7c0        
+        uint8_t m_ActualFlags; // 0x7b8        
         // metadata: MNetworkEnable
-        uint8_t m_Flags; // 0x7c1        
+        uint8_t m_Flags; // 0x7b9        
         // metadata: MNetworkEnable
-        uint8_t m_LightStyle; // 0x7c2        
-        bool m_On; // 0x7c3        
+        uint8_t m_LightStyle; // 0x7ba        
+        bool m_On; // 0x7bb        
         // metadata: MNetworkEnable
-        float m_Radius; // 0x7c4        
+        float m_Radius; // 0x7bc        
         // metadata: MNetworkEnable
-        int32_t m_Exponent; // 0x7c8        
-        // metadata: MNetworkEnable
-        // metadata: MNetworkBitCount "8"
-        // metadata: MNetworkMinValue "0.000000"
-        // metadata: MNetworkMaxValue "360.000000"
-        float m_InnerAngle; // 0x7cc        
+        int32_t m_Exponent; // 0x7c0        
         // metadata: MNetworkEnable
         // metadata: MNetworkBitCount "8"
         // metadata: MNetworkMinValue "0.000000"
         // metadata: MNetworkMaxValue "360.000000"
-        float m_OuterAngle; // 0x7d0        
+        float m_InnerAngle; // 0x7c4        
         // metadata: MNetworkEnable
-        float m_SpotRadius; // 0x7d4        
+        // metadata: MNetworkBitCount "8"
+        // metadata: MNetworkMinValue "0.000000"
+        // metadata: MNetworkMaxValue "360.000000"
+        float m_OuterAngle; // 0x7c8        
+        // metadata: MNetworkEnable
+        float m_SpotRadius; // 0x7cc        
         
         // Datamap fields:
         // void CDynamicLightDynamicLightThink; // 0x0
@@ -63,5 +63,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CDynamicLight because it is not a standard-layout class
-    static_assert(sizeof(CDynamicLight) == 0x7d8);
+    static_assert(sizeof(CDynamicLight) == 0x7d0);
 };

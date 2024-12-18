@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x16a0
+    // Size: 0x16a8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,26 +27,26 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Visuals"
         // m_ExplodeParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_ExplodeParticle;
-        char m_ExplodeParticle[0xe0]; // 0x1560        
+        char m_ExplodeParticle[0xe0]; // 0x1568        
         // metadata: MPropertyStartGroup "Modifiers"
         // m_CasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_CasterModifier;
-        char m_CasterModifier[0x10]; // 0x1640        
+        char m_CasterModifier[0x10]; // 0x1648        
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x1650        
-        // m_RecentlyDebuffedModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
-        // CEmbeddedSubclass<client::CCitadelModifier> m_RecentlyDebuffedModifier;
-        char m_RecentlyDebuffedModifier[0x10]; // 0x1660        
+        char m_DebuffModifier[0x10]; // 0x1658        
+        // m_StatStealModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<client::CCitadelModifier> m_StatStealModifier;
+        char m_StatStealModifier[0x10]; // 0x1668        
         // m_StealWatcherModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_StealWatcherModifier;
-        char m_StealWatcherModifier[0x10]; // 0x1670        
+        char m_StealWatcherModifier[0x10]; // 0x1678        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_ExplosionSound; // 0x1680        
-        CSoundEventName m_strHitConfirm; // 0x1690        
+        CSoundEventName m_ExplosionSound; // 0x1688        
+        CSoundEventName m_strHitConfirm; // 0x1698        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Mirage_FireBeetles_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Mirage_FireBeetles_VData) == 0x16a0);
+    static_assert(sizeof(CCitadel_Ability_Mirage_FireBeetles_VData) == 0x16a8);
 };

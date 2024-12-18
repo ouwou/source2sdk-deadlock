@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x6f0
+    // Size: 0x718
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,15 +23,15 @@ namespace source2sdk::client
     class CCitadel_Modifier_HalloweenMaskVData : public client::CCitadelModifierVData
     {
     public:
-        int32_t m_nNumMasks; // 0x608        
-        [[maybe_unused]] std::uint8_t pad_0x60c[0x4]; // 0x60c
+        int32_t m_nNumMasks; // 0x630        
+        [[maybe_unused]] std::uint8_t pad_0x634[0x4]; // 0x634
         // metadata: MPropertyStartGroup "Visuals"
         // m_HalloweenMask has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_HalloweenMask;
-        char m_HalloweenMask[0xe0]; // 0x610        
+        char m_HalloweenMask[0xe0]; // 0x638        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_HalloweenMaskVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_HalloweenMaskVData) == 0x6f0);
+    static_assert(sizeof(CCitadel_Modifier_HalloweenMaskVData) == 0x718);
 };

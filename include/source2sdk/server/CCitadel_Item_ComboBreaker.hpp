@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb58
+    // Size: 0xb50
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Item_ComboBreaker : public server::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb20[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xb18[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Item_ComboBreaker) == 0xb58);
+    static_assert(sizeof(CCitadel_Item_ComboBreaker) == 0xb50);
 };

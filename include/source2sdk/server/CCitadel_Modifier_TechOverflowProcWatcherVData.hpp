@@ -17,7 +17,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x738
+    // Size: 0x760
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -28,17 +28,17 @@ namespace source2sdk::server
         // metadata: MPropertyStartGroup "Modifiers"
         // m_BuildUpModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadel_Modifier_Base_Buildup> m_BuildUpModifier;
-        char m_BuildUpModifier[0x10]; // 0x638        
+        char m_BuildUpModifier[0x10]; // 0x660        
         // m_ProcModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<server::CCitadelModifier> m_ProcModifier;
-        char m_ProcModifier[0x10]; // 0x648        
+        char m_ProcModifier[0x10]; // 0x670        
         // metadata: MPropertyStartGroup "Visuals"
         // m_BuildupSuccessEffect has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_BuildupSuccessEffect;
-        char m_BuildupSuccessEffect[0xe0]; // 0x658        
+        char m_BuildupSuccessEffect[0xe0]; // 0x680        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Modifier_TechOverflowProcWatcherVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Modifier_TechOverflowProcWatcherVData) == 0x738);
+    static_assert(sizeof(CCitadel_Modifier_TechOverflowProcWatcherVData) == 0x760);
 };

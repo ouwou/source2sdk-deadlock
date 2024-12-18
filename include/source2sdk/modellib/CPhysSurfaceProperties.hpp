@@ -1,5 +1,6 @@
 #pragma once
 #include "source2sdk/modellib/CPhysSurfacePropertiesAudio.hpp"
+#include "source2sdk/modellib/CPhysSurfacePropertiesFlammability.hpp"
 #include "source2sdk/modellib/CPhysSurfacePropertiesPhysics.hpp"
 #include "source2sdk/modellib/CPhysSurfacePropertiesSoundNames.hpp"
 #include "source2sdk/source2gen.hpp"
@@ -16,7 +17,7 @@ namespace source2sdk::modellib
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: true
-    // Size: 0xc8
+    // Size: 0xd8
     // 
     // static metadata: MGetKV3ClassDefaults
     #pragma pack(push, 1)
@@ -35,10 +36,13 @@ namespace source2sdk::modellib
         CUtlString m_description; // 0x20        
         // metadata: MKV3TransferName "physics"
         modellib::CPhysSurfacePropertiesPhysics m_physics; // 0x28        
+        [[maybe_unused]] std::uint8_t pad_0x44[0x4]; // 0x44
         // metadata: MKV3TransferName "audiosounds"
-        modellib::CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x50        
+        modellib::CPhysSurfacePropertiesSoundNames m_audioSounds; // 0x48        
         // metadata: MKV3TransferName "audioparams"
-        modellib::CPhysSurfacePropertiesAudio m_audioParams; // 0xa8        
+        modellib::CPhysSurfacePropertiesAudio m_audioParams; // 0xa0        
+        // metadata: MKV3TransferName "flammability"
+        modellib::CPhysSurfacePropertiesFlammability m_flammabilityParams; // 0xc0        
     };
     #pragma pack(pop)
     
@@ -48,8 +52,9 @@ namespace source2sdk::modellib
     static_assert(offsetof(CPhysSurfaceProperties, m_bHidden) == 0x18);
     static_assert(offsetof(CPhysSurfaceProperties, m_description) == 0x20);
     static_assert(offsetof(CPhysSurfaceProperties, m_physics) == 0x28);
-    static_assert(offsetof(CPhysSurfaceProperties, m_audioSounds) == 0x50);
-    static_assert(offsetof(CPhysSurfaceProperties, m_audioParams) == 0xa8);
+    static_assert(offsetof(CPhysSurfaceProperties, m_audioSounds) == 0x48);
+    static_assert(offsetof(CPhysSurfaceProperties, m_audioParams) == 0xa0);
+    static_assert(offsetof(CPhysSurfaceProperties, m_flammabilityParams) == 0xc0);
     
-    static_assert(sizeof(CPhysSurfaceProperties) == 0xc8);
+    static_assert(sizeof(CPhysSurfaceProperties) == 0xd8);
 };

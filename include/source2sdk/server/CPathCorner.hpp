@@ -15,15 +15,15 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x518
+    // Size: 0x510
     // Has VTable
     #pragma pack(push, 1)
     class CPathCorner : public server::CPointEntity
     {
     public:
-        float m_flWait; // 0x4e8        
-        float m_flRadius; // 0x4ec        
-        entity2::CEntityIOOutput m_OnPass; // 0x4f0        
+        float m_flWait; // 0x4e0        
+        float m_flRadius; // 0x4e4        
+        entity2::CEntityIOOutput m_OnPass; // 0x4e8        
         
         // Datamap fields:
         // CUtlSymbolLarge InputSetNextPathCorner; // 0x0
@@ -32,5 +32,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CPathCorner because it is not a standard-layout class
-    static_assert(sizeof(CPathCorner) == 0x518);
+    static_assert(sizeof(CPathCorner) == 0x510);
 };

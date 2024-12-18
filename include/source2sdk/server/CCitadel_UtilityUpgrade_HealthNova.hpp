@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc00
+    // Size: 0xbf8
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_UtilityUpgrade_HealthNova : public server::CCitadel_Item
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb20[0xe0];
+        [[maybe_unused]] std::uint8_t pad_0xb18[0xe0];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_UtilityUpgrade_HealthNova) == 0xc00);
+    static_assert(sizeof(CCitadel_UtilityUpgrade_HealthNova) == 0xbf8);
 };

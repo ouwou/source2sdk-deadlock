@@ -14,7 +14,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x618
+    // Size: 0x640
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -23,10 +23,10 @@ namespace source2sdk::server
     {
     public:
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_TriggeredSound; // 0x608        
+        CSoundEventName m_TriggeredSound; // 0x630        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CModifier_Upgrade_KineticSashTriggered_VData because it is not a standard-layout class
-    static_assert(sizeof(CModifier_Upgrade_KineticSashTriggered_VData) == 0x618);
+    static_assert(sizeof(CModifier_Upgrade_KineticSashTriggered_VData) == 0x640);
 };

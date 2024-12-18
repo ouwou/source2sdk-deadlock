@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x9b8
+    // Size: 0x9b0
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CCitadelMinimapComponent::Storage_t m_CCitadelMinimapComponent"
@@ -23,16 +23,16 @@ namespace source2sdk::server
     class CCitadelIdolReturnTrigger : public server::CTriggerModifier
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x990[0x8]; // 0x990
+        [[maybe_unused]] std::uint8_t pad_0x988[0x8]; // 0x988
         // metadata: MNetworkEnable
         // metadata: MNetworkUserGroup "CCitadelMinimapComponent"
         // metadata: MNetworkAlias "CCitadelMinimapComponent"
         // metadata: MNetworkTypeAlias "CCitadelMinimapComponent"
-        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x998        
-        [[maybe_unused]] std::uint8_t pad_0x9b0[0x8];
+        server::CCitadelMinimapComponent m_CCitadelMinimapComponent; // 0x990        
+        [[maybe_unused]] std::uint8_t pad_0x9a8[0x8];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelIdolReturnTrigger because it is not a standard-layout class
-    static_assert(sizeof(CCitadelIdolReturnTrigger) == 0x9b8);
+    static_assert(sizeof(CCitadelIdolReturnTrigger) == 0x9b0);
 };

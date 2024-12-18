@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x4f0
+    // Size: 0x4e8
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "CHandle< CBaseEntity> m_Handle"
@@ -31,13 +31,13 @@ namespace source2sdk::server
         // metadata: MNetworkEnable
         // m_Handle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CBaseEntity> m_Handle;
-        char m_Handle[0x4]; // 0x4e8        
+        char m_Handle[0x4]; // 0x4e0        
         // metadata: MNetworkEnable
-        bool m_bSendHandle; // 0x4ec        
-        [[maybe_unused]] std::uint8_t pad_0x4ed[0x3];
+        bool m_bSendHandle; // 0x4e4        
+        [[maybe_unused]] std::uint8_t pad_0x4e5[0x3];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CHandleTest because it is not a standard-layout class
-    static_assert(sizeof(CHandleTest) == 0x4f0);
+    static_assert(sizeof(CHandleTest) == 0x4e8);
 };

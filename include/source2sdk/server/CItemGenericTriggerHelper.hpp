@@ -19,7 +19,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x7c8
+    // Size: 0x7c0
     // Has VTable
     #pragma pack(push, 1)
     class CItemGenericTriggerHelper : public server::CBaseModelEntity
@@ -27,8 +27,8 @@ namespace source2sdk::server
     public:
         // m_hParentItem has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CHandle<server::CItemGeneric> m_hParentItem;
-        char m_hParentItem[0x4]; // 0x7c0        
-        [[maybe_unused]] std::uint8_t pad_0x7c4[0x4];
+        char m_hParentItem[0x4]; // 0x7b8        
+        [[maybe_unused]] std::uint8_t pad_0x7bc[0x4];
         
         // Datamap fields:
         // void CItemGenericTriggerHelperItemGenericTriggerHelperTouch; // 0x0
@@ -36,5 +36,5 @@ namespace source2sdk::server
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItemGenericTriggerHelper because it is not a standard-layout class
-    static_assert(sizeof(CItemGenericTriggerHelper) == 0x7c8);
+    static_assert(sizeof(CItemGenericTriggerHelper) == 0x7c0);
 };

@@ -16,7 +16,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x17a0
+    // Size: 0x17a8
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -27,23 +27,23 @@ namespace source2sdk::client
         // metadata: MPropertyStartGroup "Modifiers"
         // m_SuccessModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_SuccessModifier;
-        char m_SuccessModifier[0x10]; // 0x15a8        
+        char m_SuccessModifier[0x10]; // 0x15b0        
         // metadata: MPropertyStartGroup "Sounds"
-        CSoundEventName m_strSuccessSound; // 0x15b8        
-        CSoundEventName m_strFailureSound; // 0x15c8        
+        CSoundEventName m_strSuccessSound; // 0x15c0        
+        CSoundEventName m_strFailureSound; // 0x15d0        
         // metadata: MPropertyStartGroup "Visuals"
         // m_SuccessParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_SuccessParticle;
-        char m_SuccessParticle[0xe0]; // 0x15d8        
+        char m_SuccessParticle[0xe0]; // 0x15e0        
         // m_FailureParticle has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CResourceNameTyped<CWeakHandle<resourcesystem::InfoForResourceTypeIParticleSystemDefinition>> m_FailureParticle;
-        char m_FailureParticle[0xe0]; // 0x16b8        
+        char m_FailureParticle[0xe0]; // 0x16c0        
         // metadata: MPropertyStartGroup "Gameplay"
-        float m_flGraceTime; // 0x1798        
-        [[maybe_unused]] std::uint8_t pad_0x179c[0x4];
+        float m_flGraceTime; // 0x17a0        
+        [[maybe_unused]] std::uint8_t pad_0x17a4[0x4];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CItem_ActiveReload_VData because it is not a standard-layout class
-    static_assert(sizeof(CItem_ActiveReload_VData) == 0x17a0);
+    static_assert(sizeof(CItem_ActiveReload_VData) == 0x17a8);
 };

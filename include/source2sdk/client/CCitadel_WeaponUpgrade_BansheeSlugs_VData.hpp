@@ -15,7 +15,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x15b8
+    // Size: 0x15d0
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -26,10 +26,13 @@ namespace source2sdk::client
         // metadata: MPropertyGroupName "Modifiers"
         // m_DebuffModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffModifier;
-        char m_DebuffModifier[0x10]; // 0x15a8        
+        char m_DebuffModifier[0x10]; // 0x15b0        
+        // m_DebuffPerCasterModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
+        // CEmbeddedSubclass<client::CCitadelModifier> m_DebuffPerCasterModifier;
+        char m_DebuffPerCasterModifier[0x10]; // 0x15c0        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_WeaponUpgrade_BansheeSlugs_VData because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_WeaponUpgrade_BansheeSlugs_VData) == 0x15b8);
+    static_assert(sizeof(CCitadel_WeaponUpgrade_BansheeSlugs_VData) == 0x15d0);
 };

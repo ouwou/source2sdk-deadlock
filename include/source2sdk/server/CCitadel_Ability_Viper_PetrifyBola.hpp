@@ -14,16 +14,16 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xc50
+    // Size: 0xc48
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Viper_PetrifyBola : public server::CCitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xb00[0x150];
+        [[maybe_unused]] std::uint8_t pad_0xaf8[0x150];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Viper_PetrifyBola) == 0xc50);
+    static_assert(sizeof(CCitadel_Ability_Viper_PetrifyBola) == 0xc48);
 };

@@ -15,7 +15,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb18
+    // Size: 0xb10
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Tier3Boss_LaserBeam : public server::CTier3BossAbility
@@ -23,10 +23,10 @@ namespace source2sdk::server
     public:
         // m_pBeamModifier has a template type with potentially unknown template parameters. You can try uncommenting the field below.
         // CModifierHandleTyped<server::CCitadelModifier> m_pBeamModifier[1];
-        char m_pBeamModifier[0x18]; // 0xb00        
+        char m_pBeamModifier[0x18]; // 0xaf8        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadel_Ability_Tier3Boss_LaserBeam because it is not a standard-layout class
-    static_assert(sizeof(CCitadel_Ability_Tier3Boss_LaserBeam) == 0xb18);
+    static_assert(sizeof(CCitadel_Ability_Tier3Boss_LaserBeam) == 0xb10);
 };

@@ -14,16 +14,16 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xcd8
+    // Size: 0xcd0
     // Has VTable
     #pragma pack(push, 1)
     class CCitadel_Ability_Nano_Shadow : public client::C_CitadelBaseAbility
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0xca0[0x38];
+        [[maybe_unused]] std::uint8_t pad_0xc98[0x38];
         // No schema binary for binding
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(CCitadel_Ability_Nano_Shadow) == 0xcd8);
+    static_assert(sizeof(CCitadel_Ability_Nano_Shadow) == 0xcd0);
 };

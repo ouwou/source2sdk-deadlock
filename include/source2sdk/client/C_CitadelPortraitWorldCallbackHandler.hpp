@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x570
+    // Size: 0x568
     // Has VTable
     // 
     // static metadata: MEntityAllowsPortraitWorldSpawn
@@ -22,9 +22,9 @@ namespace source2sdk::client
     class C_CitadelPortraitWorldCallbackHandler : public client::C_BaseEntity
     {
     public:
-        [[maybe_unused]] std::uint8_t pad_0x568[0x8];
+        [[maybe_unused]] std::uint8_t pad_0x560[0x8];
     };
     #pragma pack(pop)
     
-    static_assert(sizeof(C_CitadelPortraitWorldCallbackHandler) == 0x570);
+    static_assert(sizeof(C_CitadelPortraitWorldCallbackHandler) == 0x568);
 };

@@ -4,6 +4,7 @@
 #include "source2sdk/client/CCitadelTrackedBodygroupModifierState_t.hpp"
 #include "source2sdk/client/CitadelCameraOperationsSequence_t.hpp"
 #include "source2sdk/client/EModifierValue.hpp"
+#include "source2sdk/client/FootstepSound_t.hpp"
 #include "source2sdk/client/HudDisplayLocation_t.hpp"
 #include "source2sdk/client/ModifierOverheadDrawType_t.hpp"
 #include "source2sdk/client/ModifierTimeScaleSource_t.hpp"
@@ -22,7 +23,7 @@ namespace source2sdk::server
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0x608
+    // Size: 0x630
     // Has VTable
     // 
     // static metadata: MGetKV3ClassDefaults
@@ -89,11 +90,13 @@ namespace source2sdk::server
         bool m_bEndCreatedSequenceOnRemove; // 0x568        
         [[maybe_unused]] std::uint8_t pad_0x569[0x7]; // 0x569
         client::CitadelCameraOperationsSequence_t m_cameraSequenceRemoved; // 0x570        
-        // metadata: MPropertyGroupName "Sounds"
+        // metadata: MPropertyStartGroup "Sounds"
         CSoundEventName m_sExpiredSound; // 0x5f8        
+        client::FootstepSound_t m_FootstepOverride; // 0x608        
+        CSoundEventName m_FootstepAdditional; // 0x620        
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in CCitadelModifierVData because it is not a standard-layout class
-    static_assert(sizeof(CCitadelModifierVData) == 0x608);
+    static_assert(sizeof(CCitadelModifierVData) == 0x630);
 };

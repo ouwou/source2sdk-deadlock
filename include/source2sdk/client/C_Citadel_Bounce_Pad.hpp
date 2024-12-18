@@ -14,7 +14,7 @@ namespace source2sdk::client
     // Registered alignment: 0x8
     // Alignment: 0x8
     // Standard-layout class: false
-    // Size: 0xb20
+    // Size: 0xb18
     // Has VTable
     // 
     // static metadata: MNetworkVarNames "float m_flUpFactor"
@@ -24,17 +24,17 @@ namespace source2sdk::client
     {
     public:
         // metadata: MNetworkEnable
-        float m_flUpFactor; // 0xb08        
+        float m_flUpFactor; // 0xb00        
         // metadata: MNetworkEnable
-        float m_flBounceVelocity; // 0xb0c        
-        float m_flBarrelBounceVelocity; // 0xb10        
-        float m_flBarrelUpFactor; // 0xb14        
-        bool m_bSpeedOnLand; // 0xb18        
-        bool m_bHasBouncedPlayerBefore; // 0xb19        
-        [[maybe_unused]] std::uint8_t pad_0xb1a[0x6];
+        float m_flBounceVelocity; // 0xb04        
+        float m_flBarrelBounceVelocity; // 0xb08        
+        float m_flBarrelUpFactor; // 0xb0c        
+        bool m_bSpeedOnLand; // 0xb10        
+        bool m_bHasBouncedPlayerBefore; // 0xb11        
+        [[maybe_unused]] std::uint8_t pad_0xb12[0x6];
     };
     #pragma pack(pop)
     
     // Cannot assert offsets of fields in C_Citadel_Bounce_Pad because it is not a standard-layout class
-    static_assert(sizeof(C_Citadel_Bounce_Pad) == 0xb20);
+    static_assert(sizeof(C_Citadel_Bounce_Pad) == 0xb18);
 };
